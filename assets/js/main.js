@@ -31,8 +31,9 @@ var button = document.querySelector('.menu-icon');
 
 	//close lateral menu clicking outside the menu itself
 	$content_wrapper.on('click', function(event){
-		if( !$(event.target).is('#cd-menu-trigger, #cd-menu-trigger span') ) {
+		if( !$(event.target).is('.menu-icon') ) {
 			$lateral_menu_trigger.removeClass('is-clicked');
+            button.classList.toggle('open');
 			$navigation.removeClass('lateral-menu-is-open');
 			$content_wrapper.removeClass('lateral-menu-is-open').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
 				$('body').removeClass('overflow-hidden');
