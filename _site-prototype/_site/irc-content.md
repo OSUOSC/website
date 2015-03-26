@@ -1,0 +1,20 @@
+IRC Channel
+
+
+IRC or Internet Relay Chat is an easy way to chat directly within your browser or using a client with anyone throughout the world.
+
+Our official club IRC channel is the largest in the State of Ohio is located on freenode:
+
+Server: irc.freenode.net
+
+Port: 6667 (7000 for SSL)
+
+Channel: #osuosc
+
+If you do not have an IRC client, you can chat directly in your browser with freenode's webchat. Just enter a nickname and hit connect!
+
+There is no password to join the channel and anyone is welcome to come join and chat with us. Seeing as how this is an official channel we do have some rules presiding over behavior on our channel. We have a bot presiding over the channel and it will not hesitate to enforce these as well as common sense things, please just use common courtesy. You can register with our bot so that you will be added to the user database and you will also have access to some of the public commands that are available.
+
+Please come join us in our channel! We are always open to anyone who just wants to come and chat about open source, or anything for that matter! If you are new to IRC in general, we maintain our own Linux machine with root access, so check out our article on how to connect to IRC.
+We keep chat logs from previous days. Just click the day you want to see and the log will pop up for your viewing pleasure. Club logs require an account on our site to view.
+
