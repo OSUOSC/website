@@ -10,6 +10,10 @@
 		font-size: 12pt;
 	}
 
+  p {
+    text-align: justify;
+  }
+
 /* List */
 
 	ul.actions {

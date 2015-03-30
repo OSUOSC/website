@@ -6,6 +6,10 @@
 		font-size: 12pt;
 	}
 
+  p {
+    text-align: justify;
+  }
+
 /* Banner */
 
 	#banner {

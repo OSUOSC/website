@@ -63,6 +63,8 @@
 		font-weight: bold;
 		line-height: 1em;
 		margin: 0 0 1em 0;
+    text-align: center;
+
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -836,6 +838,8 @@
 	#skel-layers-wrapper {
 	}
 
+@media (max-width: 980px) {
+
 	#header {
 		background: #444;
 		color: #fff;
@@ -849,7 +853,7 @@
 		z-index: 10000;
 	}
 
-		#header h1 {
+  #header h1 {
 			color: #fff;
 			height: inherit;
 			left: 1.25em;
@@ -858,11 +862,18 @@
 			padding: 0;
 			position: absolute;
 			top: 0;
-		}
+	}
 
-			#header h1 a {
-				font-size: 1.25em;
-			}
+	#header h1 a {
+		font-size: 1.25em;
+	}
+
+}
+
+
+
+
+
 
 		#header nav {
 			height: inherit;
@@ -934,7 +945,7 @@
 
 	#banner :before {
    content: "";
-    background-image: url('../images/IMG_5965-Edit.jpg');
+    background-image: url('../img/IMG_5965-Edit.jpg');
 		background-size: cover;
     background-position: bottom;
     -webkit-filter: blur(2px);
@@ -1038,24 +1049,67 @@
 		}
 
 
-/* JUSTIFY TEXT WHEN IN MOBILE VIEW */
-@media (max-width: 980px) {
-  p {
-    text-align: justify;
-  }
+
+
+@media (min-width: 980px) {
+
+#header {
+
 }
+
+p {
+  text-align: center;
+}
+
+}
+
+
+
+
+
+
+
 
 
 
 
 @media (min-width: 980px) {
 
-#header {
-  display: none;
-}
+	#header {
+		background: rgba(255, 255, 255, 0);
+		cursor: default;
+		height: 3.25em;
+		left: 0;
+		line-height: 3.25em;
+		position: relative;
+		top: 0;
+		width: 100%;
+		z-index: 10000;
+    font-size: 1.5em;
+    font-weight: bold;
+	}
 
-p {
-  text-align: center;
-}
+  #header h1 {
+    display: none;
+  }
+
+  #header ul.icons {
+    float: left;
+    padding-left: 1em;
+/* SHOW/HIDE SOCIAL MEDIA ICONS */
+    display: none;
+  }
+
+  #header nav {
+			height: inherit;
+			line-height: inherit;
+			position: relative;
+			right: 0;
+			vertical-align: middle;
+      text-align: center;
+		}
+  #header nav > ul > li a {
+    color: #fff;
+  }
 
 }

@@ -8,6 +8,12 @@
 		font-size: 12pt;
 	}
 
+
+  p {
+    text-align: justify;
+  }
+
+
 /* Header */
 
 	#skel-layers-wrapper {
