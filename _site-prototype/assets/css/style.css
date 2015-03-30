@@ -35,9 +35,15 @@
 		text-decoration: none;
 	}
 
-		a:hover a:not(#header) {
-			text-decoration: underline;
-		}
+	a:hover a:not(#header) {
+		text-decoration: underline;
+	}
+
+  p > a {
+    color: inherit;
+    text-decoration: inherit;
+    font-weight: bold;
+  }
 
 	strong, b {
 		color: #666;
