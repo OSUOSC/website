@@ -865,9 +865,6 @@
       right: 1.25em;
       top: 0;
       vertical-align: middle;
-      /* hey guy check this out for solution for img blur
-      */
-      overflow: hidden;
     }
 
 			#header nav > ul {
