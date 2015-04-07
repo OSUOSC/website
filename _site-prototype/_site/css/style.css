@@ -862,11 +862,10 @@
 			height: inherit;
 			line-height: inherit;
 			position: absolute;
-			right: 1.25em;
-			top: 0;
-			vertical-align: middle;
-
-		}
+      right: 1.25em;
+      top: 0;
+      vertical-align: middle;
+    }
 
 			#header nav > ul {
 				list-style: none;
@@ -926,25 +925,27 @@
 
 
 
-	#banner :before {
-   content: "";
-    background-image: url('../images/IMG_5965-Edit.jpg');
-		background-size: cover;
-    background-position: bottom;
-    -webkit-filter: blur(2px);
+#banner :before {
+  content: "";
+  background-image: url('../images/IMG_5965-Edit.jpg');
+  background-size: cover;
+  background-position: bottom;
+  overflow: hidden;
+  margin-left: 1px;
+  -webkit-filter: blur(2px);
   -moz-filter: blur(2px);
   -o-filter: blur(2px);
   -ms-filter: blur(2px);
   filter: blur(2px);
-    z-index: -10;
-    width: 100%;
-    height: 600px;
-    position: absolute;
-    left: 0;
+  z-index: -10;
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  left: 0;
   right: 0;
-    top: 0;
-   /* border-bottom: 10px solid #f6f6f6; */
-	}
+  top: 0;
+  /* border-bottom: 10px solid #f6f6f6; */
+}
 
 #banner {
 
@@ -958,9 +959,6 @@
   padding-bottom: 75px;
   z-index: 10;
 }
-
-
-
 
 #banner ul {
   z-index: 50;
