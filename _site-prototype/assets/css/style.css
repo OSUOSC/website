@@ -966,6 +966,8 @@
 
 /* Banner */
 
+
+
 	#banner :before {
     content: "";
     background-image: url('../img/IMG_5965-Edit.jpg');
@@ -978,11 +980,15 @@
     left: 0;
     right: 0;
     top: 0;
+
+/*
       -webkit-filter: blur(2px);
       -moz-filter: blur(2px);
       -o-filter: blur(2px);
       -ms-filter: blur(2px);
       filter: blur(2px);
+*/
+
 }
 
 #banner {
