@@ -12,6 +12,10 @@ p,ul,li,h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', sans-serif;
 }
 
+.hidden {
+  display: none;
+}
+
 
 /* Shared
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -26,13 +30,14 @@ p,ul,li,h1,h2,h3,h4,h5,h6 {
   background-color:#333;
   width:15%;
   height:100%;
+  min-height: 500px;
   top:0;
   bottom:0;
   left:0;
   text-align:right;
   position: fixed;
   margin: 0;
-  padding: 10vh 0;
+  padding: 3em 0;
   list-style: none;
   transition:1s ease;
   z-index: 5;
@@ -65,6 +70,11 @@ p,ul,li,h1,h2,h3,h4,h5,h6 {
   width: 85%;
   position: relative;
   right: -15%;
+  z-index: 6;
+
+  -webkit-box-shadow: -5px 0px 33px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: -5px 0px 33px 0px rgba(0,0,0,0.5);
+  box-shadow: -5px 0px 33px 0px rgba(0,0,0,0.5);
 }
 
 /* Sections
@@ -257,4 +267,146 @@ span.fa-angle-down:hover {
     font-size: 3.0rem;
   }
 
+}
+
+
+/* Animate.css
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#brand {
+  -webkit-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+
+  -webkit-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+}
+
+#button, #heading {
+  -webkit-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+
+  -webkit-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+}
+
+#main-nav {
+  -webkit-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+
+  -webkit-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+}
+
+
+#scroll-indicator {
+  -webkit-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+
+  -webkit-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+
+  animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+}
+
+
+
+/* Social Media Icons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#social-media {
+  position: absolute;
+  z-index: 7;
+  position: fixed;
+  width:10%;
+  left: 2.5%;
+  right: 0px;
+  bottom: 0px;
+}
+
+#social-media li {
+  list-style: none;
+}
+
+
+
+
+
+.social-icons .fa-facebook,.social-icons .fa-facebook-square{background-color:#3C599F;}
+
+
+
+.social-icons .fa-flickr{background-color:#FF0084;}
+
+
+.social-icons .fa-github,.social-icons .fa-github-alt,.social-icons .fa-github-square{background-color:#070709;}
+
+
+.social-icons .fa-twitter,.social-icons .fa-twitter-square{background-color:#32CCFE;}
+
+.social-icons .fa-envelope, .fa-envelope-square, .fa-envelope-o {background-color:#E54D26;}
+
+.social-icons .fa-building-o, .fa-building {background-color:#C52F30;}
+
+
+
+
+
+.social-icons .fa {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #FFF;
+	color: rgba(255, 255, 255, 0.8);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+
+.social-icons.icon-circle .fa{
+	border-radius: 50%;
+  padding-bottom: 1opx;
+}
+
+
+
+.social-icons {
+	font-size: 1.8em;
+}
+
+
+.list-inline li {
+	display: inline-block;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-bottom: 10px;
+}
+
+/* SimpTip
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.simptip-position-top[data-tooltip]::before {
+  border-top-color: rgba(92, 92, 92, .9);
+}
+
+.simptip-position-top[data-tooltip]::after {
+  background-color: rgba(92, 92, 92, .9);
+  color: rgb(239, 239, 239);
+  border-radius: 4px;
+}
+
+.simptip-position-top::before, .simptip-position-top::after {
+  bottom: 110%;
 }

@@ -23,13 +23,16 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/simptip.min.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css">
 
 
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -42,14 +45,37 @@
 
 
 
-    <ul class="sidebar">
+<ul class="sidebar">
+    <div id="main-nav" class="hidden">
       <li><a href="#">Meetings</a></li>
 	  <li><a href="#">Tutorials</a></li>
 	  <li><a href="#">Volunteering</a></li>
 	  <li><a href="#">Events</a></li>
       <li><a href="#">History</a></li>
-    </ul>
+    </div>
+</ul>
 
+<div id="social-media" class="">
+     <ul class="social-icons icon-circle icon-rotate list-unstyled list-inline">
+
+        <span class="simptip-position-top simptip-movable simptip-smooth" data-tooltip="&ensp; facebook &ensp;">
+            <li> <a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        </span>
+
+        <span class="simptip-position-top simptip-movable simptip-smooth" data-tooltip="&ensp; email &ensp;">
+            <li class="hint hint--top hint--rounded hint--info" data-hint="email"> <a href="mailto:#" target="_blank"><i class="fa fa-envelope-square"></i></a></li>
+        </span>
+
+        <span class="simptip-position-top simptip-movable simptip-smooth" data-tooltip="&ensp; github&ensp; ">
+            <li class="hint hint--top hint--rounded hint--info" data-hint="github"> <a href="#" target="_blank"><i class="fa fa-github"></i></a></li>
+        </span>
+
+        <span class="simptip-position-top simptip-movable simptip-smooth" data-tooltip="&ensp; location &ensp;">
+            <li class="hint hint--top hint--rounded hint--info" data-hint="directions"> <a href="https://www.osu.edu/map/building.php?building=026" target="_blank"><i class="fa fa-building"></i></a></li>
+        </span>
+
+    </ul>
+</div>
 
 
 <div id="page-content-wrapper">
@@ -60,14 +86,14 @@
   <div class="landing">
     <div class="container">
 
-      <span class="icon fa-angle-down fa-3x pulse infinite"></span>
+      <span id="scroll-indicator" class="icon fa-angle-down fa-3x hidden"></span>
 
       <div class="row">
 
         <div class="twelve column">
-            <img class="brand" src='images/osc-logo.svg'>
-            <h4 class="landing-heading">Open Source Club</h4>
-          <a class="button button-secondary" href="#">Join Our Mailing List</a>
+            <img id="brand" class="hidden" src='images/osc-logo.svg'>
+            <h4 id="heading" class="landing-heading hidden">Open Source Club</h4>
+          <a id="button" class="button button-secondary hidden" href="#">Join Our Mailing List</a>
         </div>
 
 
