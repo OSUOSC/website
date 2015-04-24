@@ -329,7 +329,11 @@ position: fixed;
 bottom: 0px;
 z-index: 7;
 width: 15vw;
+padding-bottom: 1em;
+}
 
+#social-media .column {
+  margin-left: 0;
 }
 
 #social-media li {
