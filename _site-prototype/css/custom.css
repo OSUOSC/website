@@ -26,21 +26,18 @@ p,ul,li,h1,h2,h3,h4,h5,h6 {
 /* Side Bar
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .sidebar {
-  list-style-type:none;
-  background-color:#333;
-  width:15%;
-  height:100%;
-  min-height: 500px;
-  top:0;
-  bottom:0;
-  left:0;
-  text-align:right;
-  position: fixed;
-  margin: 0;
-  padding: 3em 0;
-  list-style: none;
-  transition:1s ease;
-  z-index: 5;
+  background-color: #333;
+top: 0px;
+bottom: 0px;
+left: 0px;
+text-align: right;
+position: fixed;
+margin: 0px;
+list-style: outside none none;
+transition: all 1s ease 0s;
+height: 100%;
+z-index: 7;
+width: 15vw;
 }
 
 .sidebar a {
@@ -56,6 +53,7 @@ p,ul,li,h1,h2,h3,h4,h5,h6 {
   padding-right: 2rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
+  font-size: 1.5vw;
 }
 
 .sidebar li:hover {
@@ -67,10 +65,13 @@ p,ul,li,h1,h2,h3,h4,h5,h6 {
 
 /* offset content for sidebar */
 #page-content-wrapper {
-  width: 85%;
-  position: relative;
-  right: -15%;
-  z-index: 6;
+
+float: left;
+z-index: 6;
+position: relative;
+left: 13.9vw;
+
+width: 85vw;
 
   -webkit-box-shadow: -5px 0px 33px 0px rgba(0,0,0,0.5);
   -moz-box-shadow: -5px 0px 33px 0px rgba(0,0,0,0.5);
@@ -102,7 +103,7 @@ p,ul,li,h1,h2,h3,h4,h5,h6 {
 
 /* landing fills entire viewport */
 .landing {
-  height: 100vh;
+  height: 100vh !important;
   min-height: 500px;
 }
 
@@ -261,7 +262,7 @@ span.fa-angle-down:hover {
   }
   .landing {
     padding: 0;
-    height: 100vh
+    height: 100vh !important;
   }
   .landing-heading {
     font-size: 3.0rem;
@@ -292,7 +293,7 @@ span.fa-angle-down:hover {
   -moz-animation-delay: 0s;
 }
 
-#main-nav {
+#main-nav, #social-media {
   -webkit-animation-duration: 2s;
   -o-animation-duration: 2s;
   -moz-animation-duration: 2s;
@@ -323,17 +324,20 @@ span.fa-angle-down:hover {
 /* Social Media Icons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #social-media {
-  position: absolute;
-  z-index: 7;
-  position: fixed;
-  width:10%;
-  left: 2.5%;
-  right: 0px;
-  bottom: 0px;
+  text-align: center;
+position: fixed;
+bottom: 0px;
+z-index: 7;
+width: 15vw;
+
 }
 
 #social-media li {
   list-style: none;
+}
+
+#social-media ul {
+position: relative;
 }
 
 
@@ -383,14 +387,14 @@ span.fa-angle-down:hover {
 
 
 .social-icons {
-	font-size: 1.8em;
+	font-size: 2em;
 }
 
 
 .list-inline li {
 	display: inline-block;
-	padding-right: 5px;
-	padding-left: 5px;
+	padding-right: 0;
+	padding-left: 0;
 	margin-bottom: 10px;
 }
 

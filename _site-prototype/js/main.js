@@ -6,8 +6,8 @@ jQuery(document).ready( function(){
   $('#button, #heading').removeClass('hidden');
   $('#button, #heading').addClass('animated zoomIn');
 
-  $('#main-nav').removeClass('hidden');
-  $('#main-nav').addClass('animated fadeIn');
+  $('#main-nav, #social-media').removeClass('hidden');
+  $('#main-nav, #social-media').addClass('animated fadeIn');
 
   $('#scroll-indicator').removeClass('hidden');
   $('#scroll-indicator').addClass('animated bounce');
