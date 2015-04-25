@@ -16,6 +16,11 @@ p,ul,li,h1,h2,h3,h4,h5,h6 {
   display: none;
 }
 
+hr {
+  border-bottom: 1px solid #ddd;
+  width: 85%;
+  text-align: center;
+}
 
 /* Shared
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -76,6 +81,10 @@ width: 85vw;
   -webkit-box-shadow: -5px 0px 33px 0px rgba(0,0,0,0.5);
   -moz-box-shadow: -5px 0px 33px 0px rgba(0,0,0,0.5);
   box-shadow: -5px 0px 33px 0px rgba(0,0,0,0.5);
+}
+
+#main-nav {
+  padding-top: 3em;
 }
 
 /* Sections
@@ -187,10 +196,6 @@ span.fa-angle-down:hover {
 
 /* Help
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.get-help {
-  border-bottom: 1px solid #ddd;
-}
-
 .get-help ul{
   list-style: none;
   text-align: left;
@@ -329,7 +334,7 @@ position: fixed;
 bottom: 0px;
 z-index: 7;
 width: 15vw;
-padding-bottom: 1em;
+padding-bottom: 2em;
 }
 
 #social-media .column {
@@ -385,7 +390,6 @@ position: relative;
 
 .social-icons.icon-circle .fa{
 	border-radius: 50%;
-  padding-bottom: 1opx;
 }
 
 
@@ -397,8 +401,9 @@ position: relative;
 
 .list-inline li {
 	display: inline-block;
-	padding-right: 0;
-	padding-left: 0;
+	padding-right: .5em;
+	padding-left: .5em;
+  padding-top: .5em;
 	margin-bottom: 10px;
 }
 
