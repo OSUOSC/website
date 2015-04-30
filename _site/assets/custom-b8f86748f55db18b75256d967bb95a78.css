@@ -284,14 +284,7 @@ span.fa-angle-down:hover {
     transform: translateX(-15vw);
   }
 
-  #page-content-wrapper {
-    transform: translateX(-15vw);
-    width: 100%;
-  }
 
-  #social-media {
-    display: none;
-  }
 
 }
 
