@@ -154,7 +154,6 @@ span.fa-angle-down:hover {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .about {
   position: relative;
-  background-image: url('../images/dreese.jpg');
   background-size: cover;
   color: #fff;
   padding: 0!important;
@@ -196,13 +195,17 @@ span.fa-angle-down:hover {
 
 /* Help
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.get-help ul{
+.posts ul{
   list-style: none;
   text-align: left;
 }
 
-.get-help p{
+.posts p{
   text-align: justify;
+}
+
+.posts>.container>ul>li {
+  padding-bottom: 4em;
 }
 
 /* Categories

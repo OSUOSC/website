@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+{% include sidebar.html %}
+
+
+<div id="page-content-wrapper">
+
+    {% include landing.html %}
+    {% include about.html %}
+
+
+
+ <div class="section posts">
+    <div class="container">
+
+<ul>
+    {% for post in site.posts limit: 5 %}
+    <li>{{ post.content }}</li>
+    {% endfor %}
+</ul>
+
+     </div>
+    </div>
+
+</div>
+
+<!-- End Document
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
