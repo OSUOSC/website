@@ -225,13 +225,11 @@ span.fa-angle-down:hover {
     padding: 12rem 0 11rem;
   }
   .landing {
-
     text-align: center;
     height: 165px;
   }
 
-  }
-
+}
 
   .landing-heading {
     font-size: 2.4rem;
@@ -243,15 +241,19 @@ span.fa-angle-down:hover {
   .landing {
     height: 190px;
   }
+
   .landing-heading {
     font-size: 2.6rem;
   }
+
   .section {
     padding: 14rem 0 15rem;
   }
+
   .landing {
     padding: 0 0 14rem;
   }
+
   .section-description {
     max-width: 60%;
     margin-left: auto;

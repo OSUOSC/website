@@ -1,7 +1,6 @@
 ---
 layout: home
 title:  Advanced Vim Tutor
-date:   [DATE] [TIME]
 categories: meetings
 ---
 

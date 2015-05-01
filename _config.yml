@@ -7,4 +7,9 @@ paginate: 10
 
 
 permalink: pretty
-pygments: true
+highlighter: true
+
+
+assets:
+  js_compressor:  yui
+  css_compressor: yui
