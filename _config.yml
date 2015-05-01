@@ -13,3 +13,5 @@ highlighter: true
 assets:
   js_compressor:  yui
   css_compressor: yui
+  
+exclude: [vendor]
