@@ -1,5 +1,7 @@
 # The Open Source Club at The Ohio State University Website
 
+[![Build Status](https://travis-ci.org/CWDG/open-source-club-website.svg?branch=master)](https://travis-ci.org/CWDG/open-source-club-website)
+
 
 # Repositories Used
 - [Jekyll](https://github.com/jekyll/jekyll "Jekyll")
