@@ -1,4 +1,15 @@
+{% javascript trianglify.min %}
+
 <div class="landing">
+
+  <script>
+    var pattern = Trianglify({
+      width: window.innerWidth,
+      height: window.innerHeight
+    });
+    document.body.appendChild(pattern.canvas())
+  </script>
+
     <div class="container">
 
       <span id="scroll-indicator" class="icon fa-angle-down fa-3x hidden"></span>

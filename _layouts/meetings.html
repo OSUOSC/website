@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+{% include sidebar.html %}
+
+
+<div id="page-content-wrapper">
+
+  <div class="section posts">
+    <div class="container">
+
+      {% for post in site.categories.[page.category] %}
+        <ul>
+          <li>{{ post.content }}</li>
+        </ul>
+      {% endfor %}
+
+    </div>
+  </div>
+
+</div>
+
+<!-- End Document
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
