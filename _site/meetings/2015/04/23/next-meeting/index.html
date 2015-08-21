@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="/assets/normalize-77f50f3fc211d8d41f45007e3dc2cdd5.css">
   <link rel="stylesheet" href="/assets/skeleton-f4a292f39ab13ec0fa0e4695fe073a7b.css">
   <link rel="stylesheet" href="/assets/simptip.min-5e2786253722a688c24ba42bb4175984.css">
-  <link rel="stylesheet" href="/assets/custom-da8c943d239678c51fe44a004b99d201.css">
+  <link rel="stylesheet" href="/assets/custom-d672da3355ea6e5f00ad3add9abf9003.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css">
 
@@ -88,18 +88,21 @@
     <script src="/assets/trianglify.min-6af6cc79d3c913a29e6c84d460013a5a.js"></script>
 
 <div class="landing">
+  <span id="scroll-indicator" class="icon fa-angle-down fa-3x hidden"></span>
 
   <script>
     var pattern = Trianglify({
       width: window.innerWidth,
-      height: window.innerHeight
+      height: window.innerHeight,
+      cell_size: 50,
+      variance: ".85",
+      seed: 'PuOr'
+      // x_colors: 'random',
+      // y_colors: 'match_x'
     });
-    document.body.appendChild(pattern.canvas())
+    $( ".landing" ).append(pattern.canvas())
   </script>
-
     <div class="container">
-
-      <span id="scroll-indicator" class="icon fa-angle-down fa-3x hidden"></span>
 
       <div class="row">
 

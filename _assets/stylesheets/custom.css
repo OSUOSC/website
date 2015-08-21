@@ -1,3 +1,12 @@
+body {
+  overflow-x: hidden;
+}
+
+canvas {
+  position: relative;
+  opacity: 0.5;
+}
+
 a:not(.sidebar) {
   color: inherit;
   text-decoration: none;
@@ -41,7 +50,7 @@ hr {
   list-style: outside none none;
   transition: all 1s ease 0s;
   height: 100%;
-  z-index: 7;
+  z-index: 8;
   width: 15vw;
 }
 
@@ -122,7 +131,7 @@ hr {
 
 /* osc logo */
 .landing img {
-  height: 17.5em;
+  height: 20em;
 }
 
 .landing h4 {
@@ -134,13 +143,17 @@ hr {
 }
 
 .landing .button-primary {
-  background: #b3b3b3;
-  border: #b3b3b3;
+  background: rgba(0,0,0,0.25);
+  border: 0;
+  border-radius: 0!important;
+  transition: 0.3s ease;
 }
 
 .landing .button-primary:hover {
-  background: #a3a3a3;
-  border: #a3a3a3;
+  background: rgba(0,0,0,0.5);
+  border: 0;
+  border-radius: 0!important;
+  transition: 0.3s ease;
 }
 
 /* scroll down indicator */
@@ -262,6 +275,10 @@ span.fa-angle-down:hover {
 
   .landing-heading {
     font-size: 2.4rem;
+  }
+
+  .landing-heading > h4 {
+    font-family: inherit;
   }
 }
 

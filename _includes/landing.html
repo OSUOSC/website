@@ -1,18 +1,21 @@
 {% javascript trianglify.min %}
 
 <div class="landing">
+  <span id="scroll-indicator" class="icon fa-angle-down fa-3x hidden"></span>
 
   <script>
     var pattern = Trianglify({
       width: window.innerWidth,
-      height: window.innerHeight
+      height: window.innerHeight,
+      cell_size: 50,
+      variance: ".85",
+      seed: 'PuOr'
+      // x_colors: 'random',
+      // y_colors: 'match_x'
     });
-    document.body.appendChild(pattern.canvas())
+    $( ".landing" ).append(pattern.canvas())
   </script>
-
     <div class="container">
-
-      <span id="scroll-indicator" class="icon fa-angle-down fa-3x hidden"></span>
 
       <div class="row">
 
