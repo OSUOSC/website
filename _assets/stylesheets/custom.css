@@ -30,9 +30,9 @@ p,ul,li,h1,h2,h3,h4,h5,h6 {
 }
 
 hr {
-  border-bottom: 1px solid #ddd;
-  width: 85%;
+  width: 60%;
   text-align: center;
+  border-bottom: 1px solid #CDCDCD;
 }
 
 /* Shared
@@ -120,6 +120,10 @@ hr {
   margin-bottom: 1.2rem;
 }
 
+span:only-child {
+    text-align: center;
+    display: block;
+}
 /* landing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -293,7 +297,7 @@ span.fa-angle-down {
   padding-top: 2em;
 }
 
-.posts>.container>ul>li:not(:last-of-type) {
+.posts>.container>ul>li:not(:last-of-type), .section.posts>.container>ul:not(:last-of-type) {
   border-bottom: 1px solid #CDCDCD;
 }
 

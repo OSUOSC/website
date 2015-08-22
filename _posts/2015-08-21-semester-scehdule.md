@@ -4,7 +4,7 @@ title:  Semester Schedule
 categories: meetings
 ---
 
-###Semester Schedule
+###Autumn '15 Semester Schedule
 
 | date       | topic               | speaker(s)               |
 |------------|---------------------|--------------------------|
@@ -25,3 +25,5 @@ categories: meetings
 | 12/3/2015  |                     |                          |
 | 12/10/2015 |                     |                          |
 | 12/17/2015 |                     |                          |
+
+*this schedule will remain update throughout the semester*
