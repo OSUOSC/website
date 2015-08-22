@@ -111,8 +111,8 @@ hr {
   background: #fafafa;
 }
 
-.section {
-  padding: 8em 0!important;
+.menu-toggle+.posts {
+  padding: 8em 0 0 0!important;
 }
 
 .section-heading,
@@ -552,6 +552,10 @@ span.fa-angle-down {
     position: fixed;
   }
 
+  #main-nav {
+    padding-top: 2em;
+  }
+
 }
 
 @media (max-width: 550px)  {
@@ -699,6 +703,7 @@ span.fa-angle-down {
   bottom: 0px;
   padding-bottom: 4em;
   z-index: 8;
+  position: absolute;
 }
 
 #social-media .column {
