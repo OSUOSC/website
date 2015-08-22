@@ -227,6 +227,7 @@ span.fa-angle-down {
 .about {
   position: relative;
   background-size: cover;
+  background-repeat: no-repeat;
   color: #fff;
   padding: 0!important;
   text-align: center;
@@ -432,7 +433,7 @@ span.fa-angle-down {
 @media (max-height: 1350px) and (max-width: 1200px) and (min-width: 550px) {
 
   .landing > .container > .row > .column {
-    margin-top: 10vh!important;
+    margin-top: 7em!important;
   }
 
   .landing img {
@@ -515,7 +516,7 @@ span.fa-angle-down {
   }
 
   .landing>.container>.row>.column {
-    margin-top: 15vh;
+    margin-top: 9em;
   }
 
 
@@ -524,6 +525,8 @@ span.fa-angle-down {
     z-index: 8;
     transform: translateX(-100%);
     transition: all 0.5s linear;
+    position: absolute;
+    padding-bottom: 1em!important;
   }
 
   #social-media.active {
