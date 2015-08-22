@@ -4,7 +4,11 @@ body {
 
 canvas {
   position: relative;
-  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(75%);
+  -webkit-filter: grayscale(75%);
+  z-index: 1;
 }
 
 a:not(.sidebar) {
@@ -48,10 +52,10 @@ hr {
   position: fixed;
   margin: 0px;
   list-style: outside none none;
-  transition: all 1s ease 0s;
+  transition: all 1s ease;
   height: 100%;
   z-index: 7;
-  width: 15vw;
+  width: 15%;
 }
 
 .sidebar a {
@@ -69,7 +73,7 @@ hr {
   transition:0.5s ease;
   padding-right: 2em;
   font-weight: 300;
-  font-size: 2em;
+  font-size: 1.75em;
   line-height: inherit;
 }
 
@@ -98,7 +102,6 @@ hr {
 /* Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .landing {
-  padding: 8rem 0 7rem;
   text-align: center;
   background: #fafafa;
 }
@@ -114,10 +117,6 @@ hr {
 
 /* landing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.landing > .container {
-  padding: 2em;
-  height: 100%;
-}
 
 /* landing fills entire viewport */
 .landing {
@@ -131,22 +130,50 @@ hr {
 }
 
 .landing h4 {
-  margin-top: .5em;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Arimo', sans-serif;
+  font-weight: 700;
+  font-size: 4em;
+  display: inline;
+  color: rgb(41,41,41);
+}
+
+.landing h5 {
+  margin-top: 0;
+  font-family: 'Arimo', sans-serif;
+  font-weight: 400;
+  font-size: 1.75em;
+  text-align: right;
+  color: rgb(41,41,41);
+  display: block;
+}
+
+.heading-wrapper {
+  display: table;
+  margin: 2em auto 0 auto;
+}
+
+.twelve.column {
+    z-index: 1;
 }
 
 .landing a#button {
-  margin-top: 4em;
+  margin-top: 2rem;
+  position: fixed;
+  z-index: 2;
+  right: 0;
 }
 
 .landing .button-primary {
-  background: rgba(0,0,0,0.25);
+  background: rgba(75,75,75,0.5);
   border: 0;
   border-radius: 0!important;
   transition: 0.3s ease;
 }
 
 .landing .button-primary:hover {
-  background: rgba(0,0,0,0.5);
+  background: rgb(75,75,75);
   border: 0;
   border-radius: 0!important;
   transition: 0.3s ease;
@@ -154,16 +181,12 @@ hr {
 
 /* scroll down indicator */
 span.fa-angle-down {
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  color: #bbb;
+    position: relative;
+    bottom: 2em;
+    color: rgba(50, 50, 50, 0.5);
+    z-index: 1;
 }
 
-span.fa-angle-down:hover {
-  color: #555;
-}
 
 /* vertically centers landing elements */
 .landing > .container > .row {
@@ -176,7 +199,7 @@ span.fa-angle-down:hover {
   left: 15%;
   width: 85%;
   top: 0;
-  margin-top: 25vh;
+  margin-top: 30vh;
 }
 
 /* about
@@ -188,10 +211,11 @@ span.fa-angle-down:hover {
   padding: 0!important;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-
-  -webkit-box-shadow: 0 10px 50px -10px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0 10px 50px -10px rgba(0,0,0,0.5);
-  box-shadow: 0 10px 50px -10px rgba(0,0,0,0.5);
+  z-index: 1;
+  border-top: 25px solid #777777;
+  -webkit-box-shadow: 0 15px 50px -10px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 15px 50px -10px rgba(0,0,0,0.5);
+  box-shadow: 0 15px 50px -10px rgba(0,0,0,0.5);
 }
 
 .about h5 {
@@ -228,6 +252,11 @@ span.fa-angle-down:hover {
 
 /* Posts
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section.posts {
+    background-color: #fff;
+    position: relative;
+}
+
 .posts ul{
   list-style: none;
   text-align: left;
@@ -235,6 +264,7 @@ span.fa-angle-down:hover {
 
 .posts p{
   text-align: justify;
+
 }
 
 .posts>.container>ul>li {
@@ -245,6 +275,17 @@ span.fa-angle-down:hover {
 .posts>.container>ul>li:not(:last-of-type) {
   border-bottom: 1px solid #CDCDCD;
 }
+
+.posts li>h3+table {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.posts h6+ul:not(:last-of-type) {
+    margin-bottom: 3em;
+}
+
+
 
 /* Categories
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -257,8 +298,26 @@ span.fa-angle-down:hover {
   margin-bottom: 4rem;
 }
 
+@media (max-width: 550px) {
+
+  .landing img {
+    height: 16em;
+  }
+
+  .landing h4 {
+    font-size: 2.5em;
+  }
+
+  .landing h5 {
+    font-size: 1.25em;
+  }
+
+}
+
+
+
 /* Bigger than 550 */
-@media (min-width: 550px) {
+@media (min-width: 550px) and (max-width: 750px) {
   .section {
     padding: 12rem 0 11rem;
   }
@@ -267,7 +326,7 @@ span.fa-angle-down:hover {
     height: 165px;
   }
 
-}
+
 
   .landing-heading {
     font-size: 2.4rem;
@@ -276,6 +335,19 @@ span.fa-angle-down:hover {
   .landing-heading > h4 {
     font-family: inherit;
   }
+
+  .landing img {
+    height: 18em;
+  }
+
+  .landing h4 {
+    font-size: 3.25em;
+  }
+
+  .landing h5 {
+    font-size: 1.5em;
+  }
+
 }
 
 /* Bigger than 750 */
@@ -292,10 +364,6 @@ span.fa-angle-down:hover {
     padding: 14rem 0 15rem;
   }
 
-  .landing {
-    padding: 0 0 14rem;
-  }
-
   .section-description {
     max-width: 60%;
     margin-left: auto;
@@ -307,8 +375,8 @@ span.fa-angle-down:hover {
   }
 }
 
-/* Bigger than 1000 */
-@media (min-width: 1000px) {
+/* Bigger than 1200 */
+@media (min-width: 1200px) {
   .section {
     padding: 20rem 0 19rem;
   }
@@ -320,25 +388,163 @@ span.fa-angle-down:hover {
     font-size: 3.0rem;
   }
 
+  #social-media {
+    width: 15%;
+  }
+
+}
+
+@media (min-width: 1200px) and (orientation: portrait) {
+
+  .landing {
+    padding: 0;
+    height: 60vh !important;
+  }
+
+  .landing>.container>.row>.column {
+    margin-top: 15vh;
+  }
+
+  #scroll-indicator {
+    display: none!important;
+  }
+
 }
 
 
-@media (max-width: 1000px) {
-  .sidebar {
-    transform: translateX(-15vw);
+@media (max-width: 1200px) {
+  /*.sidebar {
+    transform: translateX(-15%);
+  }*/
+
+  /* Menu Icon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .menu-toggle {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    background: #b00;
+    width: 7em;
+    height: 7em;
+    z-index: 2;
+    background: rgba(75,75,75,0.5);
+    line-height: 7em;
   }
 
-  #page-content-wrapper {
-    transform: translateX(-15vw);
+  .menu-toggle:before {
+    position: absolute;
+    top: 0;
+    font-size: 3.5em;
+    height: inherit;
+    width: inherit;
+    left: 0;
+    vertical-align: middle;
+    line-height: inherit;
+    color: #fff;
+    font-family: 'FontAwesome';
+    content: '\f039';
+    text-align: center;
+  }
+
+  .menu-toggle:hover {
+    transition: 1s ease;
+    background: rgb(75,75,75);
+  }
+
+
+  .sidebar {
+    background-color: #333;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    text-align: right;
+    position: fixed;
+    margin: 0px;
+    list-style: outside none none;
+    transition: all 1s ease;
+    height: 100%;
+    z-index: 8;
+    width: 40%;
+    transform: translateX(-100%);
+  }
+
+  .sidebar.active {
+    /*background-color: #;*/
+    transition: all 1s ease;
+    width: 40%;
+    transform: translateX(0%);
+  }
+
+  .landing {
+    height: 60vh !important;
+  }
+
+  .landing>.container>.row>.column {
+    margin-top: 15vh;
+  }
+
+
+  #social-media {
+    width: 40%;
+    z-index: 8;
+    transform: translateX(-100%);
+    transition: 1s ease;
+  }
+
+  #social-media.active {
+    transition: 1s ease;
+    transform: translateX(0%);
+  }
+
+  .landing > .container > .row > .column {
+    left: 0;
     width: 100%;
   }
 
-  #social-media {
-    display: none;
+  #page-content-wrapper {
+    transform: translateX(-15%);
+    width: 100%;
+    height: 100%;
+    transition: 1s ease;
+  }
+
+  #page-content-wrapper.active {
+    background: #bb0000;
+    transform: translateX(25%);
   }
 
 }
 
+@media (min-width: 1200px) and (max-width: 1500px)  {
+
+  #page-content-wrapper {
+    float: left;
+    z-index: 7;
+    position: absolute;
+    left: 20%;
+    width: 80%;
+    background: #fff;
+  }
+
+  .sidebar {
+    width: 20%;
+  }
+
+  #social-media {
+    width: 20%;
+  }
+
+  .landing>.container>.row>.column {
+    left: 20%;
+    width: 80%;
+}
+
+  /*.sidebar li {
+    font-size: 1.5vw!important;
+    transition: 0;
+  }*/
+
+}
 
 
 /* Animate.css
@@ -353,10 +559,20 @@ span.fa-angle-down:hover {
   -moz-animation-delay: 0s;
 }
 
-#button, #heading {
+#heading {
   -webkit-animation-duration: 2s;
   -o-animation-duration: 2s;
   -moz-animation-duration: 2s;
+
+  -webkit-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+}
+
+#button {
+  -webkit-animation-duration: .5s;
+  -o-animation-duration: .5s;
+  -moz-animation-duration: .5s;
 
   -webkit-animation-delay: 0s;
   -o-animation-delay: 0s;
@@ -395,11 +611,10 @@ span.fa-angle-down:hover {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #social-media {
   text-align: center;
-position: fixed;
-bottom: 0px;
-z-index: 7;
-width: 15vw;
-padding-bottom: 2em;
+  position: fixed;
+  bottom: 0px;
+  padding-bottom: 4em;
+  z-index: 8;
 }
 
 #social-media .column {

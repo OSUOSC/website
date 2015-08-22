@@ -1,20 +1,25 @@
 {% javascript trianglify.min %}
+<link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
 
 <div class="landing">
-  <span id="scroll-indicator" class="icon fa-angle-down fa-3x hidden"></span>
-
+  <a id="button" class="button button-primary hidden" href="#">Join Our Mailing List</a>
   <script>
     var pattern = Trianglify({
       width: window.innerWidth,
       height: window.innerHeight,
-      cell_size: 50,
-      variance: ".85",
-      seed: 'PuOr'
-      // x_colors: 'random',
+      cell_size: 90,
+      variance: ".9",
+      seed: 'Greens'
+      // seed: 'PuOr',
+      // x_colors: 'random'
       // y_colors: 'match_x'
     });
     $( ".landing" ).append(pattern.canvas())
   </script>
+
+  <span id="scroll-indicator" class="icon fa-angle-down fa-3x hidden"></span>
+
+
     <div class="container">
 
       <div class="row">
@@ -22,12 +27,16 @@
         <div class="twelve column">
 
             {% image osc-logo.svg id="brand" %}
-            <h4 id="heading" class="landing-heading hidden">Open Source Club</h4>
-            <a id="button" class="button button-primary hidden" href="#">Join Our Mailing List</a>
+            <div id="heading" class="heading-wrapper">
+              <h4 class="landing-heading hidden">Open Source Club</h4>
+              <h5 class="landing-heading hidden">at The Ohio State University</h5>
+            </div>
+            <!-- <a id="button" class="button button-primary hidden" href="#">Join Our Mailing List</a> -->
 
         </div>
 
       </div>
 
     </div>
+
 </div>
