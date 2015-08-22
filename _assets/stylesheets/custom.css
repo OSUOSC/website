@@ -52,7 +52,7 @@ hr {
   position: fixed;
   margin: 0px;
   list-style: outside none none;
-  transition: all 1s ease;
+  transition: all 0.5s linear;
   height: 100%;
   z-index: 7;
   width: 15%;
@@ -61,7 +61,7 @@ hr {
 .sidebar a {
   text-decoration:none;
   color:white;
-  transition:1s ease;
+  transition: all 0.5s linear;
 }
 
 .sidebar li>a {
@@ -451,9 +451,6 @@ span.fa-angle-down {
 
 
 @media (max-width: 1200px) {
-  /*.sidebar {
-    transform: translateX(-15%);
-  }*/
 
   /* Menu Icon
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -499,7 +496,7 @@ span.fa-angle-down {
     position: fixed;
     margin: 0px;
     list-style: outside none none;
-    transition: all 1s ease;
+    transition: all 0.5s linear;
     height: 100%;
     z-index: 8;
     width: 40%;
@@ -508,7 +505,7 @@ span.fa-angle-down {
 
   .sidebar.active {
     /*background-color: #;*/
-    transition: all 1s ease;
+    transition: all 0.5s linear;
     width: 40%;
     transform: translateX(0%);
   }
@@ -526,11 +523,11 @@ span.fa-angle-down {
     width: 40%;
     z-index: 8;
     transform: translateX(-100%);
-    transition: 1s ease;
+    transition: all 0.5s linear;
   }
 
   #social-media.active {
-    transition: 1s ease;
+    transition: all 0.5s linear;
     transform: translateX(0%);
   }
 
@@ -543,14 +540,51 @@ span.fa-angle-down {
     transform: translateX(-15%);
     width: 100%;
     height: 100%;
-    transition: 1s ease;
+    transition: all 0.5s linear;
+    position: absolute;
   }
 
   #page-content-wrapper.active {
     transform: translateX(25%);
+    position: fixed;
   }
 
 }
+
+@media (max-width: 550px)  {
+
+  #page-content-wrapper.active {
+    transition: all 0.5s linear;
+    transform: translateX(50%);
+  }
+
+  #page-content-wrapper {
+    transition: all 0.5s linear;
+    transform: translateX(-15%);
+  }
+
+  .sidebar.active {
+    width: 65%;
+    transition: all 0.5s linear;
+  }
+
+  .sidebar {
+    width: 65%;
+  }
+
+  .sidebar {
+    position: absolute;
+    transition: all 0.5s linear;
+  }
+
+  #social-media {
+    transition: all 0.5s linear;
+    width: 65%;
+    position: absolute;
+  }
+
+}
+
 
 @media (min-width: 1200px) and (max-width: 1500px)  {
 
@@ -581,6 +615,16 @@ span.fa-angle-down {
     transition: 0;
   }*/
 
+}
+
+
+@media
+  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5){
+    html {
+      font-size: 50%;
+    }
 }
 
 
