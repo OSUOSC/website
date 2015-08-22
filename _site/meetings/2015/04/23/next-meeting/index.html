@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="/assets/normalize-77f50f3fc211d8d41f45007e3dc2cdd5.css">
   <link rel="stylesheet" href="/assets/skeleton-f4a292f39ab13ec0fa0e4695fe073a7b.css">
   <link rel="stylesheet" href="/assets/simptip.min-5e2786253722a688c24ba42bb4175984.css">
-  <link rel="stylesheet" href="/assets/custom-77c55cecfa0b813b3da531da1950c52e.css">
+  <link rel="stylesheet" href="/assets/custom-e80444545128184c5824d5416a14b2a8.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css">
 
@@ -33,7 +33,7 @@
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="/assets/main-e83918e7008e0377fdfe6931f4d988f3.js"></script>
+  <script src="/assets/main-7281e90c91e4153e30d8473332611607.js"></script>
 
 
   <!-- Favicon
@@ -44,12 +44,12 @@
 
 <ul class="sidebar">
     <div id="main-nav" class="hidden">
-      <li><a href="/">Home</a></li>
-      <li><a href="/meetings">Meetings</a></li>
-	    <li><a href="/tutorials">Tutorials</a></li>
-	    <li><a href="/volunteering">Volunteering</a></li>
-	    <li><a href="/events">Events</a></li>
-      <li><a href="/history">History</a></li>
+      <a href="/"><li>Home</li></a>
+      <a href="/meetings"><li>Meetings</li></a>
+	    <a href="/tutorials"><li>Tutorials</li></a>
+	    <a href="/volunteering"><li>Volunteering</li></a>
+	    <a href="/events"><li>Events</li></a>
+      <a href="/history"><li>History</li></a>
     </div>
 </ul>
 
@@ -63,17 +63,17 @@
         </span>
 
         <span class="simptip-position-top simptip-movable simptip-smooth" data-tooltip="&ensp; email &ensp;">
-            <li class="hint hint--top hint--rounded hint--info" data-hint="email"> <a href="mailto:#" target="_blank"><i class="fa fa-envelope-square"></i></a></li>
+            <li> <a href="mailto:info@opensource.osu.edu" target="_blank"><i class="fa fa-envelope-square"></i></a></li>
         </span>
     </div>
 
     <div class="six column">
         <span class="simptip-position-top simptip-movable simptip-smooth" data-tooltip="&ensp; github&ensp; ">
-            <li class="hint hint--top hint--rounded hint--info" data-hint="github"> <a href="#" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li> <a href="//github.com/OSUOSC" target="_blank"><i class="fa fa-github"></i></a></li>
         </span>
 
         <span class="simptip-position-top simptip-movable simptip-smooth" data-tooltip="&ensp; location &ensp;">
-            <li class="hint hint--top hint--rounded hint--info" data-hint="directions"> <a href="https://www.osu.edu/map/building.php?building=026" target="_blank"><i class="fa fa-building"></i></a></li>
+            <li> <a href="https://www.osu.edu/map/building.php?building=026" target="_blank"><i class="fa fa-building"></i></a></li>
         </span>
     </div>
 </div>
@@ -113,10 +113,10 @@
 
         <div class="twelve column">
 
-            <img src="/assets/osc-logo-8378e5b44d9273b5724e8da12e81c0a4.svg" id="brand">
-            <div id="heading" class="heading-wrapper">
-              <h4 class="landing-heading hidden">Open Source Club</h4>
-              <h5 class="landing-heading hidden">at The Ohio State University</h5>
+            <img src="/assets/osc-logo-8378e5b44d9273b5724e8da12e81c0a4.svg" id="brand" class="hidden">
+            <div id="heading" class="heading-wrapper hidden">
+              <h4 class="landing-heading">Open Source Club</h4>
+              <h5 class="landing-heading">at The Ohio State University</h5>
             </div>
             <!-- <a id="button" class="button button-primary hidden" href="#">Join Our Mailing List</a> -->
 
@@ -183,7 +183,7 @@ Steps will vary depending on your distro of choice, but the same principles appl
 *   username: `name.#`
 *   password: `foo`
 
-*There is no need to specify a root certificate.*
+*You may (optionally) specify the path to the root certificate as it's supposed to combat man-in-the-middle attacks.*
 </li>
     
     <li>###Foo Bar

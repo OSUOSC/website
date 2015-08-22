@@ -1,19 +1,14 @@
 jQuery(document).ready( function(){
 
-  $('#brand').removeClass('hidden');
-  $('#brand').addClass('animated zoomInDown');
+  $('#brand').addClass('animated zoomInDown').removeClass('hidden');
 
-  $('#heading').removeClass('hidden');
-  $('#heading').addClass('animated fadeIn');
+  $('#heading').addClass('animated fadeIn').removeClass('hidden');
 
-  $('#button').removeClass('hidden');
-  $('#button').addClass('animated slideInRight');
+  $('#button').addClass('animated slideInRight').removeClass('hidden');
 
-  $('#main-nav, #social-media').removeClass('hidden');
-  $('#main-nav, #social-media').addClass('animated fadeIn');
+  $('#main-nav, #social-media').addClass('animated fadeIn').removeClass('hidden');
 
-  $('#scroll-indicator').removeClass('hidden');
-  $('#scroll-indicator').addClass('animated bounce');
+  $('#scroll-indicator').addClass('animated bounce').removeClass('hidden');
 });
 
 $(window).scroll(function(e){

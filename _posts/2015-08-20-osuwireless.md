@@ -13,4 +13,4 @@ Steps will vary depending on your distro of choice, but the same principles appl
 *   username: `name.#`
 *   password: `foo`
 
-*There is no need to specify a root certificate.*
+*You may (optionally) specify the path to the root certificate as it's supposed to combat man-in-the-middle attacks.*
