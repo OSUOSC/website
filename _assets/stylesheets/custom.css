@@ -167,13 +167,6 @@ span:only-child {
     z-index: 1;
 }
 
-.landing a#button {
-  margin-top: 2rem;
-  position: fixed;
-  z-index: 2;
-  right: 0;
-}
-
 .landing .button-primary {
   background: rgba(75,75,75,0.5);
   border: 0;
@@ -401,6 +394,14 @@ span.fa-angle-down {
 
 /* Bigger than 1200 */
 @media (min-width: 1200px) {
+  .layout-mobile {
+    display: none;
+  }
+
+  .layout-desktop {
+    display: inherit;
+  }
+
   .section {
     padding: 20rem 0 19rem;
   }
@@ -410,6 +411,13 @@ span.fa-angle-down {
   }
   .landing-heading {
     font-size: 3.0rem;
+  }
+
+  .landing>a#button {
+    margin-top: 2rem;
+    position: fixed;
+    z-index: 2;
+    right: 0;
   }
 
   #social-media {
@@ -460,6 +468,14 @@ span.fa-angle-down {
 
   /* Menu Icon
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .layout-mobile {
+    display: block;
+  }
+
+  .layout-desktop {
+    display: none;
+  }
+
   .menu-toggle {
     position: fixed;
     top: 2rem;
@@ -524,6 +540,13 @@ span.fa-angle-down {
     margin-top: 9em;
   }
 
+/*TODO*/
+  .landing #heading a#button {
+    position: inherit;
+    display: inline-block;
+    z-index: 2;
+    margin-top: 4em;
+  }
 
   #social-media {
     width: 40%;
