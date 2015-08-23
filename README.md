@@ -12,4 +12,10 @@
 - [YUI Compressor](https://github.com/sstephenson/ruby-yui-compressor "YUI Compressor")
 - [Sitemap Generator](https://github.com/kinnetica/jekyll-plugins "Sitemap Generator")
 
-To run locally execute the following command: `jekyll s`
+To run locally:
+`gem install jekyll jekyll-assets yui-compressor`
+
+then run the following command: `jekyll s` inside of the directory
+
+acess the site at `localhost:4000`
+
