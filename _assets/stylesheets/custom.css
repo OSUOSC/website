@@ -30,9 +30,10 @@ p,ul,li,h1,h2,h3,h4,h5,h6 {
 }
 
 hr {
-  width: 60%;
+  width: 25%;
   text-align: center;
-  border-bottom: 1px solid #CDCDCD;
+  border-top: 1px solid #333;
+  margin: 0 auto;
 }
 
 /* Shared
@@ -56,6 +57,7 @@ hr {
   height: 100%;
   z-index: 7;
   width: 15%;
+  perspective: 100em;
 }
 
 .sidebar a {
@@ -706,7 +708,6 @@ span.fa-angle-down {
   text-align: center;
   position: fixed;
   bottom: 0px;
-  padding-bottom: 4em;
   z-index: 8;
 }
 
@@ -716,13 +717,28 @@ span.fa-angle-down {
 
 #social-media li {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  /*font-size: 1.5em;*/
+  transition: all .5s ease;
+  width: 100%;
+  color: #333;
+  padding: 0.75em 0;
+  background: #7D8890;
+}
+
+#social-media li:nth-last-of-type(odd) {
+  margin-top: 1em;
 }
 
 #social-media ul {
 position: relative;
+margin: 0 0 2em 0;
+
+-webkit-box-shadow: 0 0 15px 0 rgba(0,0,0,0.15);
+-moz-box-shadow: 0 0 15px 0 rgba(0,0,0,0.15);
+box-shadow: 0 0 15px 0 rgba(0,0,0,0.15);
 }
-
-
 
 
 
