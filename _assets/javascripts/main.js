@@ -8,9 +8,9 @@ jQuery(document).ready( function(){
 
   $('#heading a#button').addClass('animated slideInUp').removeClass('hidden');
 
-  $('#main-nav').addClass('animated slideInLeft').removeClass('hidden');
+  // $('#main-nav').addClass('animated slideInLeft').removeClass('hidden');
 
-  $('.sidebar-icons').addClass("animated fadeIn").removeClass('hidden');
+  // $('.sidebar-icons').addClass("animated fadeIn").removeClass('hidden');
 
   $('#scroll-indicator').addClass('animated bounce').removeClass('hidden');
 });
