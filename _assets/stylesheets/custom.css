@@ -93,8 +93,8 @@ hr {
 /* offset content for sidebar */
 #page-content-wrapper {
   float: left;
-  z-index: 7;
-  position: absolute;
+  z-index: 8;
+  position: relative;
   left: 15%;
   width: 85%;
   background: #fff;
@@ -170,13 +170,6 @@ span:only-child {
 
 .twelve.column {
     z-index: 1;
-}
-
-.landing a#button {
-  margin-top: 2rem;
-  position: fixed;
-  z-index: 2;
-  right: 0;
 }
 
 .landing .button-primary {
@@ -406,6 +399,14 @@ span.fa-angle-down {
 
 /* Bigger than 1200 */
 @media (min-width: 1200px) {
+  .layout-mobile {
+    display: none;
+  }
+
+  .layout-desktop {
+    display: inherit;
+  }
+
   .section {
     padding: 20rem 0 19rem;
   }
@@ -415,6 +416,13 @@ span.fa-angle-down {
   }
   .landing-heading {
     font-size: 3.0rem;
+  }
+
+  .landing>a#button {
+    margin-top: 2rem;
+    position: fixed;
+    z-index: 2;
+    right: 0;
   }
 
   #social-media {
@@ -465,6 +473,14 @@ span.fa-angle-down {
 
   /* Menu Icon
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .layout-mobile {
+    display: block;
+  }
+
+  .layout-desktop {
+    display: none;
+  }
+
   .menu-toggle {
     position: fixed;
     top: 2rem;
@@ -528,6 +544,13 @@ span.fa-angle-down {
     margin-top: 9em;
   }
 
+  .landing #heading a#button {
+    position: inherit;
+    display: inline-block;
+    z-index: 2;
+    margin-top: 4em;
+  }
+
   .landing > .container > .row > .column {
     left: 0;
     width: 100%;
@@ -538,7 +561,7 @@ span.fa-angle-down {
     width: 100%;
     height: 100%;
     transition: all 0.5s linear;
-    position: absolute;
+    position: relative;
   }
 
   #page-content-wrapper.active {
@@ -585,8 +608,8 @@ span.fa-angle-down {
 
   #page-content-wrapper {
     float: left;
-    z-index: 7;
-    position: absolute;
+    z-index: 8;
+    position: relative;
     left: 20%;
     width: 80%;
     background: #fff;

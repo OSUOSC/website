@@ -4,7 +4,9 @@ jQuery(document).ready( function(){
 
   $('#heading').addClass('animated fadeIn').removeClass('hidden');
 
-  $('#button').addClass('animated slideInRight').removeClass('hidden');
+  $('.landing>#button').addClass('animated slideInRight').removeClass('hidden');
+
+  $('#heading a#button').addClass('animated slideInUp').removeClass('hidden');
 
   $('#main-nav').addClass('animated slideInLeft').removeClass('hidden');
 
