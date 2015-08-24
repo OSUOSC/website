@@ -30,9 +30,10 @@ p,ul,li,h1,h2,h3,h4,h5,h6 {
 }
 
 hr {
-  width: 60%;
+  width: 25%;
   text-align: center;
-  border-bottom: 1px solid #CDCDCD;
+  border-top: 1px solid #333;
+  margin: 0 auto;
 }
 
 /* Shared
@@ -56,6 +57,7 @@ hr {
   height: 100%;
   z-index: 7;
   width: 15%;
+  perspective: 100em;
 }
 
 .sidebar a {
@@ -69,7 +71,7 @@ hr {
 }
 
 .sidebar li {
-  text-indent: 20px;
+  dent: 20px;
   transition:0.5s ease;
   padding-right: 2em;
   font-weight: 300;
@@ -77,13 +79,16 @@ hr {
   line-height: inherit;
 }
 
-.sidebar li:hover {
+.sidebar li:hover:not(.sidebar-secondary a,i) {
   background-color:#4B4B4B;
   cursor:pointer;
   text-indent: 30px;
   padding-right: 1em;
   line-height: inherit;
 }
+
+
+
 
 /* offset content for sidebar */
 #page-content-wrapper {
@@ -508,7 +513,6 @@ span.fa-angle-down {
     background: rgb(75,75,75);
   }
 
-
   .sidebar {
     background-color: #333;
     top: 0px;
@@ -540,26 +544,11 @@ span.fa-angle-down {
     margin-top: 9em;
   }
 
-/*TODO*/
   .landing #heading a#button {
     position: inherit;
     display: inline-block;
     z-index: 2;
     margin-top: 4em;
-  }
-
-  #social-media {
-    width: 40%;
-    z-index: 8;
-    transform: translateX(-100%);
-    transition: all 0.5s linear;
-    position: absolute;
-    padding-bottom: 1em!important;
-  }
-
-  #social-media.active {
-    transition: all 0.5s linear;
-    transform: translateX(0%);
   }
 
   .landing > .container > .row > .column {
@@ -610,12 +599,6 @@ span.fa-angle-down {
   .sidebar {
     position: absolute;
     transition: all 0.5s linear;
-  }
-
-  #social-media {
-    transition: all 0.5s linear;
-    width: 65%;
-    position: absolute;
   }
 
 }
@@ -695,7 +678,7 @@ span.fa-angle-down {
   -moz-animation-delay: 1s;
 }
 
-#main-nav, #social-media {
+#main-nav {
   -webkit-animation-duration: 2s;
   -o-animation-duration: 2s;
   -moz-animation-duration: 2s;
@@ -705,6 +688,15 @@ span.fa-angle-down {
   -moz-animation-delay: 0s;
 }
 
+.sidebar-icons {
+  -webkit-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+
+  -webkit-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+}
 
 #scroll-indicator {
   -webkit-animation-duration: 3s;
@@ -725,83 +717,103 @@ span.fa-angle-down {
 
 /* Social Media Icons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-#social-media {
+
+.sidebar-icons li {
+  z-index: 17;
+  font-size: 5em;
+  display: table;
+  list-style: none;
+  z-index: 7;
+  display: inline;
+  text-align: initial;
+  padding: 0;
+  height: 1.25em;
+  width: 1.25em;
+  margin: 0;
+}
+
+ul.sidebar-icons {
+  position: relative;
+  margin: 3em 0 0 0;
+  z-index: 7;
+  display: inline-flex;
+  transition: 0s;
+}
+
+ul.sidebar-icons li>a {
+  display: flex;
+}
+
+.sidebar-icons ul {
+  position: absolute;
+  z-index: 7;
+}
+
+.sidebar-secondary {
   text-align: center;
-  position: fixed;
-  bottom: 0px;
-  padding-bottom: 4em;
+  position: absolute;
+  bottom: 2em;
+  width: 100%;
   z-index: 8;
 }
 
-#social-media .column {
-  margin-left: 0;
-}
-
-#social-media li {
+ul.sidebar-info li {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  /*font-size: 1.5em;*/
+  transition: all .5s ease;
+  width: 100%;
+  color: #333;
+  padding: 0.75em 0;
+  background: rgb(142,142,142);
+  font-size: 1.25em;
+  font-weight: 600;
 }
 
-#social-media ul {
-position: relative;
+ul.sidebar-info li:not(:last-of-type) {
+  margin-bottom: 1em;
 }
 
+ul.sidebar-icons li:not(:last-of-type) {
+  margin: 0 0.5em 0 0;
+}
 
-
-
-
-.social-icons .fa-facebook,.social-icons .fa-facebook-square{background-color:#3C599F;}
-
-
-
-.social-icons .fa-flickr{background-color:#FF0084;}
-
-
-.social-icons .fa-github,.social-icons .fa-github-alt,.social-icons .fa-github-square{background-color:#070709;}
-
-
-.social-icons .fa-twitter,.social-icons .fa-twitter-square{background-color:#32CCFE;}
-
-.social-icons .fa-envelope, .fa-envelope-square, .fa-envelope-o {background-color:#E54D26;}
-
-.social-icons .fa-building-o, .fa-building {background-color:#C52F30;}
-
-
-
-
-
-.social-icons .fa {
-	width: 50px;
-	height: 50px;
-	line-height: 50px;
-	text-align: center;
-	color: #FFF;
-	color: rgba(255, 255, 255, 0.8);
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+ul.sidebar-info {
+  position: relative;
+  margin: 0;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0,0,0,0.15);
+  -moz-box-shadow: 0 0 15px 0 rgba(0,0,0,0.15);
+  box-shadow: 0 0 15px 0 rgba(0,0,0,0.15);
 }
 
 
-.social-icons.icon-circle .fa{
-	border-radius: 50%;
+.flat-big {
+  display:none;
+  margin:20px;
+  width:160px;
+  height:160px;
+  box-shadow:0 0 10px rgba(0,0,0,0.4);
+  text-align:center;
+  font-size:300%;
+  background:#c0392b;
+  overflow:hidden;
+  border-radius:100%;
+  float:left;
 }
 
-
-
-.social-icons {
-	font-size: 2em;
+[class*='flat'] i {
+  line-height: 1.25em;
+  color: #eee;
+  cursor: pointer;
+  width: 100%;
 }
 
-
-.list-inline li {
-	display: inline-block;
-	padding-right: .5em;
-	padding-left: .5em;
-  padding-top: .5em;
-	margin-bottom: 10px;
+ul.sidebar-icons i:before {
+  text-align: center;
+  display: inherit;
 }
+
 
 /* SimpTip
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
