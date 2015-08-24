@@ -79,12 +79,13 @@ hr {
   line-height: inherit;
 }
 
-.sidebar li:hover:not(.sidebar-secondary a,i) {
+.sidebar #main-nav li:hover {
   background-color:#4B4B4B;
   cursor:pointer;
   text-indent: 30px;
   padding-right: 1em;
   line-height: inherit;
+  transition: all 0.1s linear; 
 }
 
 
