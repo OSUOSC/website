@@ -85,7 +85,7 @@ hr {
   text-indent: 30px;
   padding-right: 1em;
   line-height: inherit;
-  transition: all 0.1s linear; 
+  transition: all 0.1s linear;
 }
 
 
@@ -95,15 +95,14 @@ hr {
 #page-content-wrapper {
   float: left;
   z-index: 8;
-  position: relative;
+  position: absolute;
   left: 15%;
   width: 85%;
   background: #fff;
-  height: 100%;
 
-  -webkit-box-shadow: -10px 0 20px 0 rgba(0,0,0,0.20);
-  -moz-box-shadow: -10px 0 20px 0 rgba(0,0,0,0.20);
-  box-shadow: -10px 0 20px 0 rgba(0,0,0,0.20);
+  -webkit-box-shadow: -10px -10px 20px 0 rgba(0,0,0,0.20);
+  -moz-box-shadow: -10px -10px 20px 0 rgba(0,0,0,0.20);
+  box-shadow: -10px -10px 20px 0 rgba(0,0,0,0.20);
 }
 
 #main-nav {
@@ -694,9 +693,9 @@ span.fa-angle-down {
   -o-animation-duration: 1s;
   -moz-animation-duration: 1s;
 
-  -webkit-animation-delay: 1s;
-  -o-animation-delay: 1s;
-  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  -moz-animation-delay: 0s;
 }
 
 #scroll-indicator {
@@ -790,8 +789,6 @@ ul.sidebar-info {
 
 
 .flat-big {
-  display:none;
-  margin:20px;
   width:160px;
   height:160px;
   box-shadow:0 0 10px rgba(0,0,0,0.4);

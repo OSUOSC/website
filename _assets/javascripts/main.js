@@ -10,7 +10,7 @@ jQuery(document).ready( function(){
 
   // $('#main-nav').addClass('animated slideInLeft').removeClass('hidden');
 
-  // $('.sidebar-icons').addClass("animated fadeIn").removeClass('hidden');
+  $('.sidebar-icons').addClass("animated fadeIn").removeClass('hidden');
 
   $('#scroll-indicator').addClass('animated bounce').removeClass('hidden');
 });
@@ -254,46 +254,19 @@ $(document).ready(function() {
         fade: false,
         boxShadow: "#222"
     });
-    $(".flat-blue").flatshadow({
-        color: "#34495e",
-        angle: "SE",
-        fade: false,
-        boxShadow: "#333"
-    });
+
     $(".flat-turq").flatshadow({
         color: "#3498db",
         angle: "SE",
         fade: false,
         boxShadow: "#333"
     });
-    $(".flat-grey").flatshadow({
-        color: "#ccc",
-        angle: "SE",
-        fade: false,
-        boxShadow: "#333"
-    });
+
     $(".flat-pink").flatshadow({
         color: "#8e44ad",
         angle: "SE",
         fade: false,
         boxShadow: "#333"
     });
-    $(".flat-orange").flatshadow({
-        color: "#e67e22",
-        angle: "SE",
-        fade: false,
-        boxShadow: "#333"
-    });
-    $(".flat-green").flatshadow({
-        color: "#2ecc71",
-        angle: "SE",
-        fade: false,
-        boxShadow: "#333"
-    });
-    $(".flat-random").flatshadow({
-        color: RandHexVal,
-        angle: "SE",
-        fade: false,
-        boxShadow: "#333"
-    })
+
 })
