@@ -325,7 +325,7 @@ span.fa-angle-down {
 @media (max-width: 550px) {
 
   .landing img {
-    height: 16em;
+    height: 14em;
   }
 
   .landing h4 {
@@ -455,7 +455,7 @@ span.fa-angle-down {
   }
 
   .landing img {
-    height: 18em;
+    height: 15em;
   }
 
   .landing h4 {
@@ -473,6 +473,10 @@ span.fa-angle-down {
 
   /* Menu Icon
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  #scroll-indicator {
+    display: none;
+  }
+
   .layout-mobile {
     display: block;
   }
@@ -488,7 +492,7 @@ span.fa-angle-down {
     background: #b00;
     width: 5em;
     height: 5em;
-    z-index: 2;
+    z-index: 9;
     background: rgba(75,75,75,0.5);
     line-height: 5em;
   }
@@ -525,14 +529,18 @@ span.fa-angle-down {
     transition: all 0.5s linear;
     height: 100%;
     z-index: 8;
-    width: 40%;
+    /*width: 40%;*/
+    width: 35rem;
+
     transform: translateX(-100%);
   }
 
   .sidebar.active {
     /*background-color: #;*/
     transition: all 0.5s linear;
-    width: 40%;
+    /*width: 40%;*/
+    width: 35rem;
+
     transform: translateX(0%);
   }
 
@@ -541,14 +549,14 @@ span.fa-angle-down {
   }
 
   .landing>.container>.row>.column {
-    margin-top: 9em;
+    margin-top: 8em;
   }
 
   .landing #heading a#button {
     position: inherit;
     display: inline-block;
     z-index: 2;
-    margin-top: 4em;
+    margin-top: 3em;
   }
 
   .landing > .container > .row > .column {
@@ -565,8 +573,9 @@ span.fa-angle-down {
   }
 
   #page-content-wrapper.active {
-    transform: translateX(25%);
+    transform: translateX(35rem);
     position: fixed;
+    left: 0;
   }
 
   #main-nav {
@@ -577,7 +586,7 @@ span.fa-angle-down {
 
 @media (max-width: 550px)  {
 
-  #page-content-wrapper.active {
+  #page-content-wrapper.active  {
     transition: all 0.5s linear;
     transform: translateX(50%);
   }
@@ -644,6 +653,26 @@ span.fa-angle-down {
       font-size: 50%;
     }
 }
+
+@media
+  only screen and (-webkit-min-device-pixel-ratio: 1.0) and (-webkit-max-device-pixel-ratio: 1.5),
+  only screen and (min--moz-device-pixel-ratio: 1.0) and (max--moz-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.0) and (max-device-pixel-ratio: 1.5){
+    html {
+      font-size: 35%;
+    }
+}
+
+/*@media
+  only screen and (-webkit-device-pixel-ratio: 1.0),
+  only screen and (moz-device-pixel-ratio: 1.0),
+  only screen and (device-pixel-ratio: 1.0),
+  only screen and (min-resolution: 250dpi){
+    html {
+      /*TODO*/
+      font-size: 65%;
+    }
+}*/
 
 
 /* Animate.css

@@ -15,9 +15,9 @@ jQuery(document).ready( function(){
   $('#scroll-indicator').addClass('animated bounce').removeClass('hidden');
 });
 
-$(window).scroll(function(e){
-  parallax();
-});
+// $(window).scroll(function(e){
+//   parallax();
+// });
 
 function parallax(){
   var scrolled = $(window).scrollTop();
