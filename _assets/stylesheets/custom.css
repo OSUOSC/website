@@ -50,7 +50,7 @@ hr {
   bottom: 0px;
   left: 0px;
   text-align: right;
-  position: fixed;
+  position: absolute;
   margin: 0px;
   list-style: outside none none;
   transition: all 0.5s linear;
@@ -523,7 +523,7 @@ span.fa-angle-down {
     bottom: 0px;
     left: 0px;
     text-align: right;
-    position: fixed;
+    position: absolute;
     margin: 0px;
     list-style: outside none none;
     transition: all 0.5s linear;
