@@ -1,6 +1,6 @@
 jQuery(document).ready( function(){
 
-  $('#brand').addClass('animated zoomInDown').removeClass('hidden');
+  // $('#brand').addClass('animated zoomInDown').removeClass('hidden');
 
   $('#heading').addClass('animated fadeIn').removeClass('hidden');
 
@@ -10,22 +10,8 @@ jQuery(document).ready( function(){
 
   // $('#main-nav').addClass('animated slideInLeft').removeClass('hidden');
 
-  // $('.sidebar-icons').addClass("animated fadeIn").removeClass('hidden');
-
   $('#scroll-indicator').addClass('animated bounce').removeClass('hidden');
 });
-
-// $(window).scroll(function(e){
-//   parallax();
-// });
-
-function parallax(){
-  var scrolled = $(window).scrollTop();
-  $('.landing').css('top',-(scrolled*0.0315)+'rem');
-  $('.landing .column').css('top',-(scrolled*-0.005)+'rem');
-  $('.landing .column,#scroll-indicator').css('opacity',1-(scrolled*.00175));
-  $('#scroll-indicator').css('opacity',1-(scrolled*.005));
-};
 
 
 $(document).ready(function() {
