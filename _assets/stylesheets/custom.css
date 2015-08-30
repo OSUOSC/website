@@ -488,6 +488,31 @@ span.fa-angle-down {
 
 }
 
+@media (min-width: 550px) and (max-width: 750px) and (orientation: landscape) {
+
+  .landing {
+    height: 100vh;
+  }
+
+  #heading {
+    font-size: 85%!important;
+  }
+
+}
+
+@media (min-width: 750px) and (max-width: 1200px) and (orientation: landscape) {
+
+  .landing {
+    height: 100vh;
+  }
+
+  #heading {
+    font-size: 100%!important;
+  }
+
+}
+
+
 @media (max-width: 1200px) and (min-width: 550px) {
 
   .landing img {
@@ -622,10 +647,11 @@ span.fa-angle-down {
 
 }
 
-@media (max-width: 550px)  {
+@media (max-width: 350px)  {
 
   #page-content-wrapper.active  {
     transition: all 0.5s linear;
+    left: 100%;
   }
 
   #page-content-wrapper {
@@ -637,25 +663,27 @@ span.fa-angle-down {
   }
 
   .sidebar.active {
-    /*width: 65%;*/
+    width: 100vw;
+    left: 100vw;
     transition: all 0.5s linear;
     z-index: 9;
   }
 
   .sidebar {
-    /*width: 65%;*/
-    width: 35rem;
-  }
-
-  .sidebar {
     position: fixed;
+    width: 100vw;
     transition: all 0.5s linear;
   }
 
   .menu-toggle {
+    transition: none!important;
     left: 100%;
   }
 
+  .menu-toggle.active {
+    transition: all 0.5s linear;
+    left: 0;
+  }
 }
 
 
@@ -691,6 +719,31 @@ span.fa-angle-down {
 
 
 @media (min-width: 750px) and (max-width: 1200px) {
+  .sidebar {
+    left: 0;
+  }
+
+  #heading {
+      font-size: 135%;
+  }
+
+  .sidebar.active {
+    /*left: 35rem;*/
+    z-index: 9;
+  }
+
+  .menu-toggle {
+    /*position: absolute;*/
+    left: 100%;
+  }
+
+  #page-content-wrapper {
+    left: 0;
+    transform: translateX(0%);
+  }
+}
+
+@media (min-width: 350px) and (max-width: 750px) {
   .sidebar {
     left: 0;
   }
