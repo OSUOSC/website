@@ -4,10 +4,6 @@
 
 ## Setting up development
 
-### Linux
-
-    gem install
-
 ### OSX
 
 You'll need to install Ruby 2.2.2, and the easiest way to do this is with [rvm](https://rvm.io/), the Ruby Version Manager.
@@ -19,28 +15,20 @@ Assuming you have Homebrew installed:
     \curl -sSL https://get.rvm.io | bash -s stable
     source ~/.profile
     rvm install 2.2.2
-    rvm list
-    gem install bundler
-    cd /path/to/this/repository
-    bundle install
 
 ## Development
 
-Run `jekyll serve` in the root directory of this project.
+####Requirements
+- java > 1.4
+- ruby 2.2.2
 
-# Repositories Used
-- [Jekyll](https://github.com/jekyll/jekyll "Jekyll")
-- [Jekyll-Assets](https://github.com/ixti/jekyll-assets "Jekyll-Assets")
-- [Skel](https://github.com/n33/skel "Skel")
-- [Font Awesome](https://github.com/FortAwesome/Font-Awesome "Font Awesome")
-- [Simptip](https://github.com/arashmanteghi/simptip "Simptip")
-- [YUI Compressor](https://github.com/sstephenson/ruby-yui-compressor "YUI Compressor")
-- [Sitemap Generator](https://github.com/kinnetica/jekyll-plugins "Sitemap Generator")
 
-To run locally:
-`gem install jekyll jekyll-assets yui-compressor`
+####In the root directory of this project:
+`gem install bundler`
 
-then run the following command: `jekyll s` inside of the directory
+Install gem dependencies
+`bundle install`
 
-acess the site at `localhost:4000`
+Execute `jekyll s` to start a development server accessible at http://localhost:4000/
 
+If you would only like to generate the static site, you may execute: `jekyll b`
