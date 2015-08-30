@@ -1,6 +1,6 @@
 # The Open Source Club at The Ohio State University Website
 
-[![Build Status](https://travis-ci.org/CWDG/open-source-club-website.svg?branch=master)](https://travis-ci.org/CWDG/open-source-club-website)
+[![Build Status](https://travis-ci.org/OSUOSC/open-source-club-website.svg?branch=master)](https://travis-ci.org/OSUOSC/open-source-club-website)
 
 ## Setting up development
 
