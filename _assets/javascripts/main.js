@@ -10,7 +10,7 @@ jQuery(document).ready( function(){
 
   // $('#main-nav').addClass('animated slideInLeft').removeClass('hidden');
 
-  $('.sidebar-icons').addClass("animated fadeIn").removeClass('hidden');
+  // $('.sidebar-icons').addClass("animated fadeIn").removeClass('hidden');
 
   $('#scroll-indicator').addClass('animated bounce').removeClass('hidden');
 });
