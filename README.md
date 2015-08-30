@@ -27,6 +27,7 @@ Assuming you have Homebrew installed:
 `gem install bundler`
 
 Install gem dependencies
+
 `bundle install`
 
 Execute `jekyll s` to start a development server accessible at http://localhost:4000/
