@@ -508,8 +508,12 @@ span.fa-angle-down {
     line-height: inherit;
     color: #fff;
     font-family: 'FontAwesome';
-    content: '\f039';
+    content: '\f0c9';
     text-align: center;
+  }
+
+  .menu-toggle.active:before {
+    content: '\f00d';
   }
 
   .menu-toggle:hover {
