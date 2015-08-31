@@ -107,15 +107,14 @@ hr {
 /* offset content for sidebar */
 #page-content-wrapper {
   float: left;
-  z-index: 8;
   position: absolute;
   left: 35rem;
   width: inherit;
   background: #fff;
 
-  -webkit-box-shadow: -10px -10px 20px 0 rgba(0,0,0,0.20);
-  -moz-box-shadow: -10px -10px 20px 0 rgba(0,0,0,0.20);
-  box-shadow: -10px -10px 20px 0 rgba(0,0,0,0.20);
+  -webkit-box-shadow: -10px -10px 20px 0 rgba(0,0,0,0.35);
+  -moz-box-shadow: -10px -10px 20px 0 rgba(0,0,0,0.35);
+  box-shadow: -10px -10px 20px 0 rgba(0,0,0,0.35);
 }
 
 #main-nav {
@@ -428,6 +427,10 @@ span.fa-angle-down {
     display: none;
   }
 
+  #page-content-wrapper {
+    z-index: 9;
+  }
+
   .layout-desktop {
     display: inherit;
   }
@@ -638,6 +641,7 @@ span.fa-angle-down {
   #page-content-wrapper.active {
     /*transform: translateX(35rem);*/
     position: fixed;
+    z-index: 8;
     left: 35rem;
   }
 
