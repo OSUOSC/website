@@ -6,10 +6,10 @@ canvas {
   position: relative;
   width: 100%;
   height: 100%;
-  filter: saturate(50%) hue-rotate(40deg) brightness(110%) grayscale(65%);
-  -webkit-filter: saturate(50%) hue-rotate(40deg) brightness(110%) grayscale(65%);
+  filter: saturate(50%) hue-rotate(-50deg) brightness(110%) grayscale(65%);
+  -webkit-filter: saturate(50%) hue-rotate(-50deg) brightness(110%) grayscale(65%);
   z-index: 1;
-  opacity: 0.9;
+  opacity: 0;
 
 }
 
@@ -125,7 +125,7 @@ hr {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .landing {
   text-align: center;
-  background: rgba(0,0,0,0.8);
+  background: rgb(255,255,255);
 }
 
 .menu-toggle+.posts {
@@ -182,7 +182,7 @@ span:only-child {
 }
 
 .landing .button-primary {
-  background: rgba(75,75,75,0.5);
+  background: rgba(75,75,75,0.35);
   border: 0;
   border-radius: 0!important;
   transition: 0.3s ease;
@@ -288,6 +288,10 @@ span.fa-angle-down {
     background-color: #fff;
     position: relative;
     z-index: 2;
+}
+
+.section.posts>.container {
+  margin-top: 2em;
 }
 
 .posts ul{
@@ -475,6 +479,11 @@ span.fa-angle-down {
     font-size: 100%!important;
   }
 
+  .sidebar.active {
+    -webkit-box-shadow: 5px 0 20px 0 rgba(0,0,0,0.35);
+    -moz-box-shadow: 5px 0 20px 0 rgba(0,0,0,0.35);
+    box-shadow: 5px 0 20px 0 rgba(0,0,0,0.35);
+  }
 }
 
 
@@ -558,7 +567,7 @@ span.fa-angle-down {
     width: 5em;
     height: 5em;
     z-index: 9;
-    background: rgba(75,75,75,0.5);
+    background: rgba(75,75,75,0.35);
     line-height: 5em;
     -webkit-box-shadow:  0 1px 5px 1px rgba(0,0,0,0.25);
     -moz-box-shadow:  0 1px 5px 1px rgba(0,0,0,0.25);
@@ -586,7 +595,7 @@ span.fa-angle-down {
 
   .menu-toggle:hover {
     transition: 1s ease;
-    background: rgb(75,75,75);
+    /*background: rgb(75,75,75);*/
   }
 
   .sidebar {
