@@ -148,7 +148,7 @@ $menulink.click(function() {
                     }
                     break;
                 case "SE":
-                    for (var h = 1; h <= height; h++) {
+                    for (var h = 0.1; h <= height; h++) {
                         if (u.boxShadow != false) c += h * 2 + "px " + h * 2 + "px 0px " + s(r, 50 - h / height * 100);
                         if (u.fade != false) {
                             var p = s(f, 100 - h / height * 100)
@@ -224,10 +224,8 @@ $menulink.click(function() {
                     break
             }
             el.css({
-                background: i,
-                color: o(i, 1),
-                "text-shadow": l,
-                "box-shadow": c
+                // background: i,
+                "text-shadow": l
             })
         })
     }
@@ -235,24 +233,52 @@ $menulink.click(function() {
 $(document).ready(function() {
     RandHexVal = "#" + ("000000" + (Math.random() * 16777215 << 0).toString(16)).slice(-6);
     $("[class*='flat']").flatshadow({
-        color: "#c0392b",
-        angle: "SE",
-        fade: false,
-        boxShadow: "#222"
+      color: "#c0392b",
+      angle: "SE",
+      fade: false,
+      boxShadow: "#222"
     });
-
+    $(".flat-blue").flatshadow({
+      color: "#34495e",
+      angle: "SE",
+      fade: false,
+      boxShadow: "#333"
+    });
     $(".flat-turq").flatshadow({
-        color: "#3498db",
-        angle: "SE",
-        fade: false,
-        boxShadow: "#333"
+      color: "#3498db",
+      angle: "SE",
+      fade: false,
+      boxShadow: "#333"
     });
-
+    $(".flat-grey").flatshadow({
+      color: "#ccc",
+      angle: "SE",
+      fade: false,
+      boxShadow: "#333"
+    });
     $(".flat-pink").flatshadow({
-        color: "#8e44ad",
-        angle: "SE",
-        fade: false,
-        boxShadow: "#333"
+      color: "#8e44ad",
+      angle: "SE",
+      fade: false,
+      boxShadow: "#333"
     });
+    $(".flat-orange").flatshadow({
+      color: "#e67e22",
+      angle: "SE",
+      fade: false,
+      boxShadow: "#333"
+    });
+    $(".flat-green").flatshadow({
+      color: "#2ecc71",
+      angle: "SE",
+      fade: false,
+      boxShadow: "#333"
+    });
+    $(".flat-random").flatshadow({
+      color: RandHexVal,
+      angle: "SE",
+      fade: false,
+      boxShadow: "#333"
+    })
 
 })
