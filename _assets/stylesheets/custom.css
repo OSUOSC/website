@@ -48,7 +48,7 @@ hr {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .sidebar {
   /*background: linear-gradient( #EFEFEF, #FFF);*/
-  background: #E5E5E5;
+  background: #fff;
   left: 0px;
   text-align: right;
   position: fixed;
@@ -59,9 +59,12 @@ hr {
   z-index: 9;
   width: 35rem;
   perspective: 100em;
-  -webkit-box-shadow: inset 0 15px 15px 0 rgba(0,0,2,0.15);
-  -moz-box-shadow: inset 0 15px 15px 0 rgba(0,0,2,0.15);
-  box-shadow: inset 0 15px 15px 0 rgba(0,0,2,0.15);
+}
+
+.sidebar, .sidebar-secondary {
+  -webkit-box-shadow: inset 0 0 35px 0 rgba(0,0,2,0.35);
+  -moz-box-shadow: inset 0 0 355px 0 rgba(0,0,2,0.35);
+  box-shadow: inset 0 0 35px 0 rgba(0,0,2,0.35);
 }
 
 .sidebar a {
@@ -81,7 +84,7 @@ hr {
   font-size: 1.5em;
   color: #222;
   line-height: 1.75em;
-  background: #dfdfdf;
+  background: #EFEFEF;
   text-align: center;
   padding: 0.1em 0;
   margin-bottom: 1em;
@@ -131,6 +134,10 @@ hr {
   /*-webkit-box-shadow: -10px -10px 20px 0 rgba(0,0,0,0.15);
   -moz-box-shadow: -10px -10px 20px 0 rgba(0,0,0,0.15);
   box-shadow: -10px -10px 20px 0 rgba(0,0,0,0.15);*/
+}
+
+.sidebar+#page-content-wrapper>.section.posts {
+    padding: 2em 0;
 }
 
 .landing:before {
@@ -192,18 +199,12 @@ ul.footer-info {
   margin-bottom: 1.2rem;
 }
 
-span:only-child {
+.section.posts span:only-child {
     text-align: center;
     display: block;
 }
 /* landing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-/* landing fills entire viewport */
-/*.landing {
-  height: 100vh;
-
-}*/
 
 /* osc logo */
 .landing img {
@@ -247,7 +248,7 @@ span:only-child {
 }
 
 .landing .button-primary:hover {
-  background: rgb(75,75,75);
+  background: #848484;
   border: 0;
   border-radius: 0!important;
   transition: 0.3s ease;
@@ -263,8 +264,8 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-  background: rgb(75,75,75);
-  border-color: rgb(75,75,75);
+  background: #848484;
+  border-color: #848484;
   color: #fff;
 }
 
@@ -320,7 +321,6 @@ span.fa-angle-down {
 .about h5 {
   margin: 2em -1.5% 2em 0;
 }
-
 
 .about-multiplier {
   margin-bottom: .5rem;
@@ -609,6 +609,12 @@ ul.contact-info {
 
   #page-content-wrapper {
     z-index: 9;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s linear;
+    position: absolute;
+    left: 35rem;
+    width: inherit;
   }
 
   .layout-desktop {
@@ -754,9 +760,9 @@ ul.contact-info {
     z-index: 9;
     background: rgba(75,75,75,0.35);
     line-height: 5em;
-    -webkit-box-shadow:  0 1px 5px 1px rgba(0,0,0,0.25);
-    -moz-box-shadow:  0 1px 5px 1px rgba(0,0,0,0.25);
-    box-shadow:  0 1px 5px 1px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.45);
+    -moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.45);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.45);
   }
 
   .menu-toggle:before {
@@ -826,9 +832,6 @@ ul.contact-info {
     margin-top: 3em;
   }
 
-  #brand {
-  }
-
   #page-content-wrapper {
     /*transform: translateX(-15%);*/
     width: 100%;
@@ -841,6 +844,8 @@ ul.contact-info {
   #page-content-wrapper.active {
     /*transform: translateX(35rem);*/
     position: fixed;
+    overflow-x: hidden;
+    overflow-y: scroll;
     z-index: 8;
     left: 35rem;
   }
@@ -1124,7 +1129,7 @@ ul.sidebar-icons li>a {
   bottom: 4em;
   width: 100%;
   z-index: 8;
-  background: linear-gradient(to top, #D0D0D0 0%, #DFDFDF 5%, #DFDFDF 95%, #D0D0D0 100%);
+  background: linear-gradient(to top, #dadada 0%, #EFEFEF 5%, #EFEFEF 95%, #dadada 100%);
 }
 
 #sidebar-secondary-wrapper {
