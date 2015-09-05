@@ -665,6 +665,12 @@ ul.contact-info {
 
   .landing {
     padding: 0;
+    /*FIXME*/
+    height: 50vh;
+  }
+
+  #heading-wrapper {
+    transform: translateY(-150%);
   }
 
   #brand {
