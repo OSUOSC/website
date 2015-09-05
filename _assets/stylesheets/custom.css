@@ -72,26 +72,39 @@ hr {
 
 .sidebar li>a {
   font-weight: 400;
+  z-index: 10;
 }
 
 .sidebar li {
-  indent: 20px;
-  transition:0.5s ease;
-  padding-right: 3em;
+  transition: all 0.5s ease;
   font-weight: 300;
-  font-size: 1.75em;
-  line-height: inherit;
+  font-size: 1.5em;
   color: #222;
+  line-height: 1.75em;
+  background: #dfdfdf;
+  text-align: center;
+  padding: 0.1em 0;
+  margin-bottom: 1em;
+  -webkit-box-shadow: inset 0 1px 2px 0 #d0d0d0;
+  -moz-box-shadow: inset 0 1px 2px 0 #d0d0d0;
+  box-shadow: inset 0 1px 2px 0 #d0d0d0;
 }
 
 .sidebar #main-nav li:hover {
-  background-color:#4B4B4B;
+  transition: all 0.5s ease;
+  background-color: #848484;
+  color: #fff;
   cursor:pointer;
-  text-indent: 30px;
-  padding-right: 1em;
-  line-height: inherit;
   transition: all 0.1s linear;
+  -webkit-box-shadow: inset 0 1px 2px 0 #777;
+  -moz-box-shadow: inset 0 1px 2px 0 #777;
+  box-shadow: inset 0 1px 2px 0 #777;
 }
+
+.sidebar #main-nav {
+  margin: 0 5em;
+}
+
 
 #heading-wrapper {
   position: absolute;
@@ -1119,6 +1132,7 @@ ul.sidebar-icons li>a {
   width: 100%;
   top: 0;
   height: 100vh;
+  z-index: -1;
 }
 
 ul.sidebar-icons li:not(:last-of-type) {
