@@ -47,7 +47,8 @@ hr {
 /* Side Bar
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .sidebar {
-  background: linear-gradient( #EFEFEF, #FFF);
+  /*background: linear-gradient( #EFEFEF, #FFF);*/
+  background: #E5E5E5;
   left: 0px;
   text-align: right;
   position: fixed;
@@ -61,7 +62,6 @@ hr {
   -webkit-box-shadow: inset 0 15px 15px 0 rgba(0,0,2,0.15);
   -moz-box-shadow: inset 0 15px 15px 0 rgba(0,0,2,0.15);
   box-shadow: inset 0 15px 15px 0 rgba(0,0,2,0.15);
-  bottom: 3em;
 }
 
 .sidebar a {
@@ -75,12 +75,13 @@ hr {
 }
 
 .sidebar li {
-  dent: 20px;
+  indent: 20px;
   transition:0.5s ease;
-  padding-right: 2em;
+  padding-right: 3em;
   font-weight: 300;
   font-size: 1.75em;
   line-height: inherit;
+  color: #222;
 }
 
 .sidebar #main-nav li:hover {
@@ -166,7 +167,7 @@ ul.footer-info {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .landing {
   text-align: center;
-  /*background: #fff;*/
+  background: #D5E7F0;
 }
 
 .menu-toggle+.posts {
@@ -276,46 +277,19 @@ span.fa-angle-down {
 
 /* about
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.onsale {
-  position: relative;
-  display: inline-block;
-  background: #6ec5d5;
-  padding: 12px 8px 6px;
-  border-top-right-radius: 8px;
-  width: 84px;
-  height: 10px;
-}
-
-.onsale:before,
-.onsale:after {
-  position: absolute;
-  content: '';
-  display: block;
-}
-
-.onsale:before {
-  background: #6ec5d5;
-  height: 7px;
-  width: 6px;
-  left: -6px;
-  top: 0;
-}
-
-.about:after {
+.about:before {
   left: 0;
   top: 100%;
   position: absolute;
   content: '';
   display: block;
-  border-left: 25px solid transparent;
+  border-left: 100px solid transparent;
   border-bottom: 25px solid transparent;
-  border-top: 20px solid #B3B3B3;
+  border-top: 65px solid #b3b3b3;
 }
 
 .about {
   position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
   color: #fff;
   padding: 0!important;
   text-align: center;
@@ -325,28 +299,15 @@ span.fa-angle-down {
   -webkit-box-shadow: 0 6px 25px -5px rgba(0,0,0,0.5);
   -moz-box-shadow: 0 6px 25px -5px rgba(0,0,0,0.5);
   box-shadow: 0 6px 25px -5px rgba(0,0,0,0.5);
-  left: -2%;
-  width: 102%;
+  left: -1.5%;
+  width: 101.5%;
+  background: #848484;
 }
 
 .about h5 {
-  margin: 2em -2% 2em 0;
+  margin: 2em -1.5% 2em 0;
 }
 
-.about:before {
-  content: "";
-	display: block;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: rgba(102, 102, 102, .8);
-	-moz-transition: background .3s linear;
-	-webkit-transition: background .3s linear;
-	-o-transition: background .3s linear;
-	transition: background .3s linear;
-}
 
 .about-multiplier {
   margin-bottom: .5rem;
@@ -365,7 +326,7 @@ span.fa-angle-down {
 }
 
 #contact {
-  background: linear-gradient(to top, #DADADA 0%, #efefef 3%, #efefef 98%, #C1C1C1 100%);
+  background: linear-gradient(to top, #DADADA 0%, #efefef 3%, #efefef 98%, #DADADA 100%);
 }
 
 .contact-info li {
@@ -438,12 +399,6 @@ span.fa-angle-down {
   background: rgb(52, 73, 94);
 }
 
-
-
-
-
-
-
 .contact-info>li .info-wrapper {
   text-align: left;
   font-size: 3.5rem;
@@ -464,6 +419,12 @@ ul.contact-info {
   margin: 0;
 }
 
+#spacer {
+  height: 4em;
+  width: inherit;
+  background: #fff;
+  background: linear-gradient(to top, #D5E7F0 85%, #C1C1C1 100%);
+}
 /* Posts
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .section.posts {
@@ -1129,7 +1090,7 @@ ul.contact-info {
 
 ul.sidebar-icons {
   position: relative;
-  margin: 3em 0 0 0;
+  margin: 3em 0;
   z-index: 7;
   display: inline-flex;
   transition: none;
@@ -1150,6 +1111,7 @@ ul.sidebar-icons li>a {
   bottom: 4em;
   width: 100%;
   z-index: 8;
+  background: linear-gradient(to top, #D0D0D0 0%, #DFDFDF 5%, #DFDFDF 95%, #D0D0D0 100%);
 }
 
 #sidebar-secondary-wrapper {
