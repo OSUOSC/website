@@ -658,11 +658,6 @@ ul.contact-info {
     font-size: 100%!important;
   }
 
-  .sidebar.active {
-    -webkit-box-shadow: 5px 0 20px 0 rgba(0,0,0,0.35);
-    -moz-box-shadow: 5px 0 20px 0 rgba(0,0,0,0.35);
-    box-shadow: 5px 0 20px 0 rgba(0,0,0,0.35);
-  }
 }
 
 
