@@ -540,7 +540,10 @@ ul.contact-info {
   }
 
   .landing-depth-effect {
-    width: 100%;
+      background: #848484;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
   }
 
   .landing-depth-effect:before {
@@ -630,27 +633,23 @@ ul.contact-info {
   }
 
   .landing-depth-effect {
-    width: 84%;
-  }
+      background: #848484;
+      width: 81%;
+      height: 100%;
+      margin: 0 auto;
+      -webkit-box-shadow: 0 -50px 20px 0 rgba(0,0, 0,0.25);
+      -moz-box-shadow: 0 -50px 20px 0 rgba(0,0, 0,0.25);
+      box-shadow: 0 -50px 20px 0 rgba(0,0, 0,0.25);
+    }
 
   .landing-depth-effect:before {
     left: 0;
     width: 100%;
-    -webkit-transform: perspective(1000rem) scaleY(.5) skewX(-9deg) rotateX(88.5deg);
-    -moz-transform: perspective(1000rem) scaleY(.5) skewX(-9deg) rotateX(88.5deg);
-    -ms-transform: perspective(1000rem) scaleY(.5) skewX(-9deg) rotateX(88.5deg);
-    -o-transform: perspective(1000rem) scaleY(.5) skewX(-9deg) rotateX(88.5deg);
-    transform: perspective(1000rem) scaleY(.5) skewX(-9deg) rotateX(88.5deg);
   }
 
   .landing-depth-effect:after {
     left: 0;
     width: 100%;
-    -webkit-transform: perspective(1000rem) scaleY(.5) skewX(-9deg) rotateX(88.5deg);
-    -moz-transform: perspective(1000rem) scaleY(.5) skewX(-9deg) rotateX(88.5deg);
-    -ms-transform: perspective(1000rem) scaleY(.5) skewX(-9deg) rotateX(88.5deg);
-    -o-transform: perspective(1000rem) scaleY(.5) skewX(-9deg) rotateX(88.5deg);
-    transform: perspective(1000rem) scaleY(.5) skewX(-9deg) rotateX(88.5deg);
   }
 
   .section.about {
@@ -1062,6 +1061,16 @@ ul.contact-info {
       left: 0;
       width: 100%;
     }
+
+    .landing-depth-effect {
+        background: #848484;
+        width: 81%;
+        height: 100%;
+        margin: 0 auto;
+        -webkit-box-shadow: 0 -50px 20px 0 rgba(0,0, 0,0.25);
+        -moz-box-shadow: 0 -50px 20px 0 rgba(0,0, 0,0.25);
+        box-shadow: 0 -50px 20px 0 rgba(0,0, 0,0.25);
+      }
 }
 
 @media (min-width: 350px) and (max-width: 750px) {
@@ -1137,11 +1146,11 @@ ul.contact-info {
 
 .landing-depth-effect:before {
   content: '';
-  left: -1.5%;
+  /*left: -1.5%;*/
   top: -50%;
   background: #939393;
   position: absolute;
-  width: 101.5%;
+  /*width: 101.5%;*/
   height: 100%;
   -webkit-transform-origin: 50% 100%;
   -moz-transform-origin: 50% 100%;
@@ -1157,11 +1166,10 @@ ul.contact-info {
 
 .landing-depth-effect:after {
   content: '';
-  left: -1.5%;
   bottom: 50%;
   background: #848484;
   position: absolute;
-  width: 101.5%;
+  /*width: 101.5%;*/
   height: 25px;
   -webkit-transform-origin: 50% 100%;
   -moz-transform-origin: 50% 100%;
