@@ -166,16 +166,6 @@ hr {
     padding: 2em 0;
 }
 
-.sidebar+#page-content-wrapper:not(.index) {
-    width: 100%;
-}
-
-.sidebar+#page-content-wrapper>.section.posts:only-child>.container {
-  width: 50%;
-  /*FIXME*/
-  left: -17.5rem;
-}
-
 #main-nav {
   padding-top: 6em;
 }
@@ -707,6 +697,16 @@ ul.contact-info {
 
   #social-media {
     width: 15%;
+  }
+
+  .sidebar+#page-content-wrapper:not(.index) {
+      width: 100%;
+  }
+
+  .sidebar+#page-content-wrapper>.section.posts:only-child>.container {
+    width: 50%;
+    /*FIXME*/
+    left: -17.5rem;
   }
 
 }
