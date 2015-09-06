@@ -280,14 +280,10 @@ ul.footer-info {
 }
 
 .landing .button-primary:hover {
-  background: #777777;
+  background: rgba(75,75,75,0.65);
   border: 0;
   border-radius: 0!important;
-  transition: 0.3s ease;
-  transition: .3s ease;
-  -webkit-box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.45);
-  -moz-box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.45);
-  box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.45);
+  transition: all 0.3s ease;
 }
 
 
@@ -555,33 +551,6 @@ ul.contact-info {
     padding: 3rem 0 3rem;
   }
 
-  .landing-depth-effect {
-      background: #848484;
-      width: 100%;
-      height: 100%;
-      margin: 0 auto;
-  }
-
-  .landing-depth-effect:before {
-    left: 0;
-    width: 100%;
-    -webkit-transform: perspective(1500rem) scaleY(.5) rotateX(89deg);
-    -moz-transform: perspective(1500rem) scaleY(.5) rotateX(89deg);
-    -ms-transform: perspective(1500rem) scaleY(.5) rotateX(89deg);
-    -o-transform: perspective(1500rem) scaleY(.5) rotateX(89deg);
-    transform: perspective(1500rem) scaleY(.5) rotateX(89deg);
-  }
-
-  .landing-depth-effect:after {
-    left: 0;
-    width: 100%;
-    -webkit-transform: perspective(1500rem) scaleY(.5) rotateX(89deg);
-    -moz-transform: perspective(1500rem) scaleY(.5) rotateX(89deg);
-    -ms-transform: perspective(1500rem) scaleY(.5) rotateX(89deg);
-    -o-transform: perspective(1500rem) scaleY(.5) rotateX(89deg);
-    transform: perspective(1500rem) scaleY(.5) rotateX(89deg);
-  }
-
   .section.about {
     left: 0;
     width: 100%;
@@ -592,7 +561,7 @@ ul.contact-info {
     display: none;
   }
 
-  #spacer, .landing-depth-effect::before, .landing-depth-effect::after {
+  #spacer {
     display: none;
   }
 
@@ -646,26 +615,6 @@ ul.contact-info {
   .menu-toggle {
     /*position: absolute;*/
     left: 100%;
-  }
-
-  .landing-depth-effect {
-      background: #848484;
-      width: 81%;
-      height: 100%;
-      margin: 0 auto;
-      -webkit-box-shadow: 0 -50px 20px 0 rgba(0,0, 0,0.25);
-      -moz-box-shadow: 0 -50px 20px 0 rgba(0,0, 0,0.25);
-      box-shadow: 0 -50px 20px 0 rgba(0,0, 0,0.25);
-    }
-
-  .landing-depth-effect:before {
-    left: 0;
-    width: 100%;
-  }
-
-  .landing-depth-effect:after {
-    left: 0;
-    width: 100%;
   }
 
   .section.about {
@@ -740,14 +689,6 @@ ul.contact-info {
     height: 50vh;
   }
 
-  .landing-depth-effect:before {
-    top: -50%;
-  }
-
-  .landing-depth-effect:after {
-    bottom: 50%;
-  }
-
   #heading-wrapper {
     top: 25vh;
   }
@@ -773,14 +714,6 @@ ul.contact-info {
 @media (max-width: 1200px) and (orientation: portrait) {
   .landing {
     height: 50vh;
-  }
-
-  .landing-depth-effect:before {
-    top: -50%;
-  }
-
-  .landing-depth-effect:after {
-    bottom: 50%;
   }
 
   #heading-wrapper {
@@ -815,9 +748,6 @@ ul.contact-info {
     display: none!important;
   }
 
-  .landing-depth-effect:before {
-    top: -50%;
-  }
 
 }
 
@@ -1069,31 +999,11 @@ ul.contact-info {
     transform: translateX(0%);
   }
 
-
-    .landing-depth-effect:before {
-      left: 0;
-      width: 100%;
-    }
-
-    .landing-depth-effect:after {
-      left: 0;
-      width: 100%;
-    }
-
     .section.about {
       left: 0;
       width: 100%;
     }
 
-    .landing-depth-effect {
-        background: #848484;
-        width: 81%;
-        height: 100%;
-        margin: 0 auto;
-        -webkit-box-shadow: 0 -50px 20px 0 rgba(0,0, 0,0.25);
-        -moz-box-shadow: 0 -50px 20px 0 rgba(0,0, 0,0.25);
-        box-shadow: 0 -50px 20px 0 rgba(0,0, 0,0.25);
-      }
 }
 
 @media (min-width: 350px) and (max-width: 750px) {
@@ -1137,6 +1047,7 @@ ul.contact-info {
     html {
       font-size: 35%;
     }
+
 }
 
 /*@media
@@ -1150,250 +1061,8 @@ ul.contact-info {
     }
 }*/
 
-/*@media (min-width: 1500px) {
-  .landing-depth-effect {
-    width: 40%;
-  }
-}*/
 
 
-.landing-depth-effect {
-  background: #848484;
-  width: 80.5%;
-  height: 100%;
-  margin: 0 auto;
-  -webkit-box-shadow: 0 -50px 20px 0 rgba(0,0, 0,0.25);
-  -moz-box-shadow: 0 -50px 20px 0 rgba(0,0, 0,0.25);
-  box-shadow: 0 -50px 20px 0 rgba(0,0, 0,0.25);
-}
-
-.landing-depth-effect:before {
-  content: '';
-  /*left: -1.5%;*/
-  top: -50%;
-  background: #939393;
-  position: absolute;
-  /*width: 101.5%;*/
-  height: 100%;
-  -webkit-transform-origin: 50% 100%;
-  -moz-transform-origin: 50% 100%;
-  -ms-transform-origin: 50% 100%;
-  -o-transform-origin: 50% 100%;
-  transform-origin: 50% 100%;
-  -webkit-transform: perspective(800rem) scaleY(.5) rotateX(87deg);
-  -moz-transform: perspective(800rem) scaleY(.5) rotateX(87deg);
-  -ms-transform: perspective(800rem) scaleY(.5) rotateX(87deg);
-  -o-transform: perspective(800rem) scaleY(.5) rotateX(87deg);
-  transform: perspective(800rem) scaleY(.5) rotateX(87deg);
-}
-
-.landing-depth-effect:after {
-  content: '';
-  bottom: 50%;
-  background: #848484;
-  position: absolute;
-  /*width: 101.5%;*/
-  height: 25px;
-  -webkit-transform-origin: 50% 100%;
-  -moz-transform-origin: 50% 100%;
-  -ms-transform-origin: 50% 100%;
-  -o-transform-origin: 50% 100%;
-  transform-origin: 50% 100%;
-  -webkit-transform: perspective(800rem) scaleY(.5) rotateX(87deg);
-  -moz-transform: perspective(800rem) scaleY(.5) rotateX(87deg);
-  -ms-transform: perspective(800rem) scaleY(.5) rotateX(87deg);
-  -o-transform: perspective(800rem) scaleY(.5) rotateX(87deg);
-  transform: perspective(800rem) scaleY(.5) rotateX(87deg);
-}
-
-
-@media (min-width: 1200px) and (max-width: 2000px) {
-  .landing-depth-effect {
-    background: #848484;
-    width: 81.5%;
-    height: 100%;
-    margin: 0 auto;
-    -webkit-box-shadow: 0 -50px 20px 0 rgba(0,0, 0,0.25);
-    -moz-box-shadow: 0 -50px 20px 0 rgba(0,0, 0,0.25);
-    box-shadow: 0 -50px 20px 0 rgba(0,0, 0,0.25);
-  }
-
-  .landing-depth-effect::before {
-    content: '';
-    left: -1.5%;
-    top: -50%;
-    background: #939393;
-    position: absolute;
-    width: 101.5%;
-    height: 100%;
-    -webkit-transform-origin: 50% 100%;
-    -moz-transform-origin: 50% 100%;
-    -ms-transform-origin: 50% 100%;
-    -o-transform-origin: 50% 100%;
-    transform-origin: 50% 100%;
-    -webkit-transform: perspective(800rem) scaleY(.5) skewX(-9deg) rotateX(87deg);
-    -moz-transform: perspective(800rem) scaleY(.5) skewX(-9deg) rotateX(87deg);
-    -ms-transform: perspective(800rem) scaleY(.5) skewX(-9deg) rotateX(87deg);
-    -o-transform: perspective(800rem) scaleY(.5) skewX(-9deg) rotateX(87deg);
-    transform: perspective(800rem) scaleY(.5) skewX(-9deg) rotateX(87deg);
-  }
-
-  .landing-depth-effect::after {
-    content: '';
-    left: -1.5%;
-    bottom: 50%;
-    background: #848484;
-    position: absolute;
-    width: 101.5%;
-    height: 20%;
-    -webkit-transform-origin: 50% 100%;
-    -moz-transform-origin: 50% 100%;
-    -ms-transform-origin: 50% 100%;
-    -o-transform-origin: 50% 100%;
-    transform-origin: 50% 100%;
-    -webkit-transform: perspective(800rem) scaleY(.5) skewX(-9deg) rotateX(87deg);
-    -moz-transform: perspective(800rem) scaleY(.5) skewX(-9deg) rotateX(87deg);
-    -ms-transform: perspective(800rem) scaleY(.5) skewX(-9deg) rotateX(87deg);
-    -o-transform: perspective(800rem) scaleY(.5) skewX(-9deg) rotateX(87deg);
-    transform: perspective(800rem) scaleY(.5) skewX(-9deg) rotateX(87deg);
-  }
-
-}
-
-
-
-@media (min-width: 2000px) and (max-width: 3000px) {
-  .landing-depth-effect::before {
-    -webkit-transform: perspective(800rem) scaleY(.5) skewX(-16deg) rotateX(87deg);
-    -moz-transform: perspective(800rem) scaleY(.5) skewX(-16deg) rotateX(87deg);
-    -ms-transform: perspective(800rem) scaleY(.5) skewX(-16deg) rotateX(87deg);
-    -o-transform: perspective(800rem) scaleY(.5) skewX(-16deg) rotateX(87deg);
-    transform: perspective(800rem) scaleY(.5) skewX(-16deg) rotateX(87deg);
-  }
-
-  .landing-depth-effect {
-    background: #848484;
-    width: 81.5%;
-    height: 100%;
-    margin: 0 auto;
-    -webkit-box-shadow: 0 -50px 20px 0 rgba(0,0, 0,0.25);
-    -moz-box-shadow: 0 -50px 20px 0 rgba(0,0, 0,0.25);
-    box-shadow: 0 -50px 20px 0 rgba(0,0, 0,0.25);
-  }
-
-  .landing-depth-effect::before {
-    content: '';
-    left: -1.5%;
-    top: -50%;
-    background: #939393;
-    position: absolute;
-    width: 101.5%;
-    height: 100%;
-    -webkit-transform-origin: 50% 100%;
-    -moz-transform-origin: 50% 100%;
-    -ms-transform-origin: 50% 100%;
-    -o-transform-origin: 50% 100%;
-    transform-origin: 50% 100%;
-    -webkit-transform: perspective(800rem) scaleY(.5) skewX(-16deg) rotateX(87deg);
-    -moz-transform: perspective(800rem) scaleY(.5) skewX(-16deg) rotateX(87deg);
-    -ms-transform: perspective(800rem) scaleY(.5) skewX(-16deg) rotateX(87deg);
-    -o-transform: perspective(800rem) scaleY(.5) skewX(-16deg) rotateX(87deg);
-    transform: perspective(800rem) scaleY(.5) skewX(-16deg) rotateX(87deg);
-  }
-
-  .landing-depth-effect::after {
-    content: '';
-    left: -1.5%;
-    bottom: 50%;
-    background: #848484;
-    position: absolute;
-    width: 101.5%;
-    height: 20%;
-    -webkit-transform-origin: 50% 100%;
-    -moz-transform-origin: 50% 100%;
-    -ms-transform-origin: 50% 100%;
-    -o-transform-origin: 50% 100%;
-    transform-origin: 50% 100%;
-    -webkit-transform: perspective(800rem) scaleY(.5) skewX(-16deg) rotateX(87deg);
-    -moz-transform: perspective(800rem) scaleY(.5) skewX(-16deg) rotateX(87deg);
-    -ms-transform: perspective(800rem) scaleY(.5) skewX(-16deg) rotateX(87deg);
-    -o-transform: perspective(800rem) scaleY(.5) skewX(-16deg) rotateX(87deg);
-    transform: perspective(800rem) scaleY(.5) skewX(-16deg) rotateX(87deg);
-  }
-}
-
-@media (min-width: 3000px) {
-  .landing-depth-effect::before {
-    -webkit-transform: perspective(800rem) scaleY(.5) skewX(-23deg) rotateX(87deg);
-    -moz-transform: perspective(800rem) scaleY(.5) skewX(-23deg) rotateX(87deg);
-    -ms-transform: perspective(800rem) scaleY(.5) skewX(-23deg) rotateX(87deg);
-    -o-transform: perspective(800rem) scaleY(.5) skewX(-23deg) rotateX(87deg);
-    transform: perspective(800rem) scaleY(.5) skewX(-23deg) rotateX(87deg);
-  }
-
-  .landing-depth-effect {
-    background: #848484;
-    width: 81.75%;
-    height: 100%;
-    margin: 0 auto;
-    -webkit-box-shadow: 0 -50px 20px 0 rgba(0,0, 0,0.25);
-    -moz-box-shadow: 0 -50px 20px 0 rgba(0,0, 0,0.25);
-    box-shadow: 0 -50px 20px 0 rgba(0,0, 0,0.25);
-  }
-
-  .landing-depth-effect::before {
-    content: '';
-    left: -1.5%;
-    top: -50%;
-    background: #939393;
-    position: absolute;
-    width: 101.5%;
-    height: 100%;
-    -webkit-transform-origin: 50% 100%;
-    -moz-transform-origin: 50% 100%;
-    -ms-transform-origin: 50% 100%;
-    -o-transform-origin: 50% 100%;
-    transform-origin: 50% 100%;
-    -webkit-transform: perspective(800rem) scaleY(.5) skewX(-23deg) rotateX(87deg);
-    -moz-transform: perspective(800rem) scaleY(.5) skewX(-23deg) rotateX(87deg);
-    -ms-transform: perspective(800rem) scaleY(.5) skewX(-23deg) rotateX(87deg);
-    -o-transform: perspective(800rem) scaleY(.5) skewX(-23deg) rotateX(87deg);
-    transform: perspective(800rem) scaleY(.5) skewX(-23deg) rotateX(87deg);
-  }
-
-  .landing-depth-effect::after {
-    content: '';
-    left: -1.5%;
-    bottom: 50%;
-    background: #848484;
-    position: absolute;
-    width: 101.5%;
-    height: 20%;
-    -webkit-transform-origin: 50% 100%;
-    -moz-transform-origin: 50% 100%;
-    -ms-transform-origin: 50% 100%;
-    -o-transform-origin: 50% 100%;
-    transform-origin: 50% 100%;
-    -webkit-transform: perspective(800rem) scaleY(.5) skewX(-16deg) rotateX(87deg);
-    -moz-transform: perspective(800rem) scaleY(.5) skewX(-16deg) rotateX(87deg);
-    -ms-transform: perspective(800rem) scaleY(.5) skewX(-16deg) rotateX(87deg);
-    -o-transform: perspective(800rem) scaleY(.5) skewX(-16deg) rotateX(87deg);
-    transform: perspective(800rem) scaleY(.5) skewX(-16deg) rotateX(87deg);
-  }
-}
-
-
-/*@media (min-width: 2500px) {
-  .landing-depth-effect {
-    width: 40%;
-  }
-}*/
-
-/*@media (min-width: 3000px) {
-  .landing-depth-effect {
-    width: 39.6%;
-  }
-}*/
 
 
 /* Animate.css
