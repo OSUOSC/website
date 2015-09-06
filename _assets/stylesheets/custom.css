@@ -79,9 +79,9 @@ hr {
   -o-transform: translate(50%, -50%) rotate(45deg) translateY(7em);
   -ms-transform: translate(50%, -50%) rotate(45deg) translateY(7em);
   transform: translate(50%, -50%) rotate(45deg) translateY(7em);
-  -webkit-box-shadow: 0 0 1px 1px rgba(0,0,0,0.45);
-  -moz-box-shadow: 0 0 1px 1px rgba(0,0,0,0.45);
-  box-shadow: 0 0 1px 1px rgba(0,0,0,0.45);
+  -webkit-box-shadow: 0 0 1px 1px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0 0 1px 1px rgba(0,0,0,0.25);
+  box-shadow: 0 0 1px 1px rgba(0,0,0,0.25);
 }
 .github-ribbon:hover {
   background: #810000;
@@ -280,11 +280,17 @@ ul.footer-info {
 }
 
 .landing .button-primary:hover {
-  background: #848484;
+  background: #777777;
   border: 0;
   border-radius: 0!important;
   transition: 0.3s ease;
+  transition: .3s ease;
+  -webkit-box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.45);
+  -moz-box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.45);
+  box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.45);
 }
+
+
 
 .button.button-primary:hover,
 button.button-primary:hover,
@@ -1239,7 +1245,7 @@ ul.contact-info {
     background: #848484;
     position: absolute;
     width: 101.5%;
-    height: 25px;
+    height: 20%;
     -webkit-transform-origin: 50% 100%;
     -moz-transform-origin: 50% 100%;
     -ms-transform-origin: 50% 100%;
@@ -1302,7 +1308,7 @@ ul.contact-info {
     background: #848484;
     position: absolute;
     width: 101.5%;
-    height: 25px;
+    height: 20%;
     -webkit-transform-origin: 50% 100%;
     -moz-transform-origin: 50% 100%;
     -ms-transform-origin: 50% 100%;
@@ -1362,7 +1368,7 @@ ul.contact-info {
     background: #848484;
     position: absolute;
     width: 101.5%;
-    height: 25px;
+    height: 20%;
     -webkit-transform-origin: 50% 100%;
     -moz-transform-origin: 50% 100%;
     -ms-transform-origin: 50% 100%;
