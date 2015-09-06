@@ -705,6 +705,13 @@ ul.contact-info {
     display: table;
   }
 
+  .landing #heading a#button {
+    position: inherit;
+    display: inline-block;
+    z-index: 2;
+    margin-top: 3em;
+  }
+
   #page-content-wrapper {
     z-index: 9;
     width: 100%;
