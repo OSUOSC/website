@@ -104,20 +104,99 @@ hr {
   z-index: 10;
 }
 
-.sidebar li {
+/* Side Bar > Main Nav
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.sidebar #main-nav li {
+  color: #222;
+  text-align: left;
+}
+
+.sidebar #main-nav li {
   transition: all 0.5s ease;
   font-weight: 300;
   font-size: 1.5em;
-  color: #222;
-  line-height: 1.75em;
-  background: #EFEFEF;
-  text-align: center;
-  padding: 0.1em 0;
-  margin-bottom: 1em;
-  -webkit-box-shadow: inset 0 1px 2px 0 #d0d0d0;
-  -moz-box-shadow: inset 0 1px 2px 0 #d0d0d0;
-  box-shadow: inset 0 1px 2px 0 #d0d0d0;
+  line-height: 2.5em;
+  height: 2.5em;
+  margin-bottom: 0;
+  /*padding: 0.25em 0;*/
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.45);
+  -moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.45);
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.45);
 }
+
+.sidebar #main-nav li>span {
+  margin-left: 3.5em;
+}
+
+.sidebar #main-nav a>li:not(:last-of-type) {
+}
+
+#main-nav a:not(:last-of-type) {
+  margin-bottom: 1.5em;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.sidebar #main-nav li::before {
+  font-family: 'FontAwesome';
+  line-height: 2.5em;
+  height: 2.5em;
+  position: absolute;
+  width: 2.5em;
+  text-align: center;
+  color: #fff;
+  background: #848484;
+}
+
+.sidebar #main-nav a[href="/"] li {
+  /*background: rgb(52, 152, 219);*/
+}
+.sidebar #main-nav a[href="/"] li::before {
+  content: '\f015'
+}
+
+
+.sidebar #main-nav a[href="/meetings"] li {
+  /*background: rgb(52, 73, 94);*/
+}
+.sidebar #main-nav a[href="/meetings"] li::before {
+  content: '\f0c0';
+}
+
+
+.sidebar #main-nav a[href="/tutorials"] li {
+  /*background: rgb(47, 184, 105);*/
+}
+.sidebar #main-nav a[href="/tutorials"] li::before {
+  content: '\f02d';
+}
+
+
+.sidebar #main-nav a[href="/volunteering"] li {
+  /*background: rgb(230, 126, 34);*/
+}
+.sidebar #main-nav a[href="/volunteering"] li::before {
+  content: '\f234';
+}
+
+
+.sidebar #main-nav a[href="/events"] li {
+  /*background: rgb(47, 184, 105);*/
+}
+.sidebar #main-nav a[href="/events"] li::before {
+  content: '\f274';
+}
+
+
+.sidebar #main-nav a[href="/history"] li {
+  /*background: rgb(142, 68, 173);*/
+}
+.sidebar #main-nav a[href="/history"] li::before {
+  content: '\f187';
+}
+
 
 .sidebar #main-nav li:hover {
   transition: all 0.5s ease;
@@ -131,7 +210,7 @@ hr {
 }
 
 .sidebar #main-nav {
-  margin: 8em 5em 0 5em;
+  margin: 0 4em;
 }
 
 
