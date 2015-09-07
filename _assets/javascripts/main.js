@@ -28,6 +28,32 @@ $menulink.click(function() {
 
 
 
+// CURRENT PAGE INDICATOR
+
+$(function () {
+    setNavigation();
+});
+
+function setNavigation() {
+    var path = window.location.pathname;
+    path = path.replace(/\/$/, "");
+
+    $('#main-nav>a').each(function () {
+      var href = $(this).attr('href');
+
+      if ( path.substring(0, href.length) === href ) {
+        if ( href.length > 1 ) {
+          $(this).addClass('active');
+        }
+      }
+      else if ( href.length == 1 ) {
+        $(this).addClass('active');
+      }
+
+    });
+}
+
+
 
 // ICON SHADOWS
 
