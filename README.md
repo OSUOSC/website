@@ -19,7 +19,6 @@ Assuming you have Homebrew installed:
 ## Development
 
 ####Requirements
-- java > 1.4
 - ruby 2.2.2
 
 
