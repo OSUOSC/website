@@ -55,13 +55,13 @@ hr
   border-right: 1px solid #D5D5D5
 
 .github-ribbon
-  font-size: 1.2em
+  font-size: 1.5em
   background: #990101
-  height: 2em
+  height: 2.5em
   width: 20em
   text-align: center
   color: #f5f5f5
-  line-height: 2em
+  line-height: 2.5em
   position: absolute
   top: 0
   right: 0
@@ -350,11 +350,12 @@ span.fa-angle-down
   -webkit-box-shadow: 0 6px 25px -5px rgba(0, 0, 0, 0.5)
   -moz-box-shadow: 0 6px 25px -5px rgba(0, 0, 0, 0.5)
   box-shadow: 0 6px 25px -5px rgba(0, 0, 0, 0.5)
-  left: -1.5%
-  width: 101.5%
+  left: 0
+  width: 100%
   background: #848484
   h5
     margin: 2em -1.5% 2em 0
+    font-size: 185%
 
 .about-multiplier
   margin-bottom: .5rem
@@ -402,7 +403,9 @@ span.fa-angle-down
 
 .contact-info-email:before, .contact-info-office:before, .contact-info-meeting:before
   position: absolute
-  height: initial
+  height: 2.5em
+  // FIXME
+  // height: initial
   font-family: 'FontAwesome'
   text-align: center
   width: 12rem
@@ -459,6 +462,7 @@ ul.contact-info
   background-color: #fff
   position: relative
   z-index: 2
+  font-size: 135%
   /*-webkit-box-shadow: 2px 2px 25px -5px rgba(0,0,0,0.5);
    *-moz-box-shadow: 2px 2px 25px -5px rgba(0,0,0,0.5);
    *box-shadow: 2px 2px 25px -5px rgba(0,0,0,0.5);
@@ -754,15 +758,17 @@ ul.contact-info
     z-index: 2
     margin-top: 3em
   #page-content-wrapper
-    width: 100%
     height: 100%
     transition: all 0.5s linear
-    position: absolute
+    position: fixed
+    overflow-x: hidden
     left: 0
+    right: 0
     &.active
       position: fixed
       overflow-x: hidden
       overflow-y: scroll
+      width: auto
       z-index: 8
       left: 35rem
   #main-nav
@@ -770,9 +776,12 @@ ul.contact-info
 
 @media (max-width: 350px)
   #page-content-wrapper
+    right: initial
+    width: 100%
     &.active
       transition: all 0.5s linear
       left: 100%
+      width: 100%
     transition: all 0.5s linear
   #heading
     font-size: 115%
@@ -813,6 +822,7 @@ ul.contact-info
     left: 100%
   #page-content-wrapper
     left: 0
+    right: 0
     transform: translateX(0%)
   .section.about
     left: 0
@@ -829,7 +839,13 @@ ul.contact-info
     left: 100%
   #page-content-wrapper
     left: 0
+    width: 100%
     transform: translateX(0%)
+    position: fixed
+    right: initial
+    &.active
+      width: 100%
+      position: fixed
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5)
   html
