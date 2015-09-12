@@ -1,0 +1,27 @@
+{
+  "name": "open-source-club-website",
+  "version": "0.0.0",
+  "homepage": "https://github.com/OSUOSC/open-source-club-website",
+  "authors": [
+    "Eli Gladman <eli.gladman@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate-sass": "~0.6.4",
+    "font-awesome": "fontawesome#~4.4.0",
+    "jquery": "~2.1.4",
+    "normalize-scss": "3.0.3",
+    "normalize-strings": "normalize#~1.0.4",
+    "open-sans-fontface": "~1.4.2",
+    "raleway-fontface": "~0.1.0",
+    "skeleton": "~2.0.4",
+    "trianglify": "~0.3.1"
+  }
+}
