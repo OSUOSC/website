@@ -3,19 +3,6 @@ layout: home
 title: Certificate expired warning
 created: 1317410352
 categories: announcements
-excerpt: !ruby/string:Sequel::SQL::Blob "As of 11:42 AM on Saturday, October 1<sup>st</sup>,
-  our SSL certificate will expire. We are in the process of requesting a certificate
-  from a new and more trustworthy certificate authority, and have been for the past
-  month. The expired certificate will not be renewed. However, due to circumstances
-  beyond our control, we cannot have the new certificate deployed until Monday, October
-  3<sup>rd</sup>.\r\n\r\nThis means whenever you visit our website over a secure connection,
-  you will receive a warning from your web browser that the certificate is \"invalid\"
-  because it expired. This does not in any way mean your connection to our website
-  (or mail server) is compromised, and it's only a temporary issue. If you do not
-  feel comfortable proceeding to connect to our server with these security warnings,
-  you should wait until sometime Monday when we have the new certificate deployed.
-  We apologize for the inconvenience.\r\n\r\n<a href=\"/certificate\">Read signed
-  copy of this message</a>"
 ---
 <pre>-----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1

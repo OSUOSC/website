@@ -6,15 +6,14 @@ categories: announcements
 excerpt: !ruby/string:Sequel::SQL::Blob 'Below is a list of meetings from Spring 2010:'
 ---
 Below is a list of meetings from Spring 2010:
-<ol>
-<li><a href="/sp10/gimp">GIMP Image Editing</a></li>
-<li><a href="/sp10/language-lightning">Language Lightning Talks</a></li>
-<li><a href="/sp10/tipstricks">Tips and Tricks</a></li>
-<li><a href="/sp10/gis">Open Source GIS</a></li>
-<li><a href="/sp10/linuxonstuff">(Attempting) Linux on Anything</a></li>
-<li><a href="/sp10/slashdot">This Week In Slashdot</a></li>
-<li><a href="/sp10/mac">Mandatory Access Control</a></li>
-<li><a href="/sp10/gaming">Open Source Gaming</a></li>
-<li><a href="/sp10/shellcode">Shell Coding</a></li>
-<li><a href="/sp10/perl">Perl</a></li>
-</ol>
+
+1.  [GIMP Image Editing](/sp10/gimp)
+2.  [Language Lightning Talks](/sp10/language-lightning)
+3.  [Tips and Tricks](/sp10/tipstricks)
+4.  [Open Source GIS](/sp10/gis)
+5.  [(Attempting) Linux on Anything](/sp10/linuxonstuff)
+6.  [This Week In Slashdot](/sp10/slashdot)
+7.  [Mandatory Access Control](/sp10/mac)
+8.  [Open Source Gaming](/sp10/gaming)
+9.  [Shell Coding](/sp10/shellcode)
+10.  [Perl](/sp10/perl)
