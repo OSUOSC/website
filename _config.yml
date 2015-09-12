@@ -19,4 +19,9 @@ jekyll-press:
   css_options: {}     # css minifier options
   html_options: {}    # html minifier options
 
-exclude: [vendor]
+exclude:
+  - "node_modules"
+  - "package.json"
+  - "bower_components"
+  - "bower.json"
+  - "Gruntfile.coffee"
