@@ -2,7 +2,7 @@
 layout: home
 title: Subscribe To Announcements Mailing List
 created: 1157768487
-categories: announcements
+categories: tutorials
 ---
 ## Using The Mailing List
 
