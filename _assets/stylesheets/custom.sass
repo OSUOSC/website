@@ -30,17 +30,10 @@ hr
   border-top: 1px solid #333
   margin: 0 auto
 
-/* Shared
- *––––––––––––––––––––––––––––––––––––––––––––––––––
-
-.button
-  border-radius: 4px
-
 /* Side Bar
  *––––––––––––––––––––––––––––––––––––––––––––––––––
 
 .sidebar
-  /*background: linear-gradient( #EFEFEF, #FFF);
   background: #fff
   left: 0px
   text-align: right
@@ -78,11 +71,6 @@ hr
     background: #810000
 
 .sidebar
-  // -webkit-box-shadow: inset 0 0 12px 0 rgba(0, 0, 2, 0.35)
-  // -moz-box-shadow: inset 0 0 12px 0 rgba(0, 0, 2, 0.35)
-  // box-shadow: inset 0 0 12px 0 rgba(0, 0, 2, 0.35)
-
-.sidebar
   a
     text-decoration: none
     color: white
@@ -90,7 +78,6 @@ hr
   li > a
     font-weight: 400
     z-index: 10
-    // a > li:not(:last-of-type)
 
 /* Side Bar > Main Nav
  *––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -116,7 +103,6 @@ hr
     margin-right: 0.75em
     height: 2.5em
     font-weight: 400
-    // color: #fff
   a
     height: 4em
     width: 100%
@@ -137,7 +123,6 @@ hr
       &:hover
         transition: all 0.35s ease
         background: darken(rgba(166, 166, 166, 0.25), 15%)
-        // background-color: #b00
       &::before
         content: ""
         width: 0.5em
@@ -173,18 +158,8 @@ hr
       &::before
         content: '\f187'
 
-#heading-wrapper
-  position: absolute
-  width: 100%
-  z-index: 2
-  transform: translateY(-50%)
-  top: 50vh
-
 #heading
   display: inline-block
-  /*position: absolute;
-
-/* offset content for sidebar
 
 #page-content-wrapper
   float: left
@@ -192,14 +167,6 @@ hr
   left: 35rem
   width: inherit
   background: #fff
-
-  // -webkit-box-shadow: 4em 0 2em 4em #878787
-  // -moz-box-shadow: 4em 0 2em 4em #878787
-  // box-shadow: 4em 0 2em 4em #878787
-
-  /*-webkit-box-shadow: -10px -10px 20px 0 rgba(0,0,0,0.15);
-   *-moz-box-shadow: -10px -10px 20px 0 rgba(0,0,0,0.15);
-   *box-shadow: -10px -10px 20px 0 rgba(0,0,0,0.15);
 
 .sidebar + #page-content-wrapper > .section.posts
   padding: 2em 0
@@ -215,7 +182,6 @@ ul
     list-style: none
     padding: 0
     margin: 0
-    /*font-size: 1.5em;
     transition: all .5s ease
     width: 100%
     color: #333
@@ -255,8 +221,7 @@ ul
 /* landing
  *––––––––––––––––––––––––––––––––––––––––––––––––––
 
-/* osc logo
-
+// osc logo
 .landing
   img
     height: 20em
@@ -384,37 +349,36 @@ span.fa-angle-down
       margin-top: 0
 
 .contact-info-email span, .contact-info-office span, .contact-info-meeting span
-  font-size: 65%
+  font-size: 1.5em
 
 .contact-info-email h6, .contact-info-office h6, .contact-info-meeting h6
   margin-bottom: 1em
+  line-height: inherit
+  font-size: inherit
+  height: 1em
 
 .contact-info-email, .contact-info-office, .contact-info-meeting
-  height: 3.5em
+  height: 6em
 
 .contact-info-email-container, .contact-info-office-container, .contact-info-meeting-container
-  margin: 0 0 0 3.5em
+  margin: 0 0 0 9em
   padding: 0 1em
-  height: 6rem
   display: inline-block
   vertical-align: middle
   line-height: 0
   text-shadow: none
+  font-size: 3em
 
 .contact-info-email:before, .contact-info-office:before, .contact-info-meeting:before
   position: absolute
-  height: 2.5em
-  // FIXME
-  // height: initial
+  height: 6em
   font-family: 'FontAwesome'
   text-align: center
-  width: 12rem
+  width: 6em
   vertical-align: middle
-  /*line-height: 3.5em;
   margin: 0
   color: #fff
   overflow: hidden
-  font-size: 150%
   -webkit-box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.35)
   -moz-box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.35)
   box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.35)
@@ -433,19 +397,18 @@ span.fa-angle-down
 
 .contact-info > li .info-wrapper
   text-align: left
-  font-size: 3.5rem
+  // font-size: 3.5rem
   margin: 1.5em
   background-color: #fff
-  height: 12rem
-  line-height: 12rem
+  height: 6em
+  line-height: 6em
   overflow: hidden
   -webkit-box-shadow: 0 1px 12px -2px rgba(0, 0, 0, 0.25)
   -moz-box-shadow: 0 1px 12px -2px rgba(0, 0, 0, 0.25)
   box-shadow: 0 1px 12px -2px rgba(0, 0, 0, 0.25)
 
 ul.contact-info
-  /*margin: 1em;
-  display: inline-table
+  display: block
   width: 100%
   margin: 0
 
@@ -463,9 +426,7 @@ ul.contact-info
   position: relative
   z-index: 2
   font-size: 135%
-  /*-webkit-box-shadow: 2px 2px 25px -5px rgba(0,0,0,0.5);
-   *-moz-box-shadow: 2px 2px 25px -5px rgba(0,0,0,0.5);
-   *box-shadow: 2px 2px 25px -5px rgba(0,0,0,0.5);
+
   > .container
     margin-top: 2em
 
@@ -502,9 +463,6 @@ ul.contact-info
     margin-bottom: 4rem
 
 @media (max-width: 550px)
-  /*.landing img {
-   *  height: 14em;
-   *}
   .landing
     #brand
       margin-top: 0
@@ -529,6 +487,16 @@ ul.contact-info
     display: none
 
 /* Bigger than 550
+
+@media (min-width: 550px) and (max-width: 750px) and (orientation: landscape)
+  .landing
+    height: 100%
+    #heading-wrapper
+      position: absolute
+      width: 100%
+      top: 50%
+      transform: translateY(-50%)
+
 @media (min-width: 550px) and (max-width: 750px)
   .section
     padding: 12rem 0 11rem
@@ -560,7 +528,6 @@ ul.contact-info
     left: 0
     width: 100%
 
-/* Bigger than 750
 @media (min-width: 750px)
   .landing
     height: 190px
@@ -575,7 +542,6 @@ ul.contact-info
   .categories
     padding: 15rem 0 8rem
 
-/* Bigger than 1200
 @media (min-width: 1200px)
   .layout-mobile
     display: none
@@ -604,8 +570,6 @@ ul.contact-info
   .landing
     padding: 0
     height: 50vh
-  #heading-wrapper
-    top: 25vh
   .landing-heading
     font-size: 3.0rem
   .landing > a#button
@@ -626,21 +590,31 @@ ul.contact-info
 
 @media (max-width: 1200px) and (orientation: portrait)
   .landing
-    height: 65vh
-  #heading-wrapper
-    transform: translateY(-50%)
-    top: 33vh
+    padding: 0
+    height: 50%
+    #heading-wrapper
+      position: absolute
+      width: 100%
+      top: 25%
+      transform: translateY(-50%)
   #heading
     font-size: 100% !important
+
+@media (max-height: 750px) and (orientation: portrait)
+  .landing
+    height: 75%
+    #heading-wrapper
+      top: 40%
 
 @media (min-width: 1200px) and (orientation: portrait)
   .landing
     padding: 0
-    height: 50vh
-  #heading-wrapper
-    transform: translateY(-75%)
-  #brand
-    margin-top: 15vh
+    height: 50%
+    #heading-wrapper
+      position: absolute
+      width: 100%
+      top: 25%
+      transform: translateY(-50%)
   #scroll-indicator
     display: none !important
 
@@ -650,23 +624,34 @@ ul.contact-info
 
 @media (min-width: 550px) and (max-width: 750px) and (orientation: landscape)
   .landing
-    height: 100vh
+    height: 100%
+    #heading-wrapper
+      position: absolute
+      width: 100%
+      top: 50%
+      transform: translateY(-50%)
   #heading
     font-size: 85% !important
 
 @media (min-width: 750px) and (max-width: 1200px) and (orientation: landscape)
   .landing
-    height: 65vh
-  #heading-wrapper
-    transform: translateY(-95%)
+    height: 100%
+    #heading-wrapper
+      position: absolute
+      width: 100%
+      top: 50%
+      transform: translateY(-50%)
   #heading
     font-size: 100% !important
 
 @media (min-width: 1200px) and (orientation: landscape)
   .landing
-    height: 75vh
-  #heading-wrapper
-    transform: translateY(-25%)
+    height: 100%
+    #heading-wrapper
+      position: absolute
+      width: 100%
+      top: 50%
+      transform: translateY(-50%)
   #heading
     font-size: 85%
 
@@ -680,6 +665,7 @@ ul.contact-info
       font-size: 1.5em
 
 @media (max-width: 1200px)
+
   /* Menu Icon
    *––––––––––––––––––––––––––––––––––––––––––––––––––
   .contact-info
@@ -724,9 +710,8 @@ ul.contact-info
       content: '\f00d'
     &:hover
       transition: 1s ease
-      /*background: rgb(75,75,75);
+
   .sidebar
-    /*background-color: #333;
     top: 0px
     bottom: 0px
     left: 0px
@@ -737,21 +722,14 @@ ul.contact-info
     transition: all 0.5s linear
     height: 100%
     z-index: 9
-    /*width: 40%;
     width: 35rem
     transform: translateX(-100%)
     &.active
-      /*background-color: #;
       transition: all 0.5s linear
-      /*width: 40%;
       width: 35rem
       z-index: 9
       left: 35rem
-      /*transform: translateX(0%);
-  .landing
-    /*height: 60vh !important;
-  #brand
-    margin-top: 8em
+
   .landing #heading a#button
     position: inherit
     display: inline-block
@@ -775,6 +753,23 @@ ul.contact-info
     padding-top: 2em
 
 @media (max-width: 350px)
+  .contact-info-email-container, .contact-info-office-container, .contact-info-meeting-container
+    font-size: 85%
+  .menu-toggle
+    &.active
+      margin: 0
+      width: 100%
+      background: #990101
+      -webkit-box-shadow: inset 0 -.1em 0.2em 0 rgba(0,0,0,0.15)
+      -moz-box-shadow: inset 0 -.1em 0.2em 0 rgba(0,0,0,0.15)
+      box-shadow: inset 0 -.1em 0.2em 0 rgba(0,0,0,0.15)
+  .github-ribbon
+    font-size: 1.25em
+    height: 2.25em
+    line-height: 2.25em
+    -webkit-transform: translate(50%, -50%) rotate(45deg) translateY(5em)
+    -moz-transform: translate(50%, -50%) rotate(45deg) translateY(5em)
+    transform: translate(50%, -50%) rotate(45deg) translateY(5em)
   #page-content-wrapper
     right: initial
     width: 100%
@@ -791,18 +786,16 @@ ul.contact-info
       display: none
   .sidebar
     position: fixed
-    width: 100vw
+    width: 100%
     transition: all 0.5s linear
     &.active
-      width: 100vw
-      left: 100vw
+      width: 100%
+      left: 100%
       transition: all 0.5s linear
       z-index: 9
 
     #main-nav
       padding-top: 10em
-
-
 
   .menu-toggle
     transition: none !important
@@ -946,14 +939,12 @@ ul.sidebar-icons
   bottom: 1em
   width: 100%
   z-index: 8
-  // background: linear-gradient(to top, #DADADA 0%, rgba(166,166,166,0.25) 3%, rgba(166,166,166,0.25) 98%, #DADADA 100%)
-
 
 #sidebar-secondary-wrapper
   position: fixed
   width: 100%
   top: 0
-  height: 100vh
+  height: 100%
   z-index: -1
 
 ul.sidebar-icons li:not(:last-of-type)
@@ -968,14 +959,3 @@ ul.sidebar-icons li:not(:last-of-type)
 ul.sidebar-icons i:before
   text-align: center
   display: inherit
-
-/* SimpTip
- *––––––––––––––––––––––––––––––––––––––––––––––––––
-
-.simptip-position-top[data-tooltip]
-  &::before
-    border-top-color: rgb(75, 75, 75)
-  &::after
-    background-color: rgb(75, 75, 75)
-    color: #fff
-    border-radius: 0
