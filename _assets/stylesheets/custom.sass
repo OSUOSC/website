@@ -5,9 +5,7 @@ canvas
   position: relative
   width: 100%
   height: 100%
-  filter: saturate(50%) hue-rotate(-50deg) brightness(110%) grayscale(65%)
-  -webkit-filter: saturate(50%) hue-rotate(-50deg) brightness(110%) grayscale(65%)
-  z-index: 1
+  z-index: -3
   opacity: 0
 
 a
@@ -273,14 +271,14 @@ input
     color: #fff
 
 .button.button-primary:focus, button.button-primary:focus
-  background: #848484
-  border-color: #848484
+  background: #848484!important
+  border-color: #848484!important
   color: #fff
 
 input
   &[type="submit"].button-primary:focus, &[type="reset"].button-primary:focus, &[type="button"].button-primary:focus
-    background: #848484
-    border-color: #848484
+    background: #848484!important
+    border-color: #848484!important
     color: #fff
 
 /* scroll down indicator
@@ -320,7 +318,6 @@ span.fa-angle-down
   background: #848484
   h5
     margin: 2em -1.5% 2em 0
-    font-size: 185%
 
 .about-multiplier
   margin-bottom: .5rem
@@ -335,7 +332,7 @@ span.fa-angle-down
 
 #contact
   background: #fff
-  background: linear-gradient(to top, #DADADA 0%, rgba(166,166,166,0.25) 3%, rgba(166,166,166,0.25) 98%, #DADADA 100%)
+  background: linear-gradient(to top, rgb(218,218,218) 0%, rgba(166,166,166,0.25) 3%, rgba(166,166,166,0.25) 98%, rgb(218,218,218) 100%)
 
 .contact-info li
   list-style: none
@@ -543,6 +540,8 @@ ul.contact-info
     padding: 15rem 0 8rem
 
 @media (min-width: 1200px)
+  .contact-info-email-container, .contact-info-office-container, .contact-info-meeting-container
+    font-size: 85%
   .layout-mobile
     display: none
   ul.contact-info
@@ -559,7 +558,7 @@ ul.contact-info
     width: 100%
     height: 100%
     transition: all 0.5s linear
-    position: absolute
+    position: fixed
     left: 35rem
     width: inherit
     overflow-x: hidden
@@ -578,6 +577,9 @@ ul.contact-info
     z-index: 4
     right: 0
     top: 0
+  .about
+    h5
+      font-size: 185%
   #social-media
     width: 15%
   .sidebar + #page-content-wrapper
@@ -602,9 +604,9 @@ ul.contact-info
 
 @media (max-height: 750px) and (orientation: portrait)
   .landing
-    height: 75%
+    height: 100%
     #heading-wrapper
-      top: 40%
+      top: 50%
 
 @media (min-width: 1200px) and (orientation: portrait)
   .landing
@@ -665,9 +667,8 @@ ul.contact-info
       font-size: 1.5em
 
 @media (max-width: 1200px)
-
-  /* Menu Icon
-   *––––––––––––––––––––––––––––––––––––––––––––––––––
+  .contact-info-email-container, .contact-info-office-container, .contact-info-meeting-container
+    font-size: 85%
   .contact-info
     li
       width: 100%
@@ -763,13 +764,6 @@ ul.contact-info
       -webkit-box-shadow: inset 0 -.1em 0.2em 0 rgba(0,0,0,0.15)
       -moz-box-shadow: inset 0 -.1em 0.2em 0 rgba(0,0,0,0.15)
       box-shadow: inset 0 -.1em 0.2em 0 rgba(0,0,0,0.15)
-  .github-ribbon
-    font-size: 1.25em
-    height: 2.25em
-    line-height: 2.25em
-    -webkit-transform: translate(50%, -50%) rotate(45deg) translateY(5em)
-    -moz-transform: translate(50%, -50%) rotate(45deg) translateY(5em)
-    transform: translate(50%, -50%) rotate(45deg) translateY(5em)
   #page-content-wrapper
     right: initial
     width: 100%
@@ -830,6 +824,13 @@ ul.contact-info
     z-index: 9
   .menu-toggle
     left: 100%
+  .github-ribbon
+    font-size: 1.25em
+    height: 2.25em
+    line-height: 2.25em
+    -webkit-transform: translate(50%, -50%) rotate(45deg) translateY(5em)
+    -moz-transform: translate(50%, -50%) rotate(45deg) translateY(5em)
+    transform: translate(50%, -50%) rotate(45deg) translateY(5em)
   #page-content-wrapper
     left: 0
     width: 100%
@@ -847,6 +848,10 @@ ul.contact-info
 @media only screen and (-webkit-min-device-pixel-ratio: 1) and (-webkit-max-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1) and (max--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1) and (max-device-pixel-ratio: 1.5)
   html
     font-size: 35%
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2.0), only screen and (min--moz-device-pixel-ratio: 2.0), only screen and (min-device-pixel-ratio: 2.0)
+  html
+    font-size: 40%!important
 
 /* Animate.css
  *––––––––––––––––––––––––––––––––––––––––––––––––––
