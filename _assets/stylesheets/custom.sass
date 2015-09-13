@@ -28,8 +28,123 @@ hr
   border-top: 1px solid #333
   margin: 0 auto
 
-/* Side Bar
- *––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+.clouds
+  position: relative
+  height: 100%
+  overflow: hidden
+
+[class^="cloud-"]
+  position: absolute
+  right: 120%
+  width: 200px
+  height: 60px
+  background: #fff
+  -webkit-border-radius: 200px
+  border-radius: 200px
+  &:before
+    content: ''
+    position: absolute
+    top: -15px
+    left: 10px
+    width: 100px
+    height: 80px
+    background: #fff
+    -webkit-border-radius: 100px
+    border-radius: 100px
+    -webkit-transform: rotate(30deg)
+    -moz-transform: rotate(30deg)
+    transform: rotate(30deg)
+  &:after
+    content: ''
+    position: absolute
+    top: -15px
+    left: 10px
+    width: 100px
+    height: 80px
+    background: #fff
+    -webkit-border-radius: 100px
+    border-radius: 100px
+    -webkit-transform: rotate(30deg)
+    -moz-transform: rotate(30deg)
+    transform: rotate(30deg)
+    top: -55px
+    left: auto
+    right: 15px
+    width: 120px
+    height: 120px
+
+.cloud-1
+  top: 85%
+  -webkit-animation: moveclouds 30s linear infinite
+  -moz-animation: moveclouds 30s linear infinite
+  -o-animation: moveclouds 30s linear infinite
+  animation: moveclouds 30s linear infinite
+
+.cloud-2
+  top: 10%
+  opacity: 0.8
+  -webkit-transform: scale(0.8)
+  -moz-transform: scale(0.8)
+  transform: scale(0.8)
+  -webkit-animation: moveclouds 45s linear infinite
+  -moz-animation: moveclouds 45s linear infinite
+  -o-animation: moveclouds 45s linear infinite
+  animation: moveclouds 45s linear infinite
+  -webkit-animation-delay: 5s
+  -moz-animation-delay: 5s
+  animation-delay: 5s
+
+.cloud-3
+  top: 65%
+  opacity: 0.6
+  -webkit-transform: scale(0.6)
+  -moz-transform: scale(0.6)
+  transform: scale(0.6)
+  -webkit-animation: moveclouds 40s linear infinite
+  -moz-animation: moveclouds 40s linear infinite
+  -o-animation: moveclouds 40s linear infinite
+  animation: moveclouds 40s linear infinite
+
+.cloud-4
+  top: 40%
+  opacity: 0.75
+  -webkit-transform: scale(0.75)
+  -moz-transform: scale(0.75)
+  transform: scale(0.75)
+  -webkit-animation: moveclouds 26s linear infinite
+  -moz-animation: moveclouds 26s linear infinite
+  -o-animation: moveclouds 26s linear infinite
+  animation: moveclouds 26s linear infinite
+  -webkit-animation-delay: 8s
+  -moz-animation-delay: 8s
+  animation-delay: 8s
+
+@-webkit-keyframes moveclouds
+  0%
+    right: -20%
+
+  100%
+    right: 120%
+
+
+@-moz-keyframes moveclouds
+  0%
+    right: -20%
+
+  100%
+    right: 120%
+
+
+@-o-keyframes moveclouds
+  0%
+    right: -20%
+
+  100%
+    right: 120%
+
+
 
 .sidebar
   background: #fff
@@ -165,15 +280,28 @@ hr
   left: 35rem
   width: inherit
   background: #fff
+  overflow-x: hidden
 
 .sidebar + #page-content-wrapper > .section.posts
   padding: 2em 0
+
+
+.posts
+  li
+    h2
+      margin-bottom: 0!important
+    .content
+      margin-top: 2em
 
 #main-nav
   padding-top: 6em
 .pagination
   text-align: center
   display: inherit
+  .previous
+  .next
+
+
 #footer
   background: rgb(131, 131, 131)
 
@@ -205,6 +333,7 @@ ul
 .landing
   text-align: center
   background: #D5E7F0
+  overflow: hidden
 
 .menu-toggle + .posts
   padding: 8em 0 0 0 !important
@@ -332,19 +461,21 @@ span.fa-angle-down
   opacity: .8
   font-weight: 300
 
-#contact
+#contact-wrapper
   background: #fff
+
+.contact
   background: linear-gradient(to top, rgb(218,218,218) 0%, rgba(166,166,166,0.25) 3%, rgba(166,166,166,0.25) 98%, rgb(218,218,218) 100%)
 
-.contact-info li
-  list-style: none
-  display: inline-block
-  margin: 0
-  width: 50%
-  &:nth-last-of-type(odd):last-of-type
-    width: 100%
+.contact-info
+  li
     margin-top: 0
-    .info-wrapper
+    list-style: none
+    display: inline-block
+    margin: 0
+    width: 50%
+    &:nth-last-of-type(odd):last-of-type
+      width: 100%
       margin-top: 0
 
 .contact-info-email span, .contact-info-office span, .contact-info-meeting span
@@ -428,6 +559,7 @@ ul.contact-info
 
   > .container
     margin-top: 2em
+    margin-bottom: 4em
 
 .posts
   ul
@@ -445,11 +577,35 @@ ul.contact-info
   border-bottom: 1px solid #CDCDCD
 
 .posts
-  li > h3 + table
+  li > h5 + table
     margin: 0 auto
     width: 100%
   h6 + ul:not(:last-of-type)
     margin-bottom: 3em
+
+
+footer
+  text-align: center!important
+  position: initial
+  // FIXME
+  // margin-bottom: 2em
+  // using margins (which is prefered) renders a black background on chrome for mobile
+  background: #fff
+  padding-bottom: 2em
+  .with-love
+    span
+      color: #666
+      font-size: 12px
+      display: block
+      text-align: center
+      a
+        color: #000000
+        text-decoration: none
+      .fa-heart
+        margin: 0 3px
+        font-size: 10px
+        &::before
+          color: #bb0000!important
 
 /* Categories
  *––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -471,6 +627,7 @@ ul.contact-info
       font-size: 1.25em
     #button
       margin-top: 2em
+      background: #bb0000!important
   .contact-info > li .info-wrapper
     margin-right: 0.5em !important
     margin-left: 0.5em !important
@@ -854,6 +1011,12 @@ ul.contact-info
 @media only screen and (-webkit-min-device-pixel-ratio: 2.0), only screen and (min--moz-device-pixel-ratio: 2.0), only screen and (min-device-pixel-ratio: 2.0)
   html
     font-size: 40%!important
+  .pagination
+    font-size: 200%
+  .cloud-1, .cloud-2, .cloud-3, .cloud-4
+    -webkit-transform: scale(0.5)
+    -moz-transform: scale(0.5)
+    transform: scale(0.5)
 
 /* Animate.css
  *––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -966,3 +1129,6 @@ ul.sidebar-icons li:not(:last-of-type)
 ul.sidebar-icons i:before
   text-align: center
   display: inherit
+
+a#button
+  background-color: #848484
