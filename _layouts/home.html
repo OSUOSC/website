@@ -4,7 +4,6 @@
 {% include head.html %}
 {% include sidebar.html %}
 
-
   {% if paginator.previous_page %}
     <div id="page-content-wrapper" class="index" style="left: 17.5rem;">
   {% else %}
@@ -17,32 +16,39 @@
 
    <div class="section posts">
       <div class="container">
-        {% for post in paginator.posts %}
-          <!-- <h3><a href="{{ post.url }}">{{ post.title }}</a></h3> -->
-          <h3>{{ post.title }}</h3>
-          <span class="date">{{ post.date | date: "%m-%d-%Y" }}</span>
-
-          <div class="content">
-            {{ post.content }}
-          </div>
-        {% endfor %}
+        <ul>
+          {% for post in paginator.posts %}
+            <!-- <h3><a href="{{ post.url }}">{{ post.title }}</a></h3> -->
+            <li>
+              <h2>{{ post.title }}</h2>
+              <span class="date">posted: {{ post.date | date: "%m-%d-%Y" }}</span>
+              <div class="content">
+                {{ post.content }}
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
       </div>
 
       <!-- Pagination links -->
       <div class="pagination">
-         {% if paginator.previous_page %}
-           <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-         {% else %}
-           <span class="previous">Previous</span>
-         {% endif %}
-         <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-         {% if paginator.next_page %}
-           <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-         {% else %}
-           <span class="next ">Next</span>
-         {% endif %}
+        {% if paginator.previous_page %}
+           <a href="{{ paginator.previous_page_path }}" class="previous"><i class="fa fa-caret-left"></i></a>
+        {% else %}
+          <!-- TODO -->
+          <span class="previous"><i class="fa fa-caret-left"></i></span>
+        {% endif %}
+        <span class="page_number "> {{ paginator.page }} of {{ paginator.total_pages }}</span>
+        {% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path }}" class="next"><i class="fa fa-caret-right"></i></a>
+        {% else %}
+          <!-- TODO -->
+          <span class="next "><i class="fa fa-caret-right"></i></span>
+        {% endif %}
       </div>
     </div>
+
+    {% include footer.html %}
 
 </div>
 
