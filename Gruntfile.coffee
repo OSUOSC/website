@@ -31,6 +31,12 @@ module.exports = (grunt) ->
         cwd: 'bower_components/font-awesome/css/'
         src: 'font-awesome.min.css'
         dest: 'vendor/css/'
+      },
+      {
+        expand: true
+        cwd: 'bower_components/font-awesome/fonts/'
+        src: '*'
+        dest: 'vendor/fonts/'
       } ]
       opensans: files: [ {
         expand: true
@@ -52,7 +58,7 @@ module.exports = (grunt) ->
       } ]
     exec: jekyll: cmd: 'jekyll build --trace'
     watch:
-      options: livereload: true
+      options: livereload: false
       source:
         files: [
           '_drafts/**/*'
@@ -66,9 +72,9 @@ module.exports = (grunt) ->
         ]
         tasks: [ 'exec:jekyll' ]
     connect: server: options:
-      port: 4040
+      port: 4080
       base: '_site'
-      livereload: true
+      livereload: false
   grunt.registerTask 'build', [
     'copy'
     'exec:jekyll'
