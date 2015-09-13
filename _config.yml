@@ -1,7 +1,6 @@
 name: "The Open Source Club"
-description: ""
-
-url: "http://localhost:4040"
+description: "a registered student organization composed of members from all around campus and out into the community who share a common enthusiasm for free, open source software."
+url: "opensource.osu.edu"
 
 paginate: 10
 
