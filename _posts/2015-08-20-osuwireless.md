@@ -1,10 +1,8 @@
 ---
 layout: home
-title: connecting to osuwireless
+title: Connecting to osuwireless with linux
 categories: tutorials
 ---
-
-###How to connect to osuwireless from linux
 
 Steps will vary depending on your distro of choice, but the same principles apply:
 

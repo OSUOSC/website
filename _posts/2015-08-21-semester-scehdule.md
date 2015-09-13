@@ -1,10 +1,8 @@
 ---
 layout: home
-title:  Semester Schedule
+title:  Autumn 2015 Semester Schedule
 categories: meetings
 ---
-
-###Autumn '15 Semester Schedule
 
 | date       | topic               | speaker(s)               |
 |------------|---------------------|--------------------------|
