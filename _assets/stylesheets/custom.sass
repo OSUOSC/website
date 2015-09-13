@@ -15,6 +15,10 @@ a
     font-weight: 600
   &:hover
     color: inherit
+td
+  padding: 1em 5% 0 0!important
+  text-align: left
+  vertical-align: middle
 
 p, ul, li, h1, h2, h3, h4, h5, h6
   font-family: 'Open Sans', sans-serif
@@ -488,11 +492,11 @@ span.fa-angle-down
   height: 1em
 
 .contact-info-email, .contact-info-office, .contact-info-meeting
-  height: 6em
+  height: 12rem
 
 .contact-info-email-container, .contact-info-office-container, .contact-info-meeting-container
-  margin: 0 0 0 9em
-  padding: 0 1em
+  margin: 0 0 0 12rem
+  padding: 0 2rem
   display: inline-block
   vertical-align: middle
   line-height: 0
@@ -501,10 +505,11 @@ span.fa-angle-down
 
 .contact-info-email:before, .contact-info-office:before, .contact-info-meeting:before
   position: absolute
-  height: 6em
+  height: 12rem
+  font-size: 3em
   font-family: 'FontAwesome'
   text-align: center
-  width: 6em
+  width: 12rem
   vertical-align: middle
   margin: 0
   color: #fff
@@ -530,8 +535,8 @@ span.fa-angle-down
   // font-size: 3.5rem
   margin: 1.5em
   background-color: #fff
-  height: 6em
-  line-height: 6em
+  height: 12rem
+  line-height: 12rem
   overflow: hidden
   -webkit-box-shadow: 0 1px 12px -2px rgba(0, 0, 0, 0.25)
   -moz-box-shadow: 0 1px 12px -2px rgba(0, 0, 0, 0.25)
@@ -582,6 +587,8 @@ ul.contact-info
     width: 100%
   h6 + ul:not(:last-of-type)
     margin-bottom: 3em
+  table
+    width: 100%
 
 
 footer
@@ -604,8 +611,8 @@ footer
       .fa-heart
         margin: 0 3px
         font-size: 10px
-        &::before
-          color: #bb0000!important
+        color: #990101
+
 
 /* Categories
  *––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -627,7 +634,6 @@ footer
       font-size: 1.25em
     #button
       margin-top: 2em
-      background: #bb0000!important
   .contact-info > li .info-wrapper
     margin-right: 0.5em !important
     margin-left: 0.5em !important
