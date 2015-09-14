@@ -14,7 +14,7 @@
     "tests"
   ],
   "dependencies": {
-    "animate-sass": "~0.6.4",
+    "animate.css": "~3.4.0",
     "font-awesome": "fontawesome#~4.4.0",
     "jquery": "~2.1.4",
     "normalize-scss": "3.0.3",

@@ -26,6 +26,12 @@ module.exports = (grunt) ->
         src: 'normalize.css'
         dest: 'vendor/css/'
       } ]
+      animate: files: [ {
+        expand: true
+        cwd: 'bower_components/animate.css/'
+        src: 'animate.min.css'
+        dest: 'vendor/css/'
+      } ]
       fontawesome: files: [ {
         expand: true
         cwd: 'bower_components/font-awesome/css/'
