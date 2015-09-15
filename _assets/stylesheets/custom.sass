@@ -16,8 +16,8 @@ a
     color: inherit
     text-decoration: none
     font-weight: 600
-  &:hover
-    color: inherit
+  &:hover:not(.about)
+    color: #848484!important
 td
   padding: 1em 5% 0 0!important
   text-align: left
@@ -292,7 +292,6 @@ hr
 .sidebar + #page-content-wrapper > .section.posts
   padding: 2em 0
 
-
 .posts
   li
     h2
@@ -305,9 +304,7 @@ hr
 .pagination
   text-align: center
   display: inherit
-  .previous
-  .next
-
+  font-size: 200%
 
 #footer
   background: rgb(131, 131, 131)
@@ -336,6 +333,14 @@ ul
 
 /* Sections
  *––––––––––––––––––––––––––––––––––––––––––––––––––
+
+#scroll-indicator
+  &::before
+    content: "\f107"
+    font-size: 3em
+    font-family: "FontAwesome"
+    bottom: 0!important
+    color: #848484
 
 .landing
   text-align: center
@@ -486,12 +491,12 @@ span.fa-angle-down
       margin-top: 0
 
 .contact-info-email span, .contact-info-office span, .contact-info-meeting span
-  font-size: 1.5em
+  font-size: 1.75em
 
 .contact-info-email h6, .contact-info-office h6, .contact-info-meeting h6
   margin-bottom: 1em
   line-height: inherit
-  font-size: inherit
+  font-size: 1.5em
   height: 1em
 
 .contact-info-email, .contact-info-office, .contact-info-meeting
@@ -602,6 +607,10 @@ footer
   // using margins (which is prefered) renders a black background on chrome for mobile
   background: #fff
   padding-bottom: 2em
+  .rss
+    font-size: 1.5em
+    font-weight: 400!important
+    padding-bottom: 1em
   .with-love
     span
       color: #666
@@ -661,6 +670,8 @@ footer
       width: 100%
       top: 50%
       transform: translateY(-50%)
+  #scroll-indicator
+    bottom: 0%
 
 @media (min-width: 550px) and (max-width: 750px)
   .section
@@ -684,10 +695,8 @@ footer
   .sidebar
     left: 0
     &.active
-      /*left: 35rem;
       z-index: 9
   .menu-toggle
-    /*position: absolute;
     left: 100%
   .section.about
     left: 0
@@ -695,6 +704,7 @@ footer
 
 @media (min-width: 750px)
   .landing
+    //FIXME
     height: 190px
   .landing-heading
     font-size: 2.6rem
@@ -727,9 +737,11 @@ footer
     height: 100%
     transition: all 0.5s linear
     position: fixed
-    left: 35rem
+    left: 17.5rem
     width: inherit
     overflow-x: hidden
+    &.home
+      left: 35rem
   .layout-desktop
     display: inherit
   .section
@@ -737,6 +749,8 @@ footer
   .landing
     padding: 0
     height: 50vh
+  #scroll-indicator
+    bottom: 50%
   .landing-heading
     font-size: 3.0rem
   .landing > a#button
@@ -759,6 +773,8 @@ footer
       left: -17.5rem
 
 @media (max-width: 1200px) and (orientation: portrait)
+  #scroll-indicator
+    bottom: 50%
   .landing
     padding: 0
     height: 50%
@@ -775,6 +791,8 @@ footer
     height: 100%
     #heading-wrapper
       top: 50%
+    #scroll-indicator
+      bottom: 0%
 
 @media (min-width: 1200px) and (orientation: portrait)
   .landing
@@ -800,6 +818,8 @@ footer
       width: 100%
       top: 50%
       transform: translateY(-50%)
+  #scroll-indicator
+    bottom: 0
   #heading
     font-size: 85% !important
 
@@ -813,6 +833,8 @@ footer
       transform: translateY(-50%)
   #heading
     font-size: 100% !important
+    #scroll-indicator
+      bottom: 0
 
 @media (min-width: 1200px) and (orientation: landscape)
   .landing
@@ -822,6 +844,8 @@ footer
       width: 100%
       top: 50%
       transform: translateY(-50%)
+  #scroll-indicator
+    bottom: 0
   #heading
     font-size: 85%
 
@@ -1017,7 +1041,7 @@ footer
   html
     font-size: 35%
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2.0), only screen and (min--moz-device-pixel-ratio: 2.0), only screen and (min-device-pixel-ratio: 2.0)
+@media only screen and (-webkit-min-device-pixel-ratio: 2.0), only screen and (min--moz-device-pixel-ratio: 2.0), only screen and (min-device-pixel-ratio: 2.0), only screen and (min-resolution: 192dpi)
   html
     font-size: 40%!important
   .pagination
