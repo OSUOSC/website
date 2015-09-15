@@ -78,7 +78,7 @@ module.exports = (grunt) ->
         ]
         tasks: [ 'exec:jekyll' ]
     connect: server: options:
-      port: 4080
+      port: 4040
       base: '_site'
       livereload: false
   grunt.registerTask 'build', [
