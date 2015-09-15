@@ -11,6 +11,7 @@
 
       {% for post in site.categories.[page.category] %}
         <ul>
+          <h2>{{ post.title }}</h2>
           <li>{{ post.content }}</li>
         </ul>
       {% endfor %}
