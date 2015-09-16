@@ -1,5 +1,6 @@
 body
   overflow-x: hidden
+  color: #424242
 
 html
   font-size: 40%!important
@@ -34,8 +35,6 @@ hr
   text-align: center
   border-top: 1px solid #333
   margin: 0 auto
-
-
 
 .clouds
   position: relative
@@ -288,6 +287,7 @@ hr
   width: inherit
   background: #fff
   overflow-x: hidden
+  -webkit-overflow-scrolling: touch
 
 .sidebar + #page-content-wrapper > .section.posts
   padding: 2em 0
@@ -578,6 +578,11 @@ ul.contact-info
   ul
     list-style: none
     text-align: left
+  li
+    .content
+      list-style: initial
+      li
+        list-style-type: square
   p
     text-align: justify
   > .container > ul > li
@@ -669,6 +674,8 @@ footer
       position: absolute
       width: 100%
       top: 50%
+      -webkit-transform: translateY(-50%)
+      -moz-transform: translateY(-50%)
       transform: translateY(-50%)
   #scroll-indicator
     bottom: 0%
@@ -703,9 +710,6 @@ footer
     width: 100%
 
 @media (min-width: 750px)
-  .landing
-    //FIXME
-    height: 190px
   .landing-heading
     font-size: 2.6rem
   .section
@@ -748,7 +752,7 @@ footer
     padding: 20rem 0 19rem
   .landing
     padding: 0
-    height: 50vh
+    height: 50%
   #scroll-indicator
     bottom: 50%
   .landing-heading
@@ -769,8 +773,7 @@ footer
       width: 100%
     > .section.posts:only-child > .container
       width: 50%
-      /*FIXME
-      left: -17.5rem
+      left: -8.75rem
 
 @media (max-width: 1200px) and (orientation: portrait)
   #scroll-indicator
@@ -782,6 +785,8 @@ footer
       position: absolute
       width: 100%
       top: 25%
+      -webkit-transform: translateY(-50%)
+      -moz-transform: translateY(-50%)
       transform: translateY(-50%)
   #heading
     font-size: 100% !important
@@ -802,6 +807,8 @@ footer
       position: absolute
       width: 100%
       top: 25%
+      -webkit-transform: translateY(-50%)
+      -moz-transform: translateY(-50%)
       transform: translateY(-50%)
   #scroll-indicator
     display: none !important
@@ -817,9 +824,11 @@ footer
       position: absolute
       width: 100%
       top: 50%
+      -webkit-transform: translateY(-50%)
+      -moz-transform: translateY(-50%)
       transform: translateY(-50%)
   #scroll-indicator
-    bottom: 0
+    bottom: 1em
   #heading
     font-size: 85% !important
 
@@ -830,11 +839,14 @@ footer
       position: absolute
       width: 100%
       top: 50%
+      -webkit-transform: translateY(-50%)
+      -moz-transform: translateY(-50%)
       transform: translateY(-50%)
   #heading
     font-size: 100% !important
     #scroll-indicator
-      bottom: 0
+      bottom: 1em
+
 
 @media (min-width: 1200px) and (orientation: landscape)
   .landing
@@ -843,6 +855,8 @@ footer
       position: absolute
       width: 100%
       top: 50%
+      -webkit-transform: translateY(-50%)
+      -moz-transform: translateY(-50%)
       transform: translateY(-50%)
   #scroll-indicator
     bottom: 0
@@ -859,6 +873,10 @@ footer
       font-size: 1.5em
 
 @media (max-width: 1200px)
+  .category-title
+    margin-bottom: 1em
+    h1
+      text-align: right
   .contact-info-email-container, .contact-info-office-container, .contact-info-meeting-container
     font-size: 85%
   .contact-info
@@ -916,6 +934,8 @@ footer
     height: 100%
     z-index: 9
     width: 35rem
+    -webkit-transform: translateX(-100%)
+    -moz-transform: translateX(-100%)
     transform: translateX(-100%)
     &.active
       transition: all 0.5s linear
@@ -933,21 +953,33 @@ footer
     transition: all 0.5s linear
     position: fixed
     overflow-x: hidden
+    -webkit-overflow-scrolling: touch
     left: 0
     right: 0
     &.active
       position: fixed
       overflow-x: hidden
-      overflow-y: scroll
+      overflow-y: scroll!important
       width: auto
       z-index: 8
       left: 35rem
   #main-nav
     padding-top: 2em
 
+@media (max-width: 750px)
+  .github-ribbon
+    font-size: 1.25em
+    height: 2.25em
+    line-height: 2.25em
+    -webkit-transform: translate(50%, -50%) rotate(45deg) translateY(5.5em)
+    -moz-transform: translate(50%, -50%) rotate(45deg) translateY(5.5em)
+    transform: translate(50%, -50%) rotate(45deg) translateY(5em)
+
 @media (max-width: 350px)
   .contact-info-email-container, .contact-info-office-container, .contact-info-meeting-container
     font-size: 85%
+  .github-ribbon
+    // font-size: 85%
   .menu-toggle
     &.active
       margin: 0
@@ -981,7 +1013,7 @@ footer
       z-index: 9
 
     #main-nav
-      padding-top: 10em
+      padding-top: 6em
 
   .menu-toggle
     transition: none !important
@@ -1002,6 +1034,8 @@ footer
   #page-content-wrapper
     left: 0
     right: 0
+    -webkit-transform: translateX(0%)
+    -moz-transform: translateX(0%)
     transform: translateX(0%)
   .section.about
     left: 0
@@ -1016,16 +1050,11 @@ footer
     z-index: 9
   .menu-toggle
     left: 100%
-  .github-ribbon
-    font-size: 1.25em
-    height: 2.25em
-    line-height: 2.25em
-    -webkit-transform: translate(50%, -50%) rotate(45deg) translateY(5em)
-    -moz-transform: translate(50%, -50%) rotate(45deg) translateY(5em)
-    transform: translate(50%, -50%) rotate(45deg) translateY(5em)
   #page-content-wrapper
     left: 0
     width: 100%
+    -webkit-transform: translateX(0%)
+    -moz-transform: translateX(0%)
     transform: translateX(0%)
     position: fixed
     right: initial
@@ -1041,7 +1070,7 @@ footer
   html
     font-size: 35%
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2.0), only screen and (min--moz-device-pixel-ratio: 2.0), only screen and (min-device-pixel-ratio: 2.0), only screen and (min-resolution: 192dpi)
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 120dpi)
   html
     font-size: 40%!important
   .pagination
@@ -1050,6 +1079,28 @@ footer
     -webkit-transform: scale(0.5)
     -moz-transform: scale(0.5)
     transform: scale(0.5)
+  #page-content-wrapper
+    -webkit-overflow-scrolling: touch
+
+  *:not(#page-content-wrapper, .sidebar)
+    // transitions
+    -o-transition-property: none !important
+    -moz-transition-property: none !important
+    -ms-transition-property: none !important
+    -webkit-transition-property: none !important
+    transition-property: none !important
+    // transformations
+    // -o-transform: none !important
+    // -moz-transform: none !important
+    // -ms-transform: none !important
+    // -webkit-transform: none !important
+    // transform: none !important
+    // animations
+    -webkit-animation: none !important
+    -moz-animation: none !important
+    -o-animation: none !important
+    -ms-animation: none !important
+    animation: none !important
 
 /* Animate.css
  *––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -1107,15 +1158,14 @@ footer
 
 .sidebar-icons li
   z-index: 17
-  font-size: 5em
-  display: table
+  font-size: 4.5em
+  display: inline-block
   list-style: none
   z-index: 7
-  display: inline
-  text-align: initial
   padding: 0
   height: 1.25em
   width: 1.25em
+  max-width: 1.25em
   margin: 0
   transition: all 0s
   overflow: hidden
@@ -1124,17 +1174,20 @@ footer
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.45)
   &.flat-turq
     background: rgb(52, 152, 219)
+  &.flat-orange
+    background: rgb(230,126,34)
   &.flat-pink
     background: rgb(142, 68, 173)
 
 ul.sidebar-icons
   position: relative
-  margin: 3em 0
+  margin: 0  0 1em 0
   z-index: 7
-  display: inline-flex
+  display: block
   transition: none
-  li > a
-    display: flex
+  li
+    &:hover
+      cursor: pointer
 
 .sidebar-icons ul
   position: absolute
@@ -1155,13 +1208,14 @@ ul.sidebar-icons
   z-index: -1
 
 ul.sidebar-icons li:not(:last-of-type)
-  margin: 0 0.5em 0 0
+  margin: 0 0.4em 0 0
 
 [class*='flat'] i
   line-height: 1.25em
   color: #eee
   cursor: pointer
   width: 100%
+  display: block
 
 ul.sidebar-icons i:before
   text-align: center
