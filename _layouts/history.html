@@ -8,11 +8,18 @@
 <div id="page-content-wrapper">
   <div class="section posts">
     <div class="container">
-
+      <div class="category-title">
+        <h1>History</h1>
+      </div>
       {% for post in site.categories.[page.category] %}
         <ul>
-          <h2>{{ post.title }}</h2>
-          <li>{{ post.content }}</li>
+          <li>
+            <h2>{{ post.title }}</h2>
+            <span class="date">posted: {{ post.date | date: "%m-%d-%Y" }}</span>
+            <div class="content">
+              {{ post.content }}
+            </div>
+          </li>
         </ul>
       {% endfor %}
 
