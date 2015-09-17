@@ -2,6 +2,7 @@
 layout: post
 title: MediaWiki
 created: 1423527835
+alias: /sp15/mediawiki.html
 ---
 This Thursday, 2015-02-12 at 7:00pm in Caldwell Labs 120, Kevin Payravi will present "MediaWiki". Description follows:
 

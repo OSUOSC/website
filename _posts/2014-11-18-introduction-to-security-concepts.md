@@ -2,6 +2,7 @@
 layout: post
 title: Introduction to Security Concepts
 created: 1416335820
+alias: /au14/introduction-security-concepts.html
 ---
 Thursday, 2014-11-02 at 7:00pm in Caldwell Lab 120, John Toterhi of Battelle will present "Introduction to Security Concepts."
 

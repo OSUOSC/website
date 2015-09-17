@@ -2,6 +2,7 @@
 layout: post
 title: What NOT to do with your F/OSS Operating System
 created: 1350329134
+alias: /au12/what-not-do-your-foss-operating-system.html
 ---
 Hey everyone,
 

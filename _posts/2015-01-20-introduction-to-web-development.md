@@ -2,6 +2,7 @@
 layout: post
 title: Introduction to Web Development
 created: 1421782137
+alias: /sp15/introduction-web-development.html
 ---
 Thursday, 2015-01-22, Jon Arnett (President of the Collegiate Web Developer Group here on campus) and Eli Gladman will present "Intro to Web Development". A description from Jon follows:
 

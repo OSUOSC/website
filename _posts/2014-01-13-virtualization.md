@@ -2,6 +2,7 @@
 layout: post
 title: Virtualization
 created: 1389670402
+alias: /sp14/virtualization.html
 ---
 Greetings!
 
@@ -15,4 +16,4 @@ I'll try to cover some of the common virtual server options in linux such as:
 
 and other solutions, as well as practical situations and reasoning for using a virtual server over a physical server.
 
-Hope to see you there! 
+Hope to see you there!

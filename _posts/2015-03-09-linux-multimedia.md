@@ -2,6 +2,7 @@
 layout: post
 title: Linux Multimedia
 created: 1425917556
+alias: /sp15/linux-multimedia.html
 ---
 This Thursday, 2015-03-12 at 7:00pm in Caldwell Labs 120, Brandon Dahl will present Linux Multimedia. A short description follows:
 

@@ -2,6 +2,7 @@
 layout: post
 title: Richard Stallman visiting OSU
 created: 1364222208
+alias: /sp13/raspberry-pi.html
 ---
 This Monday, Richard Stallman is visiting OSU as a guest lecturer in the computer science department. His presentation will be at 4 pm in the [Journalism Building](http://www.osu.edu/map/building.php?building=046), room 300, and the lecture is open to the public.
 

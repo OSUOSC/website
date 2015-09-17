@@ -2,6 +2,7 @@
 layout: post
 title: Love your Music and Movies again with Linux
 created: 1413147462
+alias: /au14/love-your-music-and-movies-again-linux.html
 ---
 Thursday, 2014-10-16 at 7:00pm in Caldwell Labs 120, Chris Wallace will present Love your Music and Movies again with Linux. Description follows:
 

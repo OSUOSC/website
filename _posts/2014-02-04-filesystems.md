@@ -2,6 +2,7 @@
 layout: post
 title: Filesystems
 created: 1391526229
+alias: /sp14/filesystems.html
 ---
 This Thursday, February 6th at 7:00pm in Caldwell Labs 120, Paul Schellin will present "Filesystems"
 

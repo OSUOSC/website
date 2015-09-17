@@ -2,6 +2,7 @@
 layout: post
 title: Intellidu
 created: 1415114208
+alias: /au14/intellidu.html
 ---
 This Thursday, 2014-11-06 in Caldwell Labs 120, John Simerlink will present his project "Intellidu". His blurb follows:
 
@@ -27,7 +28,7 @@ The KEY FEATURE is that we time how long it takes each user to learn each fact. 
 
 Initial project/"Minimum Viable Product":
 
-Simply a flashcard web app, that has a timer in the background tracking how long it takes you to learn each piece of information. 
+Simply a flashcard web app, that has a timer in the background tracking how long it takes you to learn each piece of information.
 
 We're going to be open source, and within a few months will be reaching out to people to join along. We are also going to register as a nonprofit.
 

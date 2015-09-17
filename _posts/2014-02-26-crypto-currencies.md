@@ -2,6 +2,7 @@
 layout: post
 title: Crypto Currencies
 created: 1393449290
+alias: /sp14/crypto-currencies.html
 ---
 Greetings everyone, sorry for the late email this week.
 

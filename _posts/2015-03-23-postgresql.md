@@ -2,6 +2,7 @@
 layout: post
 title: PostgreSQL
 created: 1427140442
+alias: /sp15/postgresql.html
 ---
 This Thursday, 2015-03-26 at 7:00pm in Caldwell Labs 120, Jeff Casavant will be speaking about PostgreSQL. A short description follows:
 

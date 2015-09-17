@@ -2,6 +2,7 @@
 layout: post
 title: Internet Privacy and Anonymization
 created: 1383683481
+alias: /au13/internet-privacy-and-anonymization.html
 ---
 Hey everyone, sorry for the late email!
 
