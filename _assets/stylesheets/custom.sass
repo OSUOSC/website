@@ -452,7 +452,6 @@ span.fa-angle-down
   text-align: center
   font-family: 'Open Sans', sans-serif
   z-index: -1
-  border-top: 25px solid #777777
   -webkit-box-shadow: 0 6px 25px -5px rgba(0, 0, 0, 0.5)
   -moz-box-shadow: 0 6px 25px -5px rgba(0, 0, 0, 0.5)
   box-shadow: 0 6px 25px -5px rgba(0, 0, 0, 0.5)
@@ -1223,3 +1222,84 @@ ul.sidebar-icons i:before
 
 a#button
   background-color: #848484
+
+
+// TODO
+// shorten/tidy sass
+
+// mailchimp
+.section.subscribe
+  padding: 0
+  background: #777
+  position: absolute
+  width: 100%
+  transform: translateY(-100%)
+  -webkit-transform: translateY(-100%)
+  -moz-transform: translateY(-100%)
+
+form
+  margin-bottom: 0!important
+
+#mc_embed_signup, #mc_embed_signup *
+  box-sizing: border-box
+
+.mc-field-group
+  float: left
+.mc-field-group.input-group ul, .mc-field-group.input-group li
+  margin-bottom: 0
+
+#mc_embed_signup
+  width: 100%
+  text-align: right
+  padding: 3em 2em
+  display: block
+
+#mc_embed_signup label, #mc_embed_signup #mce-EMAIL, #mc_embed_signup button
+  border: none
+  display: inline
+  vertical-align: middle
+  font-size: 1em
+  width: 100%
+  margin: 0
+  font-weight:normal
+
+#mc_embed_signup label
+  display: block
+  text-transform: uppercase
+  color: white
+
+#mc_embed_signup input:focus
+  outline: 1px solid rgba(0, 0, 0, 0.2)
+
+#mc_embed_signup button
+  border: none
+  font-weight: normal
+  color: #fff
+  text-transform: uppercase
+  background: #d53c3b
+  width: 7em
+  cursor: pointer
+  float: right
+
+#mc_embed_signup button:hover
+  background: #a0cf63
+
+.mc-field-group.input-group
+  margin-left: 5em
+  li
+    display: inline-block
+    text-align: center
+    &:not(:last-of-type)
+      margin-right: 5em
+
+input#mc-embedded-subscribe
+  margin-bottom: 0
+  border-radius: 0
+  // FIXME
+  background: #00FFA9
+  border: 0
+
+input#mce-EMAIL
+  border: 0
+  border-radius: 0
+  min-width: 25em
