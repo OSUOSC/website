@@ -11,7 +11,7 @@ tags: meetings
 | 9/3/2015   | Linux Installfest                     |                 |
 | 9/10/2015  | Introduction to the Command Line      | Bobby Reynolds  |
 | 9/17/2015  | Lightning Talks                       | YOU             |
-| 9/24/2015  | Facebook & Open Source                | Patrick Shuff   |
+| 9/24/2015  | Open Source at Facebook               | Patrick Shuff   |
 | 10/1/2015  | TBA                                   | Matt Meinwald   |
 | 10/8/2015  | PGP & Key Signing                     | William Osler   |
 | 10/15/2015 | Autumn Break                          | n/a             |
