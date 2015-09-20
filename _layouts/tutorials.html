@@ -14,17 +14,14 @@
       {% if site.categories.[page.category] == null %}
         <span>There are currently no tutorials</span>
       {% else %}
-      {% for post in site.categories.[page.category] %}
-        <ul>
-          <li>
-            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-            <span class="date">posted: {{ post.date | date: "%m-%d-%Y" }}</span>
-            <div class="content">
-              {{ post.content }}
-            </div>
-          </li>
-        </ul>
-      {% endfor %}
+        {% for post in site.categories.[page.category] %}
+          <ul>
+            <li>
+              <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+              <span class="date">posted: {{ post.date | date: "%m-%d-%Y" }}</span>
+            </li>
+          </ul>
+        {% endfor %}
       {% endif %}
 
     </div>
