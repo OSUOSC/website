@@ -1,0 +1,35 @@
+<div class="section posts">
+   <div class="container">
+     <ul>
+
+        {% for post in paginator.posts %}
+         <li>
+           <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+           <span class="date">posted: {{ post.date | date: "%m-%d-%Y" }}</span>
+           <div class="content">
+             {{ post.content }}
+           </div>
+         </li>
+       {% endfor %}
+
+
+       {% if page.is_post %}
+         <li>
+           <h2>{{ page.title }}</h2>
+           <span class="date">posted: {{ page.date | date: "%m-%d-%Y" }}</span>
+           <div class="content">
+             {{ page.content }}
+           </div>
+         </li>
+       {% endif %}
+
+     </ul>
+   </div>
+
+  {% if page.is_post %}
+    <!-- TODO -->
+  {% else %}<!-- It is NOT a single post -->
+    {% include pagination.html %}
+  {% endif %}
+
+</div>

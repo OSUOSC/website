@@ -18,7 +18,15 @@ a
     text-decoration: none
     font-weight: 600
   &:hover:not(.about)
-    color: #848484!important
+    color: #5D5D5D
+
+.disabled
+  opacity: 0.25
+
+.about
+  a:hover
+    color: white
+    text-decoration: underline
 td
   padding: 1em 5% 0 0!important
   text-align: left
@@ -296,6 +304,8 @@ hr
   li
     h2
       margin-bottom: 0!important
+      a
+        font-weight: 400
     .content
       margin-top: 2em
 
@@ -451,16 +461,14 @@ span.fa-angle-down
   padding: 0 !important
   text-align: center
   font-family: 'Open Sans', sans-serif
-  z-index: -1
-  border-top: 25px solid #777777
-  -webkit-box-shadow: 0 6px 25px -5px rgba(0, 0, 0, 0.5)
-  -moz-box-shadow: 0 6px 25px -5px rgba(0, 0, 0, 0.5)
-  box-shadow: 0 6px 25px -5px rgba(0, 0, 0, 0.5)
+  // -webkit-box-shadow: 0 4px 8px -1px rgba(0,0,0,0.3)
+  // -moz-box-shadow: 0 4px 8px -1px rgba(0,0,0,0.3)
+  // box-shadow: 0 4px 8px -1px rgba(0,0,0,0.3)
   left: 0
   width: 100%
-  background: #848484
+  background: linear-gradient(to top, #7A7A7A 0%, #848484 4%, #848484 95%, #696969 100%)
   h5
-    margin: 2em -1.5% 2em 0
+    margin: 3em -1.5% 3em 0
 
 .about-multiplier
   margin-bottom: .5rem
@@ -478,6 +486,7 @@ span.fa-angle-down
 
 .contact
   background: linear-gradient(to top, rgb(218,218,218) 0%, rgba(166,166,166,0.25) 3%, rgba(166,166,166,0.25) 98%, rgb(218,218,218) 100%)
+  padding: 3em 0
 
 .contact-info
   li
@@ -606,17 +615,22 @@ ul.contact-info
 
 footer
   text-align: center!important
-  position: initial
+  position: absolute
+  width: 100%
   // FIXME
   // margin-bottom: 2em
   // using margins (which is prefered) renders a black background on chrome for mobile
   background: #fff
-  padding-bottom: 2em
+  padding-bottom: 0
+  height: 4em
   .rss
     font-size: 1.5em
     font-weight: 400!important
     padding-bottom: 1em
   .with-love
+    position: absolute
+    bottom: 2em
+    width: 100%
     span
       color: #666
       font-size: 12px
@@ -630,9 +644,203 @@ footer
         font-size: 10px
         color: #990101
 
+#page-content-wrapper.single footer
+  bottom: 0
+  
+// TODO
+// shorten/tidy sass
 
-/* Categories
- *––––––––––––––––––––––––––––––––––––––––––––––––––
+// mailchimp
+.section.subscribe
+  padding: 0
+  // background: #777
+  background: #fff
+  width: 100%
+  -webkit-box-shadow: 0 -1px 1px 0 rgba(0,0,0,0.15)
+  -moz-box-shadow: 0 -1px 1px 0 rgba(0,0,0,0.15)
+  box-shadow: 0 -1px 1px 0 rgba(0,0,0,0.15)
+  .info
+    line-height: normal
+    text-align: center
+    margin-top: 2em
+    font-size: 1.5em
+    width: 100%
+    position: absolute
+    left: 0
+    .error
+      color: #bb0000!important
+    .valid
+      color: #2FB869!important
+  input[type="radio"]
+    display: none
+  label
+    color: #777
+    display: inline-block
+  span.big
+    background-color: #848484
+    background-color: #E9E9E9
+    border-radius: 50% 50% 50% 50%
+    display: inline-block
+    height: 15px
+    margin-bottom: -11px
+    margin-right: 9px
+    padding: 8px
+    position: relative
+    top: -3px
+    width: 15px
+  span.small
+    border-radius: 50% 50% 50% 50%
+    display: block
+    transition: background 0.4s ease 0s
+    width: 50%
+    height: 50%
+    left: 25%
+    top: 25%
+    position: absolute
+  input[type="radio"]:checked + label
+    color: #FFFFFF
+  input[type="radio"]:checked + label span.small
+    background: #848484
+
+    opacity: 1
+  .circle .big
+    height: 2em
+    width: 2em
+    border: 1px solid #D5D5D5
+  input[type="radio"]:checked + label.circle span.small
+    background-color: #2FB869
+
+  .email-format
+    vertical-align: middle
+    line-height: 2em
+
+
+form
+  margin-bottom: 0!important
+
+#mc_embed_signup, #mc_embed_signup *
+  box-sizing: border-box
+
+.mc-field-group.input-group
+  ul
+    display: inline-block
+    li
+      display: inline-block
+
+.mc-field-group
+  height: 12em
+  float: left
+.mc-field-group.input-group ul, .mc-field-group.input-group li
+  margin-bottom: 0
+  // FIXME
+  display: block
+
+.subscribe-title
+  display: inline-block
+
+.subscribe-wrapper
+  max-width: 135em
+  display: block
+  padding: 3em
+
+#mc_embed_signup
+  width: 100%
+  text-align: right
+  display: block
+  margin: 0 auto
+
+#mc_embed_signup label, #mc_embed_signup #mce-EMAIL, #mc_embed_signup button
+  display: inline
+  vertical-align: middle
+  font-size: 1em
+  width: 100%
+  margin: 0
+  font-weight: normal
+
+#mc_embed_signup label, #mc_embed_signup, #mc_embed_signup button
+  border: none
+
+#mc_embed_signup label
+  display: block
+  text-transform: uppercase
+  color: inherit
+
+#mc_embed_signup button
+  border: none
+  font-weight: normal
+  color: #fff
+  text-transform: uppercase
+  background: #d53c3b
+  width: 7em
+  cursor: pointer
+  float: right
+
+#mc_embed_signup button:hover
+  background: #a0cf63
+
+#mc_embed_signup_scroll
+  line-height: 8em
+  height: 12em
+
+
+.mc-field-group
+  margin-right: 8em
+  // &:not(:first-of-type)
+  //   margin-left: 8em
+  line-height: 4em
+  .input-group-title
+    font-family: "Open Sans", sans-serif
+    text-align: left
+    width: 100%
+    float: left
+    font-size: 1.25em
+  ul
+    line-height: 4em
+    li
+      text-align: left
+      display: block
+      &:not(:last-of-type)
+        margin-right: 4rem
+
+input#mc-embedded-subscribe
+  margin-bottom: 0
+  border-radius: 0
+  background: #2FB869
+  color: #fff
+  border: 0
+  font-family: "Open Sans", sans-serif
+  vertical-align: bottom
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.15)
+  -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.15)
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.15)
+  height: 4em
+  font-size: inherit
+  font-weight: 600
+  line-height: normal
+
+input#mce-EMAIL
+  border-radius: 0
+  min-width: 20em
+  border: 1px solid #D5D5D5
+  font-size: 2em!important
+  // -webkit-box-shadow: inset 1px 1px 0px 1px rgba(0,0,0,0.15)
+  // -moz-box-shadow: inset 1px 1px 0px 1px rgba(0,0,0,0.15)
+  // box-shadow: inset 1px 1px 0px 1px rgba(0,0,0,0.15)
+  &::moz-placeholder, &::-webkit-input-placeholder, &:-ms-input-placeholder
+    color: #bb0
+
+.mc-field-group::before:not(.input-group)
+  content: '\f0e0'
+  font-family: "FontAwesome"
+  height: 2em
+  font-weight: 400
+  position: absolute
+  font-size: 2em
+  margin-left: 0.5em
+  vertical-align: middle
+  line-height: 2em
+  color: #E9E9E9
+
 
 .categories
   background-image: url('../images/about-bg.jpg')
@@ -833,6 +1041,12 @@ footer
     font-size: 85% !important
 
 @media (min-width: 750px) and (max-width: 1200px) and (orientation: landscape)
+  input#mce-EMAIL
+    min-width: 10em
+  .mc-field-group.input-group
+    margin-left: 3em
+    ul li:not(:last-of-type)
+      margin-right: 3em
   .landing
     height: 100%
     #heading-wrapper
@@ -873,6 +1087,8 @@ footer
       font-size: 1.5em
 
 @media (max-width: 1200px)
+  input#mce-EMAIL
+    min-width: initial
   .category-title
     margin-bottom: 1em
     h1
@@ -975,6 +1191,67 @@ footer
     -moz-transform: translate(50%, -50%) rotate(45deg) translateY(5.5em)
     transform: translate(50%, -50%) rotate(45deg) translateY(5em)
 
+@media (min-width: 750px) and (max-width: 1200px)
+  .mc-field-group
+    &:not(:first-of-type)
+      margin-right: 8em
+    &:first-of-type
+      width: 100%
+      margin-right: 0
+  .subscribe-wrapper
+    height: 28em
+    padding-top: 6em
+  .sidebar
+    left: 0
+  #heading
+    font-size: 135%
+  .sidebar.active
+    z-index: 9
+  .menu-toggle
+    left: 100%
+  #page-content-wrapper
+    left: 0
+    right: 0
+    -webkit-transform: translateX(0%)
+    -moz-transform: translateX(0%)
+    transform: translateX(0%)
+  .section.about
+    left: 0
+    width: 100%
+
+@media (min-width: 550px) and (max-width: 750px)
+  .mc-field-group
+    &:not(:first-of-type)
+      margin-right: 8em
+    &:first-of-type
+      width: 100%
+      margin-right: 0
+  .subscribe-wrapper
+    height: 24em
+
+@media (min-width: 350px) and (max-width: 750px)
+  .sidebar
+    left: 0
+  #heading
+    font-size: 135%
+  .sidebar.active
+    z-index: 9
+  .menu-toggle
+    left: 100%
+  #page-content-wrapper
+    left: 0
+    width: 100%
+    -webkit-transform: translateX(0%)
+    -moz-transform: translateX(0%)
+    transform: translateX(0%)
+    position: fixed
+    right: initial
+    &.active
+      width: 100%
+      position: fixed
+
+
+
 @media (max-width: 350px)
   .contact-info-email-container, .contact-info-office-container, .contact-info-meeting-container
     font-size: 85%
@@ -1022,45 +1299,20 @@ footer
       transition: all 0.5s linear
       left: 0
 
-@media (min-width: 750px) and (max-width: 1200px)
-  .sidebar
-    left: 0
-  #heading
-    font-size: 135%
-  .sidebar.active
-    z-index: 9
-  .menu-toggle
-    left: 100%
-  #page-content-wrapper
-    left: 0
-    right: 0
-    -webkit-transform: translateX(0%)
-    -moz-transform: translateX(0%)
-    transform: translateX(0%)
-  .section.about
-    left: 0
+  input#mc-embedded-subscribe
     width: 100%
 
-@media (min-width: 350px) and (max-width: 750px)
-  .sidebar
-    left: 0
-  #heading
-    font-size: 135%
-  .sidebar.active
-    z-index: 9
-  .menu-toggle
-    left: 100%
-  #page-content-wrapper
-    left: 0
+@media (max-width: 550px)
+  .mc-field-group
+    margin-right: 0
     width: 100%
-    -webkit-transform: translateX(0%)
-    -moz-transform: translateX(0%)
-    transform: translateX(0%)
-    position: fixed
-    right: initial
-    &.active
-      width: 100%
-      position: fixed
+    ul
+      display: table!important
+  .subscribe-wrapper
+    height: 40em
+  input#mc-embedded-subscribe
+    vertical-align: middle
+
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5)
   html

@@ -4,52 +4,31 @@
 {% include head.html %}
 {% include sidebar.html %}
 
-  {% if paginator.previous_page %}
-    <div id="page-content-wrapper" class="index" style="width: 100%;">
-  {% else %}
-    <div id="page-content-wrapper" class="index home">
-    {% include landing.html %}
-    {% include about.html %}
-    <div id="spacer"></div>
-    {% include contact.html %}
-  {% endif %}
+{% if paginator.previous_page %}<!-- when NOT on the root page   -->
 
-   <div class="section posts">
-      <div class="container">
-        <ul>
-          {% for post in paginator.posts %}
-            <li>
-              <h2>{{ post.title }}</h2>
-              <span class="date">posted: {{ post.date | date: "%m-%d-%Y" }}</span>
-              <div class="content">
-                {{ post.content }}
-              </div>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
+  <div id="page-content-wrapper" class="index" style="width: 100%;">
 
-      <!-- Pagination links -->
-      <div class="pagination">
-        {% if paginator.previous_page %}
-           <a href="{{ paginator.previous_page_path }}" class="previous"><i class="fa fa-caret-left"></i></a>
-        {% else %}
-          <!-- TODO -->
-          <span class="previous"><i class="fa fa-caret-left"></i></span>
-        {% endif %}
-        <span class="page_number "> {{ paginator.page }} of {{ paginator.total_pages }}</span>
-        {% if paginator.next_page %}
-          <a href="{{ paginator.next_page_path }}" class="next"><i class="fa fa-caret-right"></i></a>
-        {% else %}
-          <!-- TODO -->
-          <span class="next "><i class="fa fa-caret-right"></i></span>
-        {% endif %}
-      </div>
-    </div>
+{% else %}<!-- on the root page -->
 
-    {% include footer.html %}
 
-</div>
+    {% if page.is_post %}
+      <div id="page-content-wrapper" class="index home single">
+    {% else %}<!-- It is NOT a single post -->
+      <div id="page-content-wrapper" class="index home">
+      {% include landing.html %}
+      {% include about.html %}
+      {% include mailchimp.html %}
+      {% include contact.html %}
+    {% endif %}
+
+{% endif %}
+
+
+{% include posts.html %}
+{% include footer.html %}
+
+
+  </div>
 
 <!-- End Document
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
