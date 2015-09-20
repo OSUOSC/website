@@ -20,7 +20,10 @@ assets:
   css_compressor: sass
 
 jekyll-press:
-  exclude: 'sitemap.xml' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
+  exclude:
+    - "sitemap.xml"
+    - "rss.xml"
+
   js_options: {}      # js minifier options
   css_options: {}     # css minifier options
   html_options: {}    # html minifier options
