@@ -70,6 +70,13 @@ function moveClouds(e, s, d) {
 
 // MAILCHIMP
 //-------------------------------------
+
+
+$(document).ready(function() {
+    $('#mc_embed_signup').find('form').ajaxChimp();
+});
+
+
 (function($) {
     'use strict';
 
