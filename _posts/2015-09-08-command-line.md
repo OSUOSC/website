@@ -3,6 +3,7 @@ layout: home
 title: Introduction to the Command Line
 categories: announcements
 tags: announcements
+meeting: September 10th 2015
 ---
 
 Hi everyone,

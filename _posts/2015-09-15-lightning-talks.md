@@ -3,6 +3,7 @@ layout: home
 title: Lightning Talks
 categories: announcements
 tags: announcements
+meeting: September 17th 2015
 ---
 
 Hi everyone,

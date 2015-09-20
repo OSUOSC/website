@@ -3,6 +3,7 @@ layout: home
 title: Linux Installfest
 categories: announcements
 tags: announcements
+meeting: August 30th 2015
 ---
 
 Hi everyone,
