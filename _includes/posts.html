@@ -18,7 +18,7 @@
            <h2>{{ page.title }}</h2>
            <span class="date">posted: {{ page.date | date: "%m-%d-%Y" }}</span>
            <div class="content">
-             {{ page.content }}
+             {{ page.content | markdownify }}
            </div>
          </li>
        {% endif %}
