@@ -23,6 +23,3 @@ categories: meetings
 | 12/3/2015  |                                       |                 |
 | 12/10/2015 |                                       |                 |
 | 12/17/2015 |                                       |                 |
-
-*Disclaimer:*
-Speakers must email the <a href="mailto:info@opensource.osu.edu">officers</a> a brief description of their talk (for promotion purposes) in addition to an outline of their presentation one week before they are scheduled to present. All presentations/material must be approved by two club officers no less than an one hour before a meeting.
