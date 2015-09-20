@@ -4,6 +4,13 @@ url: "opensource.osu.edu"
 
 paginate: 10
 
+defaults:
+  -
+    scope:
+      path: ""      # empty string for all files
+      type: posts   # limit to posts
+    values:
+      is_post: true # automatically set is_post=true for all posts
 
 permalink: pretty
 highlighter: true
