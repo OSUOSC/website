@@ -1,5 +1,13 @@
 <div class="section posts">
    <div class="container">
+
+    {% if page.is_post %}
+       <div class="category-title">
+         <h5>{{ page.tags }}</h5>
+         <h5>{{ page.title }}</h5>
+       </div>
+    {% endif %}
+
      <ul>
 
         {% for post in paginator.posts %}

@@ -3,6 +3,7 @@ layout: home
 title: The Internet is Burning...
 created: 1161813320
 categories: announcements
+tags: announcements
 ---
 ...atleast our mailing list has caught fire.
 

@@ -3,6 +3,7 @@ layout: home
 title: Finals Week and Spring Break
 created: 1268434747
 categories: announcements
+tags: announcements
 ---
 We will **NOT** be having a meeting Thursday, March 18 or March 25, because it is finals week and spring break. Our next meeting will be Thursday, April 1.
 

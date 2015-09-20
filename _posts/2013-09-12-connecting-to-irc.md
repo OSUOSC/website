@@ -3,6 +3,7 @@ layout: home
 title: Connecting to IRC
 created: 1378959734
 categories: announcements
+tags: announcements
 ---
 #### Foreward
 

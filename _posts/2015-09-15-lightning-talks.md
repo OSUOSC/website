@@ -2,6 +2,7 @@
 layout: home
 title: Lightning Talks
 categories: announcements
+tags: announcements
 ---
 
 Hi everyone,

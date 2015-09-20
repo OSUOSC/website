@@ -3,6 +3,7 @@ layout: home
 title: Forums are back online!
 created: 1201184090
 categories: announcements
+tags: announcements
 ---
 After months of returning error messages to users who went to opensource.cse.ohio-state.edu/forum, the [Open Source Club forums](http://opensource.cse.ohio-state.edu/forum "Click here to enter our forums") are back online. This past summer, p0rn and pharmaceutical spammers had a field day, then our website got taken offline and we had to disable forums and comments. We have cleaned up some lingering spam comments, re-enabled the forum, and added a captcha requirement in order for anyone to log in, as well as a few other random things.
 Spamming in the forums will absolutely not be tolerated. If you find any spam on this site, please report it [here](http://opensource.cse.ohio-state.edu/forum/21) and a moderator will delete it and block/delete the offending user's account.

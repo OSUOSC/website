@@ -2,6 +2,7 @@
 layout: home
 title: Introduction to the Command Line
 categories: announcements
+tags: announcements
 ---
 
 Hi everyone,

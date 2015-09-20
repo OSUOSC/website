@@ -2,6 +2,7 @@
 layout: home
 title: Linux Installfest
 categories: announcements
+tags: announcements
 ---
 
 Hi everyone,

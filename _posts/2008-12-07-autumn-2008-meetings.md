@@ -3,6 +3,7 @@ layout: home
 title: Autumn 2008 Meetings
 created: 1228661455
 categories: announcements
+tags: announcements
 ---
 Below is a list of meetings from Autumn 2008:
 

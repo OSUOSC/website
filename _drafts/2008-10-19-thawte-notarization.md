@@ -3,6 +3,7 @@ layout: post
 title: Thawte Notarization
 created: 1224454563
 categories: announcements
+tags: announcements
 ---
 <p>This week we will meet on <!--date goes here--> at <!--time goes here--> in <!--alternate location goes here--><a href="http://www.osu.edu/map/building.php?building=279">Dreese Labs</a> room 266. Please note that this is <b>not</b> the time/date we normally meet. We have a special guest, <a href="https://www.thawte.com/">Thawte</a> notary <a href="http://en.wikipedia.org/wiki/Mark_M._Noble">Mark Noble</a>, who will present on the <a rel="nofollow" href="https://www.thawte.com/ssl-digital-certificates/free-guides-whitepapers/pdf/wot_eng.pdf" onClick="window.open('https://www.thawte.com/ssl-digital-certificates/free-guides-whitepapers/pdf/wot_eng.pdf','_blank','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, copyhistory=no, width=650, height=768'); return false;">Thawte Web of Trust</a> and helping us to obtain our own personal e-mail certificates. Those who come and bring 2 forms of photo identification will get their own personalized e-mail certificates. (<a href="/thawte_wot">read more</a>)</p>
 <!--break-->

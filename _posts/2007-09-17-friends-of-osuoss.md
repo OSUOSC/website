@@ -3,6 +3,7 @@ layout: home
 title: Friends of OSUOSS
 created: 1190062154
 categories: announcements
+tags: announcements
 ---
 ## Groups on Campus
 

@@ -3,6 +3,7 @@ layout: post
 title: Testing Lightbox
 created: 1253747979
 categories: announcements
+tags: announcements
 ---
 <a href="http://torvalds.cse.ohio-state.edu/sites/default/files/open_source_banner_2.png" rel="lightvideo">This</a> is a Lightbox link. Lightbox is conflicting with the input filter.
 

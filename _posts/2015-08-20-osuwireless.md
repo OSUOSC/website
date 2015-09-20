@@ -2,6 +2,7 @@
 layout: home
 title: Connecting to osuwireless with linux
 categories: tutorials
+tags: tutorials
 ---
 
 Steps will vary depending on your distro of choice, but the same principles apply:
