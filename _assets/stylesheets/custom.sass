@@ -1,3 +1,7 @@
+$sidebarWidth: 35rem
+
+$maxContentWidth: 120em
+
 body
   overflow-x: hidden
   color: #424242
@@ -179,7 +183,7 @@ hr
   transition: all 0.5s linear
   height: 100%
   z-index: 10
-  width: 35rem
+  width: $sidebarWidth
   perspective: 100em
   border-right: 1px solid #D5D5D5
 
@@ -300,7 +304,7 @@ hr
 #page-content-wrapper
   float: left
   position: absolute
-  left: 35rem
+  left: $sidebarWidth
   width: inherit
   background: #fff
   overflow-x: hidden
@@ -354,6 +358,10 @@ ul
  *––––––––––––––––––––––––––––––––––––––––––––––––––
 
 #scroll-indicator
+  position: absolute
+  width: 100%
+  display: inline-block
+  right: 0%
   &::before
     content: "\f107"
     font-size: 3em
@@ -748,7 +756,7 @@ form
   display: inline-block
 
 .subscribe-wrapper
-  max-width: 135em
+  max-width: $maxContentWidth
   display: block
   padding: 3em
   margin: 0 auto
@@ -795,8 +803,6 @@ form
 
 .mc-field-group
   margin-right: 8em
-  // &:not(:first-of-type)
-  //   margin-left: 8em
   line-height: 4em
   .input-group-title
     font-family: "Open Sans", sans-serif
@@ -833,9 +839,6 @@ input#mce-EMAIL
   min-width: 20em
   border: 1px solid #D5D5D5
   font-size: 2em!important
-  // -webkit-box-shadow: inset 1px 1px 0px 1px rgba(0,0,0,0.15)
-  // -moz-box-shadow: inset 1px 1px 0px 1px rgba(0,0,0,0.15)
-  // box-shadow: inset 1px 1px 0px 1px rgba(0,0,0,0.15)
   &::moz-placeholder, &::-webkit-input-placeholder, &:-ms-input-placeholder
     color: #bb0
 
@@ -852,7 +855,6 @@ input#mce-EMAIL
   color: #E9E9E9
 
 .categories
-  background-image: url('../images/about-bg.jpg')
   background-size: cover
   color: #fff
   .section-description
@@ -881,8 +883,6 @@ input#mce-EMAIL
         display: none
   #spacer
     display: none
-
-/* Bigger than 550
 
 @media (min-width: 550px) and (max-width: 750px) and (orientation: landscape)
   .landing
@@ -944,7 +944,7 @@ input#mce-EMAIL
   .layout-mobile
     display: none
   ul.contact-info
-    max-width: 120em
+    max-width: $maxContentWidth
     margin: 0 auto
     display: table
   .landing #heading a#button
@@ -962,7 +962,7 @@ input#mce-EMAIL
     width: inherit
     overflow-x: hidden
     &.home
-      left: 35rem
+      left: $sidebarWidth
   .layout-desktop
     display: inherit
   .section
@@ -1069,7 +1069,6 @@ input#mce-EMAIL
     #scroll-indicator
       bottom: 1em
 
-
 @media (min-width: 1200px) and (orientation: landscape)
   .landing
     height: 100%
@@ -1159,15 +1158,15 @@ input#mce-EMAIL
     transition: all 0.5s linear
     height: 100%
     z-index: 9
-    width: 35rem
+    width: $sidebarWidth
     -webkit-transform: translateX(-100%)
     -moz-transform: translateX(-100%)
     transform: translateX(-100%)
     &.active
       transition: all 0.5s linear
-      width: 35rem
+      width: $sidebarWidth
       z-index: 9
-      left: 35rem
+      left: $sidebarWidth
 
   .landing #heading a#button
     position: inherit
@@ -1188,7 +1187,7 @@ input#mce-EMAIL
       overflow-y: scroll!important
       width: auto
       z-index: 8
-      left: 35rem
+      left: $sidebarWidth
   #main-nav
     padding-top: 2em
 
@@ -1359,13 +1358,7 @@ input#mce-EMAIL
     -ms-transition-property: none !important
     -webkit-transition-property: none !important
     transition-property: none !important
-    // transformations
-    // -o-transform: none !important
-    // -moz-transform: none !important
-    // -ms-transform: none !important
-    // -webkit-transform: none !important
-    // transform: none !important
-    // animations
+
     -webkit-animation: none !important
     -moz-animation: none !important
     -o-animation: none !important
@@ -1418,10 +1411,6 @@ input#mce-EMAIL
   -moz-animation-iteration-count: infinite
   -webkit-animation-iteration-count: infinite
   -o-animation-iteration-count: infinite
-  position: absolute
-  width: 100%
-  display: inline-block
-  right: 0%
 
 /* Social Media Icons
  *––––––––––––––––––––––––––––––––––––––––––––––––––
