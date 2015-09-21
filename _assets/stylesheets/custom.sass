@@ -839,18 +839,17 @@ input#mce-EMAIL
   &::moz-placeholder, &::-webkit-input-placeholder, &:-ms-input-placeholder
     color: #bb0
 
-.mc-field-group::before:not(.input-group)
+.input-email-wrapper:before
   content: '\f0e0'
   font-family: "FontAwesome"
-  height: 2em
   font-weight: 400
   position: absolute
   font-size: 2em
   margin-left: 0.5em
   vertical-align: middle
-  line-height: 2em
+  line-height: 6em
+  height: 6em
   color: #E9E9E9
-
 
 .categories
   background-image: url('../images/about-bg.jpg')
@@ -1201,6 +1200,12 @@ input#mce-EMAIL
     transform: translate(50%, -50%) rotate(45deg) translateY(5em)
 
 @media (min-width: 750px) and (max-width: 1200px)
+  #scroll-indicator
+    position: absolute
+    width: 100%
+    display: inline-block
+    right: 0%
+    bottom: 0
   .mc-field-group
     &:not(:first-of-type)
       margin-right: 8em
