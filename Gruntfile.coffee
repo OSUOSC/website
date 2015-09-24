@@ -56,12 +56,6 @@ module.exports = (grunt) ->
         src: 'raleway-fontface.css'
         dest: 'vendor/css/'
       } ]
-      skeleton: files: [ {
-        expand: true
-        cwd: 'bower_components/skeleton/css'
-        src: 'skeleton.css'
-        dest: 'vendor/css/'
-      } ]
     exec: jekyll: cmd: 'jekyll build --trace'
     watch:
       options: livereload: false
