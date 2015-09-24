@@ -1,32 +1,39 @@
-// ANIMATE.CSS
-//-------------------------------------
-jQuery(document).ready( function(){
+$(document).ready(function() {
   $('#heading').addClass('animated fadeIn').removeClass('hidden');
   $('.landing>#button').addClass('animated slideInRight').removeClass('hidden');
   $('#heading a#button').addClass('animated slideInUp').removeClass('hidden');
   $('#scroll-indicator').addClass('animated bounce').removeClass('hidden');
-});
+  $('#mc_embed_signup').find('form').ajaxChimp();
 
-// MENU TOGGLE ICON
-//-------------------------------------
-$(document).ready(function() {
   $('body').addClass('js');
   var $menu = $('.sidebar'),
-    $menulink = $('.menu-toggle');
+      $menulink = $('.menu-toggle');
 
-$menulink.click(function() {
-  $menulink.toggleClass('active');
-  $menu.toggleClass('active');
-  $('#page-content-wrapper').toggleClass('active');
-  return false;
-});});
+  $menulink.click(function() {
+      $menulink.toggleClass('active');
+      $menu.toggleClass('active');
+      $('#page-content-wrapper').toggleClass('active');
+      if ($(window).width() >= 750 && $(window).width() < 1200 ) {
+        setWidth();
+      }
+      return false;
+  });
 
-// CURRENT PAGE INDICATOR
-//-------------------------------------
-$(function() {
-    setNavigation();
 });
 
+$(function() {
+    setNavigation();
+    setWidth();
+});
+
+$(window).resize(function() {
+  setWidth();
+});
+
+
+
+
+// current page indicator
 function setNavigation() {
     var path = window.location.pathname;
     path = path.replace(/\/$/, "");
@@ -41,13 +48,34 @@ function setNavigation() {
         } else if (href.length == 1) {
             $(this).addClass('active');
         }
-
     });
 }
 
+// define #page-content-wrapper width
+function setWidth() {
 
-// CLOUDS
-//-------------------------------------
+// TODO
+// i know this is shitty, needs to be rewritten
+    if ($(window).width() < 1200) {
+
+        if ($(".sidebar").is(".active"))  {
+          if ($(window).width() < 750) {
+            var contentWrapperWidth = $(window).width() - $('.sidebar').width();
+          } else {
+            var contentWrapperWidth = 'inherit';
+          }
+        } else {
+            var contentWrapperWidth = $(window).width();
+        }
+
+    } else {
+        var contentWrapperWidth = $(window).width() - $('.sidebar').width();
+    }
+
+    $('#page-content-wrapper').css('width', contentWrapperWidth);
+}
+
+// clouds
 function moveClouds(e, s, d) {
     $(e).css('right', '-20%');
     var wait = window.setTimeout(function() {
@@ -58,25 +86,8 @@ function moveClouds(e, s, d) {
         });
     }, d);
 }
-// if(!Modernizr.cssanimations) {
-//     var clouds = [1,2,3,4];
-//
-//     $.each(clouds, function() {
-//         var e = $('.cloud-' + this);
-//         moveClouds(e, e.data('speed'), e.data('delay'));
-//     });
-// }
 
-
-// MAILCHIMP
-//-------------------------------------
-
-
-$(document).ready(function() {
-    $('#mc_embed_signup').find('form').ajaxChimp();
-});
-
-
+// mailchimp
 (function($) {
     'use strict';
 
@@ -192,8 +203,7 @@ $(document).ready(function() {
 })(jQuery);
 
 
-// FLAT ICON SHADOWS
-//-------------------------------------
+// icon flat shadows
 ! function(e) {
     function s(e, t) {
         e = e.replace("#", "");
@@ -387,7 +397,6 @@ $(document).ready(function() {
                     break
             }
             el.css({
-                // background: i,
                 "text-shadow": l
             })
         })

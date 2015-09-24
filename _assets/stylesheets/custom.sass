@@ -1,13 +1,19 @@
 $sidebarWidth: 35rem
 $maxContentWidth: 120em
 $bodyfont: "Open Sans", sans-serif
-$textColor: #424242
-$textColorHover: #5D5D5D
+
+// $textColor: #424242
+// $textColorHover: #5D5D5D
+
+$textColor: #5D5D5D
+$textColorHover: #424242
+
+
 $oscRed: #990101
 $white: #FFF
 $gray: #848484
 
-
+@import "weather"
 
 .container
   box-sizing: border-box
@@ -443,30 +449,6 @@ hr
   display: table
   clear: both
 
-/* Media Queries
- *––––––––––––––––––––––––––––––––––––––––––––––––––
-/*
- *Note: The best way to structure the use of media queries is to create the queries
- *near the relevant code. For example, if you wanted to change the styles for buttons
- *on small devices, paste the mobile query code up in the buttons section and style it
- *there.
-
-/* Larger than mobile
-@media (min-width: 400px)
-
-/* Larger than phablet (also point when grid becomes active)
-@media (min-width: 550px)
-
-/* Larger than tablet
-@media (min-width: 750px)
-
-/* Larger than desktop
-@media (min-width: 1000px)
-
-/* Larger than Desktop HD
-@media (min-width: 1200px)
-
-
 
 body
   color: $textColor
@@ -499,9 +481,9 @@ a
     color: white
     text-decoration: underline
 td
-  padding: 1em 5% 0 0!important
   text-align: left
   vertical-align: middle
+  height: 3em
 
 p, ul, li, h1, h2, h3, h4, h5, h6
   font-family: $bodyfont
@@ -523,120 +505,6 @@ hr
   content: "\f105"
   font-family: FontAwesome
   margin: 0 0.5em
-
-.clouds
-  position: relative
-  overflow: hidden
-  height: 100%
-
-[class^="cloud-"]
-  position: absolute
-  right: 120%
-  width: 200px
-  height: 60px
-  background: $white
-  -webkit-border-radius: 200px
-  border-radius: 200px
-  &:before
-    content: ''
-    position: absolute
-    top: -15px
-    left: 10px
-    width: 100px
-    height: 80px
-    background: $white
-    -webkit-border-radius: 100px
-    border-radius: 100px
-    -webkit-transform: rotate(30deg)
-    -moz-transform: rotate(30deg)
-    transform: rotate(30deg)
-  &::after
-    content: ''
-    position: absolute
-    top: -15px
-    left: 10px
-    width: 100px
-    height: 80px
-    background: $white
-    -webkit-border-radius: 100px
-    border-radius: 100px
-    -webkit-transform: rotate(30deg)
-    -moz-transform: rotate(30deg)
-    transform: rotate(30deg)
-    top: -55px
-    left: auto
-    right: 15px
-    width: 120px
-    height: 120px
-
-.cloud-1
-  animation: moveclouds 30s linear infinite
-  top: 85%
-  -webkit-animation: moveclouds 30s linear infinite
-  -moz-animation: moveclouds 30s linear infinite
-  -o-animation: moveclouds 30s linear infinite
-
-.cloud-2
-  animation: moveclouds 45s linear infinite
-  animation-delay: 5s
-  top: 10%
-  opacity: 0.8
-  transform: scale(0.8)
-  -moz-transform: scale(0.8)
-  -o-animation: moveclouds 45s linear infinite
-  -webkit-transform: scale(0.8)
-  -webkit-animation-delay: 5s
-  -moz-animation-delay: 5s
-  -moz-animation: moveclouds 45s linear infinite
-  -webkit-animation: moveclouds 45s linear infinite
-
-.cloud-3
-  animation: moveclouds 40s linear infinite
-  top: 65%
-  opacity: 0.6
-  transform: scale(0.6)
-  -webkit-transform: scale(0.6)
-  -moz-transform: scale(0.6)
-  -webkit-animation: moveclouds 40s linear infinite
-  -moz-animation: moveclouds 40s linear infinite
-  -o-animation: moveclouds 40s linear infinite
-
-.cloud-4
-  animation: moveclouds 26s linear infinite
-  animation-delay: 8s
-  top: 40%
-  opacity: 0.75
-  transform: scale(0.75)
-  -moz-transform: scale(0.75)
-  -o-animation: moveclouds 26s linear infinite
-  -webkit-transform: scale(0.75)
-  -webkit-animation-delay: 8s
-  -moz-animation-delay: 8s
-  -moz-animation: moveclouds 26s linear infinite
-  -webkit-animation: moveclouds 26s linear infinite
-
-@-webkit-keyframes moveclouds
-  0%
-    right: -20%
-
-  100%
-    right: 120%
-
-
-@-moz-keyframes moveclouds
-  0%
-    right: -20%
-
-  100%
-    right: 120%
-
-
-@-o-keyframes moveclouds
-  0%
-    right: -20%
-
-  100%
-    right: 120%
 
 .github-ribbon
   position: absolute
@@ -673,7 +541,6 @@ hr
   transition: all 0.5s linear
   z-index: 10
   list-style: outside none none
-  perspective: 100em
   a
     color: white
     transition: all 0.5s linear
@@ -777,6 +644,8 @@ hr
         font-weight: 400
     .content
       margin-top: 2em
+      ul>li
+        display: list-item
 
 #main-nav
   padding-top: 6em
@@ -814,28 +683,6 @@ hr
   .page_number
     font-family: $bodyfont
     margin: 0 0.5em
-
-ul
-  &.footer-info li
-    font-size: 1.25em
-    font-weight: 600
-    color: #333
-    padding: 0
-    padding: 0.75em 0
-    margin: 0
-    width: 100%
-    transition: all .5s ease
-    list-style: none
-    &:not(:last-of-type)
-      margin-bottom: 1em
-  &.footer-icons li:not(:last-of-type)
-    margin: 0 0.5em 0 0
-  &.footer-info
-    position: relative
-    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15)
-    margin: 0
-    -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15)
-    -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15)
 
 .menu-toggle + .posts
   padding: 8em 0 0 0 !important
@@ -950,7 +797,7 @@ span.fa-angle-down
   text-align: center
   width: 100%
   h5
-    margin: 3em -1.5% 3em 0
+    margin: 3em 0
 
 .about-multiplier
   color: #11DFC7
@@ -1091,10 +938,6 @@ footer
   text-align: center!important
   width: 100%
   height: 4em
-  .rss
-    font-size: 1.5em
-    font-weight: 400!important
-    padding-bottom: 1em
   .with-love
     position: absolute
     bottom: 2em
@@ -1107,6 +950,7 @@ footer
       a
         color: #000000
         text-decoration: none
+      // FIXME
       .fa-heart
         font-size: 10px
         color: $oscRed
@@ -1197,7 +1041,6 @@ form
 .mc-field-group.input-group ul, .mc-field-group.input-group li
   display: block
   margin-bottom: 0
-  // FIXME
 
 .subscribe-title
   display: inline-block
@@ -1239,9 +1082,8 @@ form
   float: right
   width: 7em
   text-transform: uppercase
-
-#mc_embed_signup button:hover
-  background: #a0cf63
+  &:hover
+    background: #a0cf63
 
 #mc_embed_signup_scroll
   line-height: 8em
@@ -1294,6 +1136,7 @@ input#mce-EMAIL
 .input-email-wrapper::before
   content: '\f0e0'
   position: absolute
+  display: inherit
   font-family: "FontAwesome"
   font-size: 2em
   font-weight: 400
@@ -1436,19 +1279,6 @@ input#mce-EMAIL
       top: 40%
     #scroll-indicator
       bottom: 20%
-
-@media (max-width: 750px) and (orientation: portrait)
-  .landing
-    padding: 0
-    height: 50%
-    bottom: 0
-    top: initial
-    #scroll-indicator
-      bottom: 50%
-    #heading-wrapper
-      top: 25%
-  #heading
-    font-size: 122%
 
 @media (max-width: 1200px) and (orientation: portrait)
   .landing
@@ -1621,9 +1451,6 @@ input#mce-EMAIL
   #scroll-indicator
     display: inline-block
     position: absolute
-    // FIXME
-    // top: 61%
-    // top: 66%
     right: 0%
     width: 100%
   .mc-field-group
@@ -1812,7 +1639,7 @@ input#mce-EMAIL
   -webkit-animation-iteration-count: infinite
   -o-animation-iteration-count: infinite
 
-@media (min-width: 1920px) and (orientation: landscape)
+@media (min-width: 2000px) and (orientation: landscape)
   .landing
     height: 100%
     #heading-wrapper
@@ -1823,7 +1650,6 @@ input#mce-EMAIL
       font-size: 150%!important
 
 #sidebar-secondary-wrapper
-  position: fixed
   top: 0
   width: 100%
   height: 100%
@@ -1882,6 +1708,3 @@ input#mce-EMAIL
   cursor: pointer
   width: 100%
   display: block
-
-a#button
-  background-color: $gray
