@@ -6,7 +6,7 @@ rvm:
 # Assume bundler is being used, install step will run `bundle install`.
 script:
   - npm install
-  - sudo npm install grunt-cli
+  - npm install -g grunt-cli
   - grunt build
 
 # branch whitelist
