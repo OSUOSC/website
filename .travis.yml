@@ -1,12 +1,15 @@
 language: ruby, node_js
 node_js:
-  - "0.12.7"
+- "0.12"
+
 rvm:
 - 2.2.2
 # Assume bundler is being used, install step will run `bundle install`.
+
+before_install: sudo npm install -g grunt-cli
+
 script:
   - npm install
-  - npm install -g grunt-cli
   - grunt build
 
 # branch whitelist
