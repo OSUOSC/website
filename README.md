@@ -17,7 +17,8 @@ cd open-source-club-website
 #### install rvm (*ruby version manager*)
 
 #####  OSX
-  You'll need to install Ruby 2.2.2, and the easiest way to do this is with [rvm](https://rvm.io/), the Ruby Version Manager.
+  You'll need to install Ruby 2.2.2, and the easiest way to do this is with
+  [rvm](https://rvm.io/), the Ruby Version Manager.
 
   Assuming you have Homebrew installed:
   ```bash
@@ -63,7 +64,7 @@ cd open-source-club-website
 ```bash
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.26.1/install.sh | bash
 nvm install 0.12.7 && nvm use 0.12.7
-npm install -g
+npm install
 ```
 ----
 
@@ -76,6 +77,11 @@ bower install
 #### install gem dependencies
 ```bash
 gem install bundler && bundle install
+```
+
+### install the grunt command line tool
+```bash
+sudo npm install grunt -g
 ```
 
 ##Development
