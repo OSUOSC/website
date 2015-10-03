@@ -56,7 +56,7 @@ module.exports = (grunt) ->
         src: 'raleway-fontface.css'
         dest: 'vendor/css/'
       } ]
-    exec: jekyll: cmd: 'jekyll build --trace'
+    exec: jekyll: cmd: 'bundle exec jekyll build --trace'
     watch:
       options: livereload: false
       source:
