@@ -88,6 +88,6 @@ sudo npm install grunt -g
 
 #### start server
 ```bash
-grunt
+grunt serve
 ```
 the site is now accessible at `http://localhost:4040`
