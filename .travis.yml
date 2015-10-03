@@ -1,9 +1,12 @@
-language: ruby
+language: ruby, node_js
+node_js:
+  - "0.12.7"
 rvm:
 - 2.2.2
 # Assume bundler is being used, install step will run `bundle install`.
 script:
-  - bundle exec jekyll build
+  - npm install
+  - grunt build
 
 # branch whitelist
 branches:
