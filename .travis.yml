@@ -13,7 +13,7 @@ install:
   - npm install
   
 before_script:
-`- grunt build
+  - grunt build
 
 script:
   - grunt build
