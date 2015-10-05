@@ -957,6 +957,8 @@ footer
         margin: 0 3px
 
 #page-content-wrapper.single
+  left: 35rem
+  transition: 0s
   footer
     bottom: 0
 
@@ -1248,12 +1250,13 @@ input#mce-EMAIL
       bottom: 50%
   #page-content-wrapper
     position: fixed
-    left: 17.5rem
+    left: $sidebarWidth
+
     overflow-x: hidden
     width: 100%
     width: inherit
     height: 100%
-    transition: all 0.5s linear
+    transition: all 0s
     z-index: 9
     &.home
       left: $sidebarWidth
@@ -1269,6 +1272,7 @@ input#mce-EMAIL
   .sidebar + #page-content-wrapper
     &:not(.index)
       width: 100%
+      left: 35rem
     > .section.posts:only-child > .container
       width: 50%
 
