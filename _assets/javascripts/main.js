@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $('#heading').addClass('animated fadeIn').removeClass('hidden');
-  $('.landing>#button').addClass('animated slideInRight').removeClass('hidden');
+  // $('.landing>#button').addClass('animated slideInRight').removeClass('hidden');
   $('#heading a#button').addClass('animated slideInUp').removeClass('hidden');
   $('#scroll-indicator').addClass('animated bounce').removeClass('hidden');
   $('#mc_embed_signup').find('form').ajaxChimp();
