@@ -90,4 +90,5 @@ sudo npm install grunt -g
 ```bash
 grunt serve
 ```
-the site is now accessible at `http://localhost:4040`
+
+Once generated (which takes upwards of 5-10 minutes) the site will be accessible at `http://localhost:4040`
