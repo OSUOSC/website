@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: home
 title: That's What She Said and Planning
 created: 1331175103
+categories: announcements
+tags: announcements
 ---
 I apologize for the late meeting topic announcement, but there were some unexpected delays.
 

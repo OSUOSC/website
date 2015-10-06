@@ -1,8 +1,10 @@
 ---
-layout: post
+layout: home
 title: Virtualization
 created: 1389670402
 alias: /sp14/virtualization.html
+categories: announcements
+tags: announcements
 ---
 Greetings!
 

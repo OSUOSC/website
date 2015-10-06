@@ -1,8 +1,10 @@
 ---
-layout: post
+layout: home
 title: Internet Privacy and Anonymization
 created: 1383683481
 alias: /au13/internet-privacy-and-anonymization.html
+categories: announcements
+tags: announcements
 ---
 Hey everyone, sorry for the late email!
 

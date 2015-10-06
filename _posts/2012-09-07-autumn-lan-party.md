@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: home
 title: Autumn LAN Party
 created: 1347075018
+categories: announcements
+tags: announcements
 ---
 Good news everyone!
 

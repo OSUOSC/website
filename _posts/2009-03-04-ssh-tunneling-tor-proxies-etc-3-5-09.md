@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: home
 title: SSH tunneling, TOR, proxies, etc. [3/5/09]
 created: 1236210561
+categories: announcements
+tags: announcements
 ---
 This Thursday [3/5/09], brought to you by Alek Rollyson, we talked about certain important internet related topics. How does one go to work without leaving his house? How does one completely mask himself to the internet? How does one hide his traffic from _even his own ISP_? All of these are accomplished by what we discussed. Specifically we talked about (and covered to some extent),
 

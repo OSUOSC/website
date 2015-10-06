@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: home
 title: 'Haskell: Part III'
 created: 1327444537
+categories: announcements
+tags: announcements
 ---
 Thursday January 26th, 2012
 Dreese Lab 266

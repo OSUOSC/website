@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: home
 title: Welcome Back
 created: 1389136468
+categories: announcements
+tags: announcements
 ---
 Hello everyone!
 

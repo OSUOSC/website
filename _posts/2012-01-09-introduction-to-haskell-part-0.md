@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: home
 title: Introduction to Haskell Part 0
 created: 1326149016
+categories: announcements
+tags: announcements
 ---
 *Introduction to Haskell Part 0*
 *Dreese 266*

@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: home
 title: Open Source Multiplayer Games
 created: 1321409293
+categories: announcements
+tags: announcements
 ---
 This week I will be demonstrating several open source multiplayer games we will be playing at our LAN party on Saturday!
 

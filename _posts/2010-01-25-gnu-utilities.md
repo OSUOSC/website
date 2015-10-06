@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: home
 title: GNU Utilities
 created: 1264449998
+categories: announcements
+tags: announcements
 ---
 This Thursday January 28th, at 7PM in Dreese Labs 266, Morgan Goose will be showing off a multitude of GNU Utilties. Here is Morgan's synopsis of his talk:
 

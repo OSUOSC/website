@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: home
 title: Advanced Bash Scripting [04/23/09]
 created: 1240157004
+categories: announcements
+tags: announcements
 ---
 This Thursday, 4/23/09, Tom Henretty came to show us some more advanced bash techniques. Tom demonstrated some of the stuff that Jim Dinan didn't have time to get to back when he did his [awesome bash talk](/bash-au08) in December.
 

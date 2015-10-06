@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: home
 title: Personal Projects
 created: 1354040393
+categories: announcements
+tags: announcements
 ---
 Hello everyone!
 

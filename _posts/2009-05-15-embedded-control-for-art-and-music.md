@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: home
 title: Embedded Control for Art & Music
 created: 1242397207
+categories: announcements
+tags: announcements
 ---
 On Tuesday May 19th, Embedded designer, musician, and ex-Imagineer Jamie Robertson will be giving a talk on embedded systems in the art and entertainment world.
 

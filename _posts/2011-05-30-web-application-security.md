@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: home
 title: Web Application Security
 created: 1306796765
+categories: announcements
+tags: announcements
 ---
 This Thursday, June 2nd at 7PM in Dreese Labs 264, Jonathan Tubb and Brian Swaney will be presenting on compromising and exploiting web systems and will focus on some of the techniques as well as actual examples. The talk itself will be shorter than a normal meeting so that planning meetings for next year and organizing summer events can take place.
 

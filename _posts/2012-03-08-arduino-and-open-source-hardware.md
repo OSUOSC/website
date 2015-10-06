@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: home
 title: Arduino and Open Source Hardware
 created: 1331258698
+categories: announcements
+tags: announcements
 ---
 THIS WEEK IN OPEN SOURCE!:
 

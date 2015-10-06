@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: home
 title: Open Source and Your Music
 created: 1349123594
+categories: announcements
+tags: announcements
 ---
 Hello everyone!
 

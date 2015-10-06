@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: home
 title: Shell scripting [12/4/08]
 created: 1227025515
+categories: announcements
+tags: announcements
 ---
 Fun and merriment has ensued during this week's meeting as we explored scripting, hacking, and otherwise misusing the Unix shell with Jim Dinan. Topic were focused on bash, and included:
 

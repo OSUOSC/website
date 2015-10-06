@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: home
 title: GIMP Image editing - Autumn 2010
 created: 1286425319
+categories: announcements
+tags: announcements
 ---
 This Thursday, at 7 pm in the Ohio Union Senate Chamber, Brian Swaney will be demonstrating use of the GIMP image editor. GIMP is what some might consider an open source alternative to the proprietary $800 Photoshop application, except that many people refuse to consider it on the grounds that it is allegedly inferior, and therefore unusable. While I'm not familiar with Photoshop, I will debunk the myth about GIMP being unusable, and show just how powerful GIMP can be for those who take the time to learn it. I'll do this by teaching you how to perform arbitrary Photoshop-esque techniques in GIMP.
 

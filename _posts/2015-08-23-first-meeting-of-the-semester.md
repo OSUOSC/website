@@ -1,7 +1,8 @@
 ---
-layout: post
+layout: home
 title: First Meeting of the Semester
-created: 1440359689
+categories: announcements
+tags: announcements
 ---
 Hi everyone,
 

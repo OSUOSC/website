@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: home
 title: PulseAudio with Paul Betts
 created: 1159328304
+categories: announcements
+tags: announcements
 ---
 Room: 480 Dreese Labs  
 

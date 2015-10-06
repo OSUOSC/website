@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: home
 title: Lightning Talks
 created: 1428964429
+categories: announcements
+tags: announcements
 ---
 Hi everyone,
 

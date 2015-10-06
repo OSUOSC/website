@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: home
 title: Welcome Back with Alex! / Ideas for Ohio LinuxFest
 created: 1158867653
+categories: announcements
+tags: announcements
 ---
 Date: 09/21/2006
 Time: 7:00PM

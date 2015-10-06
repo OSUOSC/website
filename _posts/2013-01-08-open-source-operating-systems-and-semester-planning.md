@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: home
 title: Open Source Operating Systems and Semester Planning
 created: 1357660813
+categories: announcements
+tags: announcements
 ---
 This week, Thursday 2013/01/10 at 7pm in Dreese 369, The Ohio State University Open Source Club will be presenting Free and Open Source Operating Systems- An Overview, introduction, and discussion. Members of the club will present different open source operating systems, with the end goal of making everyone more knowledgeable on the variety of distributions out there.
 

@@ -1,8 +1,10 @@
 ---
-layout: post
+layout: home
 title: Open Stack
 created: 1351635395
 alias: /au12/open-stack.html
+categories: announcements
+tags: announcements
 ---
 This Thursday, November 1st at 7:00PM in Dreese Labs 266, Joel Friedly will be presenting an overview of OpenStack.
 

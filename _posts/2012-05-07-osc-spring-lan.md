@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: home
 title: OSC Spring LAN
 created: 1336407858
+categories: announcements
+tags: announcements
 ---
 The OSC will be hosting its second LAN of the academic year on May 12th, 2012.
 

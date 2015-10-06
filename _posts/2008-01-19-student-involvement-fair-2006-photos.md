@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: home
 title: Student Involvement Fair 2006 Photos
 created: 1200756271
+categories: announcements
+tags: announcements
 ---
 A couple of weeks ago we attended the Student Involvement Fair and had a blast. Here are some photographs of the event courtesy of Peter.
 

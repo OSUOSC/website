@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: home
 title: Chroot and Linux From Scatch
 created: 1293912163
+categories: announcements
+tags: announcements
 ---
 Thursday, January 6th, 2011 at 7:00PM in Dreese 264 (note the change in location), Daniel Thau will be giving a dual presentation covering the chroot operation as well as the Linux From Scratch project.
 

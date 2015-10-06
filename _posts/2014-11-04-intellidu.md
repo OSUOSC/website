@@ -1,8 +1,10 @@
 ---
-layout: post
+layout: home
 title: Intellidu
 created: 1415114208
 alias: /au14/intellidu.html
+categories: announcements
+tags: announcements
 ---
 This Thursday, 2014-11-06 in Caldwell Labs 120, John Simerlink will present his project "Intellidu". His blurb follows:
 

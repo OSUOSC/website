@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: home
 title: Effective sshd_config [04/09/09]
 created: 1239290944
+categories: announcements
+tags: announcements
 ---
 This Thursday, April 9<sup>th</sup>, in Dreese **317** , Alek Rollyson will be giving a talk on how to secure your shell server through effective configuration.
 

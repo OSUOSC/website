@@ -1,8 +1,10 @@
 ---
-layout: post
+layout: home
 title: BeagleBone and Embedded Linux
 created: 1427846702
 alias: /sp15/beaglebone-and-embedded-linux.html
+categories: announcements
+tags: announcements
 ---
 Thursday, 2015-04-02 at 7:00pm in Caldwell Labs 120, Eli Gladman will be speaking about BeagleBone. A short description follows:
 

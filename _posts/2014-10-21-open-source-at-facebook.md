@@ -1,8 +1,10 @@
 ---
-layout: post
+layout: home
 title: Open Source at Facebook
 created: 1413918722
 alias: /au14/open-source-facebook.html
+categories: announcements
+tags: announcements
 ---
 Thursday, 2014-10-23 at 7:00pm in Caldwell Labs 120, Patrick Shuff (an engineer at Facebook) will present "Open Source at Facebook". Description follows:
 

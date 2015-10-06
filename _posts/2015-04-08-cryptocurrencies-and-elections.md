@@ -1,8 +1,10 @@
 ---
-layout: post
+layout: home
 title: Cryptocurrencies and Elections
 created: 1428493460
 alias: /sp15/cryptocurrencies-and-elections.html
+categories: announcements
+tags: announcements
 ---
 Thursday, 2015-04-09, Alex Krieger will present Cryptocurrencies. This will provide more of the technical details of how these schemes (such as Bitcoin, Litecoin, and Dogecoin) work.
 

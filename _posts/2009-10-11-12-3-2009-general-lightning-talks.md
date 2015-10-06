@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: home
 title: 12/3/2009 - General Lightning Talks
 created: 1255307749
+categories: announcements
+tags: announcements
 ---
 On Thursday December 3rd, 2009, we will be hosting another lightning talk session that will be compromised of subjects coming from all areas. Lightning talks will consist of several different presentations by different presenters over the course of the meeting time. We will put more info on here about how long the meeting will last and how many presentations there will be once we get more info on who wants to present on what topics.
 
