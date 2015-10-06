@@ -9,10 +9,12 @@
     {% endif %}
 
 
+    <div class="category-title">
+      <h1>{{ page.category }}</h1>
+    </div>
+
     {% for post in paginator.posts %}
-      <div class="category-title">
-        <h1>{{ page.category }}</h1>
-      </div>
+
 
       <ul>
          <li>
