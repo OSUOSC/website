@@ -958,7 +958,7 @@ footer
 
 #page-content-wrapper.single
   left: 35rem
-  transition: 0s
+  transition: all 0.5s linear
   footer
     bottom: 0
 
@@ -1164,6 +1164,11 @@ input#mce-EMAIL
 
 @media (max-width: 550px)
   .landing
+    height: 100%
+    #heading-wrapper
+      top: 50%
+  #scroll-indicator
+    bottom: 0%
     #brand
       margin-top: 0
     h4
@@ -1196,8 +1201,10 @@ input#mce-EMAIL
   #heading
     font-size: 135%
   .landing
+    height: 100%
     text-align: center
-    height: 165px
+    #heading-wrapper
+      top: 50%
     .landing-heading
       // font-size: 2.4rem
       h4
@@ -1208,6 +1215,8 @@ input#mce-EMAIL
       font-size: 3.25em
     h5
       font-size: 1.5em
+  #scroll-indicator
+    bottom: 0%
   .sidebar
     left: 0
     &.active
@@ -1431,6 +1440,9 @@ input#mce-EMAIL
     height: 100%
     transition: all 0.5s linear
     -webkit-overflow-scrolling: touch
+
+    &.single
+      left: 0
     &.active
       position: fixed
       left: $sidebarWidth
@@ -1438,6 +1450,8 @@ input#mce-EMAIL
       overflow-y: scroll!important
       width: auto
       z-index: 8
+      &.single
+        left: 35rem
   #main-nav
     padding-top: 2em
 
