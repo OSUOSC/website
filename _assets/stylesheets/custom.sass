@@ -787,17 +787,24 @@ span.fa-angle-down
   display: block
   position: relative
 
-.about
+.about, .attention
   position: relative
   left: 0
   font-family: $bodyfont
-  background: linear-gradient(to top, #7A7A7A 0%, $gray 4%, $gray 95%, #696969 100%)
   color: $white
   padding: 0 !important
   text-align: center
   width: 100%
   h5
     margin: 3em 0
+
+.about
+  background: linear-gradient(to top, #7A7A7A 0%, $gray 4%, $gray 95%, #696969 100%)
+
+.attention
+  background: linear-gradient(to top, #EABABA 0%, #E9BCBC 4%, #E9BCBC 95%, #E1A7A7 100%)
+  h5
+    font-weight: 600
 
 .about-multiplier
   color: #11DFC7
