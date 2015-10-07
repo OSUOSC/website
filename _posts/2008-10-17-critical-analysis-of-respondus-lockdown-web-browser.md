@@ -2,6 +2,7 @@
 layout: home
 title: Critical Analysis of Respondus LockDown Web Browser
 created: 1224220913
+#alias: /lockdown.html
 categories: announcements
 tags: announcements
 ---

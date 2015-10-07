@@ -2,6 +2,7 @@
 layout: home
 title: Introduction to GIMP Image Editing
 created: 1328676642
+alias: /wi12/gimp.html
 categories: announcements
 tags: announcements
 ---

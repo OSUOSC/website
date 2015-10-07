@@ -2,6 +2,7 @@
 layout: home
 title: GNU Utilities
 created: 1264449998
+alias: /wi10/gnu-utils.html
 categories: announcements
 tags: announcements
 ---

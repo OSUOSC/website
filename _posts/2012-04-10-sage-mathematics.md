@@ -2,6 +2,7 @@
 layout: home
 title: Sage Mathematics
 created: 1334079533
+alias: /sp12/sage-mathematics.html
 categories: announcements
 tags: announcements
 ---

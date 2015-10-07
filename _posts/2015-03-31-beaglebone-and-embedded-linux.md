@@ -2,7 +2,7 @@
 layout: home
 title: BeagleBone and Embedded Linux
 created: 1427846702
-alias: /sp15/beaglebone-and-embedded-linux.html
+#alias: /sp15/beaglebone-and-embedded-linux.html
 categories: announcements
 tags: announcements
 ---

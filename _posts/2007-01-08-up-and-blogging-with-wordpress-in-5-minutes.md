@@ -2,6 +2,7 @@
 layout: home
 title: Up and Blogging with Wordpress in 5 Minutes
 created: 1168300767
+alias: /wi07/wordpress.html
 categories: announcements
 tags: announcements
 ---

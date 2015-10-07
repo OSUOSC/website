@@ -2,6 +2,7 @@
 layout: home
 title: Introduction to Haskell Part 0
 created: 1326149016
+alias: /wi12/haskell1.html
 categories: announcements
 tags: announcements
 ---

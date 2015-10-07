@@ -2,6 +2,7 @@
 layout: home
 title: Bedrock Linux
 created: 1337629005
+alias: /sp12/bedrock.html
 categories: announcements
 tags: announcements
 ---

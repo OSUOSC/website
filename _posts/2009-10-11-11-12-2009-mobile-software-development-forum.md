@@ -2,6 +2,7 @@
 layout: home
 title: 11/12/2009 - Mobile Software Development Forum
 created: 1255304031
+alias: /au09/mobile-dev-forum.html
 categories: announcements
 tags: announcements
 ---

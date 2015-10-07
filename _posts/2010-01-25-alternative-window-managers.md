@@ -2,6 +2,7 @@
 layout: home
 title: Alternative Window Managers
 created: 1264451618
+alias: /wi10/alternativewm.html
 categories: announcements
 tags: announcements
 ---

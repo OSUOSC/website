@@ -2,6 +2,7 @@
 layout: home
 title: That's What She Said and Planning
 created: 1331175103
+alias: /wi12/twss.html
 categories: announcements
 tags: announcements
 ---

@@ -2,6 +2,7 @@
 layout: home
 title: Arduino and Open Source Hardware
 created: 1331258698
+alias: /au12/ardunio.html
 categories: announcements
 tags: announcements
 ---

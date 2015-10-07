@@ -2,6 +2,7 @@
 layout: home
 title: Go (board game) AI
 created: 1302364039
+alias: /sp11/go-ai.html
 categories: announcements
 tags: announcements
 ---

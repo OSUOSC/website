@@ -5,6 +5,9 @@ created: 1254957896
 categories: announcements
 tags: announcements
 ---
+<!-- FIXME -->
+<!-- #alias: [/irc-rules.html, /rules.html] -->
+
 Rules for OSU Open Source Club IRC Channel
 
 Throughout these rules “our”, “us,” and “we” will refer to The Open Source Club at The Ohio State University. Also the following: “your,” “you,” and “yours” will refer to anyone logged into the channel whether they are or are not a member of the club.

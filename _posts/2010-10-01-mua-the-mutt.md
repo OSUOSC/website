@@ -2,6 +2,7 @@
 layout: home
 title: Mua the Mutt
 created: 1285953131
+alias: /au10/mutt.html
 categories: announcements
 tags: announcements
 ---

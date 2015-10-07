@@ -1,9 +1,11 @@
 ---
 layout: home
 title: Constitution
+alias: /about/constitution.html
 categories: history
 tags: history
 ---
+
 Preamble
 ========
 

@@ -2,6 +2,7 @@
 layout: home
 title: Personal Projects
 created: 1329872566
+alias: /sp12/projects.html
 categories: announcements
 tags: announcements
 ---

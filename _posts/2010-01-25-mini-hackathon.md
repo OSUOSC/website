@@ -2,6 +2,7 @@
 layout: home
 title: Mini Hackathon!
 created: 1264452015
+alias: /wi10/hackathon.html
 categories: announcements
 tags: announcements
 ---

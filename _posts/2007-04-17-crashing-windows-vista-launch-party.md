@@ -2,6 +2,7 @@
 layout: home
 title: Crashing Windows Vista Launch Party
 created: 1176796022
+alias: /sp07/vista.html
 categories: announcements
 tags: announcements
 ---

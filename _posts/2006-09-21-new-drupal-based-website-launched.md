@@ -2,6 +2,7 @@
 layout: home
 title: New Drupal-based website launched
 created: 1158866713
+#alias: /website-moving.html
 categories: announcements
 tags: announcements
 ---

@@ -2,6 +2,7 @@
 layout: home
 title: Virtualization
 created: 1263869477
+alias: /wi10/virtualization.html
 categories: announcements
 tags: announcements
 ---
