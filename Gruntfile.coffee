@@ -14,12 +14,6 @@ module.exports = (grunt) ->
         src: 'jquery.min.js'
         dest: 'vendor/js/'
       } ]
-      trianglify: files: [ {
-        expand: true
-        cwd: 'bower_components/trianglify/dist/'
-        src: 'trianglify.min.js'
-        dest: 'vendor/js/'
-      } ]
       normalize: files: [ {
         expand: true
         cwd: 'bower_components/normalize-scss/'
