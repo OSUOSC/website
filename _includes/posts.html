@@ -18,7 +18,13 @@
 
       <ul>
          <li>
-           <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+
+           {% if post.categories contains 'volunteering' or post.categories contains 'events' %}
+             <h2><a href="/{{ post.categories | first }}">{{ post.title }}</a></h2>
+           {% else %}
+             <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+           {% endif %}
+
            <span class="date">posted: {{ post.date | date: "%m-%d-%Y" }}</span>
            <div class="content">
              {{ post.content }}
