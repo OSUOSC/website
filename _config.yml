@@ -30,6 +30,8 @@ jekyll-press:
 
 exclude:
   - "node_modules"
+  - "Gemfile"
+  - "Gemfile.lock"
   - "package.json"
   - "bower_components"
   - "bower.json"
