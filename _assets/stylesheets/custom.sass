@@ -1200,7 +1200,7 @@ input#mce-EMAIL
   .landing
     height: 100%
     #heading-wrapper
-      top: 50%
+      top: 25%
   #scroll-indicator
     bottom: 0%
 
@@ -1208,7 +1208,7 @@ input#mce-EMAIL
   #heading
     font-size: 135%
   .landing
-    height: 100%
+    height: 75%
     text-align: center
     #heading-wrapper
       top: 50%
@@ -1314,15 +1314,31 @@ input#mce-EMAIL
 //   #heading
 //     font-size: 122%
 
-
 @media (min-width: 550px) and (max-width: 750px) and (orientation: landscape)
   .landing
-    height: 100%
+    height: 100%!important
     #scroll-indicator
       bottom: 1em
     #heading-wrapper
+      top: 50%
       #heading
         font-size: 85%
+
+@media (max-width: 750px) and (min-height: 500px)
+  .landing
+    height: 75%
+    #heading-wrapper
+      // top: 37.5%
+  #scroll-indicator
+    bottom: 25%
+
+@media (max-width: 750px) and (min-height: 500px) and (orientation: portrait)
+  .landing
+    height: 75%
+    #heading-wrapper
+      top: 37.5%
+  #scroll-indicator
+    bottom: 25%
 
 @media (min-width: 750px) and (max-width: 1200px) and (orientation: landscape)
   input#mce-EMAIL
@@ -1338,16 +1354,27 @@ input#mce-EMAIL
 
 @media (min-width: 1200px) and (orientation: landscape)
   .landing
-    height: 66%
+    height: 85%
     #heading-wrapper
-      top: 33%
+      top: 42.5%
     #scroll-indicator
-      bottom: 33% + 2%
+      bottom: 15%
       transform: translateY(-50%)
       -webkit-transform: translateY(-50%)
       -moz-transform: translateY(-50%)
     #heading
       font-size: 125%
+
+@media (min-width: 1200px) and (orientation: landscape) and (max-height: 800px)
+  .landing
+    height: 100%
+    #heading-wrapper
+      top: 50%
+    #scroll-indicator
+      bottom: 0
+      transform: translateY(-50%)
+      -webkit-transform: translateY(-50%)
+      -moz-transform: translateY(-50%)
 
 @media (max-width: 1200px) and (min-width: 550px)
   .landing
@@ -1511,6 +1538,26 @@ input#mce-EMAIL
     left: 0
     width: 100%
 
+// @media (min-width: 750px) and (max-width: 1200px) and (max-height: 700px) and (orientation: portrait)
+//   #scroll-indicator
+//     bottom: 0
+
+@media (min-width: 750px) and (max-width: 1200px) and (max-height: 1100px)
+  .landing
+    height: 75%
+    #heading-wrapper
+      top: 37.5%
+  #scroll-indicator
+    bottom: 0%
+
+@media (min-width: 750px) and (max-width: 1200px) and (max-height: 700px)
+  .landing
+    height: 100%
+    #heading-wrapper
+      top: 50%
+  #scroll-indicator
+    bottom: 0
+
 @media (min-width: 550px) and (max-width: 750px)
   .mc-field-group
     &:not(:first-of-type)
@@ -1526,7 +1573,7 @@ input#mce-EMAIL
   .sidebar
     left: 0
   #heading
-    font-size: 135%
+    font-size: 100%
   .sidebar.active
     z-index: 9
   .menu-toggle
@@ -1545,9 +1592,13 @@ input#mce-EMAIL
 
 @media (max-width: 350px)
   .landing
-    height: 50%
+    height: 85%
     #heading-wrapper
-      top: 25%
+      top: 42.5%
+      #heading
+        font-size: 65%
+  #scroll-indicator
+    bottom: 15%
   .contact-info-email-container, .contact-info-office-container, .contact-info-meeting-container
     font-size: 85%
   .menu-toggle
@@ -1567,7 +1618,7 @@ input#mce-EMAIL
       transition: all 0.5s linear
     transition: all 0.5s linear
   #heading
-    font-size: 100%
+    font-size: 85%
   .section.about
     z-index: 0
     &::before
@@ -1592,6 +1643,15 @@ input#mce-EMAIL
   input#mc-embedded-subscribe
     width: 100%
 
+@media (max-width: 350px) and (max-height: 500px)
+  .landing
+    height: 100%
+    #heading-wrapper
+      top: 50%
+  #scroll-indicator
+    display: initial
+
+
 @media (max-width: 550px)
   .mc-field-group
     margin-right: 0
@@ -1609,6 +1669,8 @@ input#mce-EMAIL
     height: 100%
     #heading-wrapper
       top: 50%
+    #heading
+      font-size: 100%
   #scroll-indicator
     bottom: 0
     transform: translateX(0%)
