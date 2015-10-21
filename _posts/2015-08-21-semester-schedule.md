@@ -3,6 +3,7 @@ layout: home
 title:  Autumn 2015 Semester Schedule
 categories: meetings
 tags: meetings
+alias: /meetings/2015/08/21/semester-scehdule/
 ---
 
 | date       | topic                                 | speaker(s)      |
@@ -15,10 +16,10 @@ tags: meetings
 | 10/1/2015  | Logical Volumes and Fancy Filesystems | Matt Meinwald   |
 | 10/8/2015  | PGP & Key Signing                     | William Osler   |
 | 10/15/2015 | Autumn Break                          | n/a             |
-| 10/22/2015 | TBA                                   | CoverMyMeds     |
+| 10/22/2015 | Production Environments               | CoverMyMeds     |
 | 10/29/2015 | Wireless Security                     | Eli Gladman     |
-| 11/5/2015  | Git: An Introduction and Explanation  | Nikit Malkan    |
-| 11/12/2015 |                                       |                 |
+| 11/5/2015  | TBA                                   | TBA             |
+| 11/12/2015 | Git: An Introduction and Explanation  | Nikit Malkan    |
 | 11/19/2015 | Password Management                   | TBA             |
 | 11/26/2015 | Thanksgiving Day                      | n/a             |
 | 12/3/2015  |                                       |                 |
