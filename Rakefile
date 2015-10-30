@@ -1,3 +1,8 @@
 #!/usr/bin/env ruby
 
-puts 'hello word'
+task default: ["helloworld"]
+
+desc "this is a demo test"
+task :helloworld do
+  puts 'hello word'
+end
