@@ -6,23 +6,23 @@ rvm:
 - 2.2.2
 # Assume bundler is being used, install step will run `bundle install`.
 
-before_install: 
-  - npm install -g grunt-cli
-  
-install: 
-  - npm install
-  
-before_script:
-  - grunt build
+before_install: npm install -g grunt-cli
 
-script:
-  - grunt build
+install:
+  - npm install
+  - bower install
+
+before_script: grunt build
+
+script: npm test
 
 # branch whitelist
 branches:
   only:
-  - master     # test the gh-pages branch
-  - /feat-(.*)/ # test every branch which starts with "pages-"
+  - master
+  - /feat-(.*)/ # test every branch which starts with "feat-"
+  - /fix-(.*)/ # test branches prefixed with "fix-"
+  - /meeting-(.*)/ # test branches prefixed with "meeting-"
 
 env:
   global:
