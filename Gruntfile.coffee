@@ -6,6 +6,7 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-copy'
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-csslint'
+  grunt.loadNpmTasks 'grunt-bower-task'
   grunt.loadNpmTasks 'grunt-exec'
   grunt.initConfig
     csslint: test:
@@ -13,6 +14,12 @@ module.exports = (grunt) ->
       expand: true
       cwd: '_site/assets/'
       src: '*.css'
+    bower:
+      install: options: [ {
+        targetDir: './bower_components'
+        cleanTargetDir: false # if true, bower redownloads latest
+        bowerOptions: forceLatest:true
+      } ]
     copy:
       jquery: files: [ {
         expand: true
@@ -82,6 +89,7 @@ module.exports = (grunt) ->
       base: '_site'
       livereload: false
   grunt.registerTask 'build', [
+    'bower'
     'copy'
     'exec:jekyll'
   ]
