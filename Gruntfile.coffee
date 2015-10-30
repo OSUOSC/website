@@ -16,60 +16,61 @@ module.exports = (grunt) ->
       src: '*.css'
     bower:
       install: options: [ {
-        targetDir: './bower_components'
-        cleanTargetDir: false # if true, bower redownloads latest
+        targetDir: './lib'
         bowerOptions: forceLatest:true
       } ]
     copy:
       jquery: files: [ {
         expand: true
-        cwd: 'bower_components/jquery/dist/'
+        cwd: 'lib/jquery/dist/'
         src: 'jquery.min.js'
         dest: 'vendor/js/'
       } ]
       normalize: files: [ {
         expand: true
-        cwd: 'bower_components/normalize-scss/'
+        cwd: 'lib/normalize-scss/'
         src: 'normalize.css'
         dest: 'vendor/css/'
       } ]
       animate: files: [ {
         expand: true
-        cwd: 'bower_components/animate.css/'
+        cwd: 'lib/animate.css/'
         src: 'animate.min.css'
         dest: 'vendor/css/'
       } ]
       fontawesome: files: [ {
         expand: true
-        cwd: 'bower_components/font-awesome/css/'
+        cwd: 'lib/font-awesome/css/'
         src: 'font-awesome.min.css'
         dest: 'vendor/css/'
       },
       {
         expand: true
-        cwd: 'bower_components/font-awesome/fonts/'
+        cwd: 'lib/font-awesome/fonts/'
         src: '*'
         dest: 'vendor/fonts/'
       } ]
       opensans: files: [ {
         expand: true
-        cwd: 'bower_components/open-sans-fontface/'
+        cwd: 'lib/open-sans-fontface/'
         src: 'open-sans.css'
         dest: 'vendor/css/'
       } ]
       raleway: files: [ {
         expand: true
-        cwd: 'bower_components/raleway-fontface/css'
+        cwd: 'lib/raleway-fontface/css'
         src: 'raleway-fontface.css'
         dest: 'vendor/css/'
       } ]
       ubuntu: files: [ {
         expand: true
-        cwd: 'bower_components/ubuntu-fontface/'
+        cwd: 'lib/ubuntu-fontface/'
         src: 'ubuntu.css'
         dest: 'vendor/css/'
       } ]
-    exec: jekyll: cmd: 'jekyll build --trace'
+    exec:
+      bundler: cmd: 'bundle install'
+      jekyll: cmd: 'jekyll build --trace'
     watch:
       options: livereload: false
       source:
@@ -89,6 +90,7 @@ module.exports = (grunt) ->
       base: '_site'
       livereload: false
   grunt.registerTask 'build', [
+    'exec:bundler'
     'bower'
     'copy'
     'exec:jekyll'
