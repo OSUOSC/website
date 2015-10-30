@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/OSUOSC/open-source-club-website.svg?branch=master)](https://travis-ci.org/OSUOSC/open-source-club-website)
 
-**Live Demo**: http://osc.eligladman.com/
+~~**Live Demo**: http://osc.eligladman.com/~~
 
 ## Prerequisites
 
