@@ -8,4 +8,4 @@ meeting: November 5th 2015
 
 Come join us Thursday, the fifth of November, as Brandon Moore talks about licenses and why you should use one on any project you work on. Licensing is a key part of the open source community, and your choices are diverse. We will talk about licenses ranging from the copyleft to the copyright, the unlicense to the Apache license. We will discuss how you choose your license for a project and what implications your choice has, and more importantly what a lack of choosing a license means and how it affects the Open Source community.
 
-Like everyone week, laptops are encouraged and there will be pizza.
+Like every week, laptops are encouraged and there will be pizza.
