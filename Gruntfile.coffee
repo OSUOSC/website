@@ -5,8 +5,14 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-connect'
   grunt.loadNpmTasks 'grunt-contrib-copy'
   grunt.loadNpmTasks 'grunt-contrib-watch'
+  grunt.loadNpmTasks 'grunt-contrib-csslint'
   grunt.loadNpmTasks 'grunt-exec'
   grunt.initConfig
+    csslint: test:
+      options: import: 2
+      expand: true
+      cwd: '_site/assets/'
+      src: '*.css'
     copy:
       jquery: files: [ {
         expand: true
@@ -84,4 +90,5 @@ module.exports = (grunt) ->
     'connect:server'
     'watch'
   ]
+  grunt.registerTask 'test', [ 'csslint' ]
   grunt.registerTask 'default', [ 'serve' ]
