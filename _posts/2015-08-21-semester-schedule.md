@@ -18,7 +18,7 @@ alias: /meetings/2015/08/21/semester-scehdule/
 | 10/15/2015 | Autumn Break                          | n/a             |
 | 10/22/2015 | Production Environments               | CoverMyMeds     |
 | 10/29/2015 | Wireless Security                     | Eli Gladman     |
-| 11/5/2015  | TBA                                   | TBA             |
+| 11/5/2015  | License to code                       | Brandon Moore   |
 | 11/12/2015 | Git: An Introduction and Explanation  | Nikit Malkan    |
 | 11/19/2015 | Password Management                   | TBA             |
 | 11/26/2015 | Thanksgiving Day                      | n/a             |
