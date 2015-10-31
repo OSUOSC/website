@@ -1,3 +1,10 @@
+<div style="text-align:center">
+  <img src="https://cdn.rawgit.com/OSUOSC/branding/master/logo/open_source_club_logo-master.svg" />
+</div>
+
+<!--[![OSC Logo](https://cdn.rawgit.com/OSUOSC/branding/master/logo/open_source_club_logo-master.svg)](https://opensource.osu.edu)]-->
+
+
 # The Open Source Club at The Ohio State University Website
 
 [![Build Status](https://travis-ci.org/OSUOSC/open-source-club-website.svg?branch=master)](https://travis-ci.org/OSUOSC/open-source-club-website)
