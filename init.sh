@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 # TODO
 # add error handling
