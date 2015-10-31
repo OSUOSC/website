@@ -44,6 +44,12 @@ grunt build
 ---
 
 ```bash
+# generate a new post from template
+grunt new
+```
+---
+
+```bash
 # run tests
 grunt test
 ```
