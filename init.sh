@@ -1,7 +1,7 @@
 #!/bin/bash
 
 NODE_VERSION=0.12.7
-RUBY_VERSION=2.2.2
+RUBY_VERSION=2.2.3
 
 
 echo "Checking for Node version ${NODE_VERSION}"
@@ -27,7 +27,7 @@ echo "Checking for grunt-cli"
 npm -v grunt-cli >/dev/null 2>&1
 if [[ $? != 0 ]]; then
     echo -n "grunt-cli is not installed"
-elif [[ ${p//[^0-9_.]/} = 0 ]]; then
+elif [[ ${p//[^0-9_.]/} = 0 ]]; then2
   echo "grunt-cli isn't installed globally"
 
   npm install -g grunt-cli
