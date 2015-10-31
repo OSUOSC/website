@@ -5,15 +5,13 @@
 ~~**Live Demo**: http://osc.eligladman.com/~~
 
 
-
-
 ### How can I contribute?
 
 - report bugs, issues, and documentation inconsistencies
 - request features
 - hate or love a feature . . . *tell us*
 - request topics for future meetings
-- fork us and submit a merge request
+- fork us, fix an issue and submit a merge request
 
 ### How do I run the site locally?
 
@@ -34,8 +32,8 @@ cd open-source-club-website
 ```
 
 ```bash
-# execute  
-./init.sh
+# if this is your first time execute the following script
+./init.sh #this is the dame as "bash init.sh"
 ```
 ---
 
