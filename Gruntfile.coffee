@@ -71,6 +71,7 @@ module.exports = (grunt) ->
     exec:
       bundler: cmd: 'bundle install'
       jekyll: cmd: 'jekyll build --trace'
+      new_post: cmd: 'bash _helper/new-post.sh'
     watch:
       options: livereload: false
       source:
@@ -101,4 +102,5 @@ module.exports = (grunt) ->
     'watch'
   ]
   grunt.registerTask 'test', [ 'csslint' ]
+  grunt.registerTask 'new', [ 'exec:new_post' ]
   grunt.registerTask 'default', [ 'serve' ]
