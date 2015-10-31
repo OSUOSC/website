@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 # generates a new meeting post with minimum effort
 
