@@ -21,7 +21,7 @@
     "normalize-strings": "normalize#~1.0.4",
     "open-sans-fontface": "~1.4.2",
     "raleway-fontface": "~0.1.0",
-    "ubuntu-fontface": "~0.1.5",
-    "simple-jekyll-search": "~1.0.2"
+    "simple-jekyll-search": "~1.0.8",
+    "ubuntu-fontface": "~0.1.5"
   }
 }
