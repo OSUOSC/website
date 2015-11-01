@@ -40,6 +40,23 @@ module.exports = (grunt) ->
         dest: 'vendor/js/'
       } ]
 
+      js: files: [ {
+        stdout: false
+        expand: true
+        cwd: '_assets/javascripts/'
+        src: '*.js'
+        dest: '_site/assets/'
+      } ]
+
+
+      simpleSearch: files: [ {
+        stdout: false
+        expand: true
+        cwd: 'bower_components/simple-jekyll-search/dest/'
+        src: '*.js'
+        dest: 'vendor/js/'
+      } ]
+
       normalize: files: [ {
         stdout: false
         expand: true
@@ -108,13 +125,16 @@ module.exports = (grunt) ->
         files: '_assets/**/*.sass'
         tasks: [ 'sass' ]
 
+      js:
+        files: '_assets/**/*.js'
+        tasks: [ 'copy:js' ]
+
       source:
         files: [
           '_drafts/**/*'
           '_includes/**/*'
           '_layouts/**/*'
           '_posts/**/*'
-          '_assets/javascripts/*'
           '_assets/images/*'
           '_config.yml'
           '*.html'
