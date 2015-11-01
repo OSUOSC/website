@@ -1,4 +1,4 @@
-# The Open Source Club's Website
+# [The Open Source Club's Website](https://opensource.osu.edu)
 
 [![Build Status](https://travis-ci.org/OSUOSC/open-source-club-website.svg?branch=master)](https://travis-ci.org/OSUOSC/open-source-club-website)
 [![Dependency Status](https://gemnasium.com/OSUOSC/open-source-club-website.svg)](https://gemnasium.com/OSUOSC/open-source-club-website)
@@ -60,4 +60,4 @@ grunt test
 grunt serve
 ```
 
-Once generated (which takes upwards of 5-10 minutes) the site will be accessible at `http://localhost:4040`
+Once generated (which takes ~5 minutes) the site will be accessible at `http://localhost:4040`
