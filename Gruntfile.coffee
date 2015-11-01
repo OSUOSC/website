@@ -98,7 +98,6 @@ module.exports = (grunt) ->
     'exec:jekyll'
   ]
   grunt.registerTask 'serve', [
-
     'build'
     'connect:server'
     'exec:status'
