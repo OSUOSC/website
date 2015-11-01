@@ -32,8 +32,8 @@ cd open-source-club-website
 ```
 
 ```bash
-# if this is your first time execute the following script
-./init.sh #this is the dame as "bash init.sh"
+# if this is your first time, execute the following script
+bash init.sh
 ```
 ---
 
