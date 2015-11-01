@@ -27,7 +27,7 @@ echo "Checking for grunt-cli"
 npm -v grunt-cli >/dev/null 2>&1
 if [[ $? != 0 ]]; then
     echo -n "grunt-cli is not installed"
-elif [[ ${p//[^0-9_.]/} = 0 ]]; then2
+elif [[ ${p//[^0-9_.]/} = 0 ]]; then
   echo "grunt-cli isn't installed globally"
 
   npm install -g grunt-cli
