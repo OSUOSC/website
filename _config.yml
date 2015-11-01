@@ -18,6 +18,9 @@ highlighter: true
 assets:
   js_compressor:  uglifier
   css_compressor: sass
+  cachebust: none
+  cache: false
+  gzip: false
 
 jekyll-press:
   exclude:
