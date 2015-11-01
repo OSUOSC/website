@@ -72,6 +72,7 @@ module.exports = (grunt) ->
       bundler: cmd: 'bundle install'
       jekyll: cmd: 'jekyll build --trace'
       new_post: cmd: 'bash _helper/new-post.sh'
+      status: cmd: "clear && echo the site is now accessible at http://localhost:<%= connect.server.options.port %>"
     watch:
       options: livereload: false
       source:
@@ -97,8 +98,10 @@ module.exports = (grunt) ->
     'exec:jekyll'
   ]
   grunt.registerTask 'serve', [
+
     'build'
     'connect:server'
+    'exec:status'
     'watch'
   ]
   grunt.registerTask 'test', [ 'csslint' ]
