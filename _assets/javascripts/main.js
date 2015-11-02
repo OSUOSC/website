@@ -24,6 +24,15 @@ $(document).ready(function() {
 $(function() {
     setNavigation();
     setWidth();
+    SimpleJekyllSearch({
+     searchInput: document.getElementById('search-posts'),
+     resultsContainer: document.getElementById('search-results'),
+     json: '/search.json',
+     searchResultTemplate: '<a href="{url}" title="{desc}"><li>{title}</li></a>',
+     noResultsText: '<li>No results found</li>',
+     limit: 10,
+     fuzzy: false,
+    })
 });
 
 $(window).resize(function() {
