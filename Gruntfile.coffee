@@ -114,7 +114,7 @@ module.exports = (grunt) ->
     exec:
       bundler: cmd: 'bundle install --quiet'
       remove: cmd: 'rm -rf _site/*'
-      jekyll: cmd: 'jekyll build --quiet'
+      jekyll: cmd: 'bundle exec jekyll build --quiet'
       new_post: cmd: 'bash _helper/new-post.sh'
       status: cmd: "clear && echo the site is now accessible at http://localhost:<%= connect.server.options.port %>"
 
