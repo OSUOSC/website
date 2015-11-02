@@ -66,7 +66,7 @@ function setWidth() {
 // TODO
 // i know this is shitty, needs to be rewritten
     if ($(window).width() < 1200) {
-
+      $('.navbar').css('width', '100%');
         if ($(".sidebar").is(".active"))  {
           if ($(window).width() < 750) {
             var contentWrapperWidth = $(window).width() - $('.sidebar').width();
@@ -74,14 +74,15 @@ function setWidth() {
             var contentWrapperWidth = 'inherit';
           }
         } else {
-            var contentWrapperWidth = $(window).width();
+            var contentWrapperWidth = 'inherit';
         }
 
     } else {
         var contentWrapperWidth = $(window).width() - $('.sidebar').width();
+        $('.navbar').css('width', contentWrapperWidth);
     }
 
-    $('#page-content-wrapper').css('width', contentWrapperWidth);
+    $('#page-content-wrapper').css('max-width', contentWrapperWidth);
 }
 
 // clouds

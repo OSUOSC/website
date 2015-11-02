@@ -1365,6 +1365,8 @@ input#mce-EMAIL
     padding: 15rem 0 8rem
 
 @media (min-width: 1200px)
+  .navbar
+    width: inherit
   .contact-info-email-container, .contact-info-office-container, .contact-info-meeting-container
     font-size: 85%
   .layout-mobile
@@ -1386,12 +1388,14 @@ input#mce-EMAIL
 
     overflow-x: hidden
     width: 100%
-    width: inherit
     height: 100%
-    transition: all 0s
+    transition: all 0.5s linear
     z-index: 9
     &.home
       left: $sidebarWidth
+    >*
+      transition: 0s
+
   .layout-desktop
     display: inherit
   .section
