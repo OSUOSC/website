@@ -496,7 +496,7 @@ hr
 
 .github-ribbon
   position: absolute
-  top: 0
+  top: 12rem
   right: 0
   font-size: 1.5em
   background: $oscRed
@@ -564,58 +564,102 @@ input
   -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,0.15)
   -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,0.15)
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.15)
-  form
-    margin-right: 8em
-    height: inherit
-    display: inline-block
-    .search
-      vertical-align: middle
-      line-height: 1em
-      height: inherit
-      display: table-cell
+  // form
+  //   margin-right: 8em
+  //   height: inherit
+  //   display: inline-block
+  //   .search
+  //     vertical-align: middle
+  //     line-height: 1em
+  //     height: inherit
+  //     display: table-cell
+  //
+  //     input
+  //       padding: 0 0.5em
+  //       height: 2em
+  //       font-size: 2em
+  //       box-sizing: border-box
+  //       font-weight: 400
+  //       min-width: 35em
 
-      input
-        padding: 0 0.5em
-        height: 2em
-        font-size: 2em
-        box-sizing: border-box
-        font-weight: 400
-        min-width: 35em
+
+
+.search
+  position: absolute
+  right: 6rem
+  top: 50%
+  margin-top: -2em
+  width: 35em
+
+#search-posts, .search-submit
+  box-sizing: border-box
+  font-size: 2em
+  border: none
+  border-radius: 0
+  color: #2c3e50
+  height: 2em
+  line-height: 2em
+  padding: 0
+
+#search-posts
+  margin: 0 0 0 -3em
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  padding-right: 1em
+  padding-left: 1em
+  width: 100%
+  background: #E9E9E9
+  border: 1px #E9E9E9
+  padding: 0 1em
 
 .search-submit
   cursor: pointer
   position: absolute
   top: 0
-  width: 3em
-  background: cyan
+  width: 2em
+  background: #3498DB
   right: 0
+  &:hover
+    background: #236998
   &::before
     position: absolute
     top: 0
-    width: 3em
+    width: 2em
     right: 0
-    color: $white
+    color: #fff
     font-family: 'FontAwesome'
     content: '\f002'
+
+
 
 
 #search-results
   position: absolute
   background: $white
-  margin: 0!important
+  // margin: 0!important
   -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,0.15)
   -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,0.15)
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.15)
   min-width: 30em
   font-size: 2em
-  li
-    height: 2em
-    line-height: 2em
-    padding: 0 0.5em
-    text-align: left
-    list-style: none
-    a
-      font-weight: 400
+  right: 6rem
+  margin-top: 12rem
+  a
+    &:hover
+      li
+        background: #E9E9E9
+    font-weight: 400
+    li
+      height: 2.5em
+      line-height: 2.5em
+      padding: 0 0.5em
+      text-align: left
+      list-style: none
+      margin-bottom: 0
+
+
+
 
 .sidebar
   position: fixed
