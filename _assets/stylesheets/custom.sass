@@ -628,17 +628,20 @@ input
   // FIXME
   // I shouldn't use important
   margin-bottom: 0!important
-  -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,0.15)
-  -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,0.15)
-  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.15)
+  -moz-box-shadow: 0 1px 5px 1px rgba(0,0,0,0.15)
+  -webkit-box-shadow: 0 1px 5px 1px rgba(0,0,0,0.15)
+  box-shadow: 0 1px 5px 1px rgba(0,0,0,0.15)
   min-width: 30em
   list-style: none
   text-align: center
+  &:empty
+    display: none
   a
     &:hover
       li
         background: #E9E9E9
     font-weight: 400
+    text-decoration: none
   li
     height: 2.5em
     line-height: 2.5em
@@ -646,6 +649,7 @@ input
     text-align: left
     list-style: none
     margin-bottom: 0
+
 
 .sidebar
   position: fixed
