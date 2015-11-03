@@ -1290,6 +1290,46 @@ input#mce-EMAIL
     -webkit-transform: translateY(-50%)
     -moz-transform: translateY(-50%)
 
+
+.scrollToTop
+  width: 5em
+  height: 5em
+  text-align: center
+  background: rgba(75,75,75,0.35)
+  font-weight: bold
+  color: $white
+  text-decoration: none
+  position: fixed
+  bottom: 2em
+  display: none
+  opacity: 0.75
+  z-index: 10
+  right: 3em
+  vertical-align: middle
+  line-height: 5em
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.45)
+  -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.45)
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.45)
+  transition: 0.5s ease
+  &:hover
+    background: rgba(75,75,75,0.35)
+    opacity: 1
+    text-decoration: none
+    transition: 0.5s ease
+  &:before
+    position: absolute
+    top: 0
+    width: 2em
+    right: 0
+    color: $white
+    font-family: 'FontAwesome'
+    content: '\f0d8'
+    font-size: 2.5em
+    vertical-align: middle
+    line-height: 2.15em
+
+
+
 @media (max-width: 550px)
   .landing
     height: 100%

@@ -41,6 +41,24 @@ $(window).resize(function() {
 });
 
 
+// scroll to top button
+$(document).ready(function() {
+
+  $('#page-content-wrapper').scroll(function(){
+    if ($('#page-content-wrapper').scrollTop() > 300) {
+      $('.scrollToTop').css('display', 'initial');
+    } else {
+      $('.scrollToTop').css('display', 'none');
+    }
+  });
+
+  //Click event to scroll to top
+  $('.scrollToTop').click(function(){
+    $('#page-content-wrapper').animate({scrollTop : 0},800);
+    return false;
+  });
+
+});
 
 
 // current page indicator
@@ -84,7 +102,11 @@ function setWidth() {
     }
 
     $('#page-content-wrapper').css('max-width', contentWrapperWidth);
-}
+};
+
+
+
+
 
 // clouds
 function moveClouds(e, s, d) {
