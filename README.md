@@ -12,6 +12,7 @@
 - hate or love a feature . . . *tell us*
 - request topics for future meetings
 - fork us, fix an issue and submit a merge request
+- refactor suboptimal code
 
 ### How do I run the site locally?
 
