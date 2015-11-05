@@ -20,6 +20,7 @@ namespace :deploy do
   task :staging do
 
     # compile site
+    `grunt exec:gh_baseurl`
     `grunt build`
 
     # Get the origin to which we are going to push the site.
