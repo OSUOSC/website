@@ -1,6 +1,7 @@
 name: "The Open Source Club"
 description: "a registered student organization composed of members from all around campus and out into the community who share a common enthusiasm for free, open source software."
 url: "opensource.osu.edu"
+baseurl: "open-source-club-website"
 
 paginate: 10
 
