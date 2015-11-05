@@ -58,7 +58,7 @@ module.exports = (grunt) ->
         expand: true
         cwd: '_assets/img/'
         src: '*'
-        dest: 'dist/img/'
+        dest: '_site/dist/img/'
       } ]
 
       jquery: files: [ {
@@ -134,6 +134,8 @@ module.exports = (grunt) ->
     exec:
       bundler: cmd: 'bundle install --quiet'
       remove: cmd: 'rm -rf _site/*'
+      lo_baseurl: cmd: 'bash _helper/set-baseurl.sh open-source-club-website'
+      gh_baseurl: cmd: 'bash _helper/set-baseurl.sh'
       jekyll: cmd: 'bundle exec jekyll build --quiet'
       new_post: cmd: 'bash _helper/new-post.sh'
       status: cmd: "clear && echo the site is now accessible at http://localhost:<%= connect.server.options.port %>"
@@ -184,4 +186,7 @@ module.exports = (grunt) ->
   ]
   grunt.registerTask 'test', [ 'csslint' ]
   grunt.registerTask 'new', [ 'exec:new_post' ]
-  grunt.registerTask 'default', [ 'serve' ]
+  grunt.registerTask 'default', [
+    'exec:lo_baseurl'
+    'serve'
+  ]
