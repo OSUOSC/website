@@ -7,6 +7,7 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-csslint'
   grunt.loadNpmTasks 'grunt-contrib-sass'
+  grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-exec'
   grunt.initConfig
 
@@ -22,16 +23,44 @@ module.exports = (grunt) ->
         bowerOptions: forceLatest:true
       } ]
 
+    coffee:
+      dist:
+        options: [ {
+          sourceMap: false
+        } ]
+        files: [ {
+          expand: true
+          flatten: true
+          cwd: '_assets/js/'
+          src: ['*.coffee']
+          dest: '_site/dist/js/'
+          ext: '.js'
+        } ]
+
     sass:
-      dist: files: [ {
-        # TODO
-        # documentation is incorrect
-        # https://github.com/gruntjs/grunt-contrib-sass
-        # current solution is to hard code file path
-         '_site/assets/custom.css': '_assets/stylesheets/custom.sass'
-      } ]
+      dist:
+        options: [ {
+          sourcemap: 'none'
+          style: 'compressed'
+          bundleExec: true
+        } ]
+        files: [ {
+          expand: true
+          cwd: '_assets/css/'
+          src: ['*.sass']
+          dest: '_site/dist/css/'
+          ext: '.css'
+        } ]
 
     copy:
+      image: files: [ {
+        stdout: false
+        expand: true
+        cwd: '_assets/img/'
+        src: '*'
+        dest: 'dist/img/'
+      } ]
+
       jquery: files: [ {
         stdout: false
         expand: true
@@ -39,15 +68,6 @@ module.exports = (grunt) ->
         src: 'jquery.min.js'
         dest: 'vendor/js/'
       } ]
-
-      js: files: [ {
-        stdout: false
-        expand: true
-        cwd: '_assets/javascripts/'
-        src: '*.js'
-        dest: '_site/assets/'
-      } ]
-
 
       simpleSearch: files: [ {
         stdout: false
@@ -125,9 +145,9 @@ module.exports = (grunt) ->
         files: '_assets/**/*.sass'
         tasks: [ 'sass' ]
 
-      js:
-        files: '_assets/**/*.js'
-        tasks: [ 'copy:js' ]
+      coffee:
+        files: '_assets/**/*.coffee'
+        tasks: [ 'coffee' ]
 
       source:
         files: [
@@ -135,7 +155,7 @@ module.exports = (grunt) ->
           '_includes/**/*'
           '_layouts/**/*'
           '_posts/**/*'
-          '_assets/images/*'
+          '_assets/img/*'
           '_config.yml'
           '*.html'
           '*.md'
@@ -153,6 +173,8 @@ module.exports = (grunt) ->
     'bower'
     'copy'
     'exec:jekyll'
+    'sass'
+    'coffee'
   ]
   grunt.registerTask 'serve', [
     'build'
