@@ -143,6 +143,9 @@ module.exports = (grunt) ->
     watch:
       options: livereload: true
 
+      # TODO
+      # add image
+
       sass:
         files: '_assets/**/*.sass'
         tasks: [ 'sass' ]
@@ -177,6 +180,7 @@ module.exports = (grunt) ->
     'exec:jekyll'
     'sass'
     'coffee'
+    'copy:image'
   ]
   grunt.registerTask 'serve', [
     'build'
