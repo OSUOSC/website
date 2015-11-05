@@ -20,9 +20,9 @@
          <li>
 
            {% if post.categories contains 'volunteering' or post.categories contains 'events' %}
-             <h2><a href="{{ site.baseurl }}/{{ post.categories | first }}">{{ post.title }}</a></h2>
+             <h2><a href="/{{ site.baseurl }}/{{ post.categories | first }}">{{ post.title }}</a></h2>
            {% else %}
-             <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+             <h2><a href="/{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
            {% endif %}
 
            <span class="date">posted: {{ post.date | date: "%m-%d-%Y" }}</span>
