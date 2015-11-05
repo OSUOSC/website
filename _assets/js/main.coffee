@@ -5,6 +5,7 @@ setNavigation = ->
   path = path.replace(/\/$/, '')
   $('#main-nav>a').each ->
     href = $(this).attr('href')
+    # TODO
     if path.substring(0, href.length) == href
       if href.length > 1
         $(this).addClass 'active'
@@ -71,7 +72,8 @@ $ ->
   SimpleJekyllSearch
     searchInput: document.getElementById('search-posts')
     resultsContainer: document.getElementById('search-results')
-    json: '/search.json'
+    # TODO
+    json: '/open-source-club-website/search.json'
     searchResultTemplate: '<a href="{url}"><li>{title}</li></a>'
     noResultsText: '<li>No results found</li>'
     limit: 10
