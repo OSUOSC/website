@@ -1,6 +1,6 @@
 <div class="pagination">
   {% if paginator.previous_page %}
-     <a href="/{{ site.baseurl }}{{ paginator.previous_page_path }}" class="previous"><i class="fa fa-caret-left"></i></a>
+     <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="previous"><i class="fa fa-caret-left"></i></a>
   {% else %}
     <span class="previous"><i class="fa fa-caret-left disabled"></i></span>
   {% endif %}
@@ -8,7 +8,7 @@
   <span class="page_number "> {{ paginator.page }} of {{ paginator.total_pages }}</span>
 
   {% if paginator.next_page %}
-    <a href="/{{ site.baseurl }}{{ paginator.next_page_path }}" class="next"><i class="fa fa-caret-right"></i></a>
+    <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="next"><i class="fa fa-caret-right"></i></a>
   {% else %}
     <span class="next "><i class="fa fa-caret-right disabled"></i></span>
   {% endif %}
