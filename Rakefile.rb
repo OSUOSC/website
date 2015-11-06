@@ -17,9 +17,10 @@ namespace :deploy do
   # Usage:
   # bundle exec rake deploy:staging
   desc "deploy site to gh-pages"
-  task :staging do
+  task :ghpages do
 
     # compile site
+    `grunt exec:gh_baseurl`
     `grunt build`
 
     # Get the origin to which we are going to push the site.

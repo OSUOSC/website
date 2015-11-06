@@ -3,7 +3,9 @@
 [![Build Status](https://travis-ci.org/OSUOSC/open-source-club-website.svg?branch=master)](https://travis-ci.org/OSUOSC/open-source-club-website)
 [![Dependency Status](https://gemnasium.com/OSUOSC/open-source-club-website.svg)](https://gemnasium.com/OSUOSC/open-source-club-website)
 [![security](https://hakiri.io/github/OSUOSC/open-source-club-website/master.svg)](https://hakiri.io/github/OSUOSC/open-source-club-website/master)
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
+[staging site](https://osuosc.github.io/open-source-club-website/)
 
 ### How can I contribute?
 
@@ -62,3 +64,9 @@ grunt serve
 ```
 
 Once generated (which takes ~5 minutes) the site will be accessible at `http://localhost:4040`
+
+
+```bash
+# compile site locally and automatically push to the relative gh-pages branch
+rake deploy:ghpages
+```

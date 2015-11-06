@@ -1,0 +1,185 @@
+// mailchimp
+.section.subscribe
+  background: $white
+  box-shadow: 0 -1px 1px 0 rgba(0,0,0,0.15)
+  padding: 0
+  width: 100%
+  -webkit-box-shadow: 0 -1px 1px 0 rgba(0,0,0,0.15)
+  -moz-box-shadow: 0 -1px 1px 0 rgba(0,0,0,0.15)
+  .info
+    position: absolute
+    left: 0
+    font-size: 1.5em
+    margin-top: 2em
+    line-height: normal
+    text-align: center
+    width: 100%
+    &.error
+      color: #bb0000
+    &.valid
+      color: #2FB869
+  input[type="radio"]
+    display: none
+  label
+    display: inline-block
+    color: #777
+  span.big
+    display: inline-block
+    position: relative
+    top: -3px
+    background-color: $gray
+    background-color: #E9E9E9
+    padding: 8px
+    margin-bottom: -11px
+    margin-right: 9px
+    border-radius: 50% 50% 50% 50%
+    width: 15px
+    height: 15px
+  span.small
+    display: block
+    position: absolute
+    top: 25%
+    left: 25%
+    border-radius: 50% 50% 50% 50%
+    width: 50%
+    height: 50%
+    transition: background 0.4s ease 0s
+  input[type="radio"]:checked + label
+    color: $white
+  input[type="radio"]:checked + label span.small
+    background: $gray
+    opacity: 1
+
+  .circle .big
+    border: 1px solid #D5D5D5
+    width: 2em
+    height: 2em
+  input[type="radio"]:checked + label.circle span.small
+    background-color: #2FB869
+
+  .email-format
+    line-height: 2em
+    vertical-align: middle
+
+form
+  margin-bottom: 0!important
+
+#mc_embed_signup, #mc_embed_signup *
+  box-sizing: border-box
+
+.mc-field-group.input-group
+  ul
+    display: inline-block
+    li
+      display: inline-block
+
+.mc-field-group
+  float: left
+  height: 12em
+.mc-field-group.input-group ul, .mc-field-group.input-group li
+  display: block
+  margin-bottom: 0
+
+.subscribe-title
+  display: inline-block
+
+.subscribe-wrapper
+  display: block
+  padding: 3em
+  margin: 0 auto
+  max-width: $maxContentWidth
+
+#mc_embed_signup
+  display: block
+  margin: 0 auto
+  text-align: right
+  width: 100%
+
+#mc_embed_signup label, #mc_embed_signup #mce-EMAIL, #mc_embed_signup button
+  display: inline
+  font-size: 1em
+  font-weight: normal
+  margin: 0
+  width: 100%
+  vertical-align: middle
+
+#mc_embed_signup label, #mc_embed_signup, #mc_embed_signup button
+  border: none
+
+#mc_embed_signup label
+  display: block
+  color: inherit
+  text-transform: uppercase
+
+#mc_embed_signup button
+  font-weight: normal
+  background: #d53c3b
+  color: $white
+  cursor: pointer
+  border: none
+  float: right
+  width: 7em
+  text-transform: uppercase
+  &:hover
+    background: #a0cf63
+
+#mc_embed_signup_scroll
+  line-height: 8em
+  height: 12em
+
+.mc-field-group
+  margin-right: 8em
+  line-height: 4em
+  .input-group-title
+    font-family: $bodyfont
+    font-size: 1.25em
+    float: left
+    text-align: left
+    width: 100%
+  ul
+    line-height: 4em
+    li
+      display: block
+      text-align: left
+      &:not(:last-of-type)
+        margin-right: 4rem
+
+input#mc-embedded-subscribe
+  font-family: $bodyfont
+  font-size: inherit
+  font-weight: 600
+  background: #2FB869
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.15)
+  color: $white
+  margin-bottom: 0
+  border: 0
+  border-radius: 0
+  line-height: normal
+  height: 4em
+  transition: all 0.5s ease
+  vertical-align: bottom
+  -moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.15)
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.15)
+  &:hover
+    background: #208F4F
+
+input#mce-EMAIL
+  font-family: $bodyfont
+  font-size: 2em!important
+  padding-left: 2em
+  border: 1px solid #D5D5D5
+  border-radius: 0
+  min-width: 20em
+
+.input-email-wrapper::before
+  content: '\f0e0'
+  position: absolute
+  display: inherit
+  font-family: "FontAwesome"
+  font-size: 2em
+  font-weight: 400
+  color: #E9E9E9
+  margin-left: 0.5em
+  line-height: 6em
+  height: 6em
+  vertical-align: middle
