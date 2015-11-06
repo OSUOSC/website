@@ -1,0 +1,1041 @@
+$sidebarWidth: 35rem
+$maxContentWidth: 120em
+$bodyfont: "Open Sans", sans-serif
+$textColor: #5D5D5D
+$textColorHover: #424242
+$oscRed: #990101
+$white: #FFF
+$gray: #848484
+
+@import "weather"
+
+.container
+  box-sizing: border-box
+  position: relative
+  padding: 0 20px
+  margin: 0 auto
+  width: 100%
+  max-width: 960px
+
+.column, .columns
+  box-sizing: border-box
+  float: left
+  width: 100%
+
+/* For devices larger than 400px
+@media (min-width: 400px)
+  .container
+    padding: 0
+    width: 85%
+
+/* For devices larger than 550px
+@media (min-width: 550px)
+  .container
+    width: 80%
+  .column, .columns
+    margin-left: 4%
+  .column:first-child, .columns:first-child
+    margin-left: 0
+  .one
+    &.column, &.columns
+      width: 4.66666666667%
+  .two.columns
+    width: 13.3333333333%
+  .three.columns
+    width: 22%
+  .four.columns
+    width: 30.6666666667%
+  .five.columns
+    width: 39.3333333333%
+  .six.columns
+    width: 48%
+  .seven.columns
+    width: 56.6666666667%
+  .eight.columns
+    width: 65.3333333333%
+  .nine.columns
+    width: 74.0%
+  .ten.columns
+    width: 82.6666666667%
+  .eleven.columns
+    width: 91.3333333333%
+  .twelve.columns
+    margin-left: 0
+    width: 100%
+  .one-third.column
+    width: 30.6666666667%
+  .two-thirds.column
+    width: 65.3333333333%
+  .one-half.column
+    width: 48%
+  /* Offsets
+  .offset-by-one
+    &.column, &.columns
+      margin-left: 8.66666666667%
+  .offset-by-two
+    &.column, &.columns
+      margin-left: 17.3333333333%
+  .offset-by-three
+    &.column, &.columns
+      margin-left: 26%
+  .offset-by-four
+    &.column, &.columns
+      margin-left: 34.6666666667%
+  .offset-by-five
+    &.column, &.columns
+      margin-left: 43.3333333333%
+  .offset-by-six
+    &.column, &.columns
+      margin-left: 52%
+  .offset-by-seven
+    &.column, &.columns
+      margin-left: 60.6666666667%
+  .offset-by-eight
+    &.column, &.columns
+      margin-left: 69.3333333333%
+  .offset-by-nine
+    &.column, &.columns
+      margin-left: 78.0%
+  .offset-by-ten
+    &.column, &.columns
+      margin-left: 86.6666666667%
+  .offset-by-eleven
+    &.column, &.columns
+      margin-left: 95.3333333333%
+  .offset-by-one-third
+    &.column, &.columns
+      margin-left: 34.6666666667%
+  .offset-by-two-thirds
+    &.column, &.columns
+      margin-left: 69.3333333333%
+  .offset-by-one-half
+    &.column, &.columns
+      margin-left: 52%
+
+html
+  font-size: 37.5%
+
+body
+  font-size: 1.5em
+  /* currently ems cause chrome bug misinterpreting rems on body element
+  line-height: 1.6
+  font-weight: 400
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif
+  color: #222
+
+/* Typography
+ *––––––––––––––––––––––––––––––––––––––––––––––––––
+
+h1, h2, h3, h4, h5, h6
+  font-weight: 300
+  margin-top: 0
+  margin-bottom: 2rem
+
+h1
+  font-size: 4.0rem
+  letter-spacing: -.1rem
+  line-height: 1.2
+
+h2
+  font-size: 3.6rem
+  letter-spacing: -.1rem
+  line-height: 1.25
+
+h3
+  font-size: 3.0rem
+  letter-spacing: -.1rem
+  line-height: 1.3
+
+h4
+  font-size: 2.4rem
+  letter-spacing: -.08rem
+  line-height: 1.35
+
+h5
+  font-size: 1.8rem
+  letter-spacing: -.05rem
+  line-height: 1.5
+
+h6
+  font-size: 1.5rem
+  letter-spacing: 0
+  line-height: 1.6
+
+/* Larger than phablet
+@media (min-width: 550px)
+  h1
+    font-size: 5.0rem
+  h2
+    font-size: 4.2rem
+  h3
+    font-size: 3.6rem
+  h4
+    font-size: 3.0rem
+  h5
+    font-size: 2.4rem
+  h6
+    font-size: 1.5rem
+
+p
+  margin-top: 0
+
+/* Buttons
+ *––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.button, button
+  white-space: nowrap
+  display: inline-block
+  box-sizing: border-box
+  cursor: pointer
+  padding: 0 30px
+  text-align: center
+  text-decoration: none
+  text-transform: uppercase
+
+input
+  &[type="submit"], &[type="reset"], &[type="button"]
+    display: inline-block
+    box-sizing: border-box
+    font-size: 11px
+    font-weight: 600
+    background-color: transparent
+    color: #555
+    cursor: pointer
+    padding: 0 30px
+    border: 1px solid #bbb
+    border-radius: 4px
+    letter-spacing: .1rem
+    line-height: 38px
+    text-align: center
+    height: 38px
+    text-decoration: none
+    text-transform: uppercase
+    white-space: nowrap
+
+.button:hover, button:hover
+  color: #333
+  border-color: #888
+  outline: 0
+
+input
+  &[type="submit"]:hover, &[type="reset"]:hover, &[type="button"]:hover
+    color: #333
+    border-color: #888
+    outline: 0
+
+.button:focus, button:focus
+  color: #333
+  border-color: #888
+  outline: 0
+
+input
+  &[type="submit"]:focus, &[type="reset"]:focus, &[type="button"]:focus
+    color: #333
+    border-color: #888
+    outline: 0
+
+.button.button-primary, button.button-primary
+  background-color: #33C3F0
+  color: $white
+  border-color: #33C3F0
+
+input
+  &[type="submit"].button-primary, &[type="reset"].button-primary, &[type="button"].button-primary
+    background-color: #33C3F0
+    color: $white
+    border-color: #33C3F0
+
+.button.button-primary:hover, button.button-primary:hover
+  background-color: #1EAEDB
+  color: $white
+  border-color: #1EAEDB
+
+input
+  &[type="submit"].button-primary:hover, &[type="reset"].button-primary:hover, &[type="button"].button-primary:hover
+    background-color: #1EAEDB
+    color: $white
+    border-color: #1EAEDB
+
+.button.button-primary:focus, button.button-primary:focus
+  background-color: #1EAEDB
+  color: $white
+  border-color: #1EAEDB
+
+input
+  &[type="submit"].button-primary:focus, &[type="reset"].button-primary:focus, &[type="button"].button-primary:focus
+    background-color: #1EAEDB
+    color: $white
+    border-color: #1EAEDB
+  &[type="email"], &[type="number"], &[type="search"], &[type="text"], &[type="tel"], &[type="url"], &[type="password"]
+    background-color: $white
+    border: 1px solid #D1D1D1
+    height: 2em
+    box-shadow: none
+    box-sizing: border-box
+
+/* Forms
+ *––––––––––––––––––––––––––––––––––––––––––––––––––
+
+textarea, select
+  padding: 6px 10px
+  height: 38px
+  /* The 6px vertically centers text on FF, ignored by Webkit
+  background-color: $white
+  border: 1px solid #D1D1D1
+  border-radius: 4px
+  box-shadow: none
+  box-sizing: border-box
+
+/* Removes awkward default styles on some inputs for iOS
+
+// input
+//   &[type="email"], &[type="number"], &[type="search"], &[type="text"], &[type="tel"], &[type="url"], &[type="password"]
+//     -webkit-appearance: none
+//     -moz-appearance: none
+//     appearance: none
+
+textarea
+  padding-top: 6px
+  padding-bottom: 6px
+  min-height: 65px
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+
+// input
+//   &[type="email"]:focus, &[type="number"]:focus, &[type="search"]:focus, &[type="text"]:focus, &[type="tel"]:focus, &[type="url"]:focus, &[type="password"]:focus
+//     border: 1px solid #33C3F0
+//     outline: 0
+
+textarea:focus, select:focus
+  border: 1px solid #33C3F0
+  outline: 0
+
+label, legend
+  display: block
+  font-weight: 600
+  margin-bottom: .5rem
+
+fieldset
+  padding: 0
+  border-width: 0
+
+input
+  &[type="checkbox"], &[type="radio"]
+    display: inline
+
+label > .label-body
+  display: inline-block
+  font-weight: normal
+  margin-left: .5rem
+
+/* Lists
+ *––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ol
+  padding-left: 0
+  margin-top: 0
+  list-style: decimal inside
+
+ul
+  padding-left: 0
+  margin-top: 0
+  ul, ol
+    font-size: 90%
+    margin: 1.5rem 0 1.5rem 3rem
+
+ol
+  ol, ul
+    font-size: 90%
+    margin: 1.5rem 0 1.5rem 3rem
+
+li
+  margin-bottom: 1rem
+
+/* Code
+ *––––––––––––––––––––––––––––––––––––––––––––––––––
+
+code
+  font-size: 90%
+  background: #F1F1F1
+  padding: .2rem .5rem
+  margin: 0 .2rem
+  border: 1px solid #E1E1E1
+  border-radius: 4px
+  white-space: nowrap
+
+pre > code
+  display: block
+  padding: 1rem 1.5rem
+  white-space: pre
+
+/* Tables
+ *––––––––––––––––––––––––––––––––––––––––––––––––––
+
+th, td
+  padding: 12px 15px
+  border-bottom: 1px solid #E1E1E1
+  text-align: left
+
+th:first-child, td:first-child
+  padding-left: 0
+
+th:last-child, td:last-child
+  padding-right: 0
+
+/* Spacing
+ *––––––––––––––––––––––––––––––––––––––––––––––––––
+
+button, .button
+  margin-bottom: 1rem
+
+input, textarea, select, fieldset
+  margin-bottom: 1.5rem
+
+pre, blockquote, dl, figure, table, p, ul, ol, form
+  margin-bottom: 2.5rem
+
+/* Utilities
+ *––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.u-full-width
+  box-sizing: border-box
+  width: 100%
+
+.u-max-full-width
+  box-sizing: border-box
+  max-width: 100%
+
+.u-pull-right
+  float: right
+
+.u-pull-left
+  float: left
+
+/* Misc
+ *––––––––––––––––––––––––––––––––––––––––––––––––––
+
+hr
+  margin-top: 3rem
+  margin-bottom: 3.5rem
+  border-width: 0
+  border-top: 1px solid #E1E1E1
+
+/* Clearing
+ *––––––––––––––––––––––––––––––––––––––––––––––––––
+
+/* Self Clearing Goodness
+
+.container:after, .row:after, .u-cf
+  content: ""
+  display: table
+  clear: both
+
+
+body
+  color: $textColor
+  overflow-x: hidden
+
+html
+  font-size: 37.5%
+
+canvas
+  position: relative
+  opacity: 0
+  width: 100%
+  height: 100%
+  z-index: -3
+
+a
+  &:not(.sidebar)
+    font-weight: 600
+    color: inherit
+    text-decoration: none
+  &:hover:not(.about)
+    color: $textColorHover
+    text-decoration: underline
+
+.disabled
+  opacity: 0.5
+
+.about
+  a:hover
+    color: white
+    text-decoration: underline
+td
+  text-align: left
+  vertical-align: middle
+  height: 3em
+
+p, ul, li, h1, h2, h3, h4, h5, h6
+  font-family: $bodyfont
+
+.hidden
+  visibility: hidden
+
+hr
+  margin: 0 auto
+  border-top: 1px solid #333
+  text-align: center
+  width: 25%
+
+.category-title h5
+  display: inline
+  text-transform: capitalize
+
+.category-title h5::after
+  content: "\f105"
+  font-family: FontAwesome
+  margin: 0 0.5em
+
+.github-ribbon
+  position: absolute
+  top: 12rem
+  right: 0
+  font-size: 1.5em
+  background: $oscRed
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25)
+  color: #f5f5f5
+  line-height: 2.5em
+  text-align: center
+  width: 20em
+  height: 2.5em
+  transform: translate(50%, -50%) rotate(45deg) translateY(7em)
+  z-index: 3
+  -moz-transform: translate(50%, -50%) rotate(45deg) translateY(7em)
+  -o-transform: translate(50%, -50%) rotate(45deg) translateY(7em)
+  -ms-transform: translate(50%, -50%) rotate(45deg) translateY(7em)
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25)
+  -moz-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25)
+  -webkit-transform: translate(50%, -50%) rotate(45deg) translateY(7em)
+  &:hover
+    background: darken($oscRed, 5%)
+.btn, input
+  display: inline
+  font-size: 1em
+  font-weight: normal
+  margin: 0
+  vertical-align: middle
+
+input
+  font-size: inherit
+  height: 4em
+  padding-left: 2em
+  border: 1px solid #D5D5D5
+  border-radius: 0
+  min-width: 20em
+
+.btn
+  font-family: $bodyfont
+  font-size: inherit
+  font-weight: 600
+  background: #3498db
+  color: $white
+  margin-bottom: 0
+  border: 0
+  border-radius: 0
+  line-height: normal
+  height: 4em
+  transition: all 0.5s ease
+  vertical-align: bottom
+  -moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.15)
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.15)
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.15)
+  &:hover
+    color: $white
+    background: #236999
+
+.navbar
+  font-size: 1.5em
+  position: fixed
+  background: $white
+  margin: 0
+  text-align: right
+  width: 100%
+  height: 9rem
+  transition: all 0.5s linear
+  z-index: 10
+  border-bottom: 1px solid #D5D5D5
+  -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,0.15)
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,0.15)
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.15)
+
+
+
+@import "search"
+
+
+.sidebar
+  position: fixed
+  left: 0
+  background: $white
+  margin: 0
+  border-right: 1px solid #D5D5D5
+  text-align: right
+  width: $sidebarWidth
+  height: 100%
+  transition: all 0.5s linear
+  z-index: 10
+  list-style: outside none none
+  a
+    color: white
+    transition: all 0.5s linear
+    text-decoration: none
+  li > a
+    font-weight: 400
+    z-index: 10
+
+.sidebar #main-nav
+  li
+    font-size: 1.5em
+    font-weight: 600
+    color: #222
+    color: #4E4E4E
+    margin-bottom: 0
+    margin-left: 1.25em
+    line-height: 2.5em
+    text-align: left
+    height: inherit
+    transition: all 0.5s ease
+    span
+      line-height: inherit
+      vertical-align: middle
+  li::before
+    font-family: 'FontAwesome'
+    font-weight: 400
+    margin-right: 0.75em
+    line-height: 2.5em
+    height: 2.5em
+  a
+    display: block
+    width: 100%
+    height: 4em
+    transition: all 0.35s ease
+    &:not(:last-of-type)
+      margin-bottom: 10px
+      // margin-bottom: 1.5em
+    &:hover
+      background: rgba(166, 166, 166, 0.25)
+      cursor: pointer
+      transition: all 0.15s ease
+      text-decoration: none
+    &.active
+      background: rgba(166, 166, 166, 0.25)
+      box-shadow: inset 4px 0 2px 0 rgba(0,0,0,0.25)
+      cursor: pointer
+      -webkit-box-shadow: inset 4px 0 2px 0 rgba(0,0,0,0.25)
+      -moz-box-shadow: inset 4px 0 2px 0 rgba(0,0,0,0.25)
+      &:hover
+        background: darken(rgba(166, 166, 166, 0.25), 15%)
+        transition: all 0.35s ease
+      &::before
+        content: ""
+        position: absolute
+        left: 0
+        background: #FFE162
+        box-shadow: 1px 0 1px 0 rgba(0,0,0,0.25)
+        width: 0.5em
+        height: 4em
+        -webkit-box-shadow: 1px 0 1px 0 rgba(0,0,0,0.25)
+        -moz-box-shadow: 1px 0 1px 0 rgba(0,0,0,0.25)
+    &[href="/"] li
+      &::before
+        content: ""
+    &[href="/meetings"] li
+      &::before
+        content: '\f0c0'
+    &[href="/tutorials"] li
+      &::before
+        content: '\f02d'
+    &[href="/volunteering"] li
+      &::before
+        content: '\f1ae'
+    &[href="/events"] li
+      &::before
+        content: '\f133'
+    &[href="/history"] li
+      &::before
+        content: '\f187'
+
+#heading
+  display: inline-block
+
+#page-content-wrapper
+  position: absolute
+  left: $sidebarWidth
+  background: $white
+  float: left
+  overflow-x: hidden
+  width: inherit
+  -webkit-overflow-scrolling: touch
+
+.sidebar + #page-content-wrapper > .section.posts
+  padding: 2em 0 6em 0
+
+.posts
+  li
+    h1
+      font-size: 2.5em
+      a
+        font-weight: 400
+    .content
+      margin-top: 2em
+      ul>li
+        display: list-item
+
+#main-nav
+  padding-top: 6em
+.pagination
+  display: inherit
+  font-size: 200%
+  text-align: center
+  .fa-caret-right
+    &:hover:not(.disabled)
+      background: rgba(75,75,75,0.5)
+    width: 1.5em
+    height: 1.5em
+    line-height: 1.5em
+    display: inline-block
+    background-color: rgba(75,75,75,0.35)
+    color: $white
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.45)
+    -moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.45)
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.45)
+
+  .fa-caret-left
+    &:hover:not(.disabled)
+      background: rgba(75,75,75,0.5)
+    width: 1.5em
+    height: 1.5em
+    line-height: 1.5em
+    display: inline-block
+    background-color: rgba(75,75,75,0.35)
+    color: $white
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.45)
+    -moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.45)
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.45)
+  .page_number
+    font-family: $bodyfont
+    margin: 0 0.5em
+
+.menu-toggle + .posts
+  padding: 8em 0 0 0 !important
+
+.section-heading, .section-description
+  margin-bottom: 1.2rem
+
+.section
+  .posts
+    span:only-child
+      display: block
+      font-size: 2em
+      margin-top: 4em
+      text-align: center
+
+.landing
+  background: #D5E7F0
+  overflow: hidden
+  text-align: center
+  #scroll-indicator
+    display: inline-block
+    position: absolute
+    right: 0%
+    width: 100%
+    &::before
+      content: "\f107"
+      bottom: 0!important
+      font-family: "FontAwesome"
+      font-size: 3em
+      color: $gray
+  img
+    margin: 0 auto
+    height: 15em
+  h4
+    display: inline
+    font-family: 'Ubuntu', sans-serif
+    font-size: 4em
+    font-weight: 700
+    margin-top: 0
+    margin-bottom: 0
+  h5
+    display: block
+    font-family: 'Ubuntu', sans-serif
+    font-size: 1.75em
+    font-weight: 400
+    color: rgb(41, 41, 41)
+    margin-top: 0
+    text-align: right
+  h4
+    color: rgb(41, 41, 41)
+
+.twelve.column
+  z-index: 1
+
+.landing .button-primary
+  background: rgba(75, 75, 75, 0.35)
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.45)
+  border: 0
+  border-radius: 0 !important
+  transition: 0.3s ease
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.45)
+  -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.45)
+  &:hover
+    background: rgba(75, 75, 75, 0.65)
+    border: 0
+    border-radius: 0 !important
+    transition: all 0.3s ease
+
+.button.button-primary:hover, button.button-primary:hover
+  background: $gray
+  color: $white
+  border-color: $gray
+
+input
+  &[type="submit"].button-primary:hover, &[type="reset"].button-primary:hover, &[type="button"].button-primary:hover
+    background: $gray
+    color: $white
+    border-color: $gray
+
+.button.button-primary:focus, button.button-primary:focus
+  background: $gray!important
+  color: $white
+  border-color: $gray!important
+
+input
+  &[type="submit"].button-primary:focus, &[type="reset"].button-primary:focus, &[type="button"].button-primary:focus
+    background: $gray!important
+    color: $white
+    border-color: $gray!important
+
+span.fa-angle-down
+  position: relative
+  bottom: 1em
+  color: rgba(50, 50, 50, 0.5)
+  z-index: 1
+
+.landing > .container > .row
+  position: relative
+  height: 100%
+
+#brand
+  display: block
+  position: relative
+
+.about, .attention
+  position: relative
+  left: 0
+  font-family: $bodyfont
+  color: $white
+  padding: 0 !important
+  text-align: center
+  width: 100%
+  h5
+    margin: 3em 0
+
+.about
+  background: linear-gradient(to top, #7A7A7A 0%, $gray 4%, $gray 95%, #696969 100%)
+
+.attention
+  background: linear-gradient(to top, #EABABA 0%, #E9BCBC 4%, #E9BCBC 95%, #E1A7A7 100%)
+  h5
+    font-weight: 600
+
+.about-multiplier
+  color: #11DFC7
+  margin-bottom: .5rem
+
+.about-heading
+  margin-bottom: .3rem
+
+.about-description
+  font-weight: 300
+  opacity: .8
+
+#contact-wrapper
+  background: $white
+
+.contact
+  background: linear-gradient(to top, rgb(218,218,218) 0%, rgba(166,166,166,0.25) 3%, rgba(166,166,166,0.25) 98%, rgb(218,218,218) 100%)
+  padding: 3em 0
+
+.contact-info
+  li
+    display: inline-block
+    margin: 0
+    margin-top: 0
+    width: 50%
+    list-style: none
+    &:nth-last-of-type(odd):last-of-type
+      margin-top: 0
+      width: 100%
+
+.contact-info-email span, .contact-info-office span, .contact-info-meeting span
+  font-size: 1.75em
+
+.contact-info-email h6, .contact-info-office h6, .contact-info-meeting h6
+  font-size: 1.5em
+  margin-bottom: 1em
+  line-height: inherit
+  height: 1em
+
+.contact-info-email, .contact-info-office, .contact-info-meeting
+  height: 12rem
+
+.contact-info-email-container, .contact-info-office-container, .contact-info-meeting-container
+  display: inline-block
+  font-size: 3em
+  padding: 0 2rem
+  margin: 0 0 0 12rem
+  line-height: 0
+  text-shadow: none
+  vertical-align: middle
+
+.contact-info-email::before, .contact-info-office::before, .contact-info-meeting::before
+  position: absolute
+  font-family: 'FontAwesome'
+  font-size: 3em
+  box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.35)
+  color: $white
+  margin: 0
+  overflow: hidden
+  text-align: center
+  width: 12rem
+  height: 12rem
+  vertical-align: middle
+  -webkit-box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.35)
+  -moz-box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.35)
+
+.contact-info-email::before
+  content: '\f0e0'
+  background: rgb(230, 126, 34)
+
+.contact-info-office::before
+  content: '\f1ad'
+  background: rgb(47, 184, 105)
+
+.contact-info-meeting::before
+  content: '\f133'
+  background: rgb(52, 73, 94)
+
+.contact-info > li .info-wrapper
+  background-color: $white
+  box-shadow: 0 1px 12px -2px rgba(0, 0, 0, 0.25)
+  margin: 1.5em
+  line-height: 12rem
+  overflow: hidden
+  text-align: left
+  height: 12rem
+  -webkit-box-shadow: 0 1px 12px -2px rgba(0, 0, 0, 0.25)
+  -moz-box-shadow: 0 1px 12px -2px rgba(0, 0, 0, 0.25)
+
+ul.contact-info
+  display: block
+  margin: 0
+  width: 100%
+
+.section.posts
+  position: relative
+  font-size: 135%
+  background-color: $white
+  z-index: 2
+
+
+
+  .container
+    margin-top: 8em
+    margin-bottom: 3em
+
+#page-content-wrapper
+  &.index, &.single, &.home
+    .section.posts
+      .container
+        margin-top: 0
+
+
+.posts
+  ul
+    text-align: left
+    list-style: none
+  li
+    .content
+      list-style: initial
+      li
+        list-style-type: square
+  p
+    text-align: justify
+  > .container > ul > li
+    padding-bottom: 2em
+    padding-top: 2em
+    &:not(:last-of-type)
+      border-bottom: 1px solid #CDCDCD
+
+.section.posts > .container > ul:not(:last-of-type)
+  border-bottom: 1px solid #CDCDCD
+
+.posts
+  li > h5 + table
+    margin: 0 auto
+    width: 100%
+  h6 + ul:not(:last-of-type)
+    margin-bottom: 3em
+  table
+    width: 100%
+
+footer
+  position: absolute
+  background: $white
+  padding-bottom: 0
+  text-align: center!important
+  width: 100%
+  height: 4em
+  .with-love
+    position: absolute
+    bottom: 2em
+    width: 100%
+    span
+      display: block
+      font-size: 12px
+      color: #666
+      text-align: center
+      a
+        color: #000000
+        text-decoration: none
+      // FIXME
+      .fa-heart
+        font-size: 10px
+        color: $oscRed
+        margin: 0 3px
+
+#page-content-wrapper.single
+  left: 35rem
+  transition: 0s
+  footer
+    bottom: 0
+
+
+
+@import "mailchimp"
+@import "scroll"
+
+.categories
+  background-size: cover
+  color: $white
+  .section-description
+    margin-bottom: 4rem
+
+.landing
+  #heading-wrapper
+    position: absolute
+    width: 100%
+    transform: translateY(-50%)
+    -webkit-transform: translateY(-50%)
+    -moz-transform: translateY(-50%)
+
+[class*='flat'] i
+  line-height: 1.25em
+  color: #eee
+  cursor: pointer
+  width: 100%
+  display: block
+
+@import "media-queries"
