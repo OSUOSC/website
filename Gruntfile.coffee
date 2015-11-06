@@ -8,19 +8,21 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-csslint'
   grunt.loadNpmTasks 'grunt-contrib-sass'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
+  grunt.loadNpmTasks 'grunt-contrib-uglify'
+  grunt.loadNpmTasks 'grunt-contrib-cssmin'
   grunt.loadNpmTasks 'grunt-exec'
   grunt.initConfig
 
     csslint: test:
       options: import: 2
       expand: true
-      cwd: '_site/assets/'
+      cwd: '_site/dist/'
       src: '*.css'
 
     bower:
       install: options: [ {
         targetDir: './lib'
-        bowerOptions: forceLatest:true
+        bowerOptions: forceLatest: true
       } ]
 
     coffee:
@@ -47,6 +49,26 @@ module.exports = (grunt) ->
           src: ['*.sass']
           dest: '_site/dist/css/'
           ext: '.css'
+        } ]
+
+    uglify:
+      my_target:
+        files: [ {
+          expand: true
+          cwd: '_site/dist/js/'
+          src: ['*.js']
+          dest: '_site/dist/js/'
+          ext: '.min.js'
+        } ]
+
+    cssmin:
+      target:
+        files: [ {
+          expand: true
+          cwd: '_site/dist/css/'
+          src: ['*.css']
+          dest: '_site/dist/css/'
+          ext: '.min.css'
         } ]
 
     copy:
@@ -170,6 +192,8 @@ module.exports = (grunt) ->
     'exec:jekyll'
     'sass'
     'coffee'
+    'uglify'
+    'cssmin'
     'copy:image'
   ]
   grunt.registerTask 'serve', [
