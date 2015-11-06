@@ -27,14 +27,11 @@ module.exports = (grunt) ->
       dist:
         options: [ {
           sourceMap: false
+          join: true
+          joinExt: '.coffee'
         } ]
         files: [ {
-          expand: true
-          flatten: true
-          cwd: '_assets/js/'
-          src: ['*.coffee']
-          dest: '_site/dist/js/'
-          ext: '.js'
+          '_site/dist/js/app.js': '_assets/js/*.coffee'
         } ]
 
     sass:
@@ -134,7 +131,7 @@ module.exports = (grunt) ->
     exec:
       bundler: cmd: 'bundle install --quiet'
       remove: cmd: 'rm -rf _site/*'
-      lo_baseurl: cmd: 'bash _helper/set-baseurl.sh'
+      lo_baseurl: cmd: 'bash _helper/set-baseurl.sh "\'\'"'
       gh_baseurl: cmd: 'bash _helper/set-baseurl.sh /open-source-club-website'
       jekyll: cmd: 'bundle exec jekyll build --quiet'
       new_post: cmd: 'bash _helper/new-post.sh'
@@ -177,6 +174,7 @@ module.exports = (grunt) ->
     'exec:bundler'
     'bower'
     'copy'
+    'exec:lo_baseurl'
     'exec:jekyll'
     'sass'
     'coffee'
@@ -190,7 +188,4 @@ module.exports = (grunt) ->
   ]
   grunt.registerTask 'test', [ 'csslint' ]
   grunt.registerTask 'new', [ 'exec:new_post' ]
-  grunt.registerTask 'default', [
-    "exec:lo_baseurl"
-    'serve'
-  ]
+  grunt.registerTask 'default', [ 'serve' ]
