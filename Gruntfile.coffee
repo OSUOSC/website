@@ -82,14 +82,6 @@ module.exports = (grunt) ->
         dest: 'vendor/css/'
       } ]
 
-      animate: files: [ {
-        stdout: false
-        expand: true
-        cwd: 'lib/animate.css/'
-        src: 'animate.min.css'
-        dest: 'vendor/css/'
-      } ]
-
       fontawesome: files: [ {
         stdout: false
         expand: true
