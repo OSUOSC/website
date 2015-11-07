@@ -6,3 +6,4 @@
 /vendor/
 /bower_components/
 .jekyll-metadata
+/_includes/**/*.html
