@@ -12,8 +12,7 @@ gems:
   - jekyll-feed
 
 feed:
-  path:
-    - rss.xml
+  path: rss.xml
 
 defaults:
   -
