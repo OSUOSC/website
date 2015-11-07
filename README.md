@@ -23,7 +23,7 @@ Well first you need a few things:
 ##### ruby 2.2.3
 > We suggest installing ruby via rvm (*ruby version manager*)
 
-##### node.js 0.12.7
+##### node.js 4.0.0
 > We suggest installing node via nvm (*node version manager*)
 
 ```bash

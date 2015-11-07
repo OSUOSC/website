@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NODE_VERSION=0.12.7
+NODE_VERSION=4.0.0
 RUBY_VERSION=2.2.3
 
 
