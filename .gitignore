@@ -5,3 +5,4 @@
 /lib/
 /vendor/
 /bower_components/
+.jekyll-metadata
