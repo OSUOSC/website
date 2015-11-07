@@ -1,8 +1,11 @@
 name: "The Open Source Club"
-description: "a registered student organization composed of members from all around campus and out into the community who share a common enthusiasm for free, open source software."
 url: "opensource.osu.edu"
-
+baseurl: ''
 paginate: 10
+description: >
+  The Open Source Club at at the Ohio State University is a registered student
+  organization composed of members from all around campus and out into the
+  community who share a common enthusiasm for free, open source software.
 
 defaults:
   -
@@ -15,19 +18,6 @@ defaults:
 permalink: pretty
 highlighter: true
 
-assets:
-  js_compressor:  uglifier
-  css_compressor: sass
-
-jekyll-press:
-  exclude:
-    - "sitemap.xml"
-    - "rss.xml"
-
-  js_options: {}      # js minifier options
-  css_options: {}     # css minifier options
-  html_options: {}    # html minifier options
-
 exclude:
   - "node_modules"
   - "Gemfile"
@@ -36,3 +26,5 @@ exclude:
   - "bower_components"
   - "bower.json"
   - "Gruntfile.coffee"
+  - "init.sh"
+  - "_assets"

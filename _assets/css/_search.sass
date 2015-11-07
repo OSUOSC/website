@@ -1,0 +1,83 @@
+.search
+  position: relative
+  float: right
+  margin-right: 2em
+  padding: 0 0 0 2em
+  float: right
+  display: block
+  top: 25%
+
+.search-bar
+  right: 1em
+  position: relative
+  top: 50%
+  width: 35em
+  height: 2em
+  right: 0
+  display: block
+
+#search-posts, .search-submit
+  box-sizing: border-box
+  border: none
+  border-radius: 0
+  color: #2c3e50
+  height: 2em
+  line-height: 2em
+  padding: 0
+
+#search-posts
+  display: table-caption
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  width: 100%
+  border: 1px solid #D5D5D5
+  padding: 0 0.5em+2em 0 0.5em
+
+.search-submit
+  cursor: pointer
+  position: absolute
+  top: 0
+  width: 2em
+  background: #3498DB
+  right: 0
+  &:hover
+    background: #236998
+  &::before
+    position: absolute
+    top: 0
+    width: 2em
+    right: 0
+    color: #fff
+    font-family: 'FontAwesome'
+    content: '\f002'
+
+#search-results
+  right: 2em
+  position: relative
+  background: $white
+  display: list-item
+  // FIXME
+  // I shouldn't use important
+  margin-bottom: 0!important
+  -moz-box-shadow: 0 1px 5px 1px rgba(0,0,0,0.15)
+  -webkit-box-shadow: 0 1px 5px 1px rgba(0,0,0,0.15)
+  box-shadow: 0 1px 5px 1px rgba(0,0,0,0.15)
+  min-width: 30em
+  list-style: none
+  text-align: center
+  &:empty
+    display: none
+  a
+    &:hover
+      li
+        background: #E9E9E9
+    font-weight: 400
+    text-decoration: none
+  li
+    height: 2.5em
+    line-height: 2.5em
+    padding: 0 0.75em
+    text-align: left
+    list-style: none
+    margin-bottom: 0

@@ -9,7 +9,7 @@ alias: /meetings/2015/08/21/semester-scehdule/
 | date       | topic                                 | speaker(s)      |
 |------------|---------------------------------------|-----------------|
 | 8/27/2015  | What is Open Source?                  |                 |
-| 9/3/2015   | Linux Installfest                     |                 |
+| 9/3/2015   | Linux Installfest                     | N/A             |
 | 9/10/2015  | Introduction to the Command Line      | Bobby Reynolds  |
 | 9/17/2015  | Lightning Talks                       | YOU             |
 | 9/24/2015  | Open Source at Facebook               | Patrick Shuff   |
@@ -21,7 +21,7 @@ alias: /meetings/2015/08/21/semester-scehdule/
 | 11/5/2015  | License to code                       | Brandon Moore   |
 | 11/12/2015 | Git: An Introduction and Explanation  | Nikit Malkan    |
 | 11/19/2015 | Password Management                   | TBA             |
-| 11/26/2015 | Thanksgiving Day                      | n/a             |
-| 12/3/2015  |                                       |                 |
-| 12/10/2015 |                                       |                 |
-| 12/17/2015 |                                       |                 |
+| 11/26/2015 | Thanksgiving Day                      | N/A             |
+| 12/3/2015  | TBA                                   | TBA             |
+| 12/10/2015 | TBA                                   | TBA             |
+| 12/17/2015 | TBA                                   | TBA             |
