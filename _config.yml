@@ -7,6 +7,9 @@ description: >
   organization composed of members from all around campus and out into the
   community who share a common enthusiasm for free, open source software.
 
+gems:
+  - jekyll-sitemap
+
 defaults:
   -
     scope:
