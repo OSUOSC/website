@@ -188,7 +188,7 @@ module.exports = (grunt) ->
     'exec:bundler'
     'bower'
     'copy'
-    'exec:lo_baseurl'
+    # 'exec:lo_baseurl'
     'exec:jekyll'
     'sass'
     'coffee'
@@ -197,6 +197,7 @@ module.exports = (grunt) ->
     'copy:image'
   ]
   grunt.registerTask 'serve', [
+    'exec:lo_baseurl'
     'build'
     'connect:server'
     'exec:status'
