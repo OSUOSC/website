@@ -8,6 +8,7 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-csslint'
   grunt.loadNpmTasks 'grunt-contrib-sass'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
+  grunt.loadNpmTasks 'grunt-contrib-jade'
   grunt.loadNpmTasks 'grunt-contrib-uglify'
   grunt.loadNpmTasks 'grunt-contrib-cssmin'
   grunt.loadNpmTasks 'grunt-exec'
@@ -34,6 +35,20 @@ module.exports = (grunt) ->
         } ]
         files: [ {
           '_site/dist/js/app.js': '_assets/js/*.coffee'
+        } ]
+
+    jade:
+      compile:
+        options: [ {
+          data:
+            debug: false
+        } ]
+        files: [ {
+          expand: true
+          cwd: '_includes/'
+          src: ['**/*.jade']
+          dest: '_includes/.'
+          ext: '.html'
         } ]
 
     sass:
@@ -190,7 +205,7 @@ module.exports = (grunt) ->
     'exec:bundler'
     'bower'
     'copy'
-    # 'exec:lo_baseurl'
+    'jade'
     'exec:jekyll'
     'sass'
     'coffee'
