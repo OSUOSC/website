@@ -182,7 +182,7 @@ module.exports = (grunt) ->
         files: '_assets/**/*.coffee'
         tasks: [ 'coffee' ]
 
-      coffee:
+      jade:
         files: '_includes/**/*.jade'
         tasks: [ 'jade' ]
 
