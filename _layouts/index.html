@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-{% include head.html %}
-{% include sidebar.html %}
+{% include core/head.html %}
+{% include core/sidebar.html %}
 {% include back_to_top.html %}
 
 {% if paginator.previous_page %}<!-- when NOT on the index page   -->
@@ -28,7 +28,7 @@
 
 
 {% include posts.html %}
-{% include footer.html %}
+{% include core/footer.html %}
 
 
   </div>
