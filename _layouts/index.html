@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+{% include sidebar.html %}
+<a href="#" class="scrollToTop"></a>
+
+{% if paginator.previous_page %}<!-- when NOT on the root page   -->
+
+  <div id="page-content-wrapper" class="index" style="width: 100%;">
+  {% include search.html %}
+{% else %}<!-- on the root page -->
+
+
+    {% if page.is_post %}
+      <div id="page-content-wrapper" class="single">
+      {% include search.html %}
+    {% else %}<!-- It is NOT a single post -->
+      <div id="page-content-wrapper" class="index home">
+      {% include search.html %}
+      {% include landing.html %}
+      {% include about.html %}
+      {% include mailchimp.html %}
+
+      <noscript>
+        {% include attention.html %}
+      </noscript>
+
+      {% include contact.html %}
+    {% endif %}
+
+{% endif %}
+
+
+{% include posts.html %}
+{% include footer.html %}
+
+
+  </div>
+
+<!-- End Document
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
