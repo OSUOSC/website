@@ -1,6 +1,6 @@
 language: ruby, node_js
 node_js:
-- "0.12"
+- 4.0.0
 
 rvm:
 - 2.2.2
