@@ -1,11 +1,11 @@
-# The Open Source Club at The Ohio State University Website
+# [The Open Source Club's Website](https://opensource.osu.edu)
 
 [![Build Status](https://travis-ci.org/OSUOSC/open-source-club-website.svg?branch=master)](https://travis-ci.org/OSUOSC/open-source-club-website)
+[![Dependency Status](https://gemnasium.com/OSUOSC/open-source-club-website.svg)](https://gemnasium.com/OSUOSC/open-source-club-website)
+[![security](https://hakiri.io/github/OSUOSC/open-source-club-website/master.svg)](https://hakiri.io/github/OSUOSC/open-source-club-website/master)
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
-~~**Live Demo**: http://osc.eligladman.com/~~
-
-
-
+[staging site](https://osuosc.github.io/open-source-club-website/)
 
 ### How can I contribute?
 
@@ -13,13 +13,14 @@
 - request features
 - hate or love a feature . . . *tell us*
 - request topics for future meetings
-- fork us and submit a merge request
+- fork us, fix an issue and submit a merge request
+- refactor suboptimal code
 
 ### How do I run the site locally?
 
 Well first you need a few things:
 
-##### ruby 2.2.2
+##### ruby 2.2.3
 > We suggest installing ruby via rvm (*ruby version manager*)
 
 ##### node.js 0.12.7
@@ -34,14 +35,20 @@ cd open-source-club-website
 ```
 
 ```bash
-# execute  
-./init.sh
+# if this is your first time, execute the following script
+bash init.sh
 ```
 ---
 
 ```bash
 # fetch dependencies and generate site
 grunt build
+```
+---
+
+```bash
+# generate a new post from template
+grunt new
 ```
 ---
 
@@ -56,4 +63,10 @@ grunt test
 grunt serve
 ```
 
-Once generated (which takes upwards of 5-10 minutes) the site will be accessible at `http://localhost:4040`
+Once generated (which takes ~5 minutes) the site will be accessible at `http://localhost:4040`
+
+
+```bash
+# compile site locally and automatically push to the relative gh-pages branch
+rake deploy:ghpages
+```

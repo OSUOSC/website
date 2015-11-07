@@ -5,6 +5,8 @@
 #TODO
 # add error handling
 
+clear
+
 echo "What's your name?"
 read author
 
