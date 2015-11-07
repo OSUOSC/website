@@ -9,6 +9,11 @@ description: >
 
 gems:
   - jekyll-sitemap
+  - jekyll-feed
+
+feed:
+  path:
+    - rss.xml
 
 defaults:
   -
