@@ -20,7 +20,7 @@
 
 Well first you need a few things:
 
-##### ruby 2.2.2
+##### ruby 2.2.3
 > We suggest installing ruby via rvm (*ruby version manager*)
 
 ##### node.js 0.12.7

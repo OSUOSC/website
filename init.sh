@@ -1,7 +1,7 @@
 #!/bin/bash
 
 NODE_VERSION=0.12.7
-RUBY_VERSION=2.2.2
+RUBY_VERSION=2.2.3
 
 
 echo "Checking for Node version ${NODE_VERSION}"
