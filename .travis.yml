@@ -3,7 +3,7 @@ node_js:
 - "0.12"
 
 rvm:
-- 2.2.2
+- 2.2.3
 # Assume bundler is being used, install step will run `bundle install`.
 
 before_install: npm install -g grunt-cli
