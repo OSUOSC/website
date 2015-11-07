@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Introduction to Haskell Part B
 created: 1326905888
 alias: /wi12/haskell2.html

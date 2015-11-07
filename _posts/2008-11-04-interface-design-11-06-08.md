@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Interface Design [11/06/08]
 created: 1225857003
 alias: /au08/interface_design.html

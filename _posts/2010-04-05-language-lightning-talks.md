@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Language Lightning Talks
 created: 1270518439
 categories: announcements

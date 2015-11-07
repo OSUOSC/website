@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: ShellCoding
 created: 1271640404
 categories: announcements

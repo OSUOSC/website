@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Ohio LinuxFest 2015
 categories: events
 tags: events

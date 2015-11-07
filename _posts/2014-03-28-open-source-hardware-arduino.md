@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Open Source Hardware (Arduino)
 created: 1396033334
 alias: /sp14/open-source-hardware-arduino.html

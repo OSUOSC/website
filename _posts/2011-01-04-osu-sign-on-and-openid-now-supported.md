@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: OSU Sign-on and OpenID Now Supported
 created: 1294186799
 categories: announcements

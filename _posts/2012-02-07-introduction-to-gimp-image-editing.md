@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Introduction to GIMP Image Editing
 created: 1328676642
 alias: /wi12/gimp.html

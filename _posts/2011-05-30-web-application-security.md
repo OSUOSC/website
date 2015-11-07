@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Web Application Security
 created: 1306796765
 categories: announcements

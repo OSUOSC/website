@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Functional Programming
 created: 1305654441
 categories: announcements

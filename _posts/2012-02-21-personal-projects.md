@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Personal Projects
 created: 1329872566
 alias: /sp12/projects.html

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Open Source Music Ripper / Server / Client
 created: 1285605899
 categories: announcements

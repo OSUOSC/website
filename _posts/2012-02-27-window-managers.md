@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Window Managers
 created: 1330389887
 categories: announcements

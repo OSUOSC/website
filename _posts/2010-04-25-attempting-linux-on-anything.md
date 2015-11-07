@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: "(Attempting) Linux on Anything"
 created: 1272247262
 categories: announcements

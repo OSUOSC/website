@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: The Internet is Burning...
 created: 1161813320
 categories: announcements

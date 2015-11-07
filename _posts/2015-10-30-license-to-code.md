@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: License to Code
 categories: announcements
 tags: announcements

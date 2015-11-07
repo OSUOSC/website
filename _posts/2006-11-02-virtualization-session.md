@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Virtualization Session
 created: 1162526399
 categories: announcements

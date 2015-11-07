@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Alternative Window Managers
 created: 1264451618
 alias: /wi10/alternativewm.html

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Markup Languages
 created: 1297643465
 categories: announcements

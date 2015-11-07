@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Autumn 2008 Meetings
 created: 1228661455
 categories: announcements

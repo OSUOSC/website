@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Introduction to Web Development
 created: 1421782137
 alias: /sp15/introduction-web-development.html

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Finals and Winter Break
 created: 1291569447
 categories: announcements

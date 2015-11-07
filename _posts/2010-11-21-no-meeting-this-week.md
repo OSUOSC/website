@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: No Meeting this Week
 created: 1290367586
 categories: announcements

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Wireless Printing in Linux
 created: 1268958955
 #alias: /printing.html

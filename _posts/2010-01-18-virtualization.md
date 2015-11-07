@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Virtualization
 created: 1263869477
 alias: /wi10/virtualization.html

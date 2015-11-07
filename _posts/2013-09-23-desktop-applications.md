@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Desktop Applications
 created: 1379979225
 alias: /au13/desktop-applications.html

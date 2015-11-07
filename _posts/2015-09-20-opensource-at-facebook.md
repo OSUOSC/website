@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Open Source at Facebook
 categories: announcements
 tags: announcements

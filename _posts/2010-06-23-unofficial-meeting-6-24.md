@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Unofficial Meeting 6/24
 created: 1277334012
 categories: announcements

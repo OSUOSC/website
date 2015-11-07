@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Raspberry Pi / Officer Nominations
 created: 1395094857
 alias: /sp14/raspberry-pi-officer-nominations.html

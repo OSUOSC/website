@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Breaking Stuff
 created: 1303169132
 categories: announcements

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: JavaScript
 created: 1382318415
 alias: /au13/javascript.html

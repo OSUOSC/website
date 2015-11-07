@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Summer Meetups
 created: 1338561367
 categories: announcements

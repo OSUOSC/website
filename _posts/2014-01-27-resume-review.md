@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Resume Review
 created: 1390837344
 alias: /sp14/resume-review.html

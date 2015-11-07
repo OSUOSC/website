@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Forensic Analysis
 created: 1352230012
 alias: /au12/forensic-analysis.html

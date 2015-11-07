@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Portable Unix Shell Scripting
 created: 1333647937
 categories: announcements

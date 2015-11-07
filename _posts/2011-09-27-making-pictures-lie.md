@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Making Pictures Lie
 created: 1317172318
 categories: announcements

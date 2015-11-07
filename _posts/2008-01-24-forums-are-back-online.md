@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Forums are back online!
 created: 1201184090
 categories: announcements

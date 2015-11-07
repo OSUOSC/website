@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: What is Open Source
 created: 1376769457
 alias: /au13/what-open-source.html

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: 'First Meeting: What is Open Source?'
 created: 1345173953
 categories: announcements

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Engineering Expo Career Fair
 categories: volunteering
 tags: volunteering

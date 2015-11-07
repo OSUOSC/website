@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Chroot and Linux From Scatch
 created: 1293912163
 categories: announcements

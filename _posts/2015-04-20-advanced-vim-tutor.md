@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Advanced Vim Tutor
 created: 1429539424
 alias: /sp15/advanced-vim-tutor.html

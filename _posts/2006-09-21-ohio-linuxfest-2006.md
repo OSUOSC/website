@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Ohio LinuxFest 2006
 created: 1158867255
 categories: announcements

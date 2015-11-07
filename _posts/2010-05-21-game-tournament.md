@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Game Tournament
 created: 1274471526
 categories: announcements

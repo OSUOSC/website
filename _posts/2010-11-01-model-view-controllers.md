@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Model View Controllers
 created: 1288637684
 alias: /au10/view_controllers.html

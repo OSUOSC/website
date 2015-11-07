@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Willie the IRC bot
 created: 1361200539
 alias: /sp13/willie-irc-bot.html

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Ohio Linuxfest September 10-12
 created: 1283748363
 categories: announcements

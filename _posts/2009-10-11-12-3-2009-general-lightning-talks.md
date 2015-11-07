@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: 12/3/2009 - General Lightning Talks
 created: 1255307749
 categories: announcements

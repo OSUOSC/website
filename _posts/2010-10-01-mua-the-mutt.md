@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Mua the Mutt
 created: 1285953131
 alias: /au10/mutt.html

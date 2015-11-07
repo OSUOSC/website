@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: 'Securing Public Wireless Use: OpenVPN'
 created: 1393978024
 alias: /sp14/securing-public-wireless-use-openvpn.html

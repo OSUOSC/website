@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Open Source and Web Browsers
 created: 1424717623
 alias: /sp15/open-source-and-web-browsers.html

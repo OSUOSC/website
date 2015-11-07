@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Introduction to the Command Line
 categories: announcements
 tags: announcements

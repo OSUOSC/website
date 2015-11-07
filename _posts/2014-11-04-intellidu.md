@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Intellidu
 created: 1415114208
 alias: /au14/intellidu.html

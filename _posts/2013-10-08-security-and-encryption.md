@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Security and Encryption
 created: 1381244533
 alias: /au13/security-and-encryption.html

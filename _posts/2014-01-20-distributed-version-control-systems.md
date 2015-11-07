@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Distributed Version Control Systems
 created: 1390257211
 alias: /sp14/distributed-version-control-systems.html

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Cracking the Data Encryption Standard
 created: 1397829368
 alias: /sp14/cracking-data-encryption-standard.html

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Student Involvement Fair 2006 Photos
 created: 1200756271
 categories: announcements

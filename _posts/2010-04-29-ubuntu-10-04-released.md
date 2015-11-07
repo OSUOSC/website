@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Ubuntu 10.04 Released
 created: 1272586589
 categories: announcements

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Mailing Lists
 created: 1169764131
 categories: announcements
