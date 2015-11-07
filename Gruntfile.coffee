@@ -16,7 +16,7 @@ module.exports = (grunt) ->
     csslint: test:
       options: import: 2
       expand: true
-      cwd: '_site/dist/'
+      cwd: '_site/dist/css/'
       src: '*.css'
 
     bower:
