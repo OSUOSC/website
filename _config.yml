@@ -7,6 +7,14 @@ description: >
   organization composed of members from all around campus and out into the
   community who share a common enthusiasm for free, open source software.
 
+gems:
+  - jekyll-sitemap
+  - jekyll-feed
+
+feed:
+  path:
+    - rss.xml
+
 defaults:
   -
     scope:
@@ -16,7 +24,6 @@ defaults:
       is_post: true # automatically set is_post=true for all posts
 
 permalink: pretty
-highlighter: true
 
 exclude:
   - "node_modules"
