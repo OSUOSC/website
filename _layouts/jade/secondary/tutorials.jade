@@ -1,0 +1,21 @@
+doctype html
+| {% include html/core/head.html %}
+| {% include html/core/sidebar.html %}
+| {% include html/components/back_to_top.html %}
+#page-content-wrapper.home
+  | {% include html/components/search.html %}
+  .section.posts
+    .container
+      .category-title
+        h5 {{ page.category }}
+      |       {% if site.categories.[page.category] == null %}
+      span There are currently no tutorials
+      |       {% else %}
+      |         {% for post in site.categories.[page.category] %}
+      ul
+        li
+          h2
+            a(href='{{ site.baseurl }}{{ post.url }}') {{ post.title }}
+          span.date posted: {{ post.date | date: "%m-%d-%Y" }}
+      |         {% endfor %}
+      |       {% endif %}
