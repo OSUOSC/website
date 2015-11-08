@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: 'Net Neutrality Debate : 5 Oct 2006'
 created: 1161019447
 categories: announcements

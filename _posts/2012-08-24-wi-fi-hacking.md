@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Wi-Fi Hacking
 created: 1345834176
 alias: /au12/wi-fi-hacking.html

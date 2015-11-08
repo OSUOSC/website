@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Wireless Security and Penetration Testing
 categories: announcements
 tags: announcements

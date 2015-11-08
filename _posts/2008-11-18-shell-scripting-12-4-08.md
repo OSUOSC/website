@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Shell scripting [12/4/08]
 created: 1227025515
 categories: announcements

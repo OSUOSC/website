@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Blood Drive
 created: 1285435812
 categories: announcements

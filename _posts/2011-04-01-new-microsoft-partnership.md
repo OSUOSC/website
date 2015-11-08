@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: New Microsoft Partnership
 created: 1301630401
 categories: announcements

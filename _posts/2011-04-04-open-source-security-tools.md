@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Open Source Security Tools
 created: 1301967612
 categories: announcements

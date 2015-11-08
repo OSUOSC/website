@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Linux Multimedia
 created: 1425917556
 alias: /sp15/linux-multimedia.html

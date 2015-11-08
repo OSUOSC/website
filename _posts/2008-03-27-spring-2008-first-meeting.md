@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Spring 2008 - First Meeting
 created: 1206675018
 categories: announcements

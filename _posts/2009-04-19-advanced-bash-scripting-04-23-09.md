@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Advanced Bash Scripting [04/23/09]
 created: 1240157004
 #alias: /advanced-bash.html

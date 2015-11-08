@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: PulseAudio with Paul Betts
 created: 1159328304
 categories: announcements

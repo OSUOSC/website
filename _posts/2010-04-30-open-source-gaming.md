@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Open Source Gaming
 created: 1272632870
 categories: announcements

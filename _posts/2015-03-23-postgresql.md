@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: PostgreSQL
 created: 1427140442
 alias: /sp15/postgresql.html

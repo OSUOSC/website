@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Android Development
 created: 1298317935
 categories: announcements

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Gimp Image Editing - Winter 2011
 created: 1294416645
 categories: announcements

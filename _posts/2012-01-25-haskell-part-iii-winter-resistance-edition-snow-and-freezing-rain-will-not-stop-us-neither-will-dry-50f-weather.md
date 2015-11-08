@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: 'Haskell: Part III: Winter Resistance Edition: Snow and Freezing Rain Will
   Not Stop Us (neither will dry, 50F weather)'
 created: 1327518233

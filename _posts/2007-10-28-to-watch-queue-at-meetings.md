@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: To Watch Queue at Meetings
 created: 1193613676
 categories: announcements

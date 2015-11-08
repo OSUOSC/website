@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Revising the Constitution
 created: 1243816100
 ##alias: /revising-constitution.html

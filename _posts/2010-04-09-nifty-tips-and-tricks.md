@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Nifty Tips and Tricks
 created: 1270867416
 categories: announcements

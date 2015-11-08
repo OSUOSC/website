@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Internet Privacy and Anonymization
 created: 1383683481
 alias: /au13/internet-privacy-and-anonymization.html

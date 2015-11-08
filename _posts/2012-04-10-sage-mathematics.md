@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Sage Mathematics
 created: 1334079533
 alias: /sp12/sage-mathematics.html

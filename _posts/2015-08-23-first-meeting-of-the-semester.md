@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: First Meeting of the Semester
 categories: announcements
 tags: announcements

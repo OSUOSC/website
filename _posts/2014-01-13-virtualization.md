@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Virtualization
 created: 1389670402
 alias: /sp14/virtualization.html

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: System Updates
 created: 1425917739
 categories: announcements

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Open Source and Your Music
 created: 1349123594
 alias: /au12/open-source-and-your-music.html

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Quiz Bowl with UPE and ACM-W
 created: 1295390516
 categories: announcements

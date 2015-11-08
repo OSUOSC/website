@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Welcome Back!
 created: 1158866666
 categories: announcements

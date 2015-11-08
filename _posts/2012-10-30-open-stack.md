@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Open Stack
 created: 1351635395
 alias: /au12/open-stack.html

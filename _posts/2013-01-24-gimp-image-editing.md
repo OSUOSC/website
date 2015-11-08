@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: GIMP Image Editing
 created: 1359058368
 alias: /sp13/gimp.html

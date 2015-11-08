@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Linux Installfest
 created: 1409613608
 alias: /au14/linux-installfest.html

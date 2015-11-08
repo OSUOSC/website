@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Embedded Control for Art & Music
 created: 1242397207
 categories: announcements

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Open Source Operating Systems and Semester Planning
 created: 1357660813
 alias: /sp13/open-source-operating-systems-and-semester-planning.html

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Engineering Homecoming Tailgate
 categories: volunteering
 tags: volunteering

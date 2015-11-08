@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Security and Elections
 created: 1365454195
 alias: /sp13/security-and-elections.html

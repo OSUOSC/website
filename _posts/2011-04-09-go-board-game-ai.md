@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Go (board game) AI
 created: 1302364039
 alias: /sp11/go-ai.html

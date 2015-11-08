@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: "[10/2/08] Introduction to Linux"
 created: 1222897939
 categories: announcements

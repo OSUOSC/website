@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: October 2012 Lan Party
 created: 1349291911
 categories: announcements

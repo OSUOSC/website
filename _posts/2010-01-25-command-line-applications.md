@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Command Line Applications
 created: 1264452629
 categories: announcements

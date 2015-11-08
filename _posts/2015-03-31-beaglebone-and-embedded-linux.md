@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: BeagleBone and Embedded Linux
 created: 1427846702
 #alias: /sp15/beaglebone-and-embedded-linux.html

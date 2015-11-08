@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: 10/29/2009 - Linux Kernel Configuration
 created: 1255303131
 categories: announcements

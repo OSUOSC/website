@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Microcontrollers
 created: 1296501600
 categories: announcements

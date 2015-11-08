@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Elections
 created: 1304433857
 categories: announcements

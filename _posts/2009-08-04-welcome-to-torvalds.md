@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Welcome to Torvalds!
 created: 1249405593
 categories: announcements

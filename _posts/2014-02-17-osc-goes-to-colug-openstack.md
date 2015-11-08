@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: OSC Goes to COLUG! (OpenStack)
 created: 1392667845
 alias: /sp14/osc-goes-colug-openstack.html

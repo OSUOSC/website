@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Personal Projects
 created: 1338314284
 categories: announcements

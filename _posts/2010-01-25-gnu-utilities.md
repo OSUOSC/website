@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: GNU Utilities
 created: 1264449998
 alias: /wi10/gnu-utils.html

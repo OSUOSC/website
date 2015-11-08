@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: An Introduction to Blender!
 created: 1295986936
 categories: announcements

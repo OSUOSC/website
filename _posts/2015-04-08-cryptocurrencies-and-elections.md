@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Cryptocurrencies and Elections
 created: 1428493460
 alias: /sp15/cryptocurrencies-and-elections.html

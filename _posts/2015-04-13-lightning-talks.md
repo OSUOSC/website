@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Lightning Talks
 created: 1428964429
 categories: announcements

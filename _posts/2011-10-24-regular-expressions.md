@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Regular Expressions
 created: 1319496349
 alias: /au11/regex.html

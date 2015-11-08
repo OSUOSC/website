@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Maximizing Battery Life in Linux
 created: 1266300595
 alias: /wi10/batterylife.html

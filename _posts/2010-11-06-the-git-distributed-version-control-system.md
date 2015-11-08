@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: The Git Distributed Version Control System
 created: 1289087220
 categories: announcements

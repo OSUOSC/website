@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: CLI Utilities
 created: 1303832426
 categories: announcements

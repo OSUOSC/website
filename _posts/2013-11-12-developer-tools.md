@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Developer Tools
 created: 1384235128
 alias: /au13/developer-tools.html

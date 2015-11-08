@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Startup Weekend
 categories: events
 tags: events

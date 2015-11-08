@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: No Meeting This Thursday
 categories: announcements
 tags: announcements

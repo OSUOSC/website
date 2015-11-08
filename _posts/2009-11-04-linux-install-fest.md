@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Linux Install Fest
 created: 1257379345
 categories: announcements

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Source Control Management
 created: 1224097193
 categories: announcements

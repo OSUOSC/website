@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Friends of OSUOSS
 created: 1190062154
 categories: announcements

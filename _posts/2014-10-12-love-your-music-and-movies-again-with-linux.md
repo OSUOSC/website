@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Love your Music and Movies again with Linux
 created: 1413147462
 alias: /au14/love-your-music-and-movies-again-linux.html

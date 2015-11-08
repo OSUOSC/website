@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Connecting to osuwireless with linux
 categories: tutorials
 tags: tutorials

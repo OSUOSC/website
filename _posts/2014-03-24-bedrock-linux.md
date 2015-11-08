@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Bedrock Linux
 created: 1395719444
 alias: /sp14/bedrock-linux.html

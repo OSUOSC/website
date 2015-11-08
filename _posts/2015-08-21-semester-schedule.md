@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title:  Autumn 2015 Semester Schedule
 categories: meetings
 tags: meetings

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Overview of free desktop operating systems
 created: 1285028044
 categories: announcements

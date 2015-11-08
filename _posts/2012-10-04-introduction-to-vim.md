@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Introduction to Vim
 created: 1349406655
 alias: /au12/vim-intro.html

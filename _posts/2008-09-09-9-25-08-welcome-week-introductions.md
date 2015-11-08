@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: "[9/25/08] Welcome Week Introductions"
 created: 1221001666
 categories: announcements

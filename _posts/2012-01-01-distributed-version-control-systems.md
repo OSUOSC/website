@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Distributed Version Control Systems
 created: 1325441157
 categories: announcements

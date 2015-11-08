@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Computer Vision & Robotics
 created: 1240605608
 #alias: /robotics.html

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: SystemTap
 created: 1345052650
 alias: /au12/systemtap.html

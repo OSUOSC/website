@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Window Managers and Desktop Environments
 created: 1299808339
 categories: announcements

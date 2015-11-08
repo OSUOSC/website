@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Logical Volumes and Fancy Filesystems
 categories: announcements
 tags: announcements

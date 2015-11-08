@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html/default
 title: Lightning Talks
 categories: announcements
 tags: announcements
