@@ -1,11 +1,11 @@
 'use strict'
 
 module.exports = (grunt) ->
-  grunt.loadNpmTasks 'grunt-bower-task'
   grunt.loadNpmTasks 'grunt-contrib-connect'
   grunt.loadNpmTasks 'grunt-contrib-copy'
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-csslint'
+  grunt.loadNpmTasks 'grunt-html'
   grunt.loadNpmTasks 'grunt-contrib-sass'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-jade'
@@ -20,11 +20,11 @@ module.exports = (grunt) ->
       cwd: '_site/dist/css/'
       src: '*.css'
 
-    bower:
-      install: options: [ {
-        targetDir: './lib'
-        bowerOptions: forceLatest: true
-      } ]
+    htmllint:
+      options:
+        force: true
+      all:
+        src: ['_site/**/*.html']
 
     coffee:
       dist:
@@ -72,9 +72,9 @@ module.exports = (grunt) ->
           quoteStyle: 3
         files: [ {
           expand: true
-          cwd: '_site/dist/js/'
-          src: ['*.js']
-          dest: '_site/dist/js/'
+          cwd: '_site/'
+          src: ['**/*.js']
+          dest: '_site/'
           ext: '.min.js'
         } ]
 
@@ -82,9 +82,9 @@ module.exports = (grunt) ->
       target:
         files: [ {
           expand: true
-          cwd: '_site/dist/css/'
-          src: ['*.css']
-          dest: '_site/dist/css/'
+          cwd: '_site/'
+          src: ['**/*.css']
+          dest: '_site/'
           ext: '.min.css'
         } ]
 
@@ -97,71 +97,52 @@ module.exports = (grunt) ->
         dest: '_site/dist/img/'
       } ]
 
-      jquery: files: [ {
+      js: files: [ {
         stdout: false
         expand: true
-        cwd: 'lib/jquery/dist/'
-        src: 'jquery.min.js'
-        dest: 'vendor/js/'
+        filter: 'isFile'
+        flatten: true
+        cwd: 'bower_components/'
+        src: [
+          '**/*.js'
+          '!**/*/*.js'
+          '!**/*.min.js'
+        ]
+        dest: '_site/vendor/js/'
       } ]
 
-      simpleSearch: files: [ {
+      css: files: [ {
         stdout: false
         expand: true
-        cwd: 'bower_components/simple-jekyll-search/dest/'
-        src: '*.js'
-        dest: 'vendor/js/'
+        filter: 'isFile'
+        flatten: true
+        cwd: 'bower_components/'
+        src: [
+          '**/*.css'
+          '!**/*.min.css'
+        ]
+        dest: '_site/vendor/css/'
       } ]
 
-      normalize: files: [ {
+      fonts: files: [ {
         stdout: false
         expand: true
-        cwd: 'lib/normalize-scss/'
-        src: 'normalize.css'
-        dest: 'vendor/css/'
+        filter: 'isFile'
+        flatten: true
+        cwd: 'bower_components/'
+        src: [
+          '**/*.woff'
+          '**/*.woff2'
+          '**/*.ttf'
+        ]
+        dest: '_site/vendor/fonts/'
       } ]
 
-      fontawesome: files: [ {
-        stdout: false
-        expand: true
-        cwd: 'lib/font-awesome/css/'
-        src: 'font-awesome.min.css'
-        dest: 'vendor/css/'
-      },
-      {
-        expand: true
-        cwd: 'lib/font-awesome/fonts/'
-        src: '*'
-        dest: 'vendor/fonts/'
-      } ]
-
-      opensans: files: [ {
-        stdout: false
-        expand: true
-        cwd: 'lib/open-sans-fontface/'
-        src: 'open-sans.css'
-        dest: 'vendor/css/'
-      } ]
-
-      raleway: files: [ {
-        stdout: false
-        expand: true
-        cwd: 'lib/raleway-fontface/css'
-        src: 'raleway-fontface.css'
-        dest: 'vendor/css/'
-      } ]
-
-      ubuntu: files: [ {
-        stdout: false
-        expand: true
-        cwd: 'lib/ubuntu-fontface/'
-        src: 'ubuntu.css'
-        dest: 'vendor/css/'
-      } ]
 
     exec:
       bundler: cmd: 'bundle install --quiet'
-      remove: cmd: 'rm -rf _site/*'
+      bower: cmd: 'bower install --quiet'
+      purge: cmd: 'rm -rf _site/*'
       lo_baseurl: cmd: 'bash _helpers/set-baseurl.sh "\'\'"'
       gh_baseurl: cmd: 'bash _helpers/set-baseurl.sh /open-source-club-website'
       jekyll: cmd: 'bundle exec jekyll build --quiet'
@@ -198,7 +179,7 @@ module.exports = (grunt) ->
           '*.md'
         ]
         tasks: [
-          'exec:remove'
+          'exec:purge'
           'exec:jekyll'
         ]
     connect: server: options:
@@ -207,15 +188,14 @@ module.exports = (grunt) ->
       livereload: false
   grunt.registerTask 'build', [
     'exec:bundler'
-    'bower'
-    'copy'
+    'exec:bower'
     'jade'
     'exec:jekyll'
+    'copy'
     'sass'
     'coffee'
     'uglify'
     'cssmin'
-    'copy:image'
   ]
   grunt.registerTask 'serve', [
     'exec:lo_baseurl'
@@ -224,6 +204,9 @@ module.exports = (grunt) ->
     'exec:status'
     'watch'
   ]
-  grunt.registerTask 'test', [ 'csslint' ]
+  grunt.registerTask 'test', [
+    'csslint'
+    'htmllint'
+  ]
   grunt.registerTask 'new', [ 'exec:new_post' ]
   grunt.registerTask 'default', [ 'serve' ]
