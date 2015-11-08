@@ -38,16 +38,29 @@ module.exports = (grunt) ->
         } ]
 
     jade:
-      compile:
+      jekyll_includes:
         options: [ {
           data:
             debug: false
         } ]
         files: [ {
           expand: true
-          cwd: '_includes/'
+          cwd: '_includes/jade/'
           src: ['**/*.jade']
-          dest: '_includes/.'
+          dest: '_includes/html/.'
+          ext: '.html'
+        } ]
+
+      jekyll_layouts:
+        options: [ {
+          data:
+            debug: false
+        } ]
+        files: [ {
+          expand: true
+          cwd: '_layouts/jade/'
+          src: ['**/*.jade']
+          dest: '_layouts/html/.'
           ext: '.html'
         } ]
 
