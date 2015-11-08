@@ -34,6 +34,19 @@ elif [[ ${p//[^0-9_.]/} = 0 ]]; then
 fi
 
 
+p=$(eval npm list -g | grep bower)
+
+echo "Checking for bower"
+npm -v bower >/dev/null 2>&1
+if [[ $? != 0 ]]; then
+    echo -n "bower is not installed"
+elif [[ ${p//[^0-9_.]/} = 0 ]]; then
+  echo "bower isn't installed globally"
+
+  npm install -g bower
+fi
+
+
 #TODO
 # check if package dependencies are indeed installed
 
