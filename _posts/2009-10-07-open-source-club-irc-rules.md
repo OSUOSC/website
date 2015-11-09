@@ -4,9 +4,8 @@ title: Open Source Club IRC Rules
 created: 1254957896
 categories: announcements
 tags: announcements
+alias: [/irc-rules.html, /rules.html]
 ---
-<!-- FIXME -->
-<!-- #alias: [/irc-rules.html, /rules.html] -->
 
 Rules for OSU Open Source Club IRC Channel
 

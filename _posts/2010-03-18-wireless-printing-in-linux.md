@@ -2,7 +2,7 @@
 layout: html/default
 title: Wireless Printing in Linux
 created: 1268958955
-#alias: /printing.html
+alias: /printing.html
 categories: announcements
 tags: announcements
 ---
