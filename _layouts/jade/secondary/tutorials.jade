@@ -19,3 +19,5 @@ doctype html
           span.date posted: {{ post.date | date: "%m-%d-%Y" }}
       |         {% endfor %}
       |       {% endif %}
+      | {% include html/core/scripts.html %}
+      | {% include html/core/footer.html %}
