@@ -81,8 +81,6 @@ module.exports = (grunt) ->
 
     uglify:
       my_target:
-        options:
-          quoteStyle: 3
         files: [ {
           expand: true
           cwd: '_site/'
