@@ -116,8 +116,11 @@ module.exports = (grunt) ->
         cwd: 'bower_components/'
         src: [
           '**/*.js'
-          '!**/*/*.js'
           '!**/*.min.js'
+          '!**/Grunt*.js'
+          '!**/src/*.js'
+          '!**/*/*/*.js'
+
         ]
         dest: '_site/vendor/js/'
       } ]
