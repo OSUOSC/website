@@ -2,7 +2,6 @@
 
 {% if baseurl_size == 0 %}
 // if running the site locally use local fonts
-script(src='{{ site.baseurl }}/{{ site.baseurl | size }}', type='text/javascript')
 script(src='{{ site.baseurl }}/vendor/js/jquery.min.js', type='text/javascript')
 script(src='{{ site.baseurl }}/dist/js/app.min.js', type='text/javascript')
 script(src='{{ site.baseurl }}/vendor/js/jekyll-search.min.js', type='text/javascript')
@@ -14,7 +13,6 @@ link(rel='stylesheet', href='{{ site.baseurl }}/vendor/css/font-awesome.min.css'
 script(src='{{ site.baseurl }}/vendor/js/mousetrap.min.js', type='text/javascript')
 {% else %}
 // if deploying to github pages use cdn
-script(src='{{ site.baseurl }}/{{ site.baseurl | size }}', type='text/javascript')
 script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js', type='text/javascript')
 script(src='{{ site.baseurl }}/dist/js/app.min.js', type='text/javascript')
 script(src='{{ site.baseurl }}/vendor/js/jekyll-search.min.js', type='text/javascript')
