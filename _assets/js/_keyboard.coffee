@@ -14,4 +14,7 @@ $(document).ready ->
 
   Mousetrap.bind 'b u g', ->
     console.log 'feature'
+
+  Mousetrap.bind 'v i m', ->
+    console.log 'did you mean: emacs'
   return
