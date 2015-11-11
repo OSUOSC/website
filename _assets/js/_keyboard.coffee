@@ -17,4 +17,7 @@ $(document).ready ->
 
   Mousetrap.bind 'v i m', ->
     console.log 'did you mean: emacs'
+    
+  Mousetrap.bind 'e m a c s', ->
+    console.log 'did you mean: vim'
   return
