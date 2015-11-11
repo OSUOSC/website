@@ -171,11 +171,11 @@ module.exports = (grunt) ->
 
       sass:
         files: '_assets/**/*.sass'
-        tasks: [ 'sass' ]
+        tasks: [ 'sass', 'cssmin' ]
 
       coffee:
         files: '_assets/**/*.coffee'
-        tasks: [ 'coffee' ]
+        tasks: [ 'coffee', 'uglify' ]
 
       jade:
         files: '_includes/**/*.jade'
