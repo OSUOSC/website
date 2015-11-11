@@ -9,9 +9,8 @@
 
 .search-bar
   right: 1em
-  position: relative
+  position: initial
   top: 50%
-  width: 35em
   height: 2em
   right: 0
   display: block
@@ -30,9 +29,11 @@
   -webkit-appearance: none
   -moz-appearance: none
   appearance: none
-  width: 100%
   border: 1px solid #D5D5D5
   padding: 0 0.5em+2em 0 0.5em
+  width: 30em
+  position: absolute
+  right: 0
 
 .search-submit
   cursor: pointer
@@ -81,3 +82,8 @@
     text-align: left
     list-style: none
     margin-bottom: 0
+    >*
+      display: initial
+      margin-left: 2em
+      float: right
+      color: lighten(rgb(93,93,93), 25%)
