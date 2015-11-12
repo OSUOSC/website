@@ -115,12 +115,10 @@ module.exports = (grunt) ->
         flatten: true
         cwd: 'bower_components/'
         src: [
-          '**/*.js'
+          'jquery/dist/*.js'
+          'simple-jekyll-search/dest/*.js'
+          'mousetrap/mousetrap.js'
           '!**/*.min.js'
-          '!**/Grunt*.js'
-          '!**/src/*.js'
-          '!**/*/*/*.js'
-
         ]
         dest: '_site/vendor/js/'
       } ]
