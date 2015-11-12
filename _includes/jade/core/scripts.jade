@@ -1,4 +1,4 @@
-{% capture baseurl_size %}{{ site.baseurl | size }}{% endcapture %}
+{% assign baseurl_size = site.baseurl.size %}
 
 {% if baseurl_size == 0 %}
 // if running the site locally use local fonts
