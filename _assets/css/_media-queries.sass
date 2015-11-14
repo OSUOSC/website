@@ -3,8 +3,6 @@
     height: 100%
     #heading-wrapper
       top: 50%
-  #scroll-indicator
-    bottom: 0%
     #brand
       margin-top: 0
     h4
@@ -30,8 +28,6 @@
     height: 100%
     #heading-wrapper
       top: 25%
-  #scroll-indicator
-    bottom: 0%
 
 @media (min-width: 550px) and (max-width: 750px)
   #heading
@@ -51,8 +47,6 @@
       font-size: 3.25em
     h5
       font-size: 1.5em
-  #scroll-indicator
-    bottom: 0%
   .sidebar
     left: 0
     &.active
@@ -82,7 +76,6 @@
     width: inherit
     z-index: 10
     left: $sidebarWidth
-    right: inherit
     border-bottom: 1px solid #D5D5D5
   .contact-info-email-container, .contact-info-office-container, .contact-info-meeting-container
     font-size: 85%
@@ -102,9 +95,9 @@
   #page-content-wrapper
     position: fixed
     left: $sidebarWidth
-
     overflow-x: hidden
-    width: 100%
+    top: 0
+    right: 0
     height: 100%
     transition: all 0.5s linear
     z-index: 9
@@ -112,7 +105,6 @@
       left: $sidebarWidth
     >*
       transition: 0s
-
   .layout-desktop
     display: inherit
   .section
@@ -129,33 +121,9 @@
     > .section.posts:only-child > .container
       width: 50%
 
-// @media (max-width: 750px) and (orientation: portrait)
-//   .landing
-//     height: 80%
-//     #heading-wrapper
-//       top: 40%
-//     #scroll-indicator
-//       bottom: 20%
-//
-// @media (max-width: 1200px) and (orientation: portrait)
-//   .landing
-//     padding: 0
-//     height: 66%
-//     #scroll-indicator
-//       bottom: 35%
-//       transform: translateY(-50%)
-//       -webkit-transform: translateY(-50%)
-//       -moz-transform: translateY(-50%)
-//     #heading-wrapper
-//       top: 33%
-//   #heading
-//     font-size: 122%
-
 @media (min-width: 550px) and (max-width: 750px) and (orientation: landscape)
   .landing
     height: 100%!important
-    #scroll-indicator
-      bottom: 1em
     #heading-wrapper
       top: 50%
       #heading
@@ -164,18 +132,12 @@
 @media (max-width: 750px) and (min-height: 500px)
   .landing
     height: 75%
-    #heading-wrapper
-      // top: 37.5%
-  #scroll-indicator
-    bottom: 25%
 
 @media (max-width: 750px) and (min-height: 500px) and (orientation: portrait)
   .landing
     height: 75%
     #heading-wrapper
       top: 37.5%
-  #scroll-indicator
-    bottom: 25%
 
 @media (min-width: 750px) and (max-width: 1200px) and (orientation: landscape)
   input#mce-EMAIL
@@ -186,19 +148,12 @@
     height: 100%
     #heading-wrapper
       top: 50%
-    #scroll-indicator
-      bottom: 0
 
 @media (min-width: 1200px) and (orientation: landscape)
   .landing
     height: 85%
     #heading-wrapper
       top: 42.5%
-    #scroll-indicator
-      bottom: 0
-      transform: translateY(-50%)
-      -webkit-transform: translateY(-50%)
-      -moz-transform: translateY(-50%)
     #heading
       font-size: 125%
 
@@ -207,11 +162,6 @@
     height: 100%
     #heading-wrapper
       top: 50%
-    #scroll-indicator
-      bottom: 0
-      transform: translateY(-50%)
-      -webkit-transform: translateY(-50%)
-      -moz-transform: translateY(-50%)
 
 @media (max-width: 1200px) and (min-width: 550px)
   .landing
@@ -269,6 +219,10 @@
     width: 25em
     border: none
     transition: all 0.5s linear
+    border-left: 6px solid rgba(192,192,192,0.15)
+    // -moz-box-shadow: 0 0 10px 0 rgba(0,0,0,0.35)
+    // -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.35)
+    // box-shadow: 0 0 10px 0 rgba(0,0,0,0.35)
   .search-submit
     cursor: pointer
     position: absolute
@@ -316,7 +270,8 @@
     &:hover
       background: rgba(75,75,75,0.5)
       transition: all 1s ease
-
+  .navbar
+    width: inherit
   .sidebar
     position: fixed
     top: 0
@@ -368,19 +323,18 @@
       &.single
         left: 35rem
         transition: all 0.5s linear
-  #main-nav
-    padding-top: 2em
-
 @media (max-width: 750px)
   // .sidebar.active+.navbar
   //   width: inherit
-
+  #main-nav
+    padding-top: 2em
   .navbar
     width: 100%
   #search-posts
     padding: 0px 9rem+2rem
     width: 100%
     min-width: inherit
+    border: none
   #search-results
     right: 0
     min-width: inherit
@@ -388,7 +342,7 @@
       height: inherit
   .search
     padding: 0
-    width: inherit
+    width: 100%
 
   .github-ribbon
     font-size: 1.25em
@@ -399,16 +353,12 @@
     -moz-transform: translate(50%, -50%) rotate(45deg) translateY(5.5em)
 
 @media (min-width: 750px) and (max-width: 1200px)
+  #main-nav
+    padding-top: 8rem
   .landing
     height: 50%
     #heading-wrapper
       top: 25%
-  #scroll-indicator
-    display: inline-block
-    position: absolute
-    right: 0%
-    width: 100%
-    bottom: 50%
   .mc-field-group
     &:not(:first-of-type)
       margin-right: 8em
@@ -470,27 +420,17 @@
   .github-ribbon
     top: 8rem
 
-
-
-// @media (min-width: 750px) and (max-width: 1200px) and (max-height: 700px) and (orientation: portrait)
-//   #scroll-indicator
-//     bottom: 0
-
 @media (min-width: 750px) and (max-width: 1200px) and (max-height: 1100px)
   .landing
     height: 75%
     #heading-wrapper
       top: 37.5%
-  #scroll-indicator
-    bottom: 0%
 
 @media (min-width: 750px) and (max-width: 1200px) and (max-height: 700px)
   .landing
     height: 100%
     #heading-wrapper
       top: 50%
-  #scroll-indicator
-    bottom: 0
 
 @media (min-width: 550px) and (max-width: 750px)
   .mc-field-group
@@ -531,8 +471,6 @@
       top: 42.5%
       #heading
         font-size: 65%
-  #scroll-indicator
-    bottom: 15%
   .contact-info-email-container, .contact-info-office-container, .contact-info-meeting-container
     font-size: 85%
   .menu-toggle
@@ -584,9 +522,6 @@
     height: 100%
     #heading-wrapper
       top: 50%
-  #scroll-indicator
-    display: initial
-
 
 @media (max-width: 550px)
   .mc-field-group
@@ -600,83 +535,83 @@
   input#mc-embedded-subscribe
     vertical-align: middle
 
-@media (-webkit-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2/1) and (min--moz-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (max-width: 750px)
-  .landing
-    height: 100%
-    #heading-wrapper
-      top: 50%
-    #heading
-      font-size: 100%
-  #scroll-indicator
-    bottom: 0
-    transform: translateX(0%)
-    -webkit-transform: translateX(0%)
-    -moz-transform: translateX(0%)
-
-  .pagination
-    font-size: 200%
-  .cloud-1, .cloud-2, .cloud-3, .cloud-4
-    transform: scale(0.5)
-    -webkit-transform: scale(0.5)
-    -moz-transform: scale(0.5)
-  #page-content-wrapper
-    -webkit-overflow-scrolling: touch
-
-  *:not(#page-content-wrapper):not(.sidebar):not(.navbar):not(.menu-toggle):not(#search-posts):not(.search-submit):not(.search-results)
-    animation: none !important
-    transition-property: none !important
-    -o-transition-property: none !important
-    -moz-transition-property: none !important
-    -ms-transition-property: none !important
-    -webkit-transition-property: none !important
-    -webkit-animation: none !important
-    -moz-animation: none !important
-    -o-animation: none !important
-    -ms-animation: none !important
-
-#brand
-  -webkit-animation-duration: 2s
-  -o-animation-duration: 2s
-  -moz-animation-duration: 2s
-  -webkit-animation-delay: 0s
-  -o-animation-delay: 0s
-  -moz-animation-delay: 0s
-
-#heading, #button
-  -webkit-animation-duration: 1s
-  -o-animation-duration: 1s
-  -moz-animation-duration: 1s
-  -webkit-animation-delay: 1s
-  -o-animation-delay: 1s
-  -moz-animation-delay: 1s
-
-#main-nav
-  -webkit-animation-duration: 2s
-  -o-animation-duration: 2s
-  -moz-animation-duration: 2s
-  -webkit-animation-delay: 0s
-  -o-animation-delay: 0s
-  -moz-animation-delay: 0s
-
-.sidebar-icons
-  -webkit-animation-duration: 1s
-  -o-animation-duration: 1s
-  -moz-animation-duration: 1s
-  -webkit-animation-delay: 0s
-  -o-animation-delay: 0s
-  -moz-animation-delay: 0s
-
-#scroll-indicator
-  animation-iteration-count: infinite
-  -webkit-animation-duration: 3s
-  -o-animation-duration: 3s
-  -moz-animation-duration: 3s
-  -webkit-animation-delay: 3s
-  -o-animation-delay: 3s
-  -moz-animation-delay: 3s
-  -moz-animation-iteration-count: infinite
-  -webkit-animation-iteration-count: infinite
-  -o-animation-iteration-count: infinite
+// @media (-webkit-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2/1) and (min--moz-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and ( min-resolution: 2dppx) and (max-width: 750px)
+//   .landing
+//     height: 100%
+//     #heading-wrapper
+//       top: 50%
+//     #heading
+//       font-size: 100%
+//   #scroll-indicator
+//     bottom: 0
+//     transform: translateX(0%)
+//     -webkit-transform: translateX(0%)
+//     -moz-transform: translateX(0%)
+//
+//   .pagination
+//     font-size: 200%
+//   .cloud-1, .cloud-2, .cloud-3, .cloud-4
+//     transform: scale(0.5)
+//     -webkit-transform: scale(0.5)
+//     -moz-transform: scale(0.5)
+//   #page-content-wrapper
+//     -webkit-overflow-scrolling: touch
+//
+//   *:not(#page-content-wrapper):not(.sidebar):not(.navbar):not(.menu-toggle):not(#search-posts):not(.search-submit):not(.search-results)
+//     animation: none !important
+//     transition-property: none !important
+//     -o-transition-property: none !important
+//     -moz-transition-property: none !important
+//     -ms-transition-property: none !important
+//     -webkit-transition-property: none !important
+//     -webkit-animation: none !important
+//     -moz-animation: none !important
+//     -o-animation: none !important
+//     -ms-animation: none !important
+//
+// #brand
+//   -webkit-animation-duration: 2s
+//   -o-animation-duration: 2s
+//   -moz-animation-duration: 2s
+//   -webkit-animation-delay: 0s
+//   -o-animation-delay: 0s
+//   -moz-animation-delay: 0s
+//
+// #heading, #button
+//   -webkit-animation-duration: 1s
+//   -o-animation-duration: 1s
+//   -moz-animation-duration: 1s
+//   -webkit-animation-delay: 1s
+//   -o-animation-delay: 1s
+//   -moz-animation-delay: 1s
+//
+// #main-nav
+//   -webkit-animation-duration: 2s
+//   -o-animation-duration: 2s
+//   -moz-animation-duration: 2s
+//   -webkit-animation-delay: 0s
+//   -o-animation-delay: 0s
+//   -moz-animation-delay: 0s
+//
+// .sidebar-icons
+//   -webkit-animation-duration: 1s
+//   -o-animation-duration: 1s
+//   -moz-animation-duration: 1s
+//   -webkit-animation-delay: 0s
+//   -o-animation-delay: 0s
+//   -moz-animation-delay: 0s
+//
+// #scroll-indicator
+//   animation-iteration-count: infinite
+//   -webkit-animation-duration: 3s
+//   -o-animation-duration: 3s
+//   -moz-animation-duration: 3s
+//   -webkit-animation-delay: 3s
+//   -o-animation-delay: 3s
+//   -moz-animation-delay: 3s
+//   -moz-animation-iteration-count: infinite
+//   -webkit-animation-iteration-count: infinite
+//   -o-animation-iteration-count: infinite
 
 @media (min-width: 2000px) and (orientation: landscape)
   .landing

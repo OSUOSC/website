@@ -8,7 +8,7 @@ setWidth = ->
   # TODO
   # i know this is shitty, it needs to be rewritten
   if $(window).width() < 1200
-
+    # $('.navbar').css 'width', 'inherit'
     if $('.sidebar').is('.active')
       if $(window).width() < 750
         contentWrapperWidth = $(window).width()
@@ -20,7 +20,7 @@ setWidth = ->
   else
     contentWrapperWidth = $(window).width() - $('.sidebar').width()
     $('.navbar').css 'width', contentWrapperWidth unless $(window).width() < 750
-  $('#page-content-wrapper').css 'max-width', contentWrapperWidth
+  $('#page-content-wrapper').css 'width', contentWrapperWidth
   return
 
 $(window).resize ->
