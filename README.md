@@ -72,3 +72,24 @@ Once generated (which takes ~5 minutes) the site will be accessible at `http://l
 # compile site locally and automatically push to the relative gh-pages branch
 rake deploy:ghpages
 ```
+
+### Additional Information
+
+##### Presenters
+- meeting announcements must contain the following information
+  - meeting time
+  - building and room number
+  - meeting topic
+  - topic description
+
+If you wish to provide a link to your presentation in your post (we suggest `.pdf`)
+save your document with the *exact* same filename convention.
+
+For example if I created `_post/2015-11-12-my-post.md`
+the presentation slides/document would be: `downloads/presentations/2015-11-12-my-post.pdf`
+
+
+To embed a presentation link into the related post use the following:
+```
+[downloaded here]({{ site.baseurl }}/downloads/presentations/{{ page.path | remove: "_posts/" | replace: '.md', '.pdf' }})
+```

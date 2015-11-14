@@ -3,6 +3,14 @@
 NODE_VERSION=4.0.0
 RUBY_VERSION=2.2.3
 
+echo "Checking for Git large File Storage"
+git-lfs version > /dev/null
+if [[ $? != 0 ]]; then
+    echo "Git LFS not found."
+    echo "Install it using your package manager or at https://git-lfs.github.com/."
+    echo "Until this is done, downloads/ will appear strangely."
+    exit
+fi
 
 echo "Checking for Node version ${NODE_VERSION}"
 node -v | grep ${NODE_VERSION} >/dev/null 2>&1
