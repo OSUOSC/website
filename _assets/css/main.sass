@@ -494,7 +494,7 @@ hr
 
 .github-ribbon
   position: absolute
-  top: 10rem
+  top: 0
   right: 0
   font-size: 1.5em
   background: $oscRed
@@ -559,7 +559,7 @@ input
   text-align: right
   width: 100%
   height: 9rem
-  transition: all 0.5s linear
+  transition: all 0.25s linear
   z-index: 9
   -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.15)
   -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.15)
@@ -580,12 +580,12 @@ input
   text-align: right
   width: $sidebarWidth
   height: 100%
-  transition: all 0.5s linear
+  transition: all 0.25s linear
   z-index: 10
   list-style: outside none none
   a
     color: white
-    transition: all 0.5s linear
+    transition: all 0.25s linear
     text-decoration: none
   li > a
     font-weight: 400
@@ -669,6 +669,7 @@ input
 #page-content-wrapper
   position: absolute
   left: $sidebarWidth
+  top: 8rem
   background: $white
   float: left
   overflow-x: hidden
@@ -900,7 +901,6 @@ span.fa-angle-down
   position: absolute
   font-family: 'FontAwesome'
   font-size: 3em
-  box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.35)
   color: $white
   margin: 0
   overflow: hidden
@@ -910,6 +910,7 @@ span.fa-angle-down
   vertical-align: middle
   -webkit-box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.35)
   -moz-box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.35)
+  box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.35)
 
 .contact-info-email::before
   content: '\f0e0'

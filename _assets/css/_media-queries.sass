@@ -59,6 +59,9 @@
       left: 0
       width: 100%
 
+.section
+  padding: 14rem 0 15rem
+
 @media (min-width: 750px)
   .landing-heading
     font-size: 2.6rem
@@ -96,10 +99,10 @@
     position: fixed
     left: $sidebarWidth
     overflow-x: hidden
-    top: 0
     right: 0
+    top: 9rem
     height: 100%
-    transition: all 0.5s linear
+    transition: all 0.25s linear
     z-index: 9
     &.index
       left: $sidebarWidth
@@ -196,9 +199,9 @@
   .layout-desktop
     display: none
   .navbar
-    height: 9rem
+    height: 8rem
     position: fixed
-    transition: all 0.5s linear
+    transition: all 0.25s linear
     z-index: 9
     left: 0
     -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25)
@@ -209,66 +212,71 @@
     margin-right: 0
     left: initial!important
     right: 0
-    transition: all 0.5s linear
+    transition: all 0.25s linear
   .search-bar
-    height: 9rem
-    transition: all 0.5s linear
+    height: 8rem
+    transition: all 0.25s linear
   #search-posts
-    height: 9rem
-    font-size: 3.5rem
+    height: 8rem
+    font-size: 3rem
     width: 25em
     border: none
-    transition: all 0.5s linear
-    border-left: 6px solid rgba(192,192,192,0.15)
-    // -moz-box-shadow: 0 0 10px 0 rgba(0,0,0,0.35)
-    // -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.35)
-    // box-shadow: 0 0 10px 0 rgba(0,0,0,0.35)
+    transition: all 0.25s linear
+    -moz-box-shadow: 0 0 10px 0 rgba(0,0,0,0.35)
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.35)
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.35)
   .search-submit
     cursor: pointer
     position: absolute
     top: 0
-    width: 9rem
-    height: 9rem
+    width: 8rem
+    height: 8rem
     right: 0
-    transition: all 0.5s linear
+    transition: all 0.25s linear
     &::before
       position: absolute
       top: 0
-      width: 9rem
-      height: 9rem
-      line-height: 9rem
-      font-size: 4.5rem
+      width: 8rem
+      height: 8rem
+      line-height: 8rem
+      font-size: 4rem
       right: 0
+      -webkit-box-shadow: -2px 0 2px 0 rgba(0, 0, 0, 0.35)
+      -moz-box-shadow: -2px 0 2px 0 rgba(0, 0, 0, 0.35)
+      box-shadow: -2px 0 2px 0 rgba(0, 0, 0, 0.35)
   #search-results
-    right: 9rem
+    right: 8rem
   .menu-toggle
     position: fixed
-    background: rgba(75, 75, 75, 0.35)
+    background: #B494CB
     cursor: pointer
     margin:  0
-    line-height: 9rem
-    width: 9rem
-    height: 9rem
+    line-height: 8rem
+    width: 8rem
+    height: 8rem
     z-index: 9
-    transition: all 0.5s linear
+    transition: all 0.25s linear
     &::before
       content: '\f0c9'
       position: absolute
       top: 0
       left: 0
       font-family: 'FontAwesome'
-      font-size: 4.5rem
+      font-size: 4rem
       color: $white
       line-height: inherit
       text-align: center
       width: inherit
       height: inherit
       vertical-align: middle
+      -webkit-box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.35)
+      -moz-box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.35)
+      box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.35)
     &.active::before
       content: '\f00d'
-      background: rgba(75,75,75,0.5)
+      background: darken(#B494CB, 10%)
     &:hover
-      background: rgba(75,75,75,0.5)
+      background: darken(#B494CB, 10%)
       transition: all 1s ease
   .navbar
     width: inherit
@@ -282,7 +290,7 @@
     width: $sidebarWidth
     height: 100%
     transform: translateX(-100%)
-    transition: all 0.5s linear
+    transition: all 0.25s linear
     z-index: 10
     list-style: outside none none
     -webkit-transform: translateX(-100%)
@@ -290,11 +298,11 @@
     &.active
       left: $sidebarWidth
       width: $sidebarWidth
-      transition: all 0.5s linear
+      transition: all 0.25s linear
       z-index: 10
       &+.navbar
         left: $sidebarWidth
-        transition: all 0.5s linear
+        transition: all 0.25s linear
 
   .landing #heading a#button
     display: inline-block
@@ -307,12 +315,12 @@
     right: 0
     overflow-x: hidden
     height: 100%
-    transition: all 0.5s linear
+    transition: all 0.25s linear
     -webkit-overflow-scrolling: touch
 
     &.single
       left: 0
-      transition: all 0.5s linear
+      transition: all 0.25s linear
     &.active
       position: fixed
       left: $sidebarWidth
@@ -322,16 +330,14 @@
       z-index: 8
       &.single
         left: 35rem
-        transition: all 0.5s linear
+        transition: all 0.25s linear
 @media (max-width: 750px)
-  // .sidebar.active+.navbar
-  //   width: inherit
   #main-nav
-    padding-top: 2em
+    padding-top: 8rem
   .navbar
     width: 100%
   #search-posts
-    padding: 0px 9rem+2rem
+    padding: 0px 8rem+2rem
     width: 100%
     min-width: inherit
     border: none
@@ -343,7 +349,6 @@
   .search
     padding: 0
     width: 100%
-
   .github-ribbon
     font-size: 1.25em
     line-height: 2.25em
@@ -378,7 +383,7 @@
       width: inherit
   .menu-toggle
     left: 100%
-    transition: all 0.5s linear
+    transition: all 0.25s linear
   #page-content-wrapper
     left: 0
     right: 0
@@ -389,7 +394,7 @@
     left: 0
     width: 100%
   .search
-    transition: all 0.5s linear
+    transition: all 0.25s linear
   .navbar
     height: 8rem
     width: inherit
@@ -402,7 +407,7 @@
   .search-submit
     width: 8rem
     height: 8rem
-    transition: all 0.5s linear
+    transition: all 0.25s linear
     &::before
       position: absolute
       width: 8rem
@@ -417,8 +422,6 @@
     height: 8rem
     &::before
       font-size: 4rem
-  .github-ribbon
-    top: 8rem
 
 @media (min-width: 750px) and (max-width: 1200px) and (max-height: 1100px)
   .landing
@@ -465,6 +468,8 @@
       width: 100%
 
 @media (max-width: 350px)
+  .github-ribbon
+    display: none
   .landing
     height: 85%
     #heading-wrapper
@@ -484,11 +489,11 @@
   #page-content-wrapper
     right: initial
     width: 100%
+    transition: all 0.25s linear
     &.active
       left: 100%
       width: 100%
-      transition: all 0.5s linear
-    transition: all 0.5s linear
+      transition: all 0.25s linear
   #heading
     font-size: 85%
   .section.about
@@ -498,22 +503,22 @@
   .sidebar
     position: fixed
     width: 100%
-    transition: all 0.5s linear
+    transition: all 0.25s linear
     &.active
       left: 100%
       width: 100%
-      transition: all 0.5s linear
+      transition: all 0.25s linear
       z-index: 9
     &.active+.navbar
       left: 100%
     #main-nav
-      padding-top: 6em
+      padding-top: 4rem
   .menu-toggle
     left: 100%
     transition: none !important
     &.active
       left: 0
-      transition: all 0.5s linear
+      transition: all 0.25s linear
   input#mc-embedded-subscribe
     width: 100%
 
