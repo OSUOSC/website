@@ -75,12 +75,14 @@
   &:empty
     display: none
   a
+
+    &.selected
+      li
+        // FIXME: this color is temporary
+        background: cyan!important
     &:nth-of-type(even)
       li
         background: #F3F3F3
-    &:hover
-      li
-        background: #E9E9E9
     font-weight: 400
     text-decoration: none
   li
