@@ -23,5 +23,5 @@ alias: /meetings/2015/08/21/semester-scehdule/
 | 11/19/2015 | Password Management                   | TBA             |
 | 11/26/2015 | Thanksgiving Day                      | N/A             |
 | 12/3/2015  | Redis                                 | Jon Arnett      |
-| 12/10/2015 | TBA                                   | TBA             |
-| 12/17/2015 | TBA                                   | TBA             |
+| 12/10/2015 | Available                             | TBA             |
+| 12/17/2015 | Available                             | TBA             |
