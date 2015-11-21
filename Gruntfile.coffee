@@ -12,7 +12,20 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-uglify'
   grunt.loadNpmTasks 'grunt-contrib-cssmin'
   grunt.loadNpmTasks 'grunt-exec'
+
+  target = grunt.option 'target'
+  if !target?
+    target = '<%= baseurl.local %>'
+
+  # TODO
+  # grunt.config.set ['baseurl.target', target] for target in '<%= baseurl %>'
+
   grunt.initConfig
+    baseurl: [
+      local: '"\'\'"'
+      ghpages: '/open-source-club-website'
+      target: target
+    ]
 
     csslint: test:
       options: import: 2
@@ -155,11 +168,10 @@ module.exports = (grunt) ->
       bundler: cmd: 'bundle install --quiet'
       bower: cmd: 'bower install --quiet'
       purge: cmd: 'rm -rf _site/*'
-      lo_baseurl: cmd: 'bash _helpers/set-baseurl.sh "\'\'"'
-      gh_baseurl: cmd: 'bash _helpers/set-baseurl.sh /open-source-club-website'
       jekyll: cmd: 'bundle exec jekyll build --quiet'
       new_post: cmd: 'bash _helpers/new-post.sh'
       status: cmd: "clear && echo the site is now accessible at http://localhost:<%= connect.server.options.port %>"
+      baseurl: cmd: 'bash _helpers/set-baseurl.sh' + ' ' + "<%= baseurl.target || baseurl.local %>"
 
     watch:
       options: livereload: true
@@ -199,6 +211,7 @@ module.exports = (grunt) ->
       base: '_site'
       livereload: false
   grunt.registerTask 'build', [
+    'exec:baseurl'
     'exec:bundler'
     'exec:bower'
     'jade'
@@ -210,7 +223,6 @@ module.exports = (grunt) ->
     'cssmin'
   ]
   grunt.registerTask 'serve', [
-    'exec:lo_baseurl'
     'build'
     'connect:server'
     'exec:status'
