@@ -3,6 +3,8 @@
 NODE_VERSION=4.0.0
 RUBY_VERSION=2.2.3
 
+cd `dirname $0`
+
 echo "Checking for Git large File Storage"
 git-lfs version > /dev/null
 if [[ $? != 0 ]]; then
