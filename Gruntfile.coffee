@@ -21,7 +21,7 @@ module.exports = (grunt) ->
       baseurl: '/open-source-club-website'
 
   grunt.initConfig
-    foo: null
+    envBaseUrl: null
 
     csslint: test:
       options: import: 2
@@ -167,7 +167,7 @@ module.exports = (grunt) ->
       jekyll: cmd: 'bundle exec jekyll build --quiet'
       new_post: cmd: 'bash _helpers/new-post.sh'
       status: cmd: "clear && echo the site is now accessible at http://localhost:<%= connect.server.options.port %>"
-      baseurl: cmd: 'bash _helpers/set-baseurl.sh' + ' ' + "<%= foo %>"
+      baseurl: cmd: 'bash _helpers/set-baseurl.sh' + ' ' + "<%= envBaseUrl %>"
 
     watch:
       options: livereload: true
@@ -243,7 +243,7 @@ module.exports = (grunt) ->
     else if staging == true
       u = env.staging.baseurl
 
-    grunt.config.set 'foo', u
+    grunt.config.set 'envBaseUrl', u
 
     console.log 'environment: ' + currentEnvironment
     console.log 'baseurl: ' + u
