@@ -65,7 +65,7 @@ grunt test
 grunt serve
 ```
 
-Once generated (which takes ~5 minutes) the site will be accessible at `http://localhost:4040`
+Once generated (which takes ~1 minutes) the site will be accessible at `http://localhost:4040`
 
 
 ```bash
@@ -93,3 +93,47 @@ To embed a presentation link into the related post use the following:
 ```
 [downloaded here]({{ site.baseurl }}/downloads/presentations/{{ page.path | remove: "_posts/" | replace: '.md', '.pdf' }})
 ```
+
+
+##### Specify Environment
+
+currently there are two different environments
+  - staging
+    - assets are compressed
+    - baseurl is our Github Repo  
+  - development
+    - TODO - assets are not compressed
+    - baseurl is an empty string
+
+the default behavior is to set the environment to `development`
+
+to build the site in a different environment use the following parameter: `--env=myEnvironment`  
+
+Example
+
+  ```bash
+  grunt build --env=staging
+  #or
+  grunt build --env=development
+  #or
+  grunt serve --env=staging
+  #or
+  grunt serve --env=development
+  ```
+
+
+##### Deploying to Github Pages
+
+Our staging environment is currently utilizing Github Pages. Anyone can deploy
+their own instance of our site in the matter of seconds, without additional setup.
+
+If you haven't already go ahead and fork our repository.
+
+execute the following command to automatically compile and deploy the site to Github Pages.
+*you will have to type in your github credentials once the script is nearing completion*
+
+Once completed the site can be found at `https://<username>.github.io/open-source-club-website/`
+
+for example if your github username was `foo`, your site could be reached at `https://foo.github.io/open-source-club-website/`
+
+execute the following command to automatically compile and deploy
