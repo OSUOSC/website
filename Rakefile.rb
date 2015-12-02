@@ -20,8 +20,7 @@ namespace :deploy do
   task :ghpages do
 
     # compile site
-    `grunt exec:gh_baseurl`
-    `grunt build`
+    `grunt build --env=staging`
 
     # Get the origin to which we are going to push the site.
     origin = `git config --get remote.origin.url`

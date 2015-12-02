@@ -12,7 +12,16 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-uglify'
   grunt.loadNpmTasks 'grunt-contrib-cssmin'
   grunt.loadNpmTasks 'grunt-exec'
+
+  env =
+    development:
+      baseurl: '"\'\'"'
+
+    staging:
+      baseurl: '/open-source-club-website'
+
   grunt.initConfig
+    envBaseUrl: null
 
     csslint: test:
       options: import: 2
@@ -155,11 +164,10 @@ module.exports = (grunt) ->
       bundler: cmd: 'bundle install --quiet'
       bower: cmd: 'bower install --quiet'
       purge: cmd: 'rm -rf _site/*'
-      lo_baseurl: cmd: 'bash _helpers/set-baseurl.sh "\'\'"'
-      gh_baseurl: cmd: 'bash _helpers/set-baseurl.sh /open-source-club-website'
       jekyll: cmd: 'bundle exec jekyll build --quiet'
       new_post: cmd: 'bash _helpers/new-post.sh'
       status: cmd: "clear && echo the site is now accessible at http://localhost:<%= connect.server.options.port %>"
+      baseurl: cmd: 'bash _helpers/set-baseurl.sh' + ' ' + "<%= envBaseUrl %>"
 
     watch:
       options: livereload: true
@@ -199,6 +207,8 @@ module.exports = (grunt) ->
       base: '_site'
       livereload: false
   grunt.registerTask 'build', [
+    'set_environment'
+    'exec:baseurl'
     'exec:bundler'
     'exec:bower'
     'jade'
@@ -210,7 +220,6 @@ module.exports = (grunt) ->
     'cssmin'
   ]
   grunt.registerTask 'serve', [
-    'exec:lo_baseurl'
     'build'
     'connect:server'
     'exec:status'
@@ -222,3 +231,21 @@ module.exports = (grunt) ->
   ]
   grunt.registerTask 'new', [ 'exec:new_post' ]
   grunt.registerTask 'default', [ 'serve' ]
+
+  grunt.registerTask 'set_environment', ->
+    currentEnvironment = grunt.config 'env', grunt.option('env') or process.env.GRUNT_ENV or 'development'
+
+    development = currentEnvironment == 'development'
+    staging = currentEnvironment == 'staging'
+
+    if development == true
+      u = env.development.baseurl
+    else if staging == true
+      u = env.staging.baseurl
+
+    grunt.config.set 'envBaseUrl', u
+
+    console.log 'environment: ' + currentEnvironment
+    console.log 'baseurl: ' + u
+
+    return
