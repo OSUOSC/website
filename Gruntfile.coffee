@@ -13,20 +13,14 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-cssmin'
   grunt.loadNpmTasks 'grunt-exec'
 
-  target = grunt.option 'target'
-  if !target?
-    target = '<%= baseurl.local %>'
+  env =
+    development:
+      baseurl: '"\'\'"'
 
-  # TODO
-  # grunt.config.set ['baseurl.target', target] for target in '<%= baseurl %>'
+    staging:
+      baseurl: '/open-source-club-website'
 
   grunt.initConfig
-    baseurl: [
-      local: '"\'\'"'
-      ghpages: '/open-source-club-website'
-      target: target
-    ]
-
     csslint: test:
       options: import: 2
       expand: true
@@ -171,7 +165,7 @@ module.exports = (grunt) ->
       jekyll: cmd: 'bundle exec jekyll build --quiet'
       new_post: cmd: 'bash _helpers/new-post.sh'
       status: cmd: "clear && echo the site is now accessible at http://localhost:<%= connect.server.options.port %>"
-      baseurl: cmd: 'bash _helpers/set-baseurl.sh' + ' ' + "<%= baseurl.target || baseurl.local %>"
+      baseurl: cmd: 'bash _helpers/set-baseurl.sh' + ' ' + "<%= baseurl %>"
 
     watch:
       options: livereload: true
@@ -211,6 +205,7 @@ module.exports = (grunt) ->
       base: '_site'
       livereload: false
   grunt.registerTask 'build', [
+    'set_environment'
     'exec:baseurl'
     'exec:bundler'
     'exec:bower'
@@ -234,3 +229,19 @@ module.exports = (grunt) ->
   ]
   grunt.registerTask 'new', [ 'exec:new_post' ]
   grunt.registerTask 'default', [ 'serve' ]
+
+  grunt.registerTask 'set_environment', ->
+    currentEnvironment = grunt.config 'env', grunt.option('env') or process.env.GRUNT_ENV or 'development'
+
+    development = currentEnvironment == 'development'
+    staging = currentEnvironment == 'staging'
+
+    if development?
+      baseurl = env.development.baseurl
+    if staging?
+      baseurl = env.staging.baseurl
+
+    console.log 'environment: ' + currentEnvironment
+    console.log 'baseurl: ' + baseurl
+
+    return
