@@ -1,4 +1,12 @@
 @media (max-width: 550px)
+  #search-results li
+    .primary
+      max-width: none!important
+      width: 100%
+    .secondary
+      max-width: none!important
+      width: 100%
+      float: left
   .landing
     height: 100%
     #heading-wrapper
@@ -248,7 +256,7 @@
   #search-results
     right: 8rem
   .menu-toggle
-    position: fixed
+    position: absolute
     background: #B494CB
     cursor: pointer
     margin:  0
@@ -515,7 +523,7 @@
     &.active+.navbar
       left: 100%
     #main-nav
-      padding-top: 4rem
+      padding-top: 12rem
   .menu-toggle
     left: 100%
     transition: none !important
