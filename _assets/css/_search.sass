@@ -71,29 +71,40 @@
   text-align: center
   float: right
   max-width: 45em
-  min-width: 15em
+  min-width: 30em
   &:empty
     display: none
+
   a
+    display: list-item
+    padding: 0.5em 0.75em
+    li
+      line-height: 2.25em
+      text-align: left
+      list-style: none
+      width: 100%
+      margin: 0
+      display: inline-block
+      vertical-align: middle
+      .primary
+        float: left
+        max-width: 75%
+      .secondary
+        color: lighten(rgb(93,93,93), 25%)
+        max-width: 20%
+        display: initial
+        float: right
 
     &.selected
+      background: #B1B1B1!important
+      -moz-box-shadow: 0 1px 3px -1px rgba(0,0,0,0.15)
+      -webkit-box-shadow: 0 1px 3px -1px rgba(0,0,0,0.15)
+      box-shadow: 0 1px 3px -1px rgba(0,0,0,0.15)
       li
-        // FIXME: this color is temporary
-        background: cyan!important
+        color: #FFF
+        .secondary
+          color: #FFF
     &:nth-of-type(even)
-      li
-        background: #F3F3F3
+      background: #F3F3F3
     font-weight: 400
     text-decoration: none
-  li
-    height: 2.5em
-    line-height: 2.5em
-    padding: 0 0.75em
-    text-align: left
-    list-style: none
-    margin-bottom: 0
-    >*
-      display: initial
-      margin-left: 2em
-      float: right
-      color: lighten(rgb(93,93,93), 25%)
