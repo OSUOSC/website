@@ -75,9 +75,15 @@
   &:empty
     display: none
 
+  li.no-results
+    line-height: 2.25em
+    padding: 0.5em 0.75em
+    margin: 0
+
   a
     display: list-item
     padding: 0.5em 0.75em
+
     li
       line-height: 2.25em
       text-align: left
@@ -96,10 +102,13 @@
         float: right
 
     &.selected
-      background: #B1B1B1!important
+      background: #B494CB!important
       -moz-box-shadow: 0 1px 3px -1px rgba(0,0,0,0.15)
       -webkit-box-shadow: 0 1px 3px -1px rgba(0,0,0,0.15)
       box-shadow: 0 1px 3px -1px rgba(0,0,0,0.15)
+      &:hover
+        background: #9c72ba
+        transition: all 1s ease
       li
         color: #FFF
         .secondary
