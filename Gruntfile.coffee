@@ -294,11 +294,11 @@ module.exports = (grunt) ->
 
       sass:
         files: '_assets/**/*.sass'
-        tasks: [ 'sass', 'cssmin' ]
+        tasks: [ 'sass:' + currentEnvironment, 'cssmin:' + currentEnvironment ]
 
       coffee:
         files: '_assets/**/*.coffee'
-        tasks: [ 'coffee', 'uglify' ]
+        tasks: [ 'coffee:' + currentEnvironment, 'uglify:' + currentEnvironment ]
 
       jade:
         files: '_includes/**/*.jade'
