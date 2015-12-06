@@ -276,13 +276,13 @@ module.exports = (grunt) ->
         cmd: 'bundle exec jekyll build'
 
       new_post:
-        cmd: 'bash _helpers/new-post.sh'
+        cmd: './_helpers/new-post.sh'
 
       status:
         cmd: "clear && echo the site is now accessible at http://localhost:<%= connect.server.options.port %>"
 
       baseurl:
-        cmd: 'bash _helpers/set-baseurl.sh' + ' ' + "<%= envBaseUrl %>"
+        cmd: './_helpers/set-baseurl.sh' + ' ' + "<%= envBaseUrl %>"
 
 
     watch:
