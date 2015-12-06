@@ -324,6 +324,7 @@ module.exports = (grunt) ->
           port: 4040
           base: '_site'
           livereload: false
+          useAvailablePort: true
 
 
   grunt.registerTask 'build', [
