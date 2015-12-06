@@ -33,17 +33,6 @@ highlightSelection = ->
   # create an observer instance
   observer = new MutationObserver((mutations) ->
 
-    oldResults = []
-
-    if $('#search-results a').index() != -1
-      $('#search-results a').each (index, element) ->
-        url = $(this).attr('href')
-        oldResults.push url
-        return
-
-    console.log 'old results: ' + oldResults
-    console.log 'oldResults count: ' + $(oldResults).length
-
     i = 0
     len = mutations.length
     newResults = []
@@ -88,7 +77,7 @@ highlightSelection = ->
 
     else if e.which == 38 # if the up arrow is pressed . . .
       e.preventDefault()
-      
+
       observer.disconnect()
       traverseUp()
 
