@@ -282,7 +282,7 @@ module.exports = (grunt) ->
         cmd: "clear && echo the site is now accessible at http://localhost:<%= connect.server.options.port %>"
 
       baseurl:
-        cmd: './_helpers/set-baseurl.sh' + ' ' + "<%= envBaseUrl %>"
+        cmd: 'ruby _helpers/setBaseurl.rb' + ' ' + "<%= envBaseUrl %>"
 
 
     watch:
