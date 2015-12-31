@@ -6,7 +6,7 @@ tags: meetings
 alias: /meetings/2016/12/22/semester-schedule/
 ---
 
-Feel free to contact us to arrange a presentation on our schedule this semester. Just email officers@opensource.cse.ohio-state.edu
+Feel free to contact us to arrange a presentation on our schedule this semester. Just email [officers@opensource.osu.edu](mailto:officers@opensource.osu.edu)
 
 | date	   | topic			| speaker(s)	|
 |----------|----------------------------|---------------|
