@@ -75,6 +75,11 @@ rake deploy:ghpages
 
 ### Additional Information
 
+##### Contributors
+when sharing email addresses in posts, refer to the following snippet:
+```md
+[officers@opensource.osu.edu](mailto:officers@opensource.osu.edu)
+```
 ##### Presenters
 - meeting announcements must contain the following information
   - meeting time
