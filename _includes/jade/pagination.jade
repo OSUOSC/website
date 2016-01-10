@@ -1,16 +1,21 @@
 .pagination
+  
   | {% if paginator.previous_page %}
   a.previous(href='{{ site.baseurl }}{{ paginator.previous_page_path }}')
     i.fa.fa-caret-left
-  |   {% else %}
+  
+  | {% else %}
   span.previous
     i.fa.fa-caret-left.disabled
-  |   {% endif %}
+  | {% endif %}
+  
   span.page_number  {{ paginator.page }} of {{ paginator.total_pages }}
-  |   {% if paginator.next_page %}
+
+  | {% if paginator.next_page %}
   a.next(href='{{ site.baseurl }}{{ paginator.next_page_path }}')
     i.fa.fa-caret-right
-  |   {% else %}
+  
+  | {% else %}
   span.next
     i.fa.fa-caret-right.disabled
-  |   {% endif %}
+  | {% endif %}

@@ -1,37 +1,47 @@
 .section.posts
   .container
+    
     | {% if page.is_post %}
     .category-title
       h5 {{ page.tags }}
       h5 {{ page.title }}
-    |     {% endif %}
+    | {% endif %}
+    
     .category-title
       h1 {{ page.category }}
-    |     {% for post in paginator.posts %}
+    
+    
+    | {% for post in paginator.posts %}
     ul
       li
+        
         | {% if post.categories contains 'volunteering' or post.categories contains 'events' %}
         h2
           a(href='{{ site.baseurl }}/{{ post.categories | first }}') {{ post.title }}
-        |            {% else %}
+        
+        | {% else %}
         h2
           a(href='{{ site.baseurl }}{{ post.url }}') {{ post.title }}
-        |            {% endif %}
+        | {% endif %}
+        
         span.date posted: {{ post.date | date: "%m-%d-%Y" }}
         .content
           | {{ post.content }}
-    |     {% endfor %}
-    |     {% if page.is_post %}
+    | {% endfor %}
+    
+    
+    | {% if page.is_post %}
     ul
       li
         h2 {{ page.title }}
         span.date posted: {{ page.date | date: "%m-%d-%Y" }}
         .content
           | {{ page.content | markdownify }}
-    |     {% endif %}
-  |   {% if page.is_post %}
+    | {% endif %}
+    
+    
+  | {% if page.is_post %}
   // TODO
   | {% else %}
-  // It is NOT a single post
-  | {% include html/pagination.html %}
+  |   {% include html/pagination.html %}
   | {% endif %}
