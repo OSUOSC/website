@@ -284,6 +284,9 @@ module.exports = (grunt) ->
       baseurl:
         cmd: 'ruby _helpers/setBaseurl.rb' + ' ' + "<%= envBaseUrl %>"
 
+      next_meeting:
+        cmd: 'ruby _helpers/nextMeeting.rb'
+
 
     watch:
       options:
@@ -330,6 +333,7 @@ module.exports = (grunt) ->
   grunt.registerTask 'build', [
     'set_environment'
     'exec:baseurl'
+    'exec:next_meeting'
     'exec:bundler'
     'exec:bower'
     'jade'
