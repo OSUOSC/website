@@ -34,6 +34,18 @@ $ ->
     isSelected = false
     return
 
+  $('.search-submit').hover (->
+    isSelected = true
+    $('.search-submit').click () ->
+      selected = document.querySelector('#search-results a.selected')
+      url = selected.getAttribute('href') if selected
+      window.open url, '_self'
+      return
+    return
+  ), ->
+    isSelected = false
+    return
+
   $('#search-posts').focusout ->
     if !isSelected and $('#search-posts').val().length > 0
       $('#search-results').css('display', 'none')
