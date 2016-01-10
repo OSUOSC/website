@@ -1,21 +1,8 @@
-# results = $('#search-results')
-
-searchSubmit = () ->
-  btn = document.querySelector('.search-submit')
-  btn.click () ->
-    selected = document.querySelector('#search-results a.selected')
-    url = selected.getAttribute('href') if selected
-    window.open url, '_self'
-    return
-  return
-
 traverseUp = ->
-  # console.log 'up arrow pressed'
   $("#search-results a.selected").removeClass('selected').prev().addClass('selected')
   return
 
 traverseDown = ->
-  # console.log 'down arrow pressed'
   $("#search-results a.selected").removeClass('selected').next().addClass('selected')
   return
 
