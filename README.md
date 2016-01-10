@@ -151,31 +151,30 @@ for example if your github username was `foo`, your site could be reached at `ht
 
 ---
 
-execute the following command to automatically compile and deploy the site to your Github Pages
+execute the following command to automatically compile and deploy the site to Github Pages
 
 ```bash
-rake deploy:ghpages
+bundle exec rake deploy:ghpages
 ```
 ---
 
 
 ##### Deploying to OSC servers
 
-execute the following command to automatically compile and deploy
+Only authorized users may deploy to our servers, since it requires access to the
+`build` user on Stallman (one of our servers). To request access, contact the
+club's system administrator with your public SSH key.
 
-You will need access to the build user on stallman. Contact the current club
-administrator with your public key to be added.
 
 ```bash
-# Add the deploy remote to your repository:
-git remote add deploy build@stallman.cse.ohio-state.edu:osc-site-bare
-
-# Push branch 'master' to the repository
-git push deploy master
+bundle exec rake deploy:stallman
 ```
 
-After pushing, the site will automatically be built and deployed. If something
-goes wrong, contact the club sysadmin.
+After running the rake task, the site will automatically be built and deployed
+on our servers. If by chance something goes wrong, immediately contact the
+club's system administrator.
+
+###### Debugging 
 
 NOTE: You may see the following error message the first time you attempt to
 push:
