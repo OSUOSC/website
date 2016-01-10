@@ -83,7 +83,6 @@
   a
     display: list-item
     padding: 0.5em 0.75em
-
     li
       line-height: 2.25em
       text-align: left
@@ -104,11 +103,17 @@
       background: #F3F3F3
     font-weight: 400
     text-decoration: none
+    &:hover
+      color: inherit
+      background: #E6E6E6
+      transition: 0.25s ease
     &.selected
-      background: #B494CB
+      background: #3498DB
       -moz-box-shadow: 0 1px 3px -1px rgba(0,0,0,0.15)
       -webkit-box-shadow: 0 1px 3px -1px rgba(0,0,0,0.15)
       box-shadow: 0 1px 3px -1px rgba(0,0,0,0.15)
+      &:hover
+        @extend .search-submit:hover
       li
         color: #FFF
         .secondary
