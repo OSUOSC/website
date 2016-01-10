@@ -1,23 +1,66 @@
+currentSelection = $("#search-results a.selected")
+
+results = $('#search-results')
+
+searchSubmit = () ->
+  btn = document.querySelector('.search-submit')
+  btn.click () ->
+    selected = document.querySelector('#search-results a.selected')
+    url = selected.getAttribute('href1') if selected
+    window.open url, '_self'
+    return
+  return
+
+traverseUp = ->
+  # console.log 'up arrow pressed'
+  $("#search-results a.selected").removeClass('selected').prev().addClass('selected')
+  return
+
+traverseDown = ->
+  # console.log 'down arrow pressed'
+  $("#search-results a.selected").removeClass('selected').next().addClass('selected')
+  return
+
+# hoverSelection = ->
+#   results = $('#search-results>a')
+#   $(results).on 'mouseenter', () -> $(this).addClass 'selected'
+#   $(results).on 'mouseleave', () -> $(this).removeClass 'selected'
+#   return
+
+highlightSelection = () ->
+  $('#search-posts').off 'keydown'
+  $('#search-posts').on 'keydown', (e) ->
+    if e.which == 40 # if the down arrow is pressed . . .
+      if e.preventDefault
+        e.preventDefault()
+      else
+        e.returnValue = false
+
+      endOfList =
+        $("#search-results a.selected").index() + 1 == $("#search-results").children().length
+
+      traverseDown() unless endOfList
+
+    else if e.which == 38 # if the up arrow is pressed . . .
+      if e.preventDefault
+        e.preventDefault()
+      else
+        e.returnValue = false
+
+      topOfList =
+        $("#search-results a.selected").index() == 0
+
+      traverseUp() unless topOfList
+
+    else if e.which == 13
+      if e.preventDefault
+        e.preventDefault()
+      else
+        e.returnValue = false
+      window.open $('#search-results a.selected').attr('href'), '_self'
+
+  return false
+
 $(document).ready ->
-
-  Mousetrap.bind 'o h', ->
-    console.log 'io'
-
-  Mousetrap.bind 'l i n u x', ->
-    console.log 'GNU/Linux'
-
-  Mousetrap.bind 'j i f', ->
-    console.log 'gif'
-
-  Mousetrap.bind 'up up down down left right left right b a', ->
-    console.log 'konami code'
-
-  Mousetrap.bind 'b u g', ->
-    console.log 'feature'
-
-  Mousetrap.bind 'v i m', ->
-    console.log 'did you mean: emacs'
-    
-  Mousetrap.bind 'e m a c s', ->
-    console.log 'did you mean: vim'
+  highlightSelection()
   return

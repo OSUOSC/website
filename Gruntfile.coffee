@@ -13,6 +13,10 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-cssmin'
   grunt.loadNpmTasks 'grunt-exec'
 
+  currentEnvironment =
+    grunt.config 'env',
+    grunt.option('env') or process.env.GRUNT_ENV or 'development'
+
   env =
     development:
       baseurl: '"\'\'"'
@@ -20,14 +24,20 @@ module.exports = (grunt) ->
     staging:
       baseurl: '/open-source-club-website'
 
+    production:
+      baseurl: '"\'\'"'
+
   grunt.initConfig
     envBaseUrl: null
 
-    csslint: test:
-      options: import: 2
-      expand: true
-      cwd: '_site/dist/css/'
-      src: '*.css'
+    csslint:
+      development:
+        options: [ {
+          import: 2
+          expand: true
+          cwd: '_site/dist/css/'
+          src: '*.css'
+        } ]
 
     htmllint:
       options:
@@ -36,7 +46,27 @@ module.exports = (grunt) ->
         src: ['_site/**/*.html']
 
     coffee:
-      dist:
+      production:
+        options: [ {
+          sourceMap: false
+          join: true
+          joinExt: '.coffee'
+        } ]
+        files: [ {
+          '_site/dist/js/app.js': '_assets/js/*.coffee'
+        } ]
+
+      staging:
+        options: [ {
+          sourceMap: false
+          join: true
+          joinExt: '.coffee'
+        } ]
+        files: [ {
+          '_site/dist/js/app.js': '_assets/js/*.coffee'
+        } ]
+
+      development:
         options: [ {
           sourceMap: false
           join: true
@@ -74,7 +104,7 @@ module.exports = (grunt) ->
         } ]
 
     sass:
-      dist:
+      production:
         options: [ {
           sourcemap: 'none'
           style: 'compressed'
@@ -88,8 +118,60 @@ module.exports = (grunt) ->
           ext: '.css'
         } ]
 
+      staging:
+        options: [ {
+          sourcemap: 'none'
+          style: 'compressed'
+          bundleExec: true
+        } ]
+        files: [ {
+          expand: true
+          cwd: '_assets/css/'
+          src: ['*.sass']
+          dest: '_site/dist/css/'
+          ext: '.css'
+        } ]
+
+      development:
+        options: [ {
+          sourcemap: 'none'
+          style: 'expanded'
+          bundleExec: true
+        } ]
+        files: [ {
+          expand: true
+          cwd: '_assets/css/'
+          src: ['*.sass']
+          dest: '_site/dist/css/'
+          ext: '.css'
+        } ]
+
+
     uglify:
-      my_target:
+      production:
+        files: [ {
+          expand: true
+          cwd: '_site/'
+          src: ['**/*.js']
+          dest: '_site/'
+          ext: '.min.js'
+        } ]
+
+      staging:
+        files: [ {
+          expand: true
+          cwd: '_site/'
+          src: ['**/*.js']
+          dest: '_site/'
+          ext: '.min.js'
+        } ]
+
+      development:
+        options: [ {
+          compress: false
+          beautify: true
+          mangle: false
+        } ]
         files: [ {
           expand: true
           cwd: '_site/'
@@ -99,7 +181,25 @@ module.exports = (grunt) ->
         } ]
 
     cssmin:
-      target:
+      production:
+        files: [ {
+          expand: true
+          cwd: '_site/'
+          src: ['**/*.css']
+          dest: '_site/'
+          ext: '.min.css'
+        } ]
+
+      staging:
+        files: [ {
+          expand: true
+          cwd: '_site/'
+          src: ['**/*.css']
+          dest: '_site/'
+          ext: '.min.css'
+        } ]
+
+      development:
         files: [ {
           expand: true
           cwd: '_site/'
@@ -109,79 +209,96 @@ module.exports = (grunt) ->
         } ]
 
     copy:
-      image: files: [ {
-        stdout: false
-        expand: true
-        cwd: '_assets/img/'
-        src: '*'
-        dest: '_site/dist/img/'
-      } ]
+      image:
+        files: [ {
+          stdout: false
+          expand: true
+          cwd: '_assets/img/'
+          src: '*'
+          dest: '_site/dist/img/'
+        } ]
 
-      js: files: [ {
-        stdout: false
-        expand: true
-        filter: 'isFile'
-        flatten: true
-        cwd: 'bower_components/'
-        src: [
-          'jquery/dist/*.js'
-          'simple-jekyll-search/dest/*.js'
-          'mousetrap/mousetrap.js'
-          '!**/*.min.js'
-        ]
-        dest: '_site/vendor/js/'
-      } ]
+      js:
+        files: [ {
+          stdout: false
+          expand: true
+          filter: 'isFile'
+          flatten: true
+          cwd: 'bower_components/'
+          src: [
+            'jquery/dist/*.js'
+            'simple-jekyll-search/dest/*.js'
+            'mousetrap/mousetrap.js'
+            '!**/*.min.js'
+          ]
+          dest: '_site/vendor/js/'
+        } ]
 
-      css: files: [ {
-        stdout: false
-        expand: true
-        filter: 'isFile'
-        flatten: true
-        cwd: 'bower_components/'
-        src: [
-          '**/*.css'
-          '!**/*.min.css'
-        ]
-        dest: '_site/vendor/css/'
-      } ]
+      css:
+        files: [ {
+          stdout: false
+          expand: true
+          filter: 'isFile'
+          flatten: true
+          cwd: 'bower_components/'
+          src: [ '**/*.css', '!**/*.min.css' ]
+          dest: '_site/vendor/css/'
+        } ]
 
-      fonts: files: [ {
-        stdout: false
-        expand: true
-        filter: 'isFile'
-        flatten: true
-        cwd: 'bower_components/'
-        src: [
-          '**/*.woff'
-          '**/*.woff2'
-          '**/*.ttf'
-        ]
-        dest: '_site/vendor/fonts/'
-      } ]
+      fonts:
+        files: [ {
+          stdout: false
+          expand: true
+          filter: 'isFile'
+          flatten: true
+          cwd: 'bower_components/'
+          src: [ '**/*.woff', '**/*.woff2', '**/*.ttf' ]
+          dest: '_site/vendor/fonts/'
+        } ]
 
 
     exec:
-      bundler: cmd: 'bundle install --quiet'
-      bower: cmd: 'bower install --quiet'
-      purge: cmd: 'rm -rf _site/*'
-      jekyll: cmd: 'bundle exec jekyll build --quiet'
-      new_post: cmd: 'bash _helpers/new-post.sh'
-      status: cmd: "clear && echo the site is now accessible at http://localhost:<%= connect.server.options.port %>"
-      baseurl: cmd: 'bash _helpers/set-baseurl.sh' + ' ' + "<%= envBaseUrl %>"
+
+      options: [ {
+        stdout: false
+      } ]
+
+      bundler:
+        cmd: 'bundle install'
+
+      bower:
+        cmd: 'bower install'
+
+      purge:
+        cmd: 'rm -rf _site/*'
+
+      jekyll:
+        cmd: 'bundle exec jekyll build'
+
+      new_post:
+        cmd: './_helpers/new-post.sh'
+
+      status:
+        cmd: "clear && echo the site is now accessible at http://localhost:<%= connect.server.options.port %>"
+
+      baseurl:
+        cmd: 'ruby _helpers/setBaseurl.rb' + ' ' + "<%= envBaseUrl %>"
+
 
     watch:
-      options: livereload: true
+      options:
+        livereload: true
 
       # TODO
       # add image
 
       sass:
         files: '_assets/**/*.sass'
-        tasks: [ 'sass', 'cssmin' ]
+        tasks: [ 'sass:' + currentEnvironment, 'cssmin:' + currentEnvironment ]
 
       coffee:
         files: '_assets/**/*.coffee'
-        tasks: [ 'coffee', 'uglify' ]
+        tasks: [ 'coffee:' + currentEnvironment, 'uglify:' + currentEnvironment ]
 
       jade:
         files: '_includes/**/*.jade'
@@ -198,14 +315,18 @@ module.exports = (grunt) ->
           '*.html'
           '*.md'
         ]
-        tasks: [
-          'exec:purge'
-          'exec:jekyll'
-        ]
-    connect: server: options:
-      port: 4040
-      base: '_site'
-      livereload: false
+
+        tasks: [ 'exec:purge', 'build' ]
+
+    connect:
+      server:
+        options:
+          port: 4040
+          base: '_site'
+          livereload: false
+          useAvailablePort: true
+
+
   grunt.registerTask 'build', [
     'set_environment'
     'exec:baseurl'
@@ -214,10 +335,10 @@ module.exports = (grunt) ->
     'jade'
     'exec:jekyll'
     'copy'
-    'sass'
-    'coffee'
-    'uglify'
-    'cssmin'
+    'sass:' + currentEnvironment
+    'coffee:' + currentEnvironment
+    'uglify:' + currentEnvironment
+    'cssmin:' + currentEnvironment
   ]
   grunt.registerTask 'serve', [
     'build'
@@ -225,27 +346,31 @@ module.exports = (grunt) ->
     'exec:status'
     'watch'
   ]
-  grunt.registerTask 'test', [
-    'csslint'
-    'htmllint'
-  ]
+  grunt.registerTask 'test', [ 'csslint', 'htmllint' ]
   grunt.registerTask 'new', [ 'exec:new_post' ]
   grunt.registerTask 'default', [ 'serve' ]
 
   grunt.registerTask 'set_environment', ->
-    currentEnvironment = grunt.config 'env', grunt.option('env') or process.env.GRUNT_ENV or 'development'
+    isDevelopment =
+      currentEnvironment == 'development'
 
-    development = currentEnvironment == 'development'
-    staging = currentEnvironment == 'staging'
+    isStaging =
+      currentEnvironment == 'staging'
 
-    if development == true
-      u = env.development.baseurl
-    else if staging == true
-      u = env.staging.baseurl
+    isProduction =
+      currentEnvironment == 'production'
 
-    grunt.config.set 'envBaseUrl', u
+    if isDevelopment == true
+      baseurl = env.development.baseurl
+
+    else if isStaging == true
+      baseurl = env.staging.baseurl
+
+    else if isProduction == true
+      baseurl = env.production.baseurl
+
+    grunt.config.set 'envBaseUrl', baseurl
 
     console.log 'environment: ' + currentEnvironment
-    console.log 'baseurl: ' + u
-
+    console.log 'baseurl: ' + baseurl
     return

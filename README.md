@@ -43,8 +43,16 @@ bash init.sh
 ---
 
 ```bash
+# equivalent to "grunt build" in addition to running a local server
+# this is what 99% of people will want to run
+grunt serve
+```
+---
+
+```bash
 # fetch dependencies and generate site
 grunt build
+# this won't be too helpful for most (see grunt serve)
 ```
 ---
 
@@ -58,14 +66,11 @@ grunt new
 # run tests
 grunt test
 ```
----
 
-```bash
-# equivalent to "grunt build" in addition to running a local server
-grunt serve
-```
 
 Once generated (which takes ~1 minutes) the site will be accessible at `http://localhost:4040`
+
+Don't freak out when you see errors printed to stdout that's normal . . . for now.
 
 
 ```bash
@@ -102,13 +107,17 @@ To embed a presentation link into the related post use the following:
 
 ##### Specify Environment
 
-currently there are two different environments
+currently there are three different environments
+
+  - production
+    - assets are automatically minified/compressed
+    - the jekyll baseurl is set to an empty string
   - staging
-    - assets are compressed
-    - baseurl is our Github Repo  
+    - assets are automatically minified/compressed
+    - the jekyll baseurl is set to our github repository name
   - development
-    - TODO - assets are not compressed
-    - baseurl is an empty string
+    - assets are uncompressed
+    - the jekyll baseurl is set to an empty string
 
 the default behavior is to set the environment to `development`
 
@@ -118,12 +127,11 @@ Example
 
   ```bash
   grunt build --env=staging
-  #or
-  grunt build --env=development
-  #or
+  # or
+  grunt build --env=production
+  # or
   grunt serve --env=staging
-  #or
-  grunt serve --env=development
+  # you get the idea . . .
   ```
 
 
@@ -141,4 +149,10 @@ Once completed the site can be found at `https://<username>.github.io/open-sourc
 
 for example if your github username was `foo`, your site could be reached at `https://foo.github.io/open-source-club-website/`
 
-execute the following command to automatically compile and deploy
+---
+
+execute the following command to automatically compile and deploy the site to your Github Pages
+
+```bash
+rake deploy:ghpages
+```

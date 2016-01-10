@@ -7,7 +7,5 @@ $(document).ready ->
     $menulink.toggleClass 'active'
     $menu.toggleClass 'active'
     $('#page-content-wrapper').toggleClass 'active'
-    if $(window).width() >= 750 and $(window).width() < 1200
-      setWidth()
     false
   return

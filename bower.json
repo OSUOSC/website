@@ -18,8 +18,7 @@
     "jquery": "~2.1.4",
     "normalize-scss": "3.0.3",
     "open-sans-fontface": "~1.4.2",
-    "simple-jekyll-search": "~1.0.8",
-    "ubuntu-fontface": "~0.1.5",
-    "mousetrap": "ccampbell/mousetrap"
+    "simple-jekyll-search": "egladman/Simple-Jekyll-Search#4a3daa3",
+    "ubuntu-fontface": "~0.1.5"
   }
 }
