@@ -142,3 +142,36 @@ Once completed the site can be found at `https://<username>.github.io/open-sourc
 for example if your github username was `foo`, your site could be reached at `https://foo.github.io/open-source-club-website/`
 
 execute the following command to automatically compile and deploy
+
+##### Deploying to OSC servers
+
+You will need access to the build user on stallman. Contact the current club
+administrator with your public key to be added.
+
+```bash
+# Add the deploy remote to your repository:
+git remote add deploy build@stallman.cse.ohio-state.edu:osc-site-bare
+
+# Push branch 'master' to the repository
+git push deploy master
+```
+
+After pushing, the site will automatically be built and deployed. If something
+goes wrong, contact the club sysadmin.
+
+NOTE: You may see the following error message the first time you attempt to
+push:
+
+    Post https://stallman.cse.ohio-state.edu/osc-site-bare.git/info/lfs/objects/batch: dial tcp 164.107.116.179:443: getsockopt: connection refused
+    error: failed to push some refs to 'build@stallman.cse.ohio-state.edu:osc-site-bare'
+
+This is due to a pre-push hook inserted by git-lfs that we aren't implementing.
+Edit `.git/hooks/pre-push` and comment out the following lines:
+
+```bash
+#!/bin/sh
+#command -v git-lfs >/dev/null 2>&1 || { echo >&2 "\nThis repository is configured for Git LFS but 'git-lfs' was not found on your path. If you no longer wish to use Git LFS, remove this hook by deleting .git/hooks/pre-push.\n"; exit 2; }
+#git lfs pre-push "$@"
+```
+
+You should be able to push to the deploy remote now.
