@@ -3,7 +3,6 @@ layout: html/default
 title: Spring 2016 Semester Schedule
 categories: meetings
 tags: meetings
-alias: /meetings/2016/12/22/semester-schedule/
 ---
 
 Feel free to contact us to arrange a presentation on our schedule this semester. Just email [officers@opensource.osu.edu](mailto:officers@opensource.osu.edu)
