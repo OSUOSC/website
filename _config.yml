@@ -1,6 +1,7 @@
 name: "The Open Source Club"
 url: "opensource.osu.edu"
 baseurl: ''
+next_meeting_date: January 14, 2016
 paginate: 10
 description: >
   The Open Source Club at at the Ohio State University is a registered student
