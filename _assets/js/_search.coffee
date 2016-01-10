@@ -18,11 +18,8 @@ $ ->
         # TODO
         # this is super inefficent because it gets executed on EVERY match
         result = document.querySelector('#search-results>a')
-        if result?
-          if result.classList.length
-            result.classList.add 'selected'
-          else
-            result.className += ' ' + 'selected'
+        if result? and result.classList.length == 0
+          result.classList.add 'selected'
 
 
   if $('#search-posts').val().length > 0
