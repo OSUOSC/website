@@ -23,10 +23,10 @@ This is our repository for our club's [website](https://opensource.osu.edu). It'
 Well first you need a few things:
 
 ##### ruby 2.2.3
-> We suggest installing ruby via rvm (*ruby version manager*)
+> We suggest installing ruby via [rvm](https://rvm.io/) (*ruby version manager*)
 
 ##### node.js 4.0.0
-> We suggest installing node via nvm (*node version manager*)
+> We suggest installing node via [nvm](https://github.com/creationix/nvm) (*node version manager*)
 
 ```bash
 # clone the repo
@@ -80,6 +80,11 @@ rake deploy:ghpages
 
 ### Additional Information
 
+##### Contributors
+when sharing email addresses in posts, refer to the following snippet:
+```md
+[officers@opensource.osu.edu](mailto:officers@opensource.osu.edu)
+```
 ##### Presenters
 - meeting announcements must contain the following information
   - meeting time
