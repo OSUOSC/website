@@ -32,13 +32,9 @@ $ ->
 
   $('#search-results').hover (->
     isSelected = true
-    if isSelected == true
-      console.log 'results selected: ' + isSelected
     return
   ), ->
     isSelected = false
-    if isSelected == false
-      console.log 'results selected: ' + isSelected
     return
 
   $('#search-posts').focusout ->
