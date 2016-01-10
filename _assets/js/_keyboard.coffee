@@ -1,12 +1,10 @@
-currentSelection = $("#search-results a.selected")
-
-results = $('#search-results')
+# results = $('#search-results')
 
 searchSubmit = () ->
   btn = document.querySelector('.search-submit')
   btn.click () ->
     selected = document.querySelector('#search-results a.selected')
-    url = selected.getAttribute('href1') if selected
+    url = selected.getAttribute('href') if selected
     window.open url, '_self'
     return
   return
