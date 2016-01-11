@@ -245,15 +245,35 @@ module.exports = (grunt) ->
           dest: '_site/vendor/css/'
         } ]
 
-      fonts:
+      opensans:
+        files: [ {
+          stdout: false
+          expand: true
+          filter: 'isFile'
+          cwd: 'bower_components/open-sans-fontface/'
+          src: [ '**/*.woff', '**/*.woff2', '**/*.ttf' ]
+          dest: '_site/vendor/css/'
+        } ]
+
+      fontawesome:
         files: [ {
           stdout: false
           expand: true
           filter: 'isFile'
           flatten: true
-          cwd: 'bower_components/'
-          src: [ '**/*.woff', '**/*.woff2', '**/*.ttf' ]
-          dest: '_site/vendor/fonts/'
+          cwd: 'bower_components/font-awesome/'
+          src: [ '**/*.woff', '**/*.svg','**/*.otf', '**/*.eot', '**/*.woff2', '**/*.ttf' ]
+          dest: '_site/vendor/fonts'
+        } ]
+
+      ubuntu:
+        files: [ {
+          stdout: false
+          expand: true
+          filter: 'isFile'
+          cwd: 'bower_components/ubuntu-fontface/'
+          src: [ '**/*.woff', '**/*.svg','**/*.otf', '**/*.eot', '**/*.woff2', '**/*.ttf' ]
+          dest: '_site/vendor/css/'
         } ]
 
 
