@@ -8,7 +8,6 @@ link(rel='stylesheet', href='{{ site.baseurl }}/vendor/css/normalize.min.css')
 link(rel='stylesheet', href='{{ site.baseurl }}/vendor/css/open-sans.min.css')
 link(rel='stylesheet', href='{{ site.baseurl }}/vendor/css/font-awesome.min.css')
 
-script(src='{{ site.baseurl }}/vendor/js/mousetrap.min.js', type='text/javascript')
 {% else %}
 // if deploying to github pages use cdn
 script(src='{{ site.baseurl }}/vendor/js/jekyll-search.min.js', type='text/javascript')
@@ -16,6 +15,4 @@ script(src='{{ site.baseurl }}/vendor/js/jekyll-search.min.js', type='text/javas
 link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css')
 link(rel='stylesheet', href='https://cdn.rawgit.com/egladman/open-sans/master/css/open-sans.min.css')
 link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css')
-
-script(src='https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.6/mousetrap.min.js', type='text/javascript')
 {% endif %}
