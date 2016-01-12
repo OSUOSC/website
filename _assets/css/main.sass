@@ -1,3 +1,5 @@
+@import "normalize"
+
 $sidebarWidth: 35rem
 $maxContentWidth: 120em
 $bodyfont: "Open Sans", sans-serif
@@ -126,19 +128,31 @@ body
 /* Typography
  *––––––––––––––––––––––––––––––––––––––––––––––––––
 
-h1, h2, h3, h4, h5, h6
+h2, h3, h4, h5, h6
   font-weight: 300
+
+h1, h2, h3, h4, h5, h6
   margin-top: 0
   margin-bottom: 2rem
+  &:not(.about)
+    a
+      color: #3498DB
+      &:hover
+        color: darken(#3498DB, 10%)
+      &:visited
+        color: #7971E6
+
 
 h1
   font-size: 4.0rem
+  font-weight: 400
   letter-spacing: -.1rem
   line-height: 1.2
+  margin-top: 1.5em
+
 
 h2
   font-size: 3.6rem
-  letter-spacing: -.1rem
   line-height: 1.25
 
 h3
@@ -146,9 +160,13 @@ h3
   letter-spacing: -.1rem
   line-height: 1.3
 
+p + h3, ul + h3, ol + h3
+  margin-top: 1.25em
+  margin-bottom: 0.25em
+
 h4
   font-size: 2.4rem
-  letter-spacing: -.08rem
+  // letter-spacing: -.08rem
   line-height: 1.35
 
 h5
@@ -353,8 +371,13 @@ ol
     font-size: 90%
     margin: 1.5rem 0 1.5rem 3rem
 
+p + ul, p + ol
+  margin-top: 0
+  margin-bottom: 3.5em
+
 li
   margin-bottom: 1rem
+
 
 /* Code
  *––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -386,6 +409,11 @@ th:first-child, td:first-child
 
 th:last-child, td:last-child
   padding-right: 0
+
+tbody
+  tr:last-of-type
+    td
+      border: none
 
 /* Spacing
  *––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -453,23 +481,29 @@ canvas
 a
   &:not(.sidebar)
     font-weight: 600
-    color: inherit
+    // color: inherit
     text-decoration: none
-  &:hover:not(.about)
-    color: $textColorHover
+  &:hover
+    // color: $textColorHover
     text-decoration: underline
+
+
+
+
 
 .disabled
   opacity: 0.5
 
 .about
-  a:hover
-    color: white
-    text-decoration: underline
+  a
+    color: white!important
+    &:hover
+      color: white
+      text-decoration: underline
 td
   text-align: left
   vertical-align: middle
-  height: 3em
+  height: 2em
 
 p, ul, li, h1, h2, h3, h4, h5, h6
   font-family: $bodyfont
@@ -621,7 +655,7 @@ input
       margin-bottom: 10px
       // margin-bottom: 1.5em
     &:hover
-      background: rgba(166, 166, 166, 0.25)
+      background: rgba(200, 200, 200, 0.25)
       cursor: pointer
       transition: all 0.15s ease
       text-decoration: none
@@ -638,7 +672,7 @@ input
         content: ""
         position: absolute
         left: 0
-        background: #FFE162
+        background: #DADADA
         box-shadow: 1px 0 1px 0 rgba(0,0,0,0.25)
         width: 0.5em
         height: 4em
@@ -687,6 +721,13 @@ input
         font-weight: 400
     .content
       margin-top: 2em
+      a
+        color: #3498DB
+        &:hover
+          color: darken(#3498DB, 10%)
+          text-decoration: underline
+        &:visited
+          color: #7971E6
       ul>li
         display: list-item
 

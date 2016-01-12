@@ -26,13 +26,12 @@ are required by the Ohio State University.
 Article I - Name, Purpose and Non-Discrimination Policy
 =======================================================
 
-Section 1 - Name
-----------------
+### Section 1 - Name
 
 This is the Open Source Club at the Ohio State University.
 
-Section 2 - Purpose
--------------------
+### Section 2 - Purpose
+
 
 Our purpose is to write and advocate free software, and to create a
 community of excellent programmers. We advocate free software through
@@ -55,8 +54,7 @@ the club, under the flag of the club, and distributed by the club should
 meet some acceptable definition of open source software, defined by the
 Open Source Initiative.
 
-Section 3 - Non Discrimination Policy
--------------------------------------
+### Section 3 - Non Discrimination Policy
 
 In recognition of the importance of welcoming diversity for the sake of
 creativity, and for the benefit of humanity, this club welcomes all
@@ -68,8 +66,7 @@ orientation, or veteran status.
 Article II - Membership: Qualifications and categories of membership
 ====================================================================
 
-Part 1 - Membership Categories and Selection Processes
-------------------------------------------------------
+### Part 1 - Membership Categories and Selection Processes
 
 Ohio State University guidelines demand that voting membership be
 limited to currently enrolled students. In order to meet this
@@ -83,8 +80,7 @@ categories.
     University guidelines for voting membership, and that the individual
     has attended at least one meeting prior to the vote.
 
-Part 2 - Membership Privileges
-------------------------------
+### Part 2 - Membership Privileges
 
 Accounts on the club computers will be given out to any member who
 requests an account, provided Ohio State University’s rules are
@@ -95,23 +91,21 @@ provided that Ohio State University rules are followed. Access may be
 revoked due to inactivity or failure to follow the rules. When it is
 necessary to take a vote, voting members are allowed to do so.
 
-Part 3 - Membership Removal
----------------------------
+### Part 3 - Membership Removal
 
 Should cause for membership removal be raised, a member can be removed
 in one of two ways:
 
-1.  A majority vote of club officers.
+-   A majority vote of club officers.
 
-2.  A majority vote of voting members, providing at least there are at
+-   A majority vote of voting members, providing at least there are at
     least 3/4<sup>th</sup> of the usual number of attending voting
     members present at the vote.
 
 Article III - Officer Positions, Duties, Selection, and Removal
 ===============================================================
 
-Part 1 - Officer Positions, Duties, Powers and Limitations.
------------------------------------------------------------
+### Part 1 - Officer Positions, Duties, Powers and Limitations.
 
 There are three officer positions: The President (or Benevolent
 Dictator), the Vice President, and the Treasurer. These three positions
@@ -159,8 +153,7 @@ over software projects, since by the definition of opensource software,
 code forks can happen when they need to, and no one therefore has
 ultimate power over a software project.
 
-Part 2 - Officer Selection
---------------------------
+### Part 2 - Officer Selection
 
 Once a year, elections will take place for the officer positions. This
 election must be announced at least one week prior to the vote. Any
@@ -170,8 +163,7 @@ attain that position for the next academic year, unless removed. Ties
 will be broken by a vote of the officers in place before the active
 election.
 
-Part 3 - Officer Removal
-------------------------
+### Part 3 - Officer Removal
 
 Leadership is needed in any club and so officers are required to be
 present at twelve out of fifteen official meetings per semester, while

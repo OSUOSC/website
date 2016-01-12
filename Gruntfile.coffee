@@ -241,8 +241,19 @@ module.exports = (grunt) ->
           filter: 'isFile'
           flatten: true
           cwd: 'bower_components/'
-          src: [ '**/*.css', '!**/*.min.css' ]
+          src: [ '**/*.css', '!**/*.min.css', '!**/normalize.css' ]
           dest: '_site/vendor/css/'
+        } ]
+
+      scss:
+        files: [ {
+          stdout: false
+          expand: true
+          filter: 'isFile'
+          flatten: true
+          cwd: 'bower_components/normalize-scss/'
+          src: [ '**/*.scss' ]
+          dest: '_assets/css/'
         } ]
 
       opensans:
@@ -357,8 +368,15 @@ module.exports = (grunt) ->
     'exec:bundler'
     'exec:bower'
     'jade'
+    'copy:scss'
     'exec:jekyll'
-    'copy'
+    # delete grunt.config.data.copy.scss
+    'copy:js'
+    'copy:css'
+    'copy:image'
+    'copy:opensans'
+    'copy:fontawesome'
+    'copy:ubuntu'
     'sass:' + currentEnvironment
     'coffee:' + currentEnvironment
     'uglify:' + currentEnvironment
