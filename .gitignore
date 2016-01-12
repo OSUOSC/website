@@ -8,3 +8,4 @@
 .jekyll-metadata
 /_includes/html/
 /_layouts/html/
+/_assets/css/_normalize.scss
