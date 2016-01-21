@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: html/default
 title: Meeting Planning + Lightning Talks
 categories: announcements
 tags: announcements

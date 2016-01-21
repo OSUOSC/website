@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: html/default
 title:
 categories: announcements
 tags: announcements
