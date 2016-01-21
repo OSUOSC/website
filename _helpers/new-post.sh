@@ -49,5 +49,8 @@ fi
 # adds title to post
 sed -i "/^title:/c\title: $topic" "$post"
 
+# adds meeting date to post
+sed -i "/^meeting_date:/c\meeting_date: $m_date" "$post"
+
 # adds author signaturer to end of post
 sed -i "/^\-\-[a-zA-Z0-9]/c\\-\-$author" "$post"
