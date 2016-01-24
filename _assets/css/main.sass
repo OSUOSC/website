@@ -1,6 +1,6 @@
 @import "normalize"
 
-$sidebarWidth: 35rem
+$sidebarWidth: 30rem
 $maxContentWidth: 120em
 $bodyfont: "Open Sans", sans-serif
 $textColor: #5D5D5D
@@ -709,7 +709,7 @@ input
   margin: 0
   text-align: right
   width: 100%
-  height: 9rem
+  height: 8rem
   transition: all 0.25s linear
   z-index: 9
   -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.15)
@@ -734,6 +734,7 @@ input
   transition: all 0.25s linear
   z-index: 10
   list-style: outside none none
+  font-size: 0.75em
   a
     color: white
     transition: all 0.25s linear
@@ -858,12 +859,14 @@ input
     margin-bottom: 2.5em
 
 #main-nav
-  padding-top: 6em
+  // fixme
+  // yeah yeah "magic numbers" are bad . . . .
+  padding-top: 7.15em
 .pagination
   display: block
-  font-size: 200%
+  font-size: 175%
   text-align: center
-  margin-top: 3em
+  margin-top: 4em
   .fa-caret-right
     &:hover:not(.disabled)
       background: rgba(75,75,75,0.5)
@@ -1059,13 +1062,13 @@ span.fa-angle-down
   height: 1em
 
 .contact-info-email, .contact-info-office, .contact-info-meeting
-  height: 12rem
+  height: 10rem
 
 .contact-info-email-container, .contact-info-office-container, .contact-info-meeting-container
   display: inline-block
   font-size: 3em
   padding: 0 2rem
-  margin: 0 0 0 12rem
+  margin: 0 0 0 10rem
   line-height: 0
   text-shadow: none
   vertical-align: middle
@@ -1073,13 +1076,13 @@ span.fa-angle-down
 .contact-info-email::before, .contact-info-office::before, .contact-info-meeting::before
   position: absolute
   font-family: 'FontAwesome'
-  font-size: 3em
+  font-size: 2.75em
   color: $white
   margin: 0
   overflow: hidden
   text-align: center
-  width: 12rem
-  height: 12rem
+  width: 10rem
+  height: 10rem
   vertical-align: middle
   -webkit-box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.35)
   -moz-box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.35)
@@ -1101,10 +1104,10 @@ span.fa-angle-down
   background-color: $white
   box-shadow: 0 1px 12px -2px rgba(0, 0, 0, 0.25)
   margin: 1.5em
-  line-height: 12rem
+  line-height: 10rem
   overflow: hidden
   text-align: left
-  height: 12rem
+  height: 10rem
   -webkit-box-shadow: 0 1px 12px -2px rgba(0, 0, 0, 0.25)
   -moz-box-shadow: 0 1px 12px -2px rgba(0, 0, 0, 0.25)
 
@@ -1180,7 +1183,7 @@ footer
         margin: 0 1ch
 
 #page-content-wrapper.single
-  left: 35rem
+  left: 30rem
   transition: 0s
   footer
     bottom: 0
