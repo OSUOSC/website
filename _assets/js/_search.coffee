@@ -21,8 +21,8 @@ $ ->
         if result? and result.classList.length == 0
           result.classList.add 'selected'
 
-  if $('#search-posts').children('.no-results').length > 0
-    $('#search-posts').css('height', 'initial')
+  if $('#search-results').children('.no-results').length > 0
+    $('#search-results').css('max-height', 'inherit')
 
   if $('#search-posts').val().length > 0
     isSelected = true
