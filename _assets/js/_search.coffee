@@ -11,7 +11,7 @@ $ ->
     json: $baseUrl + '/search.json'
     searchResultTemplate: '<a href="{url}"><li><div class="primary">{title}</div><div class="secondary">{date}</div></li></a>'
     noResultsText: '<li class="no-results">No results found</li>'
-    limit: 10
+    limit: 15
     fuzzy: false
     templateMiddleware:
       () ->
@@ -21,6 +21,8 @@ $ ->
         if result? and result.classList.length == 0
           result.classList.add 'selected'
 
+  if $('#search-posts').children('.no-results').length > 0
+    $('#search-posts').css('height', 'initial')
 
   if $('#search-posts').val().length > 0
     isSelected = true

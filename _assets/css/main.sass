@@ -487,6 +487,9 @@ a
 
 .disabled
   opacity: 0.5
+  &:hover
+    text-decoration: none
+    cursor: not-allowed
 
 .pagination-next::after
   content: 'next'
@@ -895,6 +898,7 @@ input
   .page_number
     font-family: $bodyfont
     margin: 0 0.5em
+    font-size: 0.65em
 
 .menu-toggle + .posts
   padding: 8em 0 0 0 !important
@@ -1176,11 +1180,9 @@ footer
       a
         color: #000000
         text-decoration: none
-      // FIXME
       .fa-heart
-        // font-size: 1em
         color: $oscRed
-        margin: 0 1ch
+        margin: 0 0.75ch
 
 #page-content-wrapper.single
   left: 30rem

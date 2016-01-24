@@ -57,7 +57,6 @@
 
 #search-results
   right: 2em
-  position: relative
   background: $white
   display: list-item
   // FIXME
@@ -72,12 +71,16 @@
   float: right
   max-width: 45em
   min-width: 30em
+  overflow-y: auto
+  max-height: calc(100% - 8rem)
+  position: fixed
   &:empty
     display: none
 
   li.no-results
     line-height: 2.25em
     padding: 0.5em 0.75em
+    height: 2.25em
     margin: 0
 
   a
