@@ -1,6 +1,6 @@
 $(document).ready ->
   $('#scroll-indicator').addClass('animated bounce').removeClass 'hidden'
-  $('body').addClass 'js'
+  # $('body').addClass 'js'
   $menu = $('.sidebar')
   $menulink = $('.menu-toggle')
   $menulink.click ->

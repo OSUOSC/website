@@ -6,19 +6,21 @@ doctype html
 #page-content-wrapper.home
   .section.posts
     .container
+      
       .category-title
-        h5 {{ page.category }}
+        a(href='{{ site.baseurl }}/{{ page.category | downcase }}')
+          h5 {{ page.category }}
+          
       {% if site.categories.[page.category] == null %}
       span There are currently no events planned
       {% else %}
+      
       {% for post in site.categories.[page.category] %}
-      ul
-        li
-          h2 {{ post.title }}
-          span.date posted: {{ post.date | date: "%m-%d-%Y" }}
-          .content
-            {{ post.content }}
+      h2 {{ post.title }}
+      span.date posted: {{ post.date | date: "%m-%d-%Y" }}
+      .content {{ post.content }}
       {% endfor %}
+      
       {% endif %}
       {% include html/core/scripts.html %}
       //- {% include html/core/footer.html %}

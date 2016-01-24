@@ -19,4 +19,4 @@ For those using COTA, the 18 Kenny/OSU line goes right by Tim Hortons, use stop 
 register [here](https://ohiolinux.org/registration)
 
 
-  -- Eli
+  -- Eli Gladman

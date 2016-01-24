@@ -11,4 +11,4 @@ Tickets are $100 however if you [email us](mailto:info@opensource.osu.edu) we ca
 
 I will be in attendance, I hope to see you there.
 
--- Eli
+-- Eli Gladman

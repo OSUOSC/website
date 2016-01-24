@@ -13,4 +13,4 @@ This Thursday at 7:00PM in Caldwell Labs 120, Jay Bobo and Vasanth Pappu from Co
  
 Laptops are encouraged but not required, and as always, there will be pizza.
 
--- Eli
+-- Eli Gladman
