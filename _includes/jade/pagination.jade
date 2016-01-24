@@ -6,7 +6,8 @@
     i.fa.fa-caret-left
   
   {% else %}
-  span.previous
+  a.pagination-text.disabled(href='{{ site.baseurl }}{{ paginator.previous_page_path }}') previous
+  a.previous
     i.fa.fa-caret-left.disabled
   {% endif %}
   
@@ -22,4 +23,6 @@
   {% else %}
   span.next
     i.fa.fa-caret-right.disabled
+    
+  a.pagination-text.disabled(href='{{ site.baseurl }}{{ paginator.next_page_path }}') next
   {% endif %}

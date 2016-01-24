@@ -488,14 +488,23 @@ a
 .disabled
   opacity: 0.5
 
+.pagination-next::after
+  content: 'next'
+  position: absolute
+
+.pagination-previous::before
+  content: 'fooo'
+  position: absolute
+
 .pagination-text
   font-size: 0.75em
   margin: 0 1ch
   color: $gray
   font-weight: 400
-  position: absolute
+  width: 10ch
+  // position: absolute
   height: 2em
-  bottom: 0
+  // bottom: 0
   line-height: 2em
   font-weight: 300
   &:hover
