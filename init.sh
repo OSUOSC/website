@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NODE_VERSION=4.0.0
+NODE_VERSION=4.2.6
 RUBY_VERSION=2.2.3
 
 # quick and dirty patch

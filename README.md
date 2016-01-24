@@ -25,7 +25,7 @@ Well first you need a few things:
 ##### ruby 2.2.3
 > We suggest installing ruby via [rvm](https://rvm.io/) (*ruby version manager*)
 
-##### node.js 4.0.0
+##### node.js 4.2.6
 > We suggest installing node via [nvm](https://github.com/creationix/nvm) (*node version manager*)
 
 ```bash
@@ -174,7 +174,7 @@ After running the rake task, the site will automatically be built and deployed
 on our servers. If by chance something goes wrong, immediately contact the
 club's system administrator.
 
-###### Debugging 
+###### Debugging
 
 NOTE: You may see the following error message the first time you attempt to
 push:
