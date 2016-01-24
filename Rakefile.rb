@@ -33,6 +33,7 @@ namespace :deploy do
     Dir.mktmpdir do |tmp|
       cp_r '_site/.', tmp
       Dir.chdir tmp
+      system 'rm -rf downloads'
       system 'git init'
       system "git add . && git commit -m 'Site updated at #{Time.now.utc}'"
       system "git remote add origin #{origin}"
