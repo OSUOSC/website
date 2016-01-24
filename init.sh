@@ -31,37 +31,41 @@ if [[ $? != 0 ]]; then
 fi
 
 
+# FIXME
+# p=$(eval npm list -g | grep grunt-cli)
+#
+# echo "Checking for grunt-cli"
+# npm -v grunt-cli >/dev/null 2>&1
+# if [[ $? != 0 ]]; then
+#     echo "grunt-cli is not installed"
+# elif [[ ${p//[^0-9_.]/} = 0 ]]; then
+#   echo "grunt-cli isn't installed globally"
+#
+#   npm install -g grunt-cli
+# fi
 
-p=$(eval npm list -g | grep grunt-cli)
 
-echo "Checking for grunt-cli"
-npm -v grunt-cli >/dev/null 2>&1
-if [[ $? != 0 ]]; then
-    echo "grunt-cli is not installed"
-elif [[ ${p//[^0-9_.]/} = 0 ]]; then
-  echo "grunt-cli isn't installed globally"
+# p=$(eval npm list -g | grep bower)
+#
+# echo "Checking for bower"
+# npm -v bower >/dev/null 2>&1
+# if [[ $? != 0 ]]; then
+#     echo -n "bower is not installed"
+# elif [[ ${p//[^0-9_.]/} = 0 ]]; then
+#   echo "bower isn't installed globally"
+#
+#   npm install -g bower
+# fi
 
-  npm install -g grunt-cli
+
+# remove cached node modules if they exisit
+if [ -d "node_modules" ]; then
+  rm -rf node_modules
 fi
-
-
-p=$(eval npm list -g | grep bower)
-
-echo "Checking for bower"
-npm -v bower >/dev/null 2>&1
-if [[ $? != 0 ]]; then
-    echo -n "bower is not installed"
-elif [[ ${p//[^0-9_.]/} = 0 ]]; then
-  echo "bower isn't installed globally"
-
-  npm install -g bower
-fi
-
-
-#TODO
-# check if package dependencies are indeed installed
 
 # install remaining modules locally
+npm install -g grunt-cli
+npm install -g bower
 npm install
 
 
