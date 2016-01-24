@@ -115,7 +115,7 @@ $gray: #848484
       margin-left: 52%
 
 html
-  font-size: 37.5%
+  font-size: 50%
 
 body
   font-size: 1.5em
@@ -171,7 +171,7 @@ h4
 
 h5
   font-size: 1.8rem
-  letter-spacing: -.05rem
+  // letter-spacing: -.05rem
   line-height: 1.5
 
 h6
@@ -197,6 +197,10 @@ h6
 p
   margin-top: 0
 
+//
+// em:not(p>em)
+//   font-style: initial
+//
 .alert
   text-align: center
 
@@ -468,16 +472,6 @@ body
   color: $textColor
   overflow-x: hidden
 
-html
-  font-size: 37.5%
-
-canvas
-  position: relative
-  opacity: 0
-  width: 100%
-  height: 100%
-  z-index: -3
-
 a
   &:not(.sidebar)
     font-weight: 600
@@ -488,11 +482,24 @@ a
     text-decoration: underline
 
 
-
-
+.bold
+  font-weight: 600
 
 .disabled
   opacity: 0.5
+
+.pagination-text
+  font-size: 0.75em
+  margin: 0 1ch
+  color: $gray
+  font-weight: 400
+  position: absolute
+  height: 2em
+  bottom: 0
+  line-height: 2em
+  font-weight: 300
+  &:hover
+    color: $textColor
 
 .about
   a
@@ -517,37 +524,138 @@ hr
   text-align: center
   width: 25%
 
-.category-title h5
-  display: inline
-  text-transform: capitalize
+.category-title
+  a
+    &:hover, &:visited, &:focus
+      text-decoration: none
+      color: $textColor
+    h5
+      display: inline
+      text-transform: capitalize
+      &::after
+        content: "\f105"
+        font-family: FontAwesome
+        margin: 0 0.5em
+        color: $textColor
 
-.category-title h5::after
-  content: "\f105"
-  font-family: FontAwesome
-  margin: 0 0.5em
 
-.github-ribbon
-  position: absolute
-  top: 9rem
-  right: 0
-  font-size: 1.5em
-  background: $oscRed
-  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25)
-  color: #f5f5f5
-  line-height: 2.5em
-  text-align: center
-  width: 20em
-  height: 2.5em
-  transform: translate(50%, -50%) rotate(45deg) translateY(7em)
-  z-index: 3
-  -moz-transform: translate(50%, -50%) rotate(45deg) translateY(7em)
-  -o-transform: translate(50%, -50%) rotate(45deg) translateY(7em)
-  -ms-transform: translate(50%, -50%) rotate(45deg) translateY(7em)
-  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25)
-  -moz-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25)
-  -webkit-transform: translate(50%, -50%) rotate(45deg) translateY(7em)
+
+@mixin transform($transformations)
+  -moz-transform: $transformations
+  -o-transform: $transformations
+  -ms-transform: $transformations
+  -webkit-transform: $transformations
+  transform: $transformations
+
+$deviation: 2em
+
+@mixin spork($fa: '\f126', $size: 8em, $gravity: nw, $color: #F5F5F5, $background-color: red, $scale: 2.5, $animation: skew, $rotate: true)
+  position: relative
+  display: block
+  width: $size - $deviation
+  height: $size - $deviation
+  overflow: hidden
+  transition: 0.25s ease
+  padding: 0 0 $deviation 0
+
+  &::before, &::after
+    transition: 0.25s ease
+    position: absolute
+    left: 0
+  &::before
+    content: ''
+    top: 0
+  &::after
+    $withslash: "\"\\#{$fa}\""
+    font-family: FontAwesome
+    font-weight: 400
+    color: $color
+    text-rendering: auto
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    content: unquote($withslash)
+    font-size: $scale + em
+    white-space: nowrap
+    text-align: center
+    @if $rotate == true
+      width: $scale + em
+      line-height: $scale + em
+    @else
+      width: $scale + em
+      line-height: $scale + em
+      right: 0
+      left: inherit
   &:hover
-    background: darken($oscRed, 5%)
+    text-decoration: none
+    &::after
+      @if $animation == scale
+        font-size: ($scale + 0.5) + em
+
+  @if $gravity == ne
+    &::before
+      border-top: 0 solid transparent
+      border-bottom: $size solid transparent
+      border-right: $size solid $background-color
+      border-left: $deviation solid transparent
+      @if $animation == skew
+        border-left: ($deviation/2) solid transparent
+    &::after
+      @if $rotate == true
+        width: $scale + em
+        line-height: $scale + em
+        @include transform( translate( 50%, -15%) rotate(45deg) )
+    &:hover
+      &::before
+        @if $animation == skew
+          border-right: ($size + $deviation) solid darken($background-color, 5%)
+          border-bottom: ( $size + ($deviation * 2) ) solid transparent
+          border-left: ($deviation / 2) solid transparent
+          @if $rotate == true
+            padding-left: 1em
+        @if $animation == scale
+          border-right: ($size + $deviation) solid darken($background-color, 5%)
+          border-bottom: ($size + $deviation) solid transparent
+          border-left: 0 solid transparent
+        @else
+          border-right: ($size) solid darken($background-color, 5%)
+      &::after
+        @if $animation == scale
+          @if $rotate == true
+            @include transform( translate( 30%, -15%) rotate(45deg) )
+        @if $rotate == true && $animation == skew
+          @include transform( translate( 50%, -15%) rotate(0deg) )
+
+@mixin foo($direction: ne)
+  position: absolute
+  width: 12em
+  height: 12em
+
+  @if $direction == nw
+    top: 0
+    left: 0
+
+  @if $direction == ne
+    top: 0
+    right: 0
+
+  @if $direction == sw
+    bottom: 0
+    right: 0
+
+  @if $direction == sw
+    bottom: 0
+    left: 0
+  a
+    @include spork($fa: '\f09b', $size: 14em, $gravity: ne, $background-color: $gray, $scale: 3,$animation: skew, $rotate: true)
+    z-index: 3
+
+
+
+.spork
+  @include foo(ne)
+
+
+
 .btn, input
   display: inline
   font-size: 1em
@@ -714,29 +822,39 @@ input
   padding: 2em 0 6em 0
 
 .posts
-  li
-    h1
-      font-size: 2.5em
-      a
-        font-weight: 400
-    .content
-      margin-top: 2em
-      a
-        color: #3498DB
-        &:hover
-          color: darken(#3498DB, 10%)
-          text-decoration: underline
-        &:visited
-          color: #7971E6
-      ul>li
-        display: list-item
+  h1
+    font-size: 2.5em
+    a
+      font-weight: 400
+  h2
+    margin-top: 2em
+    &:not(:first-of-type)
+      padding-top: 2em
+      border-top: 1px lighten($gray, 20%) solid
+
+  .tags
+    color:  lighten($gray, 25%)
+    &::before
+      font-family: FontAwesome
+      font-weight: 400
+      margin-right: 1ch
+      color:  lighten($gray, 25%)
+      text-rendering: auto
+      -webkit-font-smoothing: antialiased
+      -moz-osx-font-smoothing: grayscale
+      content: '\f02c'
+
+  .date
+    display: inline-block
+    margin-bottom: 2.5em
 
 #main-nav
   padding-top: 6em
 .pagination
-  display: inherit
+  display: block
   font-size: 200%
   text-align: center
+  margin-top: 3em
   .fa-caret-right
     &:hover:not(.disabled)
       background: rgba(75,75,75,0.5)
@@ -796,6 +914,11 @@ input
       font-size: 3em
       color: $gray
   img
+    // -webkit-user-drag: none
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
     margin: 0 auto
     height: 15em
   h4
@@ -877,7 +1000,7 @@ span.fa-angle-down
   padding: 0 !important
   text-align: center
   width: 100%
-  h5
+  h1,h2,h3,h4,h5,h6
     margin: 3em 0
 
 .about
@@ -1005,21 +1128,12 @@ ul.contact-info
     text-align: left
     list-style: none
   li
-    .content
-      list-style: initial
-      li
-        list-style-type: square
+    list-style: initial
+    list-style-type: square
+  p+ul
+    margin-left: 2em
   p
     text-align: justify
-
-  > .container > ul > li
-    padding-bottom: 2em
-    padding-top: 2em
-    &:not(:last-of-type)
-      border-bottom: 1px solid #CDCDCD
-
-.section.posts > .container > ul:not(:last-of-type)
-  border-bottom: 1px solid #CDCDCD
 
 .posts
   li > h5 + table
@@ -1037,13 +1151,14 @@ footer
   text-align: center!important
   width: 100%
   height: 4em
+  display: inline-block
   .with-love
     position: absolute
     bottom: 2em
     width: 100%
     span
       display: block
-      font-size: 12px
+      font-size: 1.25em
       color: #666
       text-align: center
       a
@@ -1051,9 +1166,9 @@ footer
         text-decoration: none
       // FIXME
       .fa-heart
-        font-size: 10px
+        // font-size: 1em
         color: $oscRed
-        margin: 0 3px
+        margin: 0 1ch
 
 #page-content-wrapper.single
   left: 35rem
@@ -1073,12 +1188,9 @@ footer
     margin-bottom: 4rem
 
 .landing
-  #heading-wrapper
-    position: absolute
-    width: 100%
-    transform: translateY(-50%)
-    -webkit-transform: translateY(-50%)
-    -moz-transform: translateY(-50%)
+  display: flex
+  justify-content: center
+  align-items: center
 
 [class*='flat'] i
   line-height: 1.25em

@@ -6,18 +6,21 @@ doctype html
 #page-content-wrapper.home
   .section.posts
     .container
+      
       .category-title
-        h5 {{ page.category }}
+        a(href='{{ site.baseurl }}/{{ page.category | downcase }}')
+          h5 {{ page.category }}
+          
       {% if site.categories.[page.category] == null %}
       span There are currently no tutorials
       {% else %}
+      
       {% for post in site.categories.[page.category] %}
-      ul
-        li
-          h2
-            a(href='{{ site.baseurl }}{{ post.url }}') {{ post.title }}
-          span.date posted: {{ post.date | date: "%m-%d-%Y" }}
+      h2
+        a(href='{{ site.baseurl }}{{ post.url }}') {{ post.title }}
+      span.date updated: {% last_modified_at %m-%d-%Y %}
       {% endfor %}
+      
       {% endif %}
       {% include html/core/scripts.html %}
       //- {% include html/core/footer.html %}

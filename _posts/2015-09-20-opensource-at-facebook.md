@@ -16,4 +16,4 @@ Facebook serves requests for over 1.3 billion people every month.  I will give a
 
 Laptops are encouraged but not required, and as always, there will be pizza.
 
-  -- Eli
+  -- Eli Gladman

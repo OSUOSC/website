@@ -6,13 +6,16 @@ doctype html
 #page-content-wrapper.home
   .section.posts
     .container
+      
       .category-title
-        h5 {{ page.category }}
+        a(href='{{ site.baseurl }}/{{ page.category | downcase }}')
+          h5 {{ page.category }}
+        
       {% for post in site.categories.[page.category] %}
-      ul
-        li
-          h2
-            a(href='{{ site.baseurl }}{{ post.url }}') {{ post.title }}
+      h2
+        a(href='{{ site.baseurl }}{{ post.url }}') {{ post.title }}
+      span.date updated: {% last_modified_at %m-%d-%Y %}
       {% endfor %}
+      
       {% include html/core/scripts.html %}
       //- {% include html/core/footer.html %}

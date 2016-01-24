@@ -16,4 +16,4 @@ It's difficult to strike a comparable balance between convenience and security. 
 
 Laptops are encouraged but not required, and as always, there will be pizza.
 
---Eli
+-- Eli Gladman

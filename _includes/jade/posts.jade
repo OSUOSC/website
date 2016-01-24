@@ -1,45 +1,53 @@
 .section.posts
   .container
-    
-    | {% if page.is_post %}
+    {% if page.is_post %}
     .category-title
-      h5 {{ page.tags }}
-      h5 {{ page.title }}
-    | {% endif %}
+      a(href='{{ site.baseurl }}/{{ post.categories | first }}')
+        h5 {{ page.tags }}
+      a(href='{{ site.baseurl }}{{ post.url }}')
+        h5 {{ page.title }}
+    {% endif %}
+    
+    {% if page.category %}
+    
+    .category-title
+      a(href='{{ site.baseurl }}/')
+        h5 {{ page.category }}
+      
+    {% endif %}
+
+
+    {% for post in paginator.posts %}
+    {% if post.categories contains 'volunteering' or post.categories contains 'events' %}
+    h2
+      a(href='{{ site.baseurl }}/{{ post.categories | first }}') {{ post.title }}
+    {% else %}
+    h2
+      a(href='{{ site.baseurl }}{{ post.url }}') {{ post.title }}
+    {% endif %}
+    
+    span.date posted: {{ post.date | date: "%m-%d-%Y" }}
+      
+    {% unless post.categories contains 'volunteering' or post.categories contains 'events' or post.categories contains 'meetings' or post.categories contains 'history' or post.categories contains 'tutorials' %}
+    
+    | {{ post.content }}
+    
+    {% endunless %}
+    
+    .tags {{ post.tags }}
+
+    {% endfor %}
+  
     
     
-    
-    | {% for post in paginator.posts %}
-    ul
-      li
-        
-        | {% if post.categories contains 'volunteering' or post.categories contains 'events' %}
-        h2
-          a(href='{{ site.baseurl }}/{{ post.categories | first }}') {{ post.title }}
-        
-        | {% else %}
-        h2
-          a(href='{{ site.baseurl }}{{ post.url }}') {{ post.title }}
-        | {% endif %}
-        
-        span.date posted: {{ post.date | date: "%m-%d-%Y" }}
-        .content
-          | {{ post.content }}
-    | {% endfor %}
-    
-    
-    | {% if page.is_post %}
-    ul
-      li
-        h2 {{ page.title }}
-        span.date posted: {{ page.date | date: "%m-%d-%Y" }}
-        .content
-          | {{ page.content | markdownify }}
-    | {% endif %}
-    
-    
-  | {% if page.is_post %}
-  // TODO
-  | {% else %}
-  |   {% include html/pagination.html %}
-  | {% endif %}
+    {% if page.is_post %}
+
+    h2.bold {{ page.title }}
+    span.date posted: {{ page.date | date: "%m-%d-%Y" }}
+    .content {{ page.content | markdownify }}
+    .tags {{ page.tags }}
+    {% endif %}
+  
+    {% unless page.is_post %}
+    | {% include html/pagination.html %}
+    {% endunless %}

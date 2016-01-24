@@ -306,6 +306,9 @@ module.exports = (grunt) ->
       jekyll:
         cmd: 'bundle exec jekyll build'
 
+      aliasFeed:
+        cmd: 'cp _site/atom.xml _site/rss.xml'
+
       new_post:
         cmd: './_helpers/new-post.sh'
 
@@ -370,7 +373,7 @@ module.exports = (grunt) ->
     'jade'
     'copy:scss'
     'exec:jekyll'
-    # delete grunt.config.data.copy.scss
+    'exec:aliasFeed'
     'copy:js'
     'copy:css'
     'copy:image'

@@ -22,4 +22,4 @@ This Thursday, September 10 in Caldwell Labs 120, Bobby Reynolds and I will pres
 
 Laptops are encouraged but not required, and as always, there will be pizza.
 
-  -- Eli
+  -- Eli Gladman

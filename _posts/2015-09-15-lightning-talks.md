@@ -12,4 +12,4 @@ This Thursday, 2015/09/17 at 7:00PM in Caldwell Labs 120, we will be holding lig
 
 Laptops are encouraged but not required, and as always, there will be pizza.
 
-  -- Eli
+  -- Eli Gladman
