@@ -64,8 +64,7 @@ if [ -d "node_modules" ]; then
 fi
 
 # install remaining modules locally
-npm install -g grunt-cli
-npm install -g bower
+npm install -g grunt-cli bower jade
 npm install
 
 
