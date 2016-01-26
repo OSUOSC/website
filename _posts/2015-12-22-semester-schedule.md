@@ -19,7 +19,7 @@ Feel free to contact us to arrange a presentation on our schedule this semester.
 | 3/3/2016 | available                                  |
 | 3/10/2016| available                                  |
 | 3/17/2016| Spring break, no meeting                   |
-| 3/24/2016| available                                  |
+| 3/24/2016| [NICAR 2016](http://www.ire.org/conferences/nicar2016/) recap | @benlk |
 | 3/31/2016| available                                  |
 | 4/7/2016 | available                                  |
 | 4/14/2016| available                                  |
