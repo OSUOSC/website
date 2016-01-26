@@ -498,10 +498,16 @@ a
   font-weight: 400
   width: 8ch
   // position: absolute
-  height: 2em
+  height: 3em
   // bottom: 0
-  line-height: 2em
+  line-height: 3em
   font-weight: 300
+  vertical-align: middle
+  display: inline-block
+  &:first-of-type
+    text-align: right
+  &:last-of-type
+    text-align: left
   &:hover
     color: $textColor
 
@@ -862,7 +868,7 @@ input
   font-size: 175%
   text-align: center
   margin-top: 4em
-  .fa-caret-right
+  .fa-caret-right, .fa-caret-left
     &:hover:not(.disabled)
       background: rgba(75,75,75,0.5)
     width: 1.5em
@@ -875,22 +881,14 @@ input
     -moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.45)
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.45)
 
-  .fa-caret-left
-    &:hover:not(.disabled)
-      background: rgba(75,75,75,0.5)
-    width: 1.5em
-    height: 1.5em
-    line-height: 1.5em
-    display: inline-block
-    background-color: rgba(75,75,75,0.35)
-    color: $white
-    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.45)
-    -moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.45)
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.45)
   .page_number
     font-family: $bodyfont
-    margin: 0 0.5em
+    margin: 0 0.75em
     font-size: 0.5em
+    display: inline-block
+    height: 3em
+    vertical-align: middle
+    line-height: 3em
 
 .menu-toggle + .posts
   padding: 8em 0 0 0 !important
