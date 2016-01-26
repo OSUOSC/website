@@ -10,7 +10,7 @@ Feel free to contact us to arrange a presentation on our schedule this semester.
 | date	   | topic			| speaker(s)	                  |
 |----------|----------------------------|---------------|
 | 1/14/2016| Welcome Back                               |
-| 1/21/2016| available                                  |
+| 1/21/2016| [Arch Linux](https://www.archlinux.org) | William Osler (LibreWulf) |
 | 1/28/2016| available                                  |
 | 2/4/2016 | available                                  |
 | 2/11/2016| available                                  |
