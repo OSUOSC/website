@@ -21,4 +21,4 @@ eventually building your way up to a desktop interface.
 
 Laptops are encouraged but not required, and as always, there will be pizza.
 
---Alex Krieger
+-- Alex Krieger

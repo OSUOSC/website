@@ -13,4 +13,4 @@ determined.
 
 Laptops are encouraged but not required, and as always, there will be pizza.
 
---Alex Krieger
+-- Alex Krieger
