@@ -18,7 +18,7 @@
     "jquery": "~2.1.4",
     "normalize-scss": "3.0.3",
     "open-sans-fontface": "~1.4.2",
-    "simple-jekyll-search": "egladman/Simple-Jekyll-Search#4a3daa3d664de13c689dac1dfe90a2934e312582",
+    "simple-jekyll-search": "christian-fei/Simple-Jekyll-Search#1.1.1",
     "ubuntu-fontface": "~0.1.5"
   }
 }
