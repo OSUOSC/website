@@ -36,6 +36,13 @@ $ ->
     isSelected = false
     return
 
+  $('#search-posts').on 'keyup', () ->
+    if $('#search-posts').val().length == 0
+      $('#search-results').css('display', 'none')
+    else
+      $('#search-results').css('display', '')
+    return false
+
   $('.search-submit').hover (->
     isSelected = true
     $('.search-submit').click () ->
