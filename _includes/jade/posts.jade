@@ -1,19 +1,35 @@
 .section.posts
   .container
+    
+    
     {% if page.is_post %}
     .category-title
-      a(href='{{ site.baseurl }}/{{ post.categories | first }}')
+    
+      {% if post.categories contains 'announcements' %}
+      a(href='{{ site.baseurl }}/')
         h5 {{ page.tags }}
+      {% else %}
+      a(href='{{ site.baseurl }}/{{ page.tags | first }}')
+        h5 {{ page.tags }}
+      {% endif %}
+    
       a(href='{{ site.baseurl }}{{ post.url }}')
         h5 {{ page.title }}
     {% endif %}
     
-    {% if page.category %}
     
+    {% if page.category %}
     .category-title
+      
+      {% if post.categories contains 'announcements' %}
       a(href='{{ site.baseurl }}/')
         h5 {{ page.category }}
-      
+      {% else %}
+      a(href='{{ site.baseurl }}/{{ page.category }}')
+        h5 {{ page.category }}
+      {% endif %}
+      a
+        h5 page {{ paginator.page }}
     {% endif %}
 
 

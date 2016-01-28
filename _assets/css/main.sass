@@ -542,11 +542,14 @@ hr
     h5
       display: inline
       text-transform: capitalize
-      &::after
-        content: "\f105"
-        font-family: FontAwesome
-        margin: 0 0.5em
-        color: $textColor
+  
+  a:not(:last-of-type)
+    h5::after
+      content: "\f105"
+      font-family: FontAwesome
+      margin: 0 0.5em
+      color: $textColor
+
 
 
 
