@@ -4,7 +4,7 @@ title: Distributed Version Control
 created: 1362378684
 alias: /sp13/distributed-version-control.html
 categories: announcements
-tags: announcements
+tags: announcements, vc, version control, git
 ---
 This Thursday, 2013/03/07 at 7pm in Dreese Labs 369, the Ohio State Open Source Club will be presenting "Distributed Version Control v1" This meeting will be presented by Paul Schwendenman.
 

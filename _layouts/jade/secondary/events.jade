@@ -16,7 +16,7 @@ doctype html
       {% else %}
       
       {% for post in site.categories.[page.category] %}
-      h2 {{ post.title }}
+      h2.bold {{ post.title }}
       span.date posted: {{ post.date | date: "%m-%d-%Y" }}
       .content {{ post.content }}
       {% endfor %}

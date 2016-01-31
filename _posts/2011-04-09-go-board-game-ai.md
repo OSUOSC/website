@@ -4,7 +4,7 @@ title: Go (board game) AI
 created: 1302364039
 alias: /sp11/go-ai.html
 categories: announcements
-tags: announcements
+tags: announcements, ai
 ---
 This Thursday, April 14th at 7PM in Dreese 264, Daniel Thau will be giving a presentation on open source artificial intelligence for the board game Go.
 

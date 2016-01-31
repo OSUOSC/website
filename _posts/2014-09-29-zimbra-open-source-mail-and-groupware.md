@@ -4,7 +4,7 @@ title: 'Zimbra: Open Source Mail and Groupware'
 created: 1412036488
 alias: /au14/zimbra-open-source-mail-and-groupware.html
 categories: announcements
-tags: announcements
+tags: announcements, hosted, self-hosted, mail, email, server
 ---
 This Thursday, 2014-10-02 in Caldwell Labs 120, William Osler will present Zimbra: Open Source Mail & Groupware. Description follows.
 

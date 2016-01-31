@@ -12,6 +12,7 @@ This is our repository for our club's [website](https://opensource.osu.edu). It'
 ### How can I contribute?
 
 - report bugs, issues, and documentation inconsistencies
+- tag posts
 - request features
 - hate or love a feature . . . *tell us*
 - request topics for future meetings

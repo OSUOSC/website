@@ -3,7 +3,7 @@ layout: html/default
 title: Android Development
 created: 1298317935
 categories: announcements
-tags: announcements
+tags: announcements, android, java
 ---
 On Thursday, February 24, at 7PM in Dreese 264, Sogeti USA developers Jackie Gleason and Robert Omalley will discuss Android for beginning to intermediate Java developers.
 

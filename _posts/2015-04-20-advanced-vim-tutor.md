@@ -4,7 +4,7 @@ title: Advanced Vim Tutor
 created: 1429539424
 alias: /sp15/advanced-vim-tutor.html
 categories: announcements
-tags: announcements
+tags: announcements, vim, text editor
 ---
 This Thursday, 2015/04/23 at 7:00PM in Caldwell Labs 120, Daniel Thau
 will present a tour of Vim functionality.  Prior Vim experience is not

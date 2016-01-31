@@ -9,8 +9,8 @@
       a(href='{{ site.baseurl }}/')
         h5 {{ page.tags }}
       {% else %}
-      a(href='{{ site.baseurl }}/{{ page.tags | first }}')
-        h5 {{ page.tags }}
+      a(href="{{ site.baseurl }}/{{ page.tags | first | remove: ',' }}")
+        h5 {{ page.tags | first | remove: ',' }}
       {% endif %}
     
       a(href='{{ site.baseurl }}{{ post.url }}')
@@ -50,18 +50,62 @@
     
     {% endunless %}
     
-    .tags {{ post.tags }}
+    .tags {{ post.tags | join: ' ' }}
 
     {% endfor %}
   
     
     
     {% if page.is_post %}
+      
+    .column-wrap
+      h2.bold {{ page.title }}
+      span.date posted: {{ page.date | date: "%m-%d-%Y" }}
+      .content {{ page.content | markdownify }}
+      .tags {{ page.tags | join: ' ' }}
+    
+    .column-wrap
+      .related
+        h4.related-title Related Posts
 
-    h2.bold {{ page.title }}
-    span.date posted: {{ page.date | date: "%m-%d-%Y" }}
-    .content {{ page.content | markdownify }}
-    .tags {{ page.tags }}
+        {% assign relatedPosts = false %}
+        {% assign relatedPostCount = 0 %}
+        
+        {% for post in site.posts %}
+        
+        {% assign sameTagCount = 0 %}
+        {% assign commonTags = '' %}
+
+        
+        {% for tag in post.tags %}
+        //- {% if page.tags contains tag and post.categories == page.categories %}
+        {% if page.tags contains tag %}
+        {% assign sameTagCount = sameTagCount | plus: 1 %}
+          
+        {% endif %}
+        {% endfor %}
+
+        {% if sameTagCount >= 2 and post.url != page.url %}
+        {% assign relatedPosts = true %}
+        {% assign relatedPostCount = relatedPostCount | plus: 1 %}
+        
+        {% if relatedPostCount > 6 %}
+        | {% break %}
+        {% endif %}
+        
+        .related-post
+          a(href='{{ post.url }}')
+            h4 {{ post.title }}
+          span.date posted: {{ post.date | date: "%m-%d-%Y" }}
+        {% endif %}
+
+        {% endfor %}
+
+        {% if relatedPosts == false %}
+        .related-post
+          h4 No related posts found
+        {% endif %}
+
     {% endif %}
   
     {% unless page.is_post %}

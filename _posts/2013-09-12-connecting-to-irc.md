@@ -3,7 +3,7 @@ layout: html/default
 title: Connecting to IRC
 created: 1378959734
 categories: announcements
-tags: announcements
+tags: announcements, irc
 ---
 #### Foreward
 

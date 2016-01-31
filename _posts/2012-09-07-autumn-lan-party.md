@@ -3,7 +3,7 @@ layout: html/default
 title: Autumn LAN Party
 created: 1347075018
 categories: announcements
-tags: announcements
+tags: announcements, lan, party
 ---
 Good news everyone!
 

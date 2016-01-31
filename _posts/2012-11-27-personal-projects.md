@@ -3,7 +3,7 @@ layout: html/default
 title: Personal Projects
 created: 1354040393
 categories: announcements
-tags: announcements
+tags: announcements, projects
 ---
 Hello everyone!
 

@@ -3,7 +3,7 @@ layout: html/default
 title: Certificate expired warning
 created: 1317410352
 categories: announcements
-tags: announcements
+tags: announcements, cert, ssl
 ---
 <pre>-----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1

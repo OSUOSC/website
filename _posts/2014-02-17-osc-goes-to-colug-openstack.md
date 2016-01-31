@@ -4,7 +4,7 @@ title: OSC Goes to COLUG! (OpenStack)
 created: 1392667845
 alias: /sp14/osc-goes-colug-openstack.html
 categories: announcements
-tags: announcements
+tags: announcements, devops
 ---
 Greetings Everyone,
 

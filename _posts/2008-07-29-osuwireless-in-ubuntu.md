@@ -4,7 +4,7 @@ title: osuwireless in Ubuntu
 created: 1217362629
 alias: [/wireless, /wireless.html, /wireless_0.html]
 categories: tutorials
-tags: tutorials
+tags: tutorials, wifi, osuwireless, wireless
 ---
 A former member of our club, Paul Betts, created an [excellent guide](http://blog.paulbetts.org/index.php/2007/01/27/the-end-all-definitive-guide-to-getting-wireless-working-in-ubuntu-edgy-eft/) explaining how to connect to wireless in Ubuntu. Find a summarized guide for those who aren't having trouble with their closed-source drivers below.
 

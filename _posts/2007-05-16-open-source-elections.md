@@ -3,7 +3,7 @@ layout: html/default
 title: Open Source Elections
 created: 1179357459
 categories: announcements
-tags: announcements
+tags: announcements, elections
 ---
 The Open Source Club at The Ohio State University (OSSOSU) will be holding officer elections to represent us for the next (07-08) school year. The eligibility requirements for being an officer are that you are a student at Ohio State, and that you are a member of the club (have attended at least one meeting). Graduate and undergraduates are both equals in this matter.
 

@@ -17,7 +17,7 @@ $gray: #848484
   padding: 0 20px
   margin: 0 auto
   width: 100%
-  max-width: 960px
+  // max-width: 1400px
 
 .column, .columns
   box-sizing: border-box
@@ -28,12 +28,13 @@ $gray: #848484
 @media (min-width: 400px)
   .container
     padding: 0
-    width: 85%
+    // width: 85%
+    padding: 0 3em
 
 /* For devices larger than 550px
 @media (min-width: 550px)
   .container
-    width: 80%
+    // width: 80%
   .column, .columns
     margin-left: 4%
   .column:first-child, .columns:first-child
@@ -149,6 +150,9 @@ h1
   letter-spacing: -.1rem
   line-height: 1.2
   margin-top: 1.5em
+
+.date + .content h1:first-of-type
+  margin-top: 0
 
 
 h2
@@ -542,7 +546,7 @@ hr
     h5
       display: inline
       text-transform: capitalize
-  
+
   a:not(:last-of-type)
     h5::after
       content: "\f105"
@@ -841,9 +845,9 @@ input
     a
       font-weight: 400
   h2
-    margin-top: 2em
+    margin-top: 8rem
     &:not(:first-of-type)
-      padding-top: 2em
+      padding-top: 8rem
       border-top: 1px lighten($gray, 20%) solid
 
   .tags
@@ -1204,3 +1208,16 @@ footer
 
 @import "media-queries"
 // @import "terminal"
+
+.column-wrap
+  display: inline-table
+  vertical-align: top
+
+.related
+  // margin-top: 6em
+  .related-title
+    border-bottom: 1px lighten($gray, 25%) solid
+  .related-post
+    display: inline-table
+    h4
+      margin-bottom: 0

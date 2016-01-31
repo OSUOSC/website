@@ -2,7 +2,7 @@
 layout: html/default
 title: First Meeting of the Semester
 categories: announcements
-tags: announcements
+tags: announcements, first
 ---
 Hi everyone,
 

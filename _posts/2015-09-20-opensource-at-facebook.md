@@ -2,7 +2,7 @@
 layout: html/default
 title: Open Source at Facebook
 categories: announcements
-tags: announcements
+tags: announcements, facebook, community
 meeting: September 24th 2015
 ---
 

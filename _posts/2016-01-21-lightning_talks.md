@@ -2,7 +2,7 @@
 layout: html/default
 title: Meeting Planning + Lightning Talks
 categories: announcements
-tags: announcements
+tags: announcements, lightning talk
 meeting_date: 2016-01-21
 ---
 Tonight's meeting will be drafting future talks for the semester + some

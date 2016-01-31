@@ -4,7 +4,7 @@ title: 'Haskell: Part III: Winter Resistance Edition: Snow and Freezing Rain Wil
   Not Stop Us (neither will dry, 50F weather)'
 created: 1327518233
 categories: announcements
-tags: announcements
+tags: announcements, haskell, language
 ---
 *Thursday January 26, 2012*
 *Dreese Lab 266*

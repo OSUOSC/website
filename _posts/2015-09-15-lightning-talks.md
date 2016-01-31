@@ -2,7 +2,7 @@
 layout: html/default
 title: Lightning Talks
 categories: announcements
-tags: announcements
+tags: announcements, lightning talk
 meeting: September 17th 2015
 ---
 

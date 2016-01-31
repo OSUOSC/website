@@ -1,7 +1,6 @@
 ---
 layout: html/default
 title: Elections for the 2010/2011 Year
-created: 1273780326
 categories: announcements
 tags: announcements
 ---

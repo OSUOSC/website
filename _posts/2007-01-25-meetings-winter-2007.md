@@ -3,7 +3,7 @@ layout: html/default
 title: 'Meetings: Winter 2007'
 created: 1169764800
 categories: announcements
-tags: announcements
+tags: announcements, schedule
 ---
 We are meeting Tuesday evenings this quarter at 7:00pm in Dreese Labs room 480\. Meetings generally last about an hour and are always open to the public including nonmembers and nonstudents. For people arriving from off campus, pay parking is available in the Tuttle Park Place Parking Garage, located adjacent to Dreese Labs. Please refer the OSU map for directions: [http://www.osu.edu/map/](http://www.osu.edu/map/).
 

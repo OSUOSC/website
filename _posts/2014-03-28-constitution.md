@@ -3,7 +3,7 @@ layout: html/default
 title: Constitution
 alias: /about/constitution.html
 categories: history
-tags: history
+tags: history, constitution
 ---
 
 Preamble

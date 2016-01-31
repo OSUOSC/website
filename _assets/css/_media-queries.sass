@@ -113,6 +113,12 @@
       left: $sidebarWidth
     >*
       transition: 0s
+    .column-wrap
+      &:nth-of-type(2n)
+        // width: 960px
+      &:nth-of-type(2n+1)
+        // width: calc(100% - 960px)
+        // min-width: 1400px - 960px
   .layout-desktop
     display: inherit
 
@@ -124,6 +130,45 @@
       left: 30rem
     > .section.posts:only-child > .container
       width: 50%
+  // .related
+  //   .related-post
+  //     width: 50%
+
+
+@media (min-width: 1200px) and (max-width: 1749px)
+  .container
+    max-width: 960px
+  #page-content-wrapper
+    .column-wrap
+      width: calc(960px - (3em * 2))
+      &:nth-of-type(2n+1)
+        margin-top: 8em
+    .related
+      .related-post
+        width: calc(50% - 2em)
+        &:nth-of-type(2n+1)
+          margin-right: 2em
+
+
+@media (min-width: 1750px)
+  .container
+    max-width: 1400px
+  #page-content-wrapper
+    .column-wrap
+      &:nth-of-type(2n)
+        width: calc(960px - (3em * 2))
+      &:nth-of-type(2n+1)
+        position: fixed
+        width: calc(100% - 960px - 10em)
+        min-width: calc(1400px - 960px - 10em)
+        max-width: 1em
+        margin-left: 10em
+    .related
+      padding-top: 8rem
+      .related-post
+        width: 100%
+
+
 
 @media (min-width: 550px) and (max-width: 749px) and (orientation: landscape)
   .landing
@@ -297,7 +342,6 @@
     overflow-x: hidden
     transition: all 0.25s linear
     -webkit-overflow-scrolling: touch
-
     &.single
       left: 0
       transition: all 0.25s linear
@@ -311,6 +355,10 @@
       &.single
         left: 30rem
         transition: all 0.25s linear
+    .column-wrap
+      width: 100%
+      &:nth-of-type(2n+1)
+        margin-top: 4em
 
   *:not(#page-content-wrapper):not(.sidebar):not(.navbar):not(.menu-toggle):not(#search-posts):not(.search-submit):not(.search-results):not(.scrollToTop)
     //todo mixin that daisy chains :not
@@ -346,6 +394,10 @@
   .search
     padding: 0
     width: 100%
+
+  .related
+    .related-post
+      width: 100%
 
 @media (min-width: 750px) and (max-width: 1199px)
   #main-nav
@@ -408,6 +460,11 @@
     height: 6rem
     &::before
       font-size: 3rem
+  .related
+    .related-post
+      width: calc(50% - 1em)
+      &:nth-of-type(2n+1)
+        margin-right: 2em
 
 @media (min-width: 550px) and (max-width: 749px)
   .landing

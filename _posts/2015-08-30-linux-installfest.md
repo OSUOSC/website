@@ -2,7 +2,7 @@
 layout: html/default
 title: Linux Installfest
 categories: announcements
-tags: announcements
+tags: announcements, linux, installfest
 meeting: August 30th 2015
 ---
 

@@ -3,7 +3,7 @@ layout: html/default
 title: PulseAudio with Paul Betts
 created: 1159328304
 categories: announcements
-tags: announcements
+tags: announcements, linux, audio, sound
 ---
 Room: 480 Dreese Labs  
 

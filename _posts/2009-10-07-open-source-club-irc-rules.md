@@ -3,7 +3,7 @@ layout: html/default
 title: Open Source Club IRC Rules
 created: 1254957896
 categories: announcements
-tags: announcements
+tags: announcements, irc
 alias: [/irc-rules.html, /rules.html]
 ---
 

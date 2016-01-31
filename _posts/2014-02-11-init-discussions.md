@@ -4,7 +4,7 @@ title: Init Discussions
 created: 1392137194
 alias: /sp14/init-discussions.html
 categories: announcements
-tags: announcements
+tags: announcements, systemd, init system, daemon
 ---
 This Thursday, 2014/02/13 at 7:00pm in Caldwell Labs 120, The Open Source Club will have a discussion on Init Systems.
 

@@ -4,7 +4,7 @@ title: Introduction to Android Development by Harris
 created: 1360013376
 alias: /sp13/introduction-android-development-harris.html
 categories: announcements
-tags: announcements
+tags: announcements, java, android
 ---
 Hello everyone!
 

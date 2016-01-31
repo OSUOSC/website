@@ -4,7 +4,7 @@ title: Introduction to Haskell Part B
 created: 1326905888
 alias: /wi12/haskell2.html
 categories: announcements
-tags: announcements
+tags: announcements, haskell, language
 ---
 *Introduction to Haskell Part B*
 *Dreese 266*

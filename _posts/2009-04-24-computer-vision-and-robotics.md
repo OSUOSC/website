@@ -4,7 +4,7 @@ title: Computer Vision & Robotics
 created: 1240605608
 alias: /robotics.html
 categories: announcements
-tags: announcements
+tags: announcements, robotics, computer vision
 ---
 This Thursday, Robotics guru Scott Preston will show us how to engineer and program mobile robots with web cameras for vision and microcontrollers for communicating with onboard sensors, all from an Ubuntu PC.
 

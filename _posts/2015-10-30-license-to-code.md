@@ -2,7 +2,7 @@
 layout: html/default
 title: License to Code
 categories: announcements
-tags: announcements
+tags: announcements, license, legal
 meeting: November 5th 2015
 ---
 

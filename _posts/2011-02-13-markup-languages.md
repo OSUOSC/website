@@ -3,7 +3,7 @@ layout: html/default
 title: Markup Languages
 created: 1297643465
 categories: announcements
-tags: announcements
+tags: announcements, markup, haml, language, LaTeX, markdown
 ---
 This Thursday, in [Dreese Lab](http://www.osu.edu/map/building.php?building=279) room 264, several of our members will be giving presentations on various markup languages.
 

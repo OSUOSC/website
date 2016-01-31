@@ -4,7 +4,7 @@ title: Resume Review
 created: 1390837344
 alias: /sp14/resume-review.html
 categories: announcements
-tags: announcements
+tags: announcements, resume
 ---
 Hello!
 

@@ -4,7 +4,7 @@ title: Wireless Printing in Linux
 created: 1268958955
 alias: /printing.html
 categories: announcements
-tags: announcements
+tags: announcements, printing
 ---
 If you go to Uniprint's [wireless printing](http://uniprint.osu.edu/printman/osuprintmap/) page, you'll see it is possible to print to most public printers from anywhere on OSU's network, such as osuwireless. However, Uniprint only supports Mac and Windows; Linux users are out of luck and left with the options of either installing a new operating system to print their documents or using a lab computer (if available). Therefore, we in the Open Source Club have decided to publish a tutorial so fellow Linux users can print to their libraries from their laptops or dorm rooms just like Windows/Mac users can.
 
