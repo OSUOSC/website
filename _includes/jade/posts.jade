@@ -94,7 +94,7 @@
         {% endif %}
         
         .related-post
-          a(href='{{ post.url }}')
+          a(href='{{ site.baseurl }}{{ post.url }}')
             h4 {{ post.title }}
           span.date posted: {{ post.date | date: "%m-%d-%Y" }}
         {% endif %}
