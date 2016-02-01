@@ -1,18 +1,15 @@
 {% assign baseurl_size = site.baseurl.size %}
 
-{% if baseurl_size == 0 %}
-// if running the site locally use local fonts
 script(src='{{ site.baseurl }}/vendor/js/jekyll-search.min.js', type='text/javascript')
 
+{% if baseurl_size == 0 %}
+// if running the site locally use local fonts
 link(rel='stylesheet', href='{{ site.baseurl }}/vendor/css/ubuntu.min.css')
 link(rel='stylesheet', href='{{ site.baseurl }}/vendor/css/open-sans.min.css')
 link(rel='stylesheet', href='{{ site.baseurl }}/vendor/css/font-awesome.min.css')
 
 {% else %}
 // if deploying to github pages use cdn
-script(src='{{ site.baseurl }}/vendor/js/jekyll-search.min.js', type='text/javascript')
-
-link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css')
 link(rel='stylesheet', href='https://cdn.rawgit.com/egladman/ubuntu-fontface/master/ubuntu.min.css')
 link(rel='stylesheet', href='https://cdn.rawgit.com/egladman/open-sans/master/css/open-sans.min.css')
 link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css')
