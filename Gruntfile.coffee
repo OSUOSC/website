@@ -283,7 +283,7 @@ module.exports = (grunt) ->
           expand: true
           filter: 'isFile'
           flatten: true
-          cwd: 'bower_components/font-awesome/'
+          cwd: 'bower_components/fontawesome/'
           src: [ '**/*.woff', '**/*.svg','**/*.otf', '**/*.eot', '**/*.woff2', '**/*.ttf' ]
           dest: '_site/vendor/fonts'
         } ]
