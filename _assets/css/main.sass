@@ -841,6 +841,7 @@ input
   padding: 2em 0 6em 0
 
 .posts
+  min-height: calc(100% - 25rem)
   h1
     font-size: 2.5em
     a
@@ -1120,10 +1121,11 @@ ul.contact-info
   width: 100%
 
 .section.posts
-  position: relative
-  font-size: 135%
-  background-color: $white
-  z-index: 2
+  &>.container
+    position: relative
+    font-size: 135%
+    background-color: $white
+    z-index: 2
 
 
 
@@ -1165,14 +1167,24 @@ ul+h1, ul+h2, ul+h3, ul+h4, ul+h5, ul+h6
   table
     width: 100%
 
+
+#page-content-wrapper.index
+  footer
+    height: 4em
+    display: block
+    position: relative
+
 footer
-  position: absolute
-  background: $white
-  padding-bottom: 0
-  text-align: center!important
-  width: 100%
-  height: 4em
-  display: inline-block
+  // position: absolute
+  // background: $white
+  // padding-bottom: 0
+  // bottom: 0
+  // text-align: center!important
+  // width: 100%
+  // height: 4em
+  // display: inline-block
+  // display: block
+  // position: relative
   .with-love
     position: absolute
     bottom: 2em
