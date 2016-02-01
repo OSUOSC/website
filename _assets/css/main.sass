@@ -1145,10 +1145,16 @@ ul.contact-info
   li
     list-style: initial
     list-style-type: square
-  p+ul
+  p+ul, h1+ul, h2+ul, h3+ul, h4+ul, h5+ul, h6+ul
     margin-left: 2em
   p
     text-align: justify
+
+p+ul, h1+ul, h2+ul, h3+ul, h4+ul, h5+ul, h6+ul
+  margin-left: 2em
+
+ul+h1, ul+h2, ul+h3, ul+h4, ul+h5, ul+h6
+  margin-top: 2em
 
 .posts
   li > h5 + table
