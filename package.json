@@ -1,6 +1,6 @@
 {
   "name": "open-source-club-website",
-  "version": "0.2.3",
+  "version": "0.2.6",
   "description": "[![Build Status](https://travis-ci.org/OSUOSC/open-source-club-website.svg?branch=master)](https://travis-ci.org/OSUOSC/open-source-club-website)",
   "main": "_config.yml",
   "scripts": {
