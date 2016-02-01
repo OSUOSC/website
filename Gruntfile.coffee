@@ -11,6 +11,7 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-jade'
   grunt.loadNpmTasks 'grunt-contrib-uglify'
   grunt.loadNpmTasks 'grunt-contrib-cssmin'
+  grunt.loadNpmTasks 'grunt-jsonmin'
   grunt.loadNpmTasks 'grunt-exec'
 
   currentEnvironment =
@@ -208,6 +209,16 @@ module.exports = (grunt) ->
           ext: '.min.css'
         } ]
 
+    jsonmin:
+      build:
+        files: [ {
+          expand: true
+          cwd: '_site/'
+          src: ['**/*.json']
+          dest: '_site/'
+          ext: '.json'
+        } ]
+
     copy:
       image:
         files: [ {
@@ -383,6 +394,7 @@ module.exports = (grunt) ->
     'sass:' + currentEnvironment
     'coffee:' + currentEnvironment
     'uglify:' + currentEnvironment
+    'jsonmin'
     'cssmin:' + currentEnvironment
   ]
   grunt.registerTask 'serve', [
