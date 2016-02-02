@@ -163,33 +163,14 @@ bundle exec rake deploy:ghpages
 ##### Deploying to OSC servers
 
 Only authorized users may deploy to our servers, since it requires access to the
-`build` user on Stallman (one of our servers). To request access, contact the
-club's system administrator with your public SSH key.
+`build` user on web3 (one of our servers). To request access, contact the club's
+system administrator with your public SSH key.
 
 
 ```bash
-bundle exec rake deploy:stallman
+bundle exec rake deploy:web3
 ```
 
 After running the rake task, the site will automatically be built and deployed
 on our servers. If by chance something goes wrong, immediately contact the
 club's system administrator.
-
-###### Debugging
-
-NOTE: You may see the following error message the first time you attempt to
-push:
-
-    Post https://stallman.cse.ohio-state.edu/osc-site-bare.git/info/lfs/objects/batch: dial tcp 164.107.116.179:443: getsockopt: connection refused
-    error: failed to push some refs to 'build@stallman.cse.ohio-state.edu:osc-site-bare'
-
-This is due to a pre-push hook inserted by git-lfs that we aren't implementing.
-Edit `.git/hooks/pre-push` and comment out the following lines:
-
-```bash
-#!/bin/sh
-#command -v git-lfs >/dev/null 2>&1 || { echo >&2 "\nThis repository is configured for Git LFS but 'git-lfs' was not found on your path. If you no longer wish to use Git LFS, remove this hook by deleting .git/hooks/pre-push.\n"; exit 2; }
-#git lfs pre-push "$@"
-```
-
-You should be able to push to the deploy remote now.

@@ -11,18 +11,17 @@ end
 namespace :deploy do
   # Usage:
   # bundle exec rake deploy:ghpages
-  # bundle exec rake deploy:stallman
+  # bundle exec rake deploy:web3
 
   desc 'deploy to OSC servers'
-  task :stallman do
+  task :web3 do
     puts 'Make sure you are up-to-date with origin/master'
-
-    remotes = `git remote -v`
-    unless remotes.include? 'build@stallman'
-      `git remote add deploy build@stallman.cse.ohio-state.edu:osc-site-bare`
+    system 'grunt build --env=production'
+    if $? == 0
+      system 'rsync -rlptv --delete _site/ build@opensource.osu.edu:/var/www/new-site -e "ssh -p 922"'
+    else
+      echo "Something went wrong while building. Check the grunt output and try again"
     end
-
-    `git push deploy master`
   end
 
   desc 'deploy to Github Pages'
