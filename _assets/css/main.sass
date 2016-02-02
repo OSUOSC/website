@@ -1051,24 +1051,24 @@ span.fa-angle-down
     margin-top: 0
     width: 50%
     list-style: none
-    &:nth-last-of-type(odd):last-of-type
-      margin-top: 0
-      width: 100%
+    // &:nth-last-of-type(odd):last-of-type
+    //   margin-top: 0
+    //   width: 100%
 
-.contact-info-email span, .contact-info-office span, .contact-info-meeting span
-  font-size: 1.65em
+.contact-info-email span, .contact-info-office span, .contact-info-meeting span, .contact-info-location span
+  font-size: initial
   line-height: 1.65em
   margin-top: 1.5em
   position: relative
   left: -1rem
 
-.contact-info-email h6, .contact-info-office h6, .contact-info-meeting h6
+.contact-info-email h6, .contact-info-office h6, .contact-info-meeting h6, .contact-info-location h6
   padding-top: 4em
   width: 1rem
   white-space: nowrap
   height: 10rem
 
-.contact-info-email-container, .contact-info-office-container, .contact-info-meeting-container
+.contact-info-email-container, .contact-info-office-container, .contact-info-meeting-container, .contact-info-location-container
   justify-content: flex-start
   align-items: center
   margin-left: 10rem + 2rem
@@ -1077,7 +1077,7 @@ span.fa-angle-down
   vertical-align: bottom
 
 
-.contact-info-email::before, .contact-info-office::before, .contact-info-meeting::before
+.contact-info-email::before, .contact-info-office::before, .contact-info-meeting::before, .contact-info-location::before
   position: absolute
   font-family: 'FontAwesome'
   font-size: 2.75em
@@ -1103,6 +1103,11 @@ span.fa-angle-down
 .contact-info-meeting::before
   content: '\f133'
   background: rgb(52, 73, 94)
+
+.contact-info-location::before
+  content: '\f041'
+  background: #3498DB
+
 
 .contact-info > li .info-wrapper
   background-color: $white

@@ -3,19 +3,26 @@
     ul.contact-info
       li
         .info-wrapper
-          .contact-info-email.flat-orange
+          .contact-info-email
             .contact-info-email-container
               h6 email
               span info@opensource.osu.edu
       li
         .info-wrapper
-          .contact-info-office.flat-green
+          .contact-info-office
             .contact-info-office-container
               h6 office
               span Caldwell Labs, Rm 112F
       li
         .info-wrapper
-          .contact-info-meeting.flat-blue
+          .contact-info-meeting
             .contact-info-meeting-container
               h6 next meeting
-              span {{ site.next_meeting_date }} in Caldwell 120
+              span {{ site.next_meeting_date }}
+      
+      li
+        .info-wrapper
+          .contact-info-location
+            .contact-info-location-container
+              h6 meeting location
+              span Caldwell Labs, Rm 120
