@@ -26,10 +26,8 @@ $ ->
 
   if $('#search-posts').val().length > 0
     isSelected = true
-    $('#search-results').css('display', '')
   else
     isSelected = false
-    $('#search-results').css('display', 'none')
 
   $('#search-results').hover (->
     isSelected = true
@@ -58,7 +56,10 @@ $ ->
     return
 
   $('#search-posts').focusout ->
-    $('#search-results').css('display', 'none')
+    if !isSelected and $('#search-posts').val().length > 0
+      $('#search-results').css('display', 'none')
+    else
+      $('#search-results').css('display', '')
     return
 
   $('#search-posts').focusin ->
