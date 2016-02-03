@@ -15,7 +15,16 @@ namespace :deploy do
 
   desc 'deploy to OSC servers'
   task :web3 do
-    puts 'Make sure you are up-to-date with origin/master'
+    # Check for rsync before building
+    system('which rsync')
+    if ($? != 0)
+      print "The deploy requires rsync, please install it and try again."
+      exit(255)
+    end
+
+    puts 'Make sure you are up-to-date with origin/master!'
+    sleep(3)
+
     system 'grunt build --env=production'
     if $? == 0
       system 'rsync -rlptv --delete _site/ build@opensource.osu.edu:/var/www/new-site -e "ssh -p 922"'
