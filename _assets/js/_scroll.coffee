@@ -1,5 +1,10 @@
 # scroll to top button
-$(document).ready ->
+$ ->
+  revealScrollToTop()
+
+
+
+revealScrollToTop = ->
   $('#page-content-wrapper').scroll ->
     if $('#page-content-wrapper').scrollTop() > 300
       $('.scrollToTop').css 'display', 'initial'
