@@ -36,7 +36,6 @@ revealNavigation = ->
   height = $(window).height()
 
   if width > height and height <= 1000
-    console.log 'foooo'
     $('#page-content-wrapper').scroll ->
       if $('#page-content-wrapper').scrollTop() > $('.landing').height()
         $('.navbar').css 'display', 'none'

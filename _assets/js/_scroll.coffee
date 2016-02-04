@@ -2,8 +2,6 @@
 $ ->
   revealScrollToTop()
 
-
-
 revealScrollToTop = ->
   $('#page-content-wrapper').scroll ->
     if $('#page-content-wrapper').scrollTop() > 300
