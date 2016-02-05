@@ -734,6 +734,7 @@ input
   z-index: 10
   list-style: outside none none
   font-size: 0.75em
+  overflow: hidden
   a
     color: white
     transition: all 0.25s linear
@@ -750,10 +751,9 @@ input
     color: #4E4E4E
     margin-bottom: 0
     margin-left: 1.25em
-    line-height: 2.5em
+    line-height: (5em / 1.5)
     text-align: left
     height: inherit
-    transition: all 0.5s ease
     span
       line-height: inherit
       vertical-align: middle
@@ -761,53 +761,98 @@ input
     font-family: 'FontAwesome'
     font-weight: 400
     margin-right: 0.75em
-    line-height: 2.5em
-    height: 2.5em
+    line-height: (5em / 1.5)
+    height: (5em / 1.5)
   a
     display: block
     width: 100%
-    height: 4em
+    height: 5em
     transition: all 0.35s ease
-    &:not(:last-of-type)
-      margin-bottom: 10px
+    // &:not(:last-of-type)
+      // margin-bottom: 10px
       // margin-bottom: 1.5em
     &:hover
-      background: rgba(200, 200, 200, 0.25)
+      // background: rgba(200, 200, 200, 0.25)
       cursor: pointer
       transition: all 0.15s ease
       text-decoration: none
+      li
+        color: #FFF
     &.active
-      background: rgba(166, 166, 166, 0.25)
+      // background: rgb(244, 244, 244)
       cursor: pointer
-      box-shadow: inset 4px 0 2px 0 rgba(0,0,0,0.25)
-      &:hover
-        background: darken(rgba(166, 166, 166, 0.25), 15%)
-        transition: all 0.35s ease
-      &::before
-        content: ""
+      // box-shadow: inset 4px 0 2px 0 rgba(0,0,0,0.25)
+      &::after
+        content: ''
+        background: rgb(244, 244, 244)
         position: absolute
+        -webkit-transform: translateY(-5em)
+        -moz-transform: translateY(-5em)
+        -o-transform: translateY(-5em)
+        transform: translateY(-5em)
+        z-index: -2
+        width: 100%
+        height: inherit
         left: 0
-        background: #DADADA
-        width: 0.5em
-        height: 4em
-        box-shadow: 1px 0 1px 0 rgba(0,0,0,0.25)
-    &[href="/"] li
+        box-shadow: inset 4px 0px 4px rgb(220, 220, 220)
+
+    &::before
+      content: ""
+      position: absolute
+      left: 0
+      // background: #DADADA
+      width: 0.5em
+      height: inherit
+      box-shadow: 1px 0 1px 0 rgba(0,0,0,0.25)
+      transition: all 0.25s ease
+
+
+
+
+    &:hover
+      // background: darken(rgba(166, 166, 166, 0.25), 15%)
+      transition: all 0.25s ease
       &::before
+        width: 100%
+        box-shadow: none
+        z-index: -1
+
+
+
+    &[href="/"]
+      &::before
+        background: rgb(52,152,219)
+      li::before
         content: ""
-    &[href="/meetings"] li
+
+    &[href="/meetings"]
       &::before
+        background: rgb(225,111,94)
+      li::before
         content: '\f0c0'
-    &[href="/tutorials"] li
+
+    &[href="/tutorials"]
       &::before
+        background: rgb(255,214,104)
+      li::before
         content: '\f02d'
-    &[href="/volunteering"] li
+
+    &[href="/volunteering"]
       &::before
+        background: rgb(47,184,105)
+      li::before
         content: '\f1ae'
-    &[href="/events"] li
+
+    &[href="/events"]
       &::before
+        background: rgb(252,166,92)
+      li::before
         content: '\f133'
-    &[href="/history"] li
+
+    &[href="/history"]
       &::before
+        background: rgb(197,136,223)
+      li::before
         content: '\f187'
 
 #heading
@@ -857,7 +902,8 @@ input
 #main-nav
   // fixme
   // yeah yeah "magic numbers" are bad . . . .
-  padding-top: 7.15em
+  // box-shadow: 0px 0px 1em rgb(195, 195, 195)
+  margin-top: 7.15em
 .pagination
   display: block
   font-size: 175%
@@ -1074,11 +1120,11 @@ span.fa-angle-down
 
 .contact-info-email::before
   content: '\f0e0'
-  background: rgb(230, 126, 34)
+  background: rgb(252,166,92)
 
 .contact-info-office::before
   content: '\f1ad'
-  background: rgb(47, 184, 105)
+  background: rgb(47,184,105)
 
 .contact-info-meeting::before
   content: '\f133'
