@@ -228,8 +228,6 @@
     transition: all 0.25s linear
     z-index: 9
     left: 0
-    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25)
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25)
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25)
   .search
     top: 0
@@ -246,8 +244,6 @@
     width: 25em
     border: none
     transition: all 0.25s linear
-    -moz-box-shadow: 0 0 10px 0 rgba(0,0,0,0.35)
-    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.35)
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.35)
   .search-submit
     cursor: pointer
@@ -265,8 +261,6 @@
       line-height: 6rem
       font-size: 3rem
       right: 0
-      -webkit-box-shadow: -2px 0 2px 0 rgba(0, 0, 0, 0.35)
-      -moz-box-shadow: -2px 0 2px 0 rgba(0, 0, 0, 0.35)
       box-shadow: -2px 0 2px 0 rgba(0, 0, 0, 0.35)
   #search-results
     right: 6rem
@@ -282,6 +276,7 @@
     transition: all 0.25s linear
     top: 0
     left: 0
+    box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.35)
     &::before
       content: '\f0c9'
       position: absolute
@@ -295,9 +290,6 @@
       width: inherit
       height: inherit
       vertical-align: middle
-      -webkit-box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.35)
-      -moz-box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.35)
-      box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.35)
     &.active::before
       content: '\f00d'
       background: #848484
@@ -507,11 +499,9 @@
   .menu-toggle
     &.active
       background: #848484
-      box-shadow: inset 0 -.1em 0.2em 0 rgba(0,0,0,0.15)
       margin: 0
       width: 100%
-      -webkit-box-shadow: inset 0 -.1em 0.2em 0 rgba(0,0,0,0.15)
-      -moz-box-shadow: inset 0 -.1em 0.2em 0 rgba(0,0,0,0.15)
+      box-shadow: inset 0 -.1em 0.2em 0 rgba(0,0,0,0.15)
   #page-content-wrapper
     right: initial
     width: 100%
@@ -597,7 +587,6 @@
       li
         display: inline-block
         font-size: 4.5em
-        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.45)
         cursor: pointer
         padding: 0
         margin: 0
@@ -609,8 +598,7 @@
         transition: all 0s
         z-index: 7
         z-index: 17
-        -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.45)
-        -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.45)
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.45)
         list-style: none
         &:not(:last-of-type)
           margin: 0 0.4em 0 0

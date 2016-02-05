@@ -35,15 +35,25 @@ revealNavigation = ->
   width = $(window).width()
   height = $(window).height()
 
-  if width > height and height <= 1000
-    $('#page-content-wrapper').scroll ->
-      if $('#page-content-wrapper').scrollTop() > $('.landing').height()
-        $('.navbar').css 'display', 'none'
-        $('#page-content-wrapper').css('margin-top', '0')
-      else
-        $('.navbar').css 'display', ''
-        $('#page-content-wrapper').css('margin-top', '')
-      return
+  $('#page-content-wrapper').scroll ->
+    if $('#page-content-wrapper').scrollTop() > $('.landing').height() and width > height and height <= 1000
+      $('.navbar').css 'display', 'none'
+      $('#page-content-wrapper').css({'margin-top' : '0', 'height' : '100%'})
+      $('.menu-toggle').css({
+        'margin': '1rem 0 0 1rem',
+        'background' : 'rgba(75,75,75,.35)',
+        'box-shadow': '0 1px 1px 0 rgba(0,0,0,.45)'
+      })
+
+    else
+      $('.navbar').css 'display', ''
+      $('#page-content-wrapper').css({'margin-top' : '', 'height' : ''})
+      $('.menu-toggle').css({
+        'margin' : '',
+        'background' : '',
+        'box-shadow': ''
+      })
+    return
   return
 
 
