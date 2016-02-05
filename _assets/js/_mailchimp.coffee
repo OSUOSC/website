@@ -22,7 +22,7 @@ $(document).ready ->
     $(this).each (i, elem) ->
       form = $(elem)
       email = form.find('input[type=email]')
-      label = form.find('.info')
+      label = $('.subscribe').find('.info')
       settings = $.extend({
         'url': form.attr('action')
         'language': 'en'

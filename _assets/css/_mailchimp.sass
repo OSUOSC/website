@@ -6,11 +6,12 @@
   width: 100%
   -webkit-box-shadow: 0 -1px 1px 0 rgba(0,0,0,0.15)
   -moz-box-shadow: 0 -1px 1px 0 rgba(0,0,0,0.15)
-  .info
-    position: absolute
-    left: 0
+  .info:not(:empty)
+    position: relative
     font-size: 1.5em
-    margin-top: 2em
+    // padding-top: 1.5em
+    padding-top: 3em
+    padding-bottom: 1em
     line-height: normal
     text-align: center
     width: 100%
