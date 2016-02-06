@@ -6,18 +6,19 @@
   width: 100%
   -webkit-box-shadow: 0 -1px 1px 0 rgba(0,0,0,0.15)
   -moz-box-shadow: 0 -1px 1px 0 rgba(0,0,0,0.15)
-  .info
-    position: absolute
-    left: 0
+  .info:not(:empty)
+    position: relative
     font-size: 1.5em
-    margin-top: 2em
+    // padding-top: 1.5em
+    padding-top: 3em
+    padding-bottom: 1em
     line-height: normal
     text-align: center
     width: 100%
     &.error
       color: #bb0000
     &.valid
-      color: #2FB869
+      color: rgb(47,184,105)
   input[type="radio"]
     display: none
   label
@@ -55,7 +56,7 @@
     width: 2em
     height: 2em
   input[type="radio"]:checked + label.circle span.small
-    background-color: #2FB869
+    background-color: rgb(47,184,105)
 
   .email-format
     line-height: 2em
@@ -151,7 +152,7 @@ input#mc-embedded-subscribe
   font-family: $bodyfont
   font-size: inherit
   font-weight: 600
-  background: #2FB869
+  background: rgb(47,184,105)
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.15)
   color: $white
   margin-bottom: 0
