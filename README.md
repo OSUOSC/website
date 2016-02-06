@@ -39,7 +39,7 @@ cd open-source-club-website
 
 ```bash
 # if this is your first time, execute the following script
-bash init.sh
+./init.sh
 ```
 ---
 
@@ -59,7 +59,7 @@ grunt build
 
 ```bash
 # generate a new post from template
-grunt new
+./_helpers/new-post.sh
 ```
 ---
 
