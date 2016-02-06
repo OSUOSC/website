@@ -157,7 +157,7 @@
 
 @media (min-width: 2000px) and (orientation: landscape)
   .landing
-    height: 70em
+    height: 65em
     #heading
       font-size: 125%
 
@@ -386,7 +386,7 @@
   #main-nav
     margin-top: 6rem
   .landing
-    height: 50em
+    height: 42.5em
   .mc-field-group
     &:not(:first-of-type)
       margin-right: 8em
@@ -398,11 +398,12 @@
   .sidebar
     left: 0
   #heading
-    font-size: 115%
-  .sidebar.active
-    z-index: 10
-    &+.navbar
-      width: inherit
+    font-size: 100%
+  .sidebar
+    &.active
+      z-index: 10
+      &+.navbar
+        width: inherit
   .menu-toggle
     left: 100%
     transition: all 0.25s linear
@@ -603,3 +604,29 @@
           background: rgb(197,136,223)
         a
           text-decoration: none
+
+@media (min-width: 350px) and (max-width: 1999px)
+  .sidebar
+    width: ($sidebarWidth - 5rem)
+    &.active
+      width: ($sidebarWidth - 5rem)
+
+      &+.navbar
+        left: ($sidebarWidth - 5rem)
+  #page-content-wrapper
+    &.single, &.active
+      left: ($sidebarWidth - 5rem)
+
+@media (min-width: 350px) and (max-width: 1199px)
+  .sidebar
+    &.active
+      left: ($sidebarWidth - 5rem)
+
+@media (min-width: 1200px) and (max-width: 1999px)
+  #page-content-wrapper
+    width: calc(100% - 25rem)
+    &.index
+      left: ($sidebarWidth - 5rem)
+  .navbar
+    left: ($sidebarWidth - 5rem)
+    width: calc(100% - 25rem)
