@@ -3,7 +3,7 @@
 [
   {% for post in site.posts %}
     {
-      "title"    : "{{ post.title | escape }}",
+      "title"    : {{ post.title | jsonify }},
       "category" : "{{ post.category }}",
       "tags"     : "{{ post.tags | join: ', ' }}",
       "url"      : "{% if post.categories contains 'volunteering' or post.categories contains 'events' %}{{ site.baseurl }}/{{ post.categories | first }}{% else %}{{ site.baseurl }}{{ post.url }}{% endif %}",
