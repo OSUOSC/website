@@ -1,0 +1,15 @@
+.pagination-minimal
+  
+  {% if paginator.previous_page %}
+  a.pagination-text-minimal(href='{{ site.baseurl }}{{ paginator.previous_page_path }}') previous
+  
+  {% else %}
+  a.pagination-text-minimal.disabled(href='{{ site.baseurl }}{{ paginator.previous_page_path }}') previous
+  {% endif %}
+
+  {% if paginator.next_page %}  
+  a.pagination-text-minimal(href='{{ site.baseurl }}{{ paginator.next_page_path }}') next
+    
+  {% else %}    
+  a.pagination-text-minimal.disabled(href='{{ site.baseurl }}{{ paginator.next_page_path }}') next
+  {% endif %}

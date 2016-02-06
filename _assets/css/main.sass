@@ -509,6 +509,22 @@ a
   &:hover
     color: $textColor
 
+
+
+.pagination-text-minimal
+  font-size: 0.5em
+  color: $gray
+  font-weight: 400
+  font-weight: 300
+  vertical-align: middle
+  display: inline-block
+  &:first-of-type
+    float: left
+  &:last-of-type
+    float: right
+  &:hover
+    color: $textColor
+
 .about
   a
     color: white!important
@@ -533,21 +549,32 @@ hr
   width: 25%
 
 .category-title
-  a
+  h5, a
+    font-weight: 300
+    color: $textColor!important
+    text-decoration: none
+    display: inline-block
+    text-transform: capitalize
     &:hover, &:visited, &:focus
       text-decoration: none
       color: $textColor
-    h5
-      color: initial
-      display: inline
-      text-transform: capitalize
 
-  a:not(:last-of-type)
-    h5::after
-      content: "\f105"
-      font-family: FontAwesome
-      margin: 0 0.5em
-      color: $textColor
+
+  h5
+    &:not(:last-of-type):not(.before-of)
+      &::after
+        content: '\f105'
+        font-family: FontAwesome
+        margin: 0 0.5em
+        color: $textColor
+
+    &.before-of
+      &::after
+        content: '\00a0'
+
+    // .of
+    //   &::before
+    //     content: '\00a0'
 
 
 
@@ -662,6 +689,8 @@ $deviation: 2em
     z-index: 3
 
 
+.clear-case
+  text-transform: none!important
 
 .spork
   @include foo(ne)
@@ -912,7 +941,6 @@ input
     background-color: rgba(75,75,75,0.35)
     color: $white
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.45)
-
   .page_number
     font-family: $bodyfont
     margin: 0 0.75em
@@ -921,6 +949,20 @@ input
     height: 3em
     vertical-align: middle
     line-height: 3em
+    a
+      color: $textColor
+      font-weight: 300
+
+.pagination-minimal
+  display: inline-block
+  font-size: 175%
+  text-align: center
+  margin-top: 0.5em
+  width: 100%
+
+.pagination-minimal + h2
+  margin-top: 1.5em
+
 
 .menu-toggle + .posts
   padding: 8em 0 0 0 !important

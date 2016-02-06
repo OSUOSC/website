@@ -93,10 +93,7 @@
     margin: 0 auto
     max-width: $maxContentWidth
   .landing
-    height: 75em
-    // height: 50%
-    #heading-wrapper
-      // top: 25%
+    height: 50em
     #scroll-indicator
       bottom: 50%
   #page-content-wrapper
@@ -115,12 +112,6 @@
       left: $sidebarWidth
     >*
       transition: 0s
-    .column-wrap
-      &:nth-of-type(2n)
-        // width: 960px
-      &:nth-of-type(2n+1)
-        // width: calc(100% - 960px)
-        // min-width: 1400px - 960px
   .layout-desktop
     display: inherit
 
@@ -132,9 +123,6 @@
       left: 30rem
     > .section.posts:only-child > .container
       width: 50%
-  // .related
-  //   .related-post
-  //     width: 50%
 
 
 @media (min-width: 1200px) and (max-width: 1749px)
@@ -171,6 +159,12 @@
         width: 100%
 
 
+@media (min-width: 2000px) and (orientation: landscape)
+  .landing
+    height: 70em
+    #heading
+      font-size: 125%
+
 
 @media (min-width: 550px) and (max-width: 749px) and (orientation: landscape)
   .landing
@@ -184,11 +178,11 @@
     ul li:not(:last-of-type)
       margin-right: 3em
 
-@media (min-width: 1200px) and (orientation: landscape)
+@media (min-width: 1200px) and (max-width: 1999px) and (orientation: landscape)
   .landing
-    height: 70em
+    height: 40em
     #heading
-      font-size: 125%
+      font-size: 85%
 
 @media (max-width: 1199px) and (min-width: 550px)
   .landing
@@ -406,7 +400,7 @@
       margin-right: 0
       width: 100%
   .subscribe-wrapper
-    padding-top: 3em
+    padding-top: 6em
   .sidebar
     left: 0
   #heading
@@ -558,7 +552,8 @@
     ul
       display: table!important
   .subscribe-wrapper
-    height: 35em
+    padding-top: 8em
+    height: 40em
   input#mc-embedded-subscribe
     vertical-align: middle
   h5

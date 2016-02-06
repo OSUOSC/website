@@ -11,7 +11,8 @@
     i.fa.fa-caret-left.disabled
   {% endif %}
   
-  span.page_number  {{ paginator.page }} of {{ paginator.total_pages }}
+  span.page_number  {{ paginator.page }} of 
+    a(href='{{ site.baseurl }}/page{{ paginator.total_pages }}') {{ paginator.total_pages }}
 
   {% if paginator.next_page %}
   a.next(href='{{ site.baseurl }}{{ paginator.next_page_path }}')

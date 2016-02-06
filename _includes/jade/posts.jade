@@ -1,20 +1,19 @@
 .section.posts
   .container
-    
-    
+        
     {% if page.is_post %}
     .category-title
     
       {% if post.categories contains 'announcements' %}
-      a(href='{{ site.baseurl }}/')
-        h5 {{ page.tags }}
+      h5
+        a(href='{{ site.baseurl }}/') {{ page.tags }}
       {% else %}
-      a(href="{{ site.baseurl }}/{{ page.tags | first | remove: ',' }}")
-        h5 {{ page.tags | first | remove: ',' }}
+      h5
+        a(href="{{ site.baseurl }}/{{ page.tags | first | remove: ',' }}") {{ page.tags | first | remove: ',' }}
       {% endif %}
     
-      a(href='{{ site.baseurl }}{{ post.url }}')
-        h5 {{ page.title }}
+      h5
+        a(href='{{ site.baseurl }}{{ post.url }}') {{ page.title }}
     {% endif %}
     
     
@@ -22,17 +21,22 @@
     .category-title
       
       {% if post.categories contains 'announcements' %}
-      a(href='{{ site.baseurl }}/')
-        h5 {{ page.category }}
+      h5
+        a(href='{{ site.baseurl }}/') {{ page.category }}
       {% else %}
-      a(href='{{ site.baseurl }}/{{ page.category }}')
-        h5 {{ page.category }}
+      h5
+        a(href='{{ site.baseurl }}/{{ page.category }}') {{ page.category }}
       {% endif %}
-      a
-        h5 page {{ paginator.page }}
+      h5.clear-case.before-of Page {{ paginator.page }} of 
+      
+      h5.of
+        a(href='{{ site.baseurl }}/page{{ paginator.total_pages }}') {{ paginator.total_pages }}        
     {% endif %}
-
-
+    
+    {% unless page.is_post or paginator.page == 1 %}
+    | {% include html/pagination-minimal.html %}
+    {% endunless %}
+    
     {% for post in paginator.posts %}
     {% if post.categories contains 'volunteering' or post.categories contains 'events' %}
     h2
