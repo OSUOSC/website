@@ -1,0 +1,64 @@
+.section.posts
+  .container
+
+    {% if page.category %}
+    .category-title
+
+      {% if post.categories contains 'announcements' %}
+      h5
+        a(href='{{ site.baseurl }}/') {{ page.category }}
+      {% else %}
+      h5
+        a(href='{{ site.baseurl }}/{{ page.category }}') {{ page.category }}
+      {% endif %}
+      h5.clear-case.before-of Page 1 of 
+      
+      {% capture total_pages %}{{ site.posts | size | divided_by: site.paginate | plus: 1 }}{% endcapture %}
+        
+      h5.of
+        a(href='{{ site.baseurl }}/page{{ total_pages }}') {{ total_pages }}
+    {% endif %}
+
+
+    .pagination-minimal
+      a.pagination-text-minimal.disabled(href='{{ site.baseurl }}/latest') previous
+      a.pagination-text-minimal(href='{{ site.baseurl }}/page2') next
+
+    
+    {% for post in site.posts limit: site.paginate %}
+    
+    {% if post.categories contains 'volunteering' or post.categories contains 'events' %}
+    h2
+      a(href='{{ site.baseurl }}/{{ post.categories | first }}') {{ post.title }}
+    {% else %}
+    h2
+      a(href='{{ site.baseurl }}{{ post.url }}') {{ post.title }}
+    {% endif %}
+
+    span.date posted: {{ post.date | date: "%m-%d-%Y" }}
+
+    {% unless post.categories contains 'volunteering' or post.categories contains 'events' or post.categories contains 'meetings' or post.categories contains 'history' or post.categories contains 'tutorials' %}
+
+    | {{ post.content }}
+
+    {% endunless %}
+
+    .tags {{ post.tags | join: ' ' }}
+    
+    {% endfor %}
+
+    .pagination
+      
+      a.pagination-text.disabled(href='{{ site.baseurl }}/latest') previous
+      a.previous
+        i.fa.fa-caret-left.disabled
+      
+      span.page_number 1 of 
+        a(href='{{ site.baseurl }}/page{{ total_pages }}') {{ total_pages }}
+      
+      a.next(href='{{ site.baseurl }}/page2')
+        i.fa.fa-caret-right      
+      a.pagination-text(href='{{ site.baseurl }}/page2') next
+        
+      
+      
