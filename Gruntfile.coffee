@@ -1,5 +1,7 @@
 'use strict'
 
+mozjpeg = require('imagemin-mozjpeg')
+
 module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-connect'
   grunt.loadNpmTasks 'grunt-contrib-copy'
@@ -320,8 +322,8 @@ module.exports = (grunt) ->
       aliasFeed:
         cmd: 'cp _site/atom.xml _site/rss.xml'
 
-      new_post:
-        cmd: './_helpers/new-post.sh'
+      # new_post:
+      #   cmd: './_helpers/new-post.sh'
 
       status:
         cmd: "clear && echo the site is now accessible at http://localhost:<%= connect.server.options.port %>"
@@ -404,7 +406,7 @@ module.exports = (grunt) ->
     'watch'
   ]
   grunt.registerTask 'test', [ 'csslint', 'htmllint' ]
-  grunt.registerTask 'new', [ 'exec:new_post' ]
+  # grunt.registerTask 'new', [ 'exec:new_post' ]
   grunt.registerTask 'default', [ 'serve' ]
 
   grunt.registerTask 'set_environment', ->
