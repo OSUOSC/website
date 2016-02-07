@@ -1,7 +1,5 @@
 'use strict'
 
-mozjpeg = require('imagemin-mozjpeg')
-
 module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-connect'
   grunt.loadNpmTasks 'grunt-contrib-copy'
