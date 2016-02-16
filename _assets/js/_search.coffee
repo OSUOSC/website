@@ -58,12 +58,10 @@ $ ->
   $('#search-posts').focusout ->
     if !isSelected and $('#search-posts').val().length > 0
       $('#search-results').css('display', 'none')
-    else
-      $('#search-results').css('display', '')
     return
 
   $('#search-posts').focusin ->
-    if $('#search-results').css('display') == 'none'
+    if $('#search-results').css('display') == 'none' and $('#search-posts').val().length > 0
       $('#search-results').css('display', '')
     return
 
