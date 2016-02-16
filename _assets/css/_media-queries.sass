@@ -60,7 +60,7 @@
       width: 100%
 
 .section
-  padding: 10rem 0 15rem
+  padding: 10rem 0
 
 @media (min-width: 750px)
   .landing-heading
@@ -144,7 +144,8 @@
       &:nth-of-type(2n)
         width: calc(960px - (3em * 2))
       &:nth-of-type(2n+1)
-        position: fixed
+        // position: fixed
+        position: relative
         width: calc(100% - 960px - 10em)
         min-width: calc(1400px - 960px - 10em)
         max-width: 1em
@@ -610,22 +611,20 @@
     width: ($sidebarWidth - 5rem)
     &.active
       width: ($sidebarWidth - 5rem)
+      left: ($sidebarWidth - 5rem)
 
       &+.navbar
         left: ($sidebarWidth - 5rem)
   #page-content-wrapper
-    &.single, &.active
-      left: ($sidebarWidth - 5rem)
-
-@media (min-width: 350px) and (max-width: 1199px)
-  .sidebar
     &.active
       left: ($sidebarWidth - 5rem)
+      &.single
+        left: ($sidebarWidth - 5rem)
 
 @media (min-width: 1200px) and (max-width: 1999px)
   #page-content-wrapper
     width: calc(100% - 25rem)
-    &.index
+    &.index, &.single
       left: ($sidebarWidth - 5rem)
   .navbar
     left: ($sidebarWidth - 5rem)
