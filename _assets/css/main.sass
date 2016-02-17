@@ -770,8 +770,11 @@ input
       cursor: pointer
       transition: all 0.15s ease
       text-decoration: none
-      li
-        color: #FFF
+      &:not(.active)
+        background: rgb(245, 245, 245)
+      &.active
+        li
+          color: #FFF
     &.active
       cursor: pointer
       &::after
@@ -788,59 +791,55 @@ input
         left: 0
         box-shadow: inset 4px 0px 4px rgb(220, 220, 220)
 
-    &::before
-      content: ""
-      position: absolute
-      left: 0
-      width: 0.5em
-      height: inherit
-      box-shadow: 1px 0 1px 0 rgba(0,0,0,0.25)
-      transition: all 0.25s ease
-
-
-
-
-    &:hover
-      transition: all 0.25s ease
       &::before
-        width: 100%
-        box-shadow: none
-        z-index: -1
-        box-shadow: 0 0 0.5em rgba(0,0,0,0.25)
+        content: ""
+        position: absolute
+        left: 0
+        width: 0.5em
+        height: inherit
+        box-shadow: 1px 0 1px 0 rgba(0,0,0,0.25)
+        transition: all 0.25s ease
+      &:hover
+        transition: all 0.25s ease
+        &::before
+          width: 100%
+          box-shadow: none
+          z-index: -1
+          box-shadow: 0 0 0.15em rgba(0,0,0,0.25)
 
 
 
-    &[href$="/"]
+    &.active[href$="/"]
       &::before
         background: rgb(52,152,219)
       li::before
         content: ""
 
-    &[href$="/meetings"]
+    &.active[href$="/meetings"]
       &::before
         background: rgb(225,111,94)
       li::before
         content: '\f0c0'
 
-    &[href$="/tutorials"]
+    &.active[href$="/tutorials"]
       &::before
         background: rgb(255,214,104)
       li::before
         content: '\f02d'
 
-    &[href$="/volunteering"]
+    &.active[href$="/volunteering"]
       &::before
         background: rgb(47,184,105)
       li::before
         content: '\f1ae'
 
-    &[href$="/events"]
+    &.active[href$="/events"]
       &::before
         background: rgb(252,166,92)
       li::before
         content: '\f133'
 
-    &[href$="/history"]
+    &.active[href$="/history"]
       &::before
         background: rgb(197,136,223)
       li::before
