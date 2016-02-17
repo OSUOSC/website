@@ -2,7 +2,7 @@
 layout: html/default
 title: Intermediate Vim
 categories: announcements
-tags: announcements, vim
+tags: announcements, vim, text editor
 meeting_date: 2016-02-18
 ---
 
