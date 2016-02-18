@@ -9,6 +9,8 @@
 
 [staging site](https://osuosc.github.io/open-source-club-website/)
 
+--
+
 This is our repository for our club's [website](https://opensource.osu.edu). It's built with [Jekyll](https://github.com/jekyll/jekyll), [Jade](https://github.com/jadejs/jade), [Sass](https://github.com/sass/sass), [Coffeescript](https://github.com/jashkenas/coffeescript), and [Grunt](https://github.com/gruntjs/grunt).
 
 
