@@ -1,8 +1,8 @@
 ---
 layout: html/default
 title:  Autumn 2015 Semester Schedule
-categories: meetings
-tags: meetings, schedule
+categories: schedules
+tags: schedules
 alias: /meetings/2015/08/21/semester-scehdule/
 ---
 
