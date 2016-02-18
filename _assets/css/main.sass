@@ -771,7 +771,7 @@ input
       transition: all 0.15s ease
       text-decoration: none
       &:not(.active)
-        background: rgb(245, 245, 245)
+        background: rgb(252, 252, 252)
       &.active
         li
           color: #FFF
@@ -809,39 +809,45 @@ input
 
 
 
-    &.active[href$="/"]
-      &::before
-        background: rgb(52,152,219)
+    &[href$="/"]
+      &.active
+        &::before
+          background: rgb(52,152,219)
       li::before
-        content: ""
+        content: "\f015"
 
-    &.active[href$="/schedules"]
-      &::before
-        background: rgb(225,111,94)
-      li::before
-        content: '\f0c0'
-
-    &.active[href$="/tutorials"]
-      &::before
-        background: rgb(255,214,104)
-      li::before
-        content: '\f02d'
-
-    &.active[href$="/volunteering"]
-      &::before
-        background: rgb(47,184,105)
-      li::before
-        content: '\f1ae'
-
-    &.active[href$="/events"]
-      &::before
-        background: rgb(252,166,92)
+    &[href$="/schedules"]
+      &.active
+        &::before
+          background: rgb(225,111,94)
       li::before
         content: '\f133'
 
-    &.active[href$="/history"]
-      &::before
-        background: rgb(197,136,223)
+    &[href$="/tutorials"]
+      &.active
+        &::before
+          background: rgb(255,214,104)
+      li::before
+        content: '\f02d'
+
+    &[href$="/volunteering"]
+      &.active
+        &::before
+          background: rgb(47,184,105)
+      li::before
+        content: '\f1ae'
+
+    &[href$="/events"]
+      &.active
+        &::before
+          background: rgb(252,166,92)
+      li::before
+        content: '\f0c0'
+
+    &[href$="/history"]
+      &.active
+        &::before
+          background: rgb(197,136,223)
       li::before
         content: '\f187'
 
