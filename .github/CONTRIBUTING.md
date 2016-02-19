@@ -79,6 +79,8 @@ Example
     ./_helpers/new-post.sh
   ```
   
+  **Posts that do not follow this template will be rejected**
+  
   Meeting announcements **must** contain the following information:
     - meeting time
     - building and room number
