@@ -134,4 +134,42 @@ Some things that will increase the chance that your pull request is accepted:
 
 --
 
+### Formatting
+
+* Break long lines after 80 characters.
+* Delete trailing whitespace.
+* Don't include spaces after `(`, `[` or before `]`, `)`.
+* Don't misspell.
+* Don't vertically align tokens on consecutive lines.
+* If you break up a hash, keep the elements on their own lines and closing curly
+  brace on its own line.
+* Indent continued lines two spaces.
+* Indent private methods equal to public methods.
+* If you break up a chain of method invocations, keep each method invocation on
+  its own line. Place the `.` at the end of each line, except the last.
+  [Example][dot guideline example].
+* Use 2 spaaaaaace indentation (no tabs).
+* Use an empty line between methods.
+* Use empty lines around multi-line blocks.
+* Use spaces around operators, except for unary operators, such as `!`.
+* Use spaces after commas, after colons and semicolons, around `{` and before
+  `}`.
+
+
+### Naming
+
+* Avoid abbreviations.
+* Avoid object types in names (`user_array`, `email_method` `CalculatorClass`, `ReportModule`).
+* Prefer naming classes after domain concepts rather than patterns they
+  implement (e.g. `Guest` vs `NullUser`, `CachedRequest` vs `RequestDecorator`).
+* Name the enumeration parameter the singular of the collection.
+* Name variables created by a factory after the factory (`user_factory`
+  creates `user`).
+* Name variables, methods, and classes to reveal intent.
+* Treat acronyms as words in names (`XmlHttpRequest` not `XMLHTTPRequest`),
+  even if the acronym is the entire name (`class Html` not `class HTML`).
+* Suffix variables holding a factory with `_factory` (`user_factory`).
+
+--
+
 Additionally, you can [create issues](https://github.com/osuosc/open-source-club-website/issues) on this repo to suggest changes or improvements.
