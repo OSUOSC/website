@@ -17,7 +17,6 @@ $gray: #848484
   padding: 0 20px
   margin: 0 auto
   width: 100%
-  // max-width: 1400px
 
 .column, .columns
   box-sizing: border-box
@@ -28,13 +27,10 @@ $gray: #848484
 @media (min-width: 400px)
   .container
     padding: 0
-    // width: 85%
     padding: 0 3em
 
 /* For devices larger than 550px
 @media (min-width: 550px)
-  .container
-    // width: 80%
   .column, .columns
     margin-left: 4%
   .column:first-child, .columns:first-child
@@ -196,10 +192,6 @@ h6
 p
   margin-top: 0
 
-//
-// em:not(p>em)
-//   font-style: initial
-//
 .alert
   text-align: center
 
@@ -310,14 +302,6 @@ textarea, select
   box-shadow: none
   box-sizing: border-box
 
-/* Removes awkward default styles on some inputs for iOS
-
-// input
-//   &[type="email"], &[type="number"], &[type="search"], &[type="text"], &[type="tel"], &[type="url"], &[type="password"]
-//     -webkit-appearance: none
-//     -moz-appearance: none
-//     appearance: none
-
 textarea
   padding-top: 6px
   padding-bottom: 6px
@@ -325,11 +309,6 @@ textarea
   -webkit-appearance: none
   -moz-appearance: none
   appearance: none
-
-// input
-//   &[type="email"]:focus, &[type="number"]:focus, &[type="search"]:focus, &[type="text"]:focus, &[type="tel"]:focus, &[type="url"]:focus, &[type="password"]:focus
-//     border: 1px solid #33C3F0
-//     outline: 0
 
 textarea:focus, select:focus
   border: 1px solid #33C3F0
@@ -473,10 +452,8 @@ body
 a
   &:not(.sidebar)
     font-weight: 600
-    // color: inherit
     text-decoration: none
   &:hover
-    // color: $textColorHover
     text-decoration: underline
 
 
@@ -495,9 +472,7 @@ a
   color: $gray
   font-weight: 400
   width: 8ch
-  // position: absolute
   height: 3em
-  // bottom: 0
   line-height: 3em
   font-weight: 300
   vertical-align: middle
@@ -508,8 +483,6 @@ a
     text-align: left
   &:hover
     color: $textColor
-
-
 
 .pagination-text-minimal
   font-size: 0.5em
@@ -571,10 +544,6 @@ hr
     &.before-of
       &::after
         content: '\00a0'
-
-    // .of
-    //   &::before
-    //     content: '\00a0'
 
 
 
@@ -801,8 +770,12 @@ input
       cursor: pointer
       transition: all 0.15s ease
       text-decoration: none
-      li
-        color: #FFF
+      &:not(.active)
+        background: rgb(248, 248, 248)
+      &.active
+        li
+          transition: all 0.25s ease
+          color: #FFF
     &.active
       cursor: pointer
       &::after
@@ -819,61 +792,63 @@ input
         left: 0
         box-shadow: inset 4px 0px 4px rgb(220, 220, 220)
 
-    &::before
-      content: ""
-      position: absolute
-      left: 0
-      width: 0.5em
-      height: inherit
-      box-shadow: 1px 0 1px 0 rgba(0,0,0,0.25)
-      transition: all 0.25s ease
-
-
-
-
-    &:hover
-      transition: all 0.25s ease
       &::before
-        width: 100%
-        box-shadow: none
-        z-index: -1
-        box-shadow: 0 0 0.5em rgba(0,0,0,0.25)
+        content: ""
+        position: absolute
+        left: 0
+        width: 0.5em
+        height: inherit
+        box-shadow: 1px 0 1px 0 rgba(0,0,0,0.25)
+        transition: all 0.25s ease
+      &:hover
+        transition: all 0.25s ease
+        &::before
+          width: 100%
+          box-shadow: none
+          z-index: -1
+          box-shadow: 0 0 0.15em rgba(0,0,0,0.25)
 
 
 
     &[href$="/"]
-      &::before
-        background: rgb(52,152,219)
+      &.active
+        &::before
+          background: rgb(52,152,219)
       li::before
-        content: ""
+        content: "\f015"
 
-    &[href$="/meetings"]
-      &::before
-        background: rgb(225,111,94)
+    &[href$="/schedules"]
+      &.active
+        &::before
+          background: rgb(225,111,94)
       li::before
-        content: '\f0c0'
+        content: '\f133'
 
     &[href$="/tutorials"]
-      &::before
-        background: rgb(255,214,104)
+      &.active
+        &::before
+          background: rgb(255,214,104)
       li::before
         content: '\f02d'
 
     &[href$="/volunteering"]
-      &::before
-        background: rgb(47,184,105)
+      &.active
+        &::before
+          background: rgb(47,184,105)
       li::before
         content: '\f1ae'
 
     &[href$="/events"]
-      &::before
-        background: rgb(252,166,92)
+      &.active
+        &::before
+          background: rgb(252,166,92)
       li::before
-        content: '\f133'
+        content: '\f0c0'
 
     &[href$="/history"]
-      &::before
-        background: rgb(197,136,223)
+      &.active
+        &::before
+          background: rgb(197,136,223)
       li::before
         content: '\f187'
 
@@ -924,7 +899,6 @@ input
 #main-nav
   // fixme
   // yeah yeah "magic numbers" are bad . . . .
-  // box-shadow: 0px 0px 1em rgb(195, 195, 195)
   margin-top: 7.15em
 .pagination
   display: block
@@ -1105,7 +1079,7 @@ span.fa-angle-down
 
 .contact
   background: linear-gradient(to top, rgb(218,218,218) 0%, rgba(166,166,166,0.25) 3%, rgba(166,166,166,0.25) 98%, rgb(218,218,218) 100%)
-  padding: 3em 0
+  padding: 1.5em 0
 
 .contact-info
   li
@@ -1114,9 +1088,6 @@ span.fa-angle-down
     margin-top: 0
     width: 50%
     list-style: none
-    // &:nth-last-of-type(odd):last-of-type
-    //   margin-top: 0
-    //   width: 100%
 
 .contact-info-email span, .contact-info-office span, .contact-info-meeting span, .contact-info-location span
   font-size: initial
@@ -1126,16 +1097,16 @@ span.fa-angle-down
   left: -1rem
 
 .contact-info-email h6, .contact-info-office h6, .contact-info-meeting h6, .contact-info-location h6
-  padding-top: 4em
+  padding-top: 3em
   width: 1rem
   white-space: nowrap
-  height: 10rem
+  height: 8rem
 
 .contact-info-email-container, .contact-info-office-container, .contact-info-meeting-container, .contact-info-location-container
   justify-content: flex-start
   align-items: center
-  margin-left: 10rem + 2rem
-  height: 10rem
+  margin-left: 8rem + 2rem
+  height: 8rem
   display: inline-flex
   vertical-align: bottom
 
@@ -1143,13 +1114,13 @@ span.fa-angle-down
 .contact-info-email::before, .contact-info-office::before, .contact-info-meeting::before, .contact-info-location::before
   position: absolute
   font-family: 'FontAwesome'
-  font-size: 2.75em
+  font-size: 2.25em
   color: $white
   margin: 0
   overflow: hidden
   text-align: center
-  width: 10rem
-  height: 10rem
+  width: 8rem
+  height: 8rem
   vertical-align: middle
   box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.35)
 
@@ -1173,10 +1144,10 @@ span.fa-angle-down
 .contact-info > li .info-wrapper
   background-color: $white
   margin: 1.5em
-  line-height: 10rem
+  line-height: 8rem
   overflow: hidden
   text-align: left
-  height: 10rem
+  height: 8rem
   box-shadow: 0 1px 12px -2px rgba(0, 0, 0, 0.25)
 
 ul.contact-info
@@ -1234,23 +1205,13 @@ ul+h1, ul+h2, ul+h3, ul+h4, ul+h5, ul+h6
 
 #page-content-wrapper.index
   footer
-    height: 4em
+    height: 2em
     display: block
     position: relative
 
 footer
-  // position: absolute
-  // background: $white
-  // padding-bottom: 0
-  // bottom: 0
-  // text-align: center!important
-  // width: 100%
-  // height: 4em
-  // display: inline-block
-  // display: block
-  // position: relative
+  margin-bottom: 1em
   .with-love
-    position: absolute
     bottom: 2em
     width: 100%
     span
@@ -1295,14 +1256,12 @@ footer
   display: block
 
 @import "media-queries"
-// @import "terminal"
 
 .column-wrap
   display: inline-table
   vertical-align: top
 
 .related
-  // margin-top: 6em
   .related-title
     border-bottom: 1px lighten($gray, 25%) solid
   .related-post

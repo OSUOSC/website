@@ -48,7 +48,7 @@
 
     span.date posted: {{ post.date | date: "%m-%d-%Y" }}
 
-    {% unless post.categories contains 'volunteering' or post.categories contains 'events' or post.categories contains 'meetings' or post.categories contains 'history' or post.categories contains 'tutorials' %}
+    {% unless post.categories contains 'volunteering' or post.categories contains 'events' or post.categories contains 'schedules' or post.categories contains 'history' or post.categories contains 'tutorials' %}
 
     | {{ post.content }}
 

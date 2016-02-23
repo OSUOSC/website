@@ -60,7 +60,7 @@
       width: 100%
 
 .section
-  padding: 10rem 0 15rem
+  padding: 10rem 0
 
 @media (min-width: 750px)
   .landing-heading
@@ -79,8 +79,12 @@
     z-index: 10
     left: $sidebarWidth
     border-bottom: 1px solid #D5D5D5
+    font-size: 1.25em
+    height: 5.75rem
+  .search
+    top: 0.5em
   #search-results
-    top: 6rem
+    top: 4.75rem
     right: 4em
   .contact-info-email-container, .contact-info-office-container, .contact-info-meeting-container
     font-size: 85%
@@ -100,10 +104,10 @@
     width: 100%
     width: calc(100% - #{$sidebarWidth})
     height: 100%
-    height: calc(100% - 8rem)
+    height: calc(100% - 5.75rem)
     transition: all 0.25s linear
     z-index: 9
-    margin-top: 8rem
+    margin-top: 5.75rem
     &.index
       left: $sidebarWidth
     >*
@@ -119,6 +123,8 @@
       left: 30rem
     > .section.posts:only-child > .container
       width: 50%
+  .main-nav
+    margin-top: 5.75rem
 
 
 @media (min-width: 1200px) and (max-width: 1749px)
@@ -144,7 +150,8 @@
       &:nth-of-type(2n)
         width: calc(960px - (3em * 2))
       &:nth-of-type(2n+1)
-        position: fixed
+        // position: fixed
+        position: relative
         width: calc(100% - 960px - 10em)
         min-width: calc(1400px - 960px - 10em)
         max-width: 1em
@@ -610,22 +617,20 @@
     width: ($sidebarWidth - 5rem)
     &.active
       width: ($sidebarWidth - 5rem)
+      left: ($sidebarWidth - 5rem)
 
       &+.navbar
         left: ($sidebarWidth - 5rem)
   #page-content-wrapper
-    &.single, &.active
-      left: ($sidebarWidth - 5rem)
-
-@media (min-width: 350px) and (max-width: 1199px)
-  .sidebar
     &.active
       left: ($sidebarWidth - 5rem)
+      &.single
+        left: ($sidebarWidth - 5rem)
 
 @media (min-width: 1200px) and (max-width: 1999px)
   #page-content-wrapper
     width: calc(100% - 25rem)
-    &.index
+    &.index, &.single, &.home
       left: ($sidebarWidth - 5rem)
   .navbar
     left: ($sidebarWidth - 5rem)
