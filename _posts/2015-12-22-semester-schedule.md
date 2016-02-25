@@ -16,8 +16,8 @@ Feel free to contact us to arrange a presentation on our schedule this semester.
 | 2/11/2016| Git                                        | Brandon Moore                |
 | 2/18/2016| Intermediate Level Vim                     | J3RN Arnett                  |
 | 2/25/2016| Forensic Data Analysis                     | Matt Curtin                  |
-| 3/3/2016 | available                                                                 |
-| 3/10/2016| available                                                                 |
+| 3/3/2016 | Basic Hardware(pre-Makeathon)              | Alex Fuhr                    |
+| 3/10/2016| Linux Gaming                               | William Osler (LibreWulf) and Nikit Malkan (Nefari0uss)  |
 | 3/17/2016| Spring break, no meeting                                                  |
 | 3/24/2016| [NICAR 2016](http://www.ire.org/conferences/nicar2016/) recap | Ben Keith |
 | 3/31/2016| [Bedrock Linux](http://bedrocklinux.org) introduction         | paradigm  |
