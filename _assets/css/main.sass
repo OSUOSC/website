@@ -563,7 +563,6 @@ $deviation: 2em
   width: $size - $deviation
   height: $size - $deviation
   overflow: hidden
-  transition: 0.25s ease
   padding: 0 0 $deviation 0
 
   &::before, &::after
@@ -857,6 +856,7 @@ input
 
 #page-content-wrapper
   position: fixed
+  // position: inherit
   left: $sidebarWidth
   top: 0
   background: $white
@@ -870,6 +870,8 @@ input
 
 .posts
   min-height: calc(100% - 25rem)
+  // chrome onandroid renders black bars otherwise
+  background: #FFF
   h1
     font-size: 2.5em
     a
