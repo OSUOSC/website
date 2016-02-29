@@ -1,6 +1,6 @@
 ---
 layout: html/default
-title: Open-source hardware and hobby electronics
+title: Open Source Hardware and Hobby Electronics
 categories: announcements
 tags: announcements, hardware
 meeting_date: 2016-03-03
