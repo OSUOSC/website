@@ -5,9 +5,9 @@ $ ->
 revealScrollToTop = ->
   $('#page-content-wrapper').scroll ->
     if $('#page-content-wrapper').scrollTop() > 300
-      $('.scrollToTop').css 'display', 'initial'
+      $('.scrollToTop').css 'display', 'block'
     else
-      $('.scrollToTop').css 'display', 'none'
+      $('.scrollToTop').css 'display', ''
     return
   #Click event to scroll to top
   $('.scrollToTop').click ->
