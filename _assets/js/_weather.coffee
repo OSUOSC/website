@@ -1,6 +1,6 @@
 #cloud animations
 
-$(document).ready ->
+$ ->
   moveClouds()
 
 moveClouds = (e, s, d) ->

@@ -1,3 +1,7 @@
+$ ->
+  highlightSelection()
+  return
+
 traverseUp = ->
   $("#search-results a.selected").removeClass('selected').prev().addClass('selected')
   return
@@ -5,12 +9,6 @@ traverseUp = ->
 traverseDown = ->
   $("#search-results a.selected").removeClass('selected').next().addClass('selected')
   return
-
-# hoverSelection = ->
-#   results = $('#search-results>a')
-#   $(results).on 'mouseenter', () -> $(this).addClass 'selected'
-#   $(results).on 'mouseleave', () -> $(this).removeClass 'selected'
-#   return
 
 highlightSelection = () ->
   $('#search-posts').off 'keydown'
@@ -45,7 +43,3 @@ highlightSelection = () ->
       window.open $('#search-results a.selected').attr('href'), '_self'
 
   return false
-
-$(document).ready ->
-  highlightSelection()
-  return

@@ -1,6 +1,6 @@
 # mailchimp
 
-$(document).ready ->
+$ ->
   $('#mc_embed_signup').find('form').ajaxChimp()
 
 (($) ->
