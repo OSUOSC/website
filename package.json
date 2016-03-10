@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/OSUOSC/open-source-club-website.git"
   },
-  "author": "Eli Gladman <eli.gladman@gmail.com> (http://eligladman.com)",
-  "license": "ISC",
+  "author": "Eli Gladman <eli.gladman@gmail.com> (http://eli.gladman.xyz)",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/OSUOSC/open-source-club-website/issues"
   },
