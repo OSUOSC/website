@@ -10,14 +10,18 @@ is_match = false
 i = 0
 
 while i < posts.length
+  
+  # sort posts reverse chronologically
   post = posts.sort.reverse
 
   File.open(post[i], 'r') do |p|
+    
+    # read each line in the post
     p.each_line do |line|
       matched_str = 'meeting_date:'
 
       next unless line.include? matched_str
-
+      
       date = line.split(' ').last # expects YYYY-MM-DD
       humanized_date = Date.parse(date).strftime('%B %d, %Y')
 
