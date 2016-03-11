@@ -1,3 +1,7 @@
+# loops through all posts reverse chronologically in '/_posts'
+# until 'meeting_date' is defined in the YAML Front Matter block
+# then precedes to write 'meeting_date' to '_config.yml'
+
 require 'time'
 
 posts = Dir['_posts/*']
@@ -8,39 +12,27 @@ i = 0
 while i < posts.length
   post = posts.sort.reverse
 
-  File.open(post[i], 'r') do |f|
-    f.each_line do |line|
+  File.open(post[i], 'r') do |p|
+    p.each_line do |line|
+      matched_str = 'meeting_date:'
 
-      if line.include? 'meeting_date:'
-        t = line.split(' ').last # expects YYYY-MM-DD
+      next unless line.include? matched_str
 
-        # TODO
-        # check if the correct time format is used else throw error
+      date = line.split(' ').last # expects YYYY-MM-DD
+      humanized_date = Date.parse(date).strftime('%B %d, %Y')
 
-        date = Date.parse(t).strftime('%B %d, %Y') # humanize time
+      replacement_str = matched_str + ' ' + humanized_date
 
-        file_names = ['_config.yml']
+      path = '_config.yml'
+      content = File.read(path).gsub(/(#{matched_str}) .*/, replacement_str)
 
-        # string to match
-        matched_str = 'next_meeting_date:'
-
-        replacement_str = matched_str + ' ' + date
-
-        file_names.each do |file_name|
-          text = File.read(file_name)
-
-          new_content = text.gsub(/(#{matched_str}) .*/, replacement_str)
-
-          # write changes to file
-          File.open(file_name, "w") {|file| file.puts new_content }
-        end
-
-        is_match = true
-      end
-
+      # write changes to file
+      File.open(path, 'w') { |f| f.puts content }
+      is_match = true
     end
   end
 
   i += 1
   break if is_match == true
+
 end
