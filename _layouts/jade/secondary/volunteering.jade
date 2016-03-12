@@ -17,9 +17,16 @@ doctype html
       {% else %}
       
       {% for post in site.categories.[page.category] %}
+      
+      {% capture current_date %}{{'now' | date: "%s"}}{% endcapture %}
+      {% capture expiration_date %}{{ post.expire_date | date: '%s' }}{% endcapture %}
+
+      {% if expiration_date >= current_date %}
       h2.bold {{ post.title }}
       span.date posted: {{ post.date | date: "%m-%d-%Y" }}
       .content {{ post.content }}
+      {% endif %}
+      
       {% endfor %}
       
       {% endif %}
