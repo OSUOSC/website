@@ -13,3 +13,34 @@ This is our repository for our club's [website](https://opensource.osu.edu). It'
 [How to contribute](https://github.com/OSUOSC/open-source-club-website/blob/master/.github/CONTRIBUTING.md)
 
 Check out our [staging site](https://osuosc.github.io/open-source-club-website/), which may or may not be up-to-date
+
+--
+
+### Fork, then clone the repo:
+  ```bash
+    git clone git@github.com:your-username/open-source-club-website.git
+    cd open-source-club-website
+  ```
+
+--
+
+### Dependencies:
+  - ruby `v2.2.3`
+  - node.js `v4.2.6`
+  
+--
+
+### Set up your machine:
+  ```
+  ./init.sh
+  ```
+
+--
+
+### Build site locally and run development server:
+  ```bash
+    grunt serve
+    # once compiled the site will be accessible at localhost:4040
+  ```
+  
+for more indepth instructions checkout our [wiki](https://github.com/OSUOSC/open-source-club-website/wiki/Running-the-Site-Locally)
