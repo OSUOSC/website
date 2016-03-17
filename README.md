@@ -43,4 +43,4 @@ Check out our [staging site](https://osuosc.github.io/open-source-club-website/)
     # once compiled the site will be accessible at localhost:4040
   ```
   
-for more indepth instructions checkout our [wiki](https://github.com/OSUOSC/open-source-club-website/wiki/Running-the-Site-Locally)
+for indepth instructions checkout our [wiki](https://github.com/OSUOSC/open-source-club-website/wiki/Running-the-Site-Locally)
