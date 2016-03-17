@@ -42,5 +42,7 @@ Check out our [staging site](https://osuosc.github.io/open-source-club-website/)
     grunt serve
     # once compiled the site will be accessible at localhost:4040
   ```
-  
+
+--
+
 for indepth instructions checkout our [wiki](https://github.com/OSUOSC/open-source-club-website/wiki/Running-the-Site-Locally)
