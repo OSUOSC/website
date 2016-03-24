@@ -28,6 +28,10 @@ class String
 end
 
 
+d = DateTime.now
+d.strftime("%Y-%m-%d")
+
+
 category = ARGV[0]
 categories = ['events', 'history', 'tutorials', 'announcements', 'volunteering']
 
@@ -46,22 +50,27 @@ until categories.include? category do
   firstRun = false
 end
 
+
 puts
 puts 'Who\'s the author?'.green
 author = STDIN.gets.chop
+
 
 puts
 puts 'What\'s the meeting topic?'.green
 topic = STDIN.gets.chomp
 topic_slugified = topic.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
 
-puts
-puts 'When is the meeting? (YYYY-MM-DD)'.green
-  meeting_date = STDIN.gets.chomp
 
-until meeting_date =~ /\d{4}\-\d{2}\-\d{2}/ do
-  puts 'Invalid format, try again.'.yellow
-  meeting_date = STDIN.gets.chomp
+if (category != 'events' && category != 'volunteering')
+  puts
+  puts 'When is the meeting? (YYYY-MM-DD)'.green
+    meeting_date = STDIN.gets.chomp
+
+  until meeting_date =~ /\d{4}\-\d{2}\-\d{2}/ do
+    puts 'Invalid format, try again.'.yellow
+    meeting_date = STDIN.gets.chomp
+  end
 end
 
 
@@ -70,16 +79,11 @@ if (category == 'events' || category == 'volunteering')
   puts 'When would you like the post to expire? (YYYY-MM-DD)'.green
   expiration_date = STDIN.gets.chomp
 
-  until expiration_date =~ /\d{4}\-\d{2}\-\d{2}/ && expiration_date > meeting_date do
+  until expiration_date =~ /\d{4}\-\d{2}\-\d{2}/ && expiration_date > d.strftime("%Y-%m-%d") do
     puts 'Invalid format, try again.'.yellow
     expiration_date = STDIN.gets.chomp
   end
 end
-
-
-
-d = DateTime.now
-d.strftime("%Y-%m-%d")
 
 
 path = "_posts/#{d.strftime("%Y-%m-%d")}-#{topic_slugified}.md"
