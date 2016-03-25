@@ -27,7 +27,7 @@ Check out our [staging site](https://osuosc.github.io/open-source-club-website/)
 ### Dependencies:
   - ruby `v2.2.3`
   - node.js `v4.2.6`
-  
+
 --
 
 ### Set up your machine:
@@ -41,6 +41,16 @@ Check out our [staging site](https://osuosc.github.io/open-source-club-website/)
   ```bash
     grunt serve
     # once compiled the site will be accessible at localhost:4040
+  ```
+
+--
+
+### Create new post
+
+*POSTS THAT AREN'T GENERATED USING THIS HELPER SCRIPT WILL BE REJECTED*
+
+  ```bash
+    ruby _helpers/newPost.rb
   ```
 
 --
