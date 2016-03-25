@@ -41,7 +41,7 @@ firstRun = true
 until categories.include? category do
   if firstRun && category.nil?
     puts
-    puts 'What is the post\'s category? (i.e. events, volunteering, announcements, tutorials, histroy)'
+    puts 'What is the post\'s category? (i.e. events, volunteering, announcements, tutorials, histroy)'.green
   else
     puts 'Invalid category, try again.'.yellow
   end
