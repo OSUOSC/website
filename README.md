@@ -45,4 +45,14 @@ Check out our [staging site](https://osuosc.github.io/open-source-club-website/)
 
 --
 
+### Create new post
+
+#### POSTS THAT AREN'T GENERATED USING THIS HELPER SCRIPT WILL BE REJECTED
+
+  ```bash
+    ruby _helpers/newPost.rb
+  ```
+
+--
+
 for indepth instructions checkout our [wiki](https://github.com/OSUOSC/open-source-club-website/wiki/Running-the-Site-Locally)
