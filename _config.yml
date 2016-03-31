@@ -1,17 +1,23 @@
-name: "The Open Source Club"
+name: "The Closed Source Club"
 url: "opensource.osu.edu"
 baseurl: ''
 next_meeting_date: March 24, 2016
 paginate: 20
 description: >
-  The Open Source Club at at the Ohio State University is a
+  The Closed Source Club at at the Ohio State University is a
   [registered student organization](https://ohiounion.osu.edu/get_involved/student_organizations/directory?org_id=1042)
   composed of members from all around campus and out into the community who
-  share a common enthusiasm for
-  [free, open source software](https://www.fsf.org/about/what-is-free-software).
-  Our focus is on building a strong community of open source users and developers
-  in order to bring the benefits of open development, open standards, and free
-  software to the university community.
+  share a common enthusiasm for closed, and proprietary software.
+
+# description: >
+#   The Open Source Club at at the Ohio State University is a
+#   [registered student organization](https://ohiounion.osu.edu/get_involved/student_organizations/directory?org_id=1042)
+#   composed of members from all around campus and out into the community who
+#   share a common enthusiasm for
+#   [free, open source software](https://www.fsf.org/about/what-is-free-software).
+#   Our focus is on building a strong community of open source users and developers
+#   in order to bring the benefits of open development, open standards, and free
+#   software to the university community.
 
 paginate_page: index.jade
 
