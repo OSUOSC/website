@@ -7,42 +7,7 @@
   - fork us, fix an issue and submit a merge request
   - refactor suboptimal code
 
--- 
-  
-### Fork, then clone the repo:
-  ```bash
-    git clone git@github.com:your-username/open-source-club-website.git
-    cd open-source-club-website
-  ```
 
---
-
-### Dependencies:
-  - ruby `v2.2.3`
-  - node.js `v4.2.6`
-  
---
-
-### Set up your machine:
-  ```
-  ./init.sh
-  ```
-
---
-
-### Build site locally and run development server:
-  ```bash
-    grunt serve
-    # once compiled the site will be accessible at localhost:4040
-  ```
-
-##### OR
-  
-### Build site locally:
-  ```
-    grunt build
-  ```
-  
 ##### Specify Environment
 
 currently there are three different environments
@@ -74,24 +39,7 @@ Example
 
 --
 
-### Author a new post
-  ```bash
-    ./_helpers/new-post.sh
-  ```
-  
-  **Posts that do not follow this template will be rejected**
-  
-  Meeting announcements **must** contain the following information:
-    - meeting time
-    - building and room number
-    - meeting topic
-    - topic description
-  
-  when sharing email addresses in posts, refer to the following snippet:
-  ```md
-    [officers@opensource.osu.edu](mailto:officers@opensource.osu.edu)
-  ```
-  
+ 
 #### Attaching presenations
   
   If you wish to provide a link to your presentation in your post (we suggest `.pdf`)
@@ -133,6 +81,8 @@ Some things that will increase the chance that your pull request is accepted:
 [commit]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
 
 --
+
+## Style Guide
 
 ### Formatting
 
