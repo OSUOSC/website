@@ -18,7 +18,7 @@ Check out our [staging site](https://osuosc.github.io/open-source-club-website/)
 
 ### Fork, then clone the repo:
   ```bash
-    git clone git@github.com:your-username/open-source-club-website.git
+    git clone git@github.com:<username>/open-source-club-website.git
     cd open-source-club-website
   ```
 
