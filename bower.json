@@ -1,7 +1,8 @@
 {
   "name": "open-source-club-website",
+  "private": true,
   "version": "0.2.6",
-  "homepage": "https://github.com/OSUOSC/open-source-club-website",
+  "homepage": "https://opensource.osu.edu",
   "authors": [
     "Eli Gladman <eli.gladman@gmail.com>"
   ],

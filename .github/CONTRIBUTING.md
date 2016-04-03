@@ -39,9 +39,9 @@ Example
 
 --
 
- 
+
 #### Attaching presenations
-  
+
   If you wish to provide a link to your presentation in your post (we suggest `.pdf`)
   save your document with the *exact* same filename convention.
 
@@ -53,13 +53,7 @@ Example
     [downloaded here]({{ site.baseurl }}/downloads/presentations/{{ page.path | remove: "_posts/" | replace: '.md', '.pdf' }})
   ```
 
---
 
-### Make sure the tests pass:
-  ```
-    grunt test
-  ```
-  
 --
 
 Push to your fork and [submit a pull request][pr].
