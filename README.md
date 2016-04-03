@@ -30,12 +30,14 @@ Check out our [staging site](https://osuosc.github.io/open-source-club-website/)
 
 --
 
+<br>
 #### Dependencies:
   - ruby `v2.2.3`
   - node.js `v4.2.6`
 
 --
 
+<br>
 #### Set up your machine:
   ```
   ./init.sh
@@ -57,11 +59,11 @@ Check out our [staging site](https://osuosc.github.io/open-source-club-website/)
 
 #### Create new post
 
-*POSTS THAT AREN'T GENERATED USING THIS HELPER SCRIPT WILL BE REJECTED*
-
   ```bash
     ruby _helpers/newPost.rb
   ```
+  
+*posts that aren't generated using this helper script will be rejected*
 
 <br>
 --
