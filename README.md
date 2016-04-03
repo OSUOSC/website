@@ -7,6 +7,7 @@
 
 This is our repository for our club's [website](https://opensource.osu.edu). It's built with [Jekyll](https://github.com/jekyll/jekyll), [Jade](https://github.com/jadejs/jade), [Sass](https://github.com/sass/sass), [Coffeescript](https://github.com/jashkenas/coffeescript), and [Grunt](https://github.com/gruntjs/grunt).
 
+
 <br>
 --
 <br>
@@ -20,9 +21,9 @@ This is our repository for our club's [website](https://opensource.osu.edu). It'
 
 <br>
 
-[Contributing](https://github.com/OSUOSC/open-source-club-website/blob/master/.github/CONTRIBUTING.md)
+To learn more about getting this repository set up on your computer or to find instructions on how to contribute new posts, check out the [contributing](https://github.com/OSUOSC/open-source-club-website/blob/master/.github/CONTRIBUTING.md) file.
 
-[Staging Site](https://osuosc.github.io/open-source-club-website/)
+Checkout our [staging site](https://osuosc.github.io/open-source-club-website/) which may or may not be up-to-date.
 
 <br>
 --
@@ -68,12 +69,7 @@ This is our repository for our club's [website](https://opensource.osu.edu). It'
   ```bash
     ruby _helpers/newPost.rb
   ```
-  
+
 *posts that aren't generated using this helper script will be rejected*
 
-<br>
---
-<br>
-
-for indepth instructions checkout our [wiki](https://github.com/OSUOSC/open-source-club-website/wiki/Running-the-Site-Locally)
 <br>

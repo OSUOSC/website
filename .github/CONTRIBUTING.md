@@ -7,6 +7,53 @@
   - fork us, fix an issue and submit a merge request
   - refactor suboptimal code
 
+
+##### Specify Environment
+
+currently there are three different environments
+
+  - production
+    - assets are automatically minified/compressed
+    - the jekyll baseurl is set to an empty string
+  - staging
+    - assets are automatically minified/compressed
+    - the jekyll baseurl is set to our github repository name
+  - development
+    - assets are uncompressed
+    - the jekyll baseurl is set to an empty string
+
+the default behavior is to set the environment to `development`
+
+to build the site in a different environment use the following parameter: `--env=myEnvironment`  
+
+Example
+
+  ```bash
+  grunt build --env=staging
+  # or
+  grunt build --env=production
+  # or
+  grunt serve --env=staging
+  # you get the idea . . .
+  ```
+
+--
+
+
+#### Attaching presenations
+
+  If you wish to provide a link to your presentation in your post (we suggest `.pdf`)
+  save your document with the *exact* same filename convention.
+
+  For example if I created `_post/2015-11-12-my-post.md`
+  the presentation slides/document would be: `downloads/presentations/2015-11-12-my-post.pdf`
+
+  To embed a presentation link into the related post use the following:
+  ```md
+    [downloaded here]({{ site.baseurl }}/downloads/presentations/{{ page.path | remove: "_posts/" | replace: '.md', '.pdf' }})
+  ```
+
+
 --
 
 Push to your fork and [submit a pull request][pr].
@@ -28,6 +75,8 @@ Some things that will increase the chance that your pull request is accepted:
 [commit]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
 
 --
+
+## Style Guide
 
 ### Formatting
 
