@@ -1,6 +1,6 @@
 ## New posts
 
-To create a new post, run `/_helpers/new-post.sh` on the command line, or copy an existing post in `/_posts/` and edit it.
+To create a new post, run `ruby /_helpers/newPost.rb` on the command line, **never** copy an existing post in `/_posts/` and edit it.
 
 Meeting announcements must contain the following information:
 
@@ -11,14 +11,30 @@ Meeting announcements must contain the following information:
 
 If you are manually creating the post, the date in the filename will be the date that the post is published on the site.
 
-**Posts that do not follow this template will be rejected**
 
-When sharing email addresses in posts, refer to the following snippet:
+<br>
+#### When sharing email addresses in posts, refer to the following snippet:
 
 ```md
 [officers@opensource.osu.edu](mailto:officers@opensource.osu.edu)
 ```
 
+<br>
+#### Attaching presenations
+
+  If you wish to provide a link to your presentation in your post (we suggest `.pdf`)
+  save your document with the *exact* same filename convention.
+
+  For example if I created `_post/2015-11-12-my-post.md`
+  the presentation slides/document would be: `downloads/presentations/2015-11-12-my-post.pdf`
+
+  To embed a presentation link into the related post use the following:
+  ```md
+    [downloaded here]({{ site.baseurl }}/downloads/presentations/{{ page.path | remove: "_posts/" | replace: '.md', '.pdf' }})
+  ```
+  
+  
+<br>
 ## Rebuilding the site after creating a new post
 
 There are two ways to do this. You can rebulid the site, which only updates the files, or you can rebuild the site and run a server to watch for future changes.
@@ -42,9 +58,6 @@ This option only recompiles the site's files, and does not run a local webserver
     grunt build
   ```
 
-## Run the tests
-
-After creating a new post, run `grunt test`.
 
 ## Submit a pull request
 

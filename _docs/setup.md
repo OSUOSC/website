@@ -18,7 +18,44 @@
 	```bash
 	./init.sh
 	npm install -g grunt-cli bower jade
-	bower install
-	npm install
 	```
 
+
+4. Run the site locally
+  ```bash
+    grunt serve
+  ```
+  *once compiled the site will be accessible at localhost:4040*
+
+
+
+## Optional
+
+#### Specify Environment
+
+currently there are three different environments
+
+  - production
+    - assets are automatically minified/compressed
+    - the jekyll baseurl is set to an empty string
+  - staging
+    - assets are automatically minified/compressed
+    - the jekyll baseurl is set to our github repository name
+  - development
+    - assets are uncompressed
+    - the jekyll baseurl is set to an empty string
+
+the default behavior is to set the environment to `development`
+
+to build the site in a different environment use the following parameter: `--env=myEnvironment`  
+
+Example
+
+  ```bash
+  grunt build --env=staging
+  # or
+  grunt build --env=production
+  # or
+  grunt serve --env=staging
+  # you get the idea . . .
+  ```
