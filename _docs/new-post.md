@@ -58,9 +58,6 @@ This option only recompiles the site's files, and does not run a local webserver
     grunt build
   ```
 
-## Run the tests
-
-After creating a new post, run `grunt test`.
 
 ## Submit a pull request
 
