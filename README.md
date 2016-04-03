@@ -8,15 +8,21 @@
 
 This is our repository for our club's [website](https://opensource.osu.edu). It's built with [Jekyll](https://github.com/jekyll/jekyll), [Jade](https://github.com/jadejs/jade), [Sass](https://github.com/sass/sass), [Coffeescript](https://github.com/jashkenas/coffeescript), and [Grunt](https://github.com/gruntjs/grunt).
 
+<br>
+--
+<br>
+
 [Wiki](https://github.com/OSUOSC/open-source-club-website/wiki)
 
 [How to contribute](https://github.com/OSUOSC/open-source-club-website/blob/master/.github/CONTRIBUTING.md)
 
 Check out our [staging site](https://osuosc.github.io/open-source-club-website/), which may or may not be up-to-date
 
+<br>
 --
+<br>
 
-### Fork, then clone the repo:
+#### Fork, then clone the repo:
   ```bash
     git clone git@github.com:<username>/open-source-club-website.git
     cd open-source-club-website
@@ -24,28 +30,32 @@ Check out our [staging site](https://osuosc.github.io/open-source-club-website/)
 
 --
 
-### Dependencies:
+#### Dependencies:
   - ruby `v2.2.3`
   - node.js `v4.2.6`
 
 --
 
-### Set up your machine:
+#### Set up your machine:
   ```
   ./init.sh
   ```
 
+<br>
 --
+<br>
 
-### Build site locally and run development server:
+#### Build site locally and run development server:
   ```bash
     grunt serve
     # once compiled the site will be accessible at localhost:4040
   ```
 
+<br>
 --
+<br>
 
-### Create new post
+#### Create new post
 
 *POSTS THAT AREN'T GENERATED USING THIS HELPER SCRIPT WILL BE REJECTED*
 
@@ -53,6 +63,8 @@ Check out our [staging site](https://osuosc.github.io/open-source-club-website/)
     ruby _helpers/newPost.rb
   ```
 
+<br>
 --
+<br>
 
 for indepth instructions checkout our [wiki](https://github.com/OSUOSC/open-source-club-website/wiki/Running-the-Site-Locally)
