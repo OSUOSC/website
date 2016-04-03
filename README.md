@@ -2,7 +2,6 @@
 
 [![Build Status](https://travis-ci.org/OSUOSC/open-source-club-website.svg?branch=master)](https://travis-ci.org/OSUOSC/open-source-club-website)
 [![Dependency Status](https://gemnasium.com/OSUOSC/open-source-club-website.svg)](https://gemnasium.com/OSUOSC/open-source-club-website)
-[![security](https://hakiri.io/github/OSUOSC/open-source-club-website/master.svg)](https://hakiri.io/github/OSUOSC/open-source-club-website/master)
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 
@@ -12,11 +11,18 @@ This is our repository for our club's [website](https://opensource.osu.edu). It'
 --
 <br>
 
-[Wiki](https://github.com/OSUOSC/open-source-club-website/wiki)
 
-[How to contribute](https://github.com/OSUOSC/open-source-club-website/blob/master/.github/CONTRIBUTING.md)
+[Setup](https://github.com/OSUOSC/open-source-club-website/blob/master/_docs/setup.md)
 
-Check out our [staging site](https://osuosc.github.io/open-source-club-website/), which may or may not be up-to-date
+[Create Posts](https://github.com/OSUOSC/open-source-club-website/blob/master/_docs/new-post.md)
+
+[Deploying](https://github.com/OSUOSC/open-source-club-website/blob/master/_docs/deploying.md)
+
+<br>
+
+[Contributing](https://github.com/OSUOSC/open-source-club-website/blob/master/.github/CONTRIBUTING.md)
+
+[Staging Site](https://osuosc.github.io/open-source-club-website/)
 
 <br>
 --
@@ -70,3 +76,4 @@ Check out our [staging site](https://osuosc.github.io/open-source-club-website/)
 <br>
 
 for indepth instructions checkout our [wiki](https://github.com/OSUOSC/open-source-club-website/wiki/Running-the-Site-Locally)
+<br>
