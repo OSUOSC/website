@@ -10,6 +10,11 @@
 
 --
 
+All helpers (`_helpers/*`) should be written in ruby.
+
+--
+
+
 Push to your fork and [submit a pull request][pr].
 
 Pull request should be assigned to [@egladman](http://github.com/egladman)
