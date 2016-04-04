@@ -10,16 +10,14 @@
 
 3. Install the dependencies:
 
-  - ruby `v2.2.3`
-  - node.js `v4.2.6`
+  - ruby `v2.2.1` or greater than
+  - node.js `v4.2.1` or greater than
 
 3. Run the setup scripts
 
 	```bash
 	./init.sh
-	npm install -g grunt-cli bower jade
 	```
-
 
 4. Run the site locally
   ```bash
