@@ -1,10 +1,10 @@
 name: "The Open Source Club"
 url: "opensource.osu.edu"
 baseurl: ''
-next_meeting_date: March 24, 2016
+next_meeting_date: March 31, 2016
 paginate: 20
- description: >
-   The Open Source Club at at the Ohio State University is a
+description: >
+   The Open Source Club at the Ohio State University is a
    [registered student organization](https://ohiounion.osu.edu/get_involved/student_organizations/directory?org_id=1042)
    composed of members from all around campus and out into the community who
    share a common enthusiasm for
