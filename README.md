@@ -64,7 +64,7 @@ Checkout our [staging site](https://osuosc.github.io/open-source-club-website/) 
 --
 <br>
 
-#### Create new post
+#### Create a new post
 
   ```bash
     ruby _helpers/newPost.rb
