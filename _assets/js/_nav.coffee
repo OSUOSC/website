@@ -8,20 +8,19 @@ $(window).resize ->
 
 setNavigation = ->
   baseUrl = "/open-source-club-website" # github repo name
-  p = window.location.pathname # p = url path
-  u = window.location.host.indexOf("github.io") # u = site url
+  path = window.location.pathname # p = url path
 
-  if u > -1
+  if window.location.host.indexOf("github.io") > -1
     # baseUrl is defined in main.coffee
     # strips the baseUrl from the path
-    p = p.replace(baseUrl, "")
+    path = path.replace(baseUrl, "")
 
-  p = p.replace(/\/$/, '') # remove initial '/' from path
+  path = path.replace(/\/$/, '') # remove initial '/' from path
 
   $('#main-nav>a').each ->
     href = $(this).attr('href')
 
-    if p.substring(0, href.length) == href
+    if path.substring(0, href.length) == href
       if href.length > 1
         $(this).addClass 'active'
     else if href.length == 1
@@ -36,7 +35,15 @@ revealNavigation = ->
   height = $(window).height()
 
   $('#page-content-wrapper').scroll ->
-    if $('#page-content-wrapper').scrollTop() > $('.landing').height() and width > height and height <= 1000
+
+    if $('.landing').length > 0
+      heightHidden =
+        $('.landing').height() + $('.about').height() + $('.subscribe').height() + $('.contact').outerHeight()
+    else
+      heightHidden = 400
+
+
+    if $('#page-content-wrapper').scrollTop() > heightHidden and width > height and height <= 1000
       $('.navbar').css 'display', 'none'
       $('#page-content-wrapper').css({'margin-top' : '0', 'height' : '100%'})
       $('.menu-toggle').css({
