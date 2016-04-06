@@ -38,7 +38,7 @@ Checkout our [staging site](https://osuosc.github.io/open-source-club-website/) 
 --
 
 <br>
-#### Dependencies:
+#### Install Dependencies:
   - ruby `v2.2.1` or greater
   - node.js `v4.2.1` or greater
 
