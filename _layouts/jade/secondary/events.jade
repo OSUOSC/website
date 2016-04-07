@@ -22,6 +22,9 @@ doctype html
 
   
       {% if expiration_date >= current_date %}
+      
+      {% assign event_found = true %}
+      
       h2.bold {{ post.title }}
       span.date posted: {{ post.date | date: "%m-%d-%Y" }}
       .content {{ post.content }}
@@ -29,6 +32,10 @@ doctype html
       
       
       {% endfor %}
+      
+      {% if event_found != true %}
+      span There are currently no events planned
+      {% endif %}
       
       {% endif %}
       {% include html/core/scripts.html %}

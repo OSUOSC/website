@@ -22,12 +22,19 @@ doctype html
       {% capture expiration_date %}{{ post.expire_date | date: '%s' }}{% endcapture %}
 
       {% if expiration_date >= current_date %}
+      
+      {% assign volunteering_found = true %}
+      
       h2.bold {{ post.title }}
       span.date posted: {{ post.date | date: "%m-%d-%Y" }}
       .content {{ post.content }}
       {% endif %}
       
       {% endfor %}
+      
+      {% if volunteering_found != true %}
+      span There are currently no volunteering oppertunities
+      {% endif %}
       
       {% endif %}
       {% include html/core/scripts.html %}
