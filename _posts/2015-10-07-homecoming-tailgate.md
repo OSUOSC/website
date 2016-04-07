@@ -3,6 +3,7 @@ layout: html/default
 title: Engineering Homecoming Tailgate
 categories: volunteering
 tags: volunteering
+expire_date: 2015-10-10
 ---
 
 Come volunteer at the Engineering Homecoming Tailgate.

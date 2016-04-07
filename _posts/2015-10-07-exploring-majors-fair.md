@@ -3,6 +3,7 @@ layout: html/default
 title: Exploring Majors Fair
 categories: volunteering
 tags: volunteering
+expire_date: 2015-10-12
 ---
 
 Come volunteer at the Exploring Majors Fair.

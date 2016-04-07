@@ -3,6 +3,7 @@ layout: html/default
 title: BDAA Career Fair
 categories: volunteering
 tags: volunteering
+expire_date: 2015-10-21
 ---
 
 Come volunteer at the BBDA Career Fair.
