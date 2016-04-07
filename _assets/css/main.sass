@@ -1185,7 +1185,11 @@ ul.contact-info
   p
     text-align: justify
 
-p+ul, h1+ul, h2+ul, h3+ul, h4+ul, h5+ul, h6+ul
+p+ul, p+ol,
+h1+ol, h2+ol, h3+ol, h4+ol, h5+ol, h6+ol,
+h1+ul, h2+ul, h3+ul, h4+ul, h5+ul, h6+ul,
+.date + .content > ul,
+.date + .content > ol
   margin-left: 2em
 
 ul+h1, ul+h2, ul+h3, ul+h4, ul+h5, ul+h6
