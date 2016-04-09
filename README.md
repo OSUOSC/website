@@ -9,8 +9,6 @@ This is our repository for our club's [website](https://opensource.osu.edu). It'
 
 
 <br>
---
-<br>
 
 
 [Setup](https://github.com/OSUOSC/open-source-club-website/blob/master/_docs/setup.md)
