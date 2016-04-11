@@ -42,6 +42,7 @@ until categories.include? category do
   if firstRun && category.nil?
     puts
     puts 'What is the post\'s category? (i.e. events, volunteering, announcements, tutorials, histroy)'.green
+    puts 'Protip: weekly meetings are categorized under announcements'.light_blue
   else
     puts 'Invalid category, try again.'.yellow
   end
