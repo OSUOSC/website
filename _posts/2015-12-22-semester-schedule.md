@@ -23,5 +23,5 @@ Feel free to contact us to arrange a presentation on our schedule this semester.
 | 3/31/2016| [Bedrock Linux](http://bedrocklinux.org) introduction         | paradigm  |
 | 4/7/2016 | Package managers in Distros and Languages, **Election**  | Brandon Moore                |
 | 4/14/2016| FreeBSD                                    | Nick Wolff                   |
-| 4/21/2016| available                                                                 |
+| 4/21/2016| MicroSoft and Open Source                  | Brian Sherwin                |
 | 4/28/2016| Final Exams, no meeting, have a good summer                               |
