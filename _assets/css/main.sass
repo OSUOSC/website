@@ -846,9 +846,16 @@ input
     &[href$="/history"]
       &.active
         &::before
-          background: rgb(197,136,223)
+          background: rgb(245,170,187)
       li::before
         content: '\f187'
+
+    &[href$="/affiliations"]
+      &.active
+        &::before
+          background: rgb(197,136,223)
+      li::before
+        content: '\f004'
 
 #heading
   display: inline-block
@@ -896,6 +903,8 @@ input
   .date
     display: inline-block
     margin-bottom: 2.5em
+
+
 
 .pagination
   display: block
