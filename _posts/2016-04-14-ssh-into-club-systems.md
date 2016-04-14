@@ -5,6 +5,10 @@ categories: tutorials
 tags: tutorials, ssh, linux, headless
 ---
 
+If you do not already have a club account, you may contact our SysAdmin to request one. 
+
+### instructions
+
 Open up a terminal and enter the following:
 
 ```bash
