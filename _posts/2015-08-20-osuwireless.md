@@ -16,6 +16,7 @@ If you are in a CLI only environment (such as a headless Raspberry Pi) you can c
 
 Edit or create `/etc/wpa_supplicant/wpa_supplicant.conf` to be
 
+
 ```
 # /etc/wpa_supplicant/wpa_supplicant.conf
 
@@ -24,19 +25,25 @@ eapol_version=1
 ap_scan=1
 fast_reauth=1
 network={
-ssid="osuwireless"
-scan_ssid=1
-key_mgmt=WPA-EAP
-eap=PEAP
-identity="name.#"
-password="something-secret"
-phase1="peaplabel=0"
-phase2="auth=MSCHAPV2"
+  ssid="osuwireless"
+  scan_ssid=1
+  key_mgmt=WPA-EAP
+  eap=PEAP
+  identity="name.#"
+  password="something-secret"
+  phase1="peaplabel=0"
+  phase2="auth=MSCHAPV2"
 }
 ```
-and replace `identity` and `password` with your relevant information. You may wish to run `chmod 700 /etc/wpa_supplicant/wpa_supplicant.conf` to protect the file from being read by a non-root user.
+
+<br>
+
+Replace `identity` and `password` with your relevant information. You may wish to run `chmod 700 /etc/wpa_supplicant/wpa_supplicant.conf` to protect the file from being read by a non-root user.
+
+<br>
 
 Edit `/etc/network/interfaces` to be
+
 ```
 # /etc/network/interfaces
 
@@ -45,15 +52,24 @@ iface wlan0 inet dhcp
 wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 ```
 
+<br>
+
 Now toggle the wireless connection
+
 ```
 sudo ifdown wlan0
 sudo ifup wlan0
 ```
 
+<br>
+
 And check for an internet connection with
 
-`ping 8.8.8.8`
+```
+ping 8.8.8.8
+```
+
+<br>
 
 **Note:** Following the above steps will only allow your computer to connect to `osuwireless`. If you wish to connect to other networks, omit the `wpa-conf` line in `/etc/network/interfaces` and call `wpa_supplicant` from the CLI directly. Please see the `man` pages for `wpa_supplicant` for more information on this.
 
