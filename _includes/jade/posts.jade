@@ -70,10 +70,9 @@
 
     .column-wrap
       .related
-        h4.related-title Related Posts
-
         {% assign relatedPosts = false %}
         {% assign relatedPostCount = 0 %}
+        {% assign recentPostCount = 0 %}
 
         {% for post in site.posts %}
 
@@ -90,9 +89,14 @@
         {% endfor %}
 
         {% if sameTagCount >= 2 and post.url != page.url %}
+        
         {% assign relatedPosts = true %}
         {% assign relatedPostCount = relatedPostCount | plus: 1 %}
-
+        
+        {% if relatedPostCount == 1 %}
+        h4.related-title Related Posts
+        {% endif %}
+        
         {% if relatedPostCount > 6 %}
         | {% break %}
         {% endif %}
@@ -106,8 +110,27 @@
         {% endfor %}
 
         {% if relatedPosts == false %}
+        {% for post in site.posts %}
+        {% if post.url != page.url %}
+        
+        {% assign recentPostCount = recentPostCount | plus: 1 %}
+        
+        {% if recentPostCount == 1 %}
+        h4.related-title Recent Posts
+        {% endif %}
+        
+        {% if recentPostCount > 6 %}
+        | {% break %}
+        {% endif %}
+        
         .related-post
-          h4 No related posts found
+          a(href='{{ site.baseurl }}{{ post.url }}')
+            h4 {{ post.title }}
+          span.date posted: {{ post.date | date: "%m-%d-%Y" }}
+        {% endif %}
+        
+        {% endfor %}
+          
         {% endif %}
 
     {% endif %}
