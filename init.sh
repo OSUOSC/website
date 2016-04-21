@@ -6,7 +6,6 @@ if [[ $? != 0 ]]; then
     echo "Git LFS not found."
     echo "Install it using your package manager or at https://git-lfs.github.com/."
     echo "Until this is done, downloads/ will appear strangely."
-    exit
 fi
 
 # remove cached node modules if they exisit
