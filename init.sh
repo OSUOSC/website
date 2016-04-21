@@ -23,3 +23,4 @@ echo 'Checking for bundler gem'
 if ! [ $(gem list bundler -i) ]; then
   gem install bundler
 fi
+
