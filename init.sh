@@ -16,7 +16,7 @@ fi
 
 # install remaining modules locally
 echo "Installing node modules"
-npm install -g grunt-cli bower jade
+npm install -g grunt-cli bower
 npm install
 
 # install bundler gem
