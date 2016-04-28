@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: No Meeting
 categories: announcements
 tags: announcements

@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Open Source Elections
 created: 1179357459
 categories: announcements

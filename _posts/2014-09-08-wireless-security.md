@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Wireless Security
 created: 1410194925
 alias: /au14/wireless-security.html

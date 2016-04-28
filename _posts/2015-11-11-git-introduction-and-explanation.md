@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Git - An Introduction and Explanation
 categories: announcements
 tags: announcements, git, vc, version control

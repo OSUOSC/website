@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Personal Projects
 created: 1412633832
 alias: /au14/personal-projects.html

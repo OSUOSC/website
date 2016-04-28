@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Welcome Back!
 categories: announcements
 tags: announcements, first

@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: 'Updated: Student Involvement Fair/Ohio LinuxFest pamphlet'
 created: 1157923826
 categories: announcements

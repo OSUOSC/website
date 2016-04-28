@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Introduction to the Command Line
 created: 1410804781
 alias: /au14/introduction-command-line.html

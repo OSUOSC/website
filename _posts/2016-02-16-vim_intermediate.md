@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Intermediate Vim
 categories: announcements
 tags: announcements, vim, text editor

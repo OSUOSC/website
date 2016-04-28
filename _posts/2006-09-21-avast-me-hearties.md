@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Avast, me hearties!
 created: 1158866686
 categories: announcements

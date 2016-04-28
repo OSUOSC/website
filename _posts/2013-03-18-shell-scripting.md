@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Shell Scripting
 created: 1363638199
 alias: /sp13/shell-scripting.html

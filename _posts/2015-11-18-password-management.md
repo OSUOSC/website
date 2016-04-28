@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Password Management
 categories: announcements
 tags: announcements, security, passwords

@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Game Tournament
 categories: announcements
 tags: announcements, lan, party

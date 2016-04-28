@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: A Recap of NICAR, and open source in journalism
 categories: announcements
 tags: announcements

@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Connecting to osuwireless with linux
 categories: tutorials
 tags: tutorials, wifi, osuwireless, wireless, howto

@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Mini Hackathon!
 created: 1264452015
 alias: /wi10/hackathon.html

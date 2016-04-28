@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: End of the Year
 created: 1366120469
 alias: /sp13/end-year.html

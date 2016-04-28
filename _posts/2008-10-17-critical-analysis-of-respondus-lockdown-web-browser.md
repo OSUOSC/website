@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Critical Analysis of Respondus LockDown Web Browser
 created: 1224220913
 alias: /lockdown.html

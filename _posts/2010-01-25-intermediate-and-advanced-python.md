@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Intermediate and Advanced Python
 created: 1264450711
 categories: announcements

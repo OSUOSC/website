@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Connecting to IRC
 created: 1378959734
 categories: announcements

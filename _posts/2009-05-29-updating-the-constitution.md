@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Updating the Constitution
 created: 1243608752
 alias: /sp09/updating-constitution.html

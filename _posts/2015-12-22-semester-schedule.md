@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Spring 2016 Semester Schedule
 categories: schedules
 tags: schedules

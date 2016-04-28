@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Open Source GIS
 created: 1271637263
 categories: announcements

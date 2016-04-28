@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Introduction to the Command Line
 categories: announcements
 tags: announcements, cli, howto, terminal

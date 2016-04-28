@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Xen Virtualization
 created: 1289860793
 categories: announcements

@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Elections, LaTeX, and LAN party
 created: 1336712474
 alias: /sp12/elections-latex-and-lan-party.html

@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Code Version Managment
 created: 1207421013
 categories: announcements

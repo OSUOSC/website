@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Hacking the Wiimote
 created: 1204605644
 categories: announcements

@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: 10/1/2009 - Intro to Linux and an Overview of Distros
 created: 1254157899
 categories: announcements

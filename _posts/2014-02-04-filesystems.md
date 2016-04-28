@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Filesystems
 created: 1391526229
 alias: /sp14/filesystems.html

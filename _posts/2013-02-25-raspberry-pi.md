@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Raspberry Pi
 created: 1361826453
 alias:  /sp13/raspberry-pi.html

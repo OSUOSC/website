@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: This Week In Slashdot
 categories: announcements
 tags: announcements, slashdot

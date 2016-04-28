@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Working in a Production Environment
 categories: announcements
 tags: announcements

@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Open Source Hardware and Hobby Electronics
 categories: announcements
 tags: announcements, hardware

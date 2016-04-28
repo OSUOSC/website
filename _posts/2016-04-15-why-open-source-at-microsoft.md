@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Why Open Source at Microsoft?
 categories: announcements
 tags: announcements

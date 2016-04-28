@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Open Source and Linux Gaming
 categories: announcements
 tags: announcements

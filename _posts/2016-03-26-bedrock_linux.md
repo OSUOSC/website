@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Bedrock Linux
 categories: announcements
 tags: announcements, bedrock, linux, os

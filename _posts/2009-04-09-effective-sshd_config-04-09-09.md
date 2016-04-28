@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Effective sshd_config [04/09/09]
 created: 1239290944
 alias: /sp09/sshd_config.html

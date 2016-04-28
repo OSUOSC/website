@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: SSH tunneling, TOR, proxies, etc. [3/5/09]
 created: 1236210561
 alias: /wi09/ssh_tunneling.html

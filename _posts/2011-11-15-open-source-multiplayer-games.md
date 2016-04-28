@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Open Source Multiplayer Games
 created: 1321409293
 categories: announcements

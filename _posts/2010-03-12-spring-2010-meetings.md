@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Spring 2010 Meetings
 created: 1268450434
 categories: announcements

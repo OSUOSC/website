@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: OHI/O 2015 Hackathon
 categories: events
 tags: events, hackathon
