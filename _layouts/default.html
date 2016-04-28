@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+{% include core/head.html %}
+{% include core/sidebar.html %}
+{% include components/search.html %}
+{% include components/back_to_top.html %}
+
+{% if paginator.previous_page %}
+  <!-- when NOT on the index page-->
+  <div id="page-content-wrapper" class="index">
+{% else %}
+  <!-- on the index page-->
+
+  {% if page.is_post %}
+    <!-- on {{ post.url }}-->
+    <div id="page-content-wrapper" class="single">
+  {% else %}
+    <!-- It is NOT a single post-->
+    <div id="page-content-wrapper" class="index home">
+    {% include index/landing.html %}
+    {% include index/about.html %}
+    {% include index/mailchimp.html %}
+    {% include index/no_script.html %}
+    {% include index/contact.html %}
+  {% endif %}
+
+{% endif %}
+
+
+{% include posts.html %}
+{% include core/scripts.html %}
+{% include core/footer.html %}
+
+
+</div>
+</div>
+</div>

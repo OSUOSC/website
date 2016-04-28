@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Welcome Back with Alex! / Ideas for Ohio LinuxFest
 created: 1158867653
 categories: announcements

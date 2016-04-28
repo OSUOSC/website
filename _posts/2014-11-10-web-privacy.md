@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Web Privacy
 created: 1415655843
 alias: /au14/web-privacy.html

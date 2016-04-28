@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Arch Linux
 categories: announcements
 tags: announcements, arch linux, distribution, distro

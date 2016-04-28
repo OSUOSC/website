@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Unofficial Meeting 6/24
 categories: announcements
 tags: announcements

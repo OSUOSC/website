@@ -1,6 +1,6 @@
 name: "The Open Source Club"
 baseurl: ''
-next_meeting_date: April 14, 2016
+next_meeting_date: April 21, 2016
 paginate: 20
 description: >
    The Open Source Club at the Ohio State University is a
@@ -12,7 +12,7 @@ description: >
    in order to bring the benefits of open development, open standards, and free
    software to the university community.
 
-paginate_page: index.jade
+paginate_page: index.html
 
 gems:
   - jekyll-sitemap

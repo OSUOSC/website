@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Advanced Overview of Vim
 created: 1350847223
 alias: /au12/advanced-overview-vim.html

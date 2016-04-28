@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Getting the Most Battery out of Your Laptop
 created: 1360605846
 alias: /sp13/getting-most-battery-out-your-laptop.html

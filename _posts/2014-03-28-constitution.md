@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Constitution
 alias: /about/constitution.html
 categories: history

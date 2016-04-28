@@ -8,7 +8,6 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-html'
   grunt.loadNpmTasks 'grunt-contrib-sass'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
-  grunt.loadNpmTasks 'grunt-contrib-jade'
   grunt.loadNpmTasks 'grunt-contrib-uglify'
   grunt.loadNpmTasks 'grunt-contrib-cssmin'
   grunt.loadNpmTasks 'grunt-jsonmin'
@@ -75,33 +74,6 @@ module.exports = (grunt) ->
         } ]
         files: [ {
           '_site/dist/js/app.js': '_assets/js/*.coffee'
-        } ]
-
-    jade:
-      jekyll_includes:
-        options: [ {
-          data:
-            debug: false
-        } ]
-        files: [ {
-          expand: true
-          cwd: '_includes/jade/'
-          src: ['**/*.jade']
-          dest: '_includes/html/.'
-          ext: '.html'
-        } ]
-
-      jekyll_layouts:
-        options: [ {
-          data:
-            debug: false
-        } ]
-        files: [ {
-          expand: true
-          cwd: '_layouts/jade/'
-          src: ['**/*.jade']
-          dest: '_layouts/html/.'
-          ext: '.html'
         } ]
 
     sass:
@@ -348,13 +320,8 @@ module.exports = (grunt) ->
         files: '_assets/**/*.coffee'
         tasks: [ 'coffee:' + currentEnvironment, 'uglify:' + currentEnvironment ]
 
-      jade:
-        files: '_includes/**/*.jade'
-        tasks: [ 'jade' ]
-
       source:
         files: [
-          '_drafts/**/*'
           '_includes/**/*'
           '_layouts/**/*'
           '_posts/**/*'
@@ -381,7 +348,6 @@ module.exports = (grunt) ->
     'exec:next_meeting'
     'exec:bundler'
     'exec:bower'
-    'jade'
     'copy:scss'
     'exec:jekyll'
     'exec:aliasFeed'

@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: BDAA Career Fair
 categories: volunteering
 tags: volunteering

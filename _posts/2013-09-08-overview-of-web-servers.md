@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Overview of Web Servers
 created: 1378671092
 alias: /au13/overview-web-servers.html

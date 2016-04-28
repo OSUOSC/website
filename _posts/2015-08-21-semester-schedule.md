@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title:  Autumn 2015 Semester Schedule
 categories: schedules
 tags: schedules

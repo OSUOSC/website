@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Google Android
 created: 1195253441
 categories: announcements

@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Richard Stallman visiting OSU
 created: 1364222208
 alias: /sp13/richard-stallman-visiting-osu.html

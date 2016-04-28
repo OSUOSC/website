@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Elections for the 2010/2011 Year
 categories: announcements
 tags: announcements

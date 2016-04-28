@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Forensic Data Analysis
 categories: announcements
 tags: announcements, data analysis

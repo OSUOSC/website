@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Open Discussion [1/15/09]
 created: 1232022215
 categories: announcements

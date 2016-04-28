@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: 'Meetings: Winter 2007'
 created: 1169764800
 categories: announcements

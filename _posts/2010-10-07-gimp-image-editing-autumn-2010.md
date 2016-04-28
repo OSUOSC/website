@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: GIMP Image editing - Autumn 2010
 created: 1286425319
 categories: announcements

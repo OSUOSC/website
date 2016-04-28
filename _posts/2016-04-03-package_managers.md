@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Package managers and Open Source election
 categories: announcements
 tags: announcements, package managers

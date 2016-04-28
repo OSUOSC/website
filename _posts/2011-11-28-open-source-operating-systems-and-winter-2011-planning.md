@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Open Source Operating Systems and Winter 2011 Planning
 created: 1322525494
 categories: announcements

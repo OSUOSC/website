@@ -92,7 +92,7 @@ path = "_posts/#{d.strftime("%Y-%m-%d")}-#{topic_slugified}.md"
 
 File.open(path, "w") do |f|
   f.puts '---'
-  f.puts 'layout: html/default'
+  f.puts 'layout: default'
   f.puts "title: #{topic}"
   f.puts "categories: #{category}"
   f.puts "tags: #{category}"

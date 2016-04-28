@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Unix Command-Line Utilities
 created: 1327964558
 alias: /wi12/unixutils.html

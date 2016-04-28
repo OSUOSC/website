@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Exploring Majors Fair
 categories: volunteering
 tags: volunteering

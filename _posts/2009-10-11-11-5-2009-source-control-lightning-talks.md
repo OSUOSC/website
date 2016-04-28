@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: 11/5/2009 - Source Control Lightning Talks
 created: 1255303757
 categories: announcements

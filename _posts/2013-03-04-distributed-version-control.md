@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Distributed Version Control
 created: 1362378684
 alias: /sp13/distributed-version-control.html

@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Mandatory Access Control
 created: 1304207271
 categories: announcements

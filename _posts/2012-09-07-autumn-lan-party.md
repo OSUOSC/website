@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Autumn LAN Party
 created: 1347075018
 categories: announcements

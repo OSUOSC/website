@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: This Week In Slashdot
 created: 1335219799
 categories: announcements

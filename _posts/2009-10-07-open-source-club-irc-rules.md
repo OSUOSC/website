@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Open Source Club IRC Rules
 created: 1254957896
 categories: announcements

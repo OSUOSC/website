@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Wireless Hacking
 created: 1317085487
 categories: announcements

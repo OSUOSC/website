@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Blender 3D Modeling & Short Films
 created: 1334712220
 alias: /sp12/blender.html

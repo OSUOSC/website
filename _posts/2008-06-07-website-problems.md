@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Website problems
 created: 1212815876
 categories: announcements

@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Linux Installfest
 categories: announcements
 tags: announcements, linux, installfest

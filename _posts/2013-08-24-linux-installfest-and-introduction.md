@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Linux InstallFest and Introduction
 created: 1377398216
 alias: /au13/linux-installfest-and-introduction.html

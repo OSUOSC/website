@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Open Source at Facebook
 created: 1413918722
 alias: /au14/open-source-facebook.html

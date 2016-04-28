@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: 9/24/2009 - First Meeting of the Year
 created: 1253591727
 categories: announcements

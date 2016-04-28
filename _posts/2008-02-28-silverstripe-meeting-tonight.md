@@ -1,5 +1,5 @@
 ---
-layout: html/default
+layout: default
 title: Silverstripe Meeting Tonight
 created: 1204228495
 categories: announcements
