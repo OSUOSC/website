@@ -18,16 +18,20 @@
       {% if site.categories.[page.category] == null %}
         <span>There are currently no events planned</span>
       {% else %}
+        {% capture current_date %}{{'now' | date: "%s"}}{% endcapture %}
+
         {% for post in site.categories.[page.category] %}
-          {% capture current_date %}{{'now' | date: "%s"}}{% endcapture %}
           {% capture expiration_date %}
             {{ post.expire_date | date: '%s' }}
           {% endcapture %}
 
-          {% if expiration_date >= current_date %}
+          {% assign difference = expiration_date | minus: current_date %}
+
+          {% if difference > 0  %}
             {% assign event_found = true %}
             <h2 class="bold">{{ post.title }}</h2>
             <span class="date">posted: {{ post.date | date: "%m-%d-%Y" }}</span>
+
             <div class="content">{{ post.content }}</div>
           {% endif %}
         {% endfor %}
