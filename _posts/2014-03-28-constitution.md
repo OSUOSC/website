@@ -9,26 +9,16 @@ tags: history, constitution
 Preamble
 ========
 
-It is important to recognize the dangers of bureaucracy, as they can get
-in the way of doing cool things. So long as the requirements of the Ohio
-State University and the realistic needs of the club are met, efforts
-should be made to minimize bureaucracy.
+It is important to recognize the danger that bureaucracy can get in the way of doing cool things. So long as the requirements of the Ohio State University and the realistic needs of the club are met, efforts should be made to minimize bureaucracy.
 
-As the club has evolved it has become necessary to elect additional
-officers in order to aid the further growth of the club. While this is
-not an attempt to create a bureaucracy, it is necessary in order to
-delegate duties among members in order to help the club run smoothly. At
-the time of this writing there are currently three elected positions
-within the club: President (or Benevolent Dictator), Vice President, and
-Treasurer. These three positions will continue to exist as long as they
-are required by the Ohio State University.
+As the club has evolved it has become necessary to elect additional officers in order to aid the further growth of the club. While this is not an attempt to create a bureaucracy, it is necessary in order to delegate duties among members in order to help the club run smoothly. At the time of this writing there are currently three elected positions within the club: President (or Benevolent Dictator), Vice President, and Treasurer. These three positions will continue to exist as long as they are required by the Ohio State University.
 
 Article I - Name, Purpose and Non-Discrimination Policy
 =======================================================
 
 ### Section 1 - Name
 
-This is the Open Source Club at the Ohio State University.
+This is the Opensource Club at the Ohio State University.
 
 ### Section 2 - Purpose
 
@@ -51,8 +41,7 @@ software written for opensource platforms (for instance) or writing of
 open source software for a proprietary platform (for instance) if some
 of its members wish to do so. However, programs written by members of
 the club, under the flag of the club, and distributed by the club should
-meet some acceptable definition of open source software, defined by the
-Open Source Initiative.
+meet some acceptable definition of open source software.
 
 ### Section 3 - Non Discrimination Policy
 
@@ -82,32 +71,31 @@ categories.
 
 ### Part 2 - Membership Privileges
 
-Accounts on the club computers will be given out to any member who
+Accounts on the club computers can be given out to any member who
 requests an account, provided Ohio State University’s rules are
 followed. These accounts may be revoked due to inactivity or failure to
-follow the rules. Key card access to the club office will be granted
-after a member has been active within the club for at least two months,
-provided that Ohio State University rules are followed. Access may be
-revoked due to inactivity or failure to follow the rules. When it is
-necessary to take a vote, voting members are allowed to do so.
+follow the rules. Key card access to the club office can be granted
+on request given the consent of the president, provided that Ohio 
+State University rules are followed. Access may be revoked due to 
+inactivity or failure to follow the rules. When it is necessary to 
+take a vote, voting members are allowed to do so.
 
 ### Part 3 - Membership Removal
 
 Should cause for membership removal be raised, a member can be removed
 in one of two ways:
 
--   A majority vote of club officers.
+1.   A majority vote of club officers.
 
--   A majority vote of voting members, providing at least there are at
-    least 3/4<sup>th</sup> of the usual number of attending voting
-    members present at the vote.
+2.   A two thirds majority vote of voting members, providing there is 
+     at least a week's notice of the vote.
 
 Article III - Officer Positions, Duties, Selection, and Removal
 ===============================================================
 
 ### Part 1 - Officer Positions, Duties, Powers and Limitations.
 
-There are three officer positions: The President (or Benevolent
+There are three officer positions required by the Ohio State University: The President (or Benevolent
 Dictator), the Vice President, and the Treasurer. These three positions
 will continue to exist as long as they are required by the Ohio State
 University. The responsibilities of the aforementioned officers are as
@@ -136,7 +124,7 @@ The Vice President shall have the following responsibilities:
 
 The Treasurer shall the following responsibilities:
 
--   Produces and presents a semesterly budget
+-   Produces and presents a quarterly budget
 
 -   Purchases pizza and other consumables for meetings
 
@@ -158,7 +146,8 @@ ultimate power over a software project.
 Once a year, elections will take place for the officer positions. This
 election must be announced at least one week prior to the vote. Any
 voting member who meets The Ohio State University’s requirements may run
-for any of the offices. The individual who receives the most votes will
+for any of the offices excluding extra positions that are designated as 
+being appointed (see III 1). The individual who receives the most votes will
 attain that position for the next academic year, unless removed. Ties
 will be broken by a vote of the officers in place before the active
 election.
@@ -166,7 +155,7 @@ election.
 ### Part 3 - Officer Removal
 
 Leadership is needed in any club and so officers are required to be
-present at twelve out of fifteen official meetings per semester, while
+present at eight out of 10 official meetings per quarter, while
 it is also realized that extenuating circumstances are possible. In
 order to eliminate doubts surrounding an officers excuse for missing a
 meeting, said officer must notify at least one of the other officers
@@ -182,7 +171,7 @@ Article IV - Advisor: Qualification Criteria
 
 The advisor should be a person of technical experience. Preferably
 someone who has been involved in Opensource development. The advisor
-must grow the goals of the club so that he or she does not get in their
+must grok the goals of the club so that he or she does not get in their
 way. The advisor exists to provide guidance, mentor-ship, and
 cluefulness. The advisor’s term is one academic year.
 
@@ -209,8 +198,8 @@ Article VI - Method of Amending Constitution: Proposals, notices and voting requ
 
 In the case that someone thinks that they need to alter the constitution
 or by-laws (if any) for bug fixes, adding features, or compatibility
-with new hardware, a quorum (3/4 of the voting membership) must vote and
-the vote must be a 2/3 majority. Voting can be in person or via some
+with new hardware, the election must be announced at least a week in 
+advance and the vote must be a 2/3 majority. Voting can be in person or via some
 electronic medium provided that in either case a reasonable amount of
 certainty of identity can be secured. Amendments and changes should be
 taken advisedly and considered for a reasonable amount of time before
