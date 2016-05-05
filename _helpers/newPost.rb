@@ -99,7 +99,7 @@ File.open(path, "w") do |f|
   f.puts "categories: #{category}"
   f.puts "tags: #{category}"
   f.puts "meeting_date: #{meeting_date}" if category == 'announcements'
-  f.puts "expiration_date: #{expiration_date}" if expiration_date
+  f.puts "expire_date: #{expiration_date}" if expiration_date
   f.puts '---'
   f.puts
   f.puts '<!-- INSERT TEXT HERE -->'
