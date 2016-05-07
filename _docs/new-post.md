@@ -1,6 +1,6 @@
 ## New posts
 
-To create a new post, run `ruby /_helpers/newPost.rb` on the command line, **never** copy an existing post in `/_posts/` and edit it.
+To create a new post, run `rake new:post` on the command line, **never** copy an existing post in `/_posts/` and edit it.
 
 Meeting announcements must contain the following information:
 
@@ -32,8 +32,8 @@ If you are manually creating the post, the date in the filename will be the date
   ```md
     [downloaded here]({{ site.baseurl }}/downloads/presentations/{{ page.path | remove: "_posts/" | replace: '.md', '.pdf' }})
   ```
-  
-  
+
+
 <br>
 ## Rebuilding the site after creating a new post
 

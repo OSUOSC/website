@@ -65,7 +65,9 @@ Checkout our [staging site](https://osuosc.github.io/open-source-club-website/) 
 #### Create a new post
 
   ```bash
-    ruby _helpers/newPost.rb
+    rake new:post
+    # or
+    rake new:post <category>
   ```
 
 *posts that aren't generated using this helper script will be rejected*
