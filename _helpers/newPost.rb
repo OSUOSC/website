@@ -65,7 +65,7 @@ title = STDIN.gets.chomp
 title_slugified = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
 
 
-if (category != 'events' && category != 'volunteering')
+if (category == 'announcements')
   puts
   puts 'When is the meeting? (YYYY-MM-DD)'.green
     meeting_date = STDIN.gets.chomp
