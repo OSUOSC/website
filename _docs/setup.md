@@ -16,7 +16,7 @@
 3. Run the setup scripts
 
 	```bash
-	./init.sh
+	./_helpers/init.sh
 	```
 
 4. Run the site locally

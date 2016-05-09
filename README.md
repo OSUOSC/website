@@ -47,7 +47,7 @@ If you frequent the site often checkout [opensource.osu.edu/latest](https://open
 <br>
 #### Set up your machine:
   ```
-  ./init.sh
+  ./_helpers/init.sh
   ```
 
 <br>
