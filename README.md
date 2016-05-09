@@ -1,6 +1,6 @@
 # [The Open Source Club's Website](https://opensource.osu.edu)
 
-[![Build Status](https://travis-ci.org/OSUOSC/open-source-club-website.svg?branch=master)](https://travis-ci.org/OSUOSC/open-source-club-website)
+[![Build Status](https://travis-ci.org/OSUOSC/website.svg?branch=master)](https://travis-ci.org/OSUOSC/website)
 [![Dependency Status](https://gemnasium.com/OSUOSC/open-source-club-website.svg)](https://gemnasium.com/OSUOSC/open-source-club-website)
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
