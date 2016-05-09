@@ -277,9 +277,6 @@ module.exports = (grunt) ->
         stdout: false
       } ]
 
-      bundler:
-        cmd: 'bundle install'
-
       bower:
         cmd: 'bower install'
 
@@ -346,7 +343,6 @@ module.exports = (grunt) ->
     'set_environment'
     'exec:baseurl'
     'exec:next_meeting'
-    'exec:bundler'
     'exec:bower'
     'copy:scss'
     'exec:jekyll'
