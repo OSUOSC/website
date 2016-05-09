@@ -6,7 +6,9 @@ rvm:
 - 2.2.3
 # Assume bundler is being used, install step will run `bundle install`.
 
-before_install: npm install -g grunt-cli
+before_install:
+  - cp _config.yml.template _config.yml
+  - npm install -g grunt-cli
 
 install:
   - npm install
