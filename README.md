@@ -23,6 +23,8 @@ To learn more about getting this repository set up on your computer or to find i
 
 Checkout our [staging site](https://osuosc.github.io/open-source-club-website/) which may or may not be up-to-date.
 
+If you frequent the site often checkout [opensource.osu.edu/latest](https://opensource.osu.edu/latest)
+
 <br>
 --
 <br>
