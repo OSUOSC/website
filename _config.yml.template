@@ -1,6 +1,6 @@
 name: "The Open Source Club"
 baseurl: ''
-next_meeting_date:
+next_meeting_date: foo
 paginate: 20
 description: >
    The Open Source Club at the Ohio State University is a
