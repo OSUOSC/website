@@ -22,7 +22,7 @@ module.exports = (grunt) ->
       baseurl: '"\'\'"'
 
     staging:
-      baseurl: '/open-source-club-website'
+      baseurl: '/website'
 
     production:
       baseurl: '"\'\'"'

@@ -7,7 +7,7 @@ $(window).resize ->
   revealNavigation()
 
 setNavigation = ->
-  baseUrl = "/open-source-club-website" # github repo name
+  baseUrl = "/website" # github repo name
   path = window.location.pathname # p = url path
 
   if window.location.host.indexOf("github.io") > -1

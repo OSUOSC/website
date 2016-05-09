@@ -1,5 +1,5 @@
 $ ->
-  baseUrl = '/open-source-club-website'
+  baseUrl = '/website'
   u = window.location.host.indexOf('github.io')
   if u == -1
     baseUrl = ''

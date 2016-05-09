@@ -4,8 +4,8 @@
 2. Clone the repository from your fork:
 
 	```bash
-	git clone git@github.com:your-username/open-source-club-website.git
-	cd open-source-club-website
+	git clone git@github.com:your-username/website.git
+	cd website
 	```
 
 3. Install the dependencies:

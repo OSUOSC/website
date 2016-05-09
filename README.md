@@ -1,7 +1,7 @@
 # [The Open Source Club's Website](https://opensource.osu.edu)
 
-[![Build Status](https://travis-ci.org/OSUOSC/open-source-club-website.svg?branch=master)](https://travis-ci.org/OSUOSC/open-source-club-website)
-[![Dependency Status](https://gemnasium.com/OSUOSC/open-source-club-website.svg)](https://gemnasium.com/OSUOSC/open-source-club-website)
+[![Build Status](https://travis-ci.org/OSUOSC/website.svg?branch=master)](https://travis-ci.org/OSUOSC/website)
+[![Dependency Status](https://gemnasium.com/OSUOSC/website.svg)](https://gemnasium.com/OSUOSC/website)
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 
@@ -11,17 +11,17 @@ This is our repository for our club's [website](https://opensource.osu.edu). It'
 <br>
 
 
-[Setup](https://github.com/OSUOSC/open-source-club-website/blob/master/_docs/setup.md)
+[Setup](https://github.com/OSUOSC/website/blob/master/_docs/setup.md)
 
-[Create Posts](https://github.com/OSUOSC/open-source-club-website/blob/master/_docs/new-post.md)
+[Create Posts](https://github.com/OSUOSC/website/blob/master/_docs/new-post.md)
 
-[Deploying](https://github.com/OSUOSC/open-source-club-website/blob/master/_docs/deploying.md)
+[Deploying](https://github.com/OSUOSC/website/blob/master/_docs/deploying.md)
 
 <br>
 
-To learn more about getting this repository set up on your computer or to find instructions on how to contribute new posts, check out the [contributing](https://github.com/OSUOSC/open-source-club-website/blob/master/.github/CONTRIBUTING.md) file.
+To learn more about getting this repository set up on your computer or to find instructions on how to contribute new posts, check out the [contributing](https://github.com/OSUOSC/website/blob/master/.github/CONTRIBUTING.md) file.
 
-Checkout our [staging site](https://osuosc.github.io/open-source-club-website/) which may or may not be up-to-date.
+Checkout our [staging site](https://osuosc.github.io/website/) which may or may not be up-to-date.
 
 If you frequent the site often checkout [opensource.osu.edu/latest](https://opensource.osu.edu/latest)
 
@@ -31,8 +31,8 @@ If you frequent the site often checkout [opensource.osu.edu/latest](https://open
 
 #### Fork, then clone the repo:
   ```bash
-    git clone git@github.com:<username>/open-source-club-website.git
-    cd open-source-club-website
+    git clone git@github.com:<username>/website.git
+    cd website
   ```
 
 --

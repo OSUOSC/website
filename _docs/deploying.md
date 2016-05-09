@@ -1,13 +1,13 @@
 ## Deploying to Github Pages
 
 
-Our [staging site](https://osuosc.github.io/open-source-club-website/) is is on Github Pages.
+Our [staging site](https://osuosc.github.io/website/) is is on Github Pages.
 Anyone can deploy their own instance of our site in the matter of seconds, without additional setup.
 
 If you haven't already, go ahead and [fork our repository](https://help.github.com/articles/fork-a-repo/).
 
 
-Once completed the site can be found at `https://<username>.github.io/open-source-club-website/`
+Once completed the site can be found at `https://<username>.github.io/website/`
 
 
 ---
