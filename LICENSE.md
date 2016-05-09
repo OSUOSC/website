@@ -2,6 +2,9 @@ The MIT License (MIT)
 
 Copyright (c) 2015-2016 The Open Source Club at The Ohio State University
 
+This license is applied on any code newer than the commit ea79836 (dated 
+April 23, 2015). Code older than the aforementioned commit is unlicensed.
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
