@@ -15,11 +15,11 @@
     "tests"
   ],
   "dependencies": {
-    "fontawesome": "~4.5.0",
+    "fontawesome": "~4.6.2",
     "jquery": "~2.1.4",
     "normalize-scss": "3.0.3",
     "open-sans-fontface": "~1.4.2",
-    "simple-jekyll-search": "~1.1.1",
+    "simple-jekyll-search": "~1.1.4",
     "ubuntu-fontface": "~0.1.5"
   }
 }
