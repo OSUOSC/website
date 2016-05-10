@@ -41,5 +41,4 @@ exclude:
   - "bower_components"
   - "bower.json"
   - "Gruntfile.coffee"
-  - "init.sh"
   - "_assets"
