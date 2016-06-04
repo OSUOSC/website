@@ -6,6 +6,11 @@ tags: announcements
 meeting_date: 2016-06-08
 ---
 
+Potential talks can be proposed and discussed 
+[here](https://github.com/OSUOSC/website/issues/214). Feel free to ask for talks
+ about subjects that intrigue you, offer talks for subjects that enthrall you,
+ and support those that are already there.
+
 |---------------|-------------------------------|---------------|
 | date		| topic				| speaker(s)	|
 |---------------|-------------------------------|---------------|
