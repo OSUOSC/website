@@ -15,9 +15,9 @@ Potential talks can be proposed and discussed
 | date		| topic				| speaker(s)	|
 |---------------|-------------------------------|---------------|
 | 08/25/2016	| What is open source?		| malide	|
-| 09/01/2016	| Intro to the commandline	| malide	|
-| 09/08/2016	| InstallFest			| N/A		|
-| 09/15/2016	| Intro to the Command line	| malide	|
+| 09/01/2016	| InstallFest			| N/A		|
+| 09/08/2016	| Intro to the Command line	| malide	|
+| 09/15/2016	| TBD				| N/A		|
 | 09/22/2016	| TBD				| TBD		|
 | 09/29/2016	| Vim vs. Emacs			| EDT/malide	|
 | 10/06/2016	| TBD				| TBD		|
