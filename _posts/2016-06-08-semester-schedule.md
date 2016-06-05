@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Autumn 2016 Semester Schedule
-categories: announcements
-tags: announcements
+categories: schedules
+tags: schedules
 meeting_date: 2016-06-08
 ---
 
