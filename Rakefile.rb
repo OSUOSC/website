@@ -64,7 +64,7 @@ namespace :new do
 
 
     category = ARGV[1]
-    categories = ['events', 'history', 'tutorials', 'announcements', 'volunteering']
+    categories = ['events', 'history', 'tutorials', 'announcements', 'volunteering','schedules']
 
     firstRun = true
 
@@ -73,7 +73,7 @@ namespace :new do
       if firstRun && category.nil?
         puts
         puts 'Protip: weekly meetings are categorized under announcements'.blue
-        puts 'What is the post\'s category? (i.e. events, volunteering, announcements, tutorials, histroy)'.green
+        puts 'What is the post\'s category? (i.e. schedules, events, volunteering, announcements, tutorials, histroy)'.green
       else
         puts 'Invalid category, try again.'.yellow
       end
