@@ -105,6 +105,12 @@ namespace :new do
         puts 'Invalid format, try again.'.yellow
         meeting_date = STDIN.gets.chomp
       end
+
+      puts
+      puts 'Protip: if you leave this blank it will default to "Caldwell Labs, Rm 120"'.blue
+      puts 'Where is the meeting location'.green
+      meeting_location = STDIN.gets.chop
+      meeting_location = 'Caldwell Labs, Rm 120' if meeting_location.length == 0
     end
 
 
@@ -131,6 +137,7 @@ namespace :new do
       f.puts "tags: #{category}"
       f.puts "meeting_date: #{meeting_date}" if category == 'announcements'
       f.puts "expire_date: #{expiration_date}" if expiration_date
+      f.puts "meeting_location: #{meeting_location}" if meeting_location
       f.puts '---'
       f.puts
       f.puts '<!-- INSERT TEXT HERE -->'

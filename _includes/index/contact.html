@@ -1,3 +1,17 @@
+{% for post in site.posts %}
+  {% if post.meeting_date and post.meeting_location %}
+    {% capture meeting_location %}
+      {{ post.meeting_location }}
+    {% endcapture %}
+
+    {% capture meeting_date %}
+      {{ post.meeting_date | date: "%B %e, %Y" }}
+    {% endcapture %}
+
+    {% break %}
+  {% endif %}
+{% endfor %}
+
 <div id="contact-wrapper">
 
   <div class="contact">
@@ -25,7 +39,9 @@
         <div class="info-wrapper">
           <div class="contact-info-meeting">
             <div class="contact-info-meeting-container">
-              <h6>next meeting</h6><span>{{ site.next_meeting_date }}</span></div>
+              <h6>next meeting</h6>
+              <span>{{ meeting_date }}</span>
+            </div>
           </div>
         </div>
       </li>
@@ -34,12 +50,14 @@
         <div class="info-wrapper">
           <div class="contact-info-location">
             <div class="contact-info-location-container">
-              <h6>meeting location</h6><span>Caldwell Labs, Rm 120</span></div>
+              <h6>meeting location</h6>
+              <span>{{ meeting_location }}</span>
+            </div>
           </div>
         </div>
       </li>
 
     </ul>
   </div>
-  
+
 </div>
