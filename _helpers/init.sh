@@ -26,6 +26,11 @@ npm install
 # install bundler gem
 echo 'Checking for bundler gem'
 if ! [ $(gem list bundler -i) ]; then
-  gem install bundler && bundle install
+  gem install bundler
 fi
 
+echo 'Installing gems'
+bundle install
+
+echo 'Installing bower components'
+bower install

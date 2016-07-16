@@ -277,9 +277,6 @@ module.exports = (grunt) ->
         stdout: false
       } ]
 
-      bower:
-        cmd: 'bower install'
-
       purge:
         cmd: 'rm -rf _site/*'
 
@@ -339,7 +336,6 @@ module.exports = (grunt) ->
   grunt.registerTask 'build', [
     'set_environment'
     'exec:baseurl'
-    'exec:bower'
     'copy:scss'
     'exec:jekyll'
     'exec:aliasFeed'
