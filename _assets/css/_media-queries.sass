@@ -131,7 +131,7 @@
     margin-top: 5.75rem
 
 
-@media (min-width: 1200px) and (max-width: 1749px)
+@media (min-width: 1200px)
   .container
     max-width: 960px
   #page-content-wrapper
@@ -146,24 +146,19 @@
           margin-right: 2em
 
 
-@media (min-width: 1750px)
-  .container
-    max-width: 1400px
-  #page-content-wrapper
-    .column-wrap
-      &:nth-of-type(2n)
-        width: calc(960px - (3em * 2))
-      &:nth-of-type(2n+1)
-        // position: fixed
-        position: relative
-        width: calc(100% - 960px - 10em)
-        min-width: calc(1400px - 960px - 10em)
-        max-width: 1em
-        margin-left: 10em
-    .related
-      padding-top: 8rem
-      .related-post
-        width: 100%
+// @media (min-width: 1750px)
+//   .container
+//     max-width: 960px
+//   #page-content-wrapper
+//     .column-wrap
+//       width: calc(960px - (3em * 2))
+//       &:nth-of-type(2n+1)
+//         margin-top: 8em
+//     .related
+//       .related-post
+//         width: calc(50% - 2em)
+//         &:nth-of-type(2n+1)
+//           margin-right: 2em
 
 
 @media (min-width: 2000px) and (orientation: landscape)
