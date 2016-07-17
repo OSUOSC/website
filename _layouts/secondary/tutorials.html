@@ -22,7 +22,7 @@
           <h2>
             <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
           </h2>
-          <span class="date">updated: {% last_modified_at %m-%d-%Y %}</span>
+          <span class="date">updated: {{ post.last_modified_at | date: '%m-%d-%Y' }}</span>
         {% endfor %}
       {% endif %}
 
