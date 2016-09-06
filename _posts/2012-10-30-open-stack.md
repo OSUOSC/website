@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Open Stack
-created: 1351635395
 alias: /au12/open-stack.html
 categories: announcements
 tags: announcements, devops

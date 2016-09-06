@@ -1,7 +1,6 @@
 ---
 layout: default
-title: 10/29/2009 - Linux Kernel Configuration
-created: 1255303131
+title: Linux Kernel Configuration
 categories: announcements
 tags: announcements, linux, kernel
 ---

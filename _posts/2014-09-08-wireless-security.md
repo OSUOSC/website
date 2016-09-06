@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Wireless Security
-created: 1410194925
 alias: /au14/wireless-security.html
 categories: announcements
 tags: announcements, wireless, wifi, security, hack

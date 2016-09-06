@@ -1,7 +1,6 @@
 ---
 layout: default
 title: GNU Utilities
-created: 1264449998
 alias: /wi10/gnu-utils.html
 categories: announcements
 tags: announcements, gnu
@@ -16,8 +15,7 @@ The second half will try and touch on the rest of the commands, concentrating on
 
 I also will leave off with a slide or two of fun one liners, and some bash tricks, that people may find super useful.
 
-Commands for generating text
-============================
+### Commands for generating text
 
 *   find
 *   lsof
@@ -28,8 +26,7 @@ Commands for generating text
 *   whois/dig
 *   pidof
 
-Commands for processing text
-============================
+### Commands for processing text
 
 *   sed
 *   awk
@@ -39,10 +36,9 @@ Commands for processing text
 *   tail/head
 *   sort/uniq
 
-Helping commands
-================
+### Helping commands
 
-*   pipes |
+*   pipes
 *   watch
 *   cat
 *   kill/pkill/killall

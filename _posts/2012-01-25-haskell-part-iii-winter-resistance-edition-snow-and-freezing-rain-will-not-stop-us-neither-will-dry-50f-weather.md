@@ -2,16 +2,16 @@
 layout: default
 title: 'Haskell: Part III: Winter Resistance Edition: Snow and Freezing Rain Will
   Not Stop Us (neither will dry, 50F weather)'
-created: 1327518233
 categories: announcements
 tags: announcements, haskell, language
 ---
 *Thursday January 26, 2012*
+
 *Dreese Lab 266*
 
 Haskell is an advanced purely-functional programming language. An open-source product of more than twenty years of cutting-edge research, it allows rapid development of robust, concise, correct software. With strong support for integration with other languages, built-in concurrency and parallelism, debuggers, profilers, rich libraries and an active community, Haskell makes it easier to produce flexible, maintainable, high-quality software.
 
-- Haskell.org
+-- Haskell.org
 
 Continuing the series on introductory Haskell programming we will talk
 about abstractions common to everyday Haskell. This will include I/O and
@@ -22,7 +22,7 @@ discussed.
 
 For those of you who couldn't make it last week, we covered most* of the
 material up to and including Chapter 8 of Learn You A
-Haskell<http://learnyouahaskell.com/chapters>.
+Haskell http://learnyouahaskell.com/chapters.
 The topics in Chapter 8 will probably receive some attention again before
 moving onto the other topics.
 
@@ -38,4 +38,4 @@ will probably be organizing something like this during the meeting. If you
 miss the meeting but would like to be involved, it will likely be a common
 discussion topic in the OSC IRC channel.
 
--Alex Burkhart
+-- Alex Burkhart

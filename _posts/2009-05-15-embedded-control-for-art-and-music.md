@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Embedded Control for Art & Music
-created: 1242397207
 categories: announcements
 tags: announcements, art, music, audio, embedded
 ---

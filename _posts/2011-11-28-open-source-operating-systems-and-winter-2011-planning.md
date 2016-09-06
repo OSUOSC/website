@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Open Source Operating Systems and Winter 2011 Planning
-created: 1322525494
 categories: announcements
 tags: announcements, os
 ---
@@ -11,27 +10,28 @@ Additionally, we will plan out the topics for our meetings quarter. Bring ideas 
 <!--break-->
 Specific Operating Systems and Presenters:
 
-Operating System -  Presenter
-Linux Mint       -  Randal
-PCLinxOS       -    Randal
-Ubuntu          -    Edward
-Fedora           -   Alingo
-Centos            -  Alingo
-Mageia             - Alingo
-Mandriva     -       Alingo
-RHEL            -    Alingo
-Debian          -    Joel
-OpenSUSE     -       bsilvereagle
-Arch Linux       -   Brad
-Slackware Linux -    Brad
-FreeBSD          -   paradigm
-NetBSD            -  paradigm
-OpenBSD          -   paradigm
-OpenSolaris       -  paradigm
-Linux From Scratch - paradigm
-Bedrock Linux     -  paradigm
-Gentoo          -    Noxz
-Vector Linux   -     Noxz
-Android           -  Noxz + Alingo
 
-<!-- TODO -->
+
+| Operating System    | Presenter           |
+| ------------- |-------------|
+Linux Mint       |  Randal
+PCLinxOS       |    Randal
+Ubuntu          |    Edward
+Fedora           |   Alingo
+Centos            |  Alingo
+Mageia             | Alingo
+Mandriva     |       Alingo
+RHEL            |    Alingo
+Debian          |    Joel
+OpenSUSE     |       bsilvereagle
+Arch Linux       |   Brad
+Slackware Linux |    Brad
+FreeBSD          |   paradigm
+NetBSD            |  paradigm
+OpenBSD          |   paradigm
+OpenSolaris       |  paradigm
+Linux From Scratch | paradigm
+Bedrock Linux     |  paradigm
+Gentoo          |    Noxz
+Vector Linux   |     Noxz
+Android           |  Noxz + Alingo

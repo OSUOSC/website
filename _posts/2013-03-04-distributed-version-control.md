@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Distributed Version Control
-created: 1362378684
 alias: /sp13/distributed-version-control.html
 categories: announcements
 tags: announcements, vc, version control, git

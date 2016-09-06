@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Finals Week and Spring Break
-created: 1268434747
 categories: announcements
 tags: announcements
 ---

@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Welcome Back
-created: 1421095148
 categories: announcements
 tags: announcements, first
 ---

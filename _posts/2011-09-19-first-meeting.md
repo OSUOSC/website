@@ -1,7 +1,6 @@
 ---
 layout: default
 title: First meeting
-created: 1316470680
 categories: announcements
 tags: announcements, first
 ---

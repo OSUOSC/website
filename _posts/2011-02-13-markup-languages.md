@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Markup Languages
-created: 1297643465
 categories: announcements
 tags: announcements, markup, haml, language, LaTeX, markdown
 ---

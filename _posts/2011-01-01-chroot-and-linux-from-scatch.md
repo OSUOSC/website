@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Chroot and Linux From Scatch
-created: 1293912163
 categories: announcements
 tags: announcements, linux, chroot, linux from scratch
 ---

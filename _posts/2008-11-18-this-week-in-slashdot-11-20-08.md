@@ -1,8 +1,10 @@
 ---
 layout: default
-title: This Week in Slashdot [11/20/08]
-created: 1227024257
+title: This Week in Slashdot
 categories: announcements
 tags: announcements, slashdot
 ---
-This Thursday, November 20th, for the first time in over a year, Alex is doing _This Week in Slashdot_. Prior knowledge of Slashdot or familiarity with current events are not required. Random discussion is encouraged. Meeting location is [Dreese Labs](http://www.osu.edu/map/building.php?building=279) room 266.
+This Thursday, November 20th, for the first time in over a year, Alex is doing
+*This Week in Slashdot*. Prior knowledge of Slashdot or familiarity with current
+events are not required. Random discussion is encouraged. Meeting location is
+[Dreese Labs](http://www.osu.edu/map/building.php?building=279) room 266.

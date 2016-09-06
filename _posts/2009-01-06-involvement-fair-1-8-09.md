@@ -1,7 +1,6 @@
 ---
 layout: default
-title: Involvement Fair [1/8/09]
-created: 1231298846
+title: Involvement Fair
 categories: announcements
 tags: announcements
 ---

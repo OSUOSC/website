@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Nifty Tips and Tricks
-created: 1270867416
 categories: announcements
 tags: announcements, howto
 ---

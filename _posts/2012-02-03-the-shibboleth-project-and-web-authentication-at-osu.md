@@ -1,7 +1,6 @@
 ---
 layout: default
 title: The Shibboleth Project and Web Authentication at OSU
-created: 1328284639
 alias: /wi12/shibboleth.html
 categories: announcements
 tags: announcements, shibboleth

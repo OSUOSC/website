@@ -1,7 +1,6 @@
 ---
 layout: default
 title: GIMP Image editing - Autumn 2010
-created: 1286425319
 categories: announcements
 tags: announcements, raster, image manipulation, photoshop
 ---
@@ -11,6 +10,8 @@ Image manipulation is done a by-case basis, so what works on one image may not w
 
 While I have some example content, basic to advanced, the talk will be focused on what _you_ want to cover. This can be anything from a quick adjustment of the color/contrast/angle for your pictures, to completely removing a girlfriend/parent/sibling, to [rendering lightning bolts](/~swaneybr/images/lightning.xcf), to making the picture just... [lie](https://box.com/shared/static/qi2ekqlhrupm3bkdnjr3.xcf). By the time you leave, you should qualify as a [Fox News editor](http://mediamatters.org/research/200807020002?f=h_top).
 
-Here is a time-lapsed example of what GIMP is capable of in the right hands by [krc453](http://www.youtube.com/user/krc453):
+<!-- link is broken -->
 
-<object width="459" height="290"><param name="movie" value="http://www.youtube-nocookie.com/v/dIVJQG2XREA&amp;autoplay=1&amp;hl=en_US&amp;fs=1&amp;color1=0x5d1719&amp;color2=0xcd311b&amp;rel=0"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="http://www.youtube-nocookie.com/v/dIVJQG2XREA&amp;autoplay=1&amp;hd=0&amp;fs=1&amp;color1=0x000000&amp;color2=0xad311b&amp;enablejsapi=1&amp;border=0&amp;loop=0&amp;start=14&amp;rel=0&amp;showinfo=0&amp;iv_load_policy=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="459" height="290"></object>
+<!-- Here is a time-lapsed example of what GIMP is capable of in the right hands by [krc453](http://www.youtube.com/user/krc453):
+
+<object width="459" height="290"><param name="movie" value="http://www.youtube-nocookie.com/v/dIVJQG2XREA&amp;autoplay=1&amp;hl=en_US&amp;fs=1&amp;color1=0x5d1719&amp;color2=0xcd311b&amp;rel=0"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="http://www.youtube-nocookie.com/v/dIVJQG2XREA&amp;autoplay=1&amp;hd=0&amp;fs=1&amp;color1=0x000000&amp;color2=0xad311b&amp;enablejsapi=1&amp;border=0&amp;loop=0&amp;start=14&amp;rel=0&amp;showinfo=0&amp;iv_load_policy=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="459" height="290"></object> -->

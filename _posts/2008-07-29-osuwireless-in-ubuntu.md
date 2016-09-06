@@ -1,7 +1,6 @@
 ---
 layout: default
 title: osuwireless in Ubuntu
-created: 1217362629
 alias: [/wireless, /wireless.html, /wireless_0.html]
 categories: tutorials
 tags: tutorials, wifi, osuwireless, wireless

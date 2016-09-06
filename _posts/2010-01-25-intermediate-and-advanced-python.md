@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Intermediate and Advanced Python
-created: 1264450711
 categories: announcements
 tags: announcements, python, language
 ---

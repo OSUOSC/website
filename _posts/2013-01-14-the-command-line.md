@@ -1,7 +1,6 @@
 ---
 layout: default
 title: The Command Line
-created: 1358178548
 alias: /sp13/command-line.html
 categories: announcements
 tags: announcements, cli, terminal, bash, shell

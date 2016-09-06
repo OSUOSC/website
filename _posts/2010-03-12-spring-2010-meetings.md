@@ -1,10 +1,8 @@
 ---
 layout: default
 title: Spring 2010 Meetings
-created: 1268450434
 categories: announcements
 tags: announcements
-excerpt: !ruby/string:Sequel::SQL::Blob 'Below is a list of meetings from Spring 2010:'
 ---
 Below is a list of meetings from Spring 2010:
 

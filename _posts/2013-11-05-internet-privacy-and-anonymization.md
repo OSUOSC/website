@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Internet Privacy and Anonymization
-created: 1383683481
 alias: /au13/internet-privacy-and-anonymization.html
 categories: announcements
 tags: announcements, privacy, security

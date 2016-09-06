@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Scott Merrill from Columbus FreeGeek
-created: 1255120982
 alias: /au09/freegeek.html
 categories: announcements
 tags: announcements, freegeek

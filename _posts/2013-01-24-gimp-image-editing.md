@@ -1,7 +1,6 @@
 ---
 layout: default
 title: GIMP Image Editing
-created: 1359058368
 alias: /sp13/gimp.html
 categories: announcements
 tags: announcements, gimp, image manipulation, raster, photoshop

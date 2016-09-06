@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Window Managers and Desktop Environments
-created: 1299808339
 categories: announcements
 tags: announcements, wm, window manager
 ---

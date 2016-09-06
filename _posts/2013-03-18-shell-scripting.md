@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Shell Scripting
-created: 1363638199
 alias: /sp13/shell-scripting.html
 categories: announcements
 tags: announcements, shell, terminal, shellscript, scripting, bash

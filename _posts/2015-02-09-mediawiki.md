@@ -1,7 +1,6 @@
 ---
 layout: default
 title: MediaWiki
-created: 1423527835
 alias: /sp15/mediawiki.html
 categories: announcements
 tags: announcements, wiki

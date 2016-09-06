@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Computer Vision & Robotics
-created: 1240605608
 alias: /robotics.html
 categories: announcements
 tags: announcements, robotics, computer vision

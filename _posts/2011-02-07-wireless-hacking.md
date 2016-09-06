@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Wireless Hacking
-created: 1297089086
 categories: announcements
 tags: announcements, wifi, wireless, security, privacy
 ---

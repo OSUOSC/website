@@ -1,7 +1,6 @@
 ---
 layout: default
 title: OSC Spring LAN
-created: 1336407858
 alias: /sp12/osc-spring-lan.html
 categories: announcements
 tags: announcements, lan, party
