@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Intro to the Commandline
+title: Intro to the Command line
 categories: announcements
 tags: announcements
 meeting_date: 2016-09-08
@@ -8,7 +8,7 @@ meeting_location: Caldwell Labs, Rm 120
 ---
 
 <!-- INSERT TEXT HERE -->
-If you're new to the commandline, stop on by and we can get you comfortable with the terminal. Be it moving around, updating software, or anything else in your daily computing needs. 
+If you're new to the command line, stop on by and we can get you comfortable with the terminal. Be it moving around, updating software, or anything else in your daily computing needs. 
 
 If you can navigate your way around the terminal just fine, don't skip this meeting yet, we'll be discussing different shells and tips and tricks. Want to get a nice customized setup nice and quick, try FISH or OH-MY-ZSH. Plan on jumping between systems with little control, make sure you know Bash or Csh.
 
