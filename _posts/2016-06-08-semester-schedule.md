@@ -24,7 +24,7 @@ Potential talks can be proposed and discussed
 | 10/27/2016	| Wireless security			| LibreWulf				|
 | 11/03/2016	| DD-WRT and OpenWRT			| WWeber				|
 | 11/10/2016	| ELK stack and data visualization	| David Soller				|
-| 11/17/2016	| Hackathon Hype and Wikimedia		| Kevin Pavrati				|
+| 11/17/2016	| Hackathon Hype and Wikimedia		| Kevin Payravi				|
 | 11/24/2016	| Thanksgiving break			| N/A					|
 | 12/1/2016	| Von Neumann machines			| J3RN					|
 |---------------|---------------------------------------|---------------------------------------|
