@@ -1,7 +1,6 @@
 ---
 layout: default
 title: 'Zimbra: Open Source Mail and Groupware'
-created: 1412036488
 alias: /au14/zimbra-open-source-mail-and-groupware.html
 categories: announcements
 tags: announcements, hosted, self-hosted, mail, email, server

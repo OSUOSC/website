@@ -1,7 +1,6 @@
 ---
 layout: default
 title: 'Updated: Student Involvement Fair/Ohio LinuxFest pamphlet'
-created: 1157923826
 categories: announcements
 tags: announcements, ohio linuxfest
 ---
@@ -19,28 +18,38 @@ As part of our participation in the [Student Involvement Fair](http://ohiounion.
 
 For those who do not want to download the files, here is the complete text of the pamphlet:
 
-[Open Source Club logo]
-
 A student and community organization dedicated to the idea of open source software. Open source software is computer software whose source code is available under a copyright license that permits users to study, change, and improve the software.
 
-Upcoming Meetings
+### Upcoming Meetings
 
-(All meetings are held in Dreese 480 at 7:00pm.)
+*All meetings are held in Dreese 480 at 7:00pm.*
 
-Thursday September 21st - Welcome Back!
+##### Thursday September 21st - Welcome Back!
 
 Come learn what the Open Source Club has planned for the future and discuss what you would like to see happen in this new year.
 
-Tuesday September 26th - Pulse Audio Demo
+<br>
+
+##### Tuesday September 26th - Pulse Audio Demo
 
 Pulse Audio is a new sound server that will officially make its debut in GNOME 2.18 and is going to have some new tricks that will be quite handy.
 
-Thursday October 5th - Net Neutrality
+<br>
+
+##### Thursday October 5th - Net Neutrality
 
 Learn what net neutrality legislation means to popular destinations such as Google and YouTube and find out about what is being hailed as a clash between the grass-roots movements of bloggers verse the Astro-Turf coalitions of our ISPs. Come and voice your opinion!
 
-Tuesday October 10th - Kitten Huffing Kitten huffing is a controversial practice that has recently been growing as a popular and healthy alternative to street drugs. Despite a long history in Western culture, the practice remains largely taboo.
+<br>
 
-Thursday October 19th - Defective By Design Defective By Design is the Free Software Foundation's campaign against Digital Rights Management --- The restrictive software used in software, CDs, and DVDs to restrict what consumers can do with their media.
+##### Tuesday October 10th - Kitten Huffing
 
-http://opensource.cse.ohio-state.edu
+Kitten huffing is a controversial practice that has recently been growing as a popular and healthy alternative to street drugs. Despite a long history in Western culture, the practice remains largely taboo.
+
+<br>
+
+##### Thursday October 19th - Defective By Design
+
+Defective By Design is the Free Software Foundation's campaign against Digital Rights Management --- The restrictive software used in software, CDs, and DVDs to restrict what consumers can do with their media.
+
+<!-- http://opensource.cse.ohio-state.edu -->

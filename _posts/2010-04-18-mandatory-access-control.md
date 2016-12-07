@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Mandatory Access Control
-created: 1271637623
 categories: announcements
 tags: announcements
 ---

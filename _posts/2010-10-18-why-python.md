@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Why Python?
-created: 1287459075
 alias: /wi10/python.html
 categories: announcements
 tags: announcements, python, language

@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Raspberry Pi
-created: 1417444956
 alias: /au14/raspberry-pi.html
 categories: announcements
 tags: announcements, embedded, pi

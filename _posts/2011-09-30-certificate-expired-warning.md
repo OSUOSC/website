@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Certificate expired warning
-created: 1317410352
 categories: announcements
 tags: announcements, cert, ssl
 ---

@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Introduction to Haskell Part 0
-created: 1326149016
 alias: /wi12/haskell1.html
 categories: announcements
 tags: announcements, haskell, language
@@ -19,7 +18,7 @@ tags: announcements, haskell, language
 > Haskell makes it easier to produce flexible, maintainable, high-quality
 > software.*
 
-- Haskell.org
+-- Haskell.org
 
 I've recently revamped my Haskell Presentation. It should flow
 significantly smoother than its previous incarnations. This will be the
@@ -32,4 +31,4 @@ If you want to follow along Thursday night, you should download the Haskell
 Platform for your favorite operating system:
 http://hackage.haskell.org/platform/
 
--Alex Burkhart
+-- Alex Burkhart

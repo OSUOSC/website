@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Open Source Multiplayer Games
-created: 1321409293
 categories: announcements
 tags: announcements
 ---
@@ -11,8 +10,8 @@ I will be doing live demonstrations on live severs we will use for the event, so
 
 Here is a short list of the games we will be playing. This list will likely change up until the LAN party.
 
-Games
---------
+#### Games
+
 - Warsow
 - World of Padman
 - Tremulous

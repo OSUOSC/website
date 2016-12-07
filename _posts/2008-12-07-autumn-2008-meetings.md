@@ -1,11 +1,12 @@
 ---
 layout: default
 title: Autumn 2008 Meetings
-created: 1228661455
 categories: announcements
 tags: announcements, schedule
 ---
 Below is a list of meetings from Autumn 2008:
+
+<!-- FIXME -->
 
 1.  [Welcome Week](/welcome2008)
 2.  [Intro to Linux](/linux_intro-au08)

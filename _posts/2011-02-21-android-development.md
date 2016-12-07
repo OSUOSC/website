@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Android Development
-created: 1298317935
 categories: announcements
 tags: announcements, android, java
 ---

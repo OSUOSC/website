@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Filesystems
-created: 1391526229
 alias: /sp14/filesystems.html
 categories: announcements
 tags: announcements, fs, filesystem

@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Init Discussions
-created: 1392137194
 alias: /sp14/init-discussions.html
 categories: announcements
 tags: announcements, systemd, init system, daemon

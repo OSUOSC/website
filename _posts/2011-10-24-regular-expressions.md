@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Regular Expressions
-created: 1319496349
 alias: /au11/regex.html
 categories: announcements
 tags: announcements, bash, shell, terminal

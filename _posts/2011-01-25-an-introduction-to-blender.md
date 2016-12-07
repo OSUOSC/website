@@ -1,7 +1,6 @@
 ---
 layout: default
 title: An Introduction to Blender!
-created: 1295986936
 categories: announcements
 tags: announcements, 3d, animation
 ---

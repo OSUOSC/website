@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Distributed Version Control Systems
-created: 1325441157
 categories: announcements
 tags: announcements, vc, version control, git
 ---

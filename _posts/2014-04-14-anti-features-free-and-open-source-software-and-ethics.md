@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Anti-features, Free and Open Source Software, and Ethics
-created: 1397482287
 alias: /sp14/anti-features-free-and-open-source-software-and-ethics.html
 categories: announcements
 tags: announcements

@@ -1,7 +1,6 @@
 ---
 layout: default
 title: 'IRC Channel moved to #osuosc'
-created: 1340929308
 alias: /irc/new-channel.html
 categories: announcements
 tags: announcements, irc

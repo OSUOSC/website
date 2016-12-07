@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Introduction to Haskell Part B
-created: 1326905888
 alias: /wi12/haskell2.html
 categories: announcements
 tags: announcements, haskell, language
@@ -19,7 +18,7 @@ tags: announcements, haskell, language
 > Haskell makes it easier to produce flexible, maintainable, high-quality
 > software.*
 
-- Haskell.org
+-- Haskell.org
 
 Following up the craziness from last week's Introduction to Haskell, I will
 be presenting some more advanced stuff. I will begin by reviewing some of
@@ -39,7 +38,7 @@ If you want to follow along Thursday night, you should download the Haskell
 Platform for your favorite operating system:
 http://hackage.haskell.org/platform/
 
--Alex Burkhart
+-- Alex Burkhart
 
 
 *most: I did not cover List Comprehensions and did not go into as much

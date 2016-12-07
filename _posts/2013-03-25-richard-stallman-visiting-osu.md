@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Richard Stallman visiting OSU
-created: 1364222208
 alias: /sp13/richard-stallman-visiting-osu.html
 categories: announcements
 tags: announcements, rms, fsf, free, gnu, stallman, emacs

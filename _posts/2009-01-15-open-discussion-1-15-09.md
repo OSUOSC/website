@@ -1,7 +1,6 @@
 ---
 layout: default
-title: Open Discussion [1/15/09]
-created: 1232022215
+title: Open Discussion
 categories: announcements
 tags: announcements
 ---

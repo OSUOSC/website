@@ -1,7 +1,6 @@
 ---
 layout: default
-title: 12/3/2009 - General Lightning Talks
-created: 1255307749
+title: General Lightning Talks
 categories: announcements
 tags: announcements, lightning talk
 ---

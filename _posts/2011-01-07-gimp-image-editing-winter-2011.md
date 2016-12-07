@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Gimp Image Editing - Winter 2011
-created: 1294416645
 categories: announcements
 tags: announcements, raster, image manipulation, photoshop
 ---
@@ -13,6 +12,8 @@ Image manipulation is done a by-case basis, so what works on one image may not w
 
 While I have some example content, basic to advanced, the talk will be focused on what _you_ want to cover. This can be anything from a quick adjustment of the color/contrast/angle for your pictures, to completely removing a girlfriend/parent/sibling, to [rendering lightning bolts](/%7Eswaneybr/images/lightning.xcf), to making the picture just... [lie](/%7Eswaneybr/images/stallman-gates.xcf). By the time you leave, you should qualify as a [Fox News editor](http://mediamatters.org/research/200807020002?f=h_top).
 
-Here is a time-lapsed example of what GIMP is capable of in the right hands, by [hmfrx](http://www.youtube.com/user/hmfrx):
+<!-- link is broken -->
 
-<object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/AQcJjcx3iTE?fs=1&amp;hl=en_US"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="http://www.youtube.com/v/AQcJjcx3iTE?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></object>
+<!-- Here is a time-lapsed example of what GIMP is capable of in the right hands, by [hmfrx](http://www.youtube.com/user/hmfrx):
+
+<object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/AQcJjcx3iTE?fs=1&amp;hl=en_US"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="http://www.youtube.com/v/AQcJjcx3iTE?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></object> -->

@@ -1,7 +1,6 @@
 ---
 layout: default
-title: 11/12/2009 - Mobile Software Development Forum
-created: 1255304031
+title: Mobile Software Development Forum
 alias: /au09/mobile-dev-forum.html
 categories: announcements
 tags: announcements, mobile, development

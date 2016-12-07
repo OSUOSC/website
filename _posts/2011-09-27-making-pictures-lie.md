@@ -1,11 +1,10 @@
 ---
 layout: default
 title: Making Pictures Lie
-created: 1317172318
 categories: announcements
 tags: announcements, image manipulation, raster, photoshop
 ---
-This Thursday, in Dreese Lab room 266, I will demonstrating how you can make pictures lie using only open source software. Fanboys will often proclaim what they can do in a certain expensive proprietary image editor that shall not be named, so I'm going to demonstrate just the same things are do-able from another certain free, open source program. My claim is that [GIMP](http://www.gimp.org/) is _just_ as capable of making your pictures lie as any other mainstream image manipulation software.
+This Thursday, in Dreese Lab room 266, I will demonstrating how you can make pictures lie using only open source software. Fanboys will often proclaim what they can do in a certain expensive proprietary image editor that shall not be named, so I'm going to demonstrate just the same things are do-able from another certain free, open source program. My claim is that [GIMP](http://www.gimp.org/) is *just* as capable of making your pictures lie as any other mainstream image manipulation software.
 
 Image manipulation is done a by-case basis, so what works on one image may not work on another. Use of these editors is best learned by practice, as opposed to lectures. I also do not know the level of audience to expect, I don't script or rehearse my presentations, and simply impressing you isn't going to teach you anything. Therefore, the presentation shall be interactive, and use of a laptop with GIMP already installed is encouraged. Questions are also encouraged, so please come prepared with ideas of what you would like to see - as basic as "what is a layer?" to as advanced as "how do I render lightning bolts?" or anything else you can think of. Comments are enabled, so you can post your ideas ahead of time.
 

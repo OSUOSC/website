@@ -1,7 +1,6 @@
 ---
 layout: default
 title: CLI Utilities
-created: 1303832426
 categories: announcements
 tags: announcements, cli, command line, terminal, shell
 ---

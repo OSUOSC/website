@@ -1,12 +1,11 @@
 ---
 layout: default
-title: Advanced Bash Scripting [04/23/09]
-created: 1240157004
+title: Advanced Bash Scripting
 alias: /advanced-bash.html
 categories: announcements
 tags: announcements, bash, shell script
 ---
-This Thursday, 4/23/09, Tom Henretty came to show us some more advanced bash techniques. Tom demonstrated some of the stuff that Jim Dinan didn't have time to get to back when he did his [awesome bash talk](/bash-au08) in December.
+This Thursday, 4/23/09, Tom Henretty came to show us some more advanced bash techniques. Tom demonstrated some of the stuff that Jim Dinan didn't have time to get to back when he did his [awesome bash talk](/announcements/2008/11/18/shell-scripting-12-4-08/) in December.
 
 A tentative outline for this event was:
 

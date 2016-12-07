@@ -1,7 +1,6 @@
 ---
 layout: default
 title: 'Haskell: Part III'
-created: 1327444537
 alias: /wi12/haskell3.html
 categories: announcements
 tags: announcements, haskell, language

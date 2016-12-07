@@ -1,7 +1,6 @@
 ---
 layout: default
-title: Effective sshd_config [04/09/09]
-created: 1239290944
+title: Effective sshd_config
 alias: /sp09/sshd_config.html
 categories: announcements
 tags: announcements, ssh

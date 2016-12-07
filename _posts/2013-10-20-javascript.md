@@ -1,7 +1,6 @@
 ---
 layout: default
 title: JavaScript
-created: 1382318415
 alias: /au13/javascript.html
 categories: announcements
 tags: announcements, javascript, language, js

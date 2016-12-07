@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Introduction to Security Concepts
-created: 1416335820
 alias: /au14/introduction-security-concepts.html
 categories: announcements
 tags: announcements, security

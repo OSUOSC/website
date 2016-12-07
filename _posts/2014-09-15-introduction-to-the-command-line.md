@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Introduction to the Command Line
-created: 1410804781
 alias: /au14/introduction-command-line.html
 categories: announcements
 tags: announcements, cli, terminal

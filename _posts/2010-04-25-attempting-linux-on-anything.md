@@ -1,7 +1,6 @@
 ---
 layout: default
-title: "(Attempting) Linux on Anything"
-created: 1272247262
+title: (Attempting) Linux on Anything
 categories: announcements
 tags: announcements, linux
 ---

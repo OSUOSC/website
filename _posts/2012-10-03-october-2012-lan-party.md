@@ -1,7 +1,6 @@
 ---
 layout: default
 title: October 2012 Lan Party
-created: 1349291911
 categories: announcements
 tags: announcements, lan, party
 ---
@@ -13,6 +12,7 @@ This Saturday, from 12:00pm - 10:00pm in the Ohio Union Interfaith Prayer and Re
 *   Starcraft (I / II)
 *   Warsow
 *   Teeworlds
-*   ... and anything else that we decide while we are there!
+
+... and anything else that we decide while we are there!
 
 Additionally, there is no cost to admission and the event is open to the general public; you just need to bring your own computer, but please bring your own computer and ethernet cable. **** Update: We ask that if possible, please bring a power strip and network cable.**

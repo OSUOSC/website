@@ -1,7 +1,6 @@
 ---
 layout: default
 title: What NOT to do with your F/OSS Operating System
-created: 1350329134
 alias: /au12/what-not-do-your-foss-operating-system.html
 categories: announcements
 tags: announcements
@@ -13,6 +12,7 @@ This Thursday, 2012/10/18 at 7pm in Dreese Labs 266, The Ohio State Open Source 
 This talk will be done a little more casual, with members sharing disaster stories of what they have done to their operating systems.
 
 I encourage everyone to participate, I just ask that you email me back with these three fields so that I may make you a slide:
+
 - Operating System
 - What broke
 - Solution if there was one

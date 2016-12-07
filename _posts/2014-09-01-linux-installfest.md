@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Linux Installfest
-created: 1409613608
 alias: /au14/linux-installfest.html
 categories: announcements
 tags: announcements, installfest

@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Autumn LAN Party
-created: 1347075018
 categories: announcements
 tags: announcements, lan, party
 ---
@@ -15,6 +14,7 @@ This Saturday, September 22 2012, from 12:00pm - 10:00pm in the Ohio Union Inter
 - Starcraft (I / II)
 - Warsow
 - Teeworlds
+
 ... and anything else that we decide while we are there!
 
 Additionally, there is no cost for admission, you just need to bring your own computer. I personally hope to see everyone there!
