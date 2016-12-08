@@ -29,7 +29,7 @@ namespace :deploy do
 
     system 'grunt build --env=production'
     if $? == 0
-      system 'rsync -rlptv --delete _site/ build@opensource.osu.edu:/var/www/new-site -e "ssh -p 922"'
+      system 'rsync -rlptv --delete build/ build@opensource.osu.edu:/var/www/new-site -e "ssh -p 922"'
     else
       echo "Something went wrong while building. Check the grunt output and try again"
     end
@@ -41,7 +41,7 @@ namespace :deploy do
     origin = `git config --get remote.origin.url`
 
     Dir.mktmpdir do |tmp|
-      cp_r '_site/.', tmp
+      cp_r 'build/.', tmp
       Dir.chdir tmp
       system 'rm -rf downloads'
       system 'git init'
@@ -126,7 +126,7 @@ namespace :new do
     end
 
 
-    path = "_posts/#{d.strftime("%Y-%m-%d")}-#{title_slugified}.md"
+    path = "source/_posts/#{d.strftime("%Y-%m-%d")}-#{title_slugified}.md"
 
 
     File.open(path, "w") do |f|

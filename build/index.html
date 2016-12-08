@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+
+
+
+<head>
+  <meta charset="utf-8"/>
+
+  <title>Open Source Club</title>
+
+  <meta name="description" content=""/>
+  <meta name="author" content=""/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <link rel="stylesheet" href="/dist/css/main.min.css"/>
+
+  <link rel="icon" type="image/x-icon" href="/dist/img/favicon.ico" sizes="16x16 24x24 32x32 48x48 64x64">
+  <link rel="mask-icon" href="/dist/img/safari-pinned-tab.svg" color="#0078d7">
+
+  <link rel="apple-touch-icon-precomposed" href="/dist/img/favicon-57.png" sizes="57x57">
+  <link rel="apple-touch-icon-precomposed" href="/dist/img/favicon-60.png" sizes="60x60">
+  <link rel="apple-touch-icon-precomposed" href="/dist/img/favicon-72.png" sizes="72x72">
+  <link rel="apple-touch-icon-precomposed" href="/dist/img/favicon-76.png" sizes="76x76">
+  <link rel="apple-touch-icon-precomposed" href="/dist/img/favicon-114.png" sizes="114x114">
+  <link rel="apple-touch-icon-precomposed" href="/dist/img/favicon-120.png" sizes="120x120">
+  <link rel="apple-touch-icon-precomposed" href="/dist/img/favicon-144.png" sizes="144x144">
+  <link rel="apple-touch-icon-precomposed" href="/dist/img/favicon-152.png" sizes="152x152">
+  <link rel="apple-touch-icon-precomposed" href="/dist/img/favicon-180.png" sizes="180x180">
+
+  <meta name="msapplication-TileColor" content="#0078d7">
+  <meta name="msapplication-TileImage" content="/dist/img/favicon-144.png">
+
+  <meta name="application-name" content="The Open Source Club">
+  <meta name="msapplication-tooltip" content="A student organization at The Ohio State University">
+  <meta name="msapplication-config" content="/dist/img/ieconfig.xml">
+
+  <link rel="icon" type="image/png" href="/dist/img/favicon-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/dist/img/favicon-96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/dist/img/favicon-128.png" sizes="128x128">
+  <link rel="icon" type="image/png" href="/dist/img/favicon-195.png" sizes="195x195">
+  <link rel="icon" type="image/png" href="/dist/img/favicon-196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/dist/img/favicon-228.png" sizes="228x228">
+
+  
+    <!-- if deploying to github pages use cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+  
+
+  <script src="/dist/js/app.min.js" type="text/javascript"></script>
+
+</head>
+
+<ul class="sidebar">
+  <div id="main-nav">
+
+    <a href="/">
+      <li><span>Home</span></li>
+    </a>
+
+    <a href="/schedules">
+      <li><span>Schedules</span></li>
+    </a>
+
+    <a href="/tutorials">
+      <li><span>Tutorials</span></li>
+    </a>
+
+    <a href="/volunteering">
+      <li><span>Volunteering</span></li>
+    </a>
+
+    <a href="/events">
+      <li><span>Events</span></li>
+    </a>
+
+    <a href="/history">
+      <li><span>History</span></li>
+    </a>
+
+    <a href="/affiliations">
+      <li><span>Affiliations</span></li>
+    </a>
+
+  </div>
+
+
+  <div id="sidebar-secondary-wrapper">
+    <div class="sidebar-secondary">
+
+      <ul class="sidebar-icons">
+
+        <li class="flat-turq">
+          <a href="//twitter.com/osuosc" target="_blank">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+
+        <li class="flat-pink">
+          <a href="//github.com/OSUOSC" target="_blank">
+            <i class="fa fa-github"></i>
+          </a>
+        </li>
+
+        <li class="flat-orange">
+          <a href="/atom.xml" target="_blank">
+            <i class="fa fa-rss"></i>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+
+</ul>
+<div class="navbar">
+
+  <div class="menu-toggle"></div>
+
+  <div class="search">
+    <div class="search-bar">
+      <input id="search-posts" type="search" placeholder="search posts" />
+      <button type="submit" title="Search" class="search-submit"></button>
+    </div>
+
+    <ul id="search-results"></ul>
+  </div>
+
+</div>
+<a href="#" class="scrollToTop"></a>
+
+
+  <!-- on the index page-->
+
+  
+    <!-- It is NOT a single post-->
+    <div id="page-content-wrapper" class="index home">
+    <div class="landing">
+
+  <div class="clouds">
+    <div data-speed="35000" class="cloud-1"></div>
+    <div data-speed="45000" data-delay="15000" class="cloud-2"></div>
+    <div data-speed="40000" class="cloud-3"></div>
+    <div data-speed="38000" data-delay="20000" class="cloud-4"></div>
+  </div>
+
+  <div id="heading-wrapper">
+    <div id="heading"><img id="brand" src="/dist/img/osc-logo.svg" />
+      <h4 class="landing-heading">Open Source Club</h4>
+      <h5 class="landing-heading">at The Ohio State University</h5></div>
+  </div>
+
+</div>
+    <!-- TODO -->
+<!-- remove extra classes -->
+
+<div class="section about">
+  <div class="container">
+    <div class="row">
+      <div class="two-third column value">
+        <h5><p>The Open Source Club at the Ohio State University is a <a href="https://ohiounion.osu.edu/get_involved/student_organizations/directory?org_id=1042">registered student organization</a> composed of members from all around campus and out into the community who share a common enthusiasm for <a href="https://www.fsf.org/about/what-is-free-software">free, open source software</a>. Our focus is on building a strong community of open source users and developers in order to bring the benefits of open development, open standards, and free software to the university community.</p>
+</h5>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="section subscribe">
+  <div class="info"></div>
+  <div class="subscribe-wrapper">
+    <div class="subscribe-title">
+      <h4>Join Our Mailing List</h4></div>
+    <div id="mc_embed_signup">
+      <form id="mc-embedded-subscribe-form" action="//osu.us11.list-manage.com/subscribe/post?u=1fc38b50deed1d08f57fa1cbd&amp;id=34a04a1806&amp;" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="" class="validate">
+        <div id="mc_embed_signup_scroll">
+          <div class="mc mc-field-group"><span class="input-group-title">email</span>
+            <div class="input-email-wrapper"><input id="mce-EMAIL" type="email" value="" name="EMAIL" class="required email" /></div>
+          </div>
+          <div class="mc mc-field-group input-group"><span class="input-group-title">preferred format</span>
+            <ul>
+              <li><input id="mce-EMAILTYPE-0" type="radio" value="html" name="EMAILTYPE" /><label for="mce-EMAILTYPE-0" class="radio circle"><span class="big"><span class="small"></span></span><span class="email-format">html</span></label></li>
+              <li><span>or</span></li>
+              <li><input id="mce-EMAILTYPE-1" type="radio" value="text" name="EMAILTYPE" /><label for="mce-EMAILTYPE-1" class="radio circle"><span class="big"><span class="small"></span></span><span class="email-format">text</span></label></li>
+            </ul>
+          </div>
+          <div id="mce-responses">
+            <div id="mce-error-response" style="display:none" class="response"></div>
+            <div id="mce-success-response" style="display:none" class="response"></div>
+          </div>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;"><input type="text" name="b_1fc38b50deed1d08f57fa1cbd_34a04a1806" tabindex="-1" value="" /></div><input id="mc-embedded-subscribe" type="submit" value="Subscribe" name="subscribe" class="button" /></div>
+      </form>
+    </div>
+  </div>
+</div>
+    <!-- TODO -->
+<!-- remove extra classes -->
+
+<noscript>
+  <div class="section attention">
+    <div class="container">
+      <div class="row">
+
+
+<div class="two-third column value">
+  <h5>
+    It appears you have Javascript disabled.
+  </h5>
+
+  <h5>
+    This site uses Javascript for presentational purposes. It does not however
+    link to any external scripts. The only background cross-site requests made
+    are to MailChimp. Unless Javascript is enabled you will be unable to signup
+    for our mailing list or easily search archived content.
+  </h5>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</noscript>
+    
+  
+    
+
+    
+
+    
+
+<div id="contact-wrapper">
+
+  <div class="contact">
+    <ul class="contact-info">
+
+      <li>
+        <div class="info-wrapper">
+          <div class="contact-info-email">
+            <div class="contact-info-email-container">
+              <h6>email</h6><span>info@opensource.osu.edu</span></div>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="info-wrapper">
+          <div class="contact-info-office">
+            <div class="contact-info-office-container">
+              <h6>office</h6><span>Caldwell Labs, Rm 112F</span></div>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="info-wrapper">
+          <div class="contact-info-meeting">
+            <div class="contact-info-meeting-container">
+              <h6>next meeting</h6>
+              <span>
+      December  1, 2016
+    </span>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="info-wrapper">
+          <div class="contact-info-location">
+            <div class="contact-info-location-container">
+              <h6>meeting location</h6>
+              <span>
+      Caldwell Labs, Rm 120
+    </span>
+            </div>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+</div>
+  
+
+
+
+
+<div class="section posts"><div class="container">
+
+  
+
+
+  
+    <div class="category-title">
+      
+        <h5>
+          <a href="/announcements">announcements</a>
+        </h5>
+      
+
+      <h5 class="clear-case before-of">Page 1 of</h5>
+
+      <h5 class="of">
+        <a href="/page17">17</a>
+      </h5>
+    </div>
+  
+
+
+  
+
+
+  
+    
+      <h2>
+        <a href="/announcements/2016/11/30/von-neumann-machines/">Von Neumann machines</a>
+      </h2>
+    
+
+    <span class="date">posted: 11-30-2016</span>
+
+    
+      <p>Join us this Thursday as Jon Arnett presents on Von Neumann machines and to say goodbye to our graduating seniors. The following is a brief excerpt on Von Neumann machines from Jon Arnett:</p>
+
+<p>“Imagine a probe gliding through the galaxy. It lands on a planet, and begins to mine. After a while, it uses the materials it has collected to construct a replica of itself. The replica launches into space. The original probe sets off to explore its new found world, sending data back to Earth.</p>
+
+<p>Imagine a nanobot breathing in carbon dioxide and breathing out oxygen. Overwhelmed by the sheer amount of gas it must convert, it creates a replica to help it create a breathable atmosphere.</p>
+
+<p>Imagine a world that’s gray. It undulates, slightly. If you were to take a microscope and look very closely (cautiously, though), you would see a teeming civilization of nanobots. They have overrun. They have eaten everything. They will eat you, too, if you get too close.</p>
+
+<p>These are the promises and perils of Von Neumann (or Self-Replicating) machines. Join me for my exploration of this field, focusing on the history and theory of such machines.”</p>
+
+<p>As always there will be pizza and laptops are encouraged.</p>
+
+<p>–</p>
+
+<!-- generated by _helpers/newPost.rb -->
+
+    
+
+    <div class="tags">announcements</div>
+  
+    
+      <h2>
+        <a href="/announcements/2016/11/15/wikipedia-in-your-next-project/">Wikipedia in your next project</a>
+      </h2>
+    
+
+    <span class="date">posted: 11-15-2016</span>
+
+    
+      <p>Kevin Payravi from Wikipedia Connection will present on how to incorporate Wikipedia and its sister projects into your next project. The presentation will explore MediaWiki (the software behind Wikipedia), the MediaWiki API, machine learning and botting with Wikipedia, Wikidata (a free structured knowledgebase), and more. There will be an introduction to Tool Labs, Wikimedia’s free hosting environment for Wikimedia projects, as well as a look at some of the cool open source projects that have been developed for Wikipedia - which include vandalism-detecting bots, edit gamification, and making live music out of Wikipedia edits.</p>
+
+<p>This presentation is an official HackOHI/O 2016 pre-hype event - we hope this presentation inspires you to make an awesome Wikimedia-related project at Ohio State’s annual hackathon!</p>
+
+<p>Laptops are encouraged, and as always, there will be pizza.</p>
+
+<!-- generated by _helpers/newPost.rb -->
+
+    
+
+    <div class="tags">announcements</div>
+  
+    
+      <h2>
+        <a href="/announcements/2016/11/08/the-elk-stack/">The ELK Stack</a>
+      </h2>
+    
+
+    <span class="date">posted: 11-08-2016</span>
+
+    
+      <!-- INSERT TEXT HERE -->
+
+<p>This Thursday, November 10th 2016, David Soller will be presenting the ELK
+stack.</p>
+
+<p>The talk will center around the ELK stack and its ability “to take data from any
+source and search, analyze, and visualize it in real time.”(Elastic.co) Each of
+the ELK stacks open source projects Elasticsearch, Logstash and Kibana will be
+covered.</p>
+
+<p>Laptops are encouraged, and as always, there will be pizza.</p>
+
+<p>– William Osler</p>
+
+<!-- generated by _helpers/newPost.rb -->
+
+    
+
+    <div class="tags">announcements</div>
+  
+    
+      <h2>
+        <a href="/announcements/2016/10/29/ddwrt-and-openwrt-free-your-router/">DDWRT and OpenWRT, free your router</a>
+      </h2>
+    
+
+    <span class="date">posted: 10-29-2016</span>
+
+    
+      <!-- INSERT TEXT HERE -->
+
+<p>Join us Thursday November 3rd, 2016 at 19:00 in Caldwell 120 to learn about DD-WRT and OpenWRT, two Linux distributions for your wireless router. You’ll learn how to turn your cheap consumer router into fully-featured professional hardware with the power of open source.</p>
+
+<p>As always there will be pizza, and laptops are encouraged!</p>
+
+<!-- generated by _helpers/newPost.rb -->
+
+    
+
+    <div class="tags">announcements</div>
+  
+    
+      <h2>
+        <a href="/announcements/2016/10/26/wireless-security/">Wireless Security</a>
+      </h2>
+    
+
+    <span class="date">posted: 10-26-2016</span>
+
+    
+      <!-- INSERT TEXT HERE -->
+
+<p>Most of us use wireless networks every day. But do we really understand the
+security implications of flinging packets over the air?</p>
+
+<p>Join us this Thursday, October 26 2016 as William Osler gives a talk covering
+the basics of wireless network security, including a demonstration of a fun
+attack on legacy wireless encryption standards.</p>
+
+<p>As always, laptops are encouraged and pizza will be provided.</p>
+
+<p>– William Osler</p>
+
+<!-- generated by _helpers/newPost.rb -->
+
+    
+
+    <div class="tags">announcements</div>
+  
+    
+      <h2>
+        <a href="/announcements/2016/10/17/pgp-keysigning-party/">PGP KeySigning Party</a>
+      </h2>
+    
+
+    <span class="date">posted: 10-17-2016</span>
+
+    
+      <!-- INSERT TEXT HERE -->
+<p>Pretty Good Privacy(PGP) is a great way to communicate privately, but also to verify the identity of an online source. PGP is commonly used in fields such as journalism when identity is a must or when signing your code. PGP can also be used to encrypt communications so that only one party can read it.</p>
+
+<p>Join us this Thursday, October 20, 2016, as Michael Yanovich describes the functionality of PGP and demonstrates how to use it. You’ll learn how to generate your own key, and have the opportunity to partake in a key signing party!</p>
+
+<p>As always, laptops are encouraged and pizza will be provided</p>
+
+<!-- generated by _helpers/newPost.rb -->
+
+    
+
+    <div class="tags">announcements</div>
+  
+    
+      <h2>
+        <a href="/events">Ohio LinuxFest</a>
+      </h2>
+    
+
+    <span class="date">posted: 10-07-2016</span>
+
+    
+
+    <div class="tags">events</div>
+  
+    
+      <h2>
+        <a href="/announcements/2016/10/04/android-vulnerabilities-and-security/">Android vulnerabilities and security</a>
+      </h2>
+    
+
+    <span class="date">posted: 10-04-2016</span>
+
+    
+      <!-- INSERT TEXT HERE -->
+<p>Come join us Thursday October 6th at 19:00EDT, as Chandler Freeman talks about Android vulnerabilities and the world of mobile security. Chandler will do a brief analysis given some newer exploits, and try to determine how widespread the vulnerabilities still are in the ecosystem.</p>
+
+<p>Did you know about Ohio Linux Fest? It’s a great opportunity to learn from some great speakers and meet fellow FLOSS enthusiasts. You can register for <strong>FREE</strong> at https://ohiolinux.org/registration/.</p>
+
+<p>As always there will be pizza, and laptops are encouraged.</p>
+
+<!-- generated by _helpers/newPost.rb -->
+
+    
+
+    <div class="tags">announcements</div>
+  
+    
+      <h2>
+        <a href="/announcements/2016/09/24/vim-vs-emacs/">Vim vs Emacs</a>
+      </h2>
+    
+
+    <span class="date">posted: 09-24-2016</span>
+
+    
+      <!-- INSERT TEXT HERE -->
+<p>Join us Thursday, September 29th, at 19:00 EDT, as we talk about the storied editors that have been pitted against each other for forty years. The speed and extensible nature of these editors have made them very popular along with the ability to be ran headless unlike modern day editors. Learning one of these two editors is strongly advised in order to be effective in any environment.</p>
+
+<p>As always laptops are encouraged, and pizza will be provided.</p>
+
+<!-- generated by _helpers/newPost.rb -->
+
+    
+
+    <div class="tags">announcements</div>
+  
+    
+      <h2>
+        <a href="/announcements/2016/09/20/harris-corp-on-embedded-software/">Harris Corp on embedded software</a>
+      </h2>
+    
+
+    <span class="date">posted: 09-20-2016</span>
+
+    
+      <!-- INSERT TEXT HERE -->
+<p>Join us this Thursday, September 22, at 19:00EDT as Tim Armstrong from Harris Corporation talks about embedded software. Tim is an Ohio State alumni and would love to answer your questions about anything from embedded software to life after college.</p>
+
+<p>Laptops are encouraged, and pizza will be provided</p>
+
+<!-- generated by _helpers/newPost.rb -->
+
+    
+
+    <div class="tags">announcements</div>
+  
+    
+      <h2>
+        <a href="/announcements/2016/09/09/capital-one-presents-trends-in-computing/">Capital One presents trends in computing</a>
+      </h2>
+    
+
+    <span class="date">posted: 09-09-2016</span>
+
+    
+      <!-- INSERT TEXT HERE -->
+<p>Join us this Thursday as Kapil Thangavelu, the Data Engineering Director from Capital One, gives us an industry view of trends in computing. Topics will include big data, the cloud, and containers. Kapil will also talk about opensource projects from Capital One and why opensource is important in industry.</p>
+
+<p>As always, laptops are encouraged, and there will be pizza.</p>
+
+<!-- generated by _helpers/newPost.rb -->
+
+    
+
+    <div class="tags">announcements</div>
+  
+    
+      <h2>
+        <a href="/announcements/2016/09/07/intro-to-the-commandline/">Intro to the Command line</a>
+      </h2>
+    
+
+    <span class="date">posted: 09-07-2016</span>
+
+    
+      <!-- INSERT TEXT HERE -->
+<p>If you’re new to the command line, stop on by and we can get you comfortable with the terminal. Be it moving around, updating software, or anything else in your daily computing needs.</p>
+
+<p>If you can navigate your way around the terminal just fine, don’t skip this meeting yet, we’ll be discussing different shells and tips and tricks. Want to get a nice customized setup nice and quick, try FISH or OH-MY-ZSH. Plan on jumping between systems with little control, make sure you know Bash or Csh.</p>
+
+<p>We strongly encourage that you come with a Unix-based system such as Linux or BSD(VMs are acceptable). As always there will be pizza.</p>
+
+<!-- generated by _helpers/newPost.rb -->
+
+    
+
+    <div class="tags">announcements</div>
+  
+    
+      <h2>
+        <a href="/announcements/2016/08/29/installfest/">InstallFest</a>
+      </h2>
+    
+
+    <span class="date">posted: 08-29-2016</span>
+
+    
+      <!-- INSERT TEXT HERE -->
+<p>Interested in running Linux or BSD, but haven’t gotten around to installing it? Wanted to change distros, but you didn’t have the time? Come to our installfest and take the time to eat some pizza and install the OS of your dreams. We’ll have 5 copies of Ubuntu, 3 copies of Mint, 2 copies of Elementary, one OpenBSD stick, and one Arch ISO. If nothing strikes your fancy, we can download it!</p>
+
+<p>If you don’t know what OS would best fit you, don’t worry, our officers can help you decide. If you don’t want to dual boot we can help you install the OS in a virtual machine.</p>
+
+<p>As always, there will be pizza</p>
+
+<!-- generated by _helpers/newPost.rb -->
+
+    
+
+    <div class="tags">announcements</div>
+  
+    
+      <h2>
+        <a href="/announcements/2016/08/25/welcome-to-open-source/">Welcome To Open Source</a>
+      </h2>
+    
+
+    <span class="date">posted: 08-25-2016</span>
+
+    
+      <!-- INSERT TEXT HERE -->
+<p>Come join us August 25th at 19:00 in Caldwell 120 to learn what Open Source is and why you should use it. You’ll meet our officers for the year, and there will be plenty of time for socializing and eating pizza!</p>
+
+<p>As always, laptops are encouraged</p>
+
+<p>– Brandon (Malide) Moore</p>
+
+<!-- generated by _helpers/newPost.rb -->
+
+    
+
+    <div class="tags">announcements</div>
+  
+    
+      <h2>
+        <a href="/schedules/2016/06/08/semester-schedule/">Autumn 2016 Semester Schedule</a>
+      </h2>
+    
+
+    <span class="date">posted: 06-08-2016</span>
+
+    
+
+    <div class="tags">schedules</div>
+  
+    
+      <h2>
+        <a href="/events">Ohio LinuxFest 2016</a>
+      </h2>
+    
+
+    <span class="date">posted: 05-05-2016</span>
+
+    
+
+    <div class="tags">events</div>
+  
+    
+      <h2>
+        <a href="/announcements/2016/04/15/why-open-source-at-microsoft/">Why Open Source at Microsoft?</a>
+      </h2>
+    
+
+    <span class="date">posted: 04-15-2016</span>
+
+    
+      <!-- INSERT TEXT HERE -->
+<p>Thursday, 2016/04/21 at 7:00PM in Caldwell Labs 120</p>
+
+<p>What started as a war is turning to a love affair. Over the last two decades, Microsoft has moved from a fierce opponent of the penguin to recently being welcomed by Ubuntu, Red Hat and others. Come for an interactive discussion of Microsoft’s journey with Open Source and see some demos of the new Bash on Windows and .Net Core.</p>
+
+<p>Brian Sherwin is a Sr. Technical Evangelist with Microsoft from Columbus, Ohio. He has been a consultant and trainer for over 17 years. One of his core passions is helping companies make decisions based on value and not a particular technology. When he’s not trying to figure out some new technology, he spends time reading, Scouting, and drinking enough coffee to keep up with his five kids.</p>
+
+<p>Laptops are encouraged, and as always there will be pizza.
+<!-- DO NOT REMOVE -->
+<!-- generated by _helpers/newPost.rb --></p>
+
+    
+
+    <div class="tags">announcements</div>
+  
+    
+      <h2>
+        <a href="/tutorials/2016/04/14/ssh-into-club-systems/">How to SSH into club systems</a>
+      </h2>
+    
+
+    <span class="date">posted: 04-14-2016</span>
+
+    
+
+    <div class="tags">tutorials, ssh, linux, headless</div>
+  
+    
+      <h2>
+        <a href="/announcements/2016/04/11/freeBSD/">Introduction to FreeBSD</a>
+      </h2>
+    
+
+    <span class="date">posted: 04-11-2016</span>
+
+    
+      <p>Thursday, 2016/04/14 at 7:00PM in Caldwell Labs 120</p>
+
+<p>This talk is aimed at giving a overview of the operating system, why to use it, and some of its wonderful features such as the z file system (zfs), jails, and ports/pkg (its software build system). Unlike what many might think the BSD projects are not dead. They are heavily used, maintained, developed, and documented by many people from around the world ranging from hobbyists to multimillion dollar companies.</p>
+
+<p>Laptops are encouraged, and as always there will be pizza.</p>
+
+    
+
+    <div class="tags">announcements, BSD, FreeBSD</div>
+  
+    
+      <h2>
+        <a href="/announcements/2016/04/03/package_managers/">Package managers and Open Source election</a>
+      </h2>
+    
+
+    <span class="date">posted: 04-03-2016</span>
+
+    
+      <p>Thursday, 2016/04/07 at 7:00PM in Caldwell Labs 120</p>
+
+<p>This Thursday, Brandon Moore will present on package managers. From distro-based package managers to project-based package managers, we will discuss what a package manager is, the advantages and disadvantages of package managers, the recent issue with the mass-unpublishing of Node modules, and more.</p>
+
+<p>Don’t forget that the election will also occur at this meeting. If you haven’t registered to vote yet then please get in contact with the officers. If you’d like to run for a position, please get in contact with the officers.</p>
+
+<p>Laptops are encouraged, and as always there will be pizza.</p>
+
+    
+
+    <div class="tags">announcements, package managers</div>
+  
+
+
+
+  
+
+  
+    <div class="pagination">
+
+  
+    <a href="" class="pagination-text disabled">previous</a>
+    <a class="previous">
+      <i class="fa fa-caret-left disabled"></i>
+    </a>
+  
+
+  <span class="page_number"> 1 of
+    <a href="/page17">17</a>
+  </span>
+
+
+  
+    <a href="/page2" class="next">
+      <i class="fa fa-caret-right"></i>
+    </a>
+
+    <a href="/page2" class="pagination-text">next</a>
+  
+
+</div>
+  </div></div>
+
+
+<script src="/vendor/js/jekyll-search.min.js" type="text/javascript"></script>
+
+
+  <!-- if running the site locally use local fonts-->
+  <link rel="stylesheet" href="/vendor/css/ubuntu.min.css"/>
+  <link rel="stylesheet" href="/vendor/css/open-sans.min.css"/>
+  <link rel="stylesheet" href="/vendor/css/font-awesome.min.css"/>
+
+<footer>
+
+  <div class="with-love">
+    <span>Made with
+      <i class="fa fa-heart"></i>in
+      <a href="//www.openstreetmap.org/search?query=columbus%20oh#map=12/39.9612/-82.9988" target="_blank">&nbsp;Columbus</a>
+    </span>
+  </div>
+
+</footer>
+
+
+</div>
+</div>
+</div>

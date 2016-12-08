@@ -1,0 +1,3388 @@
+<!DOCTYPE html>
+
+
+
+<head>
+  <meta charset="utf-8"/>
+
+  <title>Open Source Club</title>
+
+  <meta name="description" content=""/>
+  <meta name="author" content=""/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <link rel="stylesheet" href="/dist/css/main.min.css"/>
+
+  <link rel="icon" type="image/x-icon" href="/dist/img/favicon.ico" sizes="16x16 24x24 32x32 48x48 64x64">
+  <link rel="mask-icon" href="/dist/img/safari-pinned-tab.svg" color="#0078d7">
+
+  <link rel="apple-touch-icon-precomposed" href="/dist/img/favicon-57.png" sizes="57x57">
+  <link rel="apple-touch-icon-precomposed" href="/dist/img/favicon-60.png" sizes="60x60">
+  <link rel="apple-touch-icon-precomposed" href="/dist/img/favicon-72.png" sizes="72x72">
+  <link rel="apple-touch-icon-precomposed" href="/dist/img/favicon-76.png" sizes="76x76">
+  <link rel="apple-touch-icon-precomposed" href="/dist/img/favicon-114.png" sizes="114x114">
+  <link rel="apple-touch-icon-precomposed" href="/dist/img/favicon-120.png" sizes="120x120">
+  <link rel="apple-touch-icon-precomposed" href="/dist/img/favicon-144.png" sizes="144x144">
+  <link rel="apple-touch-icon-precomposed" href="/dist/img/favicon-152.png" sizes="152x152">
+  <link rel="apple-touch-icon-precomposed" href="/dist/img/favicon-180.png" sizes="180x180">
+
+  <meta name="msapplication-TileColor" content="#0078d7">
+  <meta name="msapplication-TileImage" content="/dist/img/favicon-144.png">
+
+  <meta name="application-name" content="The Open Source Club">
+  <meta name="msapplication-tooltip" content="A student organization at The Ohio State University">
+  <meta name="msapplication-config" content="/dist/img/ieconfig.xml">
+
+  <link rel="icon" type="image/png" href="/dist/img/favicon-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/dist/img/favicon-96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/dist/img/favicon-128.png" sizes="128x128">
+  <link rel="icon" type="image/png" href="/dist/img/favicon-195.png" sizes="195x195">
+  <link rel="icon" type="image/png" href="/dist/img/favicon-196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/dist/img/favicon-228.png" sizes="228x228">
+
+  
+    <!-- if deploying to github pages use cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+  
+
+  <script src="/dist/js/app.min.js" type="text/javascript"></script>
+
+</head>
+
+<ul class="sidebar">
+  <div id="main-nav">
+
+    <a href="/">
+      <li><span>Home</span></li>
+    </a>
+
+    <a href="/schedules">
+      <li><span>Schedules</span></li>
+    </a>
+
+    <a href="/tutorials">
+      <li><span>Tutorials</span></li>
+    </a>
+
+    <a href="/volunteering">
+      <li><span>Volunteering</span></li>
+    </a>
+
+    <a href="/events">
+      <li><span>Events</span></li>
+    </a>
+
+    <a href="/history">
+      <li><span>History</span></li>
+    </a>
+
+    <a href="/affiliations">
+      <li><span>Affiliations</span></li>
+    </a>
+
+  </div>
+
+
+  <div id="sidebar-secondary-wrapper">
+    <div class="sidebar-secondary">
+
+      <ul class="sidebar-icons">
+
+        <li class="flat-turq">
+          <a href="//twitter.com/osuosc" target="_blank">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+
+        <li class="flat-pink">
+          <a href="//github.com/OSUOSC" target="_blank">
+            <i class="fa fa-github"></i>
+          </a>
+        </li>
+
+        <li class="flat-orange">
+          <a href="/atom.xml" target="_blank">
+            <i class="fa fa-rss"></i>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+
+</ul>
+<div class="navbar">
+
+  <div class="menu-toggle"></div>
+
+  <div class="search">
+    <div class="search-bar">
+      <input id="search-posts" type="search" placeholder="search posts" />
+      <button type="submit" title="Search" class="search-submit"></button>
+    </div>
+
+    <ul id="search-results"></ul>
+  </div>
+
+</div>
+<a href="#" class="scrollToTop"></a>
+
+
+  <!-- on the index page-->
+
+  
+    <!-- on -->
+    <div id="page-content-wrapper" class="single">
+  
+
+
+
+
+<div class="section posts"><div class="container">
+
+  
+    <div class="category-title">
+
+      
+        <h5>
+          <a href="/announcements">announcements</a>
+        </h5>
+      
+
+      <h5>
+        <a href="">Wireless Printing in Linux</a>
+      </h5>
+
+    </div>
+  
+
+
+  
+
+
+  
+
+
+  
+
+
+
+  
+    <div class="column-wrap">
+      <h2 class="bold">Wireless Printing in Linux</h2>
+      <span class="date">posted: 03-18-2010</span>
+      <div class="content"><p>If you go to Uniprint’s <a href="http://uniprint.osu.edu/printman/osuprintmap/">wireless printing</a> page, you’ll see it is possible to print to most public printers from anywhere on OSU’s network, such as osuwireless. However, Uniprint only supports Mac and Windows; Linux users are out of luck and left with the options of either installing a new operating system to print their documents or using a lab computer (if available). Therefore, we in the Open Source Club have decided to publish a tutorial so fellow Linux users can print to their libraries from their laptops or dorm rooms just like Windows/Mac users can.</p>
+
+<p>First, we need to have CUPS installed. This is the default in many Linux distributions as far as I know. If it’s not installed by default, please <a href="/comment/reply/241#comment-form">leave a comment</a>.</p>
+
+<p>With CUPS installed, go to <a href="http://localhost:631/">http://localhost:631/</a> and click on “Add Printer”. Fill in your own description and pick a meaningful description location that you will remember later on (e.g. <em>Science &amp; Engineering Library, Color Printer</em>). For the printer <strong>Name</strong>, you will want to look up your printer in the table below. Fill it in and click on “continue”.</p>
+
+<p>On the next page, select “<em>LPD/LPR Host or Printer</em>” for the device and click “continue”. Now, for <strong>Device URI</strong>, fill in the URI shown in the table <a href="#printerlist">below</a>. For example, if I want to print to the printer in room 45 of Thompson Library, I would enter <u>lpd://128.146.12.138/li0045-hp4200mobile</u>. Now, select the printer’s manufacturer (should be in the model name) for <a href="/sites/default/files/cups_manufacturer_page.png">Make</a>. If the instructions for your printer below mention uploading a PPD file instead of saying the model, upload it here; otherwise, in the <a href="/sites/default/files/cups_model_page.png">table that comes up</a> select the closest match to the corresponding printer model (listed below). When your web browser prompts you for a username and password, enter the administrative username/password for the computer you’re on, or the username/password of some other user in the <code class="highlighter-rouge">lpadmin</code> group. You may be redirected to a page with a lot of optional configurations options. At this point all of your applications should be able to use that printer, and have it listed as one of your installed printers, but you may wish to customize your settings for it. Remember that you will still need to swipe your BuckID at the print station to pay for and release your print job.</p>
+
+<p><strong>Note:</strong> The installers from Uniprint will install a <a href="/sites/default/files/pharos_popup.png">Popup Client</a> program, which asks for a username, password, and title. This is not (yet) possible for Linux. Instead, the username will be the username you’re logged into your computer with and the title will be whatever the title is of what you’re printing. There will be no password. This means that from the time you send your document to the printer queue, until the time you go and pick it up, anybody can swipe their ID to pick it up. <strong><em><u>Do not send confidential or sensitive information</u></em></strong> to the printer because it is not possible to password protect it, even though Uniprint’s proprietary program will add a password.</p>
+
+<style type="text/css">table#printerlist {border-width:1px;} ol.romanlist{list-style-type:lower-roman;} td.title {font-weight:bold;}</style>
+
+<table id="printerlist">
+
+<tbody>
+
+<tr class="title">
+
+<td class="title">Printer</td>
+
+<td class="title">Name</td>
+
+<td class="title">URI</td>
+
+<td class="title">Model</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="Room 265, 209 W. 18th Ave. (EA)">265 EA Building</td>
+
+<td>EA265</td>
+
+<td>lpd://128.146.88.5/eamobile</td>
+
+<td>HP LaserJet 4200 Series</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="Room 275, 209 W. 18th Ave. (EA)">275 EA Building</td>
+
+<td>EA275</td>
+
+<td>lpd://128.146.12.142/eamobile1</td>
+
+<td>HP LaserJet 4200 Series</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="Room 285, 209 W. 18th Ave. (EA)">285 EA Building</td>
+
+<td>EA285</td>
+
+<td>lpd://128.146.12.142/eamobile1</td>
+
+<td>HP LaserJet 4200 Series</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="Room 295, 209 W. 18th Ave. (EA)">295 EA Building</td>
+
+<td>EA295</td>
+
+<td>lpd://128.146.88.5/eamobile</td>
+
+<td>HP LaserJet 4200 Series</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="Agriculture Admin Building SCC (Room 005)">Agriculture Admin SCC</td>
+
+<td>Ag_Admin_Lab</td>
+
+<td>lpd://128.146.12.142/agmobile</td>
+
+<td>HP LaserJet 4200 Series</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="Architecture Library - Knowlton Hall Room 0400">Architectre Library (B&amp;W)</td>
+
+<td>Arc_BW</td>
+
+<td>lpd://140.254.224.171/arcbwmobile</td>
+
+<td>HP LaserJet 4200 Series</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="Architecture Library - Knowlton Hall Room 0400">Architectre Library (Color)</td>
+
+<td>Arc_Color</td>
+
+<td>lpd://140.254.224.171/arccolormobile</td>
+
+<td>LANIER LD228c</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="The Ohio State University Baker Hall West">Baker Hall West<sup>[i](#residencehallrestricted)</sup></td>
+
+<td>Baker_Hall_West</td>
+
+<td>lpd://128.146.217.231/bakerwestspool1</td>
+
+<td>HP LaserJet 5000 Series</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="Baker Systems Engineering Building">Baker Systems 590</td>
+
+<td>BE590</td>
+
+<td>lpd://128.146.12.142/bemobile</td>
+
+<td>HP LaserJet 4200 Series</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="Campbell Hall Room 119">Campbell Hall 119</td>
+
+<td>CM119</td>
+
+<td>lpd://128.146.12.142/cmmobile</td>
+
+<td>HP LaserJet 4200 Series</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="OSU Science &amp; Engineering Library, Digital Union, 3rd Floor">Digital Union (B&amp;W)</td>
+
+<td>DU_BW</td>
+
+<td>lpd://164.107.183.24/digitalunion_bwmobile</td>
+
+<td>HP LaserJet 4345 MFP</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="OSU Science &amp; Engineering Library, Digital Union, 3rd Floor">Digital Union (Color)</td>
+
+<td>DU_Color</td>
+
+<td>lpd://164.107.183.24/digitalunion_colormobile</td>
+
+<td>(Upload [xrx7655.ppd](/sites/default/files/stp-pcl-5.5.1.ppd)<sup><abbr title="Upload this file into your CUPS interface instead of selecting a manufacturer">[iii](#untested)</abbr></sup> file)</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="The Ohio State University Drackett Tower">Drackett Tower Lobby<sup>[i](#residencehallrestricted)</sup></td>
+
+<td>Drackett_Tower</td>
+
+<td>lpd://128.146.217.231/drackettspool1</td>
+
+<td>(Upload [stp-pcl-5.5.1.ppd](/sites/default/files/stp-pcl-5.5.1.ppd)<sup><abbr title="Upload this file into your CUPS interface instead of selecting a manufacturer">[iii](#untested)</abbr></sup> file)</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="Dreese Laboratories, Room 517">517 Dreese Lab<sup>[ii](#labrestricted)</sup></td>
+
+<td>DL517</td>
+
+<td>"lpd://eceprint1.ece.ohio-state.edu/dl517mobile1</td>
+
+<td>HP LaserJet 4300 Series</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="Dreese Laboratories, Room 557">557 Dreese Lab<sup>[ii](#labrestricted)</sup></td>
+
+<td>DL557</td>
+
+<td>lpd://eceprint1.ece.ohio-state.edu/dl557mobile1</td>
+
+<td>HP LaserJet 4300 Series</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="Dreese Laboratories, Room 817">817 Dreese Lab<sup>[ii](#labrestricted)</sup></td>
+
+<td>DL817</td>
+
+<td>lpd://eceprint1.ece.ohio-state.edu/dl817mobile1</td>
+
+<td>HP LaserJet 4300 Series</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="Caldwell Laboratory, Room 260">260 Caldwell Lab<sup>[ii](#labrestricted)</sup></td>
+
+<td>CL260</td>
+
+<td>lpd://eceprint1.ece.ohio-state.edu/cl260mobile1</td>
+
+<td>HP LaserJet 4300 Series</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="OSU Agriculture Admin Building (Room 045)">FAES Library</td>
+
+<td>FAES_Library</td>
+
+<td>lpd://140.254.228.35/agadminmobile</td>
+
+<td>HP LaserJet 4200 Series</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="Wexner Center Fine Arts Library (Room 0035L)">Fine Arts Libary (B&amp;W)</td>
+
+<td>FineArts_BW</td>
+
+<td>lpd://140.254.224.198/finartbwmobile</td>
+
+<td>HP LaserJet 4200 Series</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="Wexner Center Fine Arts Library (Room 0035L)">Fine Arts Library (Color)</td>
+
+<td>FineArts_Color</td>
+
+<td>lpd://140.254.224.198/finartcolormobile</td>
+
+<td>HP color LaserJet 4600</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="Geology Library - Orton Hall Room 0180">Geology Library (B&amp;W)</td>
+
+<td>Geo_BW</td>
+
+<td>lpd://140.254.224.110/geomobile</td>
+
+<td>HP Color LaserJet 4700</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="Geology Library - Orton Hall Room 0180">Geology Library (Color)</td>
+
+<td>Geo_Color</td>
+
+<td>lpd://140.254.224.110/geomobilecolor</td>
+
+<td>HP Color LaserJet 4700</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="Hagerty Hall Room 171">171 Hagerty Hall</td>
+
+<td>HG171</td>
+
+<td>lpd://164.107.189.195/hgmobile</td>
+
+<td>HP LaserJet 4200 Series</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="OSU Hale Hall Rooms 0100 &amp; 0135">Black Cultural Center<sup>[ii](#labrestricted)</sup></td>
+
+<td>BCC</td>
+
+<td>lpd://140.254.46.41/bccmobile1</td>
+
+<td>HP LaserJet 4050 Series</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="Hopkins Hall Room 354">354 Hopkins Hall (Color)</td>
+
+<td>HC354_Color</td>
+
+<td>lpd://164.107.190.133/HCcolormobile</td>
+
+<td>LANIER LP 036c</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="Hopkins Hall Room 354">354 Hopkins Hall (B&amp;W)</td>
+
+<td>HC354_BW</td>
+
+<td>lpd://164.107.190.133/HCbwmobile</td>
+
+<td>HP LaserJet 4200 Series</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="Howlett Hall Room 272">Howlett Hall</td>
+
+<td>HT272</td>
+
+<td>lpd://128.146.12.142/htmobile</td>
+
+<td>HP LaserJet 4200 Series</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="Jennings Hall Room 050">050 Jennings Hall</td>
+
+<td>JE050</td>
+
+<td>lpd://128.146.12.142/jemobile</td>
+
+<td>HP LaserJet 4200 Series</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="Journalism Building Room 220">220 Journalism Bldg</td>
+
+<td>JR220</td>
+
+<td>lpd://128.146.12.142/jrmobile</td>
+
+<td>HP LaserJet 4200 Series</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="Journalism Building Room 270">270 Journalism Bldg</td>
+
+<td>JR270</td>
+
+<td>lpd://164.107.184.10/jr272mobile</td>
+
+<td>HP LaserJet 4200 Series</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="328 W. Lane Ave, Lobby">Lane Ave Residence Hall<sup>[i](#residencehallrestricted)</sup></td>
+
+<td>Lane_Avenue</td>
+
+<td>lpd://128.146.217.231/lanespool1</td>
+
+<td>HP LaserJet 4000 Series</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="2nd Floor Drinko Hall">Law Library LaserJet 4200<sup>[i](#residencehallrestricted)</sup></td>
+
+<td>LawHP4200</td>
+
+<td>lpd://140.254.18.235/LawHP4200</td>
+
+<td>HP LaserJet 4200 Series</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="2nd Floor Drinko Hall">Law Library LaserJet 8150<sup>[i](#residencehallrestricted)</sup></td>
+
+<td>LawHP8150</td>
+
+<td>lpd://140.254.18.235/LawHP8150</td>
+
+<td>HP LaserJet 8150 Series</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="Morrill Tower 3rd Floor">Morrill Tower Lobby<sup>[i](#residencehallrestricted)</sup></td>
+
+<td>Morrill_Tower</td>
+
+<td>lpd://128.146.217.231/morrillspool1</td>
+
+<td>HP LaserJet 4200 Series</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="The Ohio State University Morrison Tower">Morrison Tower Lobby<sup>[i](#residencehallrestricted)</sup></td>
+
+<td>Morrison_Tower</td>
+
+<td>lpd://128.146.217.231/morrisonspool1</td>
+
+<td>HP LaserJet 4000 Series</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="Norton House 1st Floor">Norton House Lobby<sup>[i](#residencehallrestricted)</sup></td>
+
+<td>Norton_House</td>
+
+<td>lpd://128.146.217.231/nortonspool1</td>
+
+<td>HP LaserJet 4050 Series</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="The Ohio State University Paterson Hall">Paterson Hall Lobby<sup>[i](#residencehallrestricted)</sup></td>
+
+<td>Paterson_Hall</td>
+
+<td>lpd://128.146.217.231/patersonspool1</td>
+
+<td>HP LaserJet 4100 Series</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="Pressey Hall Room 044">44 Pressey Hall Wireless Printer<sup>[i](#residencehallrestricted)</sup></td>
+
+<td>SHSPHAROS-44</td>
+
+<td>lpd://128.146.89.20/shspharos-44mobile</td>
+
+<td>HP LaserJet 4250</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="Recreation and Physical Activity Center Lobby"><abbr title="Recreation and Physical Activity Center">RPAC</abbr> Welcome Center</td>
+
+<td>RPAC</td>
+
+<td>lpd://128.146.217.231/rpacspool1</td>
+
+<td>HP LaserJet 2430</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="OSU Science &amp; Engineering Library 1st Floor">120 <abbr title="Science &amp; Engineering Library">SEL</abbr> Printers 1 &amp; 3 (B&amp;W)</td>
+
+<td>SEL120_Printers1  
+_3_BW</td>
+
+<td>lpd://128.146.173.27/sel0120mobile-1-3-bw</td>
+
+<td>HP LaserJet 4200 Series</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="OSU Science &amp; Engineering Library 1st Floor">120 <abbr title="Science &amp; Engineering Library">SEL</abbr> Printer 5 (B&amp;W)</td>
+
+<td>SEL120_Printer5  
+_BW</td>
+
+<td>lpd://128.146.173.27/sel0120mobile-5-bw</td>
+
+<td>HP Color LaserJet 4700</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="OSU Science &amp; Engineering Library 1st Floor">120 <abbr title="Science &amp; Engineering Library">SEL</abbr> Printer 5 (Color)</td>
+
+<td>SEL120_Printer5  
+_Color</td>
+
+<td>lpd://128.146.173.27/sel0120mobile-5-color</td>
+
+<td>HP Color LaserJet 4700</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="OSU Science &amp; Engineering Library 3rd Floor">300 <abbr title="Science &amp; Engineering Library">SEL</abbr> (B&amp;W)</td>
+
+<td>SEL300_BW</td>
+
+<td>lpd://128.146.173.27/sel0300mobile-bw</td>
+
+<td>HP Color LaserJet 4700</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="OSU Science &amp; Engineering Library 3rd Floor">300 <abbr title="Science &amp; Engineering Library">SEL</abbr> (Color)</td>
+
+<td>SEL300_Color</td>
+
+<td>lpd://128.146.173.27/sel0300mobile-color</td>
+
+<td>HP Color LaserJet 4700</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="Steeb Hall 1st Floor">Steeb Hall Lobby<sup>[i](#residencehallrestricted)</sup></td>
+
+<td>Steeb_Hall</td>
+
+<td>lpd://128.146.217.231/steebspool1</td>
+
+<td>HP LaserJet 4100 Series</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="Stillman Hall Room 0235">Stillman Hall Lobby</td>
+
+<td>SH235</td>
+
+<td>lpd://128.146.12.142/shmobile</td>
+
+<td>HP LaserJet 4200 Series</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="The Ohio State University Stradley Hall">Stradley Hall Lobby<sup>[i](#residencehallrestricted)</sup></td>
+
+<td>Stradley_Hall</td>
+
+<td>lpd://128.146.217.231/stradleyspool1</td>
+
+<td>HP LaserJet 4000 Series</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="Taylor Tower 1st Floor">Taylor Tower Lobby</td>
+
+<td>Taylor_Tower</td>
+
+<td>lpd://128.146.217.231/taylorspool1</td>
+
+<td>HP LaserJet 4240</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="OSU Thompson Library (LI) Room 45">Thompson Library 45</td>
+
+<td>Thompson_Library  
+_45</td>
+
+<td>lpd://128.146.12.138/li0045-HP4200mobile</td>
+
+<td>HP LaserJet 4200 Series</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="OSU Thompson Library (LI) Room 145">Thompson Library 145 Printer</td>
+
+<td>Thompson_Library  
+_145</td>
+
+<td>lpd://128.146.12.138/li0145-HP4200mobile</td>
+
+<td>HP LaserJet 4200 Series</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="OSU Thompson Library (LI) Room 160">Thompson Library 160</td>
+
+<td>Thompson_Library  
+_160</td>
+
+<td>lpd://128.146.12.138/li0160-HP4200mobile</td>
+
+<td>HP LaserJet 4200 Series</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="OSU Thompson Library (LI) Room 215">Thompson Library 215</td>
+
+<td>Thompson_Library  
+_215</td>
+
+<td>lpd://128.146.12.138/li0215-HP4200mobile</td>
+
+<td>HP LaserJet 4200 Series</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="OSU Thompson Library (LI) Room X205C">Thompson Library X205C</td>
+
+<td>Thompson_Library  
+_X205C</td>
+
+<td>lpd://128.146.12.138/lix0205c-HP4200mobile</td>
+
+<td>HP LaserJet 4200 Series</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="OSU Thompson Library (LI) Room X305C">Thompson Library X305C</td>
+
+<td>Thompson_Library  
+_X305C</td>
+
+<td>lpd://128.146.12.138/lix0305c-HP4200mobile</td>
+
+<td>HP LaserJet 4200 Series</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="OSU Thompson Library (LI) Room 110">Thompson Library 110 (B&amp;W)</td>
+
+<td>Thompson_Library  
+_110_BW</td>
+
+<td>lpd://128.146.12.142/li110-HP3530-BWmobile</td>
+
+<td>HP Color LaserJet CM3530 MFP</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="OSU Thompson Library (LI) Room 110">Thompson Library 110 (Color)</td>
+
+<td>Thompson_Library  
+_110_COLOR</td>
+
+<td>lpd://128.146.12.142/li110-HP3530-COLORmobile</td>
+
+<td>HP Color LaserJet CM3530 MFP</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="OSU Thompson Library (LI) Room 140">Thompson Library 140 (B&amp;W)</td>
+
+<td>Thompson_Library  
+_140_BW</td>
+
+<td>lpd://128.146.12.142/li140-HP3530-BWmobile</td>
+
+<td>HP Color LaserJet CM3530 MFP</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="OSU Thompson Library (LI) Room 140">Thompson Library 140 (Color)</td>
+
+<td>Thompson_Library  
+_140_COLOR</td>
+
+<td>lpd://128.146.12.142/li140-HP3530-COLORmobile</td>
+
+<td>HP Color LaserJet CM3530 MFP</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="UniPrint, 2055 Millikin Way (Tuttle Parking Garage)">Tuttle Wireless Printer (B&amp;W)</td>
+
+<td>Tuttle_BW</td>
+
+<td>lpd://128.146.12.142/TuttleMFD_bw</td>
+
+<td>(Upload "[CNRC288X1.PPD](/sites/default/files/CNRC288X1.PPD)")</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="UniPrint, 2055 Millikin Way (Tuttle Parking Garage)">Tuttle Wireless Printer (Color)</td>
+
+<td>Tuttle_Color</td>
+
+<td>lpd://128.146.12.142/tuttlemfd_color</td>
+
+<td>(Upload "[CNRC288X1.PPD](/sites/default/files/CNRC288X1.PPD)")</td>
+
+</tr>
+
+<tr class="odd">
+
+<td title="Veterinary Medicine Academic Building, 2nd Floor">Vet Library (B&amp;W)</td>
+
+<td>Vet_Library_BW</td>
+
+<td>lpd://140.254.228.17/vetmobile</td>
+
+<td>HP Color LaserJet 4700</td>
+
+</tr>
+
+<tr class="even">
+
+<td title="Veterinary Medicine Academic Building, 2nd Floor">Vet Library (Color)</td>
+
+<td>Vet_Library_Color</td>
+
+<td>lpd://140.254.228.17/vetmobilecolor</td>
+
+<td>HP Color LaserJet 4700</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<ol>
+  <li>Residence halls may be restricted to current on-campus residents, subject to OSU Housing’s terms and conditions.</li>
+  <li>Computer labs may be restricted to students of particular major(s) or on other factors at the discretion of department’s IT service.</li>
+  <li>Some printers appear to require a PPD file and we have not yet ensured some particular instances will work.</li>
+</ol>
+</div>
+      <div class="tags">announcements, printing</div>
+    </div>
+
+    <div class="column-wrap">
+      <div class="related">
+        
+        
+        
+
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+          
+          
+
+          
+
+          
+        
+
+
+        
+          
+            
+              
+
+              
+                <h4 class="related-title">Recent Posts</h4>
+              
+
+              
+
+              <div class="related-post">
+                <a href="/announcements/2016/11/30/von-neumann-machines/">
+                  <h4>Von Neumann machines</h4>
+                </a>
+
+                <span class="date">posted: 11-30-2016</span>
+              </div>
+            
+          
+            
+              
+
+              
+
+              
+
+              <div class="related-post">
+                <a href="/announcements/2016/11/15/wikipedia-in-your-next-project/">
+                  <h4>Wikipedia in your next project</h4>
+                </a>
+
+                <span class="date">posted: 11-15-2016</span>
+              </div>
+            
+          
+            
+              
+
+              
+
+              
+
+              <div class="related-post">
+                <a href="/announcements/2016/11/08/the-elk-stack/">
+                  <h4>The ELK Stack</h4>
+                </a>
+
+                <span class="date">posted: 11-08-2016</span>
+              </div>
+            
+          
+            
+              
+
+              
+
+              
+
+              <div class="related-post">
+                <a href="/announcements/2016/10/29/ddwrt-and-openwrt-free-your-router/">
+                  <h4>DDWRT and OpenWRT, free your router</h4>
+                </a>
+
+                <span class="date">posted: 10-29-2016</span>
+              </div>
+            
+          
+            
+              
+
+              
+
+              
+
+              <div class="related-post">
+                <a href="/announcements/2016/10/26/wireless-security/">
+                  <h4>Wireless Security</h4>
+                </a>
+
+                <span class="date">posted: 10-26-2016</span>
+              </div>
+            
+          
+            
+              
+
+              
+
+              
+
+              <div class="related-post">
+                <a href="/announcements/2016/10/17/pgp-keysigning-party/">
+                  <h4>PGP KeySigning Party</h4>
+                </a>
+
+                <span class="date">posted: 10-17-2016</span>
+              </div>
+            
+          
+            
+              
+
+              
+
+              
+                
+        
+
+      </div>
+    </div>
+  
+
+  </div></div>
+
+
+<script src="/vendor/js/jekyll-search.min.js" type="text/javascript"></script>
+
+
+  <!-- if running the site locally use local fonts-->
+  <link rel="stylesheet" href="/vendor/css/ubuntu.min.css"/>
+  <link rel="stylesheet" href="/vendor/css/open-sans.min.css"/>
+  <link rel="stylesheet" href="/vendor/css/font-awesome.min.css"/>
+
+<footer>
+
+  <div class="with-love">
+    <span>Made with
+      <i class="fa fa-heart"></i>in
+      <a href="//www.openstreetmap.org/search?query=columbus%20oh#map=12/39.9612/-82.9988" target="_blank">&nbsp;Columbus</a>
+    </span>
+  </div>
+
+</footer>
+
+
+</div>
+</div>
+</div>

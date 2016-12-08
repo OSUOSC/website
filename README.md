@@ -11,11 +11,11 @@ This is our repository for our club's [website](https://opensource.osu.edu). It'
 <br>
 
 
-[Setup](https://github.com/OSUOSC/website/blob/master/_docs/setup.md)
+[Setup](https://github.com/OSUOSC/website/blob/master/docs/setup.md)
 
-[Create Posts](https://github.com/OSUOSC/website/blob/master/_docs/new-post.md)
+[Create Posts](https://github.com/OSUOSC/website/blob/master/docs/new-post.md)
 
-[Deploying](https://github.com/OSUOSC/website/blob/master/_docs/deploying.md)
+[Deploying](https://github.com/OSUOSC/website/blob/master/docs/deploying.md)
 
 <br>
 
@@ -47,7 +47,7 @@ If you frequent the site often checkout [opensource.osu.edu/latest](https://open
 <br>
 #### Set up your machine:
   ```
-  ./_helpers/init.sh
+  ./helpers/init.sh
   ```
 
 <br>
