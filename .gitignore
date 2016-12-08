@@ -8,3 +8,4 @@
 .jekyll-metadata
 /_assets/css/_normalize.scss
 _config.yml
+/build/
