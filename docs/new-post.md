@@ -25,7 +25,7 @@ If you are manually creating the post, the date in the filename will be the date
   If you wish to provide a link to your presentation in your post (we suggest `.pdf`)
   save your document with the *exact* same filename convention.
 
-  For example if I created `_post/2015-11-12-my-post.md`
+  For example if I created `source/_post/2015-11-12-my-post.md`
   the presentation slides/document would be: `downloads/presentations/2015-11-12-my-post.pdf`
 
   To embed a presentation link into the related post use the following:
