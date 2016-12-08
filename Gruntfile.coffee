@@ -35,7 +35,7 @@ module.exports = (grunt) ->
         options: [ {
           import: 2
           expand: true
-          cwd: '_site/dist/css/'
+          cwd: 'build/dist/css/'
           src: '*.css'
         } ]
 
@@ -43,7 +43,7 @@ module.exports = (grunt) ->
       options:
         force: true
       all:
-        src: ['_site/**/*.html']
+        src: ['build/**/*.html']
 
     coffee:
       production:
@@ -53,7 +53,7 @@ module.exports = (grunt) ->
           joinExt: '.coffee'
         } ]
         files: [ {
-          '_site/dist/js/app.js': '_assets/js/*.coffee'
+          'build/dist/js/app.js': 'source/_assets/js/*.coffee'
         } ]
 
       staging:
@@ -63,7 +63,7 @@ module.exports = (grunt) ->
           joinExt: '.coffee'
         } ]
         files: [ {
-          '_site/dist/js/app.js': '_assets/js/*.coffee'
+          'build/dist/js/app.js': 'source/_assets/js/*.coffee'
         } ]
 
       development:
@@ -73,7 +73,7 @@ module.exports = (grunt) ->
           joinExt: '.coffee'
         } ]
         files: [ {
-          '_site/dist/js/app.js': '_assets/js/*.coffee'
+          'build/dist/js/app.js': 'source/_assets/js/*.coffee'
         } ]
 
     sass:
@@ -85,9 +85,9 @@ module.exports = (grunt) ->
         } ]
         files: [ {
           expand: true
-          cwd: '_assets/css/'
+          cwd: 'source/_assets/css/'
           src: ['*.sass']
-          dest: '_site/dist/css/'
+          dest: 'build/dist/css/'
           ext: '.css'
         } ]
 
@@ -99,9 +99,9 @@ module.exports = (grunt) ->
         } ]
         files: [ {
           expand: true
-          cwd: '_assets/css/'
+          cwd: 'source/_assets/css/'
           src: ['*.sass']
-          dest: '_site/dist/css/'
+          dest: 'build/dist/css/'
           ext: '.css'
         } ]
 
@@ -113,9 +113,9 @@ module.exports = (grunt) ->
         } ]
         files: [ {
           expand: true
-          cwd: '_assets/css/'
+          cwd: 'source/_assets/css/'
           src: ['*.sass']
-          dest: '_site/dist/css/'
+          dest: 'build/dist/css/'
           ext: '.css'
         } ]
 
@@ -124,18 +124,18 @@ module.exports = (grunt) ->
       production:
         files: [ {
           expand: true
-          cwd: '_site/'
+          cwd: 'build/'
           src: ['**/*.js']
-          dest: '_site/'
+          dest: 'build/'
           ext: '.min.js'
         } ]
 
       staging:
         files: [ {
           expand: true
-          cwd: '_site/'
+          cwd: 'build/'
           src: ['**/*.js']
-          dest: '_site/'
+          dest: 'build/'
           ext: '.min.js'
         } ]
 
@@ -147,9 +147,9 @@ module.exports = (grunt) ->
         } ]
         files: [ {
           expand: true
-          cwd: '_site/'
+          cwd: 'build/'
           src: ['**/*.js']
-          dest: '_site/'
+          dest: 'build/'
           ext: '.min.js'
         } ]
 
@@ -157,27 +157,27 @@ module.exports = (grunt) ->
       production:
         files: [ {
           expand: true
-          cwd: '_site/'
+          cwd: 'build/'
           src: ['**/*.css']
-          dest: '_site/'
+          dest: 'build/'
           ext: '.min.css'
         } ]
 
       staging:
         files: [ {
           expand: true
-          cwd: '_site/'
+          cwd: 'build/'
           src: ['**/*.css']
-          dest: '_site/'
+          dest: 'build/'
           ext: '.min.css'
         } ]
 
       development:
         files: [ {
           expand: true
-          cwd: '_site/'
+          cwd: 'build/'
           src: ['**/*.css']
-          dest: '_site/'
+          dest: 'build/'
           ext: '.min.css'
         } ]
 
@@ -185,9 +185,9 @@ module.exports = (grunt) ->
       build:
         files: [ {
           expand: true
-          cwd: '_site/'
+          cwd: 'build/'
           src: ['**/*.json']
-          dest: '_site/'
+          dest: 'build/'
           ext: '.json'
         } ]
 
@@ -196,9 +196,9 @@ module.exports = (grunt) ->
         files: [ {
           stdout: false
           expand: true
-          cwd: '_assets/img/'
+          cwd: 'source/_assets/img/'
           src: '*'
-          dest: '_site/dist/img/'
+          dest: 'build/dist/img/'
         } ]
 
       js:
@@ -214,7 +214,7 @@ module.exports = (grunt) ->
             'mousetrap/mousetrap.js'
             '!**/*.min.js'
           ]
-          dest: '_site/vendor/js/'
+          dest: 'build/vendor/js/'
         } ]
 
       css:
@@ -225,7 +225,7 @@ module.exports = (grunt) ->
           flatten: true
           cwd: 'bower_components/'
           src: [ '**/*.css', '!**/*.min.css', '!**/normalize.css' ]
-          dest: '_site/vendor/css/'
+          dest: 'build/vendor/css/'
         } ]
 
       scss:
@@ -236,7 +236,7 @@ module.exports = (grunt) ->
           flatten: true
           cwd: 'bower_components/normalize-scss/'
           src: [ '**/*.scss' ]
-          dest: '_assets/css/'
+          dest: 'source/_assets/css/'
         } ]
 
       opensans:
@@ -246,7 +246,7 @@ module.exports = (grunt) ->
           filter: 'isFile'
           cwd: 'bower_components/open-sans-fontface/'
           src: [ '**/*.woff', '**/*.woff2', '**/*.ttf' ]
-          dest: '_site/vendor/css/'
+          dest: 'build/vendor/css/'
         } ]
 
       fontawesome:
@@ -257,7 +257,7 @@ module.exports = (grunt) ->
           flatten: true
           cwd: 'bower_components/fontawesome/'
           src: [ '**/*.woff', '**/*.svg','**/*.otf', '**/*.eot', '**/*.woff2', '**/*.ttf' ]
-          dest: '_site/vendor/fonts'
+          dest: 'build/vendor/fonts'
         } ]
 
       ubuntu:
@@ -267,7 +267,7 @@ module.exports = (grunt) ->
           filter: 'isFile'
           cwd: 'bower_components/ubuntu-fontface/'
           src: [ '**/*.woff', '**/*.svg','**/*.otf', '**/*.eot', '**/*.woff2', '**/*.ttf' ]
-          dest: '_site/vendor/css/'
+          dest: 'build/vendor/css/'
         } ]
 
 
@@ -278,22 +278,22 @@ module.exports = (grunt) ->
       } ]
 
       purge:
-        cmd: 'rm -rf _site/*'
+        cmd: 'rm -rf build/*'
 
       jekyll:
         cmd: 'bundle exec jekyll build'
 
       aliasFeed:
-        cmd: 'cp _site/atom.xml _site/rss.xml'
+        cmd: 'cp build/atom.xml build/rss.xml'
 
       # new_post:
-      #   cmd: './_helpers/new-post.sh'
+      #   cmd: './helpers/new-post.sh'
 
       status:
         cmd: "clear && echo the site is now accessible at http://localhost:<%= connect.server.options.port %>"
 
       baseurl:
-        cmd: 'ruby _helpers/setBaseurl.rb' + ' ' + "<%= envBaseUrl %>"
+        cmd: 'ruby helpers/setBaseurl.rb' + ' ' + "<%= envBaseUrl %>"
 
 
     watch:
@@ -304,22 +304,22 @@ module.exports = (grunt) ->
       # add image
 
       sass:
-        files: '_assets/**/*.sass'
+        files: 'source/_assets/**/*.sass'
         tasks: [ 'sass:' + currentEnvironment, 'cssmin:' + currentEnvironment ]
 
       coffee:
-        files: '_assets/**/*.coffee'
+        files: 'source/_assets/**/*.coffee'
         tasks: [ 'coffee:' + currentEnvironment, 'uglify:' + currentEnvironment ]
 
       source:
         files: [
-          '_includes/**/*'
-          '_layouts/**/*'
-          '_posts/**/*'
-          '_assets/img/*'
-          '_config.yml'
-          '*.html'
-          '*.md'
+          'source/_includes/**/*'
+          'source/_layouts/**/*'
+          'source/_posts/**/*'
+          'source/_assets/img/*'
+          'source/_config.yml'
+          'source/*.html'
+          'source/*.md'
         ]
 
         tasks: [ 'exec:purge', 'build' ]
@@ -328,7 +328,7 @@ module.exports = (grunt) ->
       server:
         options:
           port: 4040
-          base: '_site'
+          base: 'build'
           livereload: false
           useAvailablePort: true
 

@@ -23,6 +23,9 @@ gems:
 feed:
   path: atom.xml
 
+source: source
+destination: build
+
 defaults:
   -
     scope:
