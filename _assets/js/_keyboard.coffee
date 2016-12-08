@@ -13,6 +13,7 @@ traverseDown = ->
 highlightSelection = () ->
   $('#search-posts').off 'keydown'
   $('#search-posts').on 'keydown', (e) ->
+
     if e.which == 40 # if the down arrow is pressed . . .
       if e.preventDefault
         e.preventDefault()
@@ -35,7 +36,7 @@ highlightSelection = () ->
 
       traverseUp() unless topOfList
 
-    else if e.which == 13
+    else if e.which == 13 # if the enter key is pressed . . .
       if e.preventDefault
         e.preventDefault()
       else
