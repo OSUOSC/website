@@ -15,12 +15,12 @@
         </a>
       </div>
 
-      {% if site.categories.[page.category] == null %}
+      {% if site.categories[page.category] == null %}
         <span>There are currently no events planned</span>
       {% else %}
         {% capture current_date %}{{'now' | date: "%s"}}{% endcapture %}
 
-        {% for post in site.categories.[page.category] %}
+        {% for post in site.categories[page.category] %}
           {% capture expiration_date %}
             {{ post.expire_date | date: '%s' }}
           {% endcapture %}
