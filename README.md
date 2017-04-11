@@ -8,9 +8,7 @@
 
 This is our repository for our club's [website](https://opensource.osu.edu). It's built with [Jekyll](https://github.com/jekyll/jekyll), [Sass](https://github.com/sass/sass), [Coffeescript](https://github.com/jashkenas/coffeescript), and [Grunt](https://github.com/gruntjs/grunt).
 
-
 <br>
-
 
 [Setup](https://github.com/OSUOSC/website/blob/master/docs/setup.md)
 
@@ -27,8 +25,6 @@ Checkout our [staging site](https://osuosc.github.io/website/) which may or may 
 If you frequent the site often checkout [opensource.osu.edu/latest](https://opensource.osu.edu/latest)
 
 <br>
---
-<br>
 
 #### Fork, then clone the repo:
   ```bash
@@ -36,23 +32,20 @@ If you frequent the site often checkout [opensource.osu.edu/latest](https://open
     cd website
   ```
 
---
-
 <br>
+
 #### Install Dependencies:
   - ruby `v2.2.1` or greater
   - node.js `v4.2.1` or greater
 
---
 
 <br>
+
 #### Set up your machine:
   ```
   ./helpers/init.sh
   ```
 
-<br>
---
 <br>
 
 #### Build site locally and run development server:
@@ -61,8 +54,6 @@ If you frequent the site often checkout [opensource.osu.edu/latest](https://open
     # once compiled the site will be accessible at localhost:4040
   ```
 
-<br>
---
 <br>
 
 #### Create a new post
