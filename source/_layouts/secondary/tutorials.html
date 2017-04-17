@@ -15,10 +15,10 @@
         </a>
       </div>
 
-      {% if site.categories.[page.category] == null %}
+      {% if site.categories[page.category] == null %}
         <span>There are currently no tutorials</span>
       {% else %}
-        {% for post in site.categories.[page.category] %}
+        {% for post in site.categories[page.category] %}
           <h2>
             <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
           </h2>
