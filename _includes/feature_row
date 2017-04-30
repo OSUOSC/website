@@ -24,7 +24,10 @@
               {% else %}
                 "{{ f.image_path | absolute_url }}"
               {% endif %}
-            alt="{% if f.alt %}{{ f.alt }}{% endif %}">
+          {% if f.image_width %}
+            style="width:{{ f.image_width }} !important;"
+          {% endif %}
+            alt="{% if f.alt %}{{ f.alt }}{% endif %}" />
           </div>
         {% endif %}
 

@@ -1,0 +1,24 @@
+---
+date: 2017-01-26
+stories:
+    - title: "Missed News From Last Week"
+      link:
+    - title: "Immutable Cachine in Firefox"
+      link: "https://hacks.mozilla.org/2017/01/using-immutable-caching-to-speed-up-the-web/"
+    - title: "KDE Slimbook, made for Linux"
+      link: "http://kde.slimbook.es/"
+---
+# Missed news from last week
+* [Assange backtracks on turning himself over to US custody](https://www.washingtonpost.com/world/the_americas/wikileaks-julian-assange-retreats-from-extradition-pledge/2017/01/18/3b85d2aa-dde2-11e6-8902-610fe486791c_story.html)
+
+# [Immutable Caching in FireFox](https://hacks.mozilla.org/2017/01/using-immutable-caching-to-speed-up-the-web/)
+* Objects can be marked as immutable so they aren't requested again when the page is reloaded
+* Speeds up the load time of pages, "The fastest request is one that isn't made"
+* Used by FaceBook
+* [Chromium addresses reload problems](https://blog.chromium.org/2017/01/reload-reloaded-faster-and-leaner-page_26.html)
+
+# [KDE Slimbook, made for Linux](http://kde.slimbook.es/)
+* Focuses on getting rid of bloat software that comes with machines and providing hardware that just works with Linux
+* Only available in Spain
+* Only available with KDE Neon
+* Other computer providers focusing on Linux and open source are: [Purism](https://puri.sm/), [System 76](https://system76.com/), [Think Penguin](https://www.thinkpenguin.com/), [Pogo Linux](http://www.pogolinux.com/)(Desktops and servers only)

@@ -1,0 +1,37 @@
+---
+date: 2016-04-07
+stories:
+    - title: "Android Studio 2.0 Released"
+      link: "http://android-developers.blogspot.com/2016/04/android-studio-2-0.html"
+    - title: "GitLab Pages"
+      link: "http://pages.gitlab.io/"
+    - title: "Nest Discontinues Revolv"
+      link: "https://www.eff.org/deeplinks/2016/04/nest-reminds-customers-ownership-isnt-what-it-used-be"
+    - title: "Microsoft Bot Framework"
+      link: "https://dev.botframework.com/"
+    - title: "Tacobot"
+      link: "https://tacobell.com/feed/tacobot"
+---
+# [Android Studio 2.0 Released](http://android-developers.blogspot.com/2016/04/android-studio-2-0.html)
+* Instant Run: Changes to a running app appear live.
+* Faster Android emulator and adb.
+* Cloud Test Lab: Test apps on a wide range of physical devices easily.
+
+# [GitLab Pages](http://pages.gitlab.io/)
+* Static sites for GitLab projects, groups or users.
+* Supports Jekyll, Middleman, Hexo, Pelican, etc...
+* Can host websites for free on GitLab.com
+
+# [Nest Discontinues Revolv](https://www.eff.org/deeplinks/2016/04/nest-reminds-customers-ownership-isnt-what-it-used-be)
+* After buying Revolv back in 2014, Nest is disabling the devices as of May 15th in favor of the Works with Nest system.
+* This has sparked controversy since the device offered a "Lifetime Subscription."
+* Those who choose to tinker with these devices and keep them alive operate in a legal grey area.
+
+# [Microsoft Bot Framework](https://dev.botframework.com/)
+* Open source platform for making chatbots for sms, Skype, Slack, and more.
+* Uses node.js on the backend, only supports Windows (at the moment).
+* Some sample bots available, such as Bing Image Bot, Caption Bot, and MurphyBot.
+
+# [Tacobot](https://tacobell.com/feed/tacobot)
+* Taco Bell is testing a Slack bot for ordering food or just talking about things.
+* You can join a waitlist to try it out.

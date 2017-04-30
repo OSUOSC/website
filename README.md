@@ -2,6 +2,14 @@
 
 [![GitHub release](https://img.shields.io/gem/v/minimal-mistakes-jekyll.svg)](https://github.com/mmistakes/minimal-mistakes/releases) [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
 
+## Forked for OSUOSC
+
+This means that all that is needed to add a talk or a news item in a weekly rundown is to issue a PR with the new item under the `_talks` or `_news` directory respectively.
+
+#### TODO: Get an automated calendar set up.
+
+------
+
 Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your personal site, blog, or portfolio on GitHub or self-hosting on your own server. As the name implies --- styling is purposely minimalistic to be enhanced and customized by you :smile:.
 
 See what's new in the [CHANGELOG](CHANGELOG.md).

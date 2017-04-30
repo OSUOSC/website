@@ -1,12 +1,22 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Talks"
+    url: /talks/
+  - title: "News"
+    url: /news/
+  - title: "Tips and Tricks"
+    url: /tutorials/tutorials/
+  - title: "Calendar"
+    url: /calendar/
+
+tutorials:
+  - title: "Club tutorials"
+    children:
+    - title: "osuwireless in Ubuntu"
+      url: /tutorials/osuwireless-in-ubuntu/
+    - title: "Come hangout with us on IRC"
+      url: /tutorials/irc/
+    - title: "Connecting to osuwireless with linux"
+      url: /tutorials/osuwireless/
+    - title: "How to SSH into club systems"
+      url: /tutorials/ssh/
