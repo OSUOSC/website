@@ -167,7 +167,7 @@ kramdown:
 
 # Collections
 collections:
-  talks:
+  events:
     output: true
     permalink: /:collection/:path/
   news:
@@ -182,12 +182,12 @@ collections:
 
 # Defaults
 defaults:
-  # _talks
+  # _events
   - scope:
       path: ""
-      type: talks
+      type: events
     values:
-      layout: news
+      layout: events
       author_profile: true
       read_time: false
       comments: false
@@ -208,7 +208,7 @@ defaults:
       layout: single
       read_time: false
       author_profile: false
-      share: false
+      share: true
       comments: false
       sidebar:
         nav: "tutorials"
@@ -219,7 +219,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
       comments: true
 
 # Sass/SCSS

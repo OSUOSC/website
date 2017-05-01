@@ -1,0 +1,13 @@
+---
+layout: archive
+title: "Calendar"
+permalink: /calendar/
+author_profile: true
+---
+
+{% include base_path %}
+
+{% assign month_list = site.calendar | sort 'month' | reverse %}
+{% for month in month_list %}
+    <h2><a href="{{ month.url }}">{{ month.date | date: "%B %Y" }}</h2>
+{% endfor %}

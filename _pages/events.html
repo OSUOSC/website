@@ -1,0 +1,13 @@
+---
+layout: archive
+title: "Events"
+permalink: /events/
+author_profile: true
+---
+
+{% include base_path %}
+
+{% assign sorted_posts = site.events | sort 'date' | reverse %}
+{% for post in sorted_posts %}
+  {% include events-list.html %}
+{% endfor %}

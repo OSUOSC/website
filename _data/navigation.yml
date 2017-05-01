@@ -1,7 +1,7 @@
 # main links
 main:
-  - title: "Talks"
-    url: /talks/
+  - title: "Events"
+    url: /events/
   - title: "News"
     url: /news/
   - title: "Tips and Tricks"
