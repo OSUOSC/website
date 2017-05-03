@@ -78,8 +78,6 @@ stories:
         > Imagine running your favorite Windows applications and drivers in an open-source environment you can trust. That's ReactOS. Not just an Open but also a Free operating system.
 ---
 
-{% include news_intro.html %}
-
 {% for story in page.stories %}
 # [{{ story.title }}]({{ story.link }})
 {% if story.image %}
