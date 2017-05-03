@@ -1,5 +1,6 @@
 ---
 date: 2017-03-23
+multipage: true
 stories:
     - title: "Netdata 1.6.0 Released"
       link: "https://github.com/firehol/netdata/releases/tag/v1.6.0"
@@ -16,7 +17,7 @@ stories:
       notes: |
         * Netflix took 7 months from DRM module support in Firefox to allow Firefox User Agents to stream content
 
-        This announcement from Netflix means Linux users don’t need to do anything special to enjoy Netflix on Firefox — no plugins, no trickery, zero fuss.
+        > This announcement from Netflix means Linux users don’t need to do anything special to enjoy Netflix on Firefox — no plugins, no trickery, zero fuss.
     - title: "Who owns your device?"
       link: "https://www.eff.org/deeplinks/2017/03/patents-are-big-part-why-we-cant-own-nice-things-supreme-court-should-fix"
       notes: |
@@ -39,10 +40,11 @@ stories:
         * OSC presidential election next week
 ---
 {% for story in page.stories %}
+<hr />
 # [{{ story.title }}]({{ story.link }})
 {% if story.image %}
 <img src="{{ story.image }}" width="50%"/>
 {% endif %}
 {{ story.notes }}
-<br />
+{% page_break %}
 {% endfor %}

@@ -1,5 +1,6 @@
 ---
 date: 2016-04-07
+multipage: true
 stories:
     - title: "Android Studio 2.0 Released"
       link: "http://android-developers.blogspot.com/2016/04/android-studio-2-0.html"
@@ -35,10 +36,11 @@ stories:
         * You can join a waitlist to try it out.
 ---
 {% for story in page.stories %}
+<hr />
 # [{{ story.title }}]({{ story.link }})
 {% if story.image %}
 <img src="{{ story.image }}" width="50%"/>
 {% endif %}
 {{ story.notes }}
-<br />
+{% page_break %}
 {% endfor %}

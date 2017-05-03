@@ -1,5 +1,6 @@
 ---
 date: 2016-02-02
+multipage: true
 stories:
     - title: "Apple, the FBI, and Encryption"
       link: "https://www.apple.com/customer-letter/"
@@ -34,7 +35,7 @@ stories:
         * Pragmatic programming language for JVM and Android.
         * Combines OO and functional features.
         * Meant to **work anywhere Java works** including
-            * server side"
+            * server side
             * mobile applications (Android)
             * desktop applications
         * Any Java library works in Kotlin and vice versa!
@@ -79,10 +80,11 @@ stories:
 ---
 
 {% for story in page.stories %}
+<hr />
 # [{{ story.title }}]({{ story.link }})
 {% if story.image %}
 <img src="{{ story.image }}" width="50%"/>
 {% endif %}
 {{ story.notes }}
-<br />
+{% page_break %}
 {% endfor %}

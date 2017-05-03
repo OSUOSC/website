@@ -1,5 +1,6 @@
 ---
 date: 2017-01-26
+multipage: true
 stories:
     - title: "Missed News From Last Week"
       link:
@@ -21,10 +22,11 @@ stories:
         * Other computer providers focusing on Linux and open source are: [Purism](https://puri.sm/), [System 76](https://system76.com/), [Think Penguin](https://www.thinkpenguin.com/), [Pogo Linux](http://www.pogolinux.com/)(Desktops and servers only)
 ---
 {% for story in page.stories %}
+<hr />
 # [{{ story.title }}]({{ story.link }})
 {% if story.image %}
 <img src="{{ story.image }}" width="50%"/>
 {% endif %}
 {{ story.notes }}
-<br />
+{% page_break %}
 {% endfor %}

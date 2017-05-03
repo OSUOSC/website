@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: multipage
 ---
 
 {% if page.url != "/" and site.breadcrumbs %}
@@ -25,33 +25,7 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text">
-       <hr />
-       <h2>This week in technology, open source, and Linux!</h2>
-
-       <h2>Disclaimer</h2>
-       <ul>
-         <li> The views expressed in this presentation are those of the presentator(s).
-         <li> They are not endorsed by or affiliated with any of the people, companies, or entities mentioned.
-         <li> No guarantees are made that the information in this presentation are free of errors.
-       </ul>
-
-       <h2>Contributing to the weekly rundown</h2>
-       <ul>
-           <li>Have something you'd like to talk about or see on the weekly meetings?</li>
-           <li>Feel free to add it to the weekly rundown!</li>
-           <li>Repository is available on <a href="https://github.com/OSUOSC/osc-weekly-rundown">Github</a></li>
-       </ul>
-
-        {{ content }}
-
-       <hr />
-       <h1>Fin</h1>
-       <ul>
-          <li>Anything we missed?</li>
-          <li>Feel free to share!</li>
-       </ul>
-       <hr />
-
+       {{ content }}
        {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 

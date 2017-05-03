@@ -30,5 +30,4 @@ stories:
 <img src="{{ story.image }}" width="50%"/>
 {% endif %}
 {{ story.notes }}
-<br />
 {% endfor %}
