@@ -1,5 +1,6 @@
 ---
 title: How to SSH into club systems
+excerpt: "This is how you utilize the Open Source Club's LAN."
 ---
 
 If you do not already have a club account, you may contact our SysAdmin to request one.
@@ -9,10 +10,10 @@ If you do not already have a club account, you may contact our SysAdmin to reque
 Open up a terminal and enter the following:
 
 ```bash
-#access stallman
+# access stallman
 ssh username@stallman.cse.ohio-state.edu
 
-#access Idle2
+# access Idle2
 ssh username@opensource.osu.edu
 ```
 

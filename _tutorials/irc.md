@@ -1,5 +1,6 @@
 ---
-title: Come hangout with us on IRC
+title: Internet Relay Chat
+excerpt: How to come hangout with us in cyberspace on IRC
 ---
 
 - Server: `irc.freenode.net`

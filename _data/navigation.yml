@@ -5,7 +5,7 @@ main:
   - title: "News"
     url: /news/
   - title: "Tips and Tricks"
-    url: /tutorials/tutorials/
+    url: /tutorials/tutorials
   - title: "Calendar"
     url: /calendar/
 
@@ -20,3 +20,7 @@ tutorials:
       url: /tutorials/osuwireless/
     - title: "How to SSH into club systems"
       url: /tutorials/ssh/
+  - title: "Club Information"
+    children:
+    - title: "Constitution"
+      url: /tutorials/constitution/
