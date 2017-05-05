@@ -1,4 +1,6 @@
 ---
+test: true
+title: "another one"
 date: 2016-04-07
 multipage: true
 stories:

@@ -173,6 +173,9 @@ collections:
   news:
     output: true
     permalink: /:collection/:path/
+  multipage:
+    output: true
+    permalink: /:collection/:path/
   tutorials:
     output: true
     permalink: /:collection/:path/

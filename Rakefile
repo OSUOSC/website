@@ -3,7 +3,7 @@ require "jekyll"
 require "listen"
 require "yaml"
 
-NEWS_PATHNAME = 'assets/Jekyll-Multipage/samples/*'
+NEWS_PATHNAME = '_multipage/*'
 
 def listen_ignore_paths(base, options)
   [
@@ -39,25 +39,20 @@ end
 def local_clear_yaml(news_pathname)
     basename = Pathname.new('.').expand_path
     Dir[basename.join(news_pathname).to_s].each do |post|
-    yaml = File.read(post)[/\A---(.|\n)*?---/]
-        File.open(post, 'w+') do |file|
+        yaml = File.read(post)[/\A---(.|\n)*?---/]
+        File.open(post, 'w') do |file|
             file.puts yaml
         end
     end
 end
-#    if (md = contents.match(/^(?<metadata>---\s*\n.*?\n?)^(---\s*$\n?)/m))
-#      self.contents = md.post_match
-#      self.metadata = YAML.load(md[:metadata])
-#    end
-#
 
 def listen_handler(base, options)
   local_render_yaml(NEWS_PATHNAME)
   site = Jekyll::Site.new(options)
   Jekyll::Command.process_site(site)
   proc do |modified, added, removed|
-    local_clear_yaml(NEWS_PATHNAME)
-    local_render_yaml(NEWS_PATHNAME)
+    #local_clear_yaml(NEWS_PATHNAME)
+    #local_render_yaml(NEWS_PATHNAME)
     t = Time.now
     c = modified + added + removed
     #n = c.length
@@ -71,12 +66,16 @@ def listen_handler(base, options)
       puts "error:"
       Jekyll.logger.warn "Error:", e.message
       Jekyll.logger.warn "Error:", "Run jekyll build --trace for more information."
-      local_clear_yaml(NEWS_PATHNAME)
+      #local_clear_yaml(NEWS_PATHNAME)
     end
   end
 end
 
-task :build do
+task :clean do
+    local_clear_yaml(NEWS_PATHNAME)
+end
+
+task :domenow do
   local_render_yaml(NEWS_PATHNAME)
   base = Pathname.new('.').expand_path
   options = {
