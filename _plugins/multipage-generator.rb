@@ -62,10 +62,11 @@ module Jekyll
 
                 def create_multipage(post, site)
                         # Cache post's info in case we have to modify the original (if it's page 1, instead of the collated page).
-                        post_original_title = post.respond_to?("title") ? post.title : post.data["title"]
+                        post_original_title = post.data["title"]
+                        #post_original_title = post.data["title"]
                         post_original_data = {}.merge(post.data)
                         post_original_content = post.content
-                        post_original_name = post.name
+                        post_original_name = File.basename(post.path)
                         post_original_url = post.url
                         last_filename_posn = post_original_url.rindex("index.html")
                         if (last_filename_posn)
@@ -473,7 +474,7 @@ module Jekyll
                                 new_page.content = wrapped_page_content
 
                                 # Provide post's data for the page to use.
-                                new_page.data = {}.merge(post_original_data) # make copy of hash
+                                #new_page.data = {}.merge(post_original_data) # make copy of hash
 
                                 # Override this page's title as appropriate.
                                 new_page.data["title"] = expanded_page_titles[page_num]
@@ -662,24 +663,25 @@ module Jekyll
                 end
 
                 def process_multipages(site)
-                        # Find all posts that have the multipage front-matter.
-                        multi_posts = site.posts.docs.find_all { |post|
-                                post.data[@multipage_frontmatter_key] == true
-                        }
-                        
-                        # Find all pages that have the multipage front-matter.
-                        multi_posts = multi_posts + site.pages.find_all { |post|
-                                post.data[@multipage_frontmatter_key] == true
-                        }
+                        ## Find all posts that have the multipage front-matter.
+                        #multi_posts = site.posts.docs.find_all { |post|
+                        #        post.data[@multipage_frontmatter_key] == true
+                        #}
+
+                        ## Find all pages that have the multipage front-matter.
+                        #multi_posts = multi_posts + site.pages.find_all { |post|
+                        #        post.data[@multipage_frontmatter_key] == true
+                        #}
 
                         # Create multipages.
-                        multi_posts.each { |post|
+                        #multi_posts.each { |post|
+                        site.posts.docs.each { |post|
                                 create_multipage(post, site)
                         }
                 end
 
         end
-        
+
         class MultiPageTag < Liquid::Tag
                 def initialize(tag, text, tokens)
                         # Deliberately empty.

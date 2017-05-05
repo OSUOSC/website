@@ -3,7 +3,7 @@ require "jekyll"
 require "listen"
 require "yaml"
 
-NEWS_PATHNAME = '_multipage/*'
+NEWS_PATHNAME = '_posts/*'
 
 def listen_ignore_paths(base, options)
   [
@@ -16,19 +16,56 @@ end
 def local_render_yaml(news_pathname)
     basename = Pathname.new('.').expand_path
     Dir[basename.join(news_pathname).to_s].each do |post|
+        html = ''
+        html << <<-HTML
+<section class="page__content" itemprop="text">
+<hr />
+<h2>This week in technology, open source, and Linux!</h2>
+
+<h2>Disclaimer</h2>
+<ul>
+ <li> The views expressed in this presentation are those of the presentator(s).
+ <li> They are not endorsed by or affiliated with any of the people, companies, or entities mentioned.
+ <li> No guarantees are made that the information in this presentation are free of errors.
+</ul>
+
+<h2>Contributing to the weekly rundown</h2>
+<ul>
+   <li>Have something you'd like to talk about or see on the weekly meetings?</li>
+   <li>Feel free to add it to the weekly rundown!</li>
+   <li>Repository is available on <a href="https://github.com/OSUOSC/osc-weekly-rundown">Github</a></li>
+</ul>
+HTML
+        File.open(post, 'a') do |file|
+            file.puts html
+        end
         page = YAML.load_file(post)
         page['stories'].each do |story|
             html = ''
             html << <<-HTML
+{% page_break %}
 <hr />
 # [#{story["title"]}](#{story["link"]})
 ![](#{story["image"]})
 #{story["notes"]}
-{% page_break %}
 HTML
             File.open(post, 'a') do |file|
                 file.puts html
             end
+        end
+        html = ''
+        html << <<-HTML
+{% page_break %}
+<hr />
+<h1>Fin</h1>
+<ul>
+  <li>Anything we missed?</li>
+  <li>Feel free to share!</li>
+</ul>
+<hr />
+HTML
+        File.open(post, 'a') do |file|
+            file.puts html
         end
     end
 end

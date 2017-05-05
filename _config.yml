@@ -170,16 +170,16 @@ collections:
   events:
     output: true
     permalink: /:collection/:path/
-  news:
-    output: true
-    permalink: /:collection/:path/
-  multipage:
-    output: true
-    permalink: /:collection/:path/
   tutorials:
     output: true
     permalink: /:collection/:path/
   calendar:
+    output: true
+    permalink: /:collection/:path/
+  news:
+    output: true
+    permalink: /:collection/:path/
+  posts:
     output: true
     permalink: /:collection/:path/
 
@@ -192,27 +192,15 @@ defaults:
     values:
       layout: events
       author_profile: true
-      read_time: false
-      comments: false
       share: true
-      related: false
-  # _news
-  - scope:
-      path: ""
-      type: news
-    values:
-      layout: news
-      author_profile: true
   # _tutorials
   - scope:
       path: ""
       type: tutorials
     values:
       layout: single
-      read_time: false
       author_profile: false
       share: true
-      comments: false
       sidebar:
         nav: "tutorials"
   # _calendar
@@ -222,8 +210,21 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: false
       comments: true
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: news
+      author_profile: true
+  # _news
+  - scope:
+      path: ""
+      type: news
+    values:
+      layout: news
+      author_profile: true
 
 # Sass/SCSS
 sass:
