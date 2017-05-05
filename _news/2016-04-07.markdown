@@ -6,9 +6,16 @@ stories:
       link: "http://android-developers.blogspot.com/2016/04/android-studio-2-0.html"
       image: "https://1.bp.blogspot.com/-vxXg6Inv_WA/VwaJ0uzSf_I/AAAAAAAACr4/xzszbcRzWRgSaHXpOpYroG7u6bgsFJjqw/s200/image03.png"
       notes: |
-        * Instant Run: Changes to a running app appear live.
+        >Instant Run: Changes to a running app appear live.
+
         * Faster Android emulator and adb.
-        * Cloud Test Lab: Test apps on a wide range of physical devices easily.
+            * Cloud Test Lab: Test apps on a wide range of physical devices easily.
+
+        ```
+        lorem ipsum thing
+        ```
+
+        ## header
     - title: "GitLab Pages"
       link: "http://pages.gitlab.io/"
       image: "https://pages.gitlab.io/images/gitlab-pages-2282e4b0.png"

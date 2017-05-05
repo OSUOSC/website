@@ -425,10 +425,6 @@ module Jekyll
                                 # Ensure the page has suitable auto-wrapped paging template content.
                                 paging_include_tag = "\r\r{% include #{paging_template} %}\r\r"
                                 if auto_wrap_paging && !(is_collated_page && !paging_on_collated_page)
-                                        if paging_type != "footer"
-                                                # Add paging header
-                                                wrapped_page_content = "#{paging_include_tag}#{wrapped_page_content}"
-                                        end
                                         if paging_type != "header"
                                                 # Add paging footer
                                                 wrapped_page_content = "#{wrapped_page_content}#{paging_include_tag}"

@@ -1,1 +1,12 @@
-/srv/projects/osuosc/minimal-mistakes/assets/Jekyll-Multipage/_includes/multipage-paging.html
+<nav class="pagination">
+{% unless page.multipage.previous_number == -1 %}
+  <a href="{{ page.multipage.previous_path }}" class="pagination--pager">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
+{% else %}
+  <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
+{% endunless %}
+{% unless page.multipage.next_number == -1 %}
+  <a href="{{ page.multipage.next_path | absolute_url }}" class="pagination--pager">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
+{% else %}
+  <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
+{% endunless %}
+</nav>

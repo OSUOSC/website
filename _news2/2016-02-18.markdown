@@ -1,7 +1,8 @@
 ---
 date: 2016-02-02
-title: thing1
+title: "thing1"
 multipage: true
+test: true
 stories:
     - title: "Apple, the FBI, and Encryption"
       link: "https://www.apple.com/customer-letter/"
