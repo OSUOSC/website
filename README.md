@@ -12,54 +12,27 @@ This means that all that is needed to add a talk or a news item in a weekly rund
 
 Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your personal site, blog, or portfolio on GitHub or self-hosting on your own server. As the name implies --- styling is purposely minimalistic to be enhanced and customized by you :smile:.
 
-See what's new in the [CHANGELOG](CHANGELOG.md).
-
-:sparkles: Minimal Mistakes is now available as a [Ruby gem](https://rubygems.org/gems/minimal-mistakes-jekyll). Consult the [Quick-Start Guide](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/) and [this blog post](https://mmistakes.github.io/minimal-mistakes/jekyll/gemified-theme-beta/) to learn how to upgrade.
-
-[![Minimal Mistakes live preview][2]][1]
-
-[1]: https://mmistakes.github.io/minimal-mistakes/
-[2]: screenshot.png (live preview)
-
-## Notable Features
-
-- "Gemified" for easier install/upgrading
-- Compatible with Jekyll 3.x and GitHub Pages
-- Support for Jekyll's built-in Sass/SCSS preprocessor
-- Several responsive layout options (single, archive index, splash, and paginated home page)
-- SEO optimized with support for [Twitter Cards](https://dev.twitter.com/cards/overview) and [Open Graph](http://ogp.me/) data
-- Optional [header images](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#headers), [custom sidebars](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#sidebars), [table of contents](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#table-of-contents), [galleries](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#gallery), related posts, [breadcrumb links](https://mmistakes.github.io/minimal-mistakes/docs/configuration/#breadcrumb-navigation-beta), [navigation lists](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#navigation-list), and more.
-- Commenting support (powered by [Disqus](https://disqus.com/), [Facebook](https://developers.facebook.com/docs/plugins/comments), Google+, [Discourse](https://www.discourse.org/), static-based via [Staticman](https://staticman.net/), and custom).
-- [Google Analytics](https://www.google.com/analytics/) support.
-- UI localized text in English (default), Brazilian Portuguese, Chinese, French, German, Italian, Korean, Nepali (Nepalese), Russian, Spanish, and Turkish
-
-## Usage
-
 For detailed instructions on how to configure, customize, add content, and more read the [theme's documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
-
-**Note:** Gem version of the theme requires Jekyll v3.3+ and is not currently supported on [GitHub Pages](https://pages.github.com/). You can still use the theme with GitHub Pages, you'll just need to install using the old "[repo fork method](https://mmistakes.github.io/minimal-mistakes/docs/installation/)".
 
 ## Quick Start
 
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "minimal-mistakes-jekyll"
-```
-
-Add this line to your Jekyll site's `_config.yml` file:
-
-```yaml
-theme: minimal-mistakes-jekyll
-```
-
-Then run Bundler to install the theme gem and dependencies:
+1. Run Bundler to install the theme gem and dependencies:
 
 ```bash
 bundle install --path ${HOME}/.gem
 ```
 
-To update the theme run `bundle update`. **Be careful - this may break OSUOSC customizations.**
+To test the theme, run `$ bundle exec rake preview` and open your browser at `http://localhost:4000/`. This starts a Jekyll server using content in the repo directory. As modifications are made to the theme, it will regenerate and you should see the changes in the browser after a refresh.
+
+When you are done, or if you have to restart the server, it is recommended to issue an `$ bundle exec rake clean`, which resets the multipage hackery that is run in `_posts/` to generate `/news/`. Go ahead, check out the markdown pages while the server is running.
+
+#### TODO: make a function `$ bundle exec rake new_post`
+* Specific format: `YYYY-MM-DD-title-of-post.md`
+* YAML front matter
+    * `layout: multipage`
+    * `collection: news`
+    * `date: YYYY-MM-DD`
+
 
 ---
 
@@ -76,14 +49,14 @@ This goes for author sidebar links and "share button" additions -- I have no int
 When submitting a pull request:
 
 1. Clone the repo.
-2. Create a branch off of `master` and give it a meaningful name (e.g. `my-awesome-new-feature`) and describe the feature or fix.
+2. Create a branch off of `master` and give it a meaningful name (e.g. `my-awesome-new-post`) and describe the feature or fix.
 3. Open a pull request on GitHub.
 
 ## Development
 
-To set up your environment to develop this theme, run `bundle install`.
+To set up your environment to develop this theme, run `bundle install --path ${HOME}/.gem`.
 
-To test the theme, run `bundle exec rake preview` and open your browser at `http://localhost:4000/`. This starts a Jekyll server using content in the repo directory. As modifications are made to the theme, it will regenerate and you should see the changes in the browser after a refresh.
+To update the theme run `bundle update`. **Be careful - this may break OSUOSC customizations.**
 
 ---
 

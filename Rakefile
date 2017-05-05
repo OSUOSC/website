@@ -2,6 +2,7 @@ require "bundler/gem_tasks"
 require "jekyll"
 require "listen"
 require "yaml"
+require 'fileutils'
 
 NEWS_PATHNAME = '_posts/*'
 
@@ -110,9 +111,12 @@ end
 
 task :clean do
     local_clear_yaml(NEWS_PATHNAME)
+    basename = Pathname.new('.').expand_path
+    FileUtils.rm_rf(basename.join('_site/').to_s)
+
 end
 
-task :domenow do
+task :gen_site do
   local_render_yaml(NEWS_PATHNAME)
   base = Pathname.new('.').expand_path
   options = {
@@ -121,6 +125,7 @@ task :domenow do
     "theme"         => "minimal-mistakes-jekyll",
     "future"        => true
   }
+  options = Jekyll.configuration(options)
   site = Jekyll::Site.new(options)
   Jekyll::Command.process_site(site)
   local_clear_yaml(NEWS_PATHNAME)

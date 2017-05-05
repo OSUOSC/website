@@ -4,9 +4,9 @@
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     <h2 class="archive__item-title" itemprop="headline">
       {% if post.link %}
-        <a href="{{ post.link }}">{{ post.date }}</a> <a href="{{ post.url | absolute_url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+        <a href="{{ post.link }}">{{ post.date | date: "%A, %B %d, %Y" }}</a> <a href="{{ post.url | absolute_url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
-        <a href="{{ post.url | absolute_url }}" rel="permalink">{{ title }}</a>
+        <a href="{{ post.url | absolute_url }}" rel="permalink">{{ post.date | date: "%A, %B %d, %Y" }}</a>
       {% endif %}
     </h2>
     <p class="archive__item-excerpt" itemprop="description">

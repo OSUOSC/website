@@ -62,7 +62,7 @@ module Jekyll
 
                 def create_multipage(post, site)
                         # Cache post's info in case we have to modify the original (if it's page 1, instead of the collated page).
-                        post_original_title = post.data["title"]
+                        post_original_title = post.data["date"].strftime("%A, %B %d, %Y")
                         #post_original_title = post.data["title"]
                         post_original_data = {}.merge(post.data)
                         post_original_content = post.content
