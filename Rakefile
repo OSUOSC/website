@@ -25,9 +25,9 @@ def local_render_yaml(news_pathname)
 
 <h2>Disclaimer</h2>
 <ul>
- <li> The views expressed in this presentation are those of the presentator(s).
- <li> They are not endorsed by or affiliated with any of the people, companies, or entities mentioned.
- <li> No guarantees are made that the information in this presentation are free of errors.
+  <li> The views expressed in this presentation are those of the presentator(s).</li>
+  <li> They are not endorsed by or affiliated with any of the people, companies, or entities mentioned.</li>
+  <li> No guarantees are made that the information in this presentation are free of errors.</li>
 </ul>
 
 <h2>Contributing to the weekly rundown</h2>
@@ -63,7 +63,6 @@ HTML
   <li>Anything we missed?</li>
   <li>Feel free to share!</li>
 </ul>
-<hr />
 HTML
         File.open(post, 'a') do |file|
             file.puts html

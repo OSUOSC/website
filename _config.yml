@@ -216,14 +216,14 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: news
+      layout: multipage
       author_profile: true
   # _news
   - scope:
       path: ""
       type: news
     values:
-      layout: news
+      layout: multipage
       author_profile: true
 
 # Sass/SCSS
