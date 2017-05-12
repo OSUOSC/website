@@ -20,6 +20,14 @@ tutorials:
       url: /tutorials/osuwireless/
     - title: "How to SSH into club systems"
       url: /tutorials/ssh/
+    - title: "How to use Git"
+      url: /tutorials/git-workflow/
+    - title: "New Post"
+      url: /tutorials/new-post/
+    - title: "Deploying the site"
+      url: /tutorials/deploying/
+    - title: "Setting up the site"
+      url: /tutorials/setup/
   - title: "Club Information"
     children:
     - title: "Constitution"

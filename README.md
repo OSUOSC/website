@@ -1,10 +1,8 @@
 # [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/)
 
-[![GitHub release](https://img.shields.io/gem/v/minimal-mistakes-jekyll.svg)](https://github.com/mmistakes/minimal-mistakes/releases) [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
-
 ## Forked for OSUOSC
 
-This means that all that is needed to add a talk or a news item in a weekly rundown is to issue a PR with the new item under the `_talks` or `_news` directory respectively.
+This means that all that is needed to add a talk or a news item in a weekly rundown is to issue a PR with the new item under the `_posts` or `_tutorials` directory respectively.
 
 #### TODO: Get an automated calendar set up.
 
@@ -76,11 +74,12 @@ To update the theme run `bundle update`. **Be careful - this may break OSUOSC cu
 - <https://andrewcz.com>
 - <https://github.com/smacz42>
 
-### Icons + Demo Images:
+### Icons + Plugins:
 
 - [The Noun Project](https://thenounproject.com) -- Garrett Knoll, Arthur Shlain, and [tracy tam](https://thenounproject.com/tracytam)
 - [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
 - [Unsplash](https://unsplash.com/)
+- [Multipage](https://github.com/mattgemmell/Jekyll-Multipage)
 
 ### Other:
 
