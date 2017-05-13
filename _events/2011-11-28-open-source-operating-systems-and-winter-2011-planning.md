@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Open Source Operating Systems and Winter 2011 Planning
-categories: announcements
-tags: announcements, os
 ---
 Thursday, December 1st at 7:00PM in Dreese room 266, a number of our members will be presenting on various Open Source Operating Systems.  These will not be overly in-depth as some of our past presentations have been; rather, these should just taste of what these Operating Systems are like or why people may be interested in learning more about them.
 

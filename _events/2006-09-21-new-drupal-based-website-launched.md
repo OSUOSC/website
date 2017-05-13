@@ -1,10 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: New Drupal-based website launched
-alias: /website-moving.html
-categories: announcements
-tags: announcements, website, cms, drupal
 ---
 Months ago I made the decision to use Microwiki as the base of our website, replacing the old HTML site that we had previously. At around the same time, [Freegeek Columbus](http://freegeekcolumbus.org/) switched from [MediaWiki](http://www.mediawiki.org) - the software that drives Wikipedia - to Mircowiki, and they seemed happy enough. It seemed a good choice for us. I thought that we should use something small and simple. Microwiki, weighing in at just 163 kilobytes, is undoubtably small and simple. However, as time wore on, it became clear that MicroWiki was not the best tool for the job. I pressed on, thinking that I could make it work. I never did. Here is a quick list of various problems I ran into:
 

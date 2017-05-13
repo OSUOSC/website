@@ -1,9 +1,5 @@
 ---
-layout: default
 title: OSC Goes to COLUG! (OpenStack)
-alias: /sp14/osc-goes-colug-openstack.html
-categories: announcements
-tags: announcements, devops
 ---
 Greetings Everyone,
 

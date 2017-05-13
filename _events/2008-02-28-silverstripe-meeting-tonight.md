@@ -1,9 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: Silverstripe Meeting Tonight
-categories: announcements
-tags: announcements
 ---
 We are meeting tonight (Thursday, February 28th) at **6:00 pm** in
 **Scott Lab room 103**. Please note that this is not the normal time/location we

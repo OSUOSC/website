@@ -1,9 +1,5 @@
 ---
-layout: default
 title: Wi-Fi Hacking
-alias: /au12/wi-fi-hacking.html
-categories: announcements
-tags: announcements, hack, wifi, wireless, security, privacy
 ---
 I, Michael Yanovich, will be covering Wi-Fi Hacking on 2012/08/30 at 7:00pm (20120830T1900-0400 for those who love ISO8601 compliant dates) in Dreese Labs 266. What I want people to walk away from this talk with is the knowledge of how to *try* to protect their Access Points (AP) the best they can with currently available technology. I will start off with a basic introduction into simple Electricity and Magnetism (E&M) and quickly move into some of the layers of the OSI Model of networking involved. The bulk of the talk will be a live demonstration of testing the security of WEP and WPA (1 and 2). I encourage people to follow along and learn the most they can about wireless security. I'm bringing my own equipment for us to attack and I'm giving permission to those who attend to help out and to help show off the weakness of various types of security implementations that I will be demonstrating. I also have surprise raw data information about wifi access points in the Columbus area that will definitely be a treat!
 

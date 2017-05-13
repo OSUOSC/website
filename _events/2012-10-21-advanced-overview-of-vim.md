@@ -1,9 +1,5 @@
 ---
-layout: default
 title: Advanced Overview of Vim
-alias: /au12/advanced-overview-vim.html
-categories: announcements
-tags: announcements, vim, cli
 ---
 Thursday, October 25th at 7:00PM in Dreese Labs 266, Daniel Thau will be presenting an overview of various advanced functionality for the Vim text editor.  This talk is not intended to fully educate the audience on the use of the discussed functionality so much as make the audience aware of the advanced functionality Vim has to offer in order to have something to work towards.  Comfort with the basics of Vim would be useful but not required.
 

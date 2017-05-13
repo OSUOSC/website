@@ -1,9 +1,5 @@
 ---
-layout: default
 title: Personal Projects
-alias: /au14/personal-projects.html
-categories: announcements
-tags: announcements, projects
 ---
 Hi everyone!
 

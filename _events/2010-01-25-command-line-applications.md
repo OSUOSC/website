@@ -1,9 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: Command Line Applications
-categories: announcements
-tags: announcements, cli, terminal
 ---
 This Thursday, March 11th at 7PM in Dreese Labs 266, we will be holding a lightning talk session covering a multitude of command line applications. The lightning talk format consists of short talks that focus on a single topic and are typically given by multiple presenters in succession. If you are looking for a lightweight program to get the job done and don't need a graphical interface, be it checking your mail, downloading torrents, chatting on irc, editing text, or anything else, this is definitely the meeting for you. If you have found a command line program that has grasped your interest, consider coming in and sharing with the rest of the club as we are all looking for the next best thing. A current list of programs that are going to be covered is in a list below:
 

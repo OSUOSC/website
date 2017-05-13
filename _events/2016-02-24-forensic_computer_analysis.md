@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Forensic Data Analysis
-categories: announcements
-tags: announcements, data analysis
 meeting_date: 2016-02-25
 ---
 

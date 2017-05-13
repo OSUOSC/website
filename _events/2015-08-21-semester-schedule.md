@@ -1,9 +1,5 @@
 ---
-layout: default
 title:  Autumn 2015 Semester Schedule
-categories: schedules
-tags: schedules
-alias: /meetings/2015/08/21/semester-scehdule/
 ---
 
 | date       | topic                                 | speaker(s)      |

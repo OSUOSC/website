@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Connecting to IRC
-categories: announcements
-tags: announcements, irc
 ---
 #### Foreward
 

@@ -1,9 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: 'Updated: Student Involvement Fair/Ohio LinuxFest pamphlet'
-categories: announcements
-tags: announcements, ohio linuxfest
 ---
 As part of our participation in the [Student Involvement Fair](http://ohiounion.osu.edu/studentorgs/events_involvement.asp) and [Ohio LinuxFest 2006](http://www.ohiolinux.org) I'd like to hand out pamphets that showcase who we are and our upcoming meetings. I've started work on it, and would appriciate any idea or comments you may have on it. You can download it at the bottom of the page in OpenDocument and PDF formats. Edit: The automatic uploader is not working, due to possible SELinux issues. I've linked to the files manually, and will look into the issue. Release notes:
 

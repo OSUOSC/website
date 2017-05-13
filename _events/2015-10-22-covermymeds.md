@@ -1,10 +1,6 @@
 ---
-layout: default
 title: Working in a Production Environment
-categories: announcements
-tags: announcements
 meeting: October 22nd 2015
-alias: /announcements/2015/10/22/TBA/
 ---
 
 Hi everyone,

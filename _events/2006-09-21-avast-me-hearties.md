@@ -1,9 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: Avast, me hearties!
-categories: announcements
-tags: announcements
 stories:
     - title: "Talk like a pirate day"
       link: "http://talklikeapirate.com/"

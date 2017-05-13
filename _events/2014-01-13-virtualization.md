@@ -1,9 +1,5 @@
 ---
-layout: default
 title: Virtualization
-alias: /sp14/virtualization.html
-categories: announcements
-tags: announcements
 ---
 Greetings!
 

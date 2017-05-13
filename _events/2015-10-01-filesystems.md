@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Logical Volumes and Fancy Filesystems
-categories: announcements
-tags: announcements, fs, filesystems
 meeting: October 1st 2015
 ---
 

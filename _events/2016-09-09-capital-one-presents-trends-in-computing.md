@@ -1,10 +1,6 @@
 ---
-layout: default
 title: Capital One presents trends in computing
-categories: announcements
-tags: announcements
 meeting_date: 2016-09-15
-meeting_location: Caldwell Labs, Rm 120
 ---
 
 <!-- INSERT TEXT HERE -->

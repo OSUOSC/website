@@ -1,9 +1,5 @@
 ---
-layout: default
 title: Open Source at Facebook
-alias: /au14/open-source-facebook.html
-categories: announcements
-tags: announcements, facebook, community
 ---
 Thursday, 2014-10-23 at 7:00pm in Caldwell Labs 120, Patrick Shuff (an engineer at Facebook) will present "Open Source at Facebook". Description follows:
 

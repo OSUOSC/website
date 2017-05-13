@@ -1,9 +1,5 @@
 ---
-layout: default
 title: Internet Privacy and Anonymization
-alias: /au13/internet-privacy-and-anonymization.html
-categories: announcements
-tags: announcements, privacy, security
 ---
 Hey everyone, sorry for the late email!
 

@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Introduction to the Command Line
-categories: announcements
-tags: announcements, cli, howto, terminal
 meeting: September 10th 2015
 ---
 

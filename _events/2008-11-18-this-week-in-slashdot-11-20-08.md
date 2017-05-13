@@ -1,9 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: This Week in Slashdot
-categories: announcements
-tags: announcements, slashdot
 ---
 This Thursday, November 20th, for the first time in over a year, Alex is doing
 *This Week in Slashdot*. Prior knowledge of Slashdot or familiarity with current

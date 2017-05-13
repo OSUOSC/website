@@ -1,9 +1,5 @@
 ---
-layout: default
 title: PostgreSQL
-alias: /sp15/postgresql.html
-categories: announcements
-tags: announcements, database, db, sql, postgres
 ---
 This Thursday, 2015-03-26 at 7:00pm in Caldwell Labs 120, Jeff Casavant will be speaking about PostgreSQL. A short description follows:
 

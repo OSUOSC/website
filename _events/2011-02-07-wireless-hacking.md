@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Wireless Hacking
-categories: announcements
-tags: announcements, wifi, wireless, security, privacy
 ---
 Tonight at 7 pm in [Dreese Labs](http://www.osu.edu/map/building.php?building=279) room 264, I, Michael Yanovich, will be covering various sub-topics to wireless hacking, however the main point that I want people to take away from this talk is how to secure your own wireless network from these types of attacks. I'll be covering a brief outline on how wireless networks work, the several types of encryption available, and other settings that can set to **try** to protect your network. I'll be demonstrating these attacks as well, and I'll be needing help in this endeavor and I encourage people to bring their laptops if they wish to participate. I encourage people to follow along and learn the most they can about wireless security. I'm bringing my own equipment for us to attack and I'm giving permission to those who attend to help out and to help show off the weakness of various types or security implementations that I will be covering. I also have surprise raw data information about wifi access points in the Columbus area that will definitely be interesting!
 

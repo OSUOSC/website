@@ -1,9 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: PulseAudio with Paul Betts
-categories: announcements
-tags: announcements, linux, audio, sound
 ---
 Room: 480 Dreese Labs  
 

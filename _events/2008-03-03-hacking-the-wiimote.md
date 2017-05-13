@@ -1,9 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: Hacking the Wiimote
-categories: announcements
-tags: announcements, hardware, wii, modding, hack
 ---
 Last week, we had a really good turnout and watched some demos of [hacking the Nintendo Wii remote](http://www.usmechatronics.com/usmgarage/WiiBot.html)
 to create your own virtual 3-D environment in relative to your perspective,

@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Open Source Multiplayer Games
-categories: announcements
-tags: announcements
 ---
 This week I will be demonstrating several open source multiplayer games we will be playing at our LAN party on Saturday!
 

@@ -1,9 +1,5 @@
 ---
-layout: default
 title: Constitution
-alias: /about/constitution.html
-categories: history
-tags: history, constitution
 ---
 
 Preamble
@@ -60,7 +56,6 @@ Article II - Membership: Qualifications and categories of membership
 Ohio State University guidelines demand that voting membership be
 limited to currently enrolled students. In order to meet this
 requirement, membership will be divided into voting and non-voting
-categories.
 
 -   Non-voting membership can be obtained simply by attendance of
     meetings or presence on our mailing list.

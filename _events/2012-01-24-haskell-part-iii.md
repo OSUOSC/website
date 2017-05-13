@@ -1,9 +1,5 @@
 ---
-layout: default
 title: 'Haskell: Part III'
-alias: /wi12/haskell3.html
-categories: announcements
-tags: announcements, haskell, language
 ---
 Thursday January 26th, 2012
 Dreese Lab 266

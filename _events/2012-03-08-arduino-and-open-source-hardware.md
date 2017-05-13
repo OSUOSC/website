@@ -1,9 +1,5 @@
 ---
-layout: default
 title: Arduino and Open Source Hardware
-alias: /au12/ardunio.html
-categories: announcements
-tags: announcements, ardunio, embedded
 ---
 THIS WEEK IN OPEN SOURCE!:
 

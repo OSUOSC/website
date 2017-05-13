@@ -1,10 +1,6 @@
 ---
-layout: default
 title: Intro to the Command line
-categories: announcements
-tags: announcements
 meeting_date: 2016-09-08
-meeting_location: Caldwell Labs, Rm 120
 ---
 
 <!-- INSERT TEXT HERE -->

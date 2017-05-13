@@ -1,9 +1,5 @@
 ---
-layout: default
 title: GIMP Image Editing
-alias: /sp13/gimp.html
-categories: announcements
-tags: announcements, gimp, image manipulation, raster, photoshop
 ---
 This Thursday at 7 pm, in Dreese Lab 369, Brian Swaney will teach us GIMP image editing techniques. The presentation will be interactive and encourage audience participation, so you should bring a laptop with GIMP already installed to follow along. Some techniques covered may include [cloning](http://docs.gimp.org/2.6/en/gimp-tool-clone.html)/[healing](http://docs.gimp.org/2.6/en/gimp-tool-heal.html), [layer](http://docs.gimp.org/en/gimp-image-combining.html) [masking](http://docs.gimp.org/2.6/en/gimp-layer-mask-menu.html), [fine](http://docs.gimp.org/2.6/en/gimp-using-paths-and-selections.html) [selections](http://docs.gimp.org/2.6/en/gimp-tool-iscissors.html), and [basic](http://docs.gimp.org/2.6/en/gimp-tool-rotate.html) [image](http://docs.gimp.org/2.6/en/gimp-tool-scale.html) [transformations](http://docs.gimp.org/2.6/en/gimp-tool-crop.html). Some more [advanced techniques](https://www.youtube.com/watch?v=3RtFt6axp5s) may be covered if time allows, just to show that GIMP can live up to the same standard as _other editors whose names are withheld due to trademark licensing concerns_, but no prior experience is required.
 

@@ -1,9 +1,5 @@
 ---
-layout: default
 title: Advanced Vim Tutor
-alias: /sp15/advanced-vim-tutor.html
-categories: announcements
-tags: announcements, vim, text editor
 ---
 This Thursday, 2015/04/23 at 7:00PM in Caldwell Labs 120, Daniel Thau
 will present a tour of Vim functionality.  Prior Vim experience is not

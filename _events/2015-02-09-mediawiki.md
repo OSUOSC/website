@@ -1,9 +1,5 @@
 ---
-layout: default
 title: MediaWiki
-alias: /sp15/mediawiki.html
-categories: announcements
-tags: announcements, wiki
 ---
 This Thursday, 2015-02-12 at 7:00pm in Caldwell Labs 120, Kevin Payravi will present "MediaWiki". Description follows:
 

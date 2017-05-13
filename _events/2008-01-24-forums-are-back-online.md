@@ -1,9 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: Forums are back online!
-categories: announcements
-tags: announcements
 ---
 After months of returning error messages to users who went to
 opensource.cse.ohio-state.edu/forum, the [Open Source Club forums](http://opensource.cse.ohio-state.edu/forum "Click here to enter our forums")

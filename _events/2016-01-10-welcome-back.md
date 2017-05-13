@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Welcome Back
-categories: announcements
-tags: announcements, first
 meeting_date: 2016-01-14
 ---
 This Thursday, January 14th at 7PM in Caldwell 120, we will be voting on whether

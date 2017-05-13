@@ -1,9 +1,5 @@
 ---
-layout: default
 title: What NOT to do with your F/OSS Operating System
-alias: /au12/what-not-do-your-foss-operating-system.html
-categories: announcements
-tags: announcements
 ---
 Hey everyone,
 

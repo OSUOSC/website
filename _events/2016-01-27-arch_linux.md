@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Arch Linux
-categories: announcements
-tags: announcements, arch linux, distribution, distro
 meeting_date: 2016-01-28
 ---
 Thursday's talk will be on installing Arch Linux, performed by our longtime

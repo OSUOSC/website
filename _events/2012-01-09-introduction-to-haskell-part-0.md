@@ -1,9 +1,5 @@
 ---
-layout: default
 title: Introduction to Haskell Part 0
-alias: /wi12/haskell1.html
-categories: announcements
-tags: announcements, haskell, language
 ---
 *Introduction to Haskell Part 0*
 *Dreese 266*

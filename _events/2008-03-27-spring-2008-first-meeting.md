@@ -1,9 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: Spring 2008 - First Meeting
-categories: announcements
-tags: announcements, first
 ---
 We had our first meeting for the quarter in Dreese Labs room 266 at 7:00 pm.
 Meetings end whenever they end, with no specific time. No absolute topic was

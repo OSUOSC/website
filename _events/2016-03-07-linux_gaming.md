@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Open Source and Linux Gaming
-categories: announcements
-tags: announcements
 meeting_date: 2016-03-10
 ---
 

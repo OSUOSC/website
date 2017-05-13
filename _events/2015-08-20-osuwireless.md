@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Connecting to osuwireless with linux
-categories: tutorials
-tags: tutorials, wifi, osuwireless, wireless, howto
 ---
 
 Steps will vary depending on your distro and network manager of choice, but the same principles apply:

@@ -1,8 +1,5 @@
 ---
-layout: default
 title: A Recap of NICAR, and open source in journalism
-categories: announcements
-tags: announcements
 meeting_date: 2016-03-24
 ---
 

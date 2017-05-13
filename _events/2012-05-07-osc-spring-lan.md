@@ -1,9 +1,5 @@
 ---
-layout: default
 title: OSC Spring LAN
-alias: /sp12/osc-spring-lan.html
-categories: announcements
-tags: announcements, lan, party
 ---
 The OSC will be hosting its second LAN of the academic year on May 12th, 2012.
 

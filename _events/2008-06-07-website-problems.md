@@ -1,9 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: Website problems
-categories: announcements
-tags: announcements
 ---
 We are currently having some problems with our content managing system, Drupal,
 so changes here will be limited. We apologize for the inconvenience, and a group

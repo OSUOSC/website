@@ -1,9 +1,5 @@
 ---
-layout: default
 title: Crypto Currencies
-alias: /sp14/crypto-currencies.html
-categories: announcements
-tags: announcements
 ---
 Greetings everyone, sorry for the late email this week.
 

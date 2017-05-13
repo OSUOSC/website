@@ -1,9 +1,5 @@
 ---
-layout: default
 title: The Command Line
-alias: /sp13/command-line.html
-categories: announcements
-tags: announcements, cli, terminal, bash, shell
 ---
 Hello everyone!
 

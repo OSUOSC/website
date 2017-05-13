@@ -1,9 +1,5 @@
 ---
-layout: default
 title: Open Source and Your Music
-alias: /au12/open-source-and-your-music.html
-categories: announcements
-tags: announcements, audio, music
 ---
 Hello everyone!
 

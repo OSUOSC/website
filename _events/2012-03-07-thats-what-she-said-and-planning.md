@@ -1,9 +1,5 @@
 ---
-layout: default
 title: That's What She Said and Planning
-alias: /wi12/twss.html
-categories: announcements
-tags: announcements
 ---
 I apologize for the late meeting topic announcement, but there were some unexpected delays.
 

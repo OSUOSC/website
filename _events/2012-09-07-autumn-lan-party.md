@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Autumn LAN Party
-categories: announcements
-tags: announcements, lan, party
 ---
 Good news everyone!
 

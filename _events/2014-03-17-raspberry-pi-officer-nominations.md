@@ -1,9 +1,5 @@
 ---
-layout: default
 title: Raspberry Pi / Officer Nominations
-alias: /sp14/raspberry-pi-officer-nominations.html
-categories: announcements
-tags: announcements, pi
 ---
 This Thursday, 2014/03/20 at 7pm in Caldwell Labs (CL) 120, the Open Source Club will present Raspberry Pi, the arm powered $35 computer, available online and also at micro center.
 

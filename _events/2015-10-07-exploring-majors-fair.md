@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Exploring Majors Fair
-categories: volunteering
-tags: volunteering
 expire_date: 2015-10-12
 ---
 

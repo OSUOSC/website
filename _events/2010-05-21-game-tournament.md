@@ -1,9 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: Game Tournament
-categories: announcements
-tags: announcements, lan, party
 ---
 On Saturday, May 22 in the Ohio Union, the Ohio State Open Source Club will be hosting a LAN Party from 10 AM Saturday morning until 3 AM Sunday morning. Per our Free and open source philosophy, we will be promoting games that either run natively in Linux or run well in WINE and, while some of the games themselves might not be free or open source in nature, we would like to show how gaming in Linux is not a lost cause. We will be providing a venue for people to come out and play the following computer games:
 

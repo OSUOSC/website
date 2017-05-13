@@ -1,8 +1,5 @@
 ---
-layout: default
 title: System Updates
-categories: announcements
-tags: announcements
 ---
 Update on the stallman2 migration:
 

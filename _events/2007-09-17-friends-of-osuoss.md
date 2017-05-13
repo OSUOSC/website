@@ -1,9 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: Friends of OSUOSS
-categories: announcements
-tags: announcements
 ---
 #### Groups on Campus
 

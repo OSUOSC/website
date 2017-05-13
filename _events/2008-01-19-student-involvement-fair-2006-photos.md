@@ -1,9 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: Student Involvement Fair 2006 Photos
-categories: announcements
-tags: announcements
 ---
 A couple of weeks ago we attended the Student Involvement Fair and had a blast.
 Here are some photographs of the event courtesy of Peter.

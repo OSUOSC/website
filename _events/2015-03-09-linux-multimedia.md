@@ -1,9 +1,5 @@
 ---
-layout: default
 title: Linux Multimedia
-alias: /sp15/linux-multimedia.html
-categories: announcements
-tags: announcements, audio, music
 ---
 This Thursday, 2015-03-12 at 7:00pm in Caldwell Labs 120, Brandon Dahl will present Linux Multimedia. A short description follows:
 

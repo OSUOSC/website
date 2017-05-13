@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Wireless Security and Penetration Testing
-categories: announcements
-tags: announcements, wifi, wireless, security
 meeting: October 29th 2015
 ---
 

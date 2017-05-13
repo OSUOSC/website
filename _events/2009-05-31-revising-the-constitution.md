@@ -1,10 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: Revising the Constitution
-alias: /revising-constitution.html
-categories: announcements
-tags: announcements, constitution
 ---
 This Thursday, June 4<sup>th</sup>, the Open Source Club leaders for the 2009-2010 school year will be discussing changes for the following year. All club members are strongly encouraged to use this opportunity to give their feedback about how the next year should be run.
 

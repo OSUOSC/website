@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Welcome Back
-categories: announcements
-tags: announcements, first
 ---
 Hello everyone!
 

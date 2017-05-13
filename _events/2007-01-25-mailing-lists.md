@@ -1,9 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: Mailing Lists
-categories: announcements
-tags: announcements
 ---
 We have two mailing lists: A discussion mailing list and an announcements-only
 mailing list. Announcements are sent to both so you will most likely want to

@@ -1,9 +1,5 @@
 ---
-layout: default
 title: Resume Review
-alias: /sp14/resume-review.html
-categories: announcements
-tags: announcements, resume
 ---
 Hello!
 

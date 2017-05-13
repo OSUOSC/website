@@ -1,10 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: GNU Utilities
-alias: /wi10/gnu-utils.html
-categories: announcements
-tags: announcements, gnu
 ---
 This Thursday January 28th, at 7PM in Dreese Labs 266, Morgan Goose will be showing off a multitude of GNU Utilties. Here is Morgan's synopsis of his talk:
 

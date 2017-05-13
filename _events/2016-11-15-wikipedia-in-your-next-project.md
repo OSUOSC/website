@@ -1,10 +1,6 @@
 ---
-layout: default
 title: Wikipedia in your next project
-categories: announcements
-tags: announcements
 meeting_date: 2016-11-17
-meeting_location: Caldwell Labs, Rm 120
 ---
 
 

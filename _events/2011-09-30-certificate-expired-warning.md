@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Certificate expired warning
-categories: announcements
-tags: announcements, cert, ssl
 ---
 <pre>-----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1

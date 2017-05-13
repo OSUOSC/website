@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Git - An Introduction and Explanation
-categories: announcements
-tags: announcements, git, vc, version control
 meeting: November 12th 2015
 ---
 

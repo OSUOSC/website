@@ -1,9 +1,6 @@
 ---
-layout: default
 title: 'Haskell: Part III: Winter Resistance Edition: Snow and Freezing Rain Will
   Not Stop Us (neither will dry, 50F weather)'
-categories: announcements
-tags: announcements, haskell, language
 ---
 *Thursday January 26, 2012*
 

@@ -1,9 +1,5 @@
 ---
-layout: default
 title: Open Source and Web Browsers
-alias: /sp15/open-source-and-web-browsers.html
-categories: announcements
-tags: announcements, chrome, firefox, browser, web
 ---
 Thursday, 2015-02-26 at 7:00pm in Caldwell Labs 120, Nikit Malkan (Treasurer of the Open Source Club) will present Open Source and Web Browsers. A short description follows:
 

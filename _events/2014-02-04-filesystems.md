@@ -1,9 +1,5 @@
 ---
-layout: default
 title: Filesystems
-alias: /sp14/filesystems.html
-categories: announcements
-tags: announcements, fs, filesystem
 ---
 This Thursday, February 6th at 7:00pm in Caldwell Labs 120, Paul Schellin will present "Filesystems"
 

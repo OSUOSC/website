@@ -1,9 +1,5 @@
 ---
-layout: default
 title: Richard Stallman visiting OSU
-alias: /sp13/richard-stallman-visiting-osu.html
-categories: announcements
-tags: announcements, rms, fsf, free, gnu, stallman, emacs
 ---
 This Monday, Richard Stallman is visiting OSU as a guest lecturer in the computer science department. His presentation will be at 4 pm in the [Journalism Building](http://www.osu.edu/map/building.php?building=046), room 300, and the lecture is open to the public.
 

@@ -1,9 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: Autumn 2008 Meetings
-categories: announcements
-tags: announcements, schedule
 ---
 Below is a list of meetings from Autumn 2008:
 

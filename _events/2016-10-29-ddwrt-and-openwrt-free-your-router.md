@@ -1,10 +1,6 @@
 ---
-layout: default
 title: DDWRT and OpenWRT, free your router
-categories: announcements
-tags: announcements
 meeting_date: 2016-11-03
-meeting_location: Caldwell Labs, Rm 120
 ---
 
 <!-- INSERT TEXT HERE -->

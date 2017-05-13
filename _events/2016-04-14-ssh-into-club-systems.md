@@ -1,8 +1,5 @@
 ---
-layout: default
 title: How to SSH into club systems
-categories: tutorials
-tags: tutorials, ssh, linux, headless
 ---
 
 If you do not already have a club account, you may contact our SysAdmin to request one.

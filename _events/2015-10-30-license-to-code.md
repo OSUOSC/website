@@ -1,8 +1,5 @@
 ---
-layout: default
 title: License to Code
-categories: announcements
-tags: announcements, license, legal
 meeting: November 5th 2015
 ---
 

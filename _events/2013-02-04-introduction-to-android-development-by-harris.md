@@ -1,9 +1,5 @@
 ---
-layout: default
 title: Introduction to Android Development by Harris
-alias: /sp13/introduction-android-development-harris.html
-categories: announcements
-tags: announcements, java, android
 ---
 Hello everyone!
 

@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Ohio LinuxFest
-categories: events
-tags: events
 expire_date: 2016-10-09
 ---
 

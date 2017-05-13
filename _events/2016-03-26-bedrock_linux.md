@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Bedrock Linux
-categories: announcements
-tags: announcements, bedrock, linux, os
 meeting_date: 2016-03-31
 ---
 

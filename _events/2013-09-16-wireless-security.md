@@ -1,9 +1,5 @@
 ---
-layout: default
 title: Wireless Security
-alias: /au13/wireless-security.html
-categories: announcements
-tags: announcements, wifi, wireless, security, privacy
 ---
 This Thursday, 2013/09/19 at 7pm, in Caldwell Labs 120, Chris Wallace will present Wireless Security. In this talk, we will discuss different ways of penetrating wireless access points with the goal of explaining how security works in a wifi world. The takeaway from this is that, once you're out there, you should be able to protect your wifi as best as possible. This talk is intended to be interactive, which means that there will be an access point on location that we'll be attempting to gain access to. This talk is also intended to be informative, which means that we'll be discussing some of the different types of authentication out there in the world.
 

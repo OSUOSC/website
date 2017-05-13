@@ -1,9 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: Spring 2010 Meetings
-categories: announcements
-tags: announcements
 ---
 Below is a list of meetings from Spring 2010:
 

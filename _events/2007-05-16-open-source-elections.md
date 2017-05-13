@@ -1,9 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: Open Source Elections
-categories: announcements
-tags: announcements, elections
 ---
 The Open Source Club at The Ohio State University (OSSOSU) will be holding
 officer elections to represent us for the next (07-08) school year. The

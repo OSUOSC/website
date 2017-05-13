@@ -1,9 +1,5 @@
 ---
-layout: default
 title: Distributed Version Control Systems
-alias: /sp14/distributed-version-control-systems.html
-categories: announcements
-tags: announcements, vc, version control, git
 ---
 Greetings!
 

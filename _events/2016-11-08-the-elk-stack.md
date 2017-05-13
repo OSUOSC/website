@@ -1,10 +1,6 @@
 ---
-layout: default
 title: The ELK Stack
-categories: announcements
-tags: announcements
 meeting_date: 2016-11-10
-meeting_location: Caldwell Labs, Rm 120
 ---
 
 <!-- INSERT TEXT HERE -->

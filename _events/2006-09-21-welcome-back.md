@@ -1,9 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: Welcome Back!
-categories: announcements
-tags: announcements, first
 ---
 Hello all, I hope everyone had a great summer and is ready for the next quarter of the Opensource Club to begin! We have a couple of important events occurring within the first few weeks of the quarter I'd like to talk a bit about, since they are new and exciting.
 

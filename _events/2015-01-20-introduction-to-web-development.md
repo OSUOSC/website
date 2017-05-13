@@ -1,9 +1,5 @@
 ---
-layout: default
 title: Introduction to Web Development
-alias: /sp15/introduction-web-development.html
-categories: announcements
-tags: announcements, webdev, web
 ---
 Thursday, 2015-01-22, Jon Arnett (President of the Collegiate Web Developer Group here on campus) and Eli Gladman will present "Intro to Web Development". A description from Jon follows:
 

@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Startup Weekend
-categories: events
-tags: events
 expire_date: 2015-11-20
 ---
 

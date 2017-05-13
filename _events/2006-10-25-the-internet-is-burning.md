@@ -1,9 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: The Internet is Burning...
-categories: announcements
-tags: announcements
 ---
 ...atleast our mailing list has caught fire.
 

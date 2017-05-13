@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Package managers and Open Source election
-categories: announcements
-tags: announcements, package managers
 meeting_date: 2016-04-07
 ---
 

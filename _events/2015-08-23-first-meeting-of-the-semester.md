@@ -1,8 +1,5 @@
 ---
-layout: default
 title: First Meeting of the Semester
-categories: announcements
-tags: announcements, first
 ---
 Hi everyone,
 

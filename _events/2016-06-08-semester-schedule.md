@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Autumn 2016 Semester Schedule
-categories: schedules
-tags: schedules
 ---
 
 Potential talks can be proposed and discussed

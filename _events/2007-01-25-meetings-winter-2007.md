@@ -1,9 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: 'Meetings: Winter 2007'
-categories: announcements
-tags: announcements, schedule
 ---
 We are meeting Tuesday evenings this quarter at 7:00pm in Dreese Labs room 480.
 Meetings generally last about an hour and are always open to the public

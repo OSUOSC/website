@@ -1,10 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: Open Source Club IRC Rules
-categories: announcements
-tags: announcements, irc
-alias: [/irc-rules.html, /rules.html]
 ---
 
 Rules for OSU Open Source Club IRC Channel

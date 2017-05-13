@@ -1,8 +1,5 @@
 ---
-layout: default
 title: October 2012 Lan Party
-categories: announcements
-tags: announcements, lan, party
 ---
 This Saturday, from 12:00pm - 10:00pm in the Ohio Union Interfaith Prayer and Reflection Room, The Ohio State University Open Source Club will present it's **_second_** LAN Party of the autumn semester. Come out and join, meeting Open Source Club members and playing games (both open and closed source). The games include:
 

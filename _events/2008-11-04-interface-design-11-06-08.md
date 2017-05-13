@@ -1,10 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: Interface Design
-alias: /au08/interface_design.html
-categories: announcements
-tags: announcements, ui
 ---
 This Thursday we will be having a guest speaker come in and teach us about
 interface design. The speaker will be Matthew Stanford, who is currently working

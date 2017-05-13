@@ -1,9 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: Introduction to Linux
-categories: announcements
-tags: announcements, linux
 ---
 This Thursday, at 7:00 pm in [Dreese Labs](http://www.osu.edu/map/building.php?building=279) room 266, we will run through an introduction to Linux, in a way that any computer user - new or veteran - can understand. Some basic points to be discussed are:
 

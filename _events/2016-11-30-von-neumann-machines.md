@@ -1,10 +1,6 @@
 ---
-layout: default
 title: Von Neumann machines
-categories: announcements
-tags: announcements
 meeting_date: 2016-12-01
-meeting_location: Caldwell Labs, Rm 120
 ---
 
 Join us this Thursday as Jon Arnett presents on Von Neumann machines and to say goodbye to our graduating seniors. The following is a brief excerpt on Von Neumann machines from Jon Arnett:

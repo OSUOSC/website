@@ -1,10 +1,6 @@
 ---
-layout: default
 title: Harris Corp on embedded software
-categories: announcements
-tags: announcements
 meeting_date: 2016-09-22
-meeting_location: Caldwell Labs, Rm 120
 ---
 
 <!-- INSERT TEXT HERE -->

@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Engineering Homecoming Tailgate
-categories: volunteering
-tags: volunteering
 expire_date: 2015-10-10
 ---
 

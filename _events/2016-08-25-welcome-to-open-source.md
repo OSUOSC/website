@@ -1,10 +1,6 @@
 ---
-layout: default
 title: Welcome To Open Source
-categories: announcements
-tags: announcements
 meeting_date: 2016-08-25
-meeting_location: Caldwell Labs, Rm 120
 ---
 
 <!-- INSERT TEXT HERE -->

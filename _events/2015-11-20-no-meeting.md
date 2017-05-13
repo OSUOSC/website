@@ -1,8 +1,5 @@
 ---
-layout: default
 title: No Meeting
-categories: announcements
-tags: announcements
 meeting: November 26th 2015
 ---
 

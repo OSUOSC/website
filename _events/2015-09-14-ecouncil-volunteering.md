@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Engineering Expo Career Fair
-categories: volunteering
-tags: volunteering
 expire_date: 2015-09-23
 ---
 

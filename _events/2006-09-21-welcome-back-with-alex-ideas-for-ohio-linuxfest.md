@@ -1,9 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: Welcome Back with Alex! / Ideas for Ohio LinuxFest
-categories: announcements
-tags: announcements, ohio linuxfest
 ---
 Date: 09/21/2006
 Time: 7:00PM

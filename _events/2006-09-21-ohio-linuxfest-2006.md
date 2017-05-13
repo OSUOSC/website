@@ -1,9 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: Ohio LinuxFest 2006
-categories: announcements
-tags: announcements, ohio linuxfest
 ---
 On September 30, 2006 [Ohio LinuxFest 2006](http://www.ohiolinux.org) will occur at the [Greater Columbus Convention Center](http://www.ohiolinux.org/attend_travel.html). This event will draw over a dozen sponsors, twenty speakers, and nearly two-thousand attendees.
 

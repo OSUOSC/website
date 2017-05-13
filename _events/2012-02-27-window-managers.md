@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Window Managers
-categories: announcements
-tags: announcements
 ---
 Thursday, March 1st at 7:00PM, various club members will be presenting window managers and desktop environments for X11.  If you've never used anything but the default interface that comes with your Linux distribution and are interested in trying something new out, this should be right up your alley.  If you've got a favorite, obscure window manager and you want to help spread the word, here's your chance.
 

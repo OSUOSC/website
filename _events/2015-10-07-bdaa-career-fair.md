@@ -1,8 +1,5 @@
 ---
-layout: default
 title: BDAA Career Fair
-categories: volunteering
-tags: volunteering
 expire_date: 2015-10-21
 ---
 

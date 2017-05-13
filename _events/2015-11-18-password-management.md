@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Password Management
-categories: announcements
-tags: announcements, security, passwords
 meeting: November 19th 2015
 ---
 This Thursday, November 19th at 7PM in Caldwell 120, We will discuss the many ways to safe guard/manage your passwords.

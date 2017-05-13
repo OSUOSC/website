@@ -1,9 +1,5 @@
 ---
-layout: default
 title: Anti-features, Free and Open Source Software, and Ethics
-alias: /sp14/anti-features-free-and-open-source-software-and-ethics.html
-categories: announcements
-tags: announcements
 ---
 Thursday, 2014/04/17 at 7:00pm in Caldwell Labs 120, Owen King of the Department of Philosophy will present: Anti-features, Free and Open Source Software, and Ethics.
 

@@ -1,9 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: Virtualization Session
-categories: announcements
-tags: announcements, virtualization
 ---
 A big thanks to everyone who made it to today's meeting on Virtualization! We
 had a great turnout, great discussion and some pretty hillarious demos!

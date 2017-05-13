@@ -1,9 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: Google Android
-categories: announcements
-tags: announcements, android
 ---
 Our last meeting (Nov 15) was about the Open Handset Alliance's Android. A
 mobile operation system and application stack. We had a demo with the Hello

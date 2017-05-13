@@ -1,10 +1,6 @@
 ---
 type: "Meeting"
-layout: default
 title: Effective sshd_config
-alias: /sp09/sshd_config.html
-categories: announcements
-tags: announcements, ssh
 ---
 This Thursday, April 9<sup>th</sup>, in Dreese **317** , Alek Rollyson will be giving a talk on how to secure your shell server through effective configuration.
 

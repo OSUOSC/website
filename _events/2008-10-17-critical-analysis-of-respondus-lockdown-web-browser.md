@@ -1,11 +1,7 @@
 ---
 type: "Meeting"
-layout: default
 title: Critical Analysis of Respondus LockDown Web Browser
 created: 1224220913
-alias: /lockdown.html
-categories: announcements
-tags: announcements
 ---
 This past year, the Carmen team got a new program for all of us to use. The catch is, it sucks, and your instructors can hold your grade in the balance if you don't play with their new toy<sup>[1](http://8help.osu.edu/3519.html "8Help guide to installing this for exams, previously linked to from Carmen")</sup>. The program is inappropriately called "Respondus LockDown Browser," and it's supposed to be the _next generation_ of "secure" test taking. While I passionately despise those who earn their marks unduly by plagiarism/forgery/exam-shoulder-surfing, this program is invasive and outright stupid. Take a look at the [demo](http://www.respondus.com/LDB_Vista_Prod2/LDB_Vista_Prod2_media/LDB_Vista_Prod2.swf).
 

@@ -1,11 +1,7 @@
 ---
 type: "Meeting"
-layout: default
 title: Crashing Windows Vista Launch Party
 created: 1176796022
-alias: /sp07/vista.html
-categories: announcements
-tags: announcements, microsoft, vista
 ---
 On April 17<sup>th</sup> 2007, with about a couple hours' notice, some of us
 gathered for an hour before the meeting to join the fun at Microsoft's Windows

@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Personal Projects
-categories: announcements
-tags: announcements, projects
 ---
 Hello everyone!
 
