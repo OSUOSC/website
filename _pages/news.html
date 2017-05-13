@@ -3,11 +3,17 @@ layout: archive
 title: "News"
 permalink: /news/
 author_profile: true
+paginate: true
 ---
 
 {% include base_path %}
 
+{% for post in paginator.posts %}
+  {% include news-list.html %}
+{% endfor %}
+
+{% include collection_pagination.html %}
+
 {% assign sorted_posts = site.posts | sort 'date' | reverse %}
 {% for post in sorted_posts %}
-  {% include news-list.html %}
 {% endfor %}

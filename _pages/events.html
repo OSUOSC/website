@@ -3,11 +3,15 @@ layout: archive
 title: "Events"
 permalink: /events/
 author_profile: true
+paginate:
+    collection: events
 ---
 
 {% include base_path %}
 
-{% assign sorted_posts = site.events | sort 'date' | reverse %}
-{% for post in sorted_posts %}
+{% for post in paginator.events %}
   {% include events-list.html %}
 {% endfor %}
+{% assign sorted_posts = site.events | sort 'date' | reverse %}
+
+{% include collection_pagination.html %}
