@@ -1,6 +1,6 @@
 ---
 title: "VR Demo And An Adieu To Graduating Seniors"
-speaker: "malide"
+speaker: "Brandon 'Bam' Moore (malide)"
 type: "Meeting"
 ---
 

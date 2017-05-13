@@ -1,14 +1,14 @@
 {% if paginator.previous_page or paginator.next_page %}
   <nav class="pagination">
     {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page.url | absolute_url }}" class="pagination--pager" title="{{ paginator.previous_page.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
+      <a href="{{ paginator.previous_page_path | absolute_url }}" class="pagination--pager">Previous</a>
     {% else %}
-      <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
+      <a href="#" class="pagination--pager disabled">Previous</a>
     {% endif %}
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page.url | absolute_url }}" class="pagination--pager" title="{{ paginator.next_page.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
+      <a href="{{ paginator.next_page_path }}" class="pagination--pager">Next</a>
     {% else %}
-      <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
+      <a href="#" class="pagination--pager disabled">Next</a>
     {% endif %}
   </nav>
 {% endif %}
