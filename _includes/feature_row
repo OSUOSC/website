@@ -42,6 +42,13 @@
             </div>
           {% endif %}
 
+          {% if f.email %}
+            <div class="archive__item-excerpt">
+              <p>Email: <a href="mailto:{{ f.email }}">{{ f.email }}</a></p>
+              <p>Riot Username: {{ f.riot }}</p>
+            </div>
+          {% endif %}
+
           {% if f.url %}
             <p><a href="{{ f_url }}" class="btn {{ f.btn_class }}">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
           {% endif %}

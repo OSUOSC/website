@@ -1,5 +1,5 @@
 ---
-title: "Archive Layout with Content"
+title: "Archive Layout With Content"
 layout: archive
 permalink: /archive-layout-with-content/
 ---
