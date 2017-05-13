@@ -1,10 +1,7 @@
 ---
-layout: default
-title: Neural Networks and Deep Learning with Capital One
-categories: announcements
-tags: announcements
-meeting_date: 2017-02-23
-meeting_location: Caldwell Labs, Rm 120
+title: "Neural Networks and Deep Learning"
+speaker: "Capital One"
+type: "Meeting"
 ---
 
 Deep learning has become one of the hottest topics in computing in the past few years. Neural networks are not a new topic, but with the recent advances in computation capacity provided by hardware accelerators, in particular GPUs, they have gained new popularity. In this talk we present some of the concepts behind neural networks and deep learning, and then shift to the performance aspects of available solutions. We will finally focus on Tensorflow, an open source deep learning package, and provide a hands-on demo using it.

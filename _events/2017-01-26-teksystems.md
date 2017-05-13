@@ -1,7 +1,6 @@
 ---
-date: 2017-01-26
 title: "Placing Temps with Teksystems"
-speaker: "some random dude"
+speaker: "Teksystems"
 type: "Meeting"
 ---
 

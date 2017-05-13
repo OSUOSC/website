@@ -1,10 +1,7 @@
 ---
-layout: default
-title: Crypto War II
-categories: announcements
-tags: announcements
-meeting_date: 2017-03-30
-meeting_location: Dreese Labs, Rm 264
+title: "Crypto War II"
+speaker: "Matt Curtin"
+type: "Meeting"
 ---
 
 <!-- INSERT TEXT HERE -->

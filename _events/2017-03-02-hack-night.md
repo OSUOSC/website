@@ -1,10 +1,7 @@
 ---
-layout: default
-title: Hack Night
-categories: announcements
-tags: announcements
-meeting_date: 2017-03-02
-meeting_location: Dreese Labs, 264
+title: "Hack Night"
+speaker: "You Guys!"
+type: "Meeting"
 ---
 
 <!-- INSERT TEXT HERE -->

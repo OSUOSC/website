@@ -1,10 +1,7 @@
 ---
-layout: default
-title: MVAPICH and High Power Computing
-categories: announcements
-tags: announcements
-meeting_date: 2017-01-26
-meeting_location: Caldwell Labs, Rm 120
+speaker: "Professor DK Panda"
+type: "Meeting"
+title: "MVAPICH and High Power Computing"
 ---
 
 Join us Thursday January 26th at 19:00 in Caldwell 120 as [Professor DK Panda](http://www.cse.ohio-state.edu/~panda), a distinguished scholar of the CSE department and member of the Network-Based Computing Laboratory at OSU.

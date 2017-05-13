@@ -1,10 +1,7 @@
 ---
-layout: default
-title: Email systems and management
-categories: announcements
-tags: announcements
-meeting_date: 2017-04-06
-meeting_location: Dreese Labs, Rm 264
+title: "Email systems and management"
+speaker: "Stephen Haffner (yupyupp)"
+type: "Meeting"
 ---
 
 <!-- INSERT TEXT HERE -->

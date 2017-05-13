@@ -1,10 +1,7 @@
 ---
-layout: default
-title: Linux tips and tricks
-categories: announcements
-tags: announcements
-meeting_date: 2017-01-19
-meeting_location: Caldwell Labs, Rm 120
+speaker: "Stephen Haffner (yupyupp)"
+type: "Meeting"
+title: "Linux tips and tricks"
 ---
 
 Join us Thursday January 19th, 2017 at 19:00 in Caldwell 120 as Stephen Haffner presents on some Linux tips and tricks.

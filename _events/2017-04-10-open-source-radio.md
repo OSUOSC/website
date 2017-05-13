@@ -1,10 +1,7 @@
 ---
-layout: default
-title: Open Source Radio
-categories: announcements
-tags: announcements
-meeting_date: 2017-04-13
-meeting_location: Dreese Labs, Rm 264
+title: "Open Source Radio"
+speaker: "Dan Zeleznikar"
+type: "Meeting"
 ---
 
 <!-- INSERT TEXT HERE -->

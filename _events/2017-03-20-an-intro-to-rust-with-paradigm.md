@@ -1,10 +1,7 @@
 ---
-layout: default
-title: An Intro to Rust With Paradigm
-categories: announcements
-tags: announcements
-meeting_date: 2017-03-23
-meeting_location: Dreese Labs, Rm 264
+title: "An Intro to Rust"
+speaker: "Danial Thau (paradigm)"
+type: "Meeting"
 ---
 
 <!-- INSERT TEXT HERE -->

@@ -13,7 +13,3 @@ paginate: true
 {% endfor %}
 
 {% include collection_pagination.html %}
-
-{% assign sorted_posts = site.posts | sort 'date' | reverse %}
-{% for post in sorted_posts %}
-{% endfor %}

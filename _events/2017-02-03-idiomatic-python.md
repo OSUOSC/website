@@ -1,10 +1,7 @@
 ---
-layout: default
-title: Idiomatic Python
-categories: announcements
-tags: announcements
-meeting_date: 2017-02-09
-meeting_location: Caldwell Labs, Rm 120
+title: "Résumé Workshop"
+speaker: "Brian Costlow"
+type: "Meeting"
 ---
 
 Join us Thursday February 9th, 2017 at 19:00 as Brian Costlow, a PyOhio board member and previous conference chair, presents on Python. A summary from Brian Costlow:

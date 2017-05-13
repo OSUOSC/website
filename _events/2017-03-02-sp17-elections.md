@@ -1,9 +1,7 @@
 ---
-layout: default
-title: SP17 Elections
-categories: events
-tags: events
-expire_date: 2017-03-10
+title: "Spring 2017 Open Source Club Officer Elections"
+speaker: "You Guys!"
+type: "Announcement"
 ---
 
 <!-- INSERT TEXT HERE -->

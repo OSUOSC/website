@@ -1,10 +1,7 @@
 ---
-layout: default
-title: Ansible And Elections
-categories: announcements
-tags: announcements
-meeting_date: 2017-03-09
-meeting_location: Dreese Labs, Rm 264
+title: "Ansible And Elections"
+speaker: "Andrew Cz (smacz)"
+type: "Meeting"
 ---
 
 Join us this Thursday, March 9th 2017, at 19:00 in Dreese 264 for a talk by Smacz on the popular automation software, Ansible. Used in industry for tasks such as configuration management, Ansible is often used to keep servers synchronized with standardized settings. Ansible was developed by RedHat to simplify automation and provide an easy to read syntax.

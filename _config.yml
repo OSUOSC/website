@@ -208,7 +208,7 @@ defaults:
       path: ""
       type: calendar
     values:
-      layout: single
+      layout: calendar
       author_profile: true
       comments: true
   # _posts
@@ -243,7 +243,8 @@ pagination:
     title_suffix: " (page :num)"
     reversed: true
 
-multipage_collate_on_root_page: true
+multipage_page_title_expanded_format: ":post_title"
+#multipage_collate_on_root_page: true
 
 
 # Plugins

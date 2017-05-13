@@ -1,10 +1,7 @@
 ---
-layout: default
-title: VR Demo And An Adieu To Graduating Seniors
-categories: announcements
-tags: announcements
-meeting_date: 2017-04-20
-meeting_location: Dreese Labs, Rm 264
+title: "VR Demo And An Adieu To Graduating Seniors"
+speaker: "malide"
+type: "Meeting"
 ---
 
 <!-- INSERT TEXT HERE -->
