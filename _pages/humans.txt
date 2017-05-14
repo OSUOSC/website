@@ -1,11 +1,14 @@
+---
+permalink: /humans.txt
+---
   Organization: The Open Source Club at The Ohio State University
   Website: https://opensource.osu.edu
   Contact: info@opensource.osu.edu
 
-  Developer: Eli Gladman
-  Contact: eli.gladman@gmail.com
+  Maintainer: AndrewCz
+  Contact: cziryak.1@osu.edu
 
-  This site was launched on September 13th 2015
+  This site was launched on September 13th 2017
 
 
 
