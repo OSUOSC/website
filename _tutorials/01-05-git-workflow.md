@@ -1,6 +1,7 @@
 ---
 title: Constitution
 excerpt: "The Constitution which governs the continued operation of the Open Source Club"
+permalink: /tutorials/git-workflow/
 ---
 
 # Pull Requests

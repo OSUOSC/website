@@ -84,10 +84,12 @@ def local_clear_yaml(news_pathname)
 end
 
 def listen_handler(base, options)
+  local_clear_yaml(NEWS_PATHNAME)
   local_render_yaml(NEWS_PATHNAME)
   site = Jekyll::Site.new(options)
   Jekyll::Command.process_site(site)
   proc do |modified, added, removed|
+    # This causes a loop
     #local_clear_yaml(NEWS_PATHNAME)
     #local_render_yaml(NEWS_PATHNAME)
     t = Time.now
@@ -103,7 +105,7 @@ def listen_handler(base, options)
       puts "error:"
       Jekyll.logger.warn "Error:", e.message
       Jekyll.logger.warn "Error:", "Run jekyll build --trace for more information."
-      #local_clear_yaml(NEWS_PATHNAME)
+      local_clear_yaml(NEWS_PATHNAME)
     end
   end
 end

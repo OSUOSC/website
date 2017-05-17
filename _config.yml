@@ -245,6 +245,7 @@ pagination:
 
 multipage_page_title_expanded_format: ":post_title"
 #multipage_collate_on_root_page: true
+multipage_collation_enabled: false
 
 
 # Plugins

@@ -1,6 +1,7 @@
 ---
 title: "New Post"
 excerpt: Creating a new post for the site
+permalink: /tutorials/new-post/
 ---
 ## New posts
 

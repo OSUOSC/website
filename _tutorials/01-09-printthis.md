@@ -1,6 +1,7 @@
 ---
 title: "Printing from the command line"
 excerpt: Using `stdlinux` and `lpr` to print black and white papers from the university's free printing service.
+permalink: /tutorials/printthis/
 ---
 
 Printers have always been a pain for systems admins and users alike. However, there's a quick and easy setup for printing from the printers on campus using `stdlinux` and the command line.

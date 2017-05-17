@@ -1,6 +1,7 @@
 ---
 title: "Setting up the site"
 excerpt: Using `stdlinux` and `lpr` to print black and white papers from the university's free printing service.
+permalink: /tutorials/setup/
 ---
 ## Getting the website set up on your computer
 

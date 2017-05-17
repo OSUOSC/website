@@ -1,6 +1,7 @@
 ---
 title: "Deploying the site"
 excerpt: "Github pages doesn't work, but there's a specific way to deploy the site. Maybe."
+permalink: /tutorials/deploying/
 ---
 ## Deploying to Github Pages
 

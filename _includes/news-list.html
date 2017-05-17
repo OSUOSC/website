@@ -3,11 +3,7 @@
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     <h2 class="archive__item-title" itemprop="headline">
-      {% if post.link %}
-        <a href="{{ post.link }}">{{ post.date | date: "%A, %B %d, %Y" }}</a> <a href="{{ post.url | absolute_url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
-      {% else %}
-        <a href="{{ post.url | absolute_url }}" rel="permalink">{{ post.date | date: "%A, %B %d, %Y" }}</a>
-      {% endif %}
+    <a href="{{ post.url | absolute_url }}" rel="permalink">{{ post.date | date: "%A, %B %d, %Y" }}</a>
     </h2>
     <p class="archive__item-excerpt" itemprop="description">
     <ul>
@@ -20,5 +16,8 @@
     {% endfor %}
     </ul>
     </p>
+    <!-- Markdown does not render
+    <a href="{{ post.url | absolute_url }}/all" rel="permalink" style="font-size: .8em;">ALL STORIES</a>
+    -->
   </article>
 </div>

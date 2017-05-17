@@ -5,12 +5,13 @@ main:
   - title: "News"
     url: /news/
   - title: "Tips and Tricks"
-    url: /tutorials/tutorials
+    url: /tutorials/
   - title: "Calendar"
     url: /calendar/
 
 tutorials:
   - title: "Club tutorials"
+    url: /tutorials/osuwireless-in-ubuntu/
     children:
     - title: "osuwireless in Ubuntu"
       url: /tutorials/osuwireless-in-ubuntu/
@@ -28,7 +29,10 @@ tutorials:
       url: /tutorials/deploying/
     - title: "Setting up the site"
       url: /tutorials/setup/
+    - title: "Printing at OSU"
+      url: /tutorials/printthis/
   - title: "Club Information"
+    url: /tutorials/constitution/
     children:
     - title: "Constitution"
       url: /tutorials/constitution/
