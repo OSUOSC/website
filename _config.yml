@@ -80,7 +80,7 @@ analytics:
 author:
   name             : *name
   avatar           : "/assets/osuosc/logo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Meeting every thursday in Caldwell 120 during semester"
+  bio              : "Meetings every Thursday in Caldwell 120 during the Fall and Spring Semesters"
   location         : "Caldwell Labs, Rm 112F"
   email            : "info@opensource.osu.edu"
   uri              :
@@ -90,7 +90,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "osuosc"
   gitlab           :
   google_plus      :
   keybase          :
