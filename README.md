@@ -14,7 +14,23 @@ For detailed instructions on how to configure, customize, add content, and more 
 
 ## Quick Start
 
+
+
 1. Run Bundler to install the theme gem and dependencies:
+
+## Docker Deploy
+
+* [Install docker](https://docs.docker.com/engine/installation/)
+* [Install docker-compose](https://docs.docker.com/compose/install/)
+
+Run the following three commands in the project's root directory:
+
+```
+docker-compose build
+docker-compose up [-d]
+```
+
+The application will now be accessible on `localhost:8000` with any supported web browser. If the `-d` flag was passed, the container will run in the background.
 
 ```bash
 bundle install --path ${HOME}/.gem
