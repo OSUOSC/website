@@ -3,6 +3,7 @@ require "jekyll"
 require "listen"
 require "yaml"
 require 'fileutils'
+require 'date'
 
 NEWS_PATHNAME = '_posts/*'
 
@@ -132,48 +133,75 @@ task :gen_site do
   local_clear_yaml(NEWS_PATHNAME)
 end
 
-task :preview do
-  base = Pathname.new('.').expand_path
-  options = {
-    "destination"   => base.join('_site').to_s,
-    "force_polling" => false,
-    "serving"       => true,
-    "theme"         => "minimal-mistakes-jekyll",
-    "future"        => true
-  }
-
-  options = Jekyll.configuration(options)
-
-  ENV["LISTEN_GEM_DEBUGGING"] = "1"
-  listener = Listen.to(
-    base.join("_data"),
-    base.join("_includes"),
-    base.join("_layouts"),
-    base.join("_sass"),
-    base.join("assets"),
-    options["source"],
-    :ignore => listen_ignore_paths(base, options),
-    :force_polling => options['force_polling'],
-    &(listen_handler(base, options))
-  )
-
-  begin
-    listener.start
-    Jekyll.logger.info "Auto-regeneration:", "enabled for '#{options["source"]}'"
-
-    unless options['serving']
-      trap("INT") do
-        listener.stop
-        puts "     Halting auto-regeneration."
-        exit 0
-      end
-
-      loop { sleep 1000 }
+task :new_post do
+    base = Pathname.new('.').expand_path
+    skel = ''
+    skel << <<-EOF
+---
+layout: multipage
+multipage: true
+collection: news
+stories:
+    - title: ""
+      link: ""
+      image: ""
+      notes: |
+---
+EOF
+    date = Date.parse('Thursday')
+    delta = date > Date.today ? 0 : 7
+    ndate = date + delta
+    file_date = ndate.strftime('%Y-%m-%d')
+    if File.exist? File.expand_path "#{base}/_posts/#{file_date}-meeting.md"
+        puts "File for the next meeting already exists at: #{base}/_posts/#{file_date}-meeting.md"
+    else
+        File.open("#{base}/_posts/#{file_date}-meeting.md", 'wb') do |file|
+            file.puts skel
+        end
     end
-  rescue ThreadError
-    # You pressed Ctrl-C, oh my!
-    local_clear_yaml(NEWS_PATHNAME)
-  end
-
-  Jekyll::Commands::Serve.process(options)
 end
+
+#task :preview do
+#  base = Pathname.new('.').expand_path
+#  options = {
+#    "destination"   => base.join('_site').to_s,
+#    "force_polling" => false,
+#    "serving"       => true,
+#    "theme"         => "minimal-mistakes-jekyll",
+#    "future"        => true
+#  }
+#
+#  options = Jekyll.configuration(options)
+#
+#  ENV["LISTEN_GEM_DEBUGGING"] = "1"
+#  listener = Listen.to(
+#    base.join("_includes"),
+#    base.join("_layouts"),
+#    base.join("_sass"),
+#    base.join("assets"),
+#    options["source"],
+#    :ignore => listen_ignore_paths(base, options),
+#    :force_polling => options['force_polling'],
+#    &(listen_handler(base, options))
+#  )
+#
+#  begin
+#    listener.start
+#    Jekyll.logger.info "Auto-regeneration:", "enabled for '#{options["source"]}'"
+#
+#    unless options['serving']
+#      trap("INT") do
+#        listener.stop
+#        puts "     Halting auto-regeneration."
+#        exit 0
+#      end
+#
+#      loop { sleep 1000 }
+#    end
+#  rescue ThreadError
+#    # You pressed Ctrl-C, oh my!
+#    local_clear_yaml(NEWS_PATHNAME)
+#  end
+#
+#  Jekyll::Commands::Serve.process(options)
+#end
