@@ -12,9 +12,11 @@ ENV APACHE_PID_FILE /etc/apache2.pid
 
 ENV APP_HOME /var/www/html
 ENV BUILD_DIR /opt/jekyll/
-ADD . $BUILD_DIR
+ADD Gemfile $BUILD_DIR
+ADD *.gemspec $BUILD_DIR
 WORKDIR $BUILD_DIR
 RUN bundle install
+ADD . $BUILD_DIR
 RUN bundle exec rake clean && bundle exec rake gen_site
 RUN cp -ar $BUILD_DIR/_site/* $APP_HOME
 

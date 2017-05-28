@@ -14,10 +14,6 @@ For detailed instructions on how to configure, customize, add content, and more 
 
 ## Quick Start
 
-
-
-1. Run Bundler to install the theme gem and dependencies:
-
 ## Docker Deploy
 
 * [Install docker](https://docs.docker.com/engine/installation/)
@@ -26,19 +22,14 @@ For detailed instructions on how to configure, customize, add content, and more 
 Run the following three commands in the project's root directory:
 
 ```
-docker-compose build
-docker-compose up [-d]
+docker-compose up --build [-d]
 ```
 
-The application will now be accessible on `localhost:8000` with any supported web browser. If the `-d` flag was passed, the container will run in the background.
+The application will now be accessible on `localhost:8000` with any supported web browser. If the `-d` flag was passed, the container will run in the background. If there is a change to anything, the docker instance must be stopped (`CTRL-C` if not daemonized, otherwise `docker-compose stop`) and the command re-run. This imports the new files into the container and re-runs it with the new content.
 
-```bash
-bundle install --path ${HOME}/.gem
-```
+NOTE: This is less than ideal, however, for the time being, since the directory needs to be cleaned before it is regenerated, and that's not able to be done in the Rakefile without causing an infinite loop, it's easier to just regenerate the image layer. Also, since the volumes wouldn't be mounted before it generated, it wouldn't generate in the first place. I'd love to find a way around this eventually.
 
-To test the theme, run `$ bundle exec rake preview` and open your browser at `http://localhost:4000/`. This starts a Jekyll server using content in the repo directory. As modifications are made to the theme, it will regenerate and you should see the changes in the browser after a refresh.
-
-When you are done, or if you have to restart the server, it is recommended to issue an `$ bundle exec rake clean`, which resets the multipage hackery that is run in `_posts/` to generate `/news/`. Go ahead, check out the markdown pages while the server is running.
+If you want to find out how to run the program in your base OS, take a look at the Dockerfile and follow the steps as appropriate.
 
 ### Creating a new post
 
@@ -87,6 +78,8 @@ After that, the page can be edited and content added. The content is broken up i
     lorem ipsum code
     ```
 ```
+
+NOTE: Since this does require `bundle` to be installed, it is presumed that the file would be created on `stallman2` or by another admin earlier in the week, so the impetus is not on the contributors to do so.
 
 ---
 
