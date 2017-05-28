@@ -1,7 +1,7 @@
 ---
 title: Connecting to osuwireless with linux
 excerpt: Getting set up with osuwireless raw dog.
-permalink: /tutorials/osuwireless/
+permalink: /tutorials/osuwireless/ /tutorials/2015/08/20/osuwireless/
 ---
 
 Steps will vary depending on your distro and network manager of choice, but the same principles apply:

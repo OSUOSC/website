@@ -9,11 +9,14 @@ header:
 excerpt: "The Open Source Club is on the forefront of technology and code, pushing the boundaries of tech that respect the users' individual freedoms"
 intro:
   - image_path: "/assets/osuosc/logo.png"
-    excerpt: |
-        <br />Join us every Thursday during the school year in Caldwell 120 at 7:00PM for our weekly meetings.
-        * Take a look at the [recent and upcoming events](/events/)!
-        * Sign up for our [Mailing List](/mailing-list/)
-        * Chat with us on [Riot](/riot/)
+    image_width: 45%
+    title: "Join us every Thursday during the school year in Caldwell 120 at 7:00PM for our weekly meetings."
+call-to-action:
+  - excerpt: |
+        * Take a look at the **[recent and upcoming events](/events/)**!
+        * Sign up for our **[Mailing List](/mailing-list/)**
+        * Send **us** an email at <b><a href="mailto:info@opensource.osu.edu">info@opensource.osu.edu</a></b>
+        * Chat with us on **[Riot](/riot/)**
     image_width: 45%
 feature_row:
   - image_path: assets/osuosc/blue_servers.jpg
@@ -63,9 +66,25 @@ officers:
     excerpt: 'This is our PR Officer'
     email: 'delgado.78@osu.edu'
     riot: 'delgeez'
+  - image_path: /assets/osuosc/carey_b.png
+    image_width: 55%
+    alt: "Carey Black"
+    title: "Our Faculty Advisor: Carey B."
+    excerpt: 'This is our guy on the inside.'
+    email: 'black.123@osu.edu'
+    riot: 'n/a'
+  - image_path: /assets/osuosc/other_advisor.jpg
+    image_width: 55%
+    alt: "That Other Guy"
+    title: "Our Other Faculty Advisor: That One Guy"
+    excerpt: 'We should probably find out his name'
+    email: 'name.number@osu.edu'
+    riot: 'n/a'
 ---
 
-{% include feature_row id="intro" type="center" %}
+{% include feature_row id="intro" type="left" %}
+
+{% include feature_row id="call-to-action" type="center" %}
 
 {% include feature_row %}
 

@@ -36,3 +36,5 @@ tutorials:
     children:
     - title: "Constitution"
       url: /tutorials/constitution/
+    - title: "Officers"
+      url: /tutorials/officers/

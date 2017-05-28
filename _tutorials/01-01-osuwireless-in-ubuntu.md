@@ -1,7 +1,7 @@
 ---
 title: osuwireless in Ubuntu
 excerpt: How to get set up using `osuwireless` in Ubuntu
-permalink: /tutorials/osuwireless-in-ubuntu/
+permalink: /tutorials/osuwireless-in-ubuntu/ /tutorials/2008/07/29/osuwireless-in-ubuntu/
 ---
 A former member of our club, Paul Betts, created an [excellent guide](http://blog.paulbetts.org/index.php/2007/01/27/the-end-all-definitive-guide-to-getting-wireless-working-in-ubuntu-edgy-eft/) explaining how to connect to wireless in Ubuntu. Find a summarized guide for those who aren't having trouble with their closed-source drivers below.
 

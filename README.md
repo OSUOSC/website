@@ -56,6 +56,21 @@ To set up your environment to develop this theme, run `bundle install --path ${H
 
 To update the theme run `bundle update`. **Be careful - this may break OSUOSC customizations.**
 
+## Adding new pages
+
+If you go to add new pages to `_pages` the default header info should be:
+
+```
+---
+layout: archive
+title: <title of page>
+permalink: /<link name>/
+---
+```
+
+And make sure that the permalink ends with a slash so that it's generated in the same form as the rest of the site.
+
+
 ---
 
 ## Credits
