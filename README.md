@@ -24,13 +24,53 @@ To test the theme, run `$ bundle exec rake preview` and open your browser at `ht
 
 When you are done, or if you have to restart the server, it is recommended to issue an `$ bundle exec rake clean`, which resets the multipage hackery that is run in `_posts/` to generate `/news/`. Go ahead, check out the markdown pages while the server is running.
 
-#### TODO: make a function `$ bundle exec rake new_post`
-* Specific format: `YYYY-MM-DD-title-of-post.md`
-* YAML front matter
-    * `layout: multipage`
-    * `collection: news`
-    * `date: YYYY-MM-DD`
+### Creating a new post
 
+Every week, a new post is created for the meeting on Thursday. This is automatically generated in the same way that the site is generated and cleaned, by using `bundle`:
+
+```
+$ bundle exec rake new_post
+```
+
+The new post is created in the `_posts` directory, under the format `YYYY-MM-DD-meeting.md`, the date being the date of the next meeting (AKA the next Thursday). If you try to run it twice, it will throw an error containing the file that it detected to be the one it was supposed to create.
+
+After that, the page can be edited and content added. The content is broken up into stories for us to go through one at a time at the beginning of the meeting. The format for the file is as follows:
+
+* `title:`
+    * The title of the story.
+* `link:` (optional)
+    * The link to the article, video, or whatever that contains the meat of the content.
+* `image` (optional)
+    * The image that is displayed (at an automatically adjusted size) in the page that we'll be going over during the meeting. This accepts a URL that is compiled in at the time that the site is generated.
+* `notes` (optional)
+    * This should be the meat of the content that is put in the file. These are the notes (typically bullet points) that are ran through when announcing the story to the club. As long as there is a pipe (`|`) after the notes keyword, all following lines (before the next story item) will be 'markdownified' - aka formatted from markdown into HTML at the time that the site is generated.
+    * **NOTE: The markdown must be indented correctly in order to be properly rendered.**
+
+#### Example:
+
+```
+- title: "Android Studio 2.0 Released"
+  link: "http://android-developers.blogspot.com/2016/04/android-studio-2-0.html"
+  image: "https://1.bp.blogspot.com/-vxXg6Inv_WA/VwaJ0uzSf_I/AAAAAAAACr4/xzszbcRzWRgSaHXpOpYroG7u6bgsFJjqw/s200/image03.png"
+  notes: |
+    > Instant Run: Changes to a running app appear live.
+
+    * Faster Android emulator and adb.
+        * Cloud Test Lab: Test apps on a wide range of physical devices easily.
+        * bullet points
+            * as far as
+                * you could want
+
+    [links work also](https://opensource.osu.edu)
+
+    ## This is a header
+
+    ### This is another header
+
+    ```
+    lorem ipsum code
+    ```
+```
 
 ---
 
