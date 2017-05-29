@@ -4,7 +4,9 @@
 
 This means that all that is needed to add a talk or a news item in a weekly rundown is to issue a PR with the new item under the `_posts` or `_tutorials` directory respectively.
 
-#### TODO: Get an automated calendar set up.
+## Updates
+
+The `intro: - title:` in `index.html` file should be kept up to date with the latest info. For instance, while setting this up in summer, it does nobody any good to have it display information about meetings during the school semester. Therefore, I am making sure that it says we'll be back for our the Fall 2017 semester.
 
 ------
 
@@ -12,7 +14,7 @@ Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your
 
 For detailed instructions on how to configure, customize, add content, and more read the [theme's documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
 
-## Quick Start
+# Quick Start
 
 ## Docker Deploy
 
@@ -33,7 +35,7 @@ If you want to find out how to run the program in your base OS, take a look at t
 
 ### Creating a new post
 
-Every week, a new post is created for the meeting on Thursday. This is automatically generated in the same way that the site is generated and cleaned, by using `bundle`:
+Every week, a new post is created for the news items to be gone over at the beginning of the meeting on Thursday. This is automatically generated in the same way that the site is generated and cleaned, by using `bundle`:
 
 ```
 $ bundle exec rake new_post
@@ -79,11 +81,11 @@ After that, the page can be edited and content added. The content is broken up i
     ```
 ```
 
-NOTE: Since this does require `bundle` to be installed, it is presumed that the file would be created on `stallman2` or by another admin earlier in the week, so the impetus is not on the contributors to do so.
+#### NOTE: Since this does require `bundle` to be installed, it is presumed that the file would be created on `stallman2` or by another admin earlier in the week, so the impetus is not on the contributors to do so.
 
 ---
 
-## Contributing
+# Contributing
 
 Having trouble working with the theme? Found a typo in the documentation? Interested in adding a feature or [fixing a bug](https://github.com/mmistakes/minimal-mistakes/issues)? Then by all means [submit an issue](https://github.com/mmistakes/minimal-mistakes/issues/new) or [pull request](https://help.github.com/articles/using-pull-requests/). If this is your first pull request, it may be helpful to read up on the [GitHub Flow](https://guides.github.com/introduction/flow/) first.
 
@@ -118,7 +120,6 @@ permalink: /<link name>/
 ```
 
 And make sure that the permalink ends with a slash so that it's generated in the same form as the rest of the site.
-
 
 ---
 
