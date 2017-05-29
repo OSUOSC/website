@@ -19,7 +19,7 @@ def local_render_yaml(news_pathname)
     basename = Pathname.new('.').expand_path
     Dir[basename.join(news_pathname).to_s].each do |post|
         html = ''
-        html << <<-HTML
+        html << <<-EOF
 <section class="page__content" itemprop="text">
 <hr />
 <h2>This week in technology, open source, and Linux!</h2>
@@ -37,20 +37,20 @@ def local_render_yaml(news_pathname)
    <li>Feel free to add it to the weekly rundown!</li>
    <li>Repository is available on <a href="https://github.com/OSUOSC/osc-weekly-rundown">Github</a></li>
 </ul>
-HTML
+EOF
         File.open(post, 'a') do |file|
             file.puts html
         end
         page = YAML.load_file(post)
         page['stories'].each do |story|
             html = ''
-            html << <<-HTML
+            html << <<-EOF
 {% page_break %}
 <hr />
 # [#{story["title"]}](#{story["link"]})
 ![](#{story["image"]})
 #{story["notes"]}
-HTML
+EOF
             File.open(post, 'a') do |file|
                 file.puts html
             end
@@ -84,56 +84,7 @@ def local_clear_yaml(news_pathname)
     end
 end
 
-def listen_handler(base, options)
-  local_clear_yaml(NEWS_PATHNAME)
-  local_render_yaml(NEWS_PATHNAME)
-  site = Jekyll::Site.new(options)
-  Jekyll::Command.process_site(site)
-  proc do |modified, added, removed|
-    # This causes a loop
-    #local_clear_yaml(NEWS_PATHNAME)
-    #local_render_yaml(NEWS_PATHNAME)
-    t = Time.now
-    c = modified + added + removed
-    #n = c.length
-    relative_paths = c.map{ |p| Pathname.new(p).relative_path_from(base).to_s }
-    print Jekyll.logger.message("Regenerating:", "#{relative_paths.join(", ")} changed... ")
-    begin
-
-      Jekyll::Command.process_site(site)
-      puts "regenerated in #{Time.now - t} seconds."
-    rescue => e
-      puts "error:"
-      Jekyll.logger.warn "Error:", e.message
-      Jekyll.logger.warn "Error:", "Run jekyll build --trace for more information."
-      local_clear_yaml(NEWS_PATHNAME)
-    end
-  end
-end
-
-task :clean do
-    local_clear_yaml(NEWS_PATHNAME)
-    basename = Pathname.new('.').expand_path
-    FileUtils.rm_rf(basename.join('_site/').to_s)
-
-end
-
-task :gen_site do
-  local_render_yaml(NEWS_PATHNAME)
-  base = Pathname.new('.').expand_path
-  options = {
-    "destination"   => base.join('_site').to_s,
-    "force_polling" => false,
-    "theme"         => "minimal-mistakes-jekyll",
-    "future"        => true
-  }
-  options = Jekyll.configuration(options)
-  site = Jekyll::Site.new(options)
-  Jekyll::Command.process_site(site)
-  local_clear_yaml(NEWS_PATHNAME)
-end
-
-task :new_post do
+def new_post_template()
     base = Pathname.new('.').expand_path
     skel = ''
     skel << <<-EOF
@@ -161,47 +112,141 @@ EOF
     end
 end
 
-#task :preview do
-#  base = Pathname.new('.').expand_path
-#  options = {
-#    "destination"   => base.join('_site').to_s,
-#    "force_polling" => false,
-#    "serving"       => true,
-#    "theme"         => "minimal-mistakes-jekyll",
-#    "future"        => true
-#  }
+def enter_event(file, date, event)
+    # Get the yaml info fo the post
+    page = YAML.load_file(event)
+    # default for "meeting" is "success"
+    btn_type = "success"
+    case page['type']
+    when "Convention"
+        btn_type = "warning"
+    when "Party"
+        btn_type = "danger"
+    end
+    tmp_file = File.open("/tmp/calendar.tmp", 'w')
+    #tmp = ''
+    File.readlines(file).each do |line|
+        idx = line.index(date.strftime(' %d')).to_i
+        if idx > 0
+            idx = idx + date.strftime(' %d').length
+            tmp_file << line.insert(idx, "<br /> [#{page['title']}](/events/#{event.rpartition('/')[2][0..-4]}/){: .btn .btn--#{btn_type}}")
+        else
+            #tmp << line
+            tmp_file << line
+        end
+    end
+    tmp_file.close
+    FileUtils.mv(tmp_file, file)
+    #puts tmp
+end
+
+def calendar_skeleton(basename, date)
+    File.open("#{basename}/_calendar/#{date.strftime('%Y-%m')}-01-calendar.md", 'wb') do |file|
+        # What day of the week is the first in numbers? Sunday is zero
+        first_day_num = Date.new(date.year, date.month, 01).strftime('%w').to_i
+        # What is the last day fo the month
+        # The append here is actually an "add 'n' to month" command
+        last_day_date = Date.new(date.year, (date >> 1).month, 01)
+        # A raw '-' subtracts one day from the date
+        last_day_num = (last_day_date - 1).strftime('%d').to_i
+        # Since we're using the full jekyll file format (YYYY-MM-DD-title.md) to get the date,
+        # we are going to make the url pretty.
+        table = "---\npermalink: /calendar/#{date.strftime('%Y-%m')}/\n---\n"
+        table << <<-EOF
+|Sun|Mon|Tue|Wed|Thu|Fri|Sat|
+|:---:||:---:|:---:|:---:|:---:|:---:|:---:|
+EOF
+        # First row - have to factor in first_day_num
+        str = "| "
+        table << "#{str.ljust((first_day_num * 2 + 2), str)}"
+        current_day = 1
+        (1..(7 - first_day_num )).each do |i|
+            table << "#{i.to_s.rjust(2, "0")} | "
+            current_day += 1
+        end
+        table << "\n"
+        # Cycle through the full weeks
+        while (eow = (current_day + 7)) < last_day_num do
+            while current_day < eow do
+                table << "| #{current_day.to_s.rjust(2, "0")}"
+                current_day += 1
+            end
+            table << " |\n"
+        end
+        # Finish it off
+        end_padding = (7 - (last_day_num - current_day))
+        ((current_day)..(last_day_num)).each do |i|
+            table << "| #{current_day.to_s.rjust(2, "0")}"
+            current_day += 1
+        end
+        str = "| "
+        # Fix off-by-one error
+        (1..(end_padding)).each do |_|
+            #table << "#{str.ljust((end_padding - 1), str)}"
+            table << " |"
+        end
+        file.puts table
+    end
+end
+
+
 #
-#  options = Jekyll.configuration(options)
+# TODO: Support events with multiple date ranges
 #
-#  ENV["LISTEN_GEM_DEBUGGING"] = "1"
-#  listener = Listen.to(
-#    base.join("_includes"),
-#    base.join("_layouts"),
-#    base.join("_sass"),
-#    base.join("assets"),
-#    options["source"],
-#    :ignore => listen_ignore_paths(base, options),
-#    :force_polling => options['force_polling'],
-#    &(listen_handler(base, options))
-#  )
-#
-#  begin
-#    listener.start
-#    Jekyll.logger.info "Auto-regeneration:", "enabled for '#{options["source"]}'"
-#
-#    unless options['serving']
-#      trap("INT") do
-#        listener.stop
-#        puts "     Halting auto-regeneration."
-#        exit 0
-#      end
-#
-#      loop { sleep 1000 }
-#    end
-#  rescue ThreadError
-#    # You pressed Ctrl-C, oh my!
-#    local_clear_yaml(NEWS_PATHNAME)
-#  end
-#
-#  Jekyll::Commands::Serve.process(options)
-#end
+def populate_calendar(basename)
+    calendar_directory = '_calendar/'
+    events_directory = '_events/'
+    # TODO: Make sure this is ruby-esque
+    FileUtils.rm_rf(basename.join(calendar_directory).to_s)
+    FileUtils::mkdir_p(basename.join(calendar_directory).to_s)
+    Dir[basename.join(events_directory).to_s + "*"].each do |event|
+        date = Date.strptime(event.rpartition('/')[2][0..9], '%Y-%m-%d')
+        month_file = "#{basename}/_calendar/#{date.strftime('%Y-%m')}-01-calendar.md"
+        # Create current month's file right off the bat, b/c we link to that and it _always_ needs to exist, even if it's during the summer, and there are no events that month
+        calendar_skeleton(basename, Date.today)
+        if File.exist? File.path(month_file)
+            enter_event(month_file, date, event)
+        else
+            # File not yet created - create the calendar skeleton and populate file
+            calendar_skeleton(basename, date)
+            enter_event(month_file, date, event)
+        end
+    end
+end
+
+task :clean do
+    local_clear_yaml(NEWS_PATHNAME)
+    basename = Pathname.new('.').expand_path
+    FileUtils.rm_rf(basename.join('_site/').to_s)
+
+end
+
+task :gen_site do
+  # Clean shit up first
+  basename = Pathname.new('.').expand_path
+  FileUtils.rm_rf(basename.join('_site/').to_s)
+  FileUtils.rm_rf(basename.join('_calendar/').to_s)
+  local_clear_yaml(NEWS_PATHNAME)
+
+  # Render site
+  local_render_yaml(NEWS_PATHNAME)
+  populate_calendar(basename)
+  options = {
+    "destination"   => basename.join('_site').to_s,
+    "theme"         => "minimal-mistakes-jekyll",
+    "future"        => true
+  }
+  options = Jekyll.configuration(options)
+  site = Jekyll::Site.new(options)
+  Jekyll::Command.process_site(site)
+
+  # Clean up our mess, but leave `_site/`
+  local_clear_yaml(NEWS_PATHNAME)
+end
+
+task :new_post do
+    FileUtils.rm_rf(basename.join('_site/').to_s)
+    FileUtils.rm_rf(basename.join('_calendar/').to_s)
+    local_clear_yaml(NEWS_PATHNAME)
+    new_post_template()
+end

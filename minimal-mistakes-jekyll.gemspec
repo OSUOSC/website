@@ -1,5 +1,6 @@
 # coding: utf-8
 
+# Add comment to rebuild
 Gem::Specification.new do |spec|
   spec.name                    = "minimal-mistakes-jekyll"
   spec.version                 = "4.5.0"

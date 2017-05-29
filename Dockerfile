@@ -17,6 +17,7 @@ ADD *.gemspec $BUILD_DIR
 WORKDIR $BUILD_DIR
 RUN bundle install
 ADD . $BUILD_DIR
+RUN rm -rf Gemfile.lock
 RUN bundle exec rake clean && bundle exec rake gen_site
 RUN cp -ar $BUILD_DIR/_site/* $APP_HOME
 
