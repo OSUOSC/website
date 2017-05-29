@@ -11,7 +11,6 @@ main:
 
 tutorials:
   - title: "Club tutorials"
-    url: /tutorials/osuwireless-in-ubuntu/
     children:
     - title: "osuwireless in Ubuntu"
       url: /tutorials/osuwireless-in-ubuntu/
@@ -28,7 +27,6 @@ tutorials:
     - title: "Git Workflow"
       url: /tutorials/git-workflow/
   - title: "Club Information"
-    url: /tutorials/constitution/
     children:
     - title: "Constitution"
       url: /tutorials/constitution/
