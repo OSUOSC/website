@@ -15,24 +15,18 @@ tutorials:
     children:
     - title: "osuwireless in Ubuntu"
       url: /tutorials/osuwireless-in-ubuntu/
-    - title: "Come hangout with us on IRC"
-      url: /tutorials/irc/
-    - title: "Connecting to IRC"
-      url: /tutorials/connecting-to-irc/
-    - title: "Connecting to osuwireless with linux"
+    - title: "Connecting to osuwireless with Linux"
       url: /tutorials/osuwireless/
-    - title: "How to SSH into club systems"
-      url: /tutorials/git-workflow/
-    - title: "New Post"
+    - title: "SSH into Club Systems"
       url: /tutorials/ssh/
-    - title: "How to use Git"
-      url: /tutorials/new-post/
-    - title: "Deploying the site"
-      url: /tutorials/deploying/
-    - title: "Setting up the site"
-      url: /tutorials/setup/
     - title: "Printing at OSU"
       url: /tutorials/printthis/
+    - title: "Wireless Printing in Linux"
+      url: /tutorials/wireless-printing/
+    - title: "Connecting to IRC"
+      url: /tutorials/connecting-to-irc/
+    - title: "Git Workflow"
+      url: /tutorials/git-workflow/
   - title: "Club Information"
     url: /tutorials/constitution/
     children:
@@ -40,3 +34,7 @@ tutorials:
       url: /tutorials/constitution/
     - title: "Officers"
       url: /tutorials/officers/
+    - title: "Friends of OSC"
+      url: /tutorials/friends-of-osc/
+    - title: "Come hangout with us on IRC"
+      url: /tutorials/irc/

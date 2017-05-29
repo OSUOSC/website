@@ -256,6 +256,7 @@ gems:
   - jekyll-feed
   - jemoji
   - octopress-paginate
+  - jekyll-redirect-from
 
 # mimic GitHub Pages with --safe
 whitelist:

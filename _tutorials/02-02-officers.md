@@ -1,7 +1,9 @@
 ---
 title: Club Officers
 excerpt: "A list of all of the previous officers and faulty advisors that have served the Open Source Club"
-permalink: /tutorials/officers/ /history/2015/07/23/officers/
+permalink: /tutorials/officers/
+redirect_from:
+    - /history/2015/07/23/officers/
 ---
 
 #### 2016-2017

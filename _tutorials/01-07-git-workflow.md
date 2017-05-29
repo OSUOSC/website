@@ -1,6 +1,6 @@
 ---
-title: Constitution
-excerpt: "The Constitution which governs the continued operation of the Open Source Club"
+title: Git Workflow
+excerpt: "A brief overview of how to work with the Git Version Control System"
 permalink: /tutorials/git-workflow/
 ---
 
