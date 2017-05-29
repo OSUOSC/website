@@ -1,5 +1,6 @@
 ---
 title: Ohio LinuxFest 2015
+speaker: OSC
 type: Convention
 ---
 

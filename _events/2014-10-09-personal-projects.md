@@ -1,5 +1,7 @@
 ---
-title: Personal Projects
+title: Personal Projects Lightning Talks
+speaker: Various Club Members
+type: Meeting
 ---
 Hi everyone!
 

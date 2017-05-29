@@ -1,5 +1,7 @@
 ---
 title: Introduction to Security Concepts
+speaker: John Toterhi from Batelle
+type: Meeting
 ---
 Thursday, 2014-11-02 at 7:00pm in Caldwell Lab 120, John Toterhi of Battelle will present "Introduction to Security Concepts."
 

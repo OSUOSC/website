@@ -1,6 +1,7 @@
 ---
 title: Introduction to the Command Line
-meeting: September 10th 2015
+speaker: Eli Gladman
+type: Meeting
 ---
 
 Hi everyone,
@@ -16,7 +17,3 @@ This Thursday, September 10 in Caldwell Labs 120, Bobby Reynolds and I will pres
 - daemons
 - how to compile packages from source
 - useful one line commands
-
-Laptops are encouraged but not required, and as always, there will be pizza.
-
-  -- Eli Gladman

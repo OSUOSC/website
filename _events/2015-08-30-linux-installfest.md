@@ -1,6 +1,7 @@
 ---
 title: Linux Installfest
-meeting: August 30th 2015
+speaker: OSC
+type: Meeting
 ---
 
 Hi everyone,

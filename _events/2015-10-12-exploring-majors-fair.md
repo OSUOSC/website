@@ -1,6 +1,7 @@
 ---
 title: Exploring Majors Fair
-expire_date: 2015-10-12
+speaker: OSC
+type: Volunteer
 ---
 
 Come volunteer at the Exploring Majors Fair.

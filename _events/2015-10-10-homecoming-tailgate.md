@@ -1,5 +1,6 @@
 ---
 title: Engineering Homecoming Tailgate
+speaker: OSC
 type: Volunteer
 ---
 

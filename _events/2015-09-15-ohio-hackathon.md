@@ -1,5 +1,6 @@
 ---
 title: OHI/O 2015 Hackathon
+speaker: OSC
 type: Volunteer
 ---
 

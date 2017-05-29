@@ -1,5 +1,7 @@
 ---
 title: BeagleBone and Embedded Linux
+speaker: Eli Gladman
+type: Meeting
 ---
 Thursday, 2015-04-02 at 7:00pm in Caldwell Labs 120, Eli Gladman will be speaking about BeagleBone. A short description follows:
 

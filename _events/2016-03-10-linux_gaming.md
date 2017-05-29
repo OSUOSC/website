@@ -1,6 +1,7 @@
 ---
 title: Open Source and Linux Gaming
-meeting_date: 2016-03-10
+speaker: Nikit Malkan (Nefari0uss) and William Osler (LibreWulf)
+type: Meeting
 ---
 
 Level up this Thursday, 2016/03/10 at 7:00pm in Caldwell Labs 120 as Nikit
@@ -19,5 +20,3 @@ this week's meeting is super important.
 A huge thanks to everyone who helped volunteer during the OHI/O Makeathon over
 the weekend. Volunteer efforts help keep our club running (and buy that pizza we
 all enjoy).
-
-Laptops are encouraged, and as always there will be pizza.

@@ -1,5 +1,7 @@
 ---
 title: Cryptocurrencies and Elections
+speakers: Alex Krieger (kriegersaurusrex)
+type: Meeting
 ---
 Thursday, 2015-04-09, Alex Krieger will present Cryptocurrencies. This will provide more of the technical details of how these schemes (such as Bitcoin, Litecoin, and Dogecoin) work.
 

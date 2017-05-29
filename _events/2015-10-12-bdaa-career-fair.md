@@ -1,5 +1,6 @@
 ---
 title: BDAA Career Fair
+speaker: OSC
 type: Volunteer
 ---
 

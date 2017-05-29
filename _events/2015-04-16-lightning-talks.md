@@ -1,5 +1,7 @@
 ---
 title: Lightning Talks
+speaker: Various Club Members
+type: Meeting
 ---
 Hi everyone,
 

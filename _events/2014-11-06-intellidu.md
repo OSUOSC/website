@@ -1,5 +1,7 @@
 ---
 title: Intellidu
+speaker: John Simmerlink
+type: Meeting
 ---
 This Thursday, 2014-11-06 in Caldwell Labs 120, John Simerlink will present his project "Intellidu". His blurb follows:
 

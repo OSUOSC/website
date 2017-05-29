@@ -1,5 +1,6 @@
 ---
 title: System Updates
+speaker: OSC
 type: Internal
 ---
 Update on the stallman2 migration:

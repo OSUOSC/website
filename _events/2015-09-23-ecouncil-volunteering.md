@@ -1,5 +1,6 @@
 ---
 title: Engineering Expo Career Fair
+speaker: OSC
 type: Volunteer
 ---
 

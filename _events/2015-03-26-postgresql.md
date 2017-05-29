@@ -1,5 +1,7 @@
 ---
 title: PostgreSQL
+speaker: Jeff Casavant
+type: Meeting
 ---
 This Thursday, 2015-03-26 at 7:00pm in Caldwell Labs 120, Jeff Casavant will be speaking about PostgreSQL. A short description follows:
 

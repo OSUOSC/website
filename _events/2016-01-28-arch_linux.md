@@ -1,6 +1,7 @@
 ---
 title: Arch Linux
-meeting_date: 2016-01-28
+speaker: William Osler (LibreWulf)
+type: Meeting
 ---
 Thursday's talk will be on installing Arch Linux, performed by our longtime
 sysadmin William Osler. I also want to finalize a schedule for at least the next
@@ -15,7 +16,3 @@ operating system tailored to you. I'll be covering everything from how to
 install Arch using the Arch live image (there's no installer, but I promise it's
 not scary!), to configuring your base system, working with packages, and
 eventually building your way up to a desktop interface.
-
-Laptops are encouraged but not required, and as always, there will be pizza.
-
--- Alex Krieger

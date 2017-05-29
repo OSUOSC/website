@@ -1,5 +1,7 @@
 ---
 title: Introduction to Web Development
+speaker: Jonathan Arnett (J3RN)
+type: Meeting
 ---
 Thursday, 2015-01-22, Jon Arnett (President of the Collegiate Web Developer Group here on campus) and Eli Gladman will present "Intro to Web Development". A description from Jon follows:
 

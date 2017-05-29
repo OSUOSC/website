@@ -1,5 +1,7 @@
 ---
 title: MediaWiki
+speaker: Kevin Payravi
+type: Meeting
 ---
 This Thursday, 2015-02-12 at 7:00pm in Caldwell Labs 120, Kevin Payravi will present "MediaWiki". Description follows:
 

@@ -1,5 +1,7 @@
 ---
 title: Open Source at Facebook
+speaker: Patrick Shuff from Facebook
+type: Meeting
 ---
 Thursday, 2014-10-23 at 7:00pm in Caldwell Labs 120, Patrick Shuff (an engineer at Facebook) will present "Open Source at Facebook". Description follows:
 

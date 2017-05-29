@@ -1,6 +1,7 @@
 ---
 title: Open Source Hardware and Hobby Electronics
-meeting_date: 2016-03-03
+speaker: Alex Fuhr (aftrumpet)
+type: Meeting
 ---
 
 Thursday, 2016/03/03 at 7:00pm in Caldwell Labs 120

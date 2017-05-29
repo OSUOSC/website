@@ -1,6 +1,7 @@
 ---
 title: Bedrock Linux
-meeting_date: 2016-03-31
+speaker: Daniel Thau (paradigm)
+type: Meeting
 ---
 
 Thursday, 2016/03/31 at 7:00PM in Caldwell Labs 120
@@ -19,5 +20,3 @@ achieve this.
 The presentation will cover the motivation behind the Bedrock Linux, various
 real-world use cases for the project, concepts useful for utilizing and
 understanding it, as well as future plans.
-
-Laptops are encouraged, and as always there will be pizza.
