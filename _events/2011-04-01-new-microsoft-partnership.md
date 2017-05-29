@@ -1,5 +1,6 @@
 ---
 title: New Microsoft Partnership
+type: Internal
 ---
 Amidst our past rivalry, and a fellow technology group that has been all but extinct, we in the Ohio State University Open Source Club have hereby formed a new partnership with the now re-established [ntSig](http://mail.cse.ohio-state.edu/mailman/listinfo/ntsig) (website coming soon). ntSig, or New Technology Special Interest Group, is a group sponsored by Microsoft for people who share an interest in software, computers and technology in general. This carefully considered decision was not made lightly, but we wish to honor some of our former members who now reside in Redmond, WA and set our political differences aside.
 

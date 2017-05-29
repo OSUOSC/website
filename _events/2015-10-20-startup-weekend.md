@@ -1,6 +1,6 @@
 ---
 title: Startup Weekend
-expire_date: 2015-11-20
+type: Convention
 ---
 
 Startup Weekend is November 20th. [Learn More](http://www.up.co/communities/usa/columbus/startup-weekend/7362).

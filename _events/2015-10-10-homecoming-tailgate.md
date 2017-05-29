@@ -1,6 +1,6 @@
 ---
 title: Engineering Homecoming Tailgate
-expire_date: 2015-10-10
+type: Volunteer
 ---
 
 Come volunteer at the Engineering Homecoming Tailgate.

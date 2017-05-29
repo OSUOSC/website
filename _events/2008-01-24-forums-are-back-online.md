@@ -1,5 +1,5 @@
 ---
-type: "Meeting"
+type: "Internal"
 title: Forums are back online!
 ---
 After months of returning error messages to users who went to

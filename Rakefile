@@ -120,8 +120,12 @@ def enter_event(file, date, event)
     case page['type']
     when "Convention"
         btn_type = "warning"
-    when "Party"
+    when "Volunteer"
         btn_type = "danger"
+    when "Internal"
+        btn_type = "info"
+    when "Party"
+        btn_type = "light-outline"
     end
     tmp_file = File.open("/tmp/calendar.tmp", 'w')
     #tmp = ''

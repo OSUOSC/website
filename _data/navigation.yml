@@ -17,13 +17,15 @@ tutorials:
       url: /tutorials/osuwireless-in-ubuntu/
     - title: "Come hangout with us on IRC"
       url: /tutorials/irc/
+    - title: "Connecting to IRC"
+      url: /tutorials/connecting-to-irc/
     - title: "Connecting to osuwireless with linux"
       url: /tutorials/osuwireless/
     - title: "How to SSH into club systems"
-      url: /tutorials/ssh/
-    - title: "How to use Git"
       url: /tutorials/git-workflow/
     - title: "New Post"
+      url: /tutorials/ssh/
+    - title: "How to use Git"
       url: /tutorials/new-post/
     - title: "Deploying the site"
       url: /tutorials/deploying/

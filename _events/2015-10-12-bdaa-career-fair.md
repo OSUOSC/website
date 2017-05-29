@@ -1,6 +1,6 @@
 ---
 title: BDAA Career Fair
-expire_date: 2015-10-21
+type: Volunteer
 ---
 
 Come volunteer at the BBDA Career Fair.

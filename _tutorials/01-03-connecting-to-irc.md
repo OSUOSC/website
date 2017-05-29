@@ -1,5 +1,7 @@
 ---
 title: Connecting to IRC
+excerpt: How to setup and maintain your presence on IRC
+permalink: /tutorials/connecting-to-irc/
 ---
 #### Foreward
 

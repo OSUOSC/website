@@ -1,5 +1,5 @@
 ---
-type: "Meeting"
+type: "Convention"
 title: Ohio Linux Fest
 ---
 The Open Source Club is going together to the Ohio Linuxfest this year on

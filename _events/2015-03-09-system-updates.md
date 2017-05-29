@@ -1,5 +1,6 @@
 ---
 title: System Updates
+type: Internal
 ---
 Update on the stallman2 migration:
 

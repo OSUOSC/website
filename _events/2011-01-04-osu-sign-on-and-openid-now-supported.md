@@ -1,5 +1,5 @@
 ---
-type: "Meeting"
+type: "Internal"
 title: OSU Sign-on and OpenID Now Supported
 ---
 In response to feedback we received about having to log into our site (and resetting passwords each time), as well as insanely difficult [CAPTCHA](http://en.wikipedia.org/wiki/Captcha)s, we have taken steps to make things a little easier for everyone. Effective immediately, an OSU `name.n` will now log any current student, faculty, or staff member into our website, as well as most alumni and former staff. To use it, simply click the link on the left-side of any page titled "OSU Sign-on" and enter your OSU username and password (same password you use for Carmen/grades/etc). Logging in this way will automatically mark your account as [identified](/node/9) and give you the ability to post anything without moderator approval, as well as any other options previously unavailable to anonymous or unverified users.

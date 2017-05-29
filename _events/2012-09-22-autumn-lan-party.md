@@ -1,5 +1,6 @@
 ---
 title: Autumn LAN Party
+type: Party
 ---
 Good news everyone!
 

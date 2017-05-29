@@ -1,5 +1,5 @@
 ---
-type: "Meeting"
+type: "Internal"
 title: Website problems
 ---
 We are currently having some problems with our content managing system, Drupal,
