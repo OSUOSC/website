@@ -1,7 +1,7 @@
 ---
 title: Friends of OSC
 excerpt: "Networking with other OSU clubs is an important part of doing our due diligence for serving our club members."
-permalink: /tutorials/friends-of-osc/
+permalink: /info/friends-of-osc/
 ---
 #### Groups on Campus
 

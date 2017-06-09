@@ -1,7 +1,7 @@
 ---
 title: Constitution
 excerpt: "The Constitution which governs the continued operation of the Open Source Club"
-permalink: /tutorials/constitution/
+permalink: /info/constitution/
 redirect_from:
     - /history/2014/03/28/constitution/
 ---

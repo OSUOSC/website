@@ -4,13 +4,15 @@ main:
     url: /events/
   - title: "News"
     url: /news/
-  - title: "Tips and Tricks"
+  - title: "Tutorials"
     url: /tutorials/
+  - title: "Info"
+    url: /info/
   - title: "Calendar"
     url: /calendar/
 
 tutorials:
-  - title: "Club tutorials"
+  - title: "Club Tutorials"
     children:
     - title: "osuwireless in Ubuntu"
       url: /tutorials/osuwireless-in-ubuntu/
@@ -26,13 +28,15 @@ tutorials:
       url: /tutorials/connecting-to-irc/
     - title: "Git Workflow"
       url: /tutorials/git-workflow/
+
+info:
   - title: "Club Information"
     children:
     - title: "Constitution"
-      url: /tutorials/constitution/
+      url: /info/constitution/
     - title: "Officers"
-      url: /tutorials/officers/
+      url: /info/officers/
     - title: "Friends of OSC"
-      url: /tutorials/friends-of-osc/
+      url: /info/friends-of-osc/
     - title: "Come hangout with us on IRC"
-      url: /tutorials/irc/
+      url: /info/irc/

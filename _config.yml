@@ -173,6 +173,9 @@ collections:
   tutorials:
     output: true
     permalink: /:collection/:path/
+  info:
+    output: true
+    permalink: /:collection/:path/
   calendar:
     output: true
     permalink: /:collection/:path/
@@ -203,6 +206,16 @@ defaults:
       share: true
       sidebar:
         nav: "tutorials"
+  # _info
+  - scope:
+      path: ""
+      type: info
+    values:
+      layout: single
+      author_profile: false
+      share: true
+      sidebar:
+        nav: "info"
   # _calendar
   - scope:
       path: ""
