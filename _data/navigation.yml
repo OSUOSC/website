@@ -13,6 +13,7 @@ main:
 
 tutorials:
   - title: "Club Tutorials"
+    url: /tutorials/
     children:
     - title: "osuwireless in Ubuntu"
       url: /tutorials/osuwireless-in-ubuntu/
@@ -31,6 +32,7 @@ tutorials:
 
 info:
   - title: "Club Information"
+    url: /info/
     children:
     - title: "Constitution"
       url: /info/constitution/

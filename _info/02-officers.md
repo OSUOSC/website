@@ -6,6 +6,14 @@ redirect_from:
     - /history/2015/07/23/officers/
 ---
 
+#### 2017-2018
+* Benevolent Dictator - Ted Li (li.9668@osu.edu)
+* Vice President - Andrew `smacz` Cziryak (cziryak.1@osu.edu)
+* Treasurer - Jack Moore (moore.3337@osu.edu)
+* System Administrator - John 'EDT' Markiewicz (markiewicz.22@osu.edu)
+* Faculty Advisor - Matt Black (black.123@osu.edu)
+* Faculty Advisor - Jeremy Moore (morris.343@osu.edu)
+
 #### 2016-2017
 * Benevolent Dictator - Brandon 'malide' Moore (moore.3071@osu.edu)
 * Vice President - Alex 'aftrumpet' Fuhr (fuhr.8@osu.edu)

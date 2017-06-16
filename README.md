@@ -159,6 +159,74 @@ And make sure that the permalink ends with a slash so that it's generated in the
 
 ---
 
+# TODO:
+
+- Why is it in your personal github space instead of the clubs org space?
+    - Could you not have used  a branch of the current web site repo?
+- ~~Why do you not have a real cert for it? (https://letsencrypt.org/ ??? better than self signed? Especially without any way to check the self signed cert. )~~
+- ~~Where did you get that awful picture of “that”(me) faculty advisor? J~~
+    - ~~Please remove it.~~
+- Where did the “Volunteering” stuff go? (intended removal or oversight?)
+    - A Tutorial about “how to change/update this site” might be a good idea. J
+
+I personally prefer:
+    - A fixed left hand gutter/menu.
+        - The current site uses this design pattern.
+        - **This site does as well on pages that it makes sense for it to be on**
+    - A fixed “header”/banner.
+        - The current site kind of uses that design then it “hides” at some point when scrolling down the main page. (Sigh.)
+        - The proposed site lets the header/banner scroll out of view as soon as possible. (Sigh.)
+        - **I find those to be ugly and intrusive**
+        - **Minimizing the length of the page will alleviate the need for a fixed header**
+    - The bullet list on the “home page” should not be done that way. ( looks out of place/clunky)
+        - Maybe move to items on the left gutter?
+        - **There is no left gutter on the main page**
+        - **But this does have to be fixed**
+    - Some text for “hover” like they are links, but they are not.
+        - **This is very bad and something I was intending to address**
+        - “Systems”
+        - “Code”
+        - “Hardware”
+        - “People list” names on the home page
+        - Same for the “Previous” and “Next” buttons on some pages.
+            - Might be excusable If they were “real” buttons instead of white rectangles with text in the middle.)
+        - This is a real pet peeve of mine. HTML shows links by having the text underlined. I should not have to “hover over it” to find the underline/links. Something that is “underlined” and is not a link should be “color coded” (not ideal, but that is the pattern) to tell the difference.
+    - The pictures of the people should be sized the same.
+        - And take up less vertical space.
+        - Maybe a smaller version that can “drill down” to a full page per person?
+            - **No need as these are not bios, but a who's who**
+            - **perhaps pictures are not even needed**
+        - Maybe http://opic.osu.edu/<name.n> should be used for the source of these images? ( avoid storing them in github. Allows users to update/opt-in/opt-in as desired. Etc..)
+    - Did you get a “release” for the email and/or Riot Usernames from those people?
+        - **What about the officer's emails on the officer's page?**
+    - Some of the links on the left edge (like the “officers” page) do not “highlight/underline” on mouse over. Yet become “bold” when selected.  (Odd UI)
+        - **This is the nav sidebar (defined in _config)**
+    - ~~The “CLUB INFORMATION” (top link) is not clickable.  (no “go back to the top” path)~~
+    - ~~I don’t like how the club icon “dims” when it is in the left hand gutter without focus.~~
+        - ~~Your messing with the branding!!!! Stop it. J~~
+        - ~~**Definitely was on my todo list**~~
+    - I am not sure that I like having the Constitution instead of a link to the GitHub official repo for the document.
+        - **This was at the behest of the prezident**
+        - And yes, I think the club should publish a PDF, or other directly readable form of the constitution on Github.
+            - **We do**
+        - Maybe the club should look at https://pages.github.com/ and use that for the constitution repo?
+            - **I don't see how that would work?**
+    - ~~The Officers page is not updated.~~
+        - ~~**D'oy**~~
+    - Events, News, and Calendar have a “location pin” icon that points at the club office.
+        - CL112F
+        - That may not be correct for the things being viewed.
+        - Maybe that should be Event, News, Calendar event centric?
+    - The pages are generally “to long”(vertical). Splitting up the page to avoid scrolling is a better design. ( Keep it all “above the fold” and use links/tab/switching UI effects.)
+
+I like:
+    - The calendar page.
+        - **I hope to fix much of this with the css. Fixed width everywhere??**
+        - It might need some adjustments if more than one “event”? ended up on the same day. ( I think that would look fairly bad.)
+        - It might need some adjustments if events were on all days of the week. ( I think that would look fairly bad.)
+
+---
+
 ## License
 
 The MIT License (MIT)

@@ -67,7 +67,7 @@ og_image                 : "/assets/images/site-logo.png" # Open Graph/Twitter d
 social:
   type                   : Organization # Person or Organization (defaults to Person)
   name                   : OSUOSC # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  links                  : ["https://riot.im/app/#/room/#osuosc:matrix.org", "https://www.osu.edu/map/building.php?building=026"]# An array of links to social media profiles
 
 # Analytics
 analytics:
@@ -81,7 +81,7 @@ author:
   name             : *name
   avatar           : "/assets/osuosc/logo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Meetings every Thursday in Caldwell 120 during the Fall and Spring Semesters"
-  location         : "Caldwell Labs, Rm 112F"
+  location         :
   email            : "info@opensource.osu.edu"
   uri              :
   bitbucket        :
