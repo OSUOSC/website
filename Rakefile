@@ -37,11 +37,25 @@ def local_render_yaml(news_pathname)
    <li>Feel free to add it to the weekly rundown!</li>
    <li>Repository is available on <a href="https://github.com/OSUOSC/osc-weekly-rundown">Github</a></li>
 </ul>
+
+<hr />
+
+<h2>Stories</h2>
+<ul>
 EOF
         File.open(post, 'a') do |file|
             file.puts html
         end
         page = YAML.load_file(post)
+        page['stories'].each_with_index do |story,index|
+            html = ''
+            html << <<-EOF
+  <li><a href="{{ page.multipage.first_path | absolute_url }}#{if index!=1 then "#{index + 2}" + '/' end}">#{story["title"]}</a></li>
+EOF
+            File.open(post, 'a') do |file|
+                file.puts html
+            end
+        end
         page['stories'].each do |story|
             html = ''
             html << <<-EOF
