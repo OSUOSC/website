@@ -11,26 +11,33 @@ intro:
   - image_path: "/assets/osuosc/logo.png"
     image_width: 45%
     title: "It's summer break! We'll be back to having weekly meetings at the beginning of the Fall 2017 semester"
-call-to-action:
-  - excerpt: |
-        * Take a look at the **[recent and upcoming events](/events/)**!
-        * Sign up for our **[Mailing List](/mailing-list/)**
-        * Send **us** an email at <b><a href="mailto:info@opensource.osu.edu">info@opensource.osu.edu</a></b>
-        * Chat with us on **[Riot](/riot/)**
-        * Visit us at our office at **[Caldwell Labs, Room 112F](https://www.osu.edu/map/building.php?building=026)**
-    image_width: 45%
-feature_row:
+info:
   - image_path: assets/osuosc/blue_servers.jpg
     alt: "This is not actually a picture of our servers. We wish they were this cool"
     title: "Systems"
     excerpt: "The Open Source Club maintains our own internal network providing storage, backup, and networking for club members."
+  - image_path: /assets/osuosc/riot.svg
+    image_width: 69%
+    title: "Chat with us on Riot"
+    url: /riot/
+    btn_label: "Connect Here"
+  - image_path: /assets/osuosc/mobo.jpg
+    title: "Hardware"
+    excerpt: "The Open Source Club has many types of hardware, from Bluetooth Recievers to Raspberry Pis for its members to borrow at will."
+  - image_path: assets/osuosc/events.svg
+    image_width: 69%
+    title: "Take a look at our recent and upcoming events"
+    url: /events/
+    btn_label: "See All Events"
   - image_path: /assets/osuosc/python_code.jpg
     alt: "This is not actually code that any of us wrote."
     title: "Code"
     excerpt: "Whether you need some help understanding a function, or just someone to bounce ideas off of, there are no better people to talk to than those who are involved in the Open Source Club."
-  - image_path: /assets/osuosc/mobo.jpg
-    title: "Hardware"
-    excerpt: "The Open Source Club has many types of hardware, from Bluetooth Recievers to Raspberry Pis for its members to borrow at will."
+  - image_path: /assets/osuosc/mailing_list.svg
+    image_width: 69%
+    title: "Subscribe to our mailing list"
+    url: /mailing-list/
+    btn_label: "Sign Up Now"
 officers:
   - image_path: /assets/osuosc/ted_l.jpg
     image_width: 55%
@@ -85,8 +92,6 @@ officers:
 
 {% include feature_row id="intro" type="left" %}
 
-{% include feature_row id="call-to-action" type="center" %}
-
-{% include feature_row %}
+{% include feature_row id="info" %}
 
 {% include feature_row id="officers" type="left" %}

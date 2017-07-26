@@ -203,11 +203,11 @@ def populate_calendar(basename)
     # TODO: Make sure this is ruby-esque
     FileUtils.rm_rf(basename.join(calendar_directory).to_s)
     FileUtils::mkdir_p(basename.join(calendar_directory).to_s)
+    # Create current month's file right off the bat, b/c we link to that and it _always_ needs to exist, even if it's during the summer, and there are no events that month
+    calendar_skeleton(basename, Date.today)
     Dir[basename.join(events_directory).to_s + "*"].each do |event|
         date = Date.strptime(event.rpartition('/')[2][0..9], '%Y-%m-%d')
         month_file = "#{basename}/_calendar/#{date.strftime('%Y-%m')}-01-calendar.md"
-        # Create current month's file right off the bat, b/c we link to that and it _always_ needs to exist, even if it's during the summer, and there are no events that month
-        calendar_skeleton(basename, Date.today)
         if File.exist? File.path(month_file)
             enter_event(month_file, date, event)
         else
@@ -219,18 +219,18 @@ def populate_calendar(basename)
 end
 
 task :clean do
-    local_clear_yaml(NEWS_PATHNAME)
-    basename = Pathname.new('.').expand_path
-    FileUtils.rm_rf(basename.join('_site/').to_s)
-
+  basename = Pathname.new('.').expand_path
+  local_clear_yaml(NEWS_PATHNAME)
+  FileUtils.rm_rf(basename.join('_site/').to_s)
+  FileUtils.rm_rf(basename.join('_calendar/').to_s)
 end
 
 task :gen_site do
   # Clean shit up first
   basename = Pathname.new('.').expand_path
+  local_clear_yaml(NEWS_PATHNAME)
   FileUtils.rm_rf(basename.join('_site/').to_s)
   FileUtils.rm_rf(basename.join('_calendar/').to_s)
-  local_clear_yaml(NEWS_PATHNAME)
 
   # Render site
   local_render_yaml(NEWS_PATHNAME)
