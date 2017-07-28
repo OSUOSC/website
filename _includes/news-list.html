@@ -8,7 +8,7 @@
     <p class="archive__item-excerpt" itemprop="description">
     <ul>
     {% for story in post.stories %}
-    <li><a href="{{ post.url }}/{% if forloop.first == false %}{{ forloop.index }}/{% endif %}">{{ story.title }} {{ forloop.index }}</a></li>
+    <li><a href="{{ post.url }}{{ forloop.index | plus: '1' }}/">{{ story.title }}</a></li>
     {% endfor %}
     </ul>
     </p>
