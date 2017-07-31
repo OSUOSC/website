@@ -1,0 +1,10 @@
+version: '3'
+services:
+  jekyll:
+    container_name: jekyll
+    build: ./
+    command: /usr/sbin/apache2 -D FOREGROUND
+    ports:
+      - "8000:80"
+        #    volumes:
+        #      - ./:/opt/jekyll/

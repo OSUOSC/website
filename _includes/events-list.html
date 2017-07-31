@@ -1,0 +1,9 @@
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <h2 class="archive__item-title" itemprop="headline">
+        <a href="{{ post.url | absolute_url }}" rel="permalink">{{ post.type }}: {{ post.title }}</a>
+    </h2>
+    With: {{ post.speaker }}<br />
+    On: {{ post.date | date_to_long_string }}
+  </article>
+</div>

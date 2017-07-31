@@ -1,1 +1,5 @@
-downloads/presentations/* filter=lfs diff=lfs merge=lfs -text
+_assets/css/vendor/* linguist-vendored
+_assets/js/plugins/* linguist-vendored
+_assets/js/vendor/* linguist-vendored
+assets/fonts/* linguist-vendored
+assets/js/vendor/* linguist-vendored
