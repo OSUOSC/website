@@ -105,6 +105,8 @@ When submitting a pull request:
 
 To set up your environment to develop this theme, run `bundle install --path ${HOME}/.gem`.
 
+#### NOTE: If you're already on `stallman2`, these should already be installed system-wide
+
 To update the theme run `bundle update`. **Be careful - this may break OSUOSC customizations.**
 
 ## Adding new pages
