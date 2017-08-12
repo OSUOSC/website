@@ -10,5 +10,4 @@ The Open Source Club hosts Club Members' personal sites on request on our intern
 
 - [al3k]({{ '~al3k' | absolute_url }})
 - [benlk]({{ '~benlk' | absolute_url }})
-- [malide]({{ '~malide' | absolute_url }})
 - [smacz]({{ '~smacz' | absolute_url }})
