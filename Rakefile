@@ -88,9 +88,9 @@ end
 #
 # This is the way to get the content of the file after the YAML front matter
 #
-def local_clear_yaml(news_pathname)
+def local_clear_yaml(pathname)
     basename = Pathname.new('.').expand_path
-    Dir[basename.join(news_pathname).to_s].each do |post|
+    Dir[basename.join(pathname).to_s].each do |post|
         yaml = File.read(post)[/\A---(.|\n)*?---/]
         File.open(post, 'w') do |file|
             file.puts yaml

@@ -10,35 +10,35 @@ redirect_from:
 * Benevolent Dictator - Ted Li (li.9668@osu.edu)
 * Vice President - Andrew `smacz` Cziryak (cziryak.1@osu.edu)
 * Treasurer - Jack Moore (moore.3337@osu.edu)
-* System Administrator - John 'EDT' Markiewicz (markiewicz.22@osu.edu)
+* System Administrator - John `EDT` Markiewicz (markiewicz.22@osu.edu)
 * Faculty Advisor - Matt Black (black.123@osu.edu)
 * Faculty Advisor - Jeremy Moore (morris.343@osu.edu)
 
 #### 2016-2017
-* Benevolent Dictator - Brandon 'malide' Moore (moore.3071@osu.edu)
+* Benevolent Dictator - Brandon `malide` Moore (moore.3071@osu.edu)
 * Vice President - Alex 'aftrumpet' Fuhr (fuhr.8@osu.edu)
 * Treasurer - Jack Moore (moore.3337@osu.edu)
-* System Administrator - John 'EDT' Markiewicz (markiewicz.22@osu.edu)
+* System Administrator - John `EDT` Markiewicz (markiewicz.22@osu.edu)
 * Faculty Advisor - Matt Black (black.123@osu.edu)
 
 #### 2015-2016
 * Benevolent Dictator - Eli 'httpstr' Gladman (gladman.23@osu.edu)
 * Vice President and Interim President - Alex Krieger (krieger.71@osu.edu)
 * Interim Vice President - Nikit 'nefari0uss' Malkan (malkan.1@osu.edu)
-* Treasurer - Brandon 'riffer' Dahl (dahl.49@osu.edu)
-* System Administrator - Will 'librewulf' Osler (osler.6@osu.edu)
-* Librarian - Brandon 'malide' Moore (moore.3071@osu.edu)
+* Treasurer - Brandon `riffer` Dahl (dahl.49@osu.edu)
+* System Administrator - Will `LibreWulf` Osler (osler.6@osu.edu)
+* Librarian - Brandon `malide` Moore (moore.3071@osu.edu)
 * Faculty Advisor - Matt Black (black.123@osu.edu)
 
 #### 2014-2015
-* Benevolent Dictator - Chris 'notori0us' Wallace (wallace.586@osu.edu)
+* Benevolent Dictator - Chris `notori0us` Wallace (wallace.586@osu.edu)
 * Vice President - George Kvaratkshelia (kvaratskhelia.2@osu.edu)
-* Treasurer - Nikit 'nefari0uss' Malkan (malkan.1@osu.edu)
-* System Administrator - Will 'librewulf' Osler (osler.6@osu.edu)
+* Treasurer - Nikit `nefari0uss` Malkan (malkan.1@osu.edu)
+* System Administrator - Will `LibreWulf` Osler (osler.6@osu.edu)
 * Faculty Advisor - Shaun Rowland
 
 #### 2013-2014
-* Benevolent Dictator - Chris 'notori0us' Wallace (wallace.586@osu.edu)
+* Benevolent Dictator - Chris `notori0us` Wallace (wallace.586@osu.edu)
 * Vice President - Brandon Rogers (rogers.689@osu.edu)
 * Treasurer - Maxim Kim (kim.4021@osu.edu)
 * Faculty Advisor - Shaun Rowland
@@ -47,12 +47,12 @@ redirect_from:
 * President - Paul Schwendenman (schwendenman.6@osu.edu)
 * Vice President and Interim President- Brad Hollander (hollander.36@osu.edu)
 * Interim Vice President - Edward Powell (powell.518@osu.edu)
-* Treasurer - Chris 'notori0us' Wallace (wallace.586@osu.edu)
+* Treasurer - Chris `notori0us` Wallace (wallace.586@osu.edu)
 * Webmaster/Sysadmin - Brian Swaney (swaney.29@osu.edu)
 * Faculty Advisor - Shaun Rowland
 
 #### 2011-2012
-* President - Daniel 'paradigm' Thau (thau.4@osu.edu)
+* President - Daniel `paradigm` Thau (thau.4@osu.edu)
 * Vice President - Paul Schwendenman (schwendenman.6@osu.edu)
 * Treasurer - Joel Friedly (friedly.1@osu.edu)
 * Webmaster/Sysadmin - Brian Swaney (swaney.29@osu.edu)
@@ -60,7 +60,7 @@ redirect_from:
 
 #### 2010-2011
 * President - Matt Meinwald (meinwald.1@osu.edu)
-* Vice President - Daniel 'paradigm' Thau (thau.4@osu.edu)
+* Vice President - Daniel `paradigm` Thau (thau.4@osu.edu)
 * Treasurer - Paul Schwendenman (schwendenman.6@osu.edu)
 * Faculty Advisor - Shaun Rowland
 
