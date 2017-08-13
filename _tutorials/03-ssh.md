@@ -8,6 +8,10 @@ redirect_from:
 
 If you do not already have a club account, you may contact our SysAdmin to request one.
 
+## Network
+
+If you are [hanging out with us on IRC](/tutorials/connecting-to-irc) then you are going to want to `ssh` into `idle2`. Otherwise, all other tasks should typically be done on `stallman`. To connect to either, see below.
+
 ### instructions
 
 Open up a terminal and enter the following:

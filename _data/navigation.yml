@@ -29,6 +29,8 @@ tutorials:
       url: /tutorials/connecting-to-irc/
     - title: "Git Workflow"
       url: /tutorials/git-workflow/
+    - title: "Tmux"
+      url: /tutorials/tmux/
 
 info:
   - title: "Club Information"
