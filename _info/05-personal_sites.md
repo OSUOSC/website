@@ -1,6 +1,6 @@
 ---
-title: Internet Relay Chat
-excerpt: How to come hangout with us in cyberspace on IRC
+title: Members' Personal sites
+excerpt: Members can host their own sites on OSC's web page. Here is a list of our members sites that are up right now.
 permalink: /info/personal-sites/
 ---
 
