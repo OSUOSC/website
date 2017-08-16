@@ -9,6 +9,6 @@ The Open Source Club hosts Club Members' personal sites on request on our intern
 ## Sites:
 
 - [al3k]({{ '~al3k' | absolute_url }})
-- [benlk]({{ '~benlk' | absolute_url }})
+- [Ben Keith's oral history of bots in #osuosc]({{ '~benlk' | absolute_url }})
 - [malide]({{ '~malide' | absolute_url }})
 - [smacz]({{ '~smacz' | absolute_url }})
