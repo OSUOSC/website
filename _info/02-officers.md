@@ -16,7 +16,7 @@ redirect_from:
 
 #### 2016-2017
 * Benevolent Dictator - Brandon `malide` Moore (moore.3071@osu.edu)
-* Vice President - Alex 'aftrumpet' Fuhr (fuhr.8@osu.edu)
+* Vice President - Alex `aftrumpet` Fuhr (fuhr.8@osu.edu)
 * Treasurer - Jack Moore (moore.3337@osu.edu)
 * System Administrator - John `EDT` Markiewicz (markiewicz.22@osu.edu)
 * Faculty Advisor - Matt Black (black.123@osu.edu)
