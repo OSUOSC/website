@@ -1,0 +1,50 @@
+# main links
+main:
+  - title: "Events"
+    url: /events/
+  - title: "News"
+    url: /news/
+  - title: "Tutorials"
+    url: /tutorials/
+  - title: "Info"
+    url: /info/
+  - title: "Calendar"
+    url: /calendar/
+
+tutorials:
+  - title: "Club Tutorials"
+    url: /tutorials/
+    children:
+    - title: "osuwireless in Ubuntu"
+      url: /tutorials/osuwireless-in-ubuntu/
+    - title: "Connecting to osuwireless with Linux"
+      url: /tutorials/osuwireless/
+    - title: "SSH into Club Systems"
+      url: /tutorials/ssh/
+    - title: "Printing at OSU"
+      url: /tutorials/printthis/
+    - title: "Wireless Printing in Linux"
+      url: /tutorials/wireless-printing/
+    - title: "Connecting to IRC"
+      url: /tutorials/connecting-to-irc/
+    - title: "Git Workflow"
+      url: /tutorials/git-workflow/
+    - title: "Tmux"
+      url: /tutorials/tmux/
+    - title: "Password Change"
+      url: /tutorials/password-change/
+
+info:
+  - title: "Club Information"
+    url: /info/
+    children:
+    - title: "Constitution"
+      url: /info/constitution/
+    - title: "Officers"
+      url: /info/officers/
+    - title: "Friends of OSC"
+      url: /info/friends-of-osc/
+    - title: "Come hangout with us on IRC"
+      url: /info/irc/
+    - title: "Our Club Members' Personal Sites"
+      url: /info/personal-sites/

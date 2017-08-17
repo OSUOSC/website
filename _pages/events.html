@@ -1,0 +1,17 @@
+---
+layout: archive
+title: "Events"
+permalink: /events/
+author_profile: true
+paginate:
+    collection: events
+---
+
+{% include base_path %}
+
+{% for post in paginator.events %}
+  {% include events-list.html %}
+{% endfor %}
+{% assign sorted_posts = site.events | sort 'date' | reverse %}
+
+{% include collection_pagination.html %}
