@@ -31,6 +31,8 @@ tutorials:
       url: /tutorials/git-workflow/
     - title: "Tmux"
       url: /tutorials/tmux/
+    - title: "Password Change"
+      url: /tutorials/password-change/
 
 info:
   - title: "Club Information"
