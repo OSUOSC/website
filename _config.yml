@@ -7,12 +7,13 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "The Open Source Club at the Ohio State University"
+title                    : "The Open Source Club at The Ohio State University"
 title_separator          : "-"
 name                     : &name "Open Source Club"
 description              : "Tutorials, talks, and news for all your FOSS needs."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
+logo                     : "osc-logo.svg"
 repository               : https://github.com/OSUOSC # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "assets/images/500x300.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
@@ -225,7 +226,7 @@ multipage_collation_enabled: false
 
 
 # Plugins
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist

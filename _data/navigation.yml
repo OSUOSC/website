@@ -29,6 +29,10 @@ tutorials:
       url: /tutorials/connecting-to-irc/
     - title: "Git Workflow"
       url: /tutorials/git-workflow/
+    - title: "Tmux"
+      url: /tutorials/tmux/
+    - title: "Password Change"
+      url: /tutorials/password-change/
 
 info:
   - title: "Club Information"
@@ -42,5 +46,5 @@ info:
       url: /info/friends-of-osc/
     - title: "Come hangout with us on IRC"
       url: /info/irc/
-    - title: "Our Club Member's Personal Sites"
+    - title: "Our Club Members' Personal Sites"
       url: /info/personal-sites/
