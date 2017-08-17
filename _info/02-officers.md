@@ -7,7 +7,7 @@ redirect_from:
 ---
 
 #### 2017-2018
-* Benevolent Dictator - Ted Li (li.9668@osu.edu)
+* Benevolent Dictator - Ted Li (li.6998@osu.edu)
 * Vice President - Andrew `smacz` Cziryak (cziryak.1@osu.edu)
 * Treasurer - Jack Moore (moore.3337@osu.edu)
 * System Administrator - John `EDT` Markiewicz (markiewicz.22@osu.edu)
