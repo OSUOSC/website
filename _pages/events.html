@@ -12,6 +12,5 @@ paginate:
 {% for post in paginator.events %}
   {% include events-list.html %}
 {% endfor %}
-{% assign sorted_posts = site.events | sort 'date' | reverse %}
 
 {% include collection_pagination.html %}
