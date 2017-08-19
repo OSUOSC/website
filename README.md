@@ -33,7 +33,32 @@ NOTE: This is less than ideal, however, for the time being, since the directory 
 
 If you want to find out how to run the program in your base OS, take a look at the Dockerfile and follow the steps as appropriate.
 
+## Build Website on `stallman2`
+
+Club members should be able to build the site, as all required software is installed _globally_ to build it. **HOWEVER** not all club members will have the appropriate permissions to deploy the site. If you are _not_ an officer and wish to make a change to the site, please follow the [Git Workflow]({{ '/tutorials/git-workflow/' | absolute_url }}), and submit a pull request on Github for the change to the site.
+
+### For Officers
+
+To build the site from `master`:
+
+```
+### YOU SHOULD ALREADY HAVE THIS
+### THIS IS USING SSH KEYS - WHICH YOU SHOULD HAVE ALREADY SET UP
+$ git clone git@github.com:OSUOSC/website.git
+$ cd website
+$ bundle exec rake gen_site
+$ ssh web3
+$ sudo rsync -av --delete ./website/_site /var/www/jekyll/
+$ sudo chown -R www-data:www-data /var/www/jekyll
+
 ### Creating a new post
+
+#### TODO: There should be better ways to create a new:
+
+- Event
+- News
+- Tutorial
+- Info
 
 Every week, a new post is created for the news items to be gone over at the beginning of the meeting on Thursday. This is automatically generated in the same way that the site is generated and cleaned, by using `bundle`:
 
