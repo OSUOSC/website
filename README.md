@@ -107,7 +107,9 @@ To set up your environment to develop this theme, run `bundle install --path ${H
 
 #### NOTE: If you're already on `stallman2`, these should already be installed system-wide
 
-To update the theme run `bundle update`. **Be careful - this may break OSUOSC customizations.**
+Updateing the theme will require a rebase. There is a branch to do this, however, the upgrade process is undocumented. For those looking to update the theme, first take a look at the history of the commits (`git log`) and try to merge upstream with the fork. There will most likely be a conflict of history when you go to merge onto `master`, but that might be taken care of with the argument `--allow-unrelated-histories`. **USE THIS OPTION WITH CAUTION**.
+
+Consult an [officer]{{ /info/officers/ | absolute_url }}) before attempting to `rebase`.
 
 ## Adding new pages
 
