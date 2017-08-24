@@ -25,7 +25,7 @@ type: "Meeting"
 - [Linux desktop GUI GNOME celebrates its 20th birthday](http://www.zdnet.com/article/linux-desktop-gui-gnome-celebrates-its-20th-birthday/)
 	- All components of GNOME involve GPL (General Public License) software.
 	- Screenshot of a GNOME session running remotely via OSU's FastX 2 remote desktop connection:
-	![](http://i.imgur.com/IjSe8i5.jpg)
+	<a href="http://i.imgur.com/IjSe8i5.jpg"><img src="http://i.imgur.com/IjSe8i5.jpg" alt="GNOME remote session screenshot"></a>
 
 ## [Constitution](https://opensource.osu.edu/info/constitution/)
 
