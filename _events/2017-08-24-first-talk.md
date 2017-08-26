@@ -2,6 +2,8 @@
 title: "What is Open Source"
 speaker: "Andrew `smacz` Cziryak"
 type: "Meeting"
+time: '19:30'
+location: 'Caldwell 120'
 ---
 
 # The Open Source Club at The Ohio State University
@@ -16,9 +18,6 @@ type: "Meeting"
 
 ## [Constitution](https://opensource.osu.edu/info/constitution/)
 
-- Article II
-- Article V
-
 ## Volunteering
 
 - Hours
@@ -26,11 +25,22 @@ type: "Meeting"
 
 ## Communication
 
+### [Be Excellent to Each Other](https://www.bunsenlabs.org/)
+
 - [Email](mailto://info@opensource.osu.edu)
 - Chat
     - [IRC](https://opensource.osu.edu/info/irc/)
     - [Riot](https://opensource.osu.edu/riot/)
 - Kanboard
+
+## Officers
+
+* Benevolent Dictator - Ted Li (li.6998@osu.edu)
+* Vice President - Andrew `smacz` Cziryak (cziryak.1@osu.edu)
+* Treasurer - Jack Moore (moore.3337@osu.edu)
+* System Administrator - John `EDT` Markiewicz (markiewicz.22@osu.edu)
+* Faculty Advisor - Matt Black (black.123@osu.edu)
+* Faculty Advisor - Jeremy Moore (morris.343@osu.edu)
 
 # Development
 
@@ -55,7 +65,7 @@ type: "Meeting"
 
 ## Operating Systems
 
-- Linux on Servers
+- Linux
     - Desktop
     - Servers
     - Embedded

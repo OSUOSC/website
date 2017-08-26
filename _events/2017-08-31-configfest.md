@@ -2,6 +2,8 @@
 title: "Configfest"
 speaker: "Andrew `smacz` Cziryak"
 type: "Meeting"
+time: '19:30'
+location: 'Caldwell 120'
 ---
 # Browser
 
@@ -94,3 +96,4 @@ http://forum.notebookreview.com/threads/ssd-owners-set-firefox-to-memory-cache-i
 ## SSH
 
 - [OSUOSC Tutorial](https://opensource.osu.edu/tutorials/ssh/)
+- [Mozilla Guidelines](https://wiki.mozilla.org/Security/Guidelines/OpenSSH)
