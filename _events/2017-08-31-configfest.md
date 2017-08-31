@@ -9,9 +9,11 @@ location: 'Caldwell 120'
 
 ## Addons
 
-- [Ublock Origin](https://www.ublock.org/)
+- [Ublock Origin](https://github.com/gorhill/uBlock#ublock-origin)
 - [Https Everywhere](https://www.eff.org/https-everywhere)
 - [Decentraleyes](https://decentraleyes.org/)
+- [Self-Destructing Cookies](https://addons.mozilla.org/en-US/android/addon/self-destructing-cookies/?src=api)
+    - Post-WebExtensions: [Cookie Autodelete](https://addons.mozilla.org/en-GB/firefox/addon/cookie-autodelete/)
 
 ## Custom Settings
 
@@ -36,7 +38,26 @@ http://forum.notebookreview.com/threads/ssd-owners-set-firefox-to-memory-cache-i
 
 # Email
 
-### [Thunderbird](https://www.mozilla.org/en-US/thunderbird/)
+## [Thunderbird](https://www.mozilla.org/en-US/thunderbird/)
+
+### OSU Buckeyemail
+
+*Always use your full `<name>.#@buckeyemail.osu.edu` address*
+
+- Protocol: IMAP
+  Server: `outlook.office365.com`
+  Port: 143
+  Connection Security: `STARTTLS`
+  Authentication Method: Normal Password
+- Protocol: SMTP
+  Server: `smtp.office365.com`
+  Port: 587
+  Connection Security: `STARTTLS`
+  Authentication Method: Normal Password
+
+## Mutt
+
+![Mutt Screenshot](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Mutt.png/800px-Mutt.png)
 
 # Network
 
@@ -78,12 +99,9 @@ http://forum.notebookreview.com/threads/ssd-owners-set-firefox-to-memory-cache-i
     - `apt update`
     - `apt upgrade`
     - `apt dist-upgrade`
-- [RHEL/CentOS - `yum`](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/System_Administrators_Guide/ch-yum.html)
-- [Arch - `pacman`](https://wiki.archlinux.org/index.php/Pacman)
 
 ### Auto-updating
 
-- [yum-cron](https://linuxaria.com/howto/enabling-automatic-updates-in-centos-7-and-rhel-7)
 - [Debian Unattended Upgrades](https://wiki.debian.org/UnattendedUpgrades)
 - [Ubuntu cont-apt](http://www.techrepublic.com/article/automatically-update-your-ubuntu-system-with-cron-apt/)
 
