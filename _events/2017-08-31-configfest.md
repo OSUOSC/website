@@ -10,10 +10,12 @@ location: 'Caldwell 120'
 ## Addons
 
 - [Ublock Origin](https://github.com/gorhill/uBlock#ublock-origin)
-- [Https Everywhere](https://www.eff.org/https-everywhere)
-- [Decentraleyes](https://decentraleyes.org/)
-- [Self-Destructing Cookies](https://addons.mozilla.org/en-US/android/addon/self-destructing-cookies/?src=api)
-    - Post-WebExtensions: [Cookie Autodelete](https://addons.mozilla.org/en-GB/firefox/addon/cookie-autodelete/)
+- [Https Everywhere](https://www.eff.org/files/https-everywhere-test/index.html)
+- [Decentraleyes](https://github.com/Synzvato/decentraleyes/releases)
+- [Cookie Autodelete](https://addons.mozilla.org/en-GB/firefox/addon/cookie-autodelete/)
+- [Taborama](https://github.com/kesselborn/taborama)
+- Tile Tabs
+- [xStyle](https://github.com/FirefoxBar/xStyle)
 
 ## Custom Settings
 
@@ -58,6 +60,10 @@ http://forum.notebookreview.com/threads/ssd-owners-set-firefox-to-memory-cache-i
 ## Mutt
 
 ![Mutt Screenshot](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Mutt.png/800px-Mutt.png)
+
+# Riot
+
+[Yet another Messaging Platform](https://www.freelock.com/blog/john-locke/2016-12/yet-another-messaging-platform-why-riot)
 
 # Network
 
