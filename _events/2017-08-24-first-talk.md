@@ -16,6 +16,19 @@ location: 'Caldwell 120'
 - [Events](https://opensource.osu.edu/events/)
 - [Mailing List](https://opensource.osu.edu/mailing-list/)
 
+## In Recent Open Source and IT News
+- **Richard Stallman is coming to town week of September 7th!** (Stallman himself will be covered more in detail later at this meeting)
+- [Controversy surrounds YouTube flagging and removing videos from war-ravaged Syria on their website.](http://money.cnn.com/2017/08/24/technology/culture/youtube-syria-videos/index.html)
+	- Troubles advocates working to preserve records of humanitarian crises
+	- raises questions about the fine line tech companies walk in moderating violent and shocking content, since such content is vital in documenting human suffering and international law violations.
+- [Raspbian stretch has arrived for Raspberry Pi](https://www.raspberrypi.org/blog/raspbian-stretch/)
+	- Latest version of the Debian-based Raspberry Pi operating system.
+	- Most updates are "under-the-hood" optimizations.
+- [Linux desktop GUI GNOME celebrates its 20th birthday](http://www.zdnet.com/article/linux-desktop-gui-gnome-celebrates-its-20th-birthday/)
+	- All components of GNOME involve GPL (General Public License) software.
+	- Screenshot of a GNOME session running remotely via OSU's FastX 2 remote desktop connection:
+	<a href="http://i.imgur.com/IjSe8i5.jpg"><img src="http://i.imgur.com/IjSe8i5.jpg" alt="GNOME remote session screenshot"></a>
+
 ## [Constitution](https://opensource.osu.edu/info/constitution/)
 
 ## Volunteering
