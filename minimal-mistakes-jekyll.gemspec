@@ -23,6 +23,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-feed", "~> 0.9.2"
   spec.add_runtime_dependency "jekyll-data", "~> 1.0"
   spec.add_runtime_dependency "jemoji", "~> 0.8"
+  spec.add_runtime_dependency "json", "~> 2.1"
   spec.add_runtime_dependency "octopress-paginate", "~>1.2.0"
   spec.add_runtime_dependency "jekyll-redirect-from", "~>0.12.0"
 
