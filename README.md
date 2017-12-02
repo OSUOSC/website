@@ -50,6 +50,7 @@ $ bundle exec rake gen_site
 $ ssh web3
 $ sudo rsync -av --delete ./website/_site /var/www/jekyll/
 $ sudo chown -R www-data:www-data /var/www/jekyll
+```
 
 ### Creating a new post
 
