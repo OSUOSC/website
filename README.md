@@ -107,17 +107,15 @@ After that, the page can be edited and content added. The content is broken up i
     ```
 ```
 
-#### NOTE: Since this does require `bundle` to be installed, it is presumed that the file would be created on `stallman2` or by another admin earlier in the week, so the impetus is not on the contributors to do so.
+#### NOTE
+
+Since running `bundle exec rake new_post` does require `bundle` to be installed, it is presumed that the file would be created on `stallman2` or by another admin earlier in the week, so the impetus is not on the contributors to do so.
 
 ---
 
 # Contributing
 
-Having trouble working with the theme? Found a typo in the documentation? Interested in adding a feature or [fixing a bug](https://github.com/mmistakes/minimal-mistakes/issues)? Then by all means [submit an issue](https://github.com/mmistakes/minimal-mistakes/issues/new) or [pull request](https://help.github.com/articles/using-pull-requests/). If this is your first pull request, it may be helpful to read up on the [GitHub Flow](https://guides.github.com/introduction/flow/) first.
-
-Minimal Mistakes has been designed as a base for you to customize and fit your site's unique needs. Please keep this in mind when requesting features and/or submitting pull requests. If it's not something that most people will use, I probably won't consider it. When in doubt ask. 
-
-This goes for author sidebar links and "share button" additions -- I have no intention of merging in every possibly option, the essentials are there to get you started :smile:.
+Having trouble working with the site? Found a typo in the documentation? Interested in adding a feature or [fixing a bug](https://github.com/osuosc/website/issues)? Then by all means [submit an issue](https://github.com/osuosc/website/issues/new) or [pull request](https://help.github.com/articles/using-pull-requests/). If this is your first pull request, it may be helpful to read up on the [GitHub Flow](https://guides.github.com/introduction/flow/) first.
 
 ### Pull Requests
 
@@ -135,7 +133,7 @@ To set up your environment to develop this theme, run `bundle install --path ${H
 
 Updateing the theme will require a rebase. There is a branch to do this, however, the upgrade process is undocumented. For those looking to update the theme, first take a look at the history of the commits (`git log`) and try to merge upstream with the fork. There will most likely be a conflict of history when you go to merge onto `master`, but that might be taken care of with the argument `--allow-unrelated-histories`. **USE THIS OPTION WITH CAUTION**.
 
-Consult an [officer]{{ /info/officers/ | absolute_url }}) before attempting to `rebase`.
+Consult an [officer]{{ /info/officers/ | absolute_url }}) before attempting to `git rebase`.
 
 ## Adding new pages
 
