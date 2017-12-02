@@ -52,14 +52,9 @@ $ sudo rsync -av --delete ./website/_site /var/www/jekyll/
 $ sudo chown -R www-data:www-data /var/www/jekyll
 ```
 
+## New Content
+
 ### Creating a new post
-
-#### TODO: There should be better ways to create a new:
-
-- Event
-- News
-- Tutorial
-- Info
 
 Every week, a new post is created for the news items to be gone over at the beginning of the meeting on Thursday. This is automatically generated in the same way that the site is generated and cleaned, by using `bundle`:
 
@@ -111,7 +106,27 @@ After that, the page can be edited and content added. The content is broken up i
 
 Since running `bundle exec rake new_post` does require `bundle` to be installed, it is presumed that the file would be created on `stallman2` or by another admin earlier in the week, so the impetus is not on the contributors to do so.
 
+#### TODO: There should be better ways to create a new:
+
+- Event
+- News
+- Tutorial
+- Info
+
+## Adding new pages
+
+If you go to add new pages to `_pages` the default header info should be:
+
+```
 ---
+layout: archive
+title: <title of page>
+permalink: /<link name>/
+---
+```
+
+And make sure that the permalink ends with a slash so that it's generated in the same form as the rest of the site.
+
 
 # Contributing
 
@@ -131,23 +146,9 @@ To set up your environment to develop this theme, run `bundle install --path ${H
 
 #### NOTE: If you're already on `stallman2`, these should already be installed system-wide
 
-Updateing the theme will require a rebase. There is a branch to do this, however, the upgrade process is undocumented. For those looking to update the theme, first take a look at the history of the commits (`git log`) and try to merge upstream with the fork. There will most likely be a conflict of history when you go to merge onto `master`, but that might be taken care of with the argument `--allow-unrelated-histories`. **USE THIS OPTION WITH CAUTION**.
+Updating the theme will require a rebase. There is a branch to do this, however, the upgrade process is undocumented. For those looking to update the theme, first take a look at the history of the commits (`git log`) and try to merge upstream with the fork. There will most likely be a conflict of history when you go to merge onto `master`, but that might be taken care of with the argument `--allow-unrelated-histories`. **USE THIS OPTION WITH CAUTION**.
 
-Consult an [officer]{{ /info/officers/ | absolute_url }}) before attempting to `git rebase`.
-
-## Adding new pages
-
-If you go to add new pages to `_pages` the default header info should be:
-
-```
----
-layout: archive
-title: <title of page>
-permalink: /<link name>/
----
-```
-
-And make sure that the permalink ends with a slash so that it's generated in the same form as the rest of the site.
+Consult an [officer](https://opensource.osu.edu/info/officers/) before attempting to `git rebase`.
 
 ---
 
