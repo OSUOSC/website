@@ -35,7 +35,7 @@ If you want to find out how to run the program in your base OS, take a look at t
 
 ## Build Website on `stallman2`
 
-Club members should be able to build the site, as all required software is installed _globally_ to build it. **HOWEVER** not all club members will have the appropriate permissions to deploy the site. If you are _not_ an officer and wish to make a change to the site, please follow the [Git Workflow]({{ '/tutorials/git-workflow/' | absolute_url }}), and submit a pull request on Github for the change to the site.
+Club members should be able to build the site, as all required software is installed _globally_ to build it. **HOWEVER** not all club members will have the appropriate permissions to deploy the site. If you are _not_ an officer and wish to make a change to the site, please follow the [Git Workflow](https://opensource.osu.edu/tutorials/git-workflow/), and submit a pull request on Github for the change to the site.
 
 ### For Officers
 
