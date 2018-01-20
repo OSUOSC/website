@@ -7,8 +7,8 @@ redirect_from:
 ---
 
 #### Spring 2018
-* Benevolent Dictator - Tommy `delgeez` Delgado (delgado.78@osu.edu)
-* Vice Chancellor - John `EDT` Markiewicz (markiewicz.22@osu.edu)
+* President - Tommy `delgeez` Delgado (delgado.78@osu.edu)
+* Vice President - John `EDT` Markiewicz (markiewicz.22@osu.edu)
 * Treasurer - Jack Moore (moore.3337@osu.edu)
 * Librarian - Andrew `smacz` Cziryak (cziryak.1@osu.edu)
 * PR Officer - Chris `brainblasted` Davis (davis.5373@osu.edu)
