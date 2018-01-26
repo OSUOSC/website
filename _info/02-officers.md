@@ -5,6 +5,12 @@ permalink: /info/officers/
 redirect_from:
     - /history/2015/07/23/officers/
 ---
+#### Fall 2018
+* President - Jack `jmoore53` Moore (moore.3337@osu.edu)
+* Vice President - John `EDT` Markiewicz (markiewicz.22@osu.edu)
+* Treasurer - Christopher `BrainBlasted` Davis (davis.5373@osu.edu)
+* Faculty Advisor - Matt Black (black.123@osu.edu)
+* Faculty Advisor - Jeremy Moore (morris.343@osu.edu)
 
 #### Spring 2018
 * President - Tommy `delgeez` Delgado (delgado.78@osu.edu)
