@@ -13,7 +13,7 @@ redirect_from:
 * Librarian - Andrew `smacz` Cziryak (cziryak.1@osu.edu)
 * PR Officer - Chris `brainblasted` Davis (davis.5373@osu.edu)
 * Faculty Advisor - Matt Black (black.123@osu.edu)
-* Faculty Advisor - Jeremy Moore (morris.343@osu.edu)
+* Faculty Advisor - Jeremy Morris (morris.343@osu.edu)
 
 #### Fall 2017
 * Benevolent Dictator - Ted Li (li.6998@osu.edu)
@@ -22,7 +22,7 @@ redirect_from:
 * System Administrator - John `EDT` Markiewicz (markiewicz.22@osu.edu)
 * PR Officer - Tommy `delgeez` Delgado (delgado.78@osu.edu)
 * Faculty Advisor - Matt Black (black.123@osu.edu)
-* Faculty Advisor - Jeremy Moore (morris.343@osu.edu)
+* Faculty Advisor - Jeremy Morris (morris.343@osu.edu)
 
 #### 2016-2017
 * Benevolent Dictator - Brandon `malide` Moore (moore.3071@osu.edu)
