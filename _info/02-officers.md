@@ -6,11 +6,21 @@ redirect_from:
     - /history/2015/07/23/officers/
 ---
 
-#### 2017-2018
+#### Spring 2018
+* President - Tommy `delgeez` Delgado (delgado.78@osu.edu)
+* Vice President - John `EDT` Markiewicz (markiewicz.22@osu.edu)
+* Treasurer - Jack Moore (moore.3337@osu.edu)
+* Librarian - Andrew `smacz` Cziryak (cziryak.1@osu.edu)
+* PR Officer - Chris `brainblasted` Davis (davis.5373@osu.edu)
+* Faculty Advisor - Matt Black (black.123@osu.edu)
+* Faculty Advisor - Jeremy Moore (morris.343@osu.edu)
+
+#### Fall 2017
 * Benevolent Dictator - Ted Li (li.6998@osu.edu)
 * Vice President - Andrew `smacz` Cziryak (cziryak.1@osu.edu)
 * Treasurer - Jack Moore (moore.3337@osu.edu)
 * System Administrator - John `EDT` Markiewicz (markiewicz.22@osu.edu)
+* PR Officer - Tommy `delgeez` Delgado (delgado.78@osu.edu)
 * Faculty Advisor - Matt Black (black.123@osu.edu)
 * Faculty Advisor - Jeremy Moore (morris.343@osu.edu)
 

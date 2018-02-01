@@ -1,6 +1,6 @@
-# [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/)
+# Open Source Club website
 
-## Forked for OSUOSC
+This Jekyll site is a fork of the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/).
 
 This means that all that is needed to add a talk or a news item in a weekly rundown is to issue a PR with the new item under the `_posts` or `_tutorials` directory respectively.
 
@@ -35,7 +35,7 @@ If you want to find out how to run the program in your base OS, take a look at t
 
 ## Build Website on `stallman2`
 
-Club members should be able to build the site, as all required software is installed _globally_ to build it. **HOWEVER** not all club members will have the appropriate permissions to deploy the site. If you are _not_ an officer and wish to make a change to the site, please follow the [Git Workflow]({{ '/tutorials/git-workflow/' | absolute_url }}), and submit a pull request on Github for the change to the site.
+Club members should be able to build the site, as all required software is installed _globally_ to build it. **HOWEVER** not all club members will have the appropriate permissions to deploy the site. If you are _not_ an officer and wish to make a change to the site, please follow the [Git Workflow](https://opensource.osu.edu/tutorials/git-workflow/), and submit a pull request on Github for the change to the site.
 
 ### For Officers
 
@@ -50,15 +50,11 @@ $ bundle exec rake gen_site
 $ ssh web3
 $ sudo rsync -av --delete ./website/_site /var/www/jekyll/
 $ sudo chown -R www-data:www-data /var/www/jekyll
+```
+
+## New Content
 
 ### Creating a new post
-
-#### TODO: There should be better ways to create a new:
-
-- Event
-- News
-- Tutorial
-- Info
 
 Every week, a new post is created for the news items to be gone over at the beginning of the meeting on Thursday. This is automatically generated in the same way that the site is generated and cleaned, by using `bundle`:
 
@@ -106,17 +102,35 @@ After that, the page can be edited and content added. The content is broken up i
     ```
 ```
 
-#### NOTE: Since this does require `bundle` to be installed, it is presumed that the file would be created on `stallman2` or by another admin earlier in the week, so the impetus is not on the contributors to do so.
+#### NOTE
 
+Since running `bundle exec rake new_post` does require `bundle` to be installed, it is presumed that the file would be created on `stallman2` or by another admin earlier in the week, so the impetus is not on the contributors to do so.
+
+#### TODO: There should be better ways to create a new:
+
+- Event
+- News
+- Tutorial
+- Info
+
+## Adding new pages
+
+If you go to add new pages to `_pages` the default header info should be:
+
+```
 ---
+layout: archive
+title: <title of page>
+permalink: /<link name>/
+---
+```
+
+And make sure that the permalink ends with a slash so that it's generated in the same form as the rest of the site.
+
 
 # Contributing
 
-Having trouble working with the theme? Found a typo in the documentation? Interested in adding a feature or [fixing a bug](https://github.com/mmistakes/minimal-mistakes/issues)? Then by all means [submit an issue](https://github.com/mmistakes/minimal-mistakes/issues/new) or [pull request](https://help.github.com/articles/using-pull-requests/). If this is your first pull request, it may be helpful to read up on the [GitHub Flow](https://guides.github.com/introduction/flow/) first.
-
-Minimal Mistakes has been designed as a base for you to customize and fit your site's unique needs. Please keep this in mind when requesting features and/or submitting pull requests. If it's not something that most people will use, I probably won't consider it. When in doubt ask. 
-
-This goes for author sidebar links and "share button" additions -- I have no intention of merging in every possibly option, the essentials are there to get you started :smile:.
+Having trouble working with the site? Found a typo in the documentation? Interested in adding a feature or [fixing a bug](https://github.com/osuosc/website/issues)? Then by all means [submit an issue](https://github.com/osuosc/website/issues/new) or [pull request](https://help.github.com/articles/using-pull-requests/). If this is your first pull request, it may be helpful to read up on the [GitHub Flow](https://guides.github.com/introduction/flow/) first.
 
 ### Pull Requests
 
@@ -132,23 +146,9 @@ To set up your environment to develop this theme, run `bundle install --path ${H
 
 #### NOTE: If you're already on `stallman2`, these should already be installed system-wide
 
-Updateing the theme will require a rebase. There is a branch to do this, however, the upgrade process is undocumented. For those looking to update the theme, first take a look at the history of the commits (`git log`) and try to merge upstream with the fork. There will most likely be a conflict of history when you go to merge onto `master`, but that might be taken care of with the argument `--allow-unrelated-histories`. **USE THIS OPTION WITH CAUTION**.
+Updating the theme will require a rebase. There is a branch to do this, however, the upgrade process is undocumented. For those looking to update the theme, first take a look at the history of the commits (`git log`) and try to merge upstream with the fork. There will most likely be a conflict of history when you go to merge onto `master`, but that might be taken care of with the argument `--allow-unrelated-histories`. **USE THIS OPTION WITH CAUTION**.
 
-Consult an [officer]{{ /info/officers/ | absolute_url }}) before attempting to `rebase`.
-
-## Adding new pages
-
-If you go to add new pages to `_pages` the default header info should be:
-
-```
----
-layout: archive
-title: <title of page>
-permalink: /<link name>/
----
-```
-
-And make sure that the permalink ends with a slash so that it's generated in the same form as the rest of the site.
+Consult an [officer](https://opensource.osu.edu/info/officers/) before attempting to `git rebase`.
 
 ---
 
