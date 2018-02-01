@@ -6,5 +6,5 @@ services:
     command: /usr/sbin/apache2 -D FOREGROUND
     ports:
       - "8000:80"
-        #    volumes:
-        #      - ./:/opt/jekyll/
+#   volumes:
+#     - ./:/opt/jekyll/

@@ -21,4 +21,5 @@ RUN rm -rf Gemfile.lock
 RUN bundle exec rake gen_site
 RUN cp -ar $BUILD_DIR/_site/* $APP_HOME
 
+
 CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]

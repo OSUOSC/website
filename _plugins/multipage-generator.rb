@@ -15,7 +15,7 @@ module Jekyll
                         super
 
                         # Configuration options. Can be set globally in site YAML, and/or overridden per post.
-                        @config_collation_enabled = "multipage_collation_enabled" # boolean true
+                        @config_collation_enabled = "multipage_collation_enabled" # boolean true 
                         @config_collate_on_root_page = "multipage_collate_on_root_page" # boolean false
                         @config_collated_page_slug = "multipage_collated_page_slug" # string "all"
                         @config_first_page_number = "multipage_first_page_number" # number 1
