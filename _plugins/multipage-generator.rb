@@ -1,3 +1,6 @@
+#
+## Is broken as of 2018-02-01
+#
 module Jekyll
 
         class MultiPage < Page
