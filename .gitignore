@@ -13,4 +13,5 @@ Gemfile.lock
 node_modules
 npm-debug.log*
 *.swo
-*.swp 
+*.swp
+.idea/
