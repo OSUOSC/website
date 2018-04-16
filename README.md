@@ -1,5 +1,7 @@
 # Open Source Club website
 
+![Travis CI Badge](https://travis-ci.org/OSUOSC/website.svg?branch=master)
+
 This Jekyll site is a fork of the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/).
 
 This means that all that is needed to add a talk or a news item in a weekly rundown is to issue a PR with the new item under the `_posts` or `_tutorials` directory respectively.
