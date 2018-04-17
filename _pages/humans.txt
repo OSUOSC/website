@@ -3,7 +3,7 @@ permalink: /humans.txt
 ---
   Organization: The Open Source Club at The Ohio State University
   Website: https://opensource.osu.edu
-  Contact: info@opensource.osu.edu
+  Contact: opensource@cse.ohio-state.edu
 
   Maintainer: AndrewCz
   Contact: cziryak.1@osu.edu
