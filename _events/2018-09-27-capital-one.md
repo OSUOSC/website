@@ -1,5 +1,5 @@
 ---
-title: "Cloud Initiatives"
+title: "Trends in Open Source"
 speaker: "Capital One"
 type: "Meeting"
 time: '19:30'
