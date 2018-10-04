@@ -1,12 +1,12 @@
 ---
-title: "Cloud Initiatives"
+title: "Trends in Open Source"
 speaker: "Capital One"
 type: "Meeting"
 time: '19:30'
 location: 'Caldwell 120'
 ---
 
-This week we will be having Capital One in to talk about some of their cloud initiatives as well as what DevOps is like at Capital One!
+This week we will be having Capital One in to talk about trends in open source software!
 
 It is also worth mentioning Capital One is offering an internship program and a career development program for recent graduates. The links are below:
 
