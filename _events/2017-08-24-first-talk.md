@@ -39,8 +39,8 @@ location: 'Caldwell 120'
 * Vice President - Andrew `smacz` Cziryak (cziryak.1@osu.edu)
 * Treasurer - Jack Moore (moore.3337@osu.edu)
 * System Administrator - John `EDT` Markiewicz (markiewicz.22@osu.edu)
-* Faculty Advisor - Matt Black (black.123@osu.edu)
-* Faculty Advisor - Jeremy Moore (morris.343@osu.edu)
+* Advisor - Matt Black (black.123@osu.edu)
+* Advisor - Jeremy Moore (morris.343@osu.edu)
 
 # Development
 
