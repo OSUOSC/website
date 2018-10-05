@@ -1,6 +1,6 @@
 ---
 title: "Linuxfest"
-speaker: "Misc"
+speaker: "The Open Source Club at The Ohio State University"
 type: "Convention"
 time: '0900'
 location: 'Hyatt Regency'
