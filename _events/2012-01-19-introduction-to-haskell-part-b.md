@@ -1,4 +1,5 @@
 ---
+date: 2012-01-19
 title: Introduction to Haskell Part B
 ---
 *Introduction to Haskell Part B*

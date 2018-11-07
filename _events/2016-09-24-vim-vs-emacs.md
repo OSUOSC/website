@@ -1,4 +1,5 @@
 ---
+date: 2016-09-24
 title: Vim vs Emacs
 speaker: EDT and malide
 type: Meeting

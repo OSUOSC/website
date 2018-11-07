@@ -1,4 +1,5 @@
 ---
+date: 2018-04-05
 title: "Crypto War II"
 speaker: "Matt Curtin"
 type: "Meeting"

@@ -1,4 +1,5 @@
 ---
+date: 2016-03-10
 title: Open Source and Linux Gaming
 speaker: Nikit Malkan (Nefari0uss) and William Osler (LibreWulf)
 type: Meeting

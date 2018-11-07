@@ -1,4 +1,5 @@
 ---
+date: 2018-03-01
 title: "Free Software"
 speaker: "Chris `brainblasted` Davis"
 type: "Meeting"

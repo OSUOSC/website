@@ -1,4 +1,5 @@
 ---
+date: 2018-09-13
 title: "High-Performance Computing"
 speaker: "Dhabaleswar K. (DK) Panda"
 type: "Meeting"

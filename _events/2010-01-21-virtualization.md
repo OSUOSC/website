@@ -1,4 +1,5 @@
 ---
+date: 2010-01-21
 type: "Meeting"
 title: Virtualization
 ---

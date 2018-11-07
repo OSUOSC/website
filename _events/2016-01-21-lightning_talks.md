@@ -1,4 +1,5 @@
 ---
+date: 2016-01-21
 title: Meeting Planning + Lightning Talks
 speaker: Various Club Members
 type: Meeting

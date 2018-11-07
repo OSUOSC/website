@@ -1,4 +1,5 @@
 ---
+date: 2014-09-11
 title: Wireless Security
 speaker: Chris Wallace
 type: Meeting

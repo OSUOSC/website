@@ -1,4 +1,5 @@
 ---
+date: 2017-04-13
 title: "Open Source Radio"
 speaker: "Dan Zeleznikar"
 type: "Meeting"

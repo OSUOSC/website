@@ -1,4 +1,5 @@
 ---
+date: 2011-01-20
 type: "Party"
 title: Quiz Bowl with UPE and ACM-W
 ---

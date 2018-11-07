@@ -1,4 +1,5 @@
 ---
+date: 2014-10-16
 title: Love your Music and Movies again with Linux
 speaker: Chris Wallace
 type: Meeting

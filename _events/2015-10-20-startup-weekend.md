@@ -1,4 +1,5 @@
 ---
+date: 2015-10-20
 title: Startup Weekend
 speaker: CoverMyMeds
 type: Convention

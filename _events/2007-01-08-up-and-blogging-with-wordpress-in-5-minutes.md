@@ -1,4 +1,5 @@
 ---
+date: 2007-01-08
 type: "Meeting"
 title: Up and Blogging with Wordpress in 5 Minutes
 ---

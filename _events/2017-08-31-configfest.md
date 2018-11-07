@@ -1,4 +1,5 @@
 ---
+date: 2017-08-31
 title: "Configfest"
 speaker: "Andrew `smacz` Cziryak"
 type: "Meeting"

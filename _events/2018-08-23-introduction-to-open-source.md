@@ -1,4 +1,5 @@
 ---
+date: 2018-08-23
 title: "Introduction to Open Source"
 speaker: "Andrew `smacz` Cziryak, Jack `jmoore` Moore"
 type: "Meeting"

@@ -1,4 +1,5 @@
 ---
+date: 2009-04-24
 type: "Meeting"
 title: Computer Vision & Robotics
 ---

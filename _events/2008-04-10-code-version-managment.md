@@ -1,4 +1,5 @@
 ---
+date: 2008-04-10
 type: "Meeting"
 title: Code Version Managment
 ---

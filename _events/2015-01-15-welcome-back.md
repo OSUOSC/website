@@ -1,4 +1,5 @@
 ---
+date: 2015-01-15
 title: Welcome Back
 speaker: OSC
 type: Meeting

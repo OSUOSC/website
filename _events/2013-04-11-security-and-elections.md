@@ -1,4 +1,5 @@
 ---
+date: 2013-04-11
 title: Security and Elections
 ---
 This Thursday, 2013/04/11 at 7:00pm in Dreese Labs 369, the Ohio State Open Source Club will be presenting Security. This will be a talk consisting of multiple members going up and speaking about different topics in the open source world of security.

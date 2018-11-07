@@ -1,4 +1,5 @@
 ---
+date: 2015-09-23
 title: Engineering Expo Career Fair
 speaker: OSC
 type: Volunteer

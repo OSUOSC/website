@@ -1,4 +1,5 @@
 ---
+date: 2017-11-30
 title: "Developing OpenStack"
 speaker: "David Stanek"
 type: "Meeting"

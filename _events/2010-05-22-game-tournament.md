@@ -1,4 +1,5 @@
 ---
+date: 2010-05-22
 type: "Party"
 title: Game Tournament
 ---

@@ -1,4 +1,5 @@
 ---
+date: 2007-04-17
 type: "Meeting"
 title: Crashing Windows Vista Launch Party
 created: 1176796022

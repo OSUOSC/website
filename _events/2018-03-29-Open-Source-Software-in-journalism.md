@@ -1,4 +1,5 @@
 ---
+date: 2018-03-29
 title: "Open Source Software in Journalism"
 speaker: "Ben Keith"
 type: "Meeting"

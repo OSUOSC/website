@@ -1,4 +1,5 @@
 ---
+date: 2010-04-08
 type: "Meeting"
 title: Language Lightning Talks
 ---

@@ -1,4 +1,5 @@
 ---
+date: 2012-05-17
 title: Elections, LaTeX, and LAN party
 ---
 Elections for the OSU Open Source Club officer positions are currently planned for May 17th, 2012\. They will take place in the normal meeting room (Dreese 369) and at the normal time (7:00PM EDT). If the date does not work for you and you are a voting club member (ie, you are a student and have attended at least one meeting prior to the vote), please contact the club offers as soon as possible and we will see what we can do. Three positions need to be filled. More details about the responsibilities of each member can be found in the [club constitution](/constitution) on our web page.

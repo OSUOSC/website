@@ -1,4 +1,5 @@
 ---
+date: 2017-01-26
 title: "MVAPICH and High Power Computing"
 speaker: "Professor DK Panda"
 type: "Meeting"

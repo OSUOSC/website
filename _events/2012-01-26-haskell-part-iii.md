@@ -1,4 +1,5 @@
 ---
+date: 2012-01-26
 title: 'Haskell: Part III'
 ---
 Thursday January 26th, 2012

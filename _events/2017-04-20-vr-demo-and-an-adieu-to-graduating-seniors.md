@@ -1,4 +1,5 @@
 ---
+date: 2017-04-20
 title: "VR Demo And An Adieu To Graduating Seniors"
 speaker: "Brandon 'Bam' Moore (malide)"
 type: "Meeting"

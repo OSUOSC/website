@@ -1,4 +1,5 @@
 ---
+date: 2014-01-16
 title: Virtualization
 ---
 Greetings!

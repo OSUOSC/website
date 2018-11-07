@@ -1,4 +1,5 @@
 ---
+date: 2018-08-30
 title: "Introduction to the CLI"
 speaker: "Andrew `smacz` Cziryak"
 type: "Meeting"

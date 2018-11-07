@@ -1,4 +1,5 @@
 ---
+date: 2016-02-18
 title: Intermediate Vim
 speaker: Jonathan Arnett (J3RN)
 type: Meeting

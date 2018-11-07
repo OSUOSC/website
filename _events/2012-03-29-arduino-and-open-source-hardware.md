@@ -1,4 +1,5 @@
 ---
+date: 2012-03-29
 title: Arduino and Open Source Hardware
 ---
 THIS WEEK IN OPEN SOURCE!:

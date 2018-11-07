@@ -1,4 +1,5 @@
 ---
+date: 2019-02-07
 title: "An Introduction to WebAssembly"
 speaker: "Guy Royse of DataRobot"
 type: "Meeting"

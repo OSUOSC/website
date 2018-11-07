@@ -1,4 +1,5 @@
 ---
+date: 2008-02-28
 type: "Meeting"
 title: Silverstripe Meeting Tonight
 ---

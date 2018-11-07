@@ -1,4 +1,5 @@
 ---
+date: 2006-10-25
 type: "Meeting"
 title: The Internet is Burning...
 ---

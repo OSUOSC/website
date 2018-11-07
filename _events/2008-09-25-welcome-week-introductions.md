@@ -1,4 +1,5 @@
 ---
+date: 2008-09-25
 type: "Meeting"
 title: Welcome Week Introductions
 ---

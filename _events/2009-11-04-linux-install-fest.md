@@ -1,4 +1,5 @@
 ---
+date: 2009-11-04
 type: "Meeting"
 title: Linux Install Fest
 ---

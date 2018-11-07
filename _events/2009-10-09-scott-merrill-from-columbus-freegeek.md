@@ -1,4 +1,5 @@
 ---
+date: 2009-10-09
 type: "Meeting"
 title: Scott Merrill from Columbus FreeGeek
 ---

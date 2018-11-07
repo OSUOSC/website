@@ -1,4 +1,5 @@
 ---
+date: 2014-09-04
 title: Linux Installfest
 speaker: Chris Wallace
 type: Meeting

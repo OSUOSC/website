@@ -1,4 +1,5 @@
 ---
+date: 2009-05-29
 type: "Meeting"
 title: Updating the Constitution
 ---

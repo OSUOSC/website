@@ -1,4 +1,5 @@
 ---
+date: 2014-11-02
 title: Introduction to Security Concepts
 speaker: John Toterhi from Batelle
 type: Meeting

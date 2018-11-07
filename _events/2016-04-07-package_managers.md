@@ -1,4 +1,5 @@
 ---
+date: 2016-04-07
 title: Package managers and Open Source election
 speaker: "Brandon 'Bam' Moore (malide)"
 type: Meeting

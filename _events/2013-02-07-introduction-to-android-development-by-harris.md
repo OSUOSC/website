@@ -1,4 +1,5 @@
 ---
+date: 2013-02-07
 title: Introduction to Android Development by Harris
 ---
 Hello everyone!

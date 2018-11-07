@@ -1,4 +1,5 @@
 ---
+date: 2010-02-11
 type: "Meeting"
 title: Alternative Window Managers
 ---

@@ -1,4 +1,5 @@
 ---
+date: 2016-12-01
 title: Von Neumann machines
 speaker: Jonathan Arnett (J3RN)
 type: Meeting

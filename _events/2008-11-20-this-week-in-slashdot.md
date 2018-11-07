@@ -1,4 +1,5 @@
 ---
+date: 2008-11-20
 type: "Meeting"
 title: This Week in Slashdot
 ---

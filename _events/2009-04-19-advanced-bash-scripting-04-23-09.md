@@ -1,4 +1,5 @@
 ---
+date: 2009-04-19
 type: "Meeting"
 title: Advanced Bash Scripting
 ---

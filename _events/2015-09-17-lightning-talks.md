@@ -1,4 +1,5 @@
 ---
+date: 2015-09-17
 title: Lightning Talks
 speaker: Various Club Members
 type: Meeting

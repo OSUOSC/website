@@ -1,4 +1,5 @@
 ---
+date: 2014-02-20
 title: OSC Goes to COLUG! (OpenStack)
 ---
 Greetings Everyone,

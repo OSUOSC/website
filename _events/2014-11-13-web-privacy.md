@@ -1,4 +1,5 @@
 ---
+date: 2014-11-13
 title: Web Privacy
 speaker: OSC
 type: Meeting

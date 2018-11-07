@@ -1,4 +1,5 @@
 ---
+date: 2011-11-17
 title: Open Source Multiplayer Games
 ---
 This week I will be demonstrating several open source multiplayer games we will be playing at our LAN party on Saturday!

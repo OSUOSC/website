@@ -1,4 +1,5 @@
 ---
+date: 2015-08-27
 title: First Meeting of the Semester
 speaker: Eli Gladman
 type: Meeting

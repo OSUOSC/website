@@ -1,4 +1,5 @@
 ---
+date: 2012-10-04
 title: Open Source and Your Music
 ---
 Hello everyone!

@@ -1,4 +1,5 @@
 ---
+date: 2015-11-05
 title: License to Code
 speaker: "Brandon 'Bam' Moore (malide)"
 type: Meeting

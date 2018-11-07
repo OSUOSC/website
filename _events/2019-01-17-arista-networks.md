@@ -1,4 +1,5 @@
 ---
+date: 2019-01-17
 title: "How Arista Networks grew from $0 -$1+ billion using Open Source Principles"
 speaker: "Bob Fenner and Chris Kane of Arista Networks"
 type: "Meeting"

@@ -1,4 +1,5 @@
 ---
+date: 2007-01-25
 type: "Meeting"
 title: 'Meetings: Winter 2007'
 ---

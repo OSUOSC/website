@@ -1,4 +1,5 @@
 ---
+date: 2008-12-04
 type: "Meeting"
 title: Shell scripting
 ---

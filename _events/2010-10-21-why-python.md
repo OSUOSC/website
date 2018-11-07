@@ -1,4 +1,5 @@
 ---
+date: 2010-10-21
 type: "Meeting"
 title: Why Python?
 ---

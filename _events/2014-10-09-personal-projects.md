@@ -1,4 +1,5 @@
 ---
+date: 2014-10-09
 title: Personal Projects Lightning Talks
 speaker: Various Club Members
 type: Meeting

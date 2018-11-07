@@ -1,4 +1,5 @@
 ---
+date: 2010-04-29
 type: "Meeting"
 title: (Attempting) Linux on Anything
 ---

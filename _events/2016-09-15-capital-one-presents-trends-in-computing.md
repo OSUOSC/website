@@ -1,4 +1,5 @@
 ---
+date: 2016-09-15
 title: Capital One presents trends in computing
 speaker: Kapil Thangavelu
 type: Meeting

@@ -1,4 +1,5 @@
 ---
+date: 2010-05-27
 type: "Meeting"
 title: Elections for the 2010/2011 Year
 ---

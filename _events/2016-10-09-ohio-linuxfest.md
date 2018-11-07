@@ -1,4 +1,5 @@
 ---
+date: 2016-10-09
 title: Ohio LinuxFest
 speaker: OSC
 type: Convention

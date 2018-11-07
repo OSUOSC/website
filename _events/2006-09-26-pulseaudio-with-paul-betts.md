@@ -1,4 +1,5 @@
 ---
+date: 2006-09-26
 type: "Meeting"
 title: PulseAudio with Paul Betts
 ---

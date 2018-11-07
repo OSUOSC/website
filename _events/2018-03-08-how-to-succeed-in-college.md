@@ -1,4 +1,5 @@
 ---
+date: 2018-03-08
 title: "Stuff I Learned in College That I Actually Use"
 speaker: "Jon `J3RN` Arnett"
 type: "Meeting"

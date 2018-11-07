@@ -1,4 +1,5 @@
 ---
+date: 2010-10-07
 type: "Meeting"
 title: Mua the Mutt
 ---

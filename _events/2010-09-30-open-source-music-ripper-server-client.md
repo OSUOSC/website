@@ -1,4 +1,5 @@
 ---
+date: 2010-09-30
 type: "Meeting"
 title: Open Source Music Ripper / Server / Client
 created: 1285605899

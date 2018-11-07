@@ -1,4 +1,5 @@
 ---
+date: 2012-10-11
 title: Introduction to Vim
 ---
 Thursday, October 11th at 7:00PM in Dreese Labs 264, Daniel Thau will be presenting an introduction to the Vim text editor.  Vim is known for having a difficult learning curve, but for many of those who do any appreciable amount of work editing text (such as, but not limited to, programming), the benefits can far outweigh the costs.

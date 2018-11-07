@@ -1,4 +1,5 @@
 ---
+date: 2017-02-23
 title: "Neural Networks and Deep Learning"
 speaker: "Reza Farivar from Capital One"
 type: "Meeting"

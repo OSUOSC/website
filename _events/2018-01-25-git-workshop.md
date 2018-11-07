@@ -1,4 +1,5 @@
 ---
+date: 2018-01-25
 title: "Git Workshop and Elections"
 speaker: "OSC Officers"
 type: "Meeting"

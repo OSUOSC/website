@@ -1,4 +1,5 @@
 ---
+date: 2016-10-20
 title: PGP Key Signing Party
 speaker: Michael Yanovich (yano)
 type: Meeting

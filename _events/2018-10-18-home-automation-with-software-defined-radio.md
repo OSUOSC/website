@@ -1,4 +1,5 @@
 ---
+date: 2018-10-18
 title: "Hacking Home Automation with Software-Defined Radio"
 speaker: "Andrew Makovec"
 type: "Meeting"

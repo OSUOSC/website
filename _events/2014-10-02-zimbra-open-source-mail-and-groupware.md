@@ -1,4 +1,5 @@
 ---
+date: 2014-10-02
 title: 'Zimbra: Open Source Mail and Groupware'
 speaker: William Osler (LibreWulf)
 type: Meeting

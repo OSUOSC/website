@@ -1,4 +1,5 @@
 ---
+date: 2010-09-23
 type: "Meeting"
 title: Overview of free desktop operating systems
 ---

@@ -1,4 +1,5 @@
 ---
+date: 2008-03-03
 type: "Meeting"
 title: Hacking the Wiimote
 ---

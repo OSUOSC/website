@@ -1,4 +1,5 @@
 ---
+date: 2018-02-15
 title: "Citizenfour"
 speaker: "Laura Poitras, Glenn Greenwald, and Edward Snowden"
 type: "Meeting"

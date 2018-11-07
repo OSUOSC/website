@@ -1,4 +1,5 @@
 ---
+date: 2009-09-21
 type: "Meeting"
 title: First Meeting of the Year
 ---

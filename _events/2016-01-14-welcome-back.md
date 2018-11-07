@@ -1,4 +1,5 @@
 ---
+date: 2016-01-14
 title: Welcome Back
 speaker: Eli Gladman
 type: Meeting

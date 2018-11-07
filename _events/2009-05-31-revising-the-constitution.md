@@ -1,4 +1,5 @@
 ---
+date: 2009-05-31
 type: "Meeting"
 title: Revising the Constitution
 ---

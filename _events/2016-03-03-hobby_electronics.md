@@ -1,4 +1,5 @@
 ---
+date: 2016-03-03
 title: Open Source Hardware and Hobby Electronics
 speaker: Alex Fuhr (aftrumpet)
 type: Meeting

@@ -1,4 +1,5 @@
 ---
+date: 2016-03-24
 title: A Recap of NICAR, and open source in journalism
 speaker: Ben Keith
 type: Meeting

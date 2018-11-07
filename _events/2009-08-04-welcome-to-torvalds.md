@@ -1,4 +1,5 @@
 ---
+date: 2009-08-04
 type: "Meeting"
 title: Welcome to Torvalds!
 ---

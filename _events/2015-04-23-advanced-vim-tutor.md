@@ -1,4 +1,5 @@
 ---
+date: 2015-04-23
 title: Advanced Vim Tutor
 speaker: Daniel Thau (paradigm)
 type: Meeting

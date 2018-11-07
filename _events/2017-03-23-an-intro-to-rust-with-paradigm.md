@@ -1,4 +1,5 @@
 ---
+date: 2017-03-23
 title: "An Intro to Rust"
 speaker: "Danial Thau (paradigm)"
 type: "Meeting"

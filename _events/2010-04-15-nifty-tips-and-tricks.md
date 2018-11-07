@@ -1,4 +1,5 @@
 ---
+date: 2010-04-15
 type: "Meeting"
 title: Nifty Tips and Tricks
 ---

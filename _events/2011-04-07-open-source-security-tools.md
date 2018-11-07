@@ -1,4 +1,5 @@
 ---
+date: 2011-04-07
 type: Meeting
 ---
 This Thursday, April 7 at 7PM in Dreese 264, Alek Rollyson will be covering open source security tools from protocol analyzers to vulnerability scanners. This talk is meant as a general overview of tools available as well as their practical applications in security audits and penetration testing. Tools and topics covered will include:

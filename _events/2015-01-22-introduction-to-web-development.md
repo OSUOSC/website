@@ -1,4 +1,5 @@
 ---
+date: 2015-01-22
 title: Introduction to Web Development
 speaker: Jonathan Arnett (J3RN)
 type: Meeting

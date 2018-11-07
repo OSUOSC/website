@@ -1,4 +1,5 @@
 ---
+date: 2017-01-19
 title: "Linux tips and tricks"
 speaker: "Stephen Haffner (yupyupp)"
 type: "Meeting"

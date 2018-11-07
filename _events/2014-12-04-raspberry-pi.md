@@ -1,4 +1,5 @@
 ---
+date: 2014-12-04
 title: Raspberry Pi
 speaker: OSC
 type: Meeting

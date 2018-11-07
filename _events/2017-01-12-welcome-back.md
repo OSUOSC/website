@@ -1,4 +1,5 @@
 ---
+date: 2017-01-12
 title: "Welcome Back"
 speaker: "Brandon 'Bam' Moore (malide)"
 type: "Meeting"

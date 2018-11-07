@@ -1,4 +1,5 @@
 ---
+date: 2010-11-04
 type: "Meeting"
 title: Model View Controllers
 ---

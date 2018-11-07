@@ -1,4 +1,5 @@
 ---
+date: 2006-09-30
 type: "Meeting"
 title: Ohio LinuxFest 2006
 ---

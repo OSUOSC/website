@@ -1,4 +1,5 @@
 ---
+date: 2015-11-12
 title: Git - An Introduction and Explanation
 speaker: Nikit Malkan (Nefari0uss)
 type: Meeting

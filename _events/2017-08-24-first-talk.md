@@ -1,4 +1,5 @@
 ---
+date: 2017-08-24
 title: "What is Open Source"
 speaker: "Andrew `smacz` Cziryak"
 type: "Meeting"

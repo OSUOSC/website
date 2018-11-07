@@ -1,4 +1,5 @@
 ---
+date: 2006-10-16
 type: "Meeting"
 title: 'Net Neutrality Debate : 5 Oct 2006'
 ---

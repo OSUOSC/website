@@ -1,4 +1,5 @@
 ---
+date: 2012-10-18
 title: What NOT to do with your F/OSS Operating System
 ---
 Hey everyone,

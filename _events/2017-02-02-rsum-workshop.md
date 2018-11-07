@@ -1,4 +1,5 @@
 ---
+date: 2017-02-02
 title: "Résumé Workshop"
 speaker: "The Harris Corporation"
 type: "Meeting"

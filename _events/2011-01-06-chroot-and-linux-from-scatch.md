@@ -1,4 +1,5 @@
 ---
+date: 2011-01-06
 title: "Chroot and Linux from Scratch"
 type: "Meeting"
 ---

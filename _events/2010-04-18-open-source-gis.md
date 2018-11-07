@@ -1,4 +1,5 @@
 ---
+date: 2010-04-18
 type: "Meeting"
 title: Open Source GIS
 ---

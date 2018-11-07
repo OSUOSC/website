@@ -1,4 +1,5 @@
 ---
+date: 2018-09-20
 title: "Open Source Web Tools"
 speaker: "Cover My Meds"
 type: "Meeting"

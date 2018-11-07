@@ -1,4 +1,5 @@
 ---
+date: 2012-02-09
 title: The Shibboleth Project and Web Authentication at OSU
 ---
 This Thursday at 7:00PM, in [Dreese Lab](http://www.osu.edu/map/building.php?building=279) room 266, Scott Cantor will be presenting on OSU's [central web-based authentication](https://webauth.service.ohio-state.edu/%7Eshibboleth/) system, [Shibboleth](http://shibboleth.internet2.edu/). Many of Ohio State's web-based applications and services rely on this open source project for authentication of students and employees and to obtain information about those users for personalization or limiting access to authorized users.

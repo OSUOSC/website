@@ -1,4 +1,5 @@
 ---
+date: 2015-11-26
 title: Network Maintenance and Upgrades
 speaker: William Osler (LibreWulf)
 type: Internal

@@ -1,4 +1,5 @@
 ---
+date: 2007-11-15
 type: "Meeting"
 title: Google Android
 ---

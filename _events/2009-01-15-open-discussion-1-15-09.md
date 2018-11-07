@@ -1,4 +1,5 @@
 ---
+date: 2009-01-15
 type: "Meeting"
 title: Open Discussion
 ---

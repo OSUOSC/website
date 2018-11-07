@@ -1,4 +1,5 @@
 ---
+date: 2014-01-23
 title: Distributed Version Control Systems
 ---
 Greetings!

@@ -1,4 +1,5 @@
 ---
+date: 2008-01-19
 type: "Meeting"
 title: Student Involvement Fair 2006 Photos
 ---

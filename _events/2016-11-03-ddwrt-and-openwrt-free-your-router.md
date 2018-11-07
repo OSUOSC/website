@@ -1,4 +1,5 @@
 ---
+date: 2016-11-03
 title: DDWRT and OpenWRT, free your router
 speaker: OSC
 type: Meeting

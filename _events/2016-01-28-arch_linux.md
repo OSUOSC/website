@@ -1,4 +1,5 @@
 ---
+date: 2016-01-28
 title: Arch Linux
 speaker: William Osler (LibreWulf)
 type: Meeting

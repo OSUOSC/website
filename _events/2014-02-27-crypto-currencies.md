@@ -1,4 +1,5 @@
 ---
+date: 2014-02-27
 title: Crypto Currencies
 ---
 Greetings everyone, sorry for the late email this week.

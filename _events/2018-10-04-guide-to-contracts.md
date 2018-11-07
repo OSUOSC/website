@@ -1,4 +1,5 @@
 ---
+date: 2018-10-04
 title: "A Quick Guide to Contracts"
 speaker: "Jack `jmoore53` Moore"
 type: "Meeting"

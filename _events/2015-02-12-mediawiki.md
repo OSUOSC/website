@@ -1,4 +1,5 @@
 ---
+date: 2015-02-12
 title: MediaWiki
 speaker: Kevin Payravi
 type: Meeting

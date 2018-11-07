@@ -1,4 +1,5 @@
 ---
+date: 2012-01-12
 title: Introduction to Haskell Part 0
 ---
 *Introduction to Haskell Part 0*

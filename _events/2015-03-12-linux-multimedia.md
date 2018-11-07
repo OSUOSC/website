@@ -1,4 +1,5 @@
 ---
+date: 2015-03-12
 title: Linux Multimedia
 speaker: Brandon Dahl (riffer)
 type: Meeting

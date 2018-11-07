@@ -1,4 +1,5 @@
 ---
+date: 2014-10-23
 title: Open Source at Facebook
 speaker: Patrick Shuff from Facebook
 type: Meeting

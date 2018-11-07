@@ -1,4 +1,5 @@
 ---
+date: 2010-02-04
 type: "Meeting"
 title: Intermediate and Advanced Python
 ---

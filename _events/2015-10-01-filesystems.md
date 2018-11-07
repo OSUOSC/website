@@ -1,4 +1,5 @@
 ---
+date: 2015-10-01
 title: Logical Volumes and Fancy Filesystems
 speaker: Matt Meinwald (meinwald)
 type: Meeting

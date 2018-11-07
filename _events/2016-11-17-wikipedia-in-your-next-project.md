@@ -1,4 +1,5 @@
 ---
+date: 2016-11-17
 title: Wikipedia in your next project
 speaker: Kevin Payravi
 type: Meeting

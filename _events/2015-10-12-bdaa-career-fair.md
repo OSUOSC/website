@@ -1,4 +1,5 @@
 ---
+date: 2015-10-12
 title: BDAA Career Fair
 speaker: OSC
 type: Volunteer

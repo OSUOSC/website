@@ -1,4 +1,5 @@
 ---
+date: 2010-03-04
 type: "Meeting"
 title: Maximizing Battery Life in Linux
 ---

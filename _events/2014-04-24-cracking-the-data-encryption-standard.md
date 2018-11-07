@@ -1,4 +1,5 @@
 ---
+date: 2014-04-24
 title: Cracking the Data Encryption Standard
 ---
 Thursday, April 24th 2014 in Caldwell Labs 120, C. Matthew Curtin will present "Cracking the Data Encryption Standard."

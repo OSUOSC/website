@@ -1,4 +1,5 @@
 ---
+date: 2015-08-30
 title: Linux Installfest
 speaker: OSC
 type: Meeting

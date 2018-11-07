@@ -1,4 +1,5 @@
 ---
+date: 2011-01-04
 type: "Internal"
 title: OSU Sign-on and OpenID Now Supported
 ---

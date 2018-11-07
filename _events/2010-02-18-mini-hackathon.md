@@ -1,4 +1,5 @@
 ---
+date: 2010-02-18
 type: "Party"
 title: Mini Hackathon!
 ---

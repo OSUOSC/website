@@ -1,4 +1,5 @@
 ---
+date: 2018-04-19
 title: "Python, Snippets from the Wild"
 speaker: "Andrew `smacz` Cziryak"
 type: "Meeting"

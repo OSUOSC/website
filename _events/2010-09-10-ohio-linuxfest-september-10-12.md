@@ -1,4 +1,5 @@
 ---
+date: 2010-09-10
 type: "Convention"
 title: Ohio Linuxfest September 10-12
 ---

@@ -1,4 +1,5 @@
 ---
+date: 2011-10-03
 title: Making Pictures Lie
 ---
 This Thursday, in Dreese Lab room 266, I will demonstrating how you can make pictures lie using only open source software. Fanboys will often proclaim what they can do in a certain expensive proprietary image editor that shall not be named, so I'm going to demonstrate just the same things are do-able from another certain free, open source program. My claim is that [GIMP](http://www.gimp.org/) is *just* as capable of making your pictures lie as any other mainstream image manipulation software.

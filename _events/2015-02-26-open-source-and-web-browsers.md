@@ -1,4 +1,5 @@
 ---
+date: 2015-02-26
 title: Open Source and Web Browsers
 speaker: Nikit Malkar (paradigm)
 type: Meeting

@@ -1,4 +1,5 @@
 ---
+date: 2010-11-18
 type: "Meeting"
 title: Xen Virtualization
 ---

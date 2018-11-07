@@ -1,4 +1,5 @@
 ---
+date: 2013-01-31
 title: GIMP Image Editing
 speaker: "Brian Swaney"
 type: "Meeting"

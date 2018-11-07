@@ -1,4 +1,5 @@
 ---
+date: 2008-03-27
 type: "Meeting"
 title: Spring 2008 - First Meeting
 ---

@@ -1,4 +1,5 @@
 ---
+date: 2016-09-08
 title: Intro to the Command line
 speaker: "Brandon 'Bam' Moore (malide)"
 type: Meeting

@@ -1,4 +1,5 @@
 ---
+date: 2008-11-06
 type: "Meeting"
 title: Interface Design
 ---

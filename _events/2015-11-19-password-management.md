@@ -1,4 +1,5 @@
 ---
+date: 2015-11-19
 title: Password Management
 speaker: Eli Gladman
 type: Meeting

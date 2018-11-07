@@ -1,4 +1,5 @@
 ---
+date: 2012-03-08
 title: That's What She Said and Planning
 ---
 I apologize for the late meeting topic announcement, but there were some unexpected delays.

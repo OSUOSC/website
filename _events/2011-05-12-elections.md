@@ -1,4 +1,5 @@
 ---
+date: 2011-05-12
 title: Elections
 ---
 Club elections will be held May 12, 2011. If you are interested in running, please email elections@opensource.osu.edu in order to be listed here and in the meeting announcement. Any OSU student who has been to at least one meeting is eligible to run for president, vice president, or treasurer.

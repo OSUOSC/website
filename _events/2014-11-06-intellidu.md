@@ -1,4 +1,5 @@
 ---
+date: 2014-11-06
 title: Intellidu
 speaker: John Simmerlink
 type: Meeting

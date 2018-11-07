@@ -1,4 +1,5 @@
 ---
+date: 2006-09-21
 type: "Meeting"
 title: Welcome Back with Alex! / Ideas for Ohio LinuxFest
 ---

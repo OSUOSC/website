@@ -1,4 +1,5 @@
 ---
+date: 2015-04-09
 title: Cryptocurrencies and Elections
 speakers: Alex Krieger (kriegersaurusrex)
 type: Meeting

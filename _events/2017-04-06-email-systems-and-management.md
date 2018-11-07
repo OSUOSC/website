@@ -1,4 +1,5 @@
 ---
+date: 2017-04-06
 title: "Email systems and management"
 speaker: "Stephen Haffner (yupyupp)"
 type: "Meeting"

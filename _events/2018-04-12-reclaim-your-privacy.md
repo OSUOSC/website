@@ -1,4 +1,5 @@
 ---
+date: 2018-04-12
 title: "Reclaim Your Privacy"
 speaker: "Christopher `brainblasted` Davis"
 type: "Meeting"

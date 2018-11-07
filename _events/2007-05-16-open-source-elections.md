@@ -1,4 +1,5 @@
 ---
+date: 2007-05-16
 type: "Meeting"
 title: Open Source Elections
 ---

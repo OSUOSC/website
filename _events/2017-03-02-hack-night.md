@@ -1,4 +1,5 @@
 ---
+date: 2017-03-02
 title: "Hack Night"
 speaker: Various Club Members
 type: "Meeting"

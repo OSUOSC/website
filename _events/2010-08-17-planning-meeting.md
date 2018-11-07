@@ -1,4 +1,5 @@
 ---
+date: 2010-08-17
 type: "Meeting"
 title: Planning Meeting [8/17/2010]
 ---

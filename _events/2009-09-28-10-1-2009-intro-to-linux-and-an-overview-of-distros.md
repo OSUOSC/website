@@ -1,4 +1,5 @@
 ---
+date: 2009-09-28
 type: "Meeting"
 title: Intro to Linux and an Overview of Distros
 ---

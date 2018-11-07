@@ -1,4 +1,5 @@
 ---
+date: 2013-03-21
 title: Shell Scripting
 ---
 Thursday, March 21nd, 2013 in Dreese Labs 369, Daniel Thau will present an introduction to POSIX Bourne shell scripting.  A general familiarity with a UNIX command line environment and UNIX utilities (grep, sed, awk, etc) will be useful but not required. If you've ever expressed interest in making your life easier at the command line, this could be the talk for you.

@@ -1,4 +1,5 @@
 ---
+date: 2015-04-02
 title: BeagleBone and Embedded Linux
 speaker: Eli Gladman
 type: Meeting

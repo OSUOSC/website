@@ -1,4 +1,5 @@
 ---
+date: 2015-09-10
 title: Introduction to the Command Line
 speaker: Eli Gladman
 type: Meeting

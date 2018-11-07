@@ -1,4 +1,5 @@
 ---
+date: 2015-03-26
 title: PostgreSQL
 speaker: Jeff Casavant
 type: Meeting

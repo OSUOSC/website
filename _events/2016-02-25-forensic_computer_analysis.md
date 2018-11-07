@@ -1,4 +1,5 @@
 ---
+date: 2016-02-25
 title: Forensic Data Analysis
 speaker: Matt Curtin
 type: Meeting

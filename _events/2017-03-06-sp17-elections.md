@@ -1,4 +1,5 @@
 ---
+date: 2017-03-06
 title: "Spring 2017 Open Source Club Officer Elections"
 speaker: OSC
 type: "Announcement"

@@ -1,4 +1,5 @@
 ---
+date: 2016-04-21
 title: Why Open Source at Microsoft?
 speaker: Brian Sherwin
 type: Meeting

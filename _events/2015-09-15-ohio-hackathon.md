@@ -1,4 +1,5 @@
 ---
+date: 2015-09-15
 title: OHI/O 2015 Hackathon
 speaker: OSC
 type: Volunteer

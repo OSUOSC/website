@@ -1,4 +1,5 @@
 ---
+date: 2011-01-27
 type: "Meeting"
 title: An Introduction to Blender!
 ---

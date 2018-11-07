@@ -1,4 +1,5 @@
 ---
+date: 2015-10-10
 title: Engineering Homecoming Tailgate
 speaker: OSC
 type: Volunteer

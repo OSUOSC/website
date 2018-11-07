@@ -1,4 +1,5 @@
 ---
+date: 2009-10-07
 type: "Meeting"
 title: Open Source Club IRC Rules
 ---

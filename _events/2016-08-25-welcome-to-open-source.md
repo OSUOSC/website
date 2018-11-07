@@ -1,4 +1,5 @@
 ---
+date: 2016-08-25
 title: Welcome To Open Source
 speaker: "Brandon 'Bam' Moore (malide)"
 type: Meeting

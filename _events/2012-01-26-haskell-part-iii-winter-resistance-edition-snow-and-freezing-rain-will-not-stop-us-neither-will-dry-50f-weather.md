@@ -1,4 +1,5 @@
 ---
+date: 2012-01-26
 title: 'Haskell: Part III: Winter Resistance Edition: Snow and Freezing Rain Will
   Not Stop Us (neither will dry, 50F weather)'
 ---

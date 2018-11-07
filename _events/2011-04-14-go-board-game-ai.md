@@ -1,4 +1,5 @@
 ---
+date: 2011-04-14
 title: Go (board game) AI
 ---
 This Thursday, April 14th at 7PM in Dreese 264, Daniel Thau will be giving a presentation on open source artificial intelligence for the board game Go.

@@ -1,4 +1,5 @@
 ---
+date: 2016-10-27
 title: Wireless Security
 speaker: William Osler (LibreWulf)
 type: Meeting

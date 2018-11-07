@@ -1,4 +1,5 @@
 ---
+date: 2018-09-27
 title: "Trends in Open Source"
 speaker: "Capital One"
 type: "Meeting"

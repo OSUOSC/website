@@ -1,4 +1,5 @@
 ---
+date: 2014-02-06
 title: Filesystems
 ---
 This Thursday, February 6th at 7:00pm in Caldwell Labs 120, Paul Schellin will present "Filesystems"

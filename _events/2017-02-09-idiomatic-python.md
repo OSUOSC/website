@@ -1,4 +1,5 @@
 ---
+date: 2017-02-09
 title: "Idomatic Python"
 speaker: "Brian Costlow"
 type: "Meeting"

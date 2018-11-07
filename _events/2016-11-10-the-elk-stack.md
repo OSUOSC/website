@@ -1,4 +1,5 @@
 ---
+date: 2016-11-10
 title: The ELK Stack
 speaker: David Soller
 type: Meeting

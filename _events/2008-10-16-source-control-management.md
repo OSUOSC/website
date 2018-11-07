@@ -1,4 +1,5 @@
 ---
+date: 2008-10-16
 type: "Meeting"
 title: Source Control Management
 ---

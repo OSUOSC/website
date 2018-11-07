@@ -1,4 +1,5 @@
 ---
+date: 2018-10-12
 title: "Linuxfest"
 speaker: "The Open Source Club at The Ohio State University"
 type: "Convention"

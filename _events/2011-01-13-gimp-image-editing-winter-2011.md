@@ -1,4 +1,5 @@
 ---
+date: 2011-01-13
 type: "Meeting"
 title: Gimp Image Editing - Winter 2011
 ---

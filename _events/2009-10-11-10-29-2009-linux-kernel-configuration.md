@@ -1,4 +1,5 @@
 ---
+date: 2009-10-11
 type: "Meeting"
 title: Linux Kernel Configuration
 ---

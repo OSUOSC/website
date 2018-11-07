@@ -1,4 +1,5 @@
 ---
+date: 2010-11-12
 type: "Meeting"
 title: The Git Distributed Version Control System
 ---

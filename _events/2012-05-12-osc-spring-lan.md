@@ -1,4 +1,5 @@
 ---
+date: 2012-05-12
 title: OSC Spring LAN
 ---
 The OSC will be hosting its second LAN of the academic year on May 12th, 2012.

@@ -1,4 +1,5 @@
 ---
+date: 2010-05-20
 type: "Meeting"
 title: Open Source Gaming
 ---

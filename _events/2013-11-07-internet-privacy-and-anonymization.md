@@ -1,4 +1,5 @@
 ---
+date: 2013-11-07
 title: Internet Privacy and Anonymization
 ---
 Hey everyone, sorry for the late email!

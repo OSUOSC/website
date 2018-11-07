@@ -1,4 +1,5 @@
 ---
+date: 2010-11-21
 type: "Meeting"
 title: No Meeting this Week
 ---

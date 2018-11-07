@@ -1,4 +1,5 @@
 ---
+date: 2009-01-07
 type: "Meeting"
 title: Wireless hacking
 ---

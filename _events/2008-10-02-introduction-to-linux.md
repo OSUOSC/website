@@ -1,4 +1,5 @@
 ---
+date: 2008-10-02
 type: "Meeting"
 title: Introduction to Linux
 ---

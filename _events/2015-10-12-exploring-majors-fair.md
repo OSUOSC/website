@@ -1,4 +1,5 @@
 ---
+date: 2015-10-12
 title: Exploring Majors Fair
 speaker: OSC
 type: Volunteer

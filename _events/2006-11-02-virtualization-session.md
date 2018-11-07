@@ -1,4 +1,5 @@
 ---
+date: 2006-11-02
 type: "Meeting"
 title: Virtualization Session
 ---

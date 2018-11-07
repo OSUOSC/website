@@ -1,4 +1,5 @@
 ---
+date: 2010-03-11
 type: "Meeting"
 title: Command Line Applications
 ---

@@ -1,4 +1,5 @@
 ---
+date: 2012-11-01
 title: Open Stack
 ---
 This Thursday, November 1st at 7:00PM in Dreese Labs 266, Joel Friedly will be presenting an overview of OpenStack.

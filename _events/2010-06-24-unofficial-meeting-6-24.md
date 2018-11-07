@@ -1,4 +1,5 @@
 ---
+date: 2010-06-24
 type: "Meeting"
 title: Unofficial Meeting 6/24
 ---

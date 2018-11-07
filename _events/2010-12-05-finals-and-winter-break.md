@@ -1,4 +1,5 @@
 ---
+date: 2010-12-05
 type: "Meeting"
 title: Finals and Winter Break
 ---

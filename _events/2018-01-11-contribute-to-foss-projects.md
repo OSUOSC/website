@@ -1,4 +1,5 @@
 ---
+date: 2018-01-11
 title: "Contribute to FOSS Projects"
 speaker: "Chris `brainblasted` Davis"
 type: "Meeting"

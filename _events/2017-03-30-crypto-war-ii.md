@@ -1,4 +1,5 @@
 ---
+date: 2017-03-30
 title: "Crypto War II"
 speaker: "Matt Curtin"
 type: "Meeting"

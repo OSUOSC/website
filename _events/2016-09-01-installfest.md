@@ -1,4 +1,5 @@
 ---
+date: 2016-09-01
 title: InstallFest
 speaker: "Brandon 'Bam' Moore (malide)"
 type: Meeting

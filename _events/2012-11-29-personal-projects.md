@@ -1,4 +1,5 @@
 ---
+date: 2012-11-29
 title: Personal Projects
 ---
 Hello everyone!

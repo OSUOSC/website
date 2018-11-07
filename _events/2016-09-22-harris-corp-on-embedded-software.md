@@ -1,4 +1,5 @@
 ---
+date: 2016-09-22
 title: Harris Corp on embedded software
 speaker: Tim Armstrong
 type: Meeting

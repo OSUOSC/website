@@ -1,4 +1,5 @@
 ---
+date: 2017-03-09
 title: "Ansible And Elections"
 speaker: "Andrew Cz (smacz)"
 type: "Meeting"

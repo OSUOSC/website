@@ -1,4 +1,5 @@
 ---
+date: 2014-08-28
 title: What is Open Source?
 speaker: OSC
 type: Meeting

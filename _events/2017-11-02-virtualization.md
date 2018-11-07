@@ -1,4 +1,5 @@
 ---
+date: 2017-11-02
 title: "Virtualization"
 speaker: "Andrew `smacz` Cziryak"
 type: "Meeting"

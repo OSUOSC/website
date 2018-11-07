@@ -1,4 +1,5 @@
 ---
+date: 2006-09-10
 type: "Meeting"
 title: 'Updated: Student Involvement Fair/Ohio LinuxFest pamphlet'
 ---

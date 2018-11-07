@@ -1,4 +1,5 @@
 ---
+date: 2018-02-22
 title: "ledger-cli"
 speaker: "Daniel `paradigm` Thau"
 type: "Meeting"

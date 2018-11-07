@@ -1,4 +1,5 @@
 ---
+date: 2016-10-06
 title: Android vulnerabilities and security
 speaker: Chandler Freeman
 type: Meeting

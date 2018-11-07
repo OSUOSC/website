@@ -1,4 +1,5 @@
 ---
+date: 2014-01-09
 title: Welcome Back
 ---
 Hello everyone!

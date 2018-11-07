@@ -1,4 +1,5 @@
 ---
+date: 2010-10-14
 type: "Meeting"
 title: GIMP Image editing - Autumn 2010
 ---

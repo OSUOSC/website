@@ -1,4 +1,5 @@
 ---
+date: 2009-04-09
 type: "Meeting"
 title: Effective sshd_config
 ---

@@ -1,4 +1,5 @@
 ---
+date: 2014-09-18
 title: Introduction to the Command Line
 speaker: George Kvaratskhelia
 type: Meeting

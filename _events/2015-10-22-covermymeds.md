@@ -1,4 +1,5 @@
 ---
+date: 2015-10-22
 title: Working in a Production Environment
 speaker: Jay Bobo and Vasanth Pappu from CoverMyMeds
 type: Meeting

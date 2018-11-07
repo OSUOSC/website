@@ -1,4 +1,5 @@
 ---
+date: 2009-05-15
 type: "Meeting"
 title: Embedded Control for Art & Music
 ---
