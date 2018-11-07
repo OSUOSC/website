@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:16.04
 
 RUN apt-get update && apt-get install -y ruby-dev libffi-dev apache2 git build-essential libxml2-dev zlib1g-dev && gem install bundler
 

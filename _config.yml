@@ -219,7 +219,6 @@ pagination:
     limit: false
     per_page: 10
     title_suffix: " (page :num)"
-    reversed: true
 
 multipage_page_title_expanded_format: ":post_title"
 #multipage_collate_on_root_page: true
