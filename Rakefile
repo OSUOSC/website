@@ -126,117 +126,10 @@ EOF
     end
 end
 
-def enter_event(file, date, event)
-    # Get the yaml info fo the post
-    page = YAML.load_file(event)
-    # default for "meeting" is "success"
-    btn_type = "success"
-    case page['type']
-    when "Convention"
-        btn_type = "warning"
-    when "Volunteer"
-        btn_type = "danger"
-    when "Internal"
-        btn_type = "info"
-    when "Party"
-        btn_type = "light-outline"
-    end
-    tmp_file = File.open("/tmp/calendar.tmp", 'w')
-    #tmp = ''
-    File.readlines(file).each do |line|
-        idx = line.index(date.strftime(' %d')).to_i
-        if idx > 0
-            idx = idx + date.strftime(' %d').length
-            tmp_file << line.insert(idx, "<br /> [#{page['title']}](/events/#{event.rpartition('/')[2][0..-4]}/){: .btn .btn--#{btn_type}}")
-        else
-            #tmp << line
-            tmp_file << line
-        end
-    end
-    tmp_file.close
-    FileUtils.mv(tmp_file, file)
-    #puts tmp
-end
-
-def calendar_skeleton(basename, date)
-    File.open("#{basename}/_calendar/#{date.strftime('%Y-%m')}-01-calendar.md", 'wb') do |file|
-        # What day of the week is the first in numbers? Sunday is zero
-        first_day_num = Date.new(date.year, date.month, 01).strftime('%w').to_i
-        # What is the last day fo the month
-        # The append here is actually an "add 'n' to month" command
-        last_day_date = Date.new(date.year, (date >> 1).month, 01)
-        # A raw '-' subtracts one day from the date
-        last_day_num = (last_day_date - 1).strftime('%d').to_i
-        # Since we're using the full jekyll file format (YYYY-MM-DD-title.md) to get the date,
-        # we are going to make the url pretty.
-        table = "---\npermalink: /calendar/#{date.strftime('%Y-%m')}/\n---\n"
-        table << <<-EOF
-|Sun|Mon|Tue|Wed|Thu|Fri|Sat|
-|:---:||:---:|:---:|:---:|:---:|:---:|:---:|
-EOF
-        # First row - have to factor in first_day_num
-        str = "| "
-        table << "#{str.ljust((first_day_num * 2 + 2), str)}"
-        current_day = 1
-        (1..(7 - first_day_num )).each do |i|
-            table << "#{i.to_s.rjust(2, "0")} | "
-            current_day += 1
-        end
-        table << "\n"
-        # Cycle through the full weeks
-        while (eow = (current_day + 7)) < last_day_num do
-            while current_day < eow do
-                table << "| #{current_day.to_s.rjust(2, "0")}"
-                current_day += 1
-            end
-            table << " |\n"
-        end
-        # Finish it off
-        end_padding = (7 - (last_day_num - current_day))
-        ((current_day)..(last_day_num)).each do |i|
-            table << "| #{current_day.to_s.rjust(2, "0")}"
-            current_day += 1
-        end
-        str = "| "
-        # Fix off-by-one error
-        (1..(end_padding)).each do |_|
-            #table << "#{str.ljust((end_padding - 1), str)}"
-            table << " |"
-        end
-        file.puts table
-    end
-end
-
-
-#
-# TODO: Support events with multiple date ranges
-#
-def populate_calendar(basename)
-    calendar_directory = '_calendar/'
-    events_directory = '_events/'
-    # TODO: Make sure this is ruby-esque
-    FileUtils.rm_rf(basename.join(calendar_directory).to_s)
-    FileUtils::mkdir_p(basename.join(calendar_directory).to_s)
-    # Create current month's file right off the bat, b/c we link to that and it _always_ needs to exist, even if it's during the summer, and there are no events that month
-    calendar_skeleton(basename, Date.today)
-    Dir[basename.join(events_directory).to_s + "*"].each do |event|
-        date = Date.strptime(event.rpartition('/')[2][0..9], '%Y-%m-%d')
-        month_file = "#{basename}/_calendar/#{date.strftime('%Y-%m')}-01-calendar.md"
-        if File.exist? File.path(month_file)
-            enter_event(month_file, date, event)
-        else
-            # File not yet created - create the calendar skeleton and populate file
-            calendar_skeleton(basename, date)
-            enter_event(month_file, date, event)
-        end
-    end
-end
-
 task :clean do
   basename = Pathname.new('.').expand_path
   local_clear_yaml(NEWS_PATHNAME)
   FileUtils.rm_rf(basename.join('_site/').to_s)
-  FileUtils.rm_rf(basename.join('_calendar/').to_s)
 end
 
 task :gen_site do
@@ -244,11 +137,9 @@ task :gen_site do
   basename = Pathname.new('.').expand_path
   local_clear_yaml(NEWS_PATHNAME)
   FileUtils.rm_rf(basename.join('_site/').to_s)
-  FileUtils.rm_rf(basename.join('_calendar/').to_s)
 
   # Render site
   local_render_yaml(NEWS_PATHNAME)
-  populate_calendar(basename)
   options = {
     "destination"   => basename.join('_site').to_s,
     "theme"         => "minimal-mistakes-jekyll",
@@ -264,7 +155,6 @@ end
 
 task :new_post do
     FileUtils.rm_rf(basename.join('_site/').to_s)
-    FileUtils.rm_rf(basename.join('_calendar/').to_s)
     local_clear_yaml(NEWS_PATHNAME)
     new_post_template()
 end

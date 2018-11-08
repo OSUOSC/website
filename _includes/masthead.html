@@ -10,11 +10,7 @@
             {% else %}
               {% assign domain = site.url | append: site.baseurl %}
             {% endif %}
-            {% if link.url == '/calendar/' %}
-                <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}{{ site.time | date: '%Y-%m'}}">{{ link.title }}</a></li>
-            {% else %}
                 <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
-            {% endif %}
           {% endfor %}
         </ul>
         <button><div class="navicon"></div></button>
