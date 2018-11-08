@@ -6,7 +6,6 @@ layout: archive
 ---
 
 {% include base_path %}
-{% include toc %}
 
 ## Privacy Policy
 
