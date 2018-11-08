@@ -141,9 +141,6 @@ collections:
   info:
     output: true
     permalink: /:collection/:path/
-#  calendar:
-#    output: true
-#    permalink: /:collection/:path/
   news:
     output: true
     permalink: /:collection/:path/
@@ -181,14 +178,6 @@ defaults:
       share: true
       sidebar:
         nav: "info"
-  # _calendar
-#  - scope:
-#      path: ""
-#      type: calendar
-#    values:
-#      layout: calendar
-#      author_profile: true
-#      comments: true
   # _posts
   - scope:
       path: ""
