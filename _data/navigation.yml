@@ -10,6 +10,10 @@ main:
     url: /info/
   - title: "Calendar"
     url: /calendar/
+  - title: "Nextcloud"
+    url: /nextcloud/
+  - title: "Kanboard"
+    url: /kanboard/
 
 tutorials:
   - title: "Club Tutorials"
