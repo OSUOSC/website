@@ -1,5 +1,5 @@
 ---
-date: 2019-02-07
+date: 2018-11-15
 title: "Bedrock Linux"
 speaker: "Daniel `paradigm` Thau"
 type: "Meeting"
