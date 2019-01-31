@@ -1,5 +1,5 @@
 ---
-date: 2019-02-07
+date: 2019-01-31
 title: "Introduction to Serverless Computing with AWS Lambda"
 speaker: "Frank Lamantia"
 type: "Meeting"
