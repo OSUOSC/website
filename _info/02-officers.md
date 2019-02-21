@@ -5,6 +5,13 @@ permalink: /info/officers/
 redirect_from:
     - /history/2015/07/23/officers/
 ---
+#### Spring 2019
+* President - Jack `jmoore53` Moore (moore.3337@osu.edu)
+* Vice President - John `EDT` Markiewicz (markiewicz.22@osu.edu)
+* Treasurer - Tom Casavant (casavant.6@osu.edu)
+* Advisor - Matt Black (black.123@osu.edu)
+* Advisor - Jeremy Moore (morris.343@osu.edu)
+
 #### Fall 2018
 * President - Jack `jmoore53` Moore (moore.3337@osu.edu)
 * Vice President - John `EDT` Markiewicz (markiewicz.22@osu.edu)
