@@ -1,5 +1,5 @@
 ---
-date: 2019-04-04
+date: 2019-04-11
 title: "Writing Well Behaved Command Line Applications"
 speaker: "Dave Forgac"
 type: "Meeting"
