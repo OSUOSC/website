@@ -1,9 +1,26 @@
 +++
 title = "About"
-description = "Lorem ipsum."
 +++
 
-# Constitution
-
-
 # Officers
+
+**President** - Tom Casavant
+
+**Vice President** - Shaffan Mustafa
+
+**Treasurer** - Joshua Kingsbury
+
+**System Administrator** - Dominik Winecki
+
+**Advisor** - Matt Black
+
+**Advisor** - Jeremy Morris
+
+A list of our former officers is available [here](/former-officers).
+
+
+# Website
+
+Would we really be an open source org if we didn't list our underlying tech?
+
+Our [website](https://github.com/osuosc/website) is built with [Hugo](https://gohugo.io/) and uses the [Kube](https://github.com/jeblister/kube) theme.
