@@ -1,5 +1,6 @@
 +++
 title = "About"
+description = "Our mission is to create an environment where the benefits of open development enable students to collaborate and explore beyond the classroom."
 +++
 
 # Officers

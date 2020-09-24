@@ -13,5 +13,9 @@ theme = "kube"
     url = "/events"
 
 [params]
+
+# Use this to display a message on  the home page
+#    message = "Hello"
+
     twitter = "osuosc"
     github = "OSUOSC"

@@ -8,6 +8,13 @@
     <p>{{.Description}}</p>
     <h3>Meetings every other Thursday @ 7:00</h3>
   </div>
+
+  {{ if isset .Site.Params "message" }}
+  <div class="message focus" data-component="message"> <span class="close small"></span>
+    {{ .Site.Params.message }}
+  </div>
+  {{ end }}
+
   <div id="kube-features">
     <div class="row gutters">
       <div class="col col-6 item">
