@@ -1,4 +1,4 @@
-# Open Source Website
+# Open Source Club Website
 
 Uses [Hugo](https://gohugo.io/), so building should be as easy as `hugo` and dev with `hugo server`.
 
