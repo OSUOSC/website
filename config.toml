@@ -13,3 +13,4 @@ theme = "kube"
 
 [params]
     twitter = "osuosc"
+    github = "OSUOSC"
