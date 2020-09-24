@@ -30,4 +30,5 @@ jobs:
           REPO: self
           BRANCH: deploy-temp
           FOLDER: public
+          SQUASH_HISTORY: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
