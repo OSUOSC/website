@@ -10,3 +10,6 @@ theme = "kube"
 [[menu.main]]
     name = "Events"
     url = "/events"
+
+[params]
+    twitter = "osuosc"
