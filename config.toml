@@ -1,4 +1,12 @@
-baseURL = "http://example.org/"
+baseURL = "https://opensource.osu.edu/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Open Source Club"
 theme = "kube"
+
+[[menu.main]]
+    name = "About"
+    url = "/about"
+
+[[menu.main]]
+    name = "Events"
+    url = "/events"
