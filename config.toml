@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "Open Source Club"
 description = "At The Ohio State University"
 theme = "kube"
+paginate = 15
 
 [[menu.main]]
     name = "About"
