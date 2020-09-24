@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [ new-site ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+
+      - name: Install Hugo
+        run: sudo apt update && sudo apt install -y hugo
+
+      - name: Print Version
+        run: hugo version
+
+      - name: Build
+        run: hugo
