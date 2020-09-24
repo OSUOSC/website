@@ -1,8 +1,0 @@
----
-date: 2010-08-17
-type: "Meeting"
-title: Planning Meeting [8/17/2010]
----
-We will be having a planning meeting at 7:30PM on Tuesday, August 17, in Dreese Labs room 266.
-
-This meeting will mostly be aimed at preparing for autumn quarter, including scheduling as many of those meetings as possible, and deciding on our fall event. If time permits, it will also include a technical overview of our computer systems for future admins. This meeting is optional, but strongly encouraged for officers, and somewhat encouraged for people interested in presenting next quarter. If you want to give a presentation but cannot attend the meeting, just send an email to meetings@opensource.osu.edu with your meeting topic and availability to present, and we'll put just as much effort into fitting you into the schedule as if you were able to attend. If you are available during the meeting time, but cannot be there in person, you can join us remotely by IRC (#osu_osc on freenode, check http://opensource.osu.edu/irc for details).
