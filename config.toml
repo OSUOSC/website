@@ -16,7 +16,7 @@ paginate = 15
 [params]
 
 # Use this to display a message on  the home page
-    message = "Next meeting 10/29 at 7PM! (https://go.osu.edu/opensourcezoom)"
+    message = "Next meeting 11/12 at 7PM! (https://go.osu.edu/opensourcezoom)"
 
     twitter = "osuosc"
     github = "OSUOSC"
