@@ -16,6 +16,6 @@ Aircrack-ng is available in almost any linux distribution repository. I know it'
 For more information about John The Ripper: http://www.openwall.com/john/
 For more information about aircrack-ng: http://www.aircrack-ng.org/
 
-If you want walk through what I'll be covering, please come prepared (if possible, with the software installed and ready to go). If you have any trouble respond to the email or catch us on IRC ([#osuosc](https://webchat.libera.chat/?channels=osuosc) on Libera) and we'll help you out.
+If you want walk through what I'll be covering, please come prepared (if possible, with the software installed and ready to go). If you have any trouble respond to the email or catch us on IRC ([#osuosc](irc://irc.libera.chat/osuosc) on [Libera](https://libera.chat/) and we'll help you out.
 
 UPDATE: 2012/09/22 -- The presentation used during the talk is now available on this page. Don't forget that in addition to files being hosted here, they are also available at my personal website, https://yanovich.net/.public/wifi/
