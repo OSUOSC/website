@@ -7,11 +7,9 @@ description = "Our mission is to create an environment where the benefits of ope
 
 **President** - Tom Casavant
 
-**Vice President** - Shaffan Mustafa
+**Vice President** - Dominik Winecki
 
 **Treasurer** - Joshua Kingsbury
-
-**System Administrator** - Dominik Winecki
 
 **Advisor** - Matt Black
 

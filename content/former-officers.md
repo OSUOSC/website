@@ -3,6 +3,21 @@ title = "Former Officers"
 description = "A list of all of the previous officers and faulty advisors that have served the Open Source Club"
 +++
 
+#### 2020-2021
+* President - Tom Casavant (casavant.6@osu.edu)
+* Vice President - Dominik Winecki (winecki.1@osu.edu)
+* Treasurer - Joshua Kingsbury (kingsbury.18@osu.edu)
+* Advisor - Matt Black (black.123@osu.edu)
+* Advisor - Jeremy Morris (morris.343@osu.edu)
+
+#### 2019-2020
+* President - Tom Casavant (casavant.6@osu.edu)
+* Vice President - Shaffan Mustafa (mustafa.55@osu.edu)
+* Treasurer - Joshua Kingsbury (kingsbury.18@osu.edu)
+* System Administrator - Dominik Winecki (winecki.1@osu.edu)
+* Advisor - Matt Black (black.123@osu.edu)
+* Advisor - Jeremy Morris (morris.343@osu.edu)
+
 #### Spring 2019
 * President - Jack `jmoore53` Moore (moore.3337@osu.edu)
 * Vice President - John `EDT` Markiewicz (markiewicz.22@osu.edu)
