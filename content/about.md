@@ -5,17 +5,9 @@ description = "Our mission is to create an environment where the benefits of ope
 
 # Officers
 
-**President** - Tom Casavant
+**President** - Dominik Winecki
 
-**Vice President** - Dominik Winecki
-
-**Treasurer** - Joshua Kingsbury
-
-**Advisor** - Matt Black
-
-**Advisor** - Jeremy Morris
-
-A list of our former officers is available [here](/former-officers).
+**We will be choosing new officers for the 2021-2022 year**
 
 
 # Website
