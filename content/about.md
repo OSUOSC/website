@@ -9,6 +9,7 @@ description = "Our mission is to create an environment where the benefits of ope
 
 **We will be choosing new officers for the 2021-2022 year**
 
+A list of our former officers is available [here](/former-officers).
 
 # Website
 
