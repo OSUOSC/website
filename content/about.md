@@ -7,7 +7,11 @@ description = "Our mission is to create an environment where the benefits of ope
 
 **President** - Dominik Winecki
 
-**We will be choosing new officers for the 2021-2022 year**
+**Vice President** - Adrian Vovk
+
+**Treasurer** - Kyle Rosenberg
+
+**Advisor** - Jeremy Morris
 
 A list of our former officers is available [here](/former-officers).
 
