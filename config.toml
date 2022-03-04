@@ -1,4 +1,3 @@
-#baseURL = "https://opensource.osu.edu/"
 languageCode = "en-us"
 title = "Open Source Club"
 description = "At The Ohio State University"
@@ -17,6 +16,6 @@ paginate = 15
 
 # Use this to display a message on  the home page
 #    message = "Next meeting 11/12 at 7PM! (https://go.osu.edu/opensourcezoom)"
-
+    message = "Next meeting is on 03/10 at 7PM in CL 120!"
     twitter = "osuosc"
     github = "OSUOSC"
