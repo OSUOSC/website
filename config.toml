@@ -1,4 +1,4 @@
-baseURL = "https://opensource.osu.edu/"
+#baseURL = "https://opensource.osu.edu/"
 languageCode = "en-us"
 title = "Open Source Club"
 description = "At The Ohio State University"
