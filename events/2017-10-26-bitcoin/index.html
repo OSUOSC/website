@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta name="generator" content="Hugo 0.68.3" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Bitcoin and Blockchain Technology </title>
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  <meta name="author" content="">
+
+
+  <meta property="og:title" content="Bitcoin and Blockchain Technology" />
+<meta property="og:description" content="The cryptocurrency that recently broke $6000. Bitcoin is a sophisticated system in that it&rsquo;s complex in its simplicity, and today I&rsquo;ll try to explain how blockchain technology works and how it is the logical next step in the computing world.
+This talk is taken straight from Brian Warner when he gave his talk Bitcoin: A Technical Introduction. You can follow along with the slides that are posted on his personal site: lothar." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://opensource.osu.edu/events/2017-10-26-bitcoin/" />
+<meta property="article:published_time" content="2017-10-26T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-10-26T00:00:00+00:00" />
+
+  
+
+
+
+
+  
+  
+  
+  
+  
+
+  <link rel="canonical" href="https://opensource.osu.edu/events/2017-10-26-bitcoin/">  
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+
+  <link href="/css/font.css" rel="stylesheet" type="text/css">
+  <link href="/css/kube.min.css" rel="stylesheet" type="text/css">
+  <link href="/css/kube.legenda.css" rel="stylesheet" type="text/css">
+  <link href="/css/highlight.css" rel="stylesheet" type="text/css">
+  <link href="/css/master.css" rel="stylesheet" type="text/css">
+  <link href="/css/kube.demo.css" rel="stylesheet" type="text/css">
+
+ <link href="/css/custom.css" rel="stylesheet" type="text/css">
+
+  <script src="/js/jquery-2.1.4.min.js" type="text/javascript">
+  </script>
+
+  <script type="text/javascript" src="/js/tocbot.min.js"></script>
+</head>
+
+
+<body class="page-kube">
+  <header> <div class="show-sm">
+    <div id="nav-toggle-box">
+      <div id="nav-toggle-brand">
+        <a href="/">Open Source Club</a>
+      </div><a data-component="toggleme" data-target="#top" href="#" id="nav-toggle"><i class="kube-menu"></i></a>
+    </div>
+  </div>
+  <div class="hide-sm" id="top">
+    <div id="top-brand">
+      <a href="/" title="home">Open Source Club</a>
+    </div>
+    <nav id="top-nav-main">
+      <ul>
+       
+       
+    <li><a href="/about" >About</a></li>
+    
+    <li><a href="/events" >Events</a></li>
+    
+      </ul>
+    </nav>
+    <nav id="top-nav-extra"> 
+      <ul>
+          
+      </ul>
+    </nav>
+  </div>
+ </header>
+  <main>
+
+<div id="hero" class="wrap">
+  <h1>Bitcoin and Blockchain Technology</h1>
+    <p></p>
+</div>
+<ul id="posts">
+
+ <p>The cryptocurrency that recently broke $6000. Bitcoin is a sophisticated system in that it&rsquo;s complex in its simplicity, and today I&rsquo;ll try to explain how blockchain technology works and how it is the logical next step in the computing world.</p>
+<p>This talk is taken straight from <a href="https://twitter.com/continuousqa">Brian Warner</a> when he gave his talk <a href="https://twitter.com/continuousqa">Bitcoin: A Technical Introduction</a>. You can follow along with the slides that are posted <a href="http://www.lothar.com/presentations/bitcoin-brownbag/master.html">on his personal site: lothar.com</a>.</p>
+<hr>
+<h1 id="what-is-bitcoin">What is Bitcoin</h1>
+<ul>
+<li>Commodities are fungible, transferrable, and somewhat scarce.</li>
+<li>Digital commodities can be transferred electronically.</li>
+<li>decentralized means no single party controls creation, allocation, or transfer of the commodity. Unlike dollars and WoW gold, there is no Board or company which can decide to create more.</li>
+</ul>
+<hr>
+<h1 id="network">Network</h1>
+<ul>
+<li>Every node or miner has agent - <code>bitcoind</code>
+ers send payments to each other by giving address and value to agent
+Addresses are cryptographic identifer of a public key, like 1K2CcfWYW5sBL2xSeQWXpcmjPCgoXdi36R</li>
+<li>Agent sends signed messages to other agents, transferring coins.</li>
+<li>Receiving user&rsquo;s agent informs them upon receipt of payment.</li>
+</ul>
+<hr>
+<h1 id="goals-of-decentralization">Goals of Decentralization</h1>
+<ul>
+<li>What&rsquo;s wrong with a centralized currency?</li>
+<li>From a security point of view, we&rsquo;d like the usual properties (like unforgeability, theft-proof) to be enforced by code and math, rather than depending upon the goodwill of people</li>
+<li>From an economic point of view, some folks would like the total money supply to be predictable, as opposed to allowing a central bank to cause inflation by creating new money whenever they like.</li>
+<li>Putting a lot of power in one place is an invitation to abuse. Spreading that power out among multiple users can fix that.</li>
+<li>The most important thing a currency can do is to inspire confidence among its users.</li>
+<li>Bitcoin is testing a theory that more users will be willing to adopt a decentralized currency than one in which they have to trust a single person, company, or government.</li>
+</ul>
+<hr>
+<h1 id="specifications-transfer--create">Specifications: Transfer + Create</h1>
+<ul>
+<li>To specify a new money system, we need to describe
+<ul>
+<li>how it is represented</li>
+<li>how it gets transferred between parties</li>
+<li>and how it&rsquo;s created in the first place</li>
+</ul>
+</li>
+<li>Scarcity is one of the important properties, but there must be more than zero of it, so we must explain how it&rsquo;s created, and at what rate the money supply expands.</li>
+<li>Expansion is a policy decision: it helps whoever gets the new money, it hurts everyone else a little bit, it&rsquo;s necessary (at least initially). So it must be managed.</li>
+</ul>
+<hr>
+<h1 id="discrete-coin-vs-ledger">Discrete-Coin vs Ledger</h1>
+<ul>
+<li>Digital money systems have traditionally fallen into roughly one of two categories</li>
+<li>Discrete Coin: bank issues lots of coins for a few denominations, blinded, can recognize valid coins later</li>
+<li>Ledger: bank tracks balance for each user, increments/decrements with each transfer</li>
+</ul>
+<hr>
+<h1 id="evolving-the-ledger-into-bitcoin">Evolving the Ledger into Bitcoin</h1>
+<ul>
+<li>Despite having &ldquo;coin&rdquo; in the name, Bitcoin is more like a ledger system.</li>
+<li>I&rsquo;m going to explain how Bitcoin works by starting with a simple ledger system and making small incremental changes until we wind up with the actual Bitcoin protocol.</li>
+</ul>
+<hr>
+<h1 id="mmorpg-bucks">MMORPG Bucks</h1>
+<ul>
+<li>Imagine you&rsquo;re a programmer, tasked with creating the money system for the latest online game.</li>
+<li>You&rsquo;d start with a database, since everyone loves SQL. Each user would get an account, with a balance.</li>
+<li>The system must handle transactions that
+<ul>
+<li>transfer money between accounts, create money (perhaps by buying it with dollars, or by raiding a dungeon), and</li>
+<li>destroy money (selling it for dollars, or buying a Vorpal Sword)</li>
+</ul>
+</li>
+<li>Your system maintains some invariants,
+<ul>
+<li>like how transfers cannot create new money, and no account balance can go below zero.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="mmorpg-authority">MMORPG Authority</h1>
+<ul>
+<li>From an authority-analysis point of view, each user gets control over a facet which allows them to send credits to someone else.</li>
+<li>Alice can control her money
+<ul>
+<li>Cannot make new money</li>
+<li>Cannot move anyone else&rsquo;s money</li>
+</ul>
+</li>
+<li>Bank gets the authority to create new money.</li>
+</ul>
+<hr>
+<h1 id="whats-wrong-with-the-ledger">What&rsquo;s Wrong with the Ledger?</h1>
+<ul>
+<li>What&rsquo;s wrong with the ledger system? Specifically, what centralization are we trying to fix?</li>
+<li>Since the bank has full control over the ledger, the bank (or an attacker who compromises it) can spend any user&rsquo;s money.
+<ul>
+<li>The bank can also create new money any time it likes, which makes it hard to predict inflation.</li>
+</ul>
+</li>
+<li>And since the only source of truth is in the bank&rsquo;s ledger
+<ul>
+<li>users cannot validate payments or even learn their current balance without talking to the bank.</li>
+<li>It is a fully online system, and bank downtime prevents anyone from using their money.</li>
+</ul>
+</li>
+<li>We&rsquo;re kind of used to these restrictions, but we can do better.</li>
+</ul>
+<hr>
+<h1 id="centralized-ledger">Centralized Ledger</h1>
+<ul>
+<li>So our starting point uses a centralized ledger, and the bank has complete control.</li>
+</ul>
+<hr>
+<h1 id="accounts-are-pubkeys">Accounts are Pubkeys</h1>
+<ul>
+<li>Replace accounts with pubkeys:
+<ul>
+<li>each column of the ledger is associated with a specific public verifying key</li>
+</ul>
+</li>
+<li>now Alice authorizes a transfer to Bob with a signed message
+<ul>
+<li>Signs with private key</li>
+<li>Sends to bank</li>
+<li>bank publishes both the transfer messages and the ledger publically</li>
+</ul>
+</li>
+<li>everyone can verify the signature on each transfer message</li>
+<li>everyone can audit the ledger check the outputs and complain about violations</li>
+<li>bank&rsquo;s job is to sequence transfers, reject underflows, publish log, manage expansion</li>
+<li>at the same time, let&rsquo;s drop the ability to remove money from the system: total is monotonically increasing</li>
+</ul>
+<hr>
+<h1 id="multiple-pseudonymous-pubkeys">Multiple Pseudonymous Pubkeys</h1>
+<ul>
+<li>Next, allow each user to have multiple keys, created on demand.</li>
+<li>Bitcoin user agents routinely manage hundreds of keys.</li>
+<li>These are small ECDSA keys, so the effort involved is trivial.</li>
+<li>Carol&rsquo;s current balance equals the sum of all her keys
+<ul>
+<li>Her client can tell her the total and by default</li>
+</ul>
+</li>
+<li>Balances can be split into different keys, or merged together.</li>
+<li>Pubkeys are pseudonyms: nobody needs to know A is for Alice</li>
+<li>This starts to help with anonymity: less obvious that A1 and A2 are related.</li>
+</ul>
+<hr>
+<h1 id="transaction-log-not-balance-log">Transaction Log, not Balance Log</h1>
+<ul>
+<li>Having the bank publish both the transfer messages and the resulting balance sheet is redundant.</li>
+<li>So we&rsquo;ll make it only publish the transfers. We&rsquo;ll call them transactions.</li>
+<li>Everyone will derive balances when necessary</li>
+<li>Bank&rsquo;s job is to remember correct order of transactions, only permit valid ones, and manage expansion.</li>
+<li>Rest of the world can validate signatures and transactions, prevent underflow, and determine balances.</li>
+</ul>
+<hr>
+<h1 id="transaction-pipe">Transaction Pipe</h1>
+<ul>
+<li>Our network model has users who are sending signed transfer messages to the bank
+<ul>
+<li>The bank does some checking,</li>
+<li>establishes the ordering,</li>
+<li>then broadcasts the message stream to all users (including the original sender).</li>
+</ul>
+</li>
+<li>the bank also decides to give new money to certain people whenever it wants: we still don&rsquo;t have control over expansion.</li>
+</ul>
+<hr>
+<h1 id="transactions">Transactions</h1>
+<ul>
+<li>Next, we enhance our transaction model.</li>
+<li>Each transaction consumes some inputs, creates some outputs</li>
+<li>each input points to some previous output</li>
+<li>these outputs are first-order objects:
+<ul>
+<li>we&rsquo;re not transferring credits from one column to another,</li>
+<li>we&rsquo;re consuming some outputs and creating new ones for different keys</li>
+</ul>
+</li>
+<li>The rule is: total outputs can&rsquo;t be larger than total inputs</li>
+<li>Each output is &ldquo;sent&rdquo; to a pubkey: it&rsquo;s labeled with the pubkey that must be used to claim it</li>
+<li>txn must be signed by keys for all inputs</li>
+<li>produces DAG of txns, and set of unspent outputs</li>
+<li>The transaction graph evolves over time</li>
+</ul>
+<hr>
+<h1 id="evolution-of-tx-graph">Evolution of TX graph</h1>
+<ul>
+<li>
+<p>Let&rsquo;s look at a growing transaction graph, already in progress.</p>
+</li>
+<li>
+<p>At any given time, there are a set of unspent outputs, each with a value denominated in BTC</p>
+</li>
+<li>
+<p>I&rsquo;m eliding the previous history to keep this simple: pretend there&rsquo;s a bunch of transactions above this line which results in just these three outputs.</p>
+</li>
+<li>
+<p>Each transaction consumes some of those outputs, and produces new ones.</p>
+</li>
+<li>
+<p>The transaction must be signed by the key which owned the input.</p>
+</li>
+<li>
+<p>The outputs are labeled with the pubkey that will be needed to consume it.</p>
+</li>
+<li>
+<p>This transaction transfers 12 credits from key B2 to key C1.</p>
+</li>
+<li>
+<p>The old output is marked as being spent, and removed from the set of unspent outputs.</p>
+</li>
+<li>
+<p>&ldquo;Double-spends&rdquo; are transactions which attempt to consume a previously-spent output.</p>
+</li>
+<li>
+<p>These are invalid.</p>
+</li>
+<li>
+<p>The first transaction to consume a given output wins, and all other competing ones are ignored.</p>
+</li>
+<li>
+<p>Expansion (creation of new money) is caused by transactions with outputs greater than the inputs.</p>
+<ul>
+<li>We&rsquo;ll explain this later.</li>
+</ul>
+</li>
+<li>
+<p>Since outputs must be consumed completely, to send less than the full amount, the &ldquo;change&rdquo; has to go back to the sender.</p>
+</li>
+<li>
+<p>In this example, Alice is sending 10 credits to Bob.</p>
+<ul>
+<li>Since she only has one unspent output, and it&rsquo;s too big (20BTC)</li>
+<li>her client makes a transaction that splits it into two pieces</li>
+<li>returning the remainder to her in a new key.</li>
+</ul>
+</li>
+<li>
+<p>Most Bitcoin transactions create two outputs</p>
+<ul>
+<li>the first transfers credit to the recipient</li>
+<li>the second sends the remainder back to a new key owned by the original sender.</li>
+<li>Does all of this transparently</li>
+</ul>
+</li>
+<li>
+<p>There can be multiple unspent outputs for a given key.</p>
+</li>
+<li>
+<p>Each transaction references specific outputs, not just keys.</p>
+</li>
+<li>
+<p>A user&rsquo;s balance is the sum of the values of all unspent outputs for all keys they control.</p>
+</li>
+<li>
+<p>Transactions can create an arbitrary number of outputs.</p>
+</li>
+<li>
+<p>And consume an arbitrary number of inputs</p>
+<ul>
+<li>either for consolidation</li>
+<li>or to make a large payment by combining several smaller ones.</li>
+</ul>
+</li>
+<li>
+<p>At each stage, the transaction log contains a set of unspent outputs</p>
+</li>
+<li>
+<p>This set grows and shrinks over time.</p>
+<ul>
+<li><a href="https://jochen-hoenicke.de/queue/#24h">Mempool</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="properties-so-far">Properties So Far</h1>
+<ul>
+<li>So, how far does this get us?</li>
+<li>We rely upon the bank to provide all users with an append-only ordered transaction log</li>
+<li>We need it to be ordered so we can resolve double-spends (define which one came first).</li>
+<li>If everyone sees the same log, then double-spends and other validation failures are prevented.</li>
+<li><strong>READ SLIDE</strong></li>
+<li>The bank could still publish different logs to different people, so our next step is to decentralize the transaction log and remove our reliance on the central bank</li>
+</ul>
+<hr>
+<h4 id="todo-ad-lib">TODO ad-lib</h4>
+<h1 id="serialized-transactions">Serialized Transactions</h1>
+<ul>
+<li>Now we need to decentralize this transaction log</li>
+<li>First we need to be concrete about the transaction format.</li>
+<li>Each transaction is serialized to a string and hashed to get a txnid.
+<ul>
+<li>Txns reference each other by txnid and output number.</li>
+</ul>
+</li>
+<li>This forms a DAG of transactions.</li>
+<li>Our goal is to have all users agree on the current txn graph. In particular, disagreements about which outputs have been consumed would allow double-spends.</li>
+</ul>
+<hr>
+<h1 id="blocks">Blocks</h1>
+<ul>
+<li>Aggregate txns into blocks.
+<ul>
+<li>Every 10 minutes, take all the current valid transactions and bundle their serialized forms together into a block.</li>
+</ul>
+</li>
+<li>Building on top of each other</li>
+<li>The rule is that each block may only contain valid transactions that reference an output in some previous block.</li>
+<li>Each block is like a page of the ledger book.</li>
+<li>You can imagine loose transactions like individual post-it notes with the transaction details
+<ul>
+<li>every once in a while you paste them all into a new page of the book.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="the-block-chain">The Block Chain</h1>
+<ul>
+<li>Each block is just a bunch of serialized transactions and a header.
+<ul>
+<li>Again, we can serialize it to a string and hash it to get a blockid.</li>
+</ul>
+</li>
+<li>The header includes a copy of the previous block&rsquo;s id. Since these are cryptographic hashes, this forms the blocks into a strong chain.</li>
+<li>Now if we can agree on the current block ID, we also agree on the full contents of the transaction log.
+<ul>
+<li>It&rsquo;s computationally impossible to insert or remove a single previous transaction, since that would change the hash dramatically</li>
+</ul>
+</li>
+<li>This mostly reduces the agreement problem down to agreeing on a single blockid.</li>
+</ul>
+<hr>
+<h1 id="getting-closer">Getting Closer</h1>
+<ul>
+<li>So what do we have now: ..</li>
+<li><strong>READ SLIDE</strong></li>
+</ul>
+<hr>
+<h1 id="alternate-history">Alternate History</h1>
+<ul>
+<li>So why do we need to agree on the current block?
+<ul>
+<li>To discover double spend attack</li>
+</ul>
+</li>
+<li>To double his spending power, the attacker needs each recipient to see a different block chain:
+<ul>
+<li>the conflicting transactions each appear in only one chain.</li>
+<li>Nobody (including Alice and Bob) would accept both transactions in the same chain.</li>
+</ul>
+</li>
+<li>The attacker needs to take delivery of whatever they&rsquo;re buying before the victim learns about the other history chain.
+<ul>
+<li>Keep them in two separate worlds for long enough</li>
+</ul>
+</li>
+<li>So we need some means of decide which chain is &ldquo;correct&rdquo;, which both Alice and Bob can use to converge on a single history.</li>
+<li>To agree on which block is current, imagine a voting protocol</li>
+<li>Everybody performs the same computation, they accept each others results if they match.</li>
+</ul>
+<hr>
+<h4 id="todo-ad-lib-and-stats">TODO ad-lib and stats</h4>
+<h1 id="mining-and-proof-of-work">Mining and Proof-Of-Work</h1>
+<ul>
+<li>Here&rsquo;s where it gets clever.</li>
+<li>Each block header also contains a large counter, included in the hash.</li>
+<li>We require the Block ID (hash of data) must be close to zero: a partial hash collision.
+<ul>
+<li>Trivial to verify, requires predictable amount of work to generate.</li>
+</ul>
+</li>
+<li>Difficulty Factor controls how close it must be, which controls how much work is needed (on average) to find a block.</li>
+<li>83 petahashes takes (thousands of GPUs/FPGAs/ASICs) an average of 10 minutes.</li>
+<li>This process is called &ldquo;mining&rdquo;: keep trying, maybe you get lucky.</li>
+</ul>
+<hr>
+<h4 id="todo-stats">TODO Stats</h4>
+<h1 id="most-difficult-chain-wins">Most Difficult Chain Wins</h1>
+<ul>
+<li>Miners accept the valid block chain with the most work.</li>
+<li>That means every transaction is valid
+<ul>
+<li>there are no double-spends</li>
+<li>all the rules of the economy are being followed.</li>
+</ul>
+</li>
+<li>Bitcoin miners spend all day long incrementing counters and computing hashes
+<ul>
+<li>trying to find that partial collision</li>
+<li>trying to extend the longest chain by one more block</li>
+</ul>
+</li>
+<li>The current block chain is about 243k blocks long, and contains nearly 1.5 zettahashes (10^21) of work.</li>
+</ul>
+<hr>
+<h1 id="resolving-races">Resolving Races</h1>
+<ul>
+<li>
+<p>Race happens when two miners find a block at the same time,</p>
+</li>
+<li>
+<p>or at least outside of each others light cones:</p>
+<ul>
+<li>they find a block before hearing about the other&rsquo;s discovery</li>
+</ul>
+</li>
+<li>
+<p>Since block discovery is a Poisson process parameterized by the number of hashes-per-second being generated,</p>
+<ul>
+<li>the chances of an accidental race are fairly low, and linear in the diameter of the network.</li>
+<li>The faster we can get information out, the less chance there is of a fork</li>
+</ul>
+</li>
+<li>
+<p>Some folks hear about one block first, the rest hear about the other block first.</p>
+</li>
+<li>
+<p>This results in two cliques: some working on top of block 3a, the rest working on top of 3b.</p>
+</li>
+<li>
+<p>Eventually, somebody will find the next block. The larger clique has a better chance, but it doesn&rsquo;t actually matter. The chances of hitting simultaneous discovery twice in a row are very low.</p>
+</li>
+<li>
+<p>They broadcast their block to the network</p>
+</li>
+<li>
+<p>Even the miners who were working on the competing block4a will give that up to work on block5.</p>
+</li>
+<li>
+<p>Now you have all (or at least most) of the miners working on the same thing.</p>
+</li>
+<li>
+<p>The vestigal chain is abandoned and forgotten.</p>
+</li>
+<li>
+<p>So much work accumulates on the &ldquo;real&rdquo; chain that the alternatives can never catch up.</p>
+</li>
+</ul>
+<hr>
+<h1 id="double-spending">Double Spending</h1>
+<ul>
+<li>Remember that to pull off a double-spend attack, the attacker needs to present multiple distinct valid block chain to his different victims.</li>
+<li>This becomes impossibly hard when the majority of miners are working on the same chain.</li>
+</ul>
+<hr>
+<h1 id="incentives-for-mining">Incentives For Mining</h1>
+<ul>
+<li>So to maintain the integrity of the transaction log, we need lots of people to mine.
+<ul>
+<li>But that costs real-world electricity</li>
+<li>So we need to give them something as an incentive.</li>
+</ul>
+</li>
+<li>Also, we still haven&rsquo;t explained how to create BTC in the first place, and how to choose some fair way to distribute it.</li>
+<li>(a side note: distribution doesn&rsquo;t need to be fair, by the Coase Theorem, but few people will use a system that feels unfair)</li>
+<li>Since the only thing we have to offer is BTC, let&rsquo;s pay miners with bitcoins.</li>
+</ul>
+<hr>
+<h4 id="todo-stats-1">TODO stats</h4>
+<h1 id="block-reward">Block Reward</h1>
+<ul>
+<li>Bitcoin&rsquo;s rules state that each block is allowed to have one &ldquo;coinbase&rdquo; transaction: zero inputs, one output, for a specific quantity of BTC.</li>
+<li>This is a &ldquo;reward&rdquo; for finding the block, currently 25BTC per block.</li>
+<li>In exchange for doing f(DF) hashes, miners get (on average) 25BTC.</li>
+<li>Rational participants compare expected future value of those BTC against costs and mine, or don&rsquo;t.</li>
+</ul>
+<hr>
+<h1 id="ignore--punish">Ignore == Punish</h1>
+<ul>
+<li>So miners are incentivized to enforce the rules of the economy</li>
+<li>Their reward is contingent upon other miners agreeing with their decisions</li>
+<li>If they do it wrong, other miners will ignore their block
+<ul>
+<li>so the reward transaction won&rsquo;t be in the block chain that everyone else recognizes</li>
+<li>so they won&rsquo;t be able to spend it in the future.</li>
+</ul>
+</li>
+<li>That means they&rsquo;re going to be very careful about the transactions they put in their blocks, and following the rules themselves
+<ul>
+<li>any violations will cost them the reward (and means they&rsquo;ve wasted a lot of work)</li>
+</ul>
+</li>
+<li>Miners are effectively betting their CPU cycles that other miners will accept their decisions, and receiving BTC as a payoff</li>
+<li>They maximize their chances by following the rules.</li>
+<li>There&rsquo;s a lot of game theory going on here
+<ul>
+<li>Trying to break the rules will get you ignored</li>
+<li>Following the same rules as everyone else will help you get blocks in the chain that everyone else follows.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="todo-ad-lib-1">TODO ad-lib</h4>
+<h1 id="mine-or-attack">Mine? Or Attack?</h1>
+<ul>
+<li>Clever incentive alignment here. Do integrity-protection work, get paid in BTC.</li>
+<li>Do it wrong (either accidentally or trying to cheat), and you&rsquo;ve wasted CPU cycles.</li>
+<li>Potential attackers are incentivized to follow the rules too.</li>
+<li>A rational attacker deciding whether to spend their CPU time trying to build an alternate chain, or mining normally, will probably get a better average return by cooperating.</li>
+</ul>
+<hr>
+<h1 id="coin-maturity">Coin Maturity</h1>
+<ul>
+<li>The block chain causes an interesting side-effect that&rsquo;s fairly unique.</li>
+<li>Bitcoin transactions have a &ldquo;maturity&rdquo; that improves with age, like wine, cheese, and teenagers</li>
+<li>Since the attacker&rsquo;s task of producing a longer block-chain with their alternate history gets linearly harder as more blocks are added to the real chain
+<ul>
+<li>the recipient can choose between attack resistance and settlement time.</li>
+</ul>
+</li>
+<li>if someone buys a sandwich from me, I could give it to them quickly</li>
+<li>if they buy a car from me, I&rsquo;m going to wait an hour or two for chain to grow
+<ul>
+<li>just like waiting for a check to clear</li>
+<li>parallels the real world</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="btc-expansion-curve">BTC Expansion Curve</h1>
+<ul>
+<li>Initial reward of 50BTC per block drops in half every four years (210000 blocks)</li>
+<li>Total amount of BTC asymptotically approaches 21M over time.</li>
+<li>Interesting from an economic/money-supply POV: fixed, predictable expansion, eventually 0%.</li>
+<li>This removes one variable that drives inflation.</li>
+<li>Raises the question: what incentives do miners have when the reward goes away?
+<ul>
+<li>Open to discussion after the talk</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="transaction-fees">Transaction Fees</h1>
+<ul>
+<li>Transaction rules said that the outputs can&rsquo;t be <em>greater</em> than the inputs. It doesn&rsquo;t actually require them to be equal.</li>
+<li>A txn is said to pay a fee when the outputs sum to <em>less</em> than the inputs</li>
+<li>leftover goes to miner who finds the block</li>
+<li>specifically: the rules say it&rsquo;s valid to have a reward transaction which includes the sum of the fees</li>
+<li>in the long run, clients will need to provide a fee to get their txns published</li>
+<li>choose tradeoff between small fee and quick service</li>
+<li>market should stabilize upon an average fee that covers miner&rsquo;s expenses plus reasonable profit
+<ul>
+<li>Coke makes a fraction of a penny off of each can of soda</li>
+<li>economic <em>velocity</em></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="results">Results</h1>
+<ul>
+<li>So that&rsquo;s the basics of bitcoin.</li>
+<li>clients broadcast signed transactions</li>
+<li>miners collect valid transactions into blocks, perform proof-of-work hashing on blocks to obtain BTC rewards.</li>
+<li>the PoW on the block chain makes it expensive to create lengthy alternate history, so double-spends are not economical</li>
+<li>What properties do we get from this?
+<ul>
+<li><strong>READ SLIDE</strong></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="auto-adjusting-difficulty-factor">Auto-Adjusting Difficulty Factor</h1>
+<ul>
+<li>There are a lot of clever tricks lurking in the code.. here are some highlights.</li>
+<li>valid-block-rule adjusts DF upon how quickly blocks are found, every 2016 blocks (2weeks), to bring back to 1/10min</li>
+<li>In particular, miners only accept blocks that meet their current expectation of the DF, which is reset every 2016 blocks according to the timestamps inside the blocks.</li>
+<li>There&rsquo;s an NTP-like protocol to deal with inaccurate local clocks.</li>
+<li><strong>READ SLIDE</strong>
+<ul>
+<li>Graph is difficulty vs time of blocks</li>
+</ul>
+</li>
+<li>DF/mining marker: eventually, an equilibrium will be established, between how efficiently miners can operate and how much reward they expect to receive</li>
+<li>More miners, faster/cheaper hardware, software improvements, all get factored into the equilibrium point.</li>
+</ul>
+<hr>
+<h1 id="other-problemssolutions">Other Problems/Solutions</h1>
+<ul>
+<li>Bitcoin relies upon the unforgeability of 256-bit ECDSA signatures and the lack of full preimages in SHA256</li>
+<li>It uses the collision-free properties of SHA256 as a proof-of-work function, but could tolerate partial breaks
+<ul>
+<li>if miners could find partial collisions more easily, the difficulty factor would rise to compensate.</li>
+</ul>
+</li>
+<li>Internally numbers are represented with a 64-bit integer, and the UI divides by 10^8 before displaying anything.</li>
+<li><strong>READ SLIDE</strong></li>
+<li>Zooko says if whole global economy were in BTC, 10 nBTC=$0.01</li>
+<li>Bitcoin eschews central control of expansion as a policy tool to control inflation</li>
+<li>While the money supply is eventually fixed, inflation could still be caused by expansion of the economy</li>
+<li>And deflation could be caused by money being lost over time (as private keys get forgotten).</li>
+</ul>
+<hr>
+<h1 id="practical-deployment-details">Practical Deployment Details</h1>
+<ul>
+<li>GPUs are about 10x more efficient than CPUs, in hashes-per-joule</li>
+<li>FPGA 10x GPU, ASIC 5x-30x FPGA</li>
+<li>current ASICs only yield about one block per month, GPUs one per year.
+<ul>
+<li>Pools make the return more uniform.</li>
+</ul>
+</li>
+<li>4 largest pools provide about 75% of total hash power.</li>
+<li>The largest exchange moves about $1M/day.</li>
+<li>Paste 1K2CcfWYW5sBL2xSeQWXpcmjPCgoXdi36R into the blockexplorer to see a sample transaction.</li>
+</ul>
+<hr>
+<h4 id="todo-stats-2">TODO stats</h4>
+<h1 id="numbers">Numbers</h1>
+<hr>
+<h1 id="is-it-commodity-money">Is it (commodity) money</h1>
+<ul>
+<li>Five chars
+<ul>
+<li>Relatively Scarce</li>
+<li>Easily Recognizable</li>
+<li>Divisible</li>
+<li>Fungible (substitutable)</li>
+<li>Portable</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="is-it-anonymous">Is it Anonymous</h1>
+<ul>
+<li>All transactions are public, but the relationship between keys and people is not always easy to determine</li>
+<li>txns are flooded, so IP address is not too useful. Client could run over Tor.</li>
+<li>if ATMs recorded serial numbers on bills emitted, and merchants recorded serial numbers and customer names, cash would be traceable too. They don&rsquo;t, so cash is generally anonymous.</li>
+<li>paste this address into the block explorer to see a transaction in detail: 1K2CcfWYW5sBL2xSeQWXpcmjPCgoXdi36R</li>
+</ul>
+<hr>
+
+  
+</ul>
+</main>
+  <footer> 
+    <footer id="footer">
+    <nav>
+      <ul>
+        <li><span>OSU Open Source Club</span></li>
+        <li>
+          <a href="/about/">About</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/osuosc">Follow on Twitter</a>
+        </li>
+        <li>
+          <a href="https://github.com/OSUOSC">Contribute on GitHub</a>
+        </li>
+      </ul>
+    </nav>
+    <p>&copy; Licence MIT.</p>
+  </footer> 
+</footer>
+
+
+  <script src="/js/kube.js" type="text/javascript">
+  </script>
+  <script src="/js/kube.legenda.js" type="text/javascript">
+  </script>
+  <script src="/js/master.js" type="text/javascript">
+  </script>
+</body>
+
+</html>

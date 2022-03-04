@@ -1,0 +1,1801 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/</loc>
+    <lastmod>2019-04-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/</loc>
+    <lastmod>2019-04-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2019-04-11-writing-well-behaved-command-line-applications-in-python/</loc>
+    <lastmod>2019-04-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2019-04-04-operator-the-well-rounded-hacker/</loc>
+    <lastmod>2019-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2019-02-21-ansible/</loc>
+    <lastmod>2019-02-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2019-02-07-webassembly/</loc>
+    <lastmod>2019-02-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2019-01-31-serverless/</loc>
+    <lastmod>2019-01-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2019-01-17-arista-networks/</loc>
+    <lastmod>2019-01-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2018-11-29-big-data/</loc>
+    <lastmod>2018-11-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2018-11-15-bedrock-linux/</loc>
+    <lastmod>2018-11-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2018-11-08-wordpress/</loc>
+    <lastmod>2018-11-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2018-10-25-flatpak/</loc>
+    <lastmod>2018-10-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2018-10-18-home-automation-with-software-defined-radio/</loc>
+    <lastmod>2018-10-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2018-10-12-linuxfest/</loc>
+    <lastmod>2018-10-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2018-10-04-guide-to-contracts/</loc>
+    <lastmod>2018-10-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2018-09-27-capital-one/</loc>
+    <lastmod>2018-09-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2018-09-20-cover-my-meds/</loc>
+    <lastmod>2018-09-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2018-09-13-high-performance-computing/</loc>
+    <lastmod>2018-09-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2018-09-06-docker/</loc>
+    <lastmod>2018-09-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2018-08-30-introduction-to-the-cli/</loc>
+    <lastmod>2018-08-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2018-08-23-introduction-to-open-source/</loc>
+    <lastmod>2018-08-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2018-04-19-python-snippets-from-the-wild/</loc>
+    <lastmod>2018-04-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2018-04-12-reclaim-your-privacy/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2018-04-05-crypto-war-ii/</loc>
+    <lastmod>2018-04-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2018-03-29-open-source-software-in-journalism/</loc>
+    <lastmod>2018-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2018-03-22-opennms/</loc>
+    <lastmod>2018-03-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2018-03-08-how-to-succeed-in-college/</loc>
+    <lastmod>2018-03-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2018-03-01-free-software/</loc>
+    <lastmod>2018-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2018-02-22-ledger-cli/</loc>
+    <lastmod>2018-02-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2018-02-15-citizenfour/</loc>
+    <lastmod>2018-02-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2018-02-08-graycore/</loc>
+    <lastmod>2018-02-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2018-02-01-harris/</loc>
+    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2018-01-25-git-workshop/</loc>
+    <lastmod>2018-01-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2018-01-18-ansible/</loc>
+    <lastmod>2018-01-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2018-01-11-contribute-to-foss-projects/</loc>
+    <lastmod>2018-01-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2017-11-30-openstack/</loc>
+    <lastmod>2017-11-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2017-11-02-virtualization/</loc>
+    <lastmod>2017-11-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2017-10-26-bitcoin/</loc>
+    <lastmod>2017-10-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2017-08-31-configfest/</loc>
+    <lastmod>2017-08-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2017-08-24-first-talk/</loc>
+    <lastmod>2017-08-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2017-07-29-pyohio/</loc>
+    <lastmod>2017-07-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2017-04-20-vr-demo-and-an-adieu-to-graduating-seniors/</loc>
+    <lastmod>2017-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2017-04-13-open-source-radio/</loc>
+    <lastmod>2017-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2017-04-06-email-systems-and-management/</loc>
+    <lastmod>2017-04-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2017-03-30-crypto-war-ii/</loc>
+    <lastmod>2017-03-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2017-03-23-an-intro-to-rust-with-paradigm/</loc>
+    <lastmod>2017-03-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2017-03-09-ansible-and-elections/</loc>
+    <lastmod>2017-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2017-03-06-sp17-elections/</loc>
+    <lastmod>2017-03-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2017-03-02-hack-night/</loc>
+    <lastmod>2017-03-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2017-02-23-neural-networks-and-deep-learning-with-capital-one/</loc>
+    <lastmod>2017-02-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2017-02-16-lightning-talks/</loc>
+    <lastmod>2017-02-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2017-02-09-idiomatic-python/</loc>
+    <lastmod>2017-02-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2017-02-02-rsum-workshop/</loc>
+    <lastmod>2017-02-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2017-01-26-mvapich-and-high-power-computing/</loc>
+    <lastmod>2017-01-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2017-01-19-linux-tips-and-tricks/</loc>
+    <lastmod>2017-01-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2017-01-12-welcome-back/</loc>
+    <lastmod>2017-01-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2016-12-01-von-neumann-machines/</loc>
+    <lastmod>2016-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2016-11-17-wikipedia-in-your-next-project/</loc>
+    <lastmod>2016-11-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2016-11-10-the-elk-stack/</loc>
+    <lastmod>2016-11-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2016-11-03-ddwrt-and-openwrt-free-your-router/</loc>
+    <lastmod>2016-11-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2016-10-27-wireless-security/</loc>
+    <lastmod>2016-10-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2016-10-20-pgp-keysigning-party/</loc>
+    <lastmod>2016-10-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2016-10-09-ohio-linuxfest/</loc>
+    <lastmod>2016-10-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2016-10-06-android-vulnerabilities-and-security/</loc>
+    <lastmod>2016-10-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2016-09-24-vim-vs-emacs/</loc>
+    <lastmod>2016-09-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2016-09-22-harris-corp-on-embedded-software/</loc>
+    <lastmod>2016-09-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2016-09-15-capital-one-presents-trends-in-computing/</loc>
+    <lastmod>2016-09-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2016-09-08-intro-to-the-commandline/</loc>
+    <lastmod>2016-09-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2016-09-01-installfest/</loc>
+    <lastmod>2016-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2016-08-25-welcome-to-open-source/</loc>
+    <lastmod>2016-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2016-04-21-why-open-source-at-microsoft/</loc>
+    <lastmod>2016-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2016-04-14-freebsd/</loc>
+    <lastmod>2016-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2016-04-07-package_managers/</loc>
+    <lastmod>2016-04-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2016-03-31-bedrock_linux/</loc>
+    <lastmod>2016-03-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2016-03-26-lan-party/</loc>
+    <lastmod>2016-03-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2016-03-24-nicar_recap/</loc>
+    <lastmod>2016-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2016-03-10-linux_gaming/</loc>
+    <lastmod>2016-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2016-03-03-hobby_electronics/</loc>
+    <lastmod>2016-03-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2016-02-25-forensic_computer_analysis/</loc>
+    <lastmod>2016-02-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2016-02-18-vim_intermediate/</loc>
+    <lastmod>2016-02-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2016-02-04-pure_data/</loc>
+    <lastmod>2016-02-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2016-01-28-arch_linux/</loc>
+    <lastmod>2016-01-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2016-01-21-lightning_talks/</loc>
+    <lastmod>2016-01-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2016-01-14-welcome-back/</loc>
+    <lastmod>2016-01-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-12-10-meteor/</loc>
+    <lastmod>2015-12-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-12-03-redis/</loc>
+    <lastmod>2015-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-11-26-no-meeting/</loc>
+    <lastmod>2015-11-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-11-19-password-management/</loc>
+    <lastmod>2015-11-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-11-12-git-introduction-and-explanation/</loc>
+    <lastmod>2015-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-11-05-license-to-code/</loc>
+    <lastmod>2015-11-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-10-29-wireless-security-and-penetration-testing/</loc>
+    <lastmod>2015-10-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-10-22-covermymeds/</loc>
+    <lastmod>2015-10-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-10-20-startup-weekend/</loc>
+    <lastmod>2015-10-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-10-12-bdaa-career-fair/</loc>
+    <lastmod>2015-10-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-10-12-exploring-majors-fair/</loc>
+    <lastmod>2015-10-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-10-10-homecoming-tailgate/</loc>
+    <lastmod>2015-10-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-10-08-gpg/</loc>
+    <lastmod>2015-10-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-10-03-ohio-linux-fest/</loc>
+    <lastmod>2015-10-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-10-01-filesystems/</loc>
+    <lastmod>2015-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-09-24-opensource-at-facebook/</loc>
+    <lastmod>2015-09-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-09-23-ecouncil-volunteering/</loc>
+    <lastmod>2015-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-09-17-lightning-talks/</loc>
+    <lastmod>2015-09-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-09-15-ohio-hackathon/</loc>
+    <lastmod>2015-09-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-09-10-command-line/</loc>
+    <lastmod>2015-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-08-30-linux-installfest/</loc>
+    <lastmod>2015-08-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-08-27-first-meeting-of-the-semester/</loc>
+    <lastmod>2015-08-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-08-23-sif/</loc>
+    <lastmod>2015-08-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-04-23-advanced-vim-tutor/</loc>
+    <lastmod>2015-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-04-16-lightning-talks/</loc>
+    <lastmod>2015-04-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-04-09-cryptocurrencies-and-elections/</loc>
+    <lastmod>2015-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-04-02-beaglebone-and-embedded-linux/</loc>
+    <lastmod>2015-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-03-26-postgresql/</loc>
+    <lastmod>2015-03-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-03-12-linux-multimedia/</loc>
+    <lastmod>2015-03-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-03-09-system-updates/</loc>
+    <lastmod>2015-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-03-05-owncloud/</loc>
+    <lastmod>2015-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-02-26-open-source-and-web-browsers/</loc>
+    <lastmod>2015-02-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-02-12-mediawiki/</loc>
+    <lastmod>2015-02-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-02-05-rosetta/</loc>
+    <lastmod>2015-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-01-29-python/</loc>
+    <lastmod>2015-01-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-01-22-introduction-to-web-development/</loc>
+    <lastmod>2015-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2015-01-15-welcome-back/</loc>
+    <lastmod>2015-01-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2014-12-04-raspberry-pi/</loc>
+    <lastmod>2014-12-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2014-11-13-web-privacy/</loc>
+    <lastmod>2014-11-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2014-11-06-intellidu/</loc>
+    <lastmod>2014-11-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2014-11-02-introduction-to-security-concepts/</loc>
+    <lastmod>2014-11-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2014-10-30-elixir/</loc>
+    <lastmod>2014-10-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2014-10-23-open-source-at-facebook/</loc>
+    <lastmod>2014-10-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2014-10-16-love-your-music-and-movies-again-with-linux/</loc>
+    <lastmod>2014-10-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2014-10-09-personal-projects/</loc>
+    <lastmod>2014-10-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2014-10-02-zimbra-open-source-mail-and-groupware/</loc>
+    <lastmod>2014-10-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2014-09-25-pure-data/</loc>
+    <lastmod>2014-09-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2014-09-18-introduction-to-the-command-line/</loc>
+    <lastmod>2014-09-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2014-09-11-wireless-security/</loc>
+    <lastmod>2014-09-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2014-09-04-linux-installfest/</loc>
+    <lastmod>2014-09-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2014-08-28-what-is-open-source/</loc>
+    <lastmod>2014-08-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2014-04-24-cracking-the-data-encryption-standard/</loc>
+    <lastmod>2014-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2014-04-17-anti-features-free-and-open-source-software-and-ethics/</loc>
+    <lastmod>2014-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2014-04-03-open-source-hardware-arduino/</loc>
+    <lastmod>2014-04-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2014-03-27-bedrock-linux/</loc>
+    <lastmod>2014-03-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2014-03-20-raspberry-pi-officer-nominations/</loc>
+    <lastmod>2014-03-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2014-03-06-securing-public-wireless-use-openvpn/</loc>
+    <lastmod>2014-03-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2014-02-27-crypto-currencies/</loc>
+    <lastmod>2014-02-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2014-02-20-osc-goes-to-colug-openstack/</loc>
+    <lastmod>2014-02-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2014-02-13-init-discussions/</loc>
+    <lastmod>2014-02-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2014-02-06-filesystems/</loc>
+    <lastmod>2014-02-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2014-01-30-resume-review/</loc>
+    <lastmod>2014-01-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2014-01-23-distributed-version-control-systems/</loc>
+    <lastmod>2014-01-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2014-01-16-virtualization/</loc>
+    <lastmod>2014-01-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2014-01-09-welcome-back/</loc>
+    <lastmod>2014-01-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2013-11-21-vim/</loc>
+    <lastmod>2013-11-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2013-11-14-developer-tools/</loc>
+    <lastmod>2013-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2013-11-09-lan-party/</loc>
+    <lastmod>2013-11-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2013-11-07-internet-privacy-and-anonymization/</loc>
+    <lastmod>2013-11-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2013-10-24-javascript/</loc>
+    <lastmod>2013-10-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2013-10-17-android/</loc>
+    <lastmod>2013-10-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2013-10-10-security-and-encryption/</loc>
+    <lastmod>2013-10-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2013-10-03-awk/</loc>
+    <lastmod>2013-10-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2013-09-26-desktop-applications/</loc>
+    <lastmod>2013-09-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2013-09-19-wireless-security/</loc>
+    <lastmod>2013-09-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2013-09-12-overview-of-web-servers/</loc>
+    <lastmod>2013-09-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2013-09-05-introduction-to-command-line/</loc>
+    <lastmod>2013-09-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2013-08-29-linux-installfest-and-introduction/</loc>
+    <lastmod>2013-08-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2013-08-22-what-is-open-source/</loc>
+    <lastmod>2013-08-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2013-04-18-end-of-the-year/</loc>
+    <lastmod>2013-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2013-04-11-security-and-elections/</loc>
+    <lastmod>2013-04-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2013-03-28-python/</loc>
+    <lastmod>2013-03-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2013-03-25-richard-stallman-visiting-osu/</loc>
+    <lastmod>2013-03-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2013-03-21-shell-scripting/</loc>
+    <lastmod>2013-03-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2013-03-07-distributed-version-control/</loc>
+    <lastmod>2013-03-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2013-02-28-raspberry-pi/</loc>
+    <lastmod>2013-02-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2013-02-21-willie-the-irc-bot/</loc>
+    <lastmod>2013-02-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2013-02-14-getting-the-most-battery-out-of-your-laptop/</loc>
+    <lastmod>2013-02-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2013-02-07-introduction-to-android-development-by-harris/</loc>
+    <lastmod>2013-02-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2013-01-31-gimp-image-editing/</loc>
+    <lastmod>2013-01-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2013-01-24-irc/</loc>
+    <lastmod>2013-01-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2013-01-17-the-command-line/</loc>
+    <lastmod>2013-01-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2013-01-10-open-source-operating-systems-and-semester-planning/</loc>
+    <lastmod>2013-01-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-11-29-personal-projects/</loc>
+    <lastmod>2012-11-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-11-22-no-meeting-this-week/</loc>
+    <lastmod>2012-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-11-15-ardunio/</loc>
+    <lastmod>2012-11-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-11-08-forensic-analysis/</loc>
+    <lastmod>2012-11-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-11-01-open-stack/</loc>
+    <lastmod>2012-11-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-10-25-advanced-overview-of-vim/</loc>
+    <lastmod>2012-10-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-10-18-what-not-to-do-with-your-f-oss-operating-system/</loc>
+    <lastmod>2012-10-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-10-11-introduction-to-vim/</loc>
+    <lastmod>2012-10-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-10-04-open-source-and-your-music/</loc>
+    <lastmod>2012-10-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-09-22-autumn-lan-party/</loc>
+    <lastmod>2012-09-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-09-20-blender/</loc>
+    <lastmod>2012-09-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-09-13-emacs/</loc>
+    <lastmod>2012-09-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-09-06-android/</loc>
+    <lastmod>2012-09-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-08-30-wi-fi-hacking/</loc>
+    <lastmod>2012-08-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-08-23-first-meeting-what-is-open-source/</loc>
+    <lastmod>2012-08-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-08-17-summer-meetups/</loc>
+    <lastmod>2012-08-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-08-16-systemtap/</loc>
+    <lastmod>2012-08-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-05-31-personal-projects/</loc>
+    <lastmod>2012-05-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-05-24-bedrock-linux/</loc>
+    <lastmod>2012-05-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-05-17-elections-latex-and-lan-party/</loc>
+    <lastmod>2012-05-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-05-12-osc-spring-lan/</loc>
+    <lastmod>2012-05-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-05-10-python/</loc>
+    <lastmod>2012-05-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-05-03-android/</loc>
+    <lastmod>2012-05-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-04-26-this-week-in-slashdot/</loc>
+    <lastmod>2012-04-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-04-19-blender-3d-modeling-and-short-films/</loc>
+    <lastmod>2012-04-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-04-12-sage-mathematics/</loc>
+    <lastmod>2012-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-04-05-portable-unix-shell-scripting/</loc>
+    <lastmod>2012-04-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-03-29-arduino-and-open-source-hardware/</loc>
+    <lastmod>2012-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-03-08-thats-what-she-said-and-planning/</loc>
+    <lastmod>2012-03-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-03-01-window-managers/</loc>
+    <lastmod>2012-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-02-23-personal-projects/</loc>
+    <lastmod>2012-02-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-02-16-introduction-to-gimp-image-editing/</loc>
+    <lastmod>2012-02-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-02-09-the-shibboleth-project-and-web-authentication-at-osu/</loc>
+    <lastmod>2012-02-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-02-02-unix-command-line-utilities/</loc>
+    <lastmod>2012-02-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-01-26-haskell-part-iii/</loc>
+    <lastmod>2012-01-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-01-26-haskell-part-iii-winter-resistance-edition-snow-and-freezing-rain-will-not-stop-us-neither-will-dry-50f-weather/</loc>
+    <lastmod>2012-01-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-01-19-introduction-to-haskell-part-b/</loc>
+    <lastmod>2012-01-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-01-12-introduction-to-haskell-part-0/</loc>
+    <lastmod>2012-01-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2012-01-05-distributed-version-control-systems/</loc>
+    <lastmod>2012-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-12-01-open-source-operating-systems-and-winter-2011-planning/</loc>
+    <lastmod>2011-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-11-19-lan-party/</loc>
+    <lastmod>2011-11-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-11-17-open-source-multiplayer-games/</loc>
+    <lastmod>2011-11-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-11-10-clojure/</loc>
+    <lastmod>2011-11-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-11-03-this-week-in-slashdot/</loc>
+    <lastmod>2011-11-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-10-27-regular-expressions/</loc>
+    <lastmod>2011-10-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-10-20-xiki/</loc>
+    <lastmod>2011-10-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-10-10-vim/</loc>
+    <lastmod>2011-10-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-10-03-making-pictures-lie/</loc>
+    <lastmod>2011-10-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-09-29-wireless-hacking/</loc>
+    <lastmod>2011-09-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-09-22-first-meeting/</loc>
+    <lastmod>2011-09-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-06-02-web-application-security/</loc>
+    <lastmod>2011-06-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-05-26-arduino/</loc>
+    <lastmod>2011-05-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-05-19-functional-programming/</loc>
+    <lastmod>2011-05-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-05-14-lan-party/</loc>
+    <lastmod>2011-05-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-05-12-elections/</loc>
+    <lastmod>2011-05-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-05-05-mandatory-access-control/</loc>
+    <lastmod>2011-05-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-04-28-cli-utilities/</loc>
+    <lastmod>2011-04-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-04-21-breaking-stuff/</loc>
+    <lastmod>2011-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-04-20-quiz-bowl/</loc>
+    <lastmod>2011-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-04-14-go-board-game-ai/</loc>
+    <lastmod>2011-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-04-07-open-source-security-tools/</loc>
+    <lastmod>2011-04-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-04-01-new-microsoft-partnership/</loc>
+    <lastmod>2011-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-03-31-window-managers-and-desktop-environments/</loc>
+    <lastmod>2011-03-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-03-10-projects/</loc>
+    <lastmod>2011-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-03-03-shells/</loc>
+    <lastmod>2011-03-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-02-24-android-development/</loc>
+    <lastmod>2011-02-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-02-17-markup-languages/</loc>
+    <lastmod>2011-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-02-10-wireless-hacking/</loc>
+    <lastmod>2011-02-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-02-03-microcontrollers/</loc>
+    <lastmod>2011-02-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-01-27-an-introduction-to-blender/</loc>
+    <lastmod>2011-01-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-01-20-quiz-bowl-with-upe-and-acm-w/</loc>
+    <lastmod>2011-01-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-01-13-gimp-image-editing-winter-2011/</loc>
+    <lastmod>2011-01-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-01-06-chroot-and-linux-from-scatch/</loc>
+    <lastmod>2011-01-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2011-01-04-osu-sign-on-and-openid-now-supported/</loc>
+    <lastmod>2011-01-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-12-05-finals-and-winter-break/</loc>
+    <lastmod>2010-12-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-12-02-vim/</loc>
+    <lastmod>2010-12-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-11-21-no-meeting-this-week/</loc>
+    <lastmod>2010-11-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-11-18-xen-virtualization/</loc>
+    <lastmod>2010-11-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-11-12-the-git-distributed-version-control-system/</loc>
+    <lastmod>2010-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-11-04-model-view-controllers/</loc>
+    <lastmod>2010-11-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-10-28-this-week-in-slashdot/</loc>
+    <lastmod>2010-10-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-10-21-why-python/</loc>
+    <lastmod>2010-10-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-10-14-gimp-image-editing-autumn-2010/</loc>
+    <lastmod>2010-10-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-10-07-mua-the-mutt/</loc>
+    <lastmod>2010-10-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-09-30-blood-drive/</loc>
+    <lastmod>2010-09-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-09-30-open-source-music-ripper-server-client/</loc>
+    <lastmod>2010-09-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-09-23-overview-of-free-desktop-operating-systems/</loc>
+    <lastmod>2010-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-09-10-ohio-linuxfest-september-10-12/</loc>
+    <lastmod>2010-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-08-17-planning-meeting/</loc>
+    <lastmod>2010-08-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-07-31-pyohio/</loc>
+    <lastmod>2010-07-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-06-24-unofficial-meeting-6-24/</loc>
+    <lastmod>2010-06-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-06-21-yapc/</loc>
+    <lastmod>2010-06-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-06-03-perl/</loc>
+    <lastmod>2010-06-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-05-27-elections-for-the-2010-2011-year/</loc>
+    <lastmod>2010-05-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-05-22-game-tournament/</loc>
+    <lastmod>2010-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-05-20-open-source-gaming/</loc>
+    <lastmod>2010-05-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-05-06-this-week-in-slashdot/</loc>
+    <lastmod>2010-05-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-04-29-attempting-linux-on-anything/</loc>
+    <lastmod>2010-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-04-27-shellcoding/</loc>
+    <lastmod>2010-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-04-18-mandatory-access-control/</loc>
+    <lastmod>2010-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-04-18-open-source-gis/</loc>
+    <lastmod>2010-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-04-15-nifty-tips-and-tricks/</loc>
+    <lastmod>2010-04-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-04-08-language-lightning-talks/</loc>
+    <lastmod>2010-04-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-04-01-gimp-spring-2010/</loc>
+    <lastmod>2010-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-03-11-command-line-applications/</loc>
+    <lastmod>2010-03-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-03-04-maximizing-battery-life-in-linux/</loc>
+    <lastmod>2010-03-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-02-18-mini-hackathon/</loc>
+    <lastmod>2010-02-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-02-11-alternative-window-managers/</loc>
+    <lastmod>2010-02-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-02-04-intermediate-and-advanced-python/</loc>
+    <lastmod>2010-02-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-01-28-gnu-utilities/</loc>
+    <lastmod>2010-01-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-01-21-virtualization/</loc>
+    <lastmod>2010-01-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2010-01-14-this-week-in-slashdot/</loc>
+    <lastmod>2010-01-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-12-18-emacs/</loc>
+    <lastmod>2009-12-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-12-07-projects/</loc>
+    <lastmod>2009-12-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-11-17-vim/</loc>
+    <lastmod>2009-11-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-11-04-linux-install-fest/</loc>
+    <lastmod>2009-11-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-10-11-10-22-2009-all-about-python/</loc>
+    <lastmod>2009-10-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-10-11-12-3-2009-general-lightning-talks/</loc>
+    <lastmod>2009-10-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-10-11-10-29-2009-linux-kernel-configuration/</loc>
+    <lastmod>2009-10-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-10-11-11-12-2009-mobile-software-development-forum/</loc>
+    <lastmod>2009-10-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-10-11-11-5-2009-source-control-lightning-talks/</loc>
+    <lastmod>2009-10-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-10-09-scott-merrill-from-columbus-freegeek/</loc>
+    <lastmod>2009-10-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-10-07-10-8-2009-lvm-in-a-nutshell/</loc>
+    <lastmod>2009-10-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-10-07-open-source-club-irc-rules/</loc>
+    <lastmod>2009-10-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-09-28-10-1-2009-intro-to-linux-and-an-overview-of-distros/</loc>
+    <lastmod>2009-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-09-21-9-24-2009-first-meeting-of-the-year/</loc>
+    <lastmod>2009-09-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-08-04-welcome-to-torvalds/</loc>
+    <lastmod>2009-08-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-05-31-revising-the-constitution/</loc>
+    <lastmod>2009-05-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-05-29-updating-the-constitution/</loc>
+    <lastmod>2009-05-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-05-24-2009-2010-elections/</loc>
+    <lastmod>2009-05-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-05-15-embedded-control-for-art-and-music/</loc>
+    <lastmod>2009-05-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-04-24-computer-vision-and-robotics/</loc>
+    <lastmod>2009-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-04-19-advanced-bash-scripting-04-23-09/</loc>
+    <lastmod>2009-04-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-04-13-intro-to-python-4-16-09/</loc>
+    <lastmod>2009-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-04-09-effective-sshd_config-04-09-09/</loc>
+    <lastmod>2009-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-04-01-club-stuff-04-02-09/</loc>
+    <lastmod>2009-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-03-04-ssh-tunneling-tor-proxies-etc-3-5-09/</loc>
+    <lastmod>2009-03-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-02-21-wifi-hacking-2-26-09/</loc>
+    <lastmod>2009-02-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-02-18-xbox-360-modding-2-19-09/</loc>
+    <lastmod>2009-02-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-02-12-doing-it-live-2-12-09/</loc>
+    <lastmod>2009-02-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-02-05-project-stuff-2-5-09/</loc>
+    <lastmod>2009-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-01-15-open-discussion-1-15-09/</loc>
+    <lastmod>2009-01-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-01-08-involvement-fair/</loc>
+    <lastmod>2009-01-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2009-01-07-wireless-hacking/</loc>
+    <lastmod>2009-01-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2008-12-04-shell-scripting/</loc>
+    <lastmod>2008-12-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2008-11-20-this-week-in-slashdot/</loc>
+    <lastmod>2008-11-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2008-11-13-openvpn/</loc>
+    <lastmod>2008-11-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2008-11-06-interface-design/</loc>
+    <lastmod>2008-11-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2008-10-23-meeting/</loc>
+    <lastmod>2008-10-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2008-10-23-wiimote-hacking/</loc>
+    <lastmod>2008-10-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2008-10-17-critical-analysis-of-respondus-lockdown-web-browser/</loc>
+    <lastmod>2008-10-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2008-10-16-source-control-management/</loc>
+    <lastmod>2008-10-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2008-10-11-ohio-linux-fest/</loc>
+    <lastmod>2008-10-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2008-10-02-introduction-to-linux/</loc>
+    <lastmod>2008-10-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2008-09-25-welcome-week-introductions/</loc>
+    <lastmod>2008-09-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2008-09-08-net-neutrality/</loc>
+    <lastmod>2008-09-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2008-06-07-website-problems/</loc>
+    <lastmod>2008-06-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2008-04-10-code-version-managment/</loc>
+    <lastmod>2008-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2008-03-27-spring-2008-first-meeting/</loc>
+    <lastmod>2008-03-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2008-03-03-hacking-the-wiimote/</loc>
+    <lastmod>2008-03-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2008-02-28-silverstripe-meeting-tonight/</loc>
+    <lastmod>2008-02-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2008-01-24-forums-are-back-online/</loc>
+    <lastmod>2008-01-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2008-01-19-student-involvement-fair-2006-photos/</loc>
+    <lastmod>2008-01-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2007-11-15-google-android/</loc>
+    <lastmod>2007-11-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2007-05-16-open-source-elections/</loc>
+    <lastmod>2007-05-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2007-04-17-crashing-windows-vista-launch-party/</loc>
+    <lastmod>2007-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2007-01-25-mailing-lists/</loc>
+    <lastmod>2007-01-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2007-01-25-meetings-winter-2007/</loc>
+    <lastmod>2007-01-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2007-01-08-up-and-blogging-with-wordpress-in-5-minutes/</loc>
+    <lastmod>2007-01-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2006-11-02-virtualization-session/</loc>
+    <lastmod>2006-11-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2006-10-25-the-internet-is-burning/</loc>
+    <lastmod>2006-10-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2006-10-16-net-neutrality-debate-5-oct-2006/</loc>
+    <lastmod>2006-10-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2006-09-30-ohio-linuxfest-2006/</loc>
+    <lastmod>2006-09-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2006-09-26-pulseaudio-with-paul-betts/</loc>
+    <lastmod>2006-09-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2006-09-21-avast-me-hearties/</loc>
+    <lastmod>2006-09-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2006-09-21-new-drupal-based-website-launched/</loc>
+    <lastmod>2006-09-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2006-09-21-welcome-back-with-alex-ideas-for-ohio-linuxfest/</loc>
+    <lastmod>2006-09-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2006-09-21-welcome-back/</loc>
+    <lastmod>2006-09-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/events/2006-09-10-updated-student-involvement-fair-ohio-linuxfest-pamphlet/</loc>
+    <lastmod>2006-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/former-officers/</loc>
+  </url>
+  
+  <url>
+    <loc>https://opensource.osu.edu/tags/</loc>
+  </url>
+  
+</urlset>

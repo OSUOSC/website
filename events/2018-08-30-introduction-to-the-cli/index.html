@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta name="generator" content="Hugo 0.68.3" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Introduction to the CLI </title>
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  <meta name="author" content="">
+
+
+  <meta property="og:title" content="Introduction to the CLI" />
+<meta property="og:description" content="This week&rsquo;s meeting will be an introduction to the command line. We recommend having a Linux distribution installed or having one in a VM so you can follow along.
+As always, laptops are encouraged and pizza will be provided.  At the end of the meeting, many of you requested that I put up the list of commands that I was working off of throughout the meeting. Below is a copy of the notes that I was working off of." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://opensource.osu.edu/events/2018-08-30-introduction-to-the-cli/" />
+<meta property="article:published_time" content="2018-08-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-08-30T00:00:00+00:00" />
+
+  
+
+
+
+
+  
+  
+  
+  
+  
+
+  <link rel="canonical" href="https://opensource.osu.edu/events/2018-08-30-introduction-to-the-cli/">  
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+
+  <link href="/css/font.css" rel="stylesheet" type="text/css">
+  <link href="/css/kube.min.css" rel="stylesheet" type="text/css">
+  <link href="/css/kube.legenda.css" rel="stylesheet" type="text/css">
+  <link href="/css/highlight.css" rel="stylesheet" type="text/css">
+  <link href="/css/master.css" rel="stylesheet" type="text/css">
+  <link href="/css/kube.demo.css" rel="stylesheet" type="text/css">
+
+ <link href="/css/custom.css" rel="stylesheet" type="text/css">
+
+  <script src="/js/jquery-2.1.4.min.js" type="text/javascript">
+  </script>
+
+  <script type="text/javascript" src="/js/tocbot.min.js"></script>
+</head>
+
+
+<body class="page-kube">
+  <header> <div class="show-sm">
+    <div id="nav-toggle-box">
+      <div id="nav-toggle-brand">
+        <a href="/">Open Source Club</a>
+      </div><a data-component="toggleme" data-target="#top" href="#" id="nav-toggle"><i class="kube-menu"></i></a>
+    </div>
+  </div>
+  <div class="hide-sm" id="top">
+    <div id="top-brand">
+      <a href="/" title="home">Open Source Club</a>
+    </div>
+    <nav id="top-nav-main">
+      <ul>
+       
+       
+    <li><a href="/about" >About</a></li>
+    
+    <li><a href="/events" >Events</a></li>
+    
+      </ul>
+    </nav>
+    <nav id="top-nav-extra"> 
+      <ul>
+          
+      </ul>
+    </nav>
+  </div>
+ </header>
+  <main>
+
+<div id="hero" class="wrap">
+  <h1>Introduction to the CLI</h1>
+    <p></p>
+</div>
+<ul id="posts">
+
+ <p>This week&rsquo;s meeting will be an introduction to the command line. We recommend having a Linux distribution installed or having one in a VM so you can follow along.</p>
+<h4 id="as-always-laptops-are-encouraged-and-pizza-will-be-provided">As always, laptops are encouraged and pizza will be provided.</h4>
+<hr>
+<p>At the end of the meeting, many of you requested that I put up the list of commands that I was working off of throughout the meeting. Below is a copy of the notes that I was working off of. We didn&rsquo;t get through all of them, and I expanded on some of them quite a bit, and some of them have notes (like <em>NEEDS EXAMPLES</em>, etc.) but hopefully they&rsquo;re helpful to someone.</p>
+<h1 id="introduction-to-the-command-line">Introduction to the Command Line</h1>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<ul>
+<li><code>cd ~/</code>, <code>cd /home/brutus</code> and <code>cd $HOME</code> and <code>cd</code> are equivalent</li>
+<li>root can refer to the &ldquo;top of a directory tree (e.g. /)&rdquo; OR a user with elevated privileges (e.g. admin)</li>
+<li>never run a web browser as root . . . . natural selection at its finest</li>
+</ul>
+<h2 id="commonly-asked-questions">Commonly Asked Questions</h2>
+<p>Q) Why won&rsquo;t my terminal let me type anything into the password prompt?</p>
+<p>A) blindly type in your password and hit enter . . . . just do it</p>
+<h2 id="fundamentals">Fundamentals</h2>
+<p>list files in the current directory</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ls
+</code></pre></div><hr>
+<p>change directories</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># go to a user&#39;s home directory</span>
+cd ~
+
+<span style="color:#75715e"># move up one directory</span>
+cd ..
+
+<span style="color:#75715e"># go to the root directory</span>
+cd /
+</code></pre></div><hr>
+<p>list files in the current directory, including hidden files</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ls -a
+</code></pre></div><hr>
+<p>list files with details (permissions, owner, size) in the current directory</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ls -l
+</code></pre></div><hr>
+<p>combine both of the above, i.e. detailed list of files, including hidden files</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ls -al
+</code></pre></div><hr>
+<p>any of the following are equivalent</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ls -al
+ls -la
+ls -l -a
+ls -a -l
+</code></pre></div><hr>
+<p>create a new duplicate of &lsquo;foo&rsquo; named &ldquo;bar&rdquo; in the current directory</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cp foo bar
+</code></pre></div><hr>
+<p>relocate/rename a file or folder</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># relocate folder &#34;homework&#34; to a different parent directory</span>
+mv ~/documents/homework ~/college/homework
+
+<span style="color:#75715e"># relocate folder &#34;homework&#34; to a different parent directory AND rename it to &#34;bs&#34;</span>
+mv ~/documents/homework ~/college/bs
+</code></pre></div><hr>
+<p>create a new folder named &ldquo;foo&rdquo; in the current directory</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir foo
+</code></pre></div><hr>
+<p>create a new empty file named <code>baz</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">touch baz
+</code></pre></div><hr>
+<p>output the contents of file &ldquo;helloworld.txt&rdquo;</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat helloworld.txt
+</code></pre></div><hr>
+<p>show the path to the current directory</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pwd
+</code></pre></div><hr>
+<p>view a visual hierarchy of files &amp; folders inside of the current directory</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">tree
+</code></pre></div><hr>
+<p>delete a file named &ldquo;foo&rdquo; in the current directory</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rm foo
+</code></pre></div><hr>
+<p>delete an empty directory named &ldquo;bar&rdquo;</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rmdir bar
+</code></pre></div><hr>
+<p>delete a directory named &ldquo;baz&rdquo; <em>and all its contents</em></p>
+<ul>
+<li><em>NEEDS EXAMPLES</em></li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rm -r baz
+</code></pre></div><hr>
+<p>outputs file <code>baz.txt</code> with line numbers</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nl baz.txt
+</code></pre></div><hr>
+<p>reset terminal screen, i.e. clear its output and put your prompt back at the top</p>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">clear
+</code></pre></div><p>can also be done with ctrl-l (hold control key and press &ldquo;l&rdquo;)</p>
+<hr>
+<p>reset the terminal screen and reinitialize terminal settings - use this when your terminal is showing weird symbols or otherwise in an unknown state</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">reset
+</code></pre></div><hr>
+<p>view the syntax manual for any given command</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># view the documentation for the command &#34;less&#34;</span>
+man less
+
+<span style="color:#75715e"># view the documentation for the command &#34;tail&#34;</span>
+man tail
+
+<span style="color:#75715e"># you can even view the documentation of &#34;man&#34; with &#34;man&#34; . . . oh man that&#39;s confusing</span>
+man man
+</code></pre></div><hr>
+<p>Execute command <code>foo</code> as super-user(full permissions)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo foo
+</code></pre></div><hr>
+<p>What do you mean &lsquo;permission denied&rsquo;? Do that last command with super user</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># this is INCREDIBLY DANGEROUS if abused</span>
+sudo !!
+</code></pre></div><hr>
+<p>Execute graphical program <code>gparted</code> as super-user on gnome</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">gksu gparted
+</code></pre></div><hr>
+<p>Execute graphical program <code>gparted</code> as super-user on kde</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kdesudo gparted
+</code></pre></div><hr>
+<p>Execute graphical program <code>gparted</code> as super-user on any desktop environment</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pkexec gparted
+</code></pre></div><hr>
+<p>&ndash;&gt;</p>
+<h2 id="intermediate">Intermediate</h2>
+<p>conditionally execute commands</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">create a folder named <span style="color:#e6db74">&#34;documents&#34;</span> AND navigate to it
+mkdir documents <span style="color:#f92672">&amp;&amp;</span> cd documents
+
+</code></pre></div><p>run a command in the background</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">htop &amp;
+</code></pre></div><hr>
+<p>list the process id of <code>firefox</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pidof firefox
+</code></pre></div><hr>
+<p>restart your machine</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">shutdown -r now
+</code></pre></div><hr>
+<p>restart your machine</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">shutdown -h now
+</code></pre></div><hr>
+<p>list all files owned by <code>brutus</code></p>
+<ul>
+<li><em>NEEDS EXAMPLES</em></li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">find .-user brutus
+</code></pre></div><hr>
+<p>change the current user&rsquo;s password</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">passwd
+</code></pre></div><hr>
+<p>elevate to super user</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">su
+</code></pre></div><hr>
+<p>switch to user <code>tux</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">su - tux
+</code></pre></div><hr>
+<p>flavors of kill</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># stop process with id &#34;xxxx&#34;</span>
+kill xxxx
+
+<span style="color:#75715e"># stop multiple processes with ids &#34;xxxx&#34;, &#34;yyyy&#34;, &#34;zzzz&#34;</span>
+kill xxxx yyyy zzzz
+
+<span style="color:#75715e"># stop process with that includes the string &#34;fox&#34; in its name</span>
+pkill fox
+
+<span style="color:#75715e"># stop process with the explicit name &#34;firefox&#34;</span>
+killall firefox
+
+<span style="color:#75715e"># nuke process with the explicit name &#34;firefox&#34;</span>
+killall -9 firefox
+</code></pre></div><hr>
+<h2 id="practical-commands-you-should-learn">Practical Commands You Should Learn</h2>
+<p>test your internet connection</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#it works with ip addresses</span>
+ping -c <span style="color:#ae81ff">3</span> 8.8.8.8
+
+<span style="color:#75715e"># or even urls</span>
+ping -c <span style="color:#ae81ff">3</span> google.com
+</code></pre></div><p><strong>tip:</strong> <em>this is a great way to troubleshoot DNS issues</em></p>
+<hr>
+<p>list all disk partitions</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">df -h
+</code></pre></div><hr>
+<p>output kernel version</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"> uname -r
+</code></pre></div><hr>
+<p>overwrite baz.txt and with &ldquo;foobar&rdquo;</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo <span style="color:#e6db74">&#34;foobar&#34;</span> &gt; baz.txt
+</code></pre></div><hr>
+<p>append &ldquo;foobar&rdquo; onto the end of baz.txt on a new line. <code>-e</code> makes <code>echo</code> respect newlines.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo -e <span style="color:#e6db74">&#34;foobar-1\nfoobar&#34;</span> &gt;&gt; baz.txt
+</code></pre></div><hr>
+<p>print the contents of baz.txt</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat baz.txt
+</code></pre></div><hr>
+<p>write and create bar.txt</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat &gt; bar.txt
+</code></pre></div><hr>
+<p>Find lines that match a pattern in a file</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo -e <span style="color:#e6db74">&#34;line1\nline2\nline3&#34;</span> &gt; grep_test.txt;
+grep <span style="color:#e6db74">&#39;2&#39;</span> <span style="color:#e6db74">&#39;grep_test.txt&#39;</span>
+<span style="color:#75715e"># Only show one file as soon as a match is found</span>
+grep -l <span style="color:#e6db74">&#39;line&#39;</span> grep_test.txt
+<span style="color:#75715e"># Match multiple patterns</span>
+grep -e <span style="color:#e6db74">&#39;2\|3&#39;</span> grep_test.txt
+</code></pre></div><hr>
+<p>Substitute patterns in a line or file</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo <span style="color:#e6db74">&#34;one two three&#34;</span> | sed <span style="color:#e6db74">&#39;s/two/three&#39;</span> sed_test.txt
+</code></pre></div><hr>
+<p>Copy one block device to another block device. Known as <a href="http://www.noah.org/wiki/Dd_-_Destroyer_of_Disks">&lsquo;Destroyer of Disks&rsquo;</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>~/Downloads/latest-ubuntu.iso of<span style="color:#f92672">=</span>/dev/sdb status<span style="color:#f92672">=</span>progress
+</code></pre></div><hr>
+<p>zip the files bar.txt and baz.txt</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">zip -r foobar.zip bar.txt baz.txt
+</code></pre></div><hr>
+<p>extract foobar.zip</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">unzip foobar.zip
+</code></pre></div><hr>
+<p>Create tape archive that&rsquo;s gzipped</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">tar cvzf /tmp/dest_file.tar.gz /tmp/src_files/
+</code></pre></div><hr>
+<p>Extract tape archive that&rsquo;s gzipped</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">tar xvzf /tmp/dest_file.tar.gz
+</code></pre></div><hr>
+<p>spawn a static web server in the current directory on port 8080</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">python -m SimpleHTTPServer <span style="color:#ae81ff">8080</span>
+</code></pre></div><hr>
+<p>output ip address</p>
+<ul>
+<li><em>NEEDS CLARIFICATION</em></li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ip addr show
+</code></pre></div><hr>
+<p>outputs the machine&rsquo;s hostname, duh</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hostname
+</code></pre></div><hr>
+<h2 id="the-most-important-commands">The Most Important Commands</h2>
+<p>make a cow say moo</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cowsay moo
+</code></pre></div><hr>
+<p>list all cows available for use</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ls /usr/share/cowsay/cows
+</code></pre></div><hr>
+<p>use an alternate cow (in this case the unipony)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cowsay -f unipony <span style="color:#e6db74">&#34;everypony loves me!&#34;</span>
+</code></pre></div><hr>
+<p>make people think you&rsquo;re hacking</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cmatrix
+</code></pre></div><hr>
+<p>make people think you&rsquo;re hacking incorrectly</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat /dev/urandom | cmatrix
+</code></pre></div><hr>
+<p>make really large text</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">toilet hello world
+</code></pre></div><hr>
+<p>get helpful advice</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fortune
+</code></pre></div><hr>
+<p>git commit with style</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git commit -m <span style="color:#66d9ef">$(</span>fortune<span style="color:#66d9ef">)</span>
+</code></pre></div><hr>
+<p>watch Star Wars</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">telnet towel.blinkenlights.nl
+</code></pre></div><hr>
+<p>Compose music from entropy in /dev/urandom</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat /dev/urandom | hexdump -v -e <span style="color:#e6db74">&#39;/1 &#34;%u\n&#34;&#39;</span> | awk <span style="color:#e6db74">&#39;{ split(&#34;0,2,4,5,7,9,11,12&#34;,a,&#34;,&#34;); for (i = 0; i &lt; 1; i+= 0.0001) printf(&#34;%08X\n&#34;, 100*sin(1382*exp((a[$1 % 8]/12)*log(2))*i)) }&#39;</span> | xxd -r -p | aplay -c <span style="color:#ae81ff">2</span> -f S32_LE -r <span style="color:#ae81ff">16000</span>
+</code></pre></div><hr>
+<h4 id="todo">todo</h4>
+<ul>
+<li>awk</li>
+<li>python</li>
+<li>&amp;&amp; (and)</li>
+<li>|| (or)</li>
+<li>&amp; (background)</li>
+<li>| (pipe)</li>
+<li>visudo</li>
+<li>git</li>
+<li>apt-get</li>
+<li>pacman</li>
+<li>yum</li>
+<li>systemctl</li>
+<li>wifi-menu</li>
+<li>mogrify</li>
+<li>chmod</li>
+<li>chown</li>
+<li>date</li>
+<li>less</li>
+<li>htop</li>
+<li>figlet</li>
+<li>wget</li>
+<li>curl</li>
+<li>last</li>
+<li>dmesg</li>
+<li>sponge</li>
+<li>xargs</li>
+</ul>
+
+  
+</ul>
+</main>
+  <footer> 
+    <footer id="footer">
+    <nav>
+      <ul>
+        <li><span>OSU Open Source Club</span></li>
+        <li>
+          <a href="/about/">About</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/osuosc">Follow on Twitter</a>
+        </li>
+        <li>
+          <a href="https://github.com/OSUOSC">Contribute on GitHub</a>
+        </li>
+      </ul>
+    </nav>
+    <p>&copy; Licence MIT.</p>
+  </footer> 
+</footer>
+
+
+  <script src="/js/kube.js" type="text/javascript">
+  </script>
+  <script src="/js/kube.legenda.js" type="text/javascript">
+  </script>
+  <script src="/js/master.js" type="text/javascript">
+  </script>
+</body>
+
+</html>
