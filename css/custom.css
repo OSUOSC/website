@@ -1,0 +1,6 @@
+/* Make the "home" link in the navbar not look broken */
+#top-brand a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}

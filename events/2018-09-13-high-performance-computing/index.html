@@ -1,139 +1,90 @@
-<!DOCTYPE html>
-<html lang="en-us">
-
+<!doctype html><html lang=en-us>
 <head>
-  <meta name="generator" content="Hugo 0.68.3" />
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> High-Performance Computing </title>
-
-  
-  
-  
-  
-  
-  
-
-  
-
-  <meta name="author" content="">
-
-
-  <meta property="og:title" content="High-Performance Computing" />
+<meta name=generator content="Hugo 0.91.2">
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title> High-Performance Computing </title>
+<meta name=author content>
+<meta property="og:title" content="High-Performance Computing">
 <meta property="og:description" content="Significant growth has been witnessed during the last decade in High-Performance Computing (HPC) clusters with multi-/many-core processors, accelerators, and high-performance interconnects (such as InfiniBand, Omni-Path, iWARP, and RoCE). Many supercomputers in the world are currently being designed with commodity HPC clusters. The Network-Based Computing Laboratory at OSU/CSE in actively engaged in designing software libraries (HPC, Big Data, Deep Learning, and Cloud) for such supercomputers.
-During this talk we will focus on the open-source MVAPICH software project." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://opensource.osu.edu/events/2018-09-13-high-performance-computing/" />
-<meta property="article:published_time" content="2018-09-13T00:00:00+00:00" />
-<meta property="article:modified_time" content="2018-09-13T00:00:00+00:00" />
-
-  
-
-
-
-
-  
-  
-  
-  
-  
-
-  <link rel="canonical" href="https://opensource.osu.edu/events/2018-09-13-high-performance-computing/">  
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
-
-  <link href="/css/font.css" rel="stylesheet" type="text/css">
-  <link href="/css/kube.min.css" rel="stylesheet" type="text/css">
-  <link href="/css/kube.legenda.css" rel="stylesheet" type="text/css">
-  <link href="/css/highlight.css" rel="stylesheet" type="text/css">
-  <link href="/css/master.css" rel="stylesheet" type="text/css">
-  <link href="/css/kube.demo.css" rel="stylesheet" type="text/css">
-
- <link href="/css/custom.css" rel="stylesheet" type="text/css">
-
-  <script src="/js/jquery-2.1.4.min.js" type="text/javascript">
-  </script>
-
-  <script type="text/javascript" src="/js/tocbot.min.js"></script>
+During this talk we will focus on the open-source MVAPICH software project.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/events/2018-09-13-high-performance-computing/"><meta property="article:section" content="events">
+<meta property="article:published_time" content="2018-09-13T00:00:00+00:00">
+<meta property="article:modified_time" content="2018-09-13T00:00:00+00:00">
+<link rel=canonical href=/events/2018-09-13-high-performance-computing/>
+<link rel=icon type=image/png sizes=32x32 href=/favicon.png>
+<link href=/css/font.css rel=stylesheet type=text/css>
+<link href=/css/kube.min.css rel=stylesheet type=text/css>
+<link href=/css/kube.legenda.css rel=stylesheet type=text/css>
+<link href=/css/highlight.css rel=stylesheet type=text/css>
+<link href=/css/master.css rel=stylesheet type=text/css>
+<link href=/css/kube.demo.css rel=stylesheet type=text/css>
+<link href=/css/custom.css rel=stylesheet type=text/css>
+<script src=/js/jquery-2.1.4.min.js type=text/javascript></script>
+<script type=text/javascript src=/js/tocbot.min.js></script>
 </head>
-
-
-<body class="page-kube">
-  <header> <div class="show-sm">
-    <div id="nav-toggle-box">
-      <div id="nav-toggle-brand">
-        <a href="/">Open Source Club</a>
-      </div><a data-component="toggleme" data-target="#top" href="#" id="nav-toggle"><i class="kube-menu"></i></a>
-    </div>
-  </div>
-  <div class="hide-sm" id="top">
-    <div id="top-brand">
-      <a href="/" title="home">Open Source Club</a>
-    </div>
-    <nav id="top-nav-main">
-      <ul>
-       
-       
-    <li><a href="/about" >About</a></li>
-    
-    <li><a href="/events" >Events</a></li>
-    
-      </ul>
-    </nav>
-    <nav id="top-nav-extra"> 
-      <ul>
-          
-      </ul>
-    </nav>
-  </div>
- </header>
-  <main>
-
-<div id="hero" class="wrap">
-  <h1>High-Performance Computing</h1>
-    <p></p>
+<body class=page-kube>
+<header> <div class=show-sm>
+<div id=nav-toggle-box>
+<div id=nav-toggle-brand>
+<a href=/>Open Source Club</a>
+</div><a data-component=toggleme data-target=#top href=# id=nav-toggle><i class=kube-menu></i></a>
 </div>
-<ul id="posts">
-
- <p>Significant growth has been witnessed during the last decade in High-Performance Computing (HPC) clusters with multi-/many-core processors, accelerators, and high-performance interconnects (such as InfiniBand, Omni-Path, iWARP, and RoCE). Many supercomputers in the world are currently being designed with commodity HPC clusters. The <a href="http://nowlab.cse.ohio-state.edu">Network-Based Computing Laboratory</a> at OSU/CSE in actively engaged in designing software libraries (HPC, Big Data, Deep Learning, and Cloud) for such supercomputers.</p>
-<p>During this talk we will focus on the <a href="http://mvapich.cse.ohio-state.edu">open-source MVAPICH software project</a>. This library supports the Message Passing Interface (MPI) standard which is most commonly used in all supercomputers to design parallel applications. The MVAPICH MPI library from OSU/CSE has been enabling TOP supercomputers in the World (including the latest #2nd ranked) during the last 15 years. The MVAPICH team is a partner of the upcoming <a href="https://cse.osu.edu/news/2018/08/ohio-state-remains-forefront-supercomputer-advances">Frontera supercomputer</a>, the most powerful supercomputer in for open-science research in the USA. We will discuss about the basics of the MPI standard and its features. Next, we will present the challenges in designing high-performance and scalable MPI libraries for modern supercomputers with multi-core processors, GPUs, and high-performance interconnects.</p>
-<p>The talk will follow with an open Q&amp;A session with several members of the Network-Based Computing Laboratory. The session will conclude with a tour of the Laboratory consisting of multiple high-end clusters involving thousands of cores.</p>
-<h2 id="short-bio">Short Bio</h2>
+</div>
+<div class=hide-sm id=top>
+<div id=top-brand>
+<a href=/ title=home>Open Source Club</a>
+</div>
+<nav id=top-nav-main>
+<ul>
+<li><a href=/about>About</a></li>
+<li><a href=/events>Events</a></li>
+</ul>
+</nav>
+<nav id=top-nav-extra>
+<ul>
+</ul>
+</nav>
+</div>
+</header>
+<main>
+<div id=hero class=wrap>
+<h1>High-Performance Computing</h1>
+<p></p>
+</div>
+<ul id=posts>
+<p>Significant growth has been witnessed during the last decade in High-Performance Computing (HPC) clusters with multi-/many-core processors, accelerators, and high-performance interconnects (such as InfiniBand, Omni-Path, iWARP, and RoCE). Many supercomputers in the world are currently being designed with commodity HPC clusters. The <a href=http://nowlab.cse.ohio-state.edu>Network-Based Computing Laboratory</a> at OSU/CSE in actively engaged in designing software libraries (HPC, Big Data, Deep Learning, and Cloud) for such supercomputers.</p>
+<p>During this talk we will focus on the <a href=http://mvapich.cse.ohio-state.edu>open-source MVAPICH software project</a>. This library supports the Message Passing Interface (MPI) standard which is most commonly used in all supercomputers to design parallel applications. The MVAPICH MPI library from OSU/CSE has been enabling TOP supercomputers in the World (including the latest #2nd ranked) during the last 15 years. The MVAPICH team is a partner of the upcoming <a href=https://cse.osu.edu/news/2018/08/ohio-state-remains-forefront-supercomputer-advances>Frontera supercomputer</a>, the most powerful supercomputer in for open-science research in the USA. We will discuss about the basics of the MPI standard and its features. Next, we will present the challenges in designing high-performance and scalable MPI libraries for modern supercomputers with multi-core processors, GPUs, and high-performance interconnects.</p>
+<p>The talk will follow with an open Q&A session with several members of the Network-Based Computing Laboratory. The session will conclude with a tour of the Laboratory consisting of multiple high-end clusters involving thousands of cores.</p>
+<h2 id=short-bio>Short Bio</h2>
 <p>DK Panda is a Professor and University Distinguished Scholar of
-Computer Science and Engineering at the Ohio State University.  He has published over 450 papers in the area of high-end computing and networking.  The MVAPICH2 (High Performance MPI and PGAS over InfiniBand, Omni-Path, iWARP and RoCE) libraries, designed and developed by <a href="http://mvapich.cse.ohio-state.edu">his research group</a>, are currently being used by more than 2,925 organizations worldwide (in 86 countries). More than 490,000 downloads of this software have taken place from the project&rsquo;s site. This software is empowering several InfiniBand clusters (including the 2nd, 12th, 15th, and 24th ranked ones) in the TOP500 list. The RDMA packages for Apache Spark, Apache Hadoop and Memcached together with OSU HiBD benchmarks from <a href="http://hibd.cse.ohio-state.edu">his group</a> are also publicly available.  These libraries are currently being used by more than 290 organizations in 34 countries. More than 27,600 downloads of these libraries have taken place. High-performance and scalable versions of the Caffe and TensorFlow frameworks are available from <a href="https://hidl.cse.ohio-state.edu">https://hidl.cse.ohio-state.edu</a>. Prof. Panda is an IEEE Fellow. More details about Prof. Panda are available at <a href="http://www.cse.ohio-state.edu/~panda">http://www.cse.ohio-state.edu/~panda</a>.</p>
-<h4 id="as-always-laptops-are-encouraged-and-pizza-will-be-provided">As always, laptops are encouraged and pizza will be provided.</h4>
-
-  
+Computer Science and Engineering at the Ohio State University. He has published over 450 papers in the area of high-end computing and networking. The MVAPICH2 (High Performance MPI and PGAS over InfiniBand, Omni-Path, iWARP and RoCE) libraries, designed and developed by <a href=http://mvapich.cse.ohio-state.edu>his research group</a>, are currently being used by more than 2,925 organizations worldwide (in 86 countries). More than 490,000 downloads of this software have taken place from the project&rsquo;s site. This software is empowering several InfiniBand clusters (including the 2nd, 12th, 15th, and 24th ranked ones) in the TOP500 list. The RDMA packages for Apache Spark, Apache Hadoop and Memcached together with OSU HiBD benchmarks from <a href=http://hibd.cse.ohio-state.edu>his group</a> are also publicly available. These libraries are currently being used by more than 290 organizations in 34 countries. More than 27,600 downloads of these libraries have taken place. High-performance and scalable versions of the Caffe and TensorFlow frameworks are available from <a href=https://hidl.cse.ohio-state.edu>https://hidl.cse.ohio-state.edu</a>. Prof. Panda is an IEEE Fellow. More details about Prof. Panda are available at <a href=http://www.cse.ohio-state.edu/~panda>http://www.cse.ohio-state.edu/~panda</a>.</p>
+<h4 id=as-always-laptops-are-encouraged-and-pizza-will-be-provided>As always, laptops are encouraged and pizza will be provided.</h4>
 </ul>
 </main>
-  <footer> 
-    <footer id="footer">
-    <nav>
-      <ul>
-        <li><span>OSU Open Source Club</span></li>
-        <li>
-          <a href="/about/">About</a>
-        </li>
-        <li>
-          <a href="https://twitter.com/osuosc">Follow on Twitter</a>
-        </li>
-        <li>
-          <a href="https://github.com/OSUOSC">Contribute on GitHub</a>
-        </li>
-      </ul>
-    </nav>
-    <p>&copy; Licence MIT.</p>
-  </footer> 
+<footer>
+<footer id=footer>
+<nav>
+<ul>
+<li><span>OSU Open Source Club</span></li>
+<li>
+<a href=/about/>About</a>
+</li>
+<li>
+<a href=https://twitter.com/osuosc>Follow on Twitter</a>
+</li>
+<li>
+<a href=https://github.com/OSUOSC>Contribute on GitHub</a>
+</li>
+</ul>
+</nav>
+<p>&copy; Licence MIT.</p>
 </footer>
-
-
-  <script src="/js/kube.js" type="text/javascript">
-  </script>
-  <script src="/js/kube.legenda.js" type="text/javascript">
-  </script>
-  <script src="/js/master.js" type="text/javascript">
-  </script>
+</footer>
+<script src=/js/kube.js type=text/javascript></script>
+<script src=/js/kube.legenda.js type=text/javascript></script>
+<script src=/js/master.js type=text/javascript></script>
 </body>
-
 </html>

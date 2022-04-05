@@ -1,179 +1,109 @@
-<!DOCTYPE html>
-<html lang="en-us">
-
+<!doctype html><html lang=en-us>
 <head>
-  <meta name="generator" content="Hugo 0.68.3" />
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> Breaking Stuff </title>
-
-  
-  
-  
-  
-  
-  
-
-  
-
-  <meta name="author" content="">
-
-
-  <meta property="og:title" content="Breaking Stuff" />
-<meta property="og:description" content="Have you ever run &ldquo;rm -rf&rdquo; on the wrong directory, ran &ldquo;rsync&rdquo; the wrong way, observed unintended consequences with &ldquo;find,&rdquo; or locked yourself out of your own computer? If you can answer yes to any of these and would like to know what else to avoid, or if you can&rsquo;t and would like to keep it that way, please join us as various club members present how to break things! Everyone who has a story or a deadly command, please come and share it with us, no prior approval needed." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://opensource.osu.edu/events/2011-04-21-breaking-stuff/" />
-<meta property="article:published_time" content="2011-04-21T00:00:00+00:00" />
-<meta property="article:modified_time" content="2011-04-21T00:00:00+00:00" />
-
-  
-
-
-
-
-  
-  
-  
-  
-  
-
-  <link rel="canonical" href="https://opensource.osu.edu/events/2011-04-21-breaking-stuff/">  
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
-
-  <link href="/css/font.css" rel="stylesheet" type="text/css">
-  <link href="/css/kube.min.css" rel="stylesheet" type="text/css">
-  <link href="/css/kube.legenda.css" rel="stylesheet" type="text/css">
-  <link href="/css/highlight.css" rel="stylesheet" type="text/css">
-  <link href="/css/master.css" rel="stylesheet" type="text/css">
-  <link href="/css/kube.demo.css" rel="stylesheet" type="text/css">
-
- <link href="/css/custom.css" rel="stylesheet" type="text/css">
-
-  <script src="/js/jquery-2.1.4.min.js" type="text/javascript">
-  </script>
-
-  <script type="text/javascript" src="/js/tocbot.min.js"></script>
+<meta name=generator content="Hugo 0.91.2">
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title> Breaking Stuff </title>
+<meta name=author content>
+<meta property="og:title" content="Breaking Stuff">
+<meta property="og:description" content="Have you ever run &ldquo;rm -rf&rdquo; on the wrong directory, ran &ldquo;rsync&rdquo; the wrong way, observed unintended consequences with &ldquo;find,&rdquo; or locked yourself out of your own computer? If you can answer yes to any of these and would like to know what else to avoid, or if you can&rsquo;t and would like to keep it that way, please join us as various club members present how to break things! Everyone who has a story or a deadly command, please come and share it with us, no prior approval needed.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/events/2011-04-21-breaking-stuff/"><meta property="article:section" content="events">
+<meta property="article:published_time" content="2011-04-21T00:00:00+00:00">
+<meta property="article:modified_time" content="2011-04-21T00:00:00+00:00">
+<link rel=canonical href=/events/2011-04-21-breaking-stuff/>
+<link rel=icon type=image/png sizes=32x32 href=/favicon.png>
+<link href=/css/font.css rel=stylesheet type=text/css>
+<link href=/css/kube.min.css rel=stylesheet type=text/css>
+<link href=/css/kube.legenda.css rel=stylesheet type=text/css>
+<link href=/css/highlight.css rel=stylesheet type=text/css>
+<link href=/css/master.css rel=stylesheet type=text/css>
+<link href=/css/kube.demo.css rel=stylesheet type=text/css>
+<link href=/css/custom.css rel=stylesheet type=text/css>
+<script src=/js/jquery-2.1.4.min.js type=text/javascript></script>
+<script type=text/javascript src=/js/tocbot.min.js></script>
 </head>
-
-
-<body class="page-kube">
-  <header> <div class="show-sm">
-    <div id="nav-toggle-box">
-      <div id="nav-toggle-brand">
-        <a href="/">Open Source Club</a>
-      </div><a data-component="toggleme" data-target="#top" href="#" id="nav-toggle"><i class="kube-menu"></i></a>
-    </div>
-  </div>
-  <div class="hide-sm" id="top">
-    <div id="top-brand">
-      <a href="/" title="home">Open Source Club</a>
-    </div>
-    <nav id="top-nav-main">
-      <ul>
-       
-       
-    <li><a href="/about" >About</a></li>
-    
-    <li><a href="/events" >Events</a></li>
-    
-      </ul>
-    </nav>
-    <nav id="top-nav-extra"> 
-      <ul>
-          
-      </ul>
-    </nav>
-  </div>
- </header>
-  <main>
-<div class="push-center" itemscope itemtype="http://schema.org/BlogPosting">
-    <meta itemprop="name" content="Breaking Stuff">
-<meta itemprop="description" content="Have you ever run &ldquo;rm -rf&rdquo; on the wrong directory, ran &ldquo;rsync&rdquo; the wrong way, observed unintended consequences with &ldquo;find,&rdquo; or locked yourself out of your own computer? If you can answer yes to any of these and would like to know what else to avoid, or if you can&rsquo;t and would like to keep it that way, please join us as various club members present how to break things! Everyone who has a story or a deadly command, please come and share it with us, no prior approval needed.">
-<meta itemprop="datePublished" content="2011-04-21T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2011-04-21T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="109">
-
-
-
-<meta itemprop="keywords" content="" />
-<div id="hero">
-    <h1 itemprop="headline">  Breaking Stuff</h1>
-    
-<time class="post-time"><span class="icon">
-  <i class="fa fa-clock-o" aria-hidden="true"></i>
+<body class=page-kube>
+<header> <div class=show-sm>
+<div id=nav-toggle-box>
+<div id=nav-toggle-brand>
+<a href=/>Open Source Club</a>
+</div><a data-component=toggleme data-target=#top href=# id=nav-toggle><i class=kube-menu></i></a>
+</div>
+</div>
+<div class=hide-sm id=top>
+<div id=top-brand>
+<a href=/ title=home>Open Source Club</a>
+</div>
+<nav id=top-nav-main>
+<ul>
+<li><a href=/about>About</a></li>
+<li><a href=/events>Events</a></li>
+</ul>
+</nav>
+<nav id=top-nav-extra>
+<ul>
+</ul>
+</nav>
+</div>
+</header>
+<main>
+<div class=push-center itemscope itemtype=http://schema.org/BlogPosting>
+<meta itemprop=name content="Breaking Stuff">
+<meta itemprop=description content="Have you ever run &ldquo;rm -rf&rdquo; on the wrong directory, ran &ldquo;rsync&rdquo; the wrong way, observed unintended consequences with &ldquo;find,&rdquo; or locked yourself out of your own computer? If you can answer yes to any of these and would like to know what else to avoid, or if you can&rsquo;t and would like to keep it that way, please join us as various club members present how to break things! Everyone who has a story or a deadly command, please come and share it with us, no prior approval needed."><meta itemprop=datePublished content="2011-04-21T00:00:00+00:00">
+<meta itemprop=dateModified content="2011-04-21T00:00:00+00:00">
+<meta itemprop=wordCount content="109">
+<meta itemprop=keywords content>
+<div id=hero>
+<h1 itemprop=headline> Breaking Stuff</h1>
+<time class=post-time><span class=icon>
+<i class="fa fa-clock-o" aria-hidden=true></i>
 </span>
 <span>1 minute read</span>
-<span class="icon">
- <i class="fa fa-pencil" aria-hidden="true"></i>
+<span class=icon>
+<i class="fa fa-pencil" aria-hidden=true></i>
 </span>
-
-  Published: <time datetime="2011-04-21T00:00:00&#43;00:00">21 Apr, 2011</time>
-
+Published: <time datetime=2011-04-21T00:00:00+00:00>21 Apr, 2011</time>
 </time>
 </div>
-<div id="post-box">
-<div id="post" itemprop="articleBody">
-    
-    <p>Have you ever run &ldquo;rm -rf&rdquo; on the wrong directory, ran &ldquo;rsync&rdquo; the wrong way, observed unintended consequences with &ldquo;find,&rdquo; or locked yourself out of your own computer? If you can answer yes to any of these and would like to know what else to avoid, or if you can&rsquo;t and would like to keep it that way, please join us as various club members present how to break things! Everyone who has a story or a deadly command, please come and share it with us, no prior approval needed. Everyone else, prepare to be entertained.</p>
+<div id=post-box>
+<div id=post itemprop=articleBody>
+<p>Have you ever run &ldquo;rm -rf&rdquo; on the wrong directory, ran &ldquo;rsync&rdquo; the wrong way, observed unintended consequences with &ldquo;find,&rdquo; or locked yourself out of your own computer? If you can answer yes to any of these and would like to know what else to avoid, or if you can&rsquo;t and would like to keep it that way, please join us as various club members present how to break things! Everyone who has a story or a deadly command, please come and share it with us, no prior approval needed. Everyone else, prepare to be entertained.</p>
 <p>As usual, we will be meeting on Thursday at 7PM in Dreese 264.</p>
-
-
 </div>
-
-    <div class="">
-        <p>
-  Published
-  
-    
-      by <span itemprop="author"></span>
-    
-  
-  <time datetime="2011-04-21T00:00:00&#43;00:00">
-    21 Apr, 2011
-  </time>
-  
-  
-  using <span itemprop="wordCount">109</span> words.
+<div>
+<p>
+Published
+by <span itemprop=author></span>
+<time datetime=2011-04-21T00:00:00+00:00>
+21 Apr, 2011
+</time>
+using <span itemprop=wordCount>109</span> words.
 </p>
-
-        
-
-
-
-    </div>
-    
-    
-    
+</div>
 </div>
 </div>
 </main>
-  <footer>   <footer id="footer">
-    <nav>
-      <ul>
-        <li><span>OSU Open Source Club</span></li>
-        <li>
-          <a href="/about/">About</a>
-        </li>
-        <li>
-          <a href="https://twitter.com/osuosc">Follow on Twitter</a>
-        </li>
-        <li>
-          <a href="https://github.com/OSUOSC">Contribute on GitHub</a>
-        </li>
-      </ul>
-    </nav>
-    <p>&copy; Licence MIT.</p>
-  </footer> </footer>
-
-
-  <script src="/js/kube.js" type="text/javascript">
-  </script>
-  <script src="/js/kube.legenda.js" type="text/javascript">
-  </script>
-  <script src="/js/master.js" type="text/javascript">
-  </script>
+<footer> <footer id=footer>
+<nav>
+<ul>
+<li><span>OSU Open Source Club</span></li>
+<li>
+<a href=/about/>About</a>
+</li>
+<li>
+<a href=https://twitter.com/osuosc>Follow on Twitter</a>
+</li>
+<li>
+<a href=https://github.com/OSUOSC>Contribute on GitHub</a>
+</li>
+</ul>
+</nav>
+<p>&copy; Licence MIT.</p>
+</footer> </footer>
+<script src=/js/kube.js type=text/javascript></script>
+<script src=/js/kube.legenda.js type=text/javascript></script>
+<script src=/js/master.js type=text/javascript></script>
 </body>
-
 </html>

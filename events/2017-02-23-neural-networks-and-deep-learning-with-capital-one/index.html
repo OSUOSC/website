@@ -1,134 +1,85 @@
-<!DOCTYPE html>
-<html lang="en-us">
-
+<!doctype html><html lang=en-us>
 <head>
-  <meta name="generator" content="Hugo 0.68.3" />
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> Neural Networks and Deep Learning </title>
-
-  
-  
-  
-  
-  
-  
-
-  
-
-  <meta name="author" content="">
-
-
-  <meta property="og:title" content="Neural Networks and Deep Learning" />
-<meta property="og:description" content="Deep learning has become one of the hottest topics in computing in the past few years. Neural networks are not a new topic, but with the recent advances in computation capacity provided by hardware accelerators, in particular GPUs, they have gained new popularity. In this talk we present some of the concepts behind neural networks and deep learning, and then shift to the performance aspects of available solutions. We will finally focus on Tensorflow, an open source deep learning package, and provide a hands-on demo using it." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://opensource.osu.edu/events/2017-02-23-neural-networks-and-deep-learning-with-capital-one/" />
-<meta property="article:published_time" content="2017-02-23T00:00:00+00:00" />
-<meta property="article:modified_time" content="2017-02-23T00:00:00+00:00" />
-
-  
-
-
-
-
-  
-  
-  
-  
-  
-
-  <link rel="canonical" href="https://opensource.osu.edu/events/2017-02-23-neural-networks-and-deep-learning-with-capital-one/">  
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
-
-  <link href="/css/font.css" rel="stylesheet" type="text/css">
-  <link href="/css/kube.min.css" rel="stylesheet" type="text/css">
-  <link href="/css/kube.legenda.css" rel="stylesheet" type="text/css">
-  <link href="/css/highlight.css" rel="stylesheet" type="text/css">
-  <link href="/css/master.css" rel="stylesheet" type="text/css">
-  <link href="/css/kube.demo.css" rel="stylesheet" type="text/css">
-
- <link href="/css/custom.css" rel="stylesheet" type="text/css">
-
-  <script src="/js/jquery-2.1.4.min.js" type="text/javascript">
-  </script>
-
-  <script type="text/javascript" src="/js/tocbot.min.js"></script>
+<meta name=generator content="Hugo 0.91.2">
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title> Neural Networks and Deep Learning </title>
+<meta name=author content>
+<meta property="og:title" content="Neural Networks and Deep Learning">
+<meta property="og:description" content="Deep learning has become one of the hottest topics in computing in the past few years. Neural networks are not a new topic, but with the recent advances in computation capacity provided by hardware accelerators, in particular GPUs, they have gained new popularity. In this talk we present some of the concepts behind neural networks and deep learning, and then shift to the performance aspects of available solutions. We will finally focus on Tensorflow, an open source deep learning package, and provide a hands-on demo using it.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/events/2017-02-23-neural-networks-and-deep-learning-with-capital-one/"><meta property="article:section" content="events">
+<meta property="article:published_time" content="2017-02-23T00:00:00+00:00">
+<meta property="article:modified_time" content="2017-02-23T00:00:00+00:00">
+<link rel=canonical href=/events/2017-02-23-neural-networks-and-deep-learning-with-capital-one/>
+<link rel=icon type=image/png sizes=32x32 href=/favicon.png>
+<link href=/css/font.css rel=stylesheet type=text/css>
+<link href=/css/kube.min.css rel=stylesheet type=text/css>
+<link href=/css/kube.legenda.css rel=stylesheet type=text/css>
+<link href=/css/highlight.css rel=stylesheet type=text/css>
+<link href=/css/master.css rel=stylesheet type=text/css>
+<link href=/css/kube.demo.css rel=stylesheet type=text/css>
+<link href=/css/custom.css rel=stylesheet type=text/css>
+<script src=/js/jquery-2.1.4.min.js type=text/javascript></script>
+<script type=text/javascript src=/js/tocbot.min.js></script>
 </head>
-
-
-<body class="page-kube">
-  <header> <div class="show-sm">
-    <div id="nav-toggle-box">
-      <div id="nav-toggle-brand">
-        <a href="/">Open Source Club</a>
-      </div><a data-component="toggleme" data-target="#top" href="#" id="nav-toggle"><i class="kube-menu"></i></a>
-    </div>
-  </div>
-  <div class="hide-sm" id="top">
-    <div id="top-brand">
-      <a href="/" title="home">Open Source Club</a>
-    </div>
-    <nav id="top-nav-main">
-      <ul>
-       
-       
-    <li><a href="/about" >About</a></li>
-    
-    <li><a href="/events" >Events</a></li>
-    
-      </ul>
-    </nav>
-    <nav id="top-nav-extra"> 
-      <ul>
-          
-      </ul>
-    </nav>
-  </div>
- </header>
-  <main>
-
-<div id="hero" class="wrap">
-  <h1>Neural Networks and Deep Learning</h1>
-    <p></p>
+<body class=page-kube>
+<header> <div class=show-sm>
+<div id=nav-toggle-box>
+<div id=nav-toggle-brand>
+<a href=/>Open Source Club</a>
+</div><a data-component=toggleme data-target=#top href=# id=nav-toggle><i class=kube-menu></i></a>
 </div>
-<ul id="posts">
-
- <p>Deep learning has become one of the hottest topics in computing in the past few years. Neural networks are not a new topic, but with the recent advances in computation capacity provided by hardware accelerators, in particular GPUs, they have gained new popularity. In this talk we present some of the concepts behind neural networks and deep learning, and then shift to the performance aspects of available solutions. We will finally focus on Tensorflow, an open source deep learning package, and provide a hands-on demo using it.</p>
+</div>
+<div class=hide-sm id=top>
+<div id=top-brand>
+<a href=/ title=home>Open Source Club</a>
+</div>
+<nav id=top-nav-main>
+<ul>
+<li><a href=/about>About</a></li>
+<li><a href=/events>Events</a></li>
+</ul>
+</nav>
+<nav id=top-nav-extra>
+<ul>
+</ul>
+</nav>
+</div>
+</header>
+<main>
+<div id=hero class=wrap>
+<h1>Neural Networks and Deep Learning</h1>
+<p></p>
+</div>
+<ul id=posts>
+<p>Deep learning has become one of the hottest topics in computing in the past few years. Neural networks are not a new topic, but with the recent advances in computation capacity provided by hardware accelerators, in particular GPUs, they have gained new popularity. In this talk we present some of the concepts behind neural networks and deep learning, and then shift to the performance aspects of available solutions. We will finally focus on Tensorflow, an open source deep learning package, and provide a hands-on demo using it.</p>
 <p>Bio- Reza Farivar is a manager at the Data Intelligence team in Capital One. He received his Ph.D. in Electrical and Computer Engineering from the University of Illinois at Urbana Champaign, working on Big Data, Clouds and Machine Learning pipeline engineering. His Postdoctoral work was on development of GPU-based learning algorithms for bioinformatics. His current work focuses on fast data streaming systems and distributed algorithms for Big Data learning and Cloud systems. He is also an adjunct assistant professor at the computer science department at the University of Illinois at Urbana-Champaign, where he teaches topics related to cloud computing and big data applications, spanning from batch and real-time processing to deep-learning and graph-based systems.</p>
 <p>Join us tomorrow, Thursday February 23rd at 19:00 to learn about machine learning from Reza Farivar of Capital One and some of his team. There will be pizza which is provided by Capital One this week after the Weekly Rundown.</p>
-
-  
 </ul>
 </main>
-  <footer> 
-    <footer id="footer">
-    <nav>
-      <ul>
-        <li><span>OSU Open Source Club</span></li>
-        <li>
-          <a href="/about/">About</a>
-        </li>
-        <li>
-          <a href="https://twitter.com/osuosc">Follow on Twitter</a>
-        </li>
-        <li>
-          <a href="https://github.com/OSUOSC">Contribute on GitHub</a>
-        </li>
-      </ul>
-    </nav>
-    <p>&copy; Licence MIT.</p>
-  </footer> 
+<footer>
+<footer id=footer>
+<nav>
+<ul>
+<li><span>OSU Open Source Club</span></li>
+<li>
+<a href=/about/>About</a>
+</li>
+<li>
+<a href=https://twitter.com/osuosc>Follow on Twitter</a>
+</li>
+<li>
+<a href=https://github.com/OSUOSC>Contribute on GitHub</a>
+</li>
+</ul>
+</nav>
+<p>&copy; Licence MIT.</p>
 </footer>
-
-
-  <script src="/js/kube.js" type="text/javascript">
-  </script>
-  <script src="/js/kube.legenda.js" type="text/javascript">
-  </script>
-  <script src="/js/master.js" type="text/javascript">
-  </script>
+</footer>
+<script src=/js/kube.js type=text/javascript></script>
+<script src=/js/kube.legenda.js type=text/javascript></script>
+<script src=/js/master.js type=text/javascript></script>
 </body>
-
 </html>
