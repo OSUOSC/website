@@ -79,7 +79,7 @@ location: 'Caldwell 120'
 
 ## Ken Thompson and Dennis Richie
 
-![`ken`](http://images.techhive.com/images/idge/imported/imageapi/2014/10/08/15/slide_ken-thompson-620x465-100498409-gallery.idge.jpg)
+![`ken`](https://images.techhive.com/images/idge/imported/imageapi/2014/10/08/15/slide_ken-thompson-620x465-100498409-gallery.idge.jpg)
 ![`dmr`](https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Dennis_Ritchie_2011.jpg/455px-Dennis_Ritchie_2011.jpg)
 
 ### Programs
@@ -209,8 +209,8 @@ In an interview from 1999, [Dennis] Ritchie clarified that he saw Linux and BSD 
 
 ### Boox
 
-- ![Just for Fun: The Story of an Accidental Revolutionary]()
-- [Unofficial Biography by the Linux Information Project](http://www.linfo.org/linus.html)
+- ![Just for Fun: The Story of an Accidental Revolutionary](https://www.goodreads.com/book/show/160171.Just_for_Fun)
+- [Unofficial Biography by the Linux Information Project](www.linfo.org/linus.html)
 
 
 ## Lennart Poettering
