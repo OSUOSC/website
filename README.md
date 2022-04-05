@@ -2,6 +2,7 @@
 
 Uses [Hugo](https://gohugo.io/), so building should be as easy as `hugo` and dev with `hugo server`.
 
+[![GitHub Pages](https://github.com/OSUOSC/website/actions/workflows/pages.yml/badge.svg)](https://github.com/OSUOSC/website/actions/workflows/pages.yml)
 
 ## Previous Sites
 
