@@ -5,9 +5,9 @@ description = "Our mission is to create an environment where the benefits of ope
 
 # Officers
 
-**President** - Dominik Winecki
+**President** - Adrian Vovk
 
-**Vice President** - Adrian Vovk
+**Vice President** - Dominik Winecki
 
 **Treasurer** - Kyle Rosenberg
 
