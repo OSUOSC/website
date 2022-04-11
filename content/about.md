@@ -5,13 +5,13 @@ description = "Our mission is to create an environment where the benefits of ope
 
 # Officers
 
-**President** - Adrian Vovk
+**President** - Adrian Vovk (vovk.5@osu.edu)
 
-**Vice President** - Dominik Winecki
+**Vice President** - Dominik Winecki (winecki.1@osu.edu)
 
-**Treasurer** - Kyle Rosenberg
+**Treasurer** - Kyle Rosenberg (rosenberg.1278@osu.edu)
 
-**Advisor** - Jeremy Morris
+**Advisor** - Jeremy Morris (morris.343@osu.edu)
 
 A list of our former officers is available [here](/former-officers).
 

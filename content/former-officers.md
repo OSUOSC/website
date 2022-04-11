@@ -3,6 +3,12 @@ title = "Former Officers"
 description = "A list of all of the previous officers and faulty advisors that have served the Open Source Club"
 +++
 
+#### 2021-2022
+* President - Dominik Winecki (winecki.1@osu.edu)
+* Vice President - Adrian Vovk (vovk.5@osu.edu)
+* Treasurer - Kyle Rosenberg (rosenberg.1278@osu.edu)
+* Advisor - Jeremy Morris (morris.343@osu.edu)
+
 #### 2020-2021
 * President - Tom Casavant (casavant.6@osu.edu)
 * Vice President - Dominik Winecki (winecki.1@osu.edu)
