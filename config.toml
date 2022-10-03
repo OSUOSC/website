@@ -14,7 +14,7 @@ paginate = 15
 
 [params]
     # Use this to display a message on  the home page
-    message = "Meeting 09/27, 17:30, Caldwell 115"
+    message = "Meeting 10/04, 17:30, Caldwell 115"
 
     twitter = "osuosc"
     github = "OSUOSC"
