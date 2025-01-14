@@ -14,7 +14,7 @@ paginate = 15
 
 [params]
     # Use this to display a message on  the home page
-    message = "Biweekly meetings on Thursdays in Enarson 248"
+    message = "Biweekly meetings on Thursdays, 6:30 PM in Enarson 248"
 
     twitter = "osuosc"
     github = "OSUOSC"
