@@ -2,7 +2,8 @@
 title = "About"
 description = "In a world where technology increases its reach into our personal lives, encroaching on our privacy, accessibility, and even our democracy, the Open Source Club at the Ohio State University seeks to educate and advocate on the benefits of open-source, both as a software development model, and as a philosophy. This will be accomplished by workshops on how to incorporate freedom-respecting software in your life, collaborations with other clubs to find the intersection between their goals and the open-source movement, as well as hosting talks and social gatherings to collaborate on how to improve the the community around open-source in general. "
 
-**This website is currently under construction.**
+This website is currently under construction.
+
 +++
 
 # Officers
